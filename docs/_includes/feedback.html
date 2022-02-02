@@ -1,0 +1,34 @@
+<script
+defer
+src="//cdn.jsdelivr.net/gh/open-innovations/issuer@0.1/lib/issuer.js"
+></script>
+<link
+rel="stylesheet"
+href="//cdn.jsdelivr.net/gh/open-innovations/issuer@0.1/lib/issuer.css"
+/>
+<aside id="issuer-root" class="holder"></aside>
+<style>
+#issuer-root {
+  --issuer-header-fg: black;
+  --issuer-header-bg: #08DEF9;
+  --issuer-font-size: 1.1rem;
+  font-family: Poppins;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: #333333;
+}
+</style>
+</style>
+<script>
+  // Attach the issue form component passing the required config
+  addEventListener('DOMContentLoaded', function () {
+    oi.issuer({
+      target: document.querySelector('#issuer-root'),
+      endpoint: 'https://8098cec81e241af408f7acc6b778cfd4.m.pipedream.net',
+      owner: 'open-innovations',
+      repo: 'leeds-2023',
+    });
+    hljs.highlightAll();
+  });
+</script>

@@ -1,0 +1,37 @@
+{% assign size=1000 %}
+<section id="big-logo" style="text-align: center;">
+  <div>
+    {% include logo.svg width=635 height=200 %}
+  </div>
+  <div>
+    <button id='animate' >Animate Logo</button>
+  </div>
+</section>
+
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const flashSpeed = 100;
+    const button = document.querySelector('#big-logo #animate');
+    const path = document.querySelector('#big-logo svg g path');
+    let blitter;
+    const setRandomColour = () => {
+      const colour = Math.trunc(Math.random() * 255);
+      path.setAttribute('fill', `hsl(${colour}, 50%, 50%)`);
+    };
+    const startAnimation = () => {
+      button.removeEventListener('click', startAnimation);
+      blitter = setInterval(setRandomColour, flashSpeed);
+      button.innerHTML = 'Stop Retro Loading Animation';
+      button.addEventListener('click', stopAnimation);
+    }
+    const stopAnimation = () => {
+      button.removeEventListener('click', stopAnimation);
+      clearInterval(blitter);
+      button.innerHTML = 'Start Retro Loading Animation';
+      button.addEventListener('click', startAnimation);
+    }
+    stopAnimation();
+    button.addEventListener('click', startAnimation);
+  })
+</script>

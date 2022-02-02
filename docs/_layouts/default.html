@@ -3,14 +3,14 @@
 
   {%- include head.html -%}
 
-  <body class="{{ page.class_body }}">
+  <body
+    {%- if page.class_body %} class="{{ page.class_body }}"{% endif -%}
+  >
 
     {%- include header.html -%}
 
     <main id="main" role="main" aria-label="Content">
-      <div class="block b5-bg">
-        {{ content }}
-      </div>
+      {{ content }}
     </main>
 
     {%- include feedback.html -%}

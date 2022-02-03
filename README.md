@@ -24,3 +24,12 @@ From within the `docs` folder.
 ```bash
 bundle exec jekyll serve --baseurl /leeds-2023 --livereload --open-url
 ```
+
+###Using on Windows Local Machine
+
+1. Download and install ruby 2.7.3 from https://rubyinstaller.org/downloads/archives/
+2. Install jekyll - `gem install jekyll`
+3. Run `bundle install` 
+4. Add the line `require 'em/pure_ruby'` to very top of this file 
+Ruby27-x64\lib\ruby\gems\2.7.0\gems\eventmachine-1.2.7-x64-mingw32\lib\eventmachine.rb
+5. bundle exec jekyll serve --baseurl /leeds-2023 --livereload --open-url

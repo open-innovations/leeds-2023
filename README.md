@@ -22,5 +22,5 @@ Change directory into the `docs` folder.
 From within the `docs` folder.
 
 ```bash
-bundle exec jekyll serve --baseurl /leeds-2023 --livereload
+bundle exec jekyll serve --baseurl /leeds-2023 --livereload --open-url
 ```

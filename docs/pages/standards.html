@@ -5,17 +5,16 @@ permalink: standards
 ---
 
 <p>
-  This page contains a list of data standards relevant to Leeds 2023
+  This page contains a list of data standards under consideration by Leeds 2023
 </p>
 
-<ul>
+<ul class="grid">
 {% for standard in site.standards %}
   <li>
-    <h2>{{ standard.title }}</h2>
-    <p><a href="{{ standard.website }}">Web link</a></p>
-    <p>
+    <a class="c5-bg" href="{{ standard.website }}">
+      <h2>{{ standard.title }}</h2>
       {{- standard.content | markdownify -}}
-    </p>
+    </a>
   </li>
 {% endfor %}
 </ul>

@@ -1,4 +1,4 @@
-___
+---
 title: 360Giving
 website: https://www.threesixtygiving.org/
 ---

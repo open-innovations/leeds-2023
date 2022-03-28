@@ -43,6 +43,12 @@ $on-laptop:        800px !default;
   }
 }
 
+@mixin larger-screen() {
+  @media screen and (min-width: $on-laptop) {
+    @content;
+  }
+}
+
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
@@ -57,4 +63,13 @@ $on-laptop:        800px !default;
 
 .oi-logo-text {
   padding-top: 0.5em;
+}
+
+@include larger-screen() {
+  %holder {
+    position: relative;
+    width: 1080px;
+    max-width: 100%;
+    margin: auto;
+  }
 }

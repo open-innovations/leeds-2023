@@ -1,5 +1,15 @@
-<div class="holder">
-  <nav class="site-nav">
+<div class="nav-container">
+  <label for="nav-state">
+    <svg width="20px" height="20px" viewBox="-2 -2 14 14" style="stroke: white; stroke-width: 2px;">
+      <g>
+        <line x1="0" x2="10" y1="0" y2="0"></line>
+        <line x1="0" x2="10" y1="5" y2="5"></line>
+        <line x1="0" x2="10" y1="10" y2="10"></line>
+      </g>
+    </svg>
+  </label>
+  <input id="nav-state" type="checkbox"/>
+  <nav class="site-navigation">
     {% comment %}
       This is truly evil, jekyll! The link tag is great, if you have hard-coded path names
       Can't provide a varaible (or I'd have put this in the include file). Can't append a filter. Gaah!
@@ -10,23 +20,3 @@
     {% include nav_link.html name='Standards' url=nav_link %}
   </nav>
 </div>
-<style>
-.site-nav {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-}
-.site-nav a {
-  display: block;
-  padding: 0.5em;
-  color: white;
-  text-decoration: none;
-}
-.site-nav a.active {
-  background-color: #1DD3A7;
-}
-.site-nav a:hover {
-  background-color: white;
-  color: black;
-}
-</style>

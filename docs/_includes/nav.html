@@ -14,8 +14,6 @@
       This is truly evil, jekyll! The link tag is great, if you have hard-coded path names
       Can't provide a varaible (or I'd have put this in the include file). Can't append a filter. Gaah!
     {% endcomment %}
-    {% capture nav_link %}{% link index.md %}{% endcapture %}
-    {% include nav_link.html name='Home' url=nav_link %}
     {% capture nav_link %}{% link pages/standards.html %}{% endcapture %}
     {% include nav_link.html name='Standards' url=nav_link %}
   </nav>

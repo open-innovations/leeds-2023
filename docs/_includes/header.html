@@ -1,11 +1,7 @@
-<header class="c5-bg glory" role="banner">
-  <div>
-    <div class="holder">
-      <a class="oi-logo" rel="author" href="{{ "/" | relative_url }}">
-        {% include logo.svg width=200 height=100 %}
-        <img alt="Open Innovations" src="//open-innovations.org/resources/images/logos/oi-square-black.svg" width="100" height="100">
-        <div class="oi-logo-text">{{ site.title | escape }}</div>
-      </a>
-    </div>
-  </div>
+<header class="site-header" role="banner">
+  <a class="logo" rel="author" href="{{ "/" | relative_url }}">
+    {% include logo.svg width=127 height=32 %}
+    {{ site.title | escape }}
+  </a>
+  {% include nav.html %}
 </header>

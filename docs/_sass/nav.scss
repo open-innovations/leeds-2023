@@ -30,14 +30,27 @@
     display: none;
   }
 
+  a {
+    font-size: 1rem;
+    display: block;
+    color: white;
+    padding: 1em;
+    @include larger-screen() {
+      font-size: unset;
+      display: unset;
+      color: unset;
+      padding: unset;
+    }
+  }
+
   @include larger-screen() {
-    @extend %holder;
     top: unset;
     right: unset;
     position: relative;
     display: unset;
     label {
       display: none;
+      padding: 0;
       visibility: hidden;
     }
   }
@@ -48,7 +61,7 @@
   display: none;
   overflow: hidden;
   position: relative;
-  margin-top: 5px;
+  margin-top: 0.5rem;
 
   #nav-state:checked + & {
     display: unset;
@@ -57,27 +70,11 @@
   @include larger-screen() {
     display: flex;
     margin-top: unset;
-    font-size: 1.5em;  
     justify-content: center;
     #nav-state:checked + & {
       display: flex;
     }
   }
 
-  a {
-    display: block;
-    padding: 0.5em;
-    color: white;
-    text-decoration: none;
-    &:hover {
-      background-color: white;
-      color: black;
-    }
-    @include larger-screen() {
-      &.active {
-        background-color: #1DD3A7;
-      }
-    }
-  }
 }
 #nav-state {}

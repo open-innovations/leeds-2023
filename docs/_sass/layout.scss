@@ -1,0 +1,7 @@
+main {
+  padding-top: 73px;
+}
+
+.simple-content {
+  @extend %holder;
+}

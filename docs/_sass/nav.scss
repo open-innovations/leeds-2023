@@ -71,6 +71,7 @@
     display: flex;
     margin-top: unset;
     justify-content: center;
+    gap: 1rem;
     #nav-state:checked + & {
       display: flex;
     }

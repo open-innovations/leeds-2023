@@ -62,6 +62,10 @@ $on-laptop:        800px !default;
 @import 'nav';
 @import 'grid';
 
+:root {
+  --header-height: 73px;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;

@@ -1,81 +1,67 @@
-%nav-border {
-  border-radius: 4px;
-  background-color: black;
+.menu-state {
+  display: none;
 }
 
-@include larger-screen {
-  %nav-border {
-    border: none;
-    border-radius: unset;
-    background-color: unset;
-  }
-}
-
-.nav-container {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-
-  label {
-    @extend %nav-border;
-    padding: 10px;
-    line-height: 0;
-    display: block;
-  }
-
-  input {
+.menu-toggle {
+  @include larger-screen() {
     display: none;
   }
 
-  a {
-    font-size: 1rem;
-    display: block;
-    color: white;
-    padding: 1em;
-    @include larger-screen() {
-      font-size: unset;
-      display: unset;
-      color: unset;
-      padding: unset;
-    }
-  }
-
-  @include larger-screen() {
-    top: unset;
-    right: unset;
-    position: relative;
-    display: unset;
-    label {
-      display: none;
-      padding: 0;
-      visibility: hidden;
+  .menu-state:checked ~ & {
+    // transform: translateY(var(--header-height));
+    .menu-burger {
+      i:nth-of-type(1) {
+        transform: translateY(0.7rem) scaleX(0);
+      }
+      i:nth-of-type(2) {
+        transform: rotate(225deg) scale(1.41);
+      }
+      i:nth-of-type(3) {
+        transform: translateY(-0.7rem) rotate(135deg) scale(1.41);
+      }
     }
   }
 }
 
-.site-navigation {
-  @extend %nav-border;
-  display: none;
-  overflow: hidden;
-  position: relative;
-  margin-top: 0.5rem;
+.menu-burger {
+  width: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
 
-  #nav-state:checked + & {
-    display: unset;
+  i {
+    height: 0.3rem;
+    background-color: black;
+    transition: ease transform 250ms;
+    border-radius: 0.8rem;
   }
+}
+
+.menu-items {
+  position: absolute;
+  top: var(--header-height);
+  left: -100%;
+  right: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid black;
+  padding: 1em;
+  transition: 250ms ease;
+  transition-property: left, right;
 
   @include larger-screen() {
-    display: flex;
-    margin-top: unset;
-    justify-content: center;
-    gap: 1rem;
-    #nav-state:checked + & {
-      display: flex;
-    }
+    flex-direction: row;
+    gap: 1em;
+    position: unset;
+    background-color: unset;
+    padding: unset;
+    border: unset;
   }
-
+  .menu-state:checked ~ & {
+    left: 0;
+    right: 0;
+  }
 }
-#nav-state {}
+

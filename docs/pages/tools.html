@@ -1,0 +1,20 @@
+---
+layout: page
+title: Data Tools
+permalink: tools
+---
+
+<p>
+  This page contains a list of data tools relevant to the Leeds 2023 events.
+</p>
+
+<ul class="grid">
+{% for item in site.tools %}
+  <li>
+    <a class="c5-bg" href="{{ item.website }}">
+      <h2>{{ item.title }}</h2>
+      {{- item.content | markdownify -}}
+    </a>
+  </li>
+{% endfor %}
+</ul>

@@ -4,3 +4,5 @@ theme: minima
 collections:
   standards:
   tools:
+  project:
+    output: true

@@ -1,0 +1,20 @@
+---
+layout: page
+title: Projects
+permalink: project
+---
+
+<p>
+  This page contains a list of data projects that we're working on.
+</p>
+
+<ul class="grid">
+{% for project in site.project %}
+  <li>
+    <a class="c5-bg" href="{{ project.url | relative_url }}">
+      <h2>{{ project.title }}</h2>
+      {{- project.excerpt | strip_html -}}
+    </a>
+  </li>
+{% endfor %}
+</ul>

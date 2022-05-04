@@ -1,8 +1,18 @@
 title: 2023 Data
 theme: minima
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: project
+    values:
+      layout: project
+
 collections:
   standards:
   tools:
   project:
     output: true
+    permalink: /:collection/:title
+    layout: page

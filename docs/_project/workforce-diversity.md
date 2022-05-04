@@ -10,7 +10,15 @@ It's early days for this project, so there's still quite a bit of work to do bef
 ready to share our data.
 Our goal is to publish data about both the paid staff and volunteers every three months.
 
-Once we've done this our workforce diversity figures will appear on the Leeds Diversity Dashboard.
+Once we've done this our workforce diversity figures will appear on the
+[Diversity Dashboard][DASHBOARD].
+
+This work builds on the [Diversity Dashboard Open Innovations project][OI-DIVERSITY-HUB]
+which helped the Leeds Anchor Organisations publish and visualise their workforce diversity data.
+We are leveraging this - by publishing a relatively small amount of our data,
+we get a great benefit in transparency, discoverability and benchmarking.
+
+The data will be published to [Data Mill North][DATAMILLNORTH].
 
 <style>
   iframe {
@@ -22,3 +30,5 @@ Once we've done this our workforce diversity figures will appear on the Leeds Di
 <iframe src="https://open-innovations.github.io/diversity-data/leeds-city-region/?headless=true" height="1200"></iframe>
 
 [DASHBOARD]: https://open-innovations.github.io/diversity-data/leeds-city-region/
+[OI-DIVERSITY-HUB]: https://open-innovations.org/projects/diversity/#diversity-dashboard
+[DATAMILLNORTH]: https://datamillnorth.org

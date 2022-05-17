@@ -6,8 +6,6 @@ We're working to publish the Workforce Diversity for the Leeds 2023 team as open
 This will enable us to compare ourselves against the large organisations in Leeds that
 publish to the [Open Innovations Diversity Dashboard][DASHBOARD].
 
-Test
-
 It's early days for this project, so there's still quite a bit of work to do before we're
 ready to share our data.
 Our goal is to publish data about both the paid staff and volunteers every three months.

@@ -8,10 +8,12 @@ As a starting point, we will pull together some of the economic targets drawn fr
 
 It is early days for this work, but we aim to start publishing these figures here in the coming months. 
 
-<div class="block">
-    <div class="container">
-        <ul class="row grid">
-            <li class="col-33"><a href="https://docs.google.com/spreadsheets/d/1w0d8F6biPXG8cawiOr8akKDlrx9_eUZfLSQCcPLwtrg/edit#gid=0" class="theme-bg grid-item"><h3>Leeds2023 Data Needs</h3><p>A working document summarising the data needs for Leeds2023.</p></a></li>
-        </ul>
-    </div>
-</div>
+
+<ul class="grid">
+  <li>
+    <a class="c5-bg" href="https://docs.google.com/spreadsheets/d/1w0d8F6biPXG8cawiOr8akKDlrx9_eUZfLSQCcPLwtrg/edit#gid=0">
+      <h2>Leeds2023 Data Needs</h2>
+      <p>A working document summarising the data needs for Leeds2023.</p>
+    </a>
+  </li>
+</ul>

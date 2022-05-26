@@ -1,0 +1,13 @@
+<div class="metric">
+  {% if include.label %}
+  <p class="centred">
+    {{ include.label }}  
+  </p>
+  {% endif %}
+  <p class="large centred">
+    <span class="current">{{ include.current }}</span>
+  </p>
+  <p class="centred">
+    target: <span class="target">{{ include.target }}</span>
+  </p>
+</div>

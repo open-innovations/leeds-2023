@@ -1,0 +1,62 @@
+<style>
+  .metric {
+    border: 1px solid grey;
+  }
+  .large {
+    font-size: 5rem;
+    font-weight: 900;
+  }
+  .centred {
+    text-align: center;
+  }
+</style>
+
+<article>
+  <h1>Key Performance Indicators</h1>
+  <p>
+    This is an example of the KPI dashboard.
+    This is not live data at present.
+  </p>
+
+  <h2>
+    Number of artists employed
+  </h2>
+  {% include current-vs-target.html current='244' target='200' %}
+
+  <h2>
+    Number of people employed directly/indirectly
+  </h2>
+  {% include current-vs-target.html current='131' target='50' %}
+
+  <h2>
+    Skills partnerships
+  </h2>
+  {% include current-vs-target.html current='6' target='2' %}
+  <p>
+    We have secured partnerships with 6 Higher Education and Further Education Institutes in the city. We are developing a series of opportunities for students to develop skills through hands on experience on LEEDS 2023 projects.
+  </p>
+
+  <h2>
+    Media coverage 
+  </h2>
+  {% include current-vs-target.html label='Increase in number of articles' current='91%' target='10%' %}
+  {% include current-vs-target.html label='Increase in reach' current='57%' target='10%' %}
+
+  <ul>
+    <li>2020-2021: number of articles = 97. Reach = 34,396,843.</li> 
+    <li>2021-2022: number of articles = 185. Reach = 53,948,312.</li>
+  </ul>
+
+  <h2>
+    Digital audience
+  </h2>
+  {% include current-vs-target.html current='34%' target='10%' %}
+
+  <ul>
+    <li>New Users to the website grew by from 21.5k to 61.5k: growth of 65%</li>
+    <li>Total Twitter audience increase from 11.8k followers to 15.3k: growth of 24%</li>
+    <li>Total audience across digital channels by 21.6k to 29.1k: growth of 34%</li>
+  </ul>
+
+
+</article>

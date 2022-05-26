@@ -27,7 +27,7 @@ We will start with Leeds City Council, the KPIs for which are as follows:
 * Create job opportunities for at least 200 artists in the city 
 * Employ, directly or indirectly through procurement, at least 50 people in the city 
 * Secure at least 2 skills partnerships (with business/HEIs and/or others) to develop a skills programme for young people in the city
-*&* Increase media coverage of LEEDS 2023 by at least 10% 
+* Increase media coverage of LEEDS 2023 by at least 10% 
 * Increase digital audiences by at least 10% 
 
 ## Data

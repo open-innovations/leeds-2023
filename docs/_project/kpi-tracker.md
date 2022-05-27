@@ -1,19 +1,6 @@
 ---
 title: Key Performance Indicator tracker
 ---
-<style>
-  table {
-    border-collapse: collapse;
-  }
-  td, th {
-    border: 1px solid lightgrey;
-    padding: 0.4rem;
-  }
-  th {
-    color: white;
-    background: grey;
-  }
-</style>
 
 As part of our work to demonstrate the value and impact of Leeds 2023, we will be producing a
 series of interactive visualisations, roughly based on
@@ -54,12 +41,24 @@ This may progress into a more sophisticated
 visualisation in later iterations, but
 for now it will look roughly as follows: 
 
+<section class='outlined'>
+{% include visualisations/kpi.html %}
+</section>
+
 <style>
+  table {
+    border-collapse: collapse;
+  }
+  td, th {
+    border: 1px solid lightgrey;
+    padding: 0.4rem;
+  }
+  th {
+    color: white;
+    background: grey;
+  }
   .outlined {
     border: 5rem solid grey;
     padding: 1rem 3rem;
   }
 </style>
-<section class='outlined'>
-{% include visualisations/kpi.html %}
-</section>

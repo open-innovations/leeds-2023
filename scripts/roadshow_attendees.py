@@ -1,5 +1,10 @@
 from typeform import get_responses, get_field_from_item
 from util import naive_postcode_formatter, write_csv
+from util.date import round_to_nearest_hour
+import pandas as pd
+
+
+filename = './data/roadshow_attendees.csv'
 
 
 def get_workshop_responses():
@@ -17,8 +22,18 @@ def get_workshop_responses():
 
     data = [get_time_and_postcode(x) for x in workshop_data['items']]
 
-    write_csv(data, './data/roadshow_attendees.csv',
+    write_csv(data, filename,
               field_names=['datetime', 'postcode'])
+
+
+def summarise():
+    data = pd.read_csv(filename)
+    data['datetime'] = data['datetime'].apply(round_to_nearest_hour)
+    summary = data.groupby(by='datetime')['postcode'].apply(list)
+    print(type(summary[0]))
+    summary = summary.apply(lambda x: ';'.join([i for i in x if not pd.isnull(i)]))
+    print(summary)
+    summary.to_csv('./data/roadshow_summary.csv')
 
 
 if __name__ == '__main__':

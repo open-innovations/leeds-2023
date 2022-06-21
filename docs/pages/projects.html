@@ -10,11 +10,12 @@ permalink: project
 
 <ul class="grid">
 {% for project in site.project %}
-  <li>
-    <a class="c5-bg" href="{{ project.url | relative_url }}">
-      <h2>{{ project.title }}</h2>
-      {{- project.excerpt | strip_html -}}
-    </a>
-  </li>
+  {% if project.hidden_from_list %}
+    {% continue %}
+  {% else %}
+    {% assign url=project.url | relative_url %}
+    {% assign description = project.excerpt | strip_html %}
+    {% include grid-item.html link=url title=project.title description=description %}
+  {% endif %}
 {% endfor %}
 </ul>

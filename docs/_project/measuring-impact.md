@@ -19,4 +19,7 @@ It is early days for this work, but we aim to start publishing these figures her
       <p>A working document summarising the data needs for Leeds2023.</p>
     </a>
   </li>
+
+  {% capture sub_project_link %}{{ "/project/measuring-impact-cultural-and-creative-economy" | relative_url }}{% endcapture %}
+  {% include grid-item.html title="Creative and Cultural Economy" link=sub_project_link %}
 </ul>

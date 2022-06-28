@@ -50,13 +50,23 @@
   <h2>
     Digital audience
   </h2>
-  {% include current-vs-target.html current='34%' target='10%' %}
+  {% assign total = site.data.audience_growth["total"] %}
+  {% capture target %}
+  {{total.target}}%
+  {% endcapture %}
+
+  {% capture growth %}
+  {{total.growth}}%
+  {% endcapture %}
+  {% include current-vs-target.html current=growth target=target %}
+
 
   <ul>
-    <li>New Users to the website grew by from 21.5k to 61.5k: growth of 65%</li>
-    <li>Total Twitter audience increase from 11.8k followers to 15.3k: growth of 24%</li>
-    <li>Total audience across digital channels by 21.6k to 29.1k: growth of 34%</li>
+    {% for social in site.data.audience_info %}
+    <li>{{social.label}} grew from {{social.previous}}k to {{social.current}}k: growth of {{social.growth}}%</li>
+    {% endfor %}
   </ul>
+  
 
 
 </article>

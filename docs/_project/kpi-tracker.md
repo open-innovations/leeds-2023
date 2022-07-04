@@ -45,6 +45,11 @@ for now it will look roughly as follows:
 {% include visualisations/kpi.html %}
 </section>
 
+<section>
+<h1>Examples of graphs</h1>
+
+{% include visualisations/kpi-example-graph.html %}
+
 <style>
   table {
     border-collapse: collapse;

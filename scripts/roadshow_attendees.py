@@ -30,9 +30,7 @@ def summarise():
     data = pd.read_csv(filename)
     data['datetime'] = data['datetime'].apply(round_to_nearest_hour)
     summary = data.groupby(by='datetime')['postcode'].apply(list)
-    print(type(summary[0]))
     summary = summary.apply(lambda x: ';'.join([i for i in x if not pd.isnull(i)]))
-    print(summary)
     summary.to_csv('./data/roadshow_summary.csv')
 
 

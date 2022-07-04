@@ -1,3 +1,4 @@
 import roadshow_attendees
 
+roadshow_attendees.get_workshop_responses()
 roadshow_attendees.summarise()

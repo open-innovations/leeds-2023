@@ -2,6 +2,9 @@ name: data-puller
 
 on:
   workflow_dispatch:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '30 22 * * *'
 
 jobs:
   build:
@@ -23,7 +26,7 @@ jobs:
         env:
           TYPEFORM_PRIVATE_TOKEN: ${{ secrets.TYPEFORM_PRIVATE_TOKEN }}
         run: |
-          python scripts/roadshow_attendees.py
+          python scripts/update_data.py
 
       - name: Commit changes to files
         working-directory: .

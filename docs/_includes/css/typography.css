@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Rebond Grotesk';
+  src: url('/assets/fonts/RebondGrotesque-Bold.eot');
+  src: url('/assets/fonts/RebondGrotesque-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('/assets/fonts/RebondGrotesque-Bold.woff2')
+      format('woff2'),
+    url('/assets/fonts/RebondGrotesque-Bold.woff')
+      format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rebond Grotesk';
+  src: url('/assets/fonts/RebondGrotesque-Medium.eot');
+  src: url('/assets/fonts/RebondGrotesque-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('/assets/fonts/RebondGrotesque-Medium.woff2')
+      format('woff2'),
+    url('/assets/fonts/RebondGrotesque-Medium.woff')
+      format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: var(--body-fontstack);
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  color: #11363E;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-fontstack);
+}
+h1 {
+  font-size: 2em;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 16px;
+  margin-bottom: 16px; 
+}

@@ -1,0 +1,6 @@
+title: Eventbrite API v3
+link: https://www.eventbrite.com/platform/api/
+summary: |
+  Access-controlled API to query data held on Eventbrite related to
+  events, attendees, venues and other event characteristics like
+  categories, organisers and pricing.

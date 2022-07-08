@@ -1,0 +1,29 @@
+---
+title: Leeds 2023 Data
+templateEngine: njk
+links:
+  - title: Roadshow Attendee
+    link: /projects/roadshow-attendee-tracking/
+    summary: |
+      Data collection and visualisation of attendees at our roadshows
+  - title: GitHub repo
+    link: https://github.com/open-innovations/leeds-2023
+    summary: |
+      GitHub repo for the code and data.
+  - title: Leeds 2023
+    link: https://leeds2023.co.uk/
+    summary: Website of Leeds 2023 City Of Culture
+---
+
+<h2>Welcome to the Leeds 2023 Data Microsite</h2>
+
+{% comp "grid.autogrid" %}
+  <div>
+    {{ comp.animatedLogo() | safe }}
+  </div>
+  {% for link in links %}
+    {{ comp.grid.link(link) | safe }}
+  {% endfor %}
+{% endcomp %}
+
+

@@ -1,0 +1,9 @@
+.c5-bg {
+  color: #000;
+  background-color: var(--l23-cyan);
+  display: block;
+  &:hover {
+    background-color: #000;
+    color: white;
+  }
+}

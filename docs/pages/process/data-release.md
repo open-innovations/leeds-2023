@@ -1,7 +1,6 @@
 ---
-layout: page
 title: Data Release Process (DRAFT)
-permalink: process/data-release
+url: /process/data-release
 ---
 
 # Data Release Process (DRAFT)

@@ -1,0 +1,17 @@
+---
+title: Projects
+url: /project/
+nav_order: 0
+---
+
+{% comp "grid.autogrid" %}
+{% for project in search.pages('project') %}
+  {{ comp.grid.link({
+        title: project.data.title,
+        link: project.data.url,
+        id: project.data.slug,
+        summary: project.data.summary,
+        cls: 'grid-item'
+      }) | safe }}
+{% endfor %}
+{% endcomp %}

@@ -1,7 +1,0 @@
----
-title: Diversity Data Standard
-website: https://open-innovations.github.io/diversity-data/index.html
----
-
-Created by Open Innovations, in partnership with the Leeds Anchors Network, to enable different organisations to publish data relating to diversity and inclusion in a common format. It was used to create this dashboard.
-

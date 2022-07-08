@@ -1,0 +1,15 @@
+main {
+  padding-top: 73px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.simple-content {
+  position: relative;
+  width: 1080px;
+  max-width: 100%;
+  margin: auto;
+  padding: 1rem;
+}

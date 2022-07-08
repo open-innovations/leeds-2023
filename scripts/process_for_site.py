@@ -22,10 +22,10 @@ def process_workshop_attendees(freq='D'):
 
     data['cumulative_attendees'] = data.attendees.cumsum()
 
-    data.to_csv('docs/_data/roadshow_attendees_summary.csv',
+    data.to_csv('docs/_data/metrics/roadshow_attendees/summary.csv',
                 date_format="%Y-%m-%d", index=False)
 
-    shutil.copy('data/roadshow_attendees_count_by_ward.csv', 'docs/_data')
+    shutil.copy('data/roadshow_attendees_count_by_ward.csv', 'docs/_data/metrics/roadshow_attendees/by_ward.csv')
 
 
 def main():

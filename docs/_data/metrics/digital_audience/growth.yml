@@ -1,0 +1,16 @@
+twitter:
+  label: Total Twitter audience
+  previous: 11800
+  current: 15300
+  growth: 24
+website:
+  label: New Users to the website
+  previous: 21500 
+  current: 61500
+  growth: 65
+total:
+  label: Total audience across digital channels
+  previous: 21600
+  current: 61500
+  target: 10
+  growth: 34

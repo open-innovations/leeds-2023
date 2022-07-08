@@ -1,0 +1,39 @@
+<article>
+  <h1>Key Performance Indicators</h1>
+  <p>
+    This is an example of a KPI report.
+    This is not live data at present.
+  </p>
+
+{% comp "grid.autogrid" %}
+<h2>Number of artists employed</h2>
+{{ comp.viz.currentVsTarget({ current: 244, target: 200, sample: true })  | safe }}
+<h2>Number of people employed directly/indirectly</h2>
+{{ comp.viz.currentVsTarget({ current: 131, target: 50, sample: true }) | safe }}
+<div>
+  <h2>Skills partnerships</h2>
+  <p>We have secured partnerships with 6 Higher Education and Further Education Institutes in the city. We are developing a series of opportunities for students to develop skills through hands on experience on LEEDS 2023 projects.</p>
+</div>
+{{ comp.viz.currentVsTarget({ current: 6, target: 2, sample: true }) | safe }}
+<h2>Media coverage </h2>
+<ul>
+<li class="sample-data">2020-2021: number of articles = 97. Reach = 34,396,843.</li> 
+<li class="sample-data">2021-2022: number of articles = 185. Reach = 53,948,312.</li>
+</ul>
+{{ comp.viz.currentVsTarget({ current: '91%', target: '10%', sample: true, label: 'Increase in number of articles' }) | safe }}
+{{ comp.viz.currentVsTarget({ current: '57%', target: '10%', sample: true, label: 'Increase in reach' }) | safe }}
+<div>
+  <h2>
+    Digital audience
+  </h2>
+  <ul>
+    {%- for id, social in metrics.digital_audience.growth -%}
+    <li class="{% if id != 'twitter' %}sample-data{% endif %}">{{ social.label }} grew from {{ social.previous }} to {{ social.current }}: growth of {{ social.growth }}%
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>
+{{ comp.viz.currentVsTarget({ current: metrics.digital_audience.growth.total.growth, target: metrics.digital_audience.growth.total.growth }) | safe }}
+
+{% endcomp %}
+</article>

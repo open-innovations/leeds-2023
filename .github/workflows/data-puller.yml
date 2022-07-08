@@ -27,6 +27,7 @@ jobs:
           TYPEFORM_PRIVATE_TOKEN: ${{ secrets.TYPEFORM_PRIVATE_TOKEN }}
         run: |
           python scripts/update_data.py
+          python scripts/process_for_site.py
 
       - name: Commit changes to files
         working-directory: .

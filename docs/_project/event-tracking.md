@@ -1,5 +1,5 @@
 ---
-title:
+title: Workshop Attendee Tracking
 ---
 
 The team are running a series of events such as roadshows promoting the year of culture. We will publish and visualise the
@@ -21,3 +21,9 @@ analysis of engagement across Leeds wards per event, and also help with segmenta
 We would not rely on this data in place of an separate independent count of number of attendees. Having these two measures would give a view of how many of the attendees gave information about their residence (for tests of statistical significance)
 
 [TYPEFORM_RESPONSES]: https://developer.typeform.com/responses/
+
+## Sample visualisations
+
+Count of feedback submitted.
+
+{% include visualisations/workshop-attendees.html %}

@@ -1,0 +1,58 @@
+<script src="{{ '/js/oi.linechart.min.js' | relative_url }}"></script>
+
+<style>
+  .wa-chart {
+    height: 20rem;
+  }
+</style>
+<div id="wa-chart-1" class="wa-chart"></div>
+
+<script>
+  const rawData = {{ site.data.roadshow_attendees_summary | jsonify }};
+  const data = {
+    week: rawData.map(x => new Date(x.week_ending)),
+    values: rawData.map(x => x.cumulative_attendees),
+    axis: {
+      yMax: Math.max(...rawData.map(x => x.cumulative_attendees))
+    }
+  };
+
+  const labels = data.week.reduce((a, c, n) => ({ ...a, [n + 1]: { label: c.toLocaleDateString() } }), {})
+  const attendees = data.values.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
+  chart = OI.linechart(document.getElementById('wa-chart-1'), {
+    left: 50,
+    right: 30,
+    top: 30,
+    bottom: 60,
+    // Draw a key
+    key: { show: true, position: 'top left' },
+    // Define the axes
+    'axis': {
+      'x': {
+        'line': { 'show': true },
+        'title': { 'label': 'Week ending (Friday)' },
+        'labels': labels,
+      },
+      'y': {
+        'line': { show: false, 'stroke-width': 2 },
+        'grid': { 'show': true },
+        'title': { 'label': 'Attendees' },
+        'labels': {
+          0: { 'label': 0 },
+          50: { 'label': 50 },
+          100: { 'label': 100 },
+          150: { 'label': 150 },
+          200: { 'label': 200 },
+          250: { 'label': 250 }
+        }
+      }
+    }
+  });
+  chart.addSeries(attendees, {
+    'title': 'Cumulative attendees',
+    'points': { 'size': 4, 'color': '#2254F4' },
+    'line': { 'color': '#2254F4' },
+    // 'tooltip': { 'label': 'Cumulative attendees' }
+  });
+  chart.draw();
+</script>

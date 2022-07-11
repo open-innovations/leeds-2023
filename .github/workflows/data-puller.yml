@@ -34,7 +34,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data
+          git add data docs/_data
           git commit -m "Update data" || exit 0
 
       - name: Push changes

@@ -6,11 +6,21 @@ def process_workshop_attendees(freq='D'):
                        parse_dates=['datetime'])
     # Summarises by required frequency and fills in gaps
     data = data.resample('W-Fri', on='datetime').sum().reset_index()
-    print(data.datetime.name)
-    data.rename(columns = {
-      'datetime': 'week_ending'
+
+    data.rename(columns={
+        'datetime': 'week_ending'
     }, inplace=True)
+
+    data = pd.concat([
+        data,
+        pd.DataFrame.from_records([{
+            'week_ending': data.week_ending.min() - pd.Timedelta(weeks=1),
+            'attendees': 0
+        }])
+    ]).sort_values('week_ending')
+
     data['cumulative_attendees'] = data.attendees.cumsum()
+
     data.to_csv('docs/_data/roadshow_attendees_summary.csv',
                 date_format="%Y-%m-%d", index=False)
 

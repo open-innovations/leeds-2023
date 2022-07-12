@@ -2,13 +2,25 @@
 
 <style>
   .wa-chart {
-    height: 20rem;
+    height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .key rect {
+    stroke: none;
   }
 </style>
-<div id="wa-chart-1" class="wa-chart"></div>
+<section id="roadshow-attendees">
+  <h3>Roadshow attendees</h3>
+
+  <p>This chart shows the number of roadshow surveys submitted per week.</p>
+
+  <div id="wa-chart-1" class="wa-chart chart"></div>
+</section>
 
 <script>
   const rawData = {{ site.data.roadshow_attendees_summary | jsonify }};
+  const dateFormatter = (date) => date.toLocaleString('default', { day: 'numeric', month: 'short' });
   const data = {
     week: rawData.map(x => new Date(x.week_ending)),
     values: rawData.map(x => x.cumulative_attendees),
@@ -17,10 +29,10 @@
     }
   };
 
-  const labels = data.week.reduce((a, c, n) => ({ ...a, [n + 1]: { label: c.toLocaleDateString() } }), {})
+  const labels = data.week.reduce((a, c, n) => ({ ...a, [n]: { label: dateFormatter(c) } }), {})
   const attendees = data.values.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
   chart = OI.linechart(document.getElementById('wa-chart-1'), {
-    left: 50,
+    left: 80,
     right: 30,
     top: 30,
     bottom: 60,
@@ -30,28 +42,30 @@
     'axis': {
       'x': {
         'line': { 'show': true },
-        'title': { 'label': 'Week ending (Friday)' },
+        'title': { 'label': 'Week ending (Friday)', 'anchor': 'middle' },
         'labels': labels,
       },
       'y': {
-        'line': { show: false, 'stroke-width': 2 },
-        'grid': { 'show': true },
+        'line': { show: false },
+        'grid': { 'show': true, 'stroke-width': '0.5px' },
         'title': { 'label': 'Attendees' },
+        'max': 300,
         'labels': {
           0: { 'label': 0 },
           50: { 'label': 50 },
           100: { 'label': 100 },
           150: { 'label': 150 },
           200: { 'label': 200 },
-          250: { 'label': 250 }
+          250: { 'label': 250 },
+          300: { 'label': 300 }
         }
       }
     }
   });
   chart.addSeries(attendees, {
-    'title': 'Cumulative attendees',
-    'points': { 'size': 4, 'color': '#2254F4' },
-    'line': { 'color': '#2254F4' },
+    'title': 'Cumulative Attendees',
+    'points': { 'size': 4, 'color': 'var(--l23-cyan)' },
+    'line': { 'color': 'var(--l23-cyan)' },
     // 'tooltip': { 'label': 'Cumulative attendees' }
   });
   chart.draw();

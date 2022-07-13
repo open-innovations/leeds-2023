@@ -26,7 +26,7 @@ It is early days for this work, but we aim to start publishing these figures her
 
 <h2>Wireframe</h2>
 
-The key visualisations from economic baseline research will be transferred onto the Leeds 2023 Impact Dashboard in future, however for now we will be pulling together the visualisations roughly outlined below. The wireframe below was created on <a href="url">this Miro board</a>. 
+The key visualisations from economic baseline research will be transferred onto the Leeds 2023 Impact Dashboard in future, however for now we will be pulling together the visualisations roughly outlined below. The wireframe below was created on <a href="https://miro.com/app/board/uXjVOWlUNu8=/?share_link_id=501874732910">this Miro board</a>. 
 
 
 <img src="{{ "/assets/images/Economic Baseline Report.png" | relative_url }}"/>

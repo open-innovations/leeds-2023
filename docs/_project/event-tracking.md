@@ -27,3 +27,7 @@ We would not rely on this data in place of an separate independent count of numb
 Count of feedback submitted.
 
 {% include visualisations/workshop-attendees.html %}
+
+Hex cartogram visualisation of attendees by ward.
+
+{% include visualisations/workshop-attendees/ward-hex.html %}

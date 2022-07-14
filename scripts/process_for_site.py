@@ -1,4 +1,5 @@
 import pandas as pd
+import shutil
 
 
 def process_workshop_attendees(freq='D'):
@@ -23,6 +24,8 @@ def process_workshop_attendees(freq='D'):
 
     data.to_csv('docs/_data/roadshow_attendees_summary.csv',
                 date_format="%Y-%m-%d", index=False)
+
+    shutil.copy('data/roadshow_attendees_count_by_ward.csv', 'docs/_data')
 
 
 def main():

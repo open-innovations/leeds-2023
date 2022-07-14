@@ -1,0 +1,48 @@
+{
+	"layout":"odd-r",
+	"hexes": {
+		"E05011395":{"n":"Guiseley and Rawdon","q":0,"r":3,"colour":"#00B6FF"},
+		"E05011549":{"n":"Otley and Yeadon","q":1,"r":3,"colour":"#00B6FF"},
+		"E05012841":{"n":"Adel and Wharfdale","q":2,"r":3,"colour":"#00B6FF"},
+		"E05012842":{"n":"Alwoodley","q":3,"r":3,"colour":"#00B6FF"},
+		"E05011396":{"n":"Harewood","q":4,"r":3,"colour":"#00B6FF"},
+		"E05011414":{"n":"Wetherby","q":5,"r":3,"colour":"#00B6FF"},
+
+    "E05011547":{"n":"Horsforth","q":1,"r":2,"colour":"#00B6FF"},
+		"E05011413":{"n":"Weetwood","q":2,"r":2,"colour":"#00B6FF"},
+		"E05011405":{"n":"Moortown","q":3,"r":2,"colour":"#00B6FF"},
+		"E05011411":{"n":"Roundhay","q":4,"r":2,"colour":"#00B6FF"},
+
+    "E05011389":{"n":"Calverley and Farsley","q":-1,"r":1,"colour":"#00B6FF"},
+		"E05011387":{"n":"Bramley and Stanningley","q":0,"r":1,"colour":"#00B6FF"},
+		"E05011402":{"n":"Kirkstall","q":1,"r":1,"colour":"#00B6FF"},
+
+    "E05011397":{"n":"Headingley and Hyde Park","q":2,"r":1,"colour":"#00B6FF"},
+
+    "E05011390":{"n":"Chapel Allerton","q":3,"r":1,"colour":"#00B6FF"},
+		"E05011400":{"n":"Killingbeck and Seacroft","q":4,"r":1,"colour":"#00B6FF"},
+
+    "E05011409":{"n":"Pudsey","q":0,"r":0,"colour":"#00B6FF"},
+		"E05011385":{"n":"Armley","q":1,"r":0,"colour":"#00B6FF"},
+
+    "E05011403":{"n":"Little London and Woodhouse","q":2,"r":0,"colour":"#00B6FF"},
+
+    "E05011394":{"n":"Gipton and Harehills","q":3,"r":0,"colour":"#00B6FF"},
+		"E05011391":{"n":"Cross Gates and Whinmoor","q":4,"r":0,"colour":"#00B6FF"},
+
+    "E05012648":{"n":"Farnley and Wortley","q":0,"r":-1,"colour":"#00B6FF"},
+		"E05012647":{"n":"Beeston and Holbeck","q":1,"r":-1,"colour":"#00B6FF"},
+
+    "E05011399":{"n":"Hunslet & Riverside","q":2,"r":-1,"colour":"#00B6FF"},
+
+    "E05011388":{"n":"Burmantofts and Richmond Hill","q":3,"r":-1,"colour":"#00B6FF"},
+		"E05013831":{"n":"Temple Newsam","q":4,"r":-1,"colour":"#00B6FF"},
+		"E05011406":{"n":"Morley North","q":1,"r":-2,"colour":"#00B6FF"},
+		"E05011404":{"n":"Middleton Park","q":2,"r":-2,"colour":"#00B6FF"},
+		"E05011410":{"n":"Rothwell","q":3,"r":-2,"colour":"#00B6FF"},
+		"E05013830":{"n":"Garforth and Swillington","q":4,"r":-2,"colour":"#00B6FF"},
+		"E05011407":{"n":"Morley South","q":1,"r":-3,"colour":"#00B6FF"},
+		"E05011384":{"n":"Ardsley and Robin Hood","q":2,"r":-3,"colour":"#00B6FF"},
+		"E05011401":{"n":"Kippax and Methley","q":3,"r":-3,"colour":"#00B6FF"}
+	}
+}

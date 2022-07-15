@@ -16,11 +16,19 @@
     const hexjson = JSON.parse('{{ site.data.hex.wards_leeds | jsonify }}');
     const wardData = JSON.parse('{{ site.data.roadshow_attendees_count_by_ward | jsonify }}');
 
+    const maxAttendees = Math.max(...wardData.map(x => x.attendees))
+    console.log(maxAttendees)
+    const colourScale = (v = 0) => {
+      const proportion = v/maxAttendees;
+      return `hsl(173, 100%, ${100 - proportion * 50}%)`
+    }
+
     let outOfRegion = 0;
     const otherWards = [];
     wardData.forEach(({ ward_code: wardCode, attendees }) => {
       if (Object.keys(hexjson.hexes).includes(wardCode)) {
         hexjson.hexes[wardCode].attendees = parseInt(attendees);
+        hexjson.hexes[wardCode].colour = colourScale(parseInt(attendees));
       } else {
         outOfRegion += parseInt(attendees);
         otherWards.push(wardCode)
@@ -46,7 +54,6 @@
 
     hex.on('mouseover', function (e) {
       const { n: name, attendees } = e.data.data;
-      console.log(name, attendees);
       const svg = e.data.hexmap.el;
       const hex = e.target;
       let tip = svg.querySelector('.tooltip');

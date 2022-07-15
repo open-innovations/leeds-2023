@@ -2,6 +2,10 @@ main {
   padding-top: 73px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .simple-content {
   @extend %holder;
 }

@@ -7,6 +7,7 @@ import jsx from "lume/plugins/jsx.ts";
 import { parse as parseCsv } from 'std/encoding/csv.ts';
 	
 const site = lume({
+  location: new URL("https://open-innovations.github.io/leeds-2023/"),
   src: "./docs",
   components: {
     cssFile: '/style/components.css'
@@ -44,5 +45,7 @@ site.remoteFile('/js/oi.linechart.min.js', 'https://raw.githubusercontent.com/op
 site.remoteFile('/js/oi.hexmap.min.js', 'https://raw.githubusercontent.com/odileeds/odi.hexmap.js/main/odi.hexmap.min.js');
 site.copy('/js');
 site.copy('/assets');
+
+site.copy('.nojekyll');
 
 export default site;

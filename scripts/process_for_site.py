@@ -1,5 +1,6 @@
 import pandas as pd
 import shutil
+import metrics.media_coverage
 
 
 def process_workshop_attendees(freq='D'):
@@ -30,7 +31,7 @@ def process_workshop_attendees(freq='D'):
 
 def main():
     process_workshop_attendees('W-Mon')
-
+    metrics.media_coverage.summarise()
 
 if __name__ == '__main__':
     main()

@@ -3,6 +3,9 @@ import pandas as pd
 
 PATH_EXCEL = os.path.join("working", "Leeds 2023 AVE.xlsx")
 OUTPUT_PATH = os.path.join("data", "metrics", "media_coverage")
+RAW_CSV = os.path.join(OUTPUT_PATH, "raw_data.csv")
+
+SITE_DATA_PATH = os.path.join("docs", "_data", "metrics", "media_coverage")
 
 def read_media_metrics(sheet_name='Aug 2021 - July 2022'):
     media_data = pd.read_excel(PATH_EXCEL, sheet_name=sheet_name, usecols=range(0, 10))
@@ -46,8 +49,21 @@ def read_media_metrics(sheet_name='Aug 2021 - July 2022'):
 
     os.makedirs(OUTPUT_PATH, exist_ok=True)
     kpi.to_csv(os.path.join(OUTPUT_PATH, "coverage_report.csv"))
-    media_data.to_csv(os.path.join(OUTPUT_PATH, "raw_data.csv"), index=False)
+    media_data.to_csv(RAW_CSV, index=False)
 
+
+def summarise():
+    data = pd.read_csv(RAW_CSV, parse_dates=["Date", "Month"])
+
+    data['Year'] = data.Date.dt.to_period('A-JUL')
+
+    summary = data.groupby('Year').count()[["Subject "]]
+    summary = summary.rename(columns = {
+      "Subject ": "Count"
+    })
+    
+    os.makedirs(SITE_DATA_PATH, exist_ok=True)
+    summary.to_csv(os.path.join(SITE_DATA_PATH, 'summary.csv'))
 
 def main():
     read_media_metrics()

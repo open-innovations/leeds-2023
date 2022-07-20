@@ -4,10 +4,12 @@ css: |
   .auto-grid {
     --auto-grid-min-size: 16rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--auto-grid-min-size)), 1fr));
     grid-gap: 1rem;
   }
 ---
-<div class="auto-grid">
-  {{ content | safe }}
+<div class="auto-grid"
+  {%- if min_width %} style="--auto-grid-min-size: {{ min_width }};"{% endif -%}
+  >
+  {{- content | safe -}}
 </div>

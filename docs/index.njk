@@ -18,9 +18,9 @@ links:
 <h2>Welcome to the Leeds 2023 Data Microsite</h2>
 
 {% comp "grid.autogrid" %}
-  <div>
+  {% comp "grid.block.full_width" %}
     {{ comp.animatedLogo() | safe }}
-  </div>
+  {% endcomp %}
   {% for link in links %}
     {{ comp.grid.link(link) | safe }}
   {% endfor %}

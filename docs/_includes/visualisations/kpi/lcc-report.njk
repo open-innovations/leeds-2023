@@ -18,7 +18,7 @@
 <h2>Media coverage </h2>
 <ul>
 <li class="sample-data">2020-2021: number of articles = 97. Reach = 34,396,843.</li> 
-<li class="sample-data">2021-2022: number of articles = 185. Reach = 53,948,312.</li>
+<li class="sample-data">2021-2022: number of articles = {{ metrics.media_coverage.summary.rows[0].Count }}. Reach = 53,948,312.</li>
 </ul>
 {{ comp.viz.currentVsTarget({ current: '91%', target: '10%', sample: true, label: 'Increase in number of articles' }) | safe }}
 {{ comp.viz.currentVsTarget({ current: '57%', target: '10%', sample: true, label: 'Increase in reach' }) | safe }}

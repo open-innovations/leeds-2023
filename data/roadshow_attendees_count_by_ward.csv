@@ -1,4 +1,5 @@
 ward_name,ward_code,attendees
+Wharfedale,E05001366,3
 Golcar,E05001401,1
 Heckmondwike,E05001403,2
 Wakefield South,E05001462,1
@@ -19,7 +20,7 @@ Headingley & Hyde Park,E05011397,22
 Hunslet & Riverside,E05011399,6
 Killingbeck & Seacroft,E05011400,5
 Kippax & Methley,E05011401,1
-Kirkstall,E05011402,6
+Kirkstall,E05011402,16
 Little London & Woodhouse,E05011403,12
 Middleton Park,E05011404,8
 Moortown,E05011405,2
@@ -30,11 +31,11 @@ Rothwell,E05011410,4
 Roundhay,E05011411,2
 Weetwood,E05011413,24
 Wetherby,E05011414,3
-Horsforth,E05011547,5
+Horsforth,E05011547,9
 Otley & Yeadon,E05011549,3
 Beeston & Holbeck,E05012647,2
 Farnley & Wortley,E05012648,2
 Adel & Wharfedale,E05012841,4
-Alwoodley,E05012842,8
+Alwoodley,E05012842,9
 Garforth & Swillington,E05013830,1
 Temple Newsam,E05013831,4

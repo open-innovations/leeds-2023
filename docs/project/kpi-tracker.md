@@ -4,7 +4,7 @@ templateEngine: njk,md
 summary: We are automating the process of creating individual KPI reports for our stakeholders.
 ---
 
-The Leeds 2023 team have to periodically create KPI (Key Performance Indicator) reports for our stakeholders,
+The LEEDS 2023 team have to periodically create KPI (Key Performance Indicator) reports for our stakeholders,
 whether funders, trustees or other interested parties. This project is focussed on automating the process of
 creating and presenting these reports, ideally with no manual processing.
 
@@ -23,19 +23,19 @@ We will start with Leeds City Council, the KPIs for which are as follows:
 
 ## Data
 
-The table below shows each of the above KPIs, the data sources used to evaluate them and the current values reported by Leeds 2023 as of March 2022. 
+The table below shows each of the above KPIs, the data sources used to evaluate them and the current values reported by LEEDS 2023 as of March 2022. 
 
 KPI | Data Source (TBC)
 ----|------------------
-Create job opportunities for at least 200 artists in the city | Excel spreadsheets manually created by Leeds 2023
-Employ, directly or indirectly through procurement, at least 50 people in the city | Excel spreadsheets manually created by Leeds 2023
-Secure at least 2 skills partnerships (with business/HEIs and/or others) to develop a skills programme for young people in the city | Excel spreadsheets manually created by Leeds 2023
+Create job opportunities for at least 200 artists in the city | Excel spreadsheets manually created by LEEDS 2023
+Employ, directly or indirectly through procurement, at least 50 people in the city | Excel spreadsheets manually created by LEEDS 2023
+Secure at least 2 skills partnerships (with business/HEIs and/or others) to develop a skills programme for young people in the city | Excel spreadsheets manually created by LEEDS 2023
 Increase media coverage of LEEDS 2023 by at least 10% | Data collected and maintained by Anita Morris Associates
 Increase digital audiences by at least 10% | Google Analytics, Twitter API, Sprout social. Sprout social/combination of social media 
 
 ## Wireframe
 
-The visualisation will be hosted on the Leeds 2023 data microsite.
+The visualisation will be hosted on the LEEDS 2023 data microsite.
 
 As a first iteration we will pull together the
 above data sources into a short report to

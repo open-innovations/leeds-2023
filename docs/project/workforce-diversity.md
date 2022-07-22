@@ -5,7 +5,7 @@ summary: |
   using a standard developed right here in Leeds.
 ---
 
-We're working to publish the Workforce Diversity for the Leeds 2023 team as open data.
+We're working to publish the Workforce Diversity for the LEEDS 2023 team as open data.
 This will enable us to compare ourselves against the large organisations in Leeds that
 publish to the [Open Innovations Diversity Dashboard][DASHBOARD].
 

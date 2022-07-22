@@ -15,15 +15,16 @@ links:
     summary: Website of LEEDS 2023 Year Of Culture
 ---
 
-<h2>Welcome to the Leeds 2023 Data Microsite</h2>
-
 {% comp "grid.autogrid" %}
   {% comp "grid.block.full_width" %}
-    {{ comp.animatedLogo() | safe }}
+    <h1 style="text-align: center; font-size: 4rem;">Welcome to the LEEDS 2023 Year of Culture Data Microsite</h1>
   {% endcomp %}
   {% for link in links %}
     {{ comp.grid.link(link) | safe }}
   {% endfor %}
+  {% comp "grid.block.full_width" %}
+    {{ comp.animatedLogo() | safe }}
+  {% endcomp %}
 {% endcomp %}
 
 

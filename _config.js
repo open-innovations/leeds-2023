@@ -1,11 +1,12 @@
 import lume from "lume/mod.ts";
-import postcss from "lume/plugins/postcss.ts";
 import base_path from "lume/plugins/base_path.ts";
 import imagick from "lume/plugins/imagick.ts";
 import inline from "lume/plugins/inline.ts";
 import jsx from "lume/plugins/jsx.ts";
+import metas from "lume/plugins/metas.ts";
+import postcss from "lume/plugins/postcss.ts";
 import { parse as parseCsv } from 'std/encoding/csv.ts';
-	
+
 const site = lume({
   location: new URL("https://open-innovations.github.io/leeds-2023/"),
   src: "./docs",
@@ -15,9 +16,10 @@ const site = lume({
 });
 
 site.use(base_path());
+site.use(imagick());
 site.use(inline());
 site.use(jsx());
-site.use(imagick());
+site.use(metas());
 site.use(postcss());
 
 site.loadPages([".html"]);

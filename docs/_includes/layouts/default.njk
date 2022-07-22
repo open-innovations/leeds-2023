@@ -1,16 +1,10 @@
----
-siteTitle: LEEDS 2023 Data
-lang: en
----
 <!DOCTYPE html>
-<html lang="{{ lang }}">
-
+<html lang="{{ metas.lang }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {# TODO seo #}
-    <title>{{ title }}</title>
+    <title>{{ title | default(metas.site) }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">

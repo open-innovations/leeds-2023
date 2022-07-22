@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@font-face {
+  font-family: 'Rebond Grotesk';
+  src: url('../assets/fonts/RebondGrotesque-Bold.eot');
+  src: url('../assets/fonts/RebondGrotesque-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/RebondGrotesque-Bold.woff2')
+      format('woff2'),
+    url('../assets/fonts/RebondGrotesque-Bold.woff')
+      format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rebond Grotesk';
+  src: url('../assets/fonts/RebondGrotesque-Medium.eot');
+  src: url('../assets/fonts/RebondGrotesque-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/RebondGrotesque-Medium.woff2')
+      format('woff2'),
+    url('../assets/fonts/RebondGrotesque-Medium.woff')
+      format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: var(--body-fontstack);
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  color: #11363E;
+}
+
+body::after {
+  content: url(var(--font-base)"/banana");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-fontstack);
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 16px;
+  margin-bottom: 16px; 
+}
+
+main {
+  padding-top: 73px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.simple-content {
+  position: relative;
+  width: 1080px;
+  max-width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.c5-bg {
+  color: #000;
+  background-color: var(--l23-cyan);
+  display: block
+}
+
+.c5-bg:hover {
+    background-color: #000;
+    color: white;
+  }
+
+.site-header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 25px;
+  height: var(--header-height);
+  background-color: white;
+  font-size: 1.375rem;
+  border-bottom: 1px solid black
+}
+
+.site-header h1 {
+    font-size: 2rem;
+  }
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.site-header .logo {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    align-items: center
+  }
+
+.site-header .logo svg {
+      width: 127px;
+    }
+
+.site-header a {
+    text-decoration: none;
+    color: black
+  }
+
+.site-header a:hover, .site-header a.active {
+      text-decoration: underline;
+    }
+
+.menu-state {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+
+.menu-toggle {
+    display: none
+}
+  }
+
+.menu-state:checked ~ .menu-toggle {
+    /* transform: translateY(var(--header-height)); */
+}
+
+.menu-state:checked ~ .menu-toggle .menu-burger i:nth-of-type(1) {
+        transform: translateY(0.7rem) scaleX(0);
+      }
+
+.menu-state:checked ~ .menu-toggle .menu-burger i:nth-of-type(2) {
+        transform: rotate(225deg) scale(1.41);
+      }
+
+.menu-state:checked ~ .menu-toggle .menu-burger i:nth-of-type(3) {
+        transform: translateY(-0.7rem) rotate(135deg) scale(1.41);
+      }
+
+.menu-burger {
+  width: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem
+}
+
+.menu-burger i {
+    height: 0.3rem;
+    background-color: black;
+    transition: ease transform 250ms;
+    border-radius: 0.8rem;
+  }
+
+.menu-items {
+  position: absolute;
+  top: var(--header-height);
+  left: -100%;
+  right: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid black;
+  padding: 1em;
+  transition: 250ms ease;
+  transition-property: left, right
+}
+
+@media screen and (min-width: 800px) {
+
+.menu-items {
+    flex-direction: row;
+    gap: 1em;
+    position: unset;
+    background-color: unset;
+    padding: unset;
+    border: unset
+}
+  }
+
+.menu-state:checked ~ .menu-items {
+    left: 0;
+    right: 0
+}
+
+/* @import "css/grid.css"; */
+
+:root {
+  --body-fontstack: 'DM Sans', sans-serif;
+  --title-fontstack: 'Rebond Grotesk', sans-serif;  
+  --header-height: 73px;
+  --l23-cyan: hsl(173, 65%, 61%);
+  --l23-dark-cyan: hsl(191, 57%, 15%);
+  --l23-yellow: hsl(52, 100%, 50%);
+  --l23-magenta: hsl(321, 100%, 50%);
+}

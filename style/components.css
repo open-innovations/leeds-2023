@@ -1,0 +1,75 @@
+.grid-full-width {
+  grid-column: 1/-1;
+}
+
+
+.grid-link {
+  color: #000;
+  background-color: var(--l23-cyan);
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  padding: 1.5em;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in,color 0.3s ease-in,background 0.3s ease-in
+}
+
+
+.grid-link:hover {
+    background-color: #000;
+    color: white;
+  }
+
+
+.grid-link > :first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+
+.grid-link > :last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+
+#big-logo svg {
+  max-width: 100%;
+  width: 635px;
+}
+
+
+.auto-grid {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--auto-grid-min-size)), 1fr));
+  grid-gap: 1rem;
+}
+
+
+.current-vs-target {
+  border: 1px solid grey
+}
+
+
+.current-vs-target .large {
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: var(--title-fontstack);
+  }
+
+
+.current-vs-target .target {
+    font-family: var(--title-fontstack);
+  }
+
+
+.current-vs-target .centred {
+    text-align: center;
+  }
+
+
+.current-vs-target .sample-data {
+    font-style: italic;
+    color: rgb(194, 50, 50);
+  }

@@ -1,0 +1,122 @@
+---
+manual_measure:
+  artists_employed: 244
+  direct_or_indirect_employed: 131
+  higher_ed_partnerships: 6
+target:
+  artists_employed: 200
+  direct_or_indirect_employed: 50
+  skills_partnerships: 2
+  coverage_pct_increase: 10
+  reach_pct_increase: 10
+  digital_audience: 10
+baseline:
+  media_coverage: 97
+  media_reach: 34396843
+---
+<article>
+  <h1>Leeds City Council 2021-22 KPI Report</h1>
+
+  {% comp "grid.autogrid" %}
+
+  {% comp 'grid.block.full_width' %}
+  <h2>Employment and Skills</h2>
+  {% endcomp %}
+
+  {{ comp.viz.currentVsTarget({
+    current: manual_measure.artists_employed,
+    target: target.artists_employed,
+    label: 'Number of artists employed'
+  }) | safe }}
+
+  {{ comp.viz.currentVsTarget({
+    current: manual_measure.direct_or_indirect_employed,
+    target: target.direct_or_indirect_employed,
+    label: 'Number of people employed directly/indirectly'
+  }) | safe }}
+
+  {% comp 'grid.block.full_width' %}
+  <p>
+      We have secured partnerships with <strong>{{ manual_measure.higher_ed_partnerships }}
+        Higher Education and Further Education Institutes</strong>
+      in the city. We are developing a series of opportunities for students to develop
+      skills through hands on experience on LEEDS 2023 projects.
+    </p>
+  {% endcomp %}
+
+  {{ comp.viz.currentVsTarget({
+    current: manual_measure.higher_ed_partnerships,
+    target: target.skills_partnerships,
+    label: 'Skills Partnerships' })
+    | safe
+  }}
+
+  {% comp 'grid.block.full_width' %}
+  <h2>Media coverage </h2>
+  {% endcomp %}
+  {# Data from AMA spreadsheet #}
+  {# TODO add reach calculation #}
+  <ul>
+    <li>2020-2021:
+      number of articles = {{ baseline.media_coverage | localize }}.
+      Reach = {{ baseline.media_reach | localize }}.
+    </li>
+    <li>2021-2022:
+      number of articles = {{ metrics.media_coverage.summary.rows[0].count | localize}}.
+      Reach = {{ metrics.media_coverage.summary.rows[0].reach | float | localize }}.
+    </li>
+  </ul>
+  {{ comp.viz.currentVsTarget({
+    current: (
+      (
+        (metrics.media_coverage.summary.rows[0].count / baseline.media_coverage) - 1
+      ) * 100
+    ) | round + '%',
+    target: target.coverage_pct_increase + '%',
+    label: 'Increase in number of articles'
+  }) | safe }}
+  {{ comp.viz.currentVsTarget({
+    current: (
+      (
+        (metrics.media_coverage.summary.rows[0].reach / baseline.media_reach) - 1
+      ) * 100
+    ) | round + '%',
+    target: target.reach_pct_increase + '%',
+    label: 'Increase in reach'
+  }) | safe }}
+
+  {% comp 'grid.block.full_width' %}
+  <h2>
+      Digital audience
+    </h2>
+  {% endcomp %}
+  <div>
+    <ul>
+      {% for social in['twitter', 'website'] %}
+        <li>
+          {{ metrics.digital_audience.growth[social].label }}
+        grew from
+        {{ metrics.digital_audience.growth[social].previous | localize }}
+        to
+        {{ metrics.digital_audience.growth[social].current | localize }}:
+        growth of {{
+          (
+            (
+              (
+                metrics.digital_audience.growth[social].current /
+                metrics.digital_audience.growth[social].previous
+              ) - 1
+            ) * 100
+          ) | round
+        }}%
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {{ comp.viz.currentVsTarget({
+    current: metrics.digital_audience.growth.total.growth + '%',
+    target: target.digital_audience + '%'
+  }) | safe }}
+
+  {% endcomp %}
+</article>

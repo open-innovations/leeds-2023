@@ -1,6 +1,6 @@
-export default ({ label, current, target, sample = false }) => {
+export default ({ label, current, target }) => {
   const html = [];
-  html.push(`<div class="current-vs-target ${ sample ? 'sample-data' : ''}">`);
+  html.push(`<div class="current-vs-target">`);
   html.push(`<p class="large centred"><span class="current">${ current }</span></p>`)
   if (label) html.push(`<p class="centred">${ label }</p>`)
   html.push(`<p class="centred">target: <span class="target">${ target }</span></p>`)
@@ -21,10 +21,6 @@ export const css = `
   }
   & .centred {
     text-align: center;
-  }
-  & .sample-data {
-    font-style: italic;
-    color: rgb(194, 50, 50);
   }
 }
 `;

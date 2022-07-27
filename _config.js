@@ -50,4 +50,6 @@ site.copy('/assets');
 
 site.copy('.nojekyll');
 
+site.filter('localize', (num) => num.toLocaleString())
+
 export default site;

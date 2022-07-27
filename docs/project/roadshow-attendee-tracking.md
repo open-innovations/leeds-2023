@@ -2,6 +2,11 @@
 title: Roadshow Attendee Tracking
 summary: Tracking the audience demographics starts now, with assessment of the attendees at the LEEDS 2023 roadshows.
 templateEngine: njk,md
+links:
+  metrics:
+    title: Roadshow Attendees
+    link: /metrics/roadshow-attendees/
+    summary: The metrics page for the roadshow attendees.
 ---
 
 The team are running a series of events such as roadshows promoting the year of culture. We will publish and visualise the
@@ -24,13 +29,8 @@ We would not rely on this data in place of an separate independent count of numb
 
 [TYPEFORM_RESPONSES]: https://developer.typeform.com/responses/
 
-## Sample visualisations
-
-This [Hex cartogram](https://open-innovations.org/blog/2017-05-08-mapping-election-with-hexes) shows number of roadshow attendees who
-submitted Typeform responses categorised by their ward of residence (based on their supplied postcode).
-
-{% include "visualisations/roadshow-attendees/ward-hex.njk" %}
-
-{% include "visualisations/roadshow-attendees/cumulative-graph.njk" %}
-
-This shows the cumulative feedback submitted.
+{% comp "grid.autogrid" -%}
+  {%- for id, link in links -%}
+    {{- comp.grid.link(link) | safe -}}
+  {%- endfor -%}
+{% endcomp %}

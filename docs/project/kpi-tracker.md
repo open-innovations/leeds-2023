@@ -5,7 +5,7 @@ summary: We are automating the process of creating individual KPI reports for ou
 links:
   lcc_2021:
     title: Leeds City Council KPI Report 2021/22
-    link: /reports/leeds-city-council-2021-2022/
+    link: ~/report/leeds-city-council-2021-2022.njk
 ---
 
 The LEEDS 2023 team have to periodically create KPI (Key Performance Indicator) reports for our stakeholders,
@@ -41,6 +41,9 @@ Increase digital audiences by at least 10% | Google Analytics, Twitter API, Spro
 
 {% comp "grid.autogrid" -%}
   {%- for id, link in links -%}
-    {{- comp.grid.link(link) | safe -}}
+    {{- comp.grid.link({
+      title: link.title,
+      link: link.link | url
+    }) | safe -}}
   {%- endfor -%}
 {% endcomp %}

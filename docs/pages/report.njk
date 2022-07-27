@@ -1,0 +1,10 @@
+---
+url: /report/
+---
+<h1>Reports</h1>
+
+{% comp 'grid.autogrid' %}
+  {% for report in search.pages('report') %}
+    {{ comp.grid.link({ link: report.data.url, title: report.data.title }) | safe }}
+  {% endfor %}
+{% endcomp %}

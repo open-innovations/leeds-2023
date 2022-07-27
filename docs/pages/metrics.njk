@@ -1,0 +1,14 @@
+---
+url: /metric/
+---
+<h1>Metrics</h1>
+
+{% comp 'grid.autogrid' %}
+  {% for metric in search.pages('metrics') %}
+    {{ comp.grid.link({
+      link: metric.data.url,
+      title: metric.data.title,
+      summary: metric.data.summary
+    }) | safe }}
+  {% endfor %}
+{% endcomp %}

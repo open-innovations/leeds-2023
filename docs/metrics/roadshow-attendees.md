@@ -1,9 +1,10 @@
 ---
 title: Roadshow Attendees
+summary: Data about the attendees at the LEEDS 2023 community roadshow events.
 metas:
   title: LEEDS 2023 Metrics - Roadshow Attendees
   description: |
-    Visualisations of key metrics related to the LEEDS 2023 communty roadshow events.
+    Visualisations of key metrics related to the LEEDS 2023 community roadshow events.
 templateEngine: njk,md
 ---
 

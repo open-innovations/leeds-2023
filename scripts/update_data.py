@@ -1,4 +1,8 @@
-import roadshow_attendees
+import metrics.roadshow_attendees
 
-roadshow_attendees.get_workshop_responses()
-roadshow_attendees.summarise()
+def main():
+    metrics.roadshow_attendees.get_workshop_responses()
+    metrics.roadshow_attendees.summarise()
+
+if __name__ == '__main__':
+    main()

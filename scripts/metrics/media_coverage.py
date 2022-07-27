@@ -8,7 +8,7 @@ RAW_CSV = os.path.join(OUTPUT_PATH, "raw_data.csv")
 SITE_DATA_PATH = os.path.join("docs", "_data", "metrics", "media_coverage")
 
 def read_media_metrics(sheet_name='Aug 2021 - July 2022'):
-    media_data = pd.read_excel(PATH_EXCEL, sheet_name=sheet_name, usecols=range(0, 10))
+    media_data = pd.read_excel(PATH_EXCEL, sheet_name=sheet_name, usecols=range(0, 10), thousands=',', na_values=['N/A '])
 
     # data9[~data9[data9.columns[1]].isna()].reset_index(drop=True)
     media_data = media_data[~media_data['Publication'].isna()]
@@ -39,6 +39,8 @@ def read_media_metrics(sheet_name='Aug 2021 - July 2022'):
 
     media_data["Month"] = media_data["Month"].fillna("N/A")
 
+    media_data['CIRC'] = media_data.CIRC.fillna(0).astype(int)
+
     kpi = media_data.groupby(['Scope', 'Type', 'Month'], as_index=False).size()
 
     kpi = kpi.pivot(index=["Scope", "Type"], columns="Month", values="size")
@@ -53,13 +55,13 @@ def read_media_metrics(sheet_name='Aug 2021 - July 2022'):
 
 
 def summarise():
-    data = pd.read_csv(RAW_CSV, parse_dates=["Date", "Month"])
+    data = pd.read_csv(RAW_CSV, usecols=['Date', 'Subject ', 'CIRC'], parse_dates=["Date"])
 
     data['Year'] = data.Date.dt.to_period('A-JUL')
 
-    summary = data.groupby('Year').count()[["Subject "]]
-    summary = summary.rename(columns = {
-      "Subject ": "Count"
+    summary = pd.DataFrame({
+      'count': data.groupby('Year').count()['Subject '],
+      'reach': data.groupby('Year').sum()['CIRC']
     })
     
     os.makedirs(SITE_DATA_PATH, exist_ok=True)

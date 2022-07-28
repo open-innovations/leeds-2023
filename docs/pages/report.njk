@@ -1,7 +1,9 @@
 ---
+title: Reports
 url: /report/
+nav_order: 10
 ---
-<h1>Reports</h1>
+<h1>{{ title }}</h1>
 
 {% comp 'grid.autogrid' %}
   {% for report in search.pages('report') %}

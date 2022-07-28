@@ -3,6 +3,13 @@ name: publish-on-github-pages
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'docs/**'
+      - '_config.yml'
+      - 'deno.json'
+      - 'import_map.json'
+      - '.github/workflows/deploy-site.yml'
+
 
 jobs:
   build:

@@ -1,7 +1,7 @@
 constituency_name,constituency_code,attendees
 Batley and Spen,E14000548,2
 Colne Valley,E14000645,1
-Elmet and Rothwell,E14000689,14
+Elmet and Rothwell,E14000689,31
 Hemsworth,E14000740,1
 Leeds Central,E14000777,31
 Leeds East,E14000778,27
@@ -9,6 +9,7 @@ Leeds North East,E14000779,32
 Leeds North West,E14000780,52
 Leeds West,E14000781,40
 Morley and Outwood,E14000826,28
+"Normanton, Pontefract and Castleford",E14000836,2
 Pudsey,E14000886,45
 Selby and Ainsty,E14000917,3
 Shipley,E14000925,3

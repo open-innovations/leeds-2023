@@ -9,8 +9,7 @@ links:
     summary: The metrics page for the roadshow attendees.
 ---
 
-The team are running a series of events such as roadshows promoting the year of culture. We will publish and visualise the
-events, and look to ways to undertake demographic analysis.
+The team are running a series of events such as [Roadshows](https://leeds2023.co.uk/get-ready-for-the-roadshow-with-leeds-2023/) promoting the year of culture. We will publish and visualise the events, and support Leeds 2023 and their partners in undertaking demographic analysis.
 
 The minimum set of data per event is:
  

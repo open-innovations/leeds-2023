@@ -1,5 +1,6 @@
 ward_name,ward_code,attendees
 Wharfedale,E05001366,3
+Batley East,E05001390,1
 Golcar,E05001401,1
 Heckmondwike,E05001403,2
 Airedale and Ferry Fryston,E05001445,1
@@ -8,7 +9,7 @@ Wakefield South,E05001462,1
 Tadcaster,E05010060,1
 Marston Moor,E05011336,1
 Spofforth with Lower Wharfedale,E05011345,1
-Ardsley & Robin Hood,E05011384,2
+Ardsley & Robin Hood,E05011384,11
 Armley,E05011385,8
 Bramley & Stanningley,E05011387,12
 Burmantofts & Richmond Hill,E05011388,2
@@ -27,7 +28,7 @@ Little London & Woodhouse,E05011403,12
 Middleton Park,E05011404,8
 Moortown,E05011405,2
 Morley North,E05011406,16
-Morley South,E05011407,10
+Morley South,E05011407,13
 Pudsey,E05011409,14
 Rothwell,E05011410,4
 Roundhay,E05011411,2

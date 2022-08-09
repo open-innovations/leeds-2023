@@ -15,13 +15,15 @@
 
   <body>
 
-    <header class="site-header" role="banner">
-      <a class="logo" rel="author" href="/">
-        <img class='header-logo' src='/assets/images/logo.svg' inline />
-        <h1>{{ siteTitle }}</h1>
-      </a>
-      {{ comp.nav({ url: url }) | safe }}
-    </header>
+    <div class="max-width-container site-header-container">
+      <header class="site-header" role="banner">
+        <a class="logo" rel="author" href="/">
+          <img class='header-logo' src='/assets/images/logo.svg' inline />
+          <h1>{{ metas.site }}</h1>
+        </a>
+        {{ comp.nav({ url: url }) | safe }}
+      </header>
+    </div>
 
     <main id="main" role="main" aria-label="Content">
       {{ content | safe }}

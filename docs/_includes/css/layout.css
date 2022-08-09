@@ -1,15 +1,16 @@
 main {
-  padding-top: 73px;
+  padding-top: var(--header-height);
 }
 
 img {
   max-width: 100%;
 }
 
-.simple-content {
-  position: relative;
-  width: 1080px;
-  max-width: 100%;
-  margin: auto;
-  padding: 1rem;
+.max-width-container {
+  padding: 0 32px;
+  & > * {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

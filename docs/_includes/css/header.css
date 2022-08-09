@@ -1,16 +1,17 @@
-.site-header {
+.site-header-container {
   position: fixed;
-  z-index: 100;
+  background-color: var(--l23-dark-blue-grey);
+  z-index: 1000;
   top: 0;
   right: 0;
   left: 0;
-  padding: 0 25px;
+}
+.site-header {
   height: var(--header-height);
-  background-color: white;
-  font-size: 1.375rem;
-  border-bottom: 1px solid black;
+  color: white;
+  font-size: 1.125rem;
   & h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   display: flex;
   align-items: center;
@@ -23,12 +24,13 @@
     align-items: center;
     & svg {
       width: 127px;
+      fill: white;
     }
   }
 
   & a {
     text-decoration: none;
-    color: black;
+    color: inherit;
     &:hover, &.active {
       text-decoration: underline;
     }

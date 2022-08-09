@@ -32,16 +32,17 @@ async function csvLoader(path) {
 }
 site.loadData([".csv"], csvLoader);
 
-[
-  'RebondGrotesque-Bold.eot',
-  'RebondGrotesque-Bold.woff2',
-  'RebondGrotesque-Bold.woff',
-  'RebondGrotesque-Medium.eot',
-  'RebondGrotesque-Medium.woff2',
-  'RebondGrotesque-Medium.woff',
-].forEach(font => {
-  site.remoteFile(`/assets/fonts/${font}`, `https://leeds2023.co.uk/wp-content/themes/leeds2023/assets/fonts/${font}`);
-})
+// TODO Get access to the font files
+// [
+//   'RebondGrotesque-Bold.eot',
+//   'RebondGrotesque-Bold.woff2',
+//   'RebondGrotesque-Bold.woff',
+//   'RebondGrotesque-Medium.eot',
+//   'RebondGrotesque-Medium.woff2',
+//   'RebondGrotesque-Medium.woff',
+// ].forEach(font => {
+//   site.remoteFile(`/assets/fonts/${font}`, `https://leeds2023.co.uk/wp-content/themes/leeds2023/assets/fonts/${font}`);
+// })
 
 site.remoteFile('/js/oi.linechart.min.js', 'https://raw.githubusercontent.com/open-innovations/oi.linechart.js/main/oi.linechart.min.js');
 site.remoteFile('/js/oi.hexmap.min.js', 'https://raw.githubusercontent.com/odileeds/odi.hexmap.js/main/odi.hexmap.min.js');

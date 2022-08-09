@@ -11,7 +11,7 @@ export default function () {
 window.addEventListener('DOMContentLoaded', () => {
   const flashSpeed = 100;
   const button = document.querySelector('#big-logo #animate');
-  const path = document.querySelector('#big-logo svg g path');
+  const path = document.querySelector('#big-logo svg path');
   let blitter;
   const setRandomColour = () => {
     const colour = Math.trunc(Math.random() * 255);
@@ -20,13 +20,13 @@ window.addEventListener('DOMContentLoaded', () => {
   const startAnimation = () => {
     button.removeEventListener('click', startAnimation);
     blitter = setInterval(setRandomColour, flashSpeed);
-    button.innerHTML = 'Stop Retro Loading Animation';
+    button.innerHTML = 'Stop Animation';
     button.addEventListener('click', stopAnimation);
   }
   const stopAnimation = () => {
     button.removeEventListener('click', stopAnimation);
     clearInterval(blitter);
-    button.innerHTML = 'Start Retro Loading Animation';
+    button.innerHTML = 'Start Animation';
     button.addEventListener('click', startAnimation);
   }
   stopAnimation();

@@ -9,5 +9,5 @@ function initLineChart() {
 }
 
 export default () => {
-  return `<script>${ initLineChart.toString() }; initLineCart();</script><div data-dependencies="/js/oi.linechart.min.js"></div>`;
+  return `<script>${ initLineChart.toString() }; initLineChart();</script>`;
 }

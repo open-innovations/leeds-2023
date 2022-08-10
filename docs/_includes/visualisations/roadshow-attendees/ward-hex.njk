@@ -1,37 +1,4 @@
-<script src="/js/oi.hexmap.min.js"></script>
-<style>
-  .hexmap {
-    height: 30rem;
-    width: 100%;
-    position: relative;
-    animation-duration: 0.3s;
-  }
-  .hexmap .tooltip {
-    position: absolute;
-    text-align: center;
-    background: black;
-    color: white;
-    padding: 0.25em 0.5em;
-    transform: translate3d(-50%,50%,0);
-    transition: left 0.1s linear, top 0.1s linear, opacity 0.5s ease-in-out;
-    border-radius: 4px;
-  }
-  .hexmap .tooltip::after {
-    content: "";
-    position: absolute;
-    bottom: auto;
-    width: 0;
-    height: 0;
-    border: 0.5em solid transparent;
-    left: 50%;
-    top: 0;
-    transform: translate3d(-50%,-100%,0);
-    border-color: transparent;
-    border-bottom-color: black;
-  }
-</style>
-
-<div id="ward-hexmap" class="hexmap"></div>
+{{ comp.oi.hexmap({ id: 'ward-hexmap' }) | safe }}
 
 <script>
   window.addEventListener('DOMContentLoaded', () => {
@@ -41,7 +8,7 @@
     const maxAttendees = Math.max(...wardData.map(x => x.attendees));
     const colourScale = (v = 0) => {
       const proportion = v / maxAttendees;
-      return `hsl(173, 100%, ${ 100 - proportion * 50}%)`
+      return `hsl(173, 100%, ${100 - proportion * 50}%)`
     }
 
     let outOfRegion = 0;

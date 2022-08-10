@@ -1,6 +1,6 @@
 {
   "imports": {
-    "std/": "https://deno.land/std@0.82.0/",
+    "std/": "https://deno.land/std@0.151.0/",
     "lume/": "https://deno.land/x/lume@v1.10.1/",
     "local/": "./local-lib/"
   }

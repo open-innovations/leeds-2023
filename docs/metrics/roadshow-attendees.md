@@ -10,17 +10,17 @@ templateEngine: njk,md
 
 # {{ title }}
 
-This [Hex cartogram](https://open-innovations.org/blog/2017-05-08-mapping-election-with-hexes) shows number of [Roadshow](https://leeds2023.co.uk/get-ready-for-the-roadshow-with-leeds-2023/) attendees who submitted Typeform responses categorised by their ward of residence (based on their supplied postcode). Both the Hex cartagram and the below chart are updated automatically on a nightly basis. 
+This [Hex cartogram](https://open-innovations.org/blog/2017-05-08-mapping-election-with-hexes) shows the number of people who both attended one of the [Leeds 2023 Roadshow events](https://leeds2023.co.uk/news/get-ready-for-the-roadshow-with-leeds-2023) and submitted Typeform survey responses afterwards. Attendees have been categorised by their ward of residence based on the postcode supplied when they completed the form.  
 
-Roadshow events are taking place across every ward in Leeds. The below data should not be considered at accurate representation of the number of attendees at any given event, as people will travel across ward boundaries to attend these activities as well as coming from beyond the city of Leeds. 
+When viewing the below data, consideration should be given to the fact that residents will travel across ward boundaries to attend events. In addition to this, based on supplied postcodes, others attended Roadshow events from beyond the city of Leeds.
 
-As the data is drawn automatically from submitted survey responses, it is also not an accurate count of the number of attendees. We will look to visualise this data as it is made available. 
+We will visualise a more accurate count of attendees at each Roadshow event as this data is made available.
 
 
 {% include "visualisations/roadshow-attendees/ward-hex.njk" %}
 
 
-This chart shows the number of Roadshow surveys submitted per week. The value is the cumulative feedback submitted.
+Updated automatically on a nightly basis, this chart shows the cumultative number of Roadshow surveys submitted per week.
 
 {% include "visualisations/roadshow-attendees/cumulative-graph.njk" %}
 

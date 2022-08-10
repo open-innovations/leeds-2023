@@ -47,4 +47,4 @@ export default function (page: any) {
     // Then append to the document head
     page.document.head.appendChild(newScriptElement);
   });
-};
+}

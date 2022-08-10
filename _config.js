@@ -53,6 +53,10 @@ site.remoteFile('/js/oi.hexmap.min.js', 'https://raw.githubusercontent.com/odile
 site.copy('/js');
 site.copy('/assets');
 
+// Get Favicon
+site.remoteFile('/favicon.ico', 'https://leeds2023.co.uk/favicon.ico');
+site.copy('/favicon.ico');
+
 site.copy('.nojekyll');
 
 site.filter('localize', (num) => num.toLocaleString())

@@ -9,7 +9,7 @@ metas:
   lang: en
   # keywords: []
   # image: The main image of the page, article, post, etc.
-  # icon: The logotype or icon of the site.
+  icon: /favicon.ico
   twitter: "@leeds_2023"
   # color: The color theme of the website.
   generator: true

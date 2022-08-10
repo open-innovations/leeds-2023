@@ -14,7 +14,7 @@
 </style>
 
 <script>
-  document.addEventListener('oi-linechart-ready', function () {
+  document.addEventListener('DOMContentLoaded', function () {
     const rawData = JSON.parse(`{{ metrics.roadshow_attendees.summary.rows | dump | safe }}`);
     const dateFormatter = (date) => date.toLocaleString('default', { day: 'numeric', month: 'short' });
     const data = {

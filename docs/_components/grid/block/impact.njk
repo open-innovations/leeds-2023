@@ -1,0 +1,20 @@
+---
+css: |
+  .impact-block {
+    --background: lightgrey;
+    --foreground: black;
+    color: var(--foreground);
+    background: var(--background);
+    padding: 1rem;
+    text-align: center;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  }
+  .impact-block:hover {
+    color: white;
+    background: black;
+  }
+---
+<div class="impact-block"
+  style="--foreground: {{ fg }}; --background: {{ bg }};">
+  {{ content | safe }}
+</div>

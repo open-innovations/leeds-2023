@@ -1,0 +1,100 @@
+---
+title: Leeds City Council KPI Report April 2022 to March 2024
+start_date: 2022-04-01
+end_date: 2024-03-31
+manual_measure:
+  artists_employed: 244
+  direct_or_indirect_employed: 131
+  higher_ed_partnerships: 6
+target:
+  household_engagement_pct: 75
+  major_events: 12
+  job_opportunities: 1000
+  work_experience_opportunities: 150
+  school_engagement_pct: 80
+  city_cultural_partnerships: 50
+  international_partnerships: 20
+  neighbourhood_hosts: 33
+  volunteer_recruitment: 1000
+  investment_leverage: 2
+  media_coverage_increase_pct: 50
+  digital_engagement_increase_pct: 50
+baseline:
+  media_coverage: 97
+  media_reach: 34396843
+colours:
+  bg:
+    - var(--l23-cyan)
+  fg:
+    - black
+---
+
+<h1>{{ title }}</h1>
+
+{% comp 'grid.autogrid' %}
+{% comp 'grid.block.full_width' %}
+<h2>Targets</h2>
+{% endcomp %}
+{% comp 'grid.block.impact', { fg: colours.fg[0], bg: colours.bg[0] } %}
+  LEEDS 2023 engages with
+  {{ comp.viz.bigNumber({ number: target.household_engagement_pct, suffix: '%' }) | safe }}
+  households of LEEDS
+{% endcomp %}
+{% comp 'grid.block.impact', { fg: colours.fg[0], bg: colours.bg[0] } %}
+LEEDS 2023 delivers
+  {{ comp.viz.bigNumber({ number: target.major_events }) | safe }}
+major events across the year
+{% endcomp %}
+{% comp 'grid.block.impact', { fg: colours.fg[0], bg: colours.bg[0] } %}
+  LEEDS 2023 creates job opportunities for at least
+  {{ comp.viz.bigNumber({ number: target.job_opportunities }) | safe }}
+  people (artists/freelancers/marketing communications)
+{% endcomp %}
+{% comp 'grid.block.impact', { fg: colours.fg[0], bg: colours.bg[0] } %}
+  LEEDS 2023 creates at least
+  {{ comp.viz.bigNumber({ number: target.work_experience_opportunities }) | safe }}
+  in-work experience opportunities for students/young people
+{% endcomp %}
+{% comp 'grid.block.impact', { fg: colours.fg[0], bg: colours.bg[0] } %}
+  LEEDS 2023 engages with at least
+  {{ comp.viz.bigNumber({ number: target.school_engagement_pct, suffix: '%' }) | safe }}
+  of schools in Leeds
+{% endcomp %}
+{% comp 'grid.block.impact', { fg: colours.fg[0], bg: colours.bg[0] } %}
+  LEEDS 2023 partners with at least
+  {{ comp.viz.bigNumber({ number: target.city_cultural_partnerships}) | safe }}
+  cultural partners in the city
+{% endcomp %}
+{% comp 'grid.block.impact', { fg: colours.fg[0], bg: colours.bg[0] } %}
+  LEEDS 2023 partners with at least
+  {{ comp.viz.bigNumber({ number: target.international_partnerships})  | safe }}
+  international artists/artistic organisations
+{% endcomp %}
+{% comp 'grid.block.impact', { fg: colours.fg[0], bg: colours.bg[0] } %}
+  LEEDS 2023 engages with all 33 wards and will recruit
+  {{ comp.viz.bigNumber({ number: target.neighbourhood_hosts }) | safe }}
+  Neighbourhood Hosts
+{% endcomp %}
+{% comp 'grid.block.impact', { fg: colours.fg[0], bg: colours.bg[0] } %}
+  LEEDS 2023 recruits at least
+  {{ comp.viz.bigNumber({ number: target.volunteer_recruitment }) | safe }}
+  volunteers in the city
+{% endcomp %}
+{% comp 'grid.block.impact', { fg: colours.fg[0], bg: colours.bg[0] } %}
+  LEEDS 2023 attracts at least 
+  {{ comp.viz.bigNumber({ number: target.investment_leverage, suffix: 'x' }) | safe }}
+  the investment of the Council from alternative sources of funding
+{% endcomp %}
+{% comp 'grid.block.impact', { fg: colours.fg[0], bg: colours.bg[0] } %}
+  LEEDS 2023 will work with Visit Leeds and other Tourism Partners to promote and attract more visitors to the city
+{% endcomp %}
+{% comp 'grid.block.impact', { fg: colours.fg[0], bg: colours.bg[0] } %}
+  Increase media coverage of LEEDS 2023 by at least
+  {{ comp.viz.bigNumber({ number: target.media_coverage_increase_pct, suffix: '%' }) | safe }}
+{% endcomp %}
+{% comp 'grid.block.impact', { fg: colours.fg[0], bg: colours.bg[0] } %}
+  Increase digital engagement with LEEDS 2023 by at least
+  {{ comp.viz.bigNumber({ number: target.digital_engagement_increase_pct, suffix: '%' }) | safe }}
+  (website and social followers/users plus content engagement metrics)
+{% endcomp %}
+{% endcomp %}

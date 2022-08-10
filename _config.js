@@ -16,6 +16,9 @@ const site = lume({
   }
 });
 
+// Add dependencies
+site.process(['.html'], autoDependency);
+
 site.use(base_path());
 site.use(imagick());
 site.use(inline());
@@ -32,8 +35,6 @@ async function csvLoader(path) {
   return { rows: content };
 }
 site.loadData([".csv"], csvLoader);
-
-site.process(['.html'], autoDependency);
 
 // TODO Get access to the font files
 // [

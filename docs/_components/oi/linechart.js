@@ -6,9 +6,8 @@ function initLineChart() {
     script.addEventListener('load', () => document.dispatchEvent(lineChartReady));
     document.head.appendChild(script);
   };
-  document.head.querySelector('script[src*="oi.linechart.min.js"]');
 }
 
 export default () => {
-  return `<script>${ initLineChart.toString() }; initLineChart();</script>`;
+  return `<script>${ initLineChart.toString() }; initLineCart();</script><div data-dependencies="/js/oi.linechart.min.js"></div>`;
 }

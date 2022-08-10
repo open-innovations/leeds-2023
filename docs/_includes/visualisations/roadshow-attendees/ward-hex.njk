@@ -39,7 +39,6 @@
     const wardData = JSON.parse('{{ metrics.roadshow_attendees.by_ward.rows | dump | safe }}');
 
     const maxAttendees = Math.max(...wardData.map(x => x.attendees));
-    console.log(maxAttendees)
     const colourScale = (v = 0) => {
       const proportion = v / maxAttendees;
       return `hsl(173, 100%, ${ 100 - proportion * 50}%)`

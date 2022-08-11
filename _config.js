@@ -6,7 +6,7 @@ import jsx from "lume/plugins/jsx.ts";
 import metas from "lume/plugins/metas.ts";
 import postcss from "lume/plugins/postcss.ts";
 import { parse as parseCsv } from 'std/encoding/csv.ts';
-import autoDependency from 'local/oi/auto-dependency.ts';
+import autoDependency from 'oi-lume-utils/processors/auto-dependency.ts';
 
 const site = lume({
   location: new URL("https://open-innovations.github.io/leeds-2023/"),

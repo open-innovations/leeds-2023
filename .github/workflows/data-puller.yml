@@ -28,6 +28,7 @@ jobs:
         run: |
           python scripts/update_data.py
           python scripts/process_for_site.py
+          python scripts/metrics/social/automate_sprout.py
 
       - name: Commit changes to files
         working-directory: .

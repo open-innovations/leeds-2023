@@ -7,7 +7,7 @@ def clear_dir(dir: str):
     for file in combine.dir_file_paths(dir):
         os.remove(file)
 
-TEMP_DIR_LOCATION = "data/working/sprout"
+TEMP_DIR_LOCATION = "working/sprout"
 MASTER_FILE_LOCATION = "data/metrics/social/{}.csv"
 
 df =  combine.combine_dir(TEMP_DIR_LOCATION)

@@ -49,6 +49,8 @@ def clean_df_1(df: pd.DataFrame) -> pd.DataFrame:
 
 SORT = "date"
 def clean_df_2(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.fillna(0)
+    makeFloatNullableInt(df)
     df = df.drop_duplicates()
     df = sort_df(df,SORT)
     return df

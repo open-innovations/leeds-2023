@@ -18,7 +18,7 @@ def combine_files(files: list[str],pre=default_clean,post=default_clean,write_pa
     return combine_dfs(dfs,pre,post,write_path)
 
 def combine_file_df(file: str, df: pd.DataFrame,pre=default_clean,post=default_clean,write_path=None) -> pd.DataFrame:
-    file_df = pd.read_csv(file)
+    file_df = pd.read_csv(file,thousands=",")
     df = pre(df)
     return combine_dfs([file_df,df],post=post,write_path=write_path)
 
@@ -33,7 +33,7 @@ def combine_dir(dir: str,pre=default_clean,post=default_clean,write_path=None) -
 def read_csvs(files: list[str]) -> list[pd.DataFrame]:
     dfs = []
     for csv_file in files:
-        dfs.append(pd.read_csv(csv_file))
+        dfs.append(pd.read_csv(csv_file,thousands=",",na_values=[""]))
 
     return dfs
 

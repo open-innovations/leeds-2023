@@ -15,12 +15,12 @@ links:
     summary: Website of LEEDS 2023 Year Of Culture
 ---
 
-{% comp "layout.block", { background_colour: 'var(--l23-yellow)'} %}
+{% comp "layout.block", { background_colour: 'var(--l23-yellow)', vertical_padding: '3rem' } %}
   <h1 style="text-align: center; font-size: 3rem;">LEEDS 2023 Year of Culture</h1>
   <h2 style="text-align: center; font-size: 4rem;">Data Microsite</h2>
 {% endcomp %}
 
-{% comp "layout.block" %}
+{% comp "layout.block", { vertical_padding: '2rem'} %}
 {% comp "grid.autogrid" %}
   {% for link in links %}
     {{ comp.grid.link({

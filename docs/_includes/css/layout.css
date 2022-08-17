@@ -1,5 +1,6 @@
-main > *:first-child{
-  padding-top: var(--header-height);
+.top-spacer {
+  height: var(--header-height);
+  width: 100%;
 }
 
 img {

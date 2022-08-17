@@ -2,17 +2,26 @@
 css: |
   .max-width-container {
     --background-colour: initial;
-    padding: 0 32px;
+    --vertical-padding: 0;
+    padding: var(--vertical-padding) 32px;
     background-color: var(--background-colour);
     & > * {
       max-width: var(--max-width);
       margin-left: auto;
       margin-right: auto;
     }
+    & > *:first-child {
+      margin-top: 0;      
+    }
+    & > *:last-child {
+      margin-bottom: 0;
+    }
   }
 ---
+{% set space = joiner(' ') %}
 <div class="max-width-container" style="
-  {%- if background_colour %}--background-colour: {{ background_colour }};{% endif -%}
+  {%- if background_colour %}{{ space() }}--background-colour: {{ background_colour }};{% endif -%}
+  {%- if vertical_padding %}{{ space() }}--vertical-padding: {{ vertical_padding }};{% endif -%}
 ">
   {{ content | safe }}
 </div>

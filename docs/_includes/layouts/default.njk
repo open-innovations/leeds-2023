@@ -12,7 +12,6 @@
   </head>
 
   <body>
-
     <div class="site-header-container">
       {% comp "layout.block", { background_colour: 'var(--l23-dark-blue-grey)' } %}
       <header class="site-header" role="banner">
@@ -24,6 +23,7 @@
       </header>
       {% endcomp %}
     </div>
+    <div class='top-spacer'></div>
 
     <main id="main" role="main" aria-label="Content">
       {{ content | safe }}

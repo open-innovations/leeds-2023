@@ -15,6 +15,7 @@
   --title-fontstack: 'Rebond Grotesque', 'Rebond Grotesk', sans-serif;  
   --max-width: 1440px;
   --header-height: 80px;
+  --background-colour: initial;
   --l23-cyan: hsl(173, 65%, 61%);
   --l23-dark-cyan: hsl(191, 57%, 15%);
   --l23-yellow: hsl(52, 100%, 50%);

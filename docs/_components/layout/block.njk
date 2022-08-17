@@ -1,0 +1,18 @@
+---
+css: |
+  .max-width-container {
+    --background-colour: initial;
+    padding: 0 32px;
+    background-color: var(--background-colour);
+    & > * {
+      max-width: var(--max-width);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+---
+<div class="max-width-container" style="
+  {%- if background_colour %}--background-colour: {{ background_colour }};{% endif -%}
+">
+  {{ content | safe }}
+</div>

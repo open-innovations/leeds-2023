@@ -1,6 +1,6 @@
 ---
 title: LEEDS 2023 Data
-templateEngine: njk
+layout: layouts/default.njk
 links:
   - title: Roadshow Attendees
     link: ~/metrics/roadshow-attendees.md
@@ -15,10 +15,13 @@ links:
     summary: Website of LEEDS 2023 Year Of Culture
 ---
 
+{% comp "layout.block", { background_colour: 'var(--l23-yellow)'} %}
+  <h1 style="text-align: center; font-size: 3rem;">LEEDS 2023 Year of Culture</h1>
+  <h2 style="text-align: center; font-size: 4rem;">Data Microsite</h2>
+{% endcomp %}
+
+{% comp "layout.block" %}
 {% comp "grid.autogrid" %}
-  {% comp "grid.block.full_width" %}
-    <h1 style="text-align: center; font-size: 4rem;">Welcome to the LEEDS 2023 Year of Culture Data Microsite</h1>
-  {% endcomp %}
   {% for link in links %}
     {{ comp.grid.link({
       title: link.title,
@@ -30,5 +33,4 @@ links:
     {{ comp.animatedLogo() | safe }}
   {% endcomp %}
 {% endcomp %}
-
-
+{% endcomp %}

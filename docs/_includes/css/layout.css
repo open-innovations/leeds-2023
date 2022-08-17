@@ -1,4 +1,4 @@
-main {
+main > *:first-child{
   padding-top: var(--header-height);
 }
 
@@ -6,11 +6,3 @@ img {
   max-width: 100%;
 }
 
-.max-width-container {
-  padding: 0 32px;
-  & > * {
-    max-width: var(--max-width);
-    margin-left: auto;
-    margin-right: auto;
-  }
-}

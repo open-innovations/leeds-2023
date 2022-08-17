@@ -1,6 +1,5 @@
 .site-header-container {
   position: fixed;
-  background-color: var(--l23-dark-blue-grey);
   z-index: 1000;
   top: 0;
   right: 0;

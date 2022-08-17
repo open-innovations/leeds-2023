@@ -1,8 +1,6 @@
 ---
 layout: layouts/default.njk
 ---
-<div class="max-width-container">
-  <section class="simple-content">
-    {{ content | safe }}
-  </section>
-</div>
+{% comp "layout.block" %}
+  {{ content | safe }}
+{% endcomp %}

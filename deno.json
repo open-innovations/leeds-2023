@@ -3,6 +3,7 @@
   "tasks": {
     "lume": "deno eval \"import 'lume/task.ts'\" --",
     "build": "deno task lume",
-    "serve": "deno task lume -s"
+    "serve": "deno task lume -s",
+    "get-fonts": "deno task lume run get-fonts"
   }
 }

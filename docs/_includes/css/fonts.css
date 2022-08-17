@@ -1,0 +1,56 @@
+@font-face {
+  font-family: DM Sans;
+  src: url(https://leeds2023.co.uk/_next/static/media/DMSans-BoldItalic.b1e68348.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/DMSans-BoldItalic.215e6945.woff) format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: DM Sans;
+  src: url(https://leeds2023.co.uk/_next/static/media/DMSans-MediumItalic.e1c27f13.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/DMSans-MediumItalic.f4ad3dfc.woff) format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: DM Sans;
+  src: url(https://leeds2023.co.uk/_next/static/media/DMSans-Regular.bff198ba.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/DMSans-Regular.043bc03e.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: DM Sans;
+  src: url(https://leeds2023.co.uk/_next/static/media/DMSans-Italic.386920f4.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/DMSans-Italic.22438281.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: DM Sans;
+  src: url(https://leeds2023.co.uk/_next/static/media/DMSans-Medium.10941ca6.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/DMSans-Medium.795c897d.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: DM Sans;
+  src: url(https://leeds2023.co.uk/_next/static/media/DMSans-Bold.32657747.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/DMSans-Bold.f53aa3f1.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Rebond Grotesque;
+  src: url(https://leeds2023.co.uk/_next/static/media/RebondGrotesque-Medium.47af8e4d.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/RebondGrotesque-Medium.f4c7dbcd.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Rebond Grotesque;
+  src: url(https://leeds2023.co.uk/_next/static/media/RebondGrotesque-Bold.c02f4686.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/RebondGrotesque-Bold.7f5910ca.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

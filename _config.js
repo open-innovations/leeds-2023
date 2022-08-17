@@ -8,6 +8,8 @@ import postcss from "lume/plugins/postcss.ts";
 import { parse as parseCsv } from 'std/encoding/csv.ts';
 import autoDependency from 'oi-lume-utils/processors/auto-dependency.ts';
 
+import getFonts from 'local/oi/get-fonts.ts';
+
 const site = lume({
   location: new URL("https://open-innovations.github.io/leeds-2023/"),
   src: "./docs",
@@ -47,6 +49,8 @@ site.loadData([".csv"], csvLoader);
 // ].forEach(font => {
 //   site.remoteFile(`/assets/fonts/${font}`, `https://leeds2023.co.uk/wp-content/themes/leeds2023/assets/fonts/${font}`);
 // })
+
+site.script("get-fonts", getFonts);
 
 site.remoteFile('/js/oi.linechart.min.js', 'https://raw.githubusercontent.com/open-innovations/oi.linechart.js/main/oi.linechart.min.js');
 site.remoteFile('/js/oi.hexmap.min.js', 'https://raw.githubusercontent.com/odileeds/odi.hexmap.js/main/odi.hexmap.min.js');

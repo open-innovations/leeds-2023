@@ -17,7 +17,7 @@
       <header class="site-header" role="banner">
         <a class="logo" rel="author" href="/">
           <img class='header-logo' src='/assets/images/logo.svg' inline />
-          <h1>{{ metas.site }}</h1>
+          <h1>{{ header_title or metas.site }}</h1>
         </a>
         {{ comp.nav({ url: url }) | safe }}
       </header>

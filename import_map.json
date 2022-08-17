@@ -3,6 +3,6 @@
     "std/": "https://deno.land/std@0.151.0/",
     "lume/": "https://deno.land/x/lume@v1.10.1/",
     "local/": "./local-lib/",
-    "oi-lume-utils/": "https://cdn.jsdelivr.net/gh/open-innovations/oi-lume-utils@0.1.0/"
+    "oi-lume-utils/": "https://cdn.jsdelivr.net/gh/open-innovations/oi-lume-utils@0.2.0-pre/"
   }
 }

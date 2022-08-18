@@ -5,8 +5,8 @@ import inline from "lume/plugins/inline.ts";
 import jsx from "lume/plugins/jsx.ts";
 import metas from "lume/plugins/metas.ts";
 import postcss from "lume/plugins/postcss.ts";
-import { parse as parseCsv } from 'std/encoding/csv.ts';
 import autoDependency from 'oi-lume-utils/processors/auto-dependency.ts';
+import csvLoader from 'oi-lume-utils/loaders/csv-loader.ts';
 
 import getFonts from 'local/oi/get-fonts.ts';
 
@@ -30,12 +30,6 @@ site.use(postcss());
 
 site.loadPages([".html"]);
 
-async function csvLoader(path) {
-  const content = await parseCsv(await Deno.readTextFile(path), {
-    skipFirstRow: true,
-  });
-  return { rows: content };
-}
 site.loadData([".csv"], csvLoader);
 
 // TODO Get access to the font files

@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title | default(metas.site) }}</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ metas.icon }}"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ metas.icon }}" />
     <link rel="stylesheet" href="/style/components.css">
     <link rel="stylesheet" href="/style/main.css">
     {# TODO feed_meta #}
   </head>
 
   <body>
-
-    <div class="max-width-container site-header-container">
+    <div class="site-header-container">
+      {% comp "layout.block", { background_colour: 'var(--l23-dark-blue-grey)' } %}
       <header class="site-header" role="banner">
         <a class="logo" rel="author" href="/">
           <img class='header-logo' src='/assets/images/logo.svg' inline />
-          <h1>{{ metas.site }}</h1>
+          <h1>{{ header_title or metas.site }}</h1>
         </a>
         {{ comp.nav({ url: url }) | safe }}
       </header>
+      {% endcomp %}
     </div>
+    <div class='top-spacer'></div>
 
     <main id="main" role="main" aria-label="Content">
       {{ content | safe }}

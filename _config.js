@@ -11,7 +11,7 @@ import csvLoader from 'oi-lume-utils/loaders/csv-loader.ts';
 import getFonts from 'local/oi/get-fonts.ts';
 
 const site = lume({
-  location: new URL("https://open-innovations.github.io/leeds-2023/"),
+  location: new URL("https://data.leeds2023.open-innovations.org/"),
   src: "./docs",
   components: {
     cssFile: '/style/components.css'
@@ -56,6 +56,7 @@ site.remoteFile('/favicon.ico', 'https://leeds2023.co.uk/favicon.ico');
 site.copy('/favicon.ico');
 
 site.copy('.nojekyll');
+site.copy('CNAME');
 
 site.filter('localize', (num) => num.toLocaleString())
 

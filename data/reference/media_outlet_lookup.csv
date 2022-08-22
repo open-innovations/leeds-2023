@@ -44,36 +44,26 @@ Rhubarb Radio,Local/Regional,,Broadcast,2
 The Guardian,National,Northern Correspondents,Print,1
 Sunday Times,National,Northern Correspondents,Print,1
 The Times,National,Northern Correspondents,Print,1
-The Guardian,National,Northern Correspondents,Print,1
-The Guardian,National,Northern Correspondents,Print,2
 Daily Express,National,Northern Correspondents,Print,2
 Financial Times,National,Northern Correspondents,Print,2
 Daily Mail,National,Northern Correspondents,Print,2
-The Guardian,National,Northern Correspondents,Print,2
 i,National,Northern Correspondents,Print,2
-The Guardian,National,Culture,,1
 The Guardian,National,Culture,,1
 BBC,National,Culture,,1
 Daily Telegraph,National,Culture,,1
 Sunday Times,National,Culture,,1
 i,National,Culture,,1
-The Guardian,National,Culture,,2
-The Guardian,National,Culture,,2
 Press Association,National,Culture,,2
 BBC Online,National,Culture,,2
-The Guardian,National,Culture,,2
-i,National,Culture,,2
-BBC,National,Culture,,2
 Specialist,National,Culture,,2
 The Times,National,Culture,,2
 Guardian Professionals Network,National,Culture,,2
+Freelance,National,Photography,,1
 Daily Telegraph,National,Photography,,1
 Guardian,National,Photography,,2
-Guardian,National,Photography,,2
-Daily Telegraph,National,Photography,,2
 Sunday Telegraph,National,Photography,,2
 Sunday Times,National,Photography,,2
-Sunday Times,National,Photography,,2
+The Times,National,Photography,,2
 FT,National,Photography,,2
 PA,National,Photographers/Agencies,,1
 AFP,National,Photographers/Agencies,,1
@@ -84,8 +74,6 @@ BBC World Service The Arts Hour,National,,Broadcast/Digital,1
 Channel 4 News,National,,Broadcast/Digital,1
 BBC Arts,National,,Broadcast/Digital,1
 ITV News - Arts,National,,Broadcast/Digital,1
-Times Radio,National,,Broadcast/Digital,1
-BBC World - Arts Hour,National,,Broadcast/Digital,1
 Times Radio,National,,Broadcast/Digital,1
 BBC North,National,,Broadcast/Digital,1
 BBC Radio 2,National,,Broadcast/Digital,1
@@ -99,7 +87,6 @@ BBC R4 Arts,National,,Broadcast/Digital,2
 Blue Peter,National,,Broadcast/Digital,2
 The Steph McGovern Show,National,,Broadcast/Digital,2
 BBC Radio 3 Free Thinking,National,,Broadcast/Digital,2
-BBC Arts,National,,Broadcast/Digital,2
 BBC 5 Live- Nihal,National,,Broadcast/Digital,2
 Cerys Matthews - 6 Music,National,,Broadcast/Digital,2
 BBC Radio 4 Today programme,National,,Broadcast/Digital,2

@@ -9,3 +9,6 @@ templateEngine: njk,md
 ---
 
 # {{ title }}
+
+{% include "visualisations/social-media/social-graph.njk" %}
+

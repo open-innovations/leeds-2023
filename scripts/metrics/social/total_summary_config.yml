@@ -6,7 +6,8 @@ data-file:
     metrics: &metrics
     - audience_last
     - engagements_total
-    - net_audience_growth_total
+    - audience_gained_total
+    - impressions_total
     filter-range: &filter 2022-01-01:2022-12-31
     filter-col: &filter_col_name date
   facebook:

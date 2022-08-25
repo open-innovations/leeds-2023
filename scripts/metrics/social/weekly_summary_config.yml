@@ -11,7 +11,8 @@ data-file:
     metrics: &metrics
     - audience_last
     - engagements_total
-    - net_audience_growth_total
+    - audience_gained_total
+    - impressions_total
   facebook:  
     path: data\metrics\social\facebook.csv
     out-csv: docs\_data\metrics\social_media\facebook_weekly.csv

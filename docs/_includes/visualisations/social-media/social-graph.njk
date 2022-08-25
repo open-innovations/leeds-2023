@@ -1,7 +1,9 @@
 {{ comp.oi.linechart() | safe }}
-<div data-dependencies="oi-lume-utils/loaders/csv-loader.ts"></div>
 
-<div id="social-chart-1" class="social-chart"></div>
+<div id="twitter-chart" class="social-chart"></div>
+<div id="instagram-chart" class="social-chart"></div>
+<div id="facebook-chart" class="social-chart"></div>
+<div id="linkedin-chart" class="social-chart"></div>
 
 <style>
   .social-chart {
@@ -15,26 +17,26 @@
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    //const rawDataSocial = csvLoader("metrics.social_media.twitter_weekly");
-    const rawData = JSON.parse(`{{ metrics.roadshow_attendees.summary.rows | dump | safe }}`);
+  function fillGraph(params){
+    const rawData = JSON.parse(params.file);
     const dateFormatter = (date) => date.toLocaleString('default', { day: 'numeric', month: 'short' });
     const data = {
-      week: rawData.map(x => new Date(x.week_ending)),
-      values: rawData.map(x => x.cumulative_attendees),
+      week: rawData.map(x => new Date(x.week_starting)),
+      values: rawData.map(x => x.audience_last),
       axis: {
-        yMax: Math.max(...rawData.map(x => x.cumulative_attendees))
+        yMax: Math.max(...rawData.map(x => x.audience_last))
       }
     };
 
+    const gap = 500;
     // Work out maximum y value and labels
-    const yMax = Math.ceil(Math.max(...data.values)/50) * 50;
+    const yMax = Math.ceil(Math.max(...data.values)/gap) * gap;
     const yLabels = {};
-    for (let l = 0; l <= yMax; l+=50) yLabels[l] = { label: l};
+    for (let l = 0; l <= yMax; l+=gap) yLabels[l] = { label: l};
 
     const labels = data.week.reduce((a, c, n) => ({ ...a, [n]: { label: dateFormatter(c) } }), {})
-    const attendees = data.values.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
-    chart = OI.linechart(document.getElementById('social-chart-1'), {
+    const values = data.values.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
+    chart = OI.linechart(document.getElementById(params.domID), {
       left: 80,
       right: 30,
       top: 30,
@@ -45,24 +47,64 @@
       'axis': {
         'x': {
           'line': { 'show': true },
-          'title': { 'label': 'Week ending (Friday)', 'anchor': 'middle' },
+          'title': { 'label': 'Week starting (Monday)', 'anchor': 'middle' },
           'labels': labels,
         },
         'y': {
-          'line': { show: false },
-          'grid': { 'show': true, 'stroke-width': '0.5px' },
-          'title': { 'label': 'Attendees' },
+          'line': { show: true },
+          'grid': { 'show': false, 'stroke-width': '0.5px' },
+          'title': { 'label': 'Audience' },
           'max': yMax,
           'labels': yLabels,
         }
       }
     });
-    chart.addSeries(attendees, {
-      'title': 'Attendee Responses (cumulative)',
-      'points': { 'size': 6, 'color': 'var(--l23-cyan)' },
-      'line': { 'color': 'var(--l23-cyan)' },
-      // 'tooltip': { 'label': 'Cumulative attendees' }
+    chart.addSeries(values, {
+      'title': params.chartTitle,
+      'points': { 'size': 6, 'color': params.colour },
+      'line': { 'color': params.colour },
+      // 'tooltip': { 'label': 'Cumulative values' }
     });
     chart.draw();
+  
+
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    paramsTwitter = {
+              file: `{{ metrics.social_media.twitter_weekly.rows | dump | safe }}`,
+              domID: "twitter-chart",
+              colour: "#1DA1F2",
+              chartTitle: "Twitter Audience"
+            };
+
+    paramsInstagram = {
+              file: `{{ metrics.social_media.instagram_weekly.rows | dump | safe }}`,
+              domID: "instagram-chart",
+              colour: "#833AB4",
+              chartTitle: "Instagram Audience"
+            };
+
+    paramsFacebook = {
+              file: `{{ metrics.social_media.facebook_weekly.rows | dump | safe }}`,
+              domID: "facebook-chart",
+              colour: "#4267B2",
+              chartTitle: "Facebook Audience"
+            };
+
+    paramsLinkedin = {
+              file: `{{ metrics.social_media.linkedin_weekly.rows | dump | safe }}`,
+              domID: "linkedin-chart",
+              colour: "#0A66C2",
+              chartTitle: "Linkedin Audience"
+            };
+
+    fillGraph(paramsTwitter);
+    fillGraph(paramsInstagram);
+    fillGraph(paramsFacebook);
+    fillGraph(paramsLinkedin);
+
+
+
+
   });
 </script>

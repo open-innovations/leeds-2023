@@ -72,8 +72,16 @@ def add_file_level_meta(file_meta,summary,keep_reserved=False):
 
     return fl
 
+def filter_data(data: pd.DataFrame,filter_col,filter_range):
+    min,max = filter_range.split(":")
+    data = data[data[filter_col] >= min]
+    data = data[data[filter_col] <= max]
+    return data
+
+
 def get_summary_file(config):
     data = pd.read_csv(config["path"])
+    data = filter_data(data,config["filter-col"],config["filter-range"])
     metrics = get_metrics(data,config["metrics"])
     return metrics #format(metrics)
 
@@ -88,6 +96,7 @@ def get_summary_dir(config):
 def get_summary_file_group_by_date(config):
     summary = []
     data = pd.read_csv(config["path"])
+    data = filter_data(data,config["filter-col"],config["filter-range"])
     column,period = config["group-by-date"].split("_")
     
     data[column] = pd.to_datetime(data[column])

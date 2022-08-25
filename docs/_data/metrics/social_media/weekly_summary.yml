@@ -1,0 +1,26 @@
+title: Leeds 2023 twitter Summary Statistics
+service:
+  twitter:
+    out-csv: docs\_data\metrics\social_media\twitter_weekly.csv
+    group-by-date-col: week_starting
+    filter-range: 2022-01-01:2022-12-31
+    filter-col: date
+    metrics: {}
+  facebook:
+    out-csv: docs\_data\metrics\social_media\facebook_weekly.csv
+    group-by-date-col: week_starting
+    filter-range: 2022-01-01:2022-12-31
+    filter-col: date
+    metrics: {}
+  instagram:
+    out-csv: docs\_data\metrics\social_media\instagram_weekly.csv
+    group-by-date-col: week_starting
+    filter-range: 2022-01-01:2022-12-31
+    filter-col: date
+    metrics: {}
+  linkedin:
+    out-csv: docs\_data\metrics\social_media\linkedin_weekly.csv
+    group-by-date-col: week_starting
+    filter-range: 2022-01-01:2022-12-31
+    filter-col: date
+    metrics: {}

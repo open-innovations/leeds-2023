@@ -6,6 +6,8 @@ data-file:
     out-csv: docs\_data\metrics\social_media\twitter_weekly.csv
     group-by-date: &period date_W-SUN
     group-by-date-col: &col_name week_starting
+    filter-range: &filter 2022-01-01:2022-12-31
+    filter-col: &filter_col_name date
     metrics: &metrics
     - audience_last
     - engagements_total
@@ -15,28 +17,22 @@ data-file:
     out-csv: docs\_data\metrics\social_media\facebook_weekly.csv
     group-by-date: *period
     group-by-date-col: *col_name
+    filter-range: *filter
+    filter-col: *filter_col_name
     metrics: *metrics  
   instagram:  
     path: data\metrics\social\instagram.csv
     out-csv: docs\_data\metrics\social_media\instagram_weekly.csv
     group-by-date: *period
     group-by-date-col: *col_name
+    filter-range: *filter
+    filter-col: *filter_col_name
     metrics: *metrics
   linkedin:  
     path: data\metrics\social\linkedin.csv
     out-csv: docs\_data\metrics\social_media\linkedin_weekly.csv
     group-by-date: *period
     group-by-date-col: *col_name
-    metrics: *metrics
-  twitter_total:
-    path: data\metrics\social\twitter.csv
-    metrics: *metrics 
-  facebook_total:
-    path: data\metrics\social\facebook.csv
-    metrics: *metrics
-  instagram_total:
-    path: data\metrics\social\instagram.csv
-    metrics: *metrics 
-  linkedin_total:
-    path: data\metrics\social\linkedin.csv
+    filter-range: *filter
+    filter-col: *filter_col_name
     metrics: *metrics

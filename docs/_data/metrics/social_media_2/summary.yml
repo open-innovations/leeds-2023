@@ -1,38 +1,34 @@
 title: Leeds 2023 twitter Summary Statistics
 service:
   twitter:
-    out-csv: docs\_data\metrics\social_media\twitter_weekly.csv
-    group-by-date-col: week_starting
-    metrics: {}
-  facebook:
-    out-csv: docs\_data\metrics\social_media\facebook_weekly.csv
-    group-by-date-col: week_starting
-    metrics: {}
-  instagram:
-    out-csv: docs\_data\metrics\social_media\instagram_weekly.csv
-    group-by-date-col: week_starting
-    metrics: {}
-  linkedin:
-    out-csv: docs\_data\metrics\social_media\linkedin_weekly.csv
-    group-by-date-col: week_starting
-    metrics: {}
-  twitter_total:
     metrics:
       audience_last: 16510
-      engagements_total: 23723
-      net_audience_growth_total: 1425
-  facebook_total:
+      engagements_total: 44394
+      audience_gained_total: 1432
+      impressions_total: 2140846
+    filter-range: 2022-01-01:2022-12-31
+    filter-col: date
+  facebook:
     metrics:
       audience_last: 3673
-      engagements_total: 4576
-      net_audience_growth_total: 90
-  instagram_total:
+      engagements_total: 17304
+      audience_gained_total: 222
+      impressions_total: 501897
+    filter-range: 2022-01-01:2022-12-31
+    filter-col: date
+  instagram:
     metrics:
       audience_last: 5170
-      engagements_total: 1726
-      net_audience_growth_total: 650
-  linkedin_total:
+      engagements_total: 3041
+      audience_gained_total: 841
+      impressions_total: 77561
+    filter-range: 2022-01-01:2022-12-31
+    filter-col: date
+  linkedin:
     metrics:
       audience_last: 2214
-      engagements_total: 3559
-      net_audience_growth_total: 673
+      engagements_total: 4845
+      audience_gained_total: 1059
+      impressions_total: 69192
+    filter-range: 2022-01-01:2022-12-31
+    filter-col: date

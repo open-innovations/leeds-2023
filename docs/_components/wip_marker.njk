@@ -1,0 +1,19 @@
+---
+css: |
+  .wip {
+    --fg: inherit;
+    --bg: inherit;
+    color: var(--fg);
+    background-color: var(--bg);
+    padding: 0.4rem 0.8rem;
+  }
+---
+{% set space = joiner(' ') %}
+<div class='wip' style="
+  {%- if fg -%}
+    {{ space() }}--fg: {{ fg }};
+  {%- endif -%}
+  {%- if bg -%}
+    {{ space() }}--bg: {{ bg }};
+  {%- endif -%}
+">Work in Progress</div>

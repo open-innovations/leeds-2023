@@ -7,6 +7,6 @@ nav_order: 10
 
 {% comp 'grid.autogrid' %}
   {% for report in search.pages('report') %}
-    {{ comp.grid.link({ link: report.data.url, title: report.data.title }) | safe }}
+    {{ comp.grid.link({ link: report.data.url, title: report.data.title, workInProgress: report.data.work_in_progress }) | safe }}
   {% endfor %}
 {% endcomp %}

@@ -1,16 +1,22 @@
-export default ({ title, link, summary, id, cls = '' }) => <div>
-  <a id={id} class={`grid-link ${cls}`} href={link}>
-    <h2>{title}</h2>
-    <p>{summary}</p>
+export default ({ title, link, workInProgress = false, summary, id, cls = '', comp }) => `<div>
+  <a id=${id} class='grid-link ${cls}' href=${link}>
+    <h2>${title}</h2>
+    ${ summary && `<p>${summary}</p>` || '' }
+    ${ workInProgress && comp.wip_marker({
+      bg: 'var(--l23-yellow)',
+      fg: 'black',
+    }) || '' }
   </a>
-</div>;
+</div>`;
 
 export const css = `
 .grid-link {
   color: #000;
   background-color: var(--l23-cyan);
   box-sizing: border-box;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   padding: 1.5em;
   text-decoration: none;
@@ -21,11 +27,9 @@ export const css = `
   }
   & > :first-child {
     margin-top: 0;
-    padding-top: 0;
   }
   & > :last-child {
     margin-bottom: 0;
-    padding-bottom: 0;
   }
 }
 `;

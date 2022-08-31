@@ -15,3 +15,6 @@ th {
   font-weight: bold;
   font-family: var(--title-fontstack);
 }
+td, th {
+  padding: 0.5rem;
+}

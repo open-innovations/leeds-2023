@@ -1,0 +1,24 @@
+---
+title: Fundraising
+summary: Data about the organisations who are funding LEEDS 2023.
+columns:
+  - key: stage
+    name: Fundraising Stage
+  - key: count
+    name: Count
+---
+
+<h1>{{ title }}</h1>
+
+<p>
+  This page shows data collected about the Leeds 2023 Fundraising activity.
+</p>
+
+<h2>
+  Summary of organisations by stage.
+</h2>
+
+{{ comp.charts.table({
+  columns: columns,
+  rows: metrics.fundraising.count_by_stage.rows
+}) | safe }}

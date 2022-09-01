@@ -51,6 +51,16 @@ site.remoteFile('/js/oi.hexmap.min.js', 'https://raw.githubusercontent.com/odile
 site.copy('/js');
 site.copy('/assets');
 
+// Publish raw data
+[
+  'roadshow_attendees/count_by_constituency.csv',
+  'roadshow_attendees/count_by_ward.csv',
+  'roadshow_attendees/summary.csv',
+].forEach(file => {
+  site.remoteFile(`/data/${file}`, `./data/metrics/${file}`)
+})
+site.copy('/data');
+
 // Get Favicon
 site.remoteFile('/favicon.ico', 'https://leeds2023.co.uk/favicon.ico');
 site.copy('/favicon.ico');

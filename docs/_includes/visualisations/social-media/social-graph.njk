@@ -1,9 +1,24 @@
 {{ comp.oi.linechart() | safe }}
 
-<div id="twitter-chart" class="social-chart"></div>
-<div id="instagram-chart" class="social-chart"></div>
-<div id="facebook-chart" class="social-chart"></div>
-<div id="linkedin-chart" class="social-chart"></div>
+<div id="twitter-chart-audience" class="social-chart"></div>
+<div id="instagram-chart-audience" class="social-chart"></div>
+<div id="facebook-chart-audience" class="social-chart"></div>
+<div id="linkedin-chart-audience" class="social-chart"></div>
+
+<div id="twitter-chart-engagement" class="social-chart"></div>
+<div id="instagram-chart-engagement" class="social-chart"></div>
+<div id="facebook-chart-engagement" class="social-chart"></div>
+<div id="linkedin-chart-engagement" class="social-chart"></div>
+
+<div id="twitter-chart-impressions" class="social-chart"></div>
+<div id="instagram-chart-impressions" class="social-chart"></div>
+<div id="facebook-chart-impressions" class="social-chart"></div>
+<div id="linkedin-chart-impressions" class="social-chart"></div>
+
+<div id="twitter-chart-gained" class="social-chart"></div>
+<div id="instagram-chart-gained" class="social-chart"></div>
+<div id="facebook-chart-gained" class="social-chart"></div>
+<div id="linkedin-chart-gained" class="social-chart"></div>
 
 <style>
   .social-chart {
@@ -22,17 +37,16 @@
     const dateFormatter = (date) => date.toLocaleString('default', { day: 'numeric', month: 'short' });
     const data = {
       week: rawData.map(x => new Date(x.week_starting)),
-      values: rawData.map(x => x.audience_last),
+      values: rawData.map(x => x[params.metric]),
       axis: {
-        yMax: Math.max(...rawData.map(x => x.audience_last))
+        yMax: Math.max(...rawData.map(x => x[params.metric]))
       }
     };
 
-    const gap = 500;
     // Work out maximum y value and labels
-    const yMax = Math.ceil(Math.max(...data.values)/gap) * gap;
+    const yMax = Math.ceil(Math.max(...data.values)/params.gap) * params.gap;
     const yLabels = {};
-    for (let l = 0; l <= yMax; l+=gap) yLabels[l] = { label: l};
+    for (let l = 0; l <= yMax; l+=params.gap) yLabels[l] = { label: l};
 
     const labels = data.week.reduce((a, c, n) => ({ ...a, [n]: { label: dateFormatter(c) } }), {})
     const values = data.values.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
@@ -72,36 +86,84 @@
   document.addEventListener('DOMContentLoaded', function () {
     paramsTwitter = {
               file: `{{ metrics.social_media.twitter_weekly.rows | dump | safe }}`,
-              domID: "twitter-chart",
+              domID: "twitter-chart-audience",
               colour: "#1DA1F2",
+              metric: "audience_last",
+              gap: 2000,
               chartTitle: "Twitter Audience"
             };
 
     paramsInstagram = {
               file: `{{ metrics.social_media.instagram_weekly.rows | dump | safe }}`,
-              domID: "instagram-chart",
+              domID: "instagram-chart-audience",
               colour: "#833AB4",
+              metric: "audience_last",
+              gap: 500,
               chartTitle: "Instagram Audience"
             };
 
     paramsFacebook = {
               file: `{{ metrics.social_media.facebook_weekly.rows | dump | safe }}`,
-              domID: "facebook-chart",
+              domID: "facebook-chart-audience",
               colour: "#4267B2",
+              metric: "audience_last",
+              gap: 200,
               chartTitle: "Facebook Audience"
             };
 
     paramsLinkedin = {
               file: `{{ metrics.social_media.linkedin_weekly.rows | dump | safe }}`,
-              domID: "linkedin-chart",
+              domID: "linkedin-chart-audience",
               colour: "#0A66C2",
+              metric: "audience_last",
+              gap: 500,
               chartTitle: "Linkedin Audience"
+            };
+
+    paramsTwitterE = {
+              file: `{{ metrics.social_media.twitter_weekly.rows | dump | safe }}`,
+              domID: "twitter-chart-engagement",
+              colour: "#1DA1F2",
+              metric: "engagements_total",
+              gap: 1000,
+              chartTitle: "Twitter Engagement"
+            };
+
+    paramsInstagramE = {
+              file: `{{ metrics.social_media.instagram_weekly.rows | dump | safe }}`,
+              domID: "instagram-chart-engagement",
+              colour: "#833AB4",
+              metric: "engagements_total",
+              gap: 100,
+              chartTitle: "Instagram Engagement"
+            };
+
+    paramsFacebookE = {
+              file: `{{ metrics.social_media.facebook_weekly.rows | dump | safe }}`,
+              domID: "facebook-chart-engagement",
+              colour: "#4267B2",
+              metric: "engagements_total",
+              gap: 500,
+              chartTitle: "Facebook Engagement"
+            };
+
+    paramsLinkedinE = {
+              file: `{{ metrics.social_media.linkedin_weekly.rows | dump | safe }}`,
+              domID: "linkedin-chart-engagement",
+              colour: "#0A66C2",
+              metric: "engagements_total",
+              gap: 100,
+              chartTitle: "Linkedin Engagement"
             };
 
     fillGraph(paramsTwitter);
     fillGraph(paramsInstagram);
     fillGraph(paramsFacebook);
     fillGraph(paramsLinkedin);
+    fillGraph(paramsTwitterE);
+    fillGraph(paramsInstagramE);
+    fillGraph(paramsFacebookE);
+    fillGraph(paramsLinkedinE);
 
 
 

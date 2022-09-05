@@ -4,21 +4,20 @@
 <div id="instagram-chart-audience" class="social-chart"></div>
 <div id="facebook-chart-audience" class="social-chart"></div>
 <div id="linkedin-chart-audience" class="social-chart"></div>
+<div id="all-chart-audience" class="social-chart"></div>
 
 <div id="twitter-chart-engagement" class="social-chart"></div>
 <div id="instagram-chart-engagement" class="social-chart"></div>
 <div id="facebook-chart-engagement" class="social-chart"></div>
 <div id="linkedin-chart-engagement" class="social-chart"></div>
+<div id="all-chart-engagement" class="social-chart"></div>
 
 <div id="twitter-chart-impressions" class="social-chart"></div>
 <div id="instagram-chart-impressions" class="social-chart"></div>
 <div id="facebook-chart-impressions" class="social-chart"></div>
 <div id="linkedin-chart-impressions" class="social-chart"></div>
+<div id="all-chart-impressions" class="social-chart"></div>
 
-<div id="twitter-chart-gained" class="social-chart"></div>
-<div id="instagram-chart-gained" class="social-chart"></div>
-<div id="facebook-chart-gained" class="social-chart"></div>
-<div id="linkedin-chart-gained" class="social-chart"></div>
 
 <style>
   .social-chart {
@@ -29,9 +28,14 @@
   .key rect {
     stroke: none;
   }
-</style>
 
+
+</style>
 <script>
+  function fillGraphs(paramsList){
+    for(const params of paramsList)
+      fillGraph(params);
+  }
   function fillGraph(params){
     const rawData = JSON.parse(params.file);
     const dateFormatter = (date) => date.toLocaleString('default', { day: 'numeric', month: 'short' });
@@ -67,7 +71,7 @@
         'y': {
           'line': { show: true },
           'grid': { 'show': false, 'stroke-width': '0.5px' },
-          'title': { 'label': 'Audience' },
+          'title': { 'label': params.yTitile },
           'max': yMax,
           'labels': yLabels,
         }
@@ -90,6 +94,7 @@
               colour: "#1DA1F2",
               metric: "audience_last",
               gap: 2000,
+              yTitile: "Audience",
               chartTitle: "Twitter Audience"
             };
 
@@ -99,6 +104,7 @@
               colour: "#833AB4",
               metric: "audience_last",
               gap: 500,
+              yTitile: "Audience",
               chartTitle: "Instagram Audience"
             };
 
@@ -108,6 +114,7 @@
               colour: "#4267B2",
               metric: "audience_last",
               gap: 200,
+              yTitile: "Audience",
               chartTitle: "Facebook Audience"
             };
 
@@ -117,7 +124,18 @@
               colour: "#0A66C2",
               metric: "audience_last",
               gap: 500,
+              yTitile: "Audience",
               chartTitle: "Linkedin Audience"
+            };
+
+    paramsAll = {
+              file: `{{ metrics.social_media_2.all_weekly.rows | dump | safe }}`,
+              domID: "all-chart-audience",
+              colour: "#000000",
+              metric: "audience_last",
+              gap: 2000,
+              yTitile: "Audience",
+              chartTitle: "Total Audience"
             };
 
     paramsTwitterE = {
@@ -126,6 +144,7 @@
               colour: "#1DA1F2",
               metric: "engagements_total",
               gap: 1000,
+              yTitile: "Engagement",
               chartTitle: "Twitter Engagement"
             };
 
@@ -135,6 +154,7 @@
               colour: "#833AB4",
               metric: "engagements_total",
               gap: 100,
+              yTitile: "Engagement",
               chartTitle: "Instagram Engagement"
             };
 
@@ -144,6 +164,7 @@
               colour: "#4267B2",
               metric: "engagements_total",
               gap: 500,
+              yTitile: "Engagement",
               chartTitle: "Facebook Engagement"
             };
 
@@ -153,20 +174,88 @@
               colour: "#0A66C2",
               metric: "engagements_total",
               gap: 100,
+              yTitile: "Engagement",
               chartTitle: "Linkedin Engagement"
             };
+
+    paramsAllE = {
+          file: `{{ metrics.social_media_2.all_weekly.rows | dump | safe }}`,
+          domID: "all-chart-engagement",
+          colour: "#000000",
+          metric: "engagements_total",
+          gap: 2000,
+          yTitile: "Engagement",
+          chartTitle: "Total Engagement"
+        };
+
+    paramsTwitterI = {
+              file: `{{ metrics.social_media.twitter_weekly.rows | dump | safe }}`,
+              domID: "twitter-chart-impressions",
+              colour: "#1DA1F2",
+              metric: "impressions_total",
+              gap: 25000,
+              yTitile: "Impressions",
+              chartTitle: "Twitter Impressions"
+            };
+
+    paramsInstagramI = {
+              file: `{{ metrics.social_media.instagram_weekly.rows | dump | safe }}`,
+              domID: "instagram-chart-impressions",
+              colour: "#833AB4",
+              metric: "impressions_total",
+              gap: 10000,
+              yTitile: "Impressions",
+              chartTitle: "Instagram impressions"
+            };
+
+    paramsFacebookI = {
+              file: `{{ metrics.social_media.facebook_weekly.rows | dump | safe }}`,
+              domID: "facebook-chart-impressions",
+              colour: "#4267B2",
+              metric: "impressions_total",
+              gap: 10000,
+              yTitile: "Impressions",
+              chartTitle: "Facebook Impressions"
+            };
+
+    paramsLinkedinI = {
+              file: `{{ metrics.social_media.linkedin_weekly.rows | dump | safe }}`,
+              domID: "linkedin-chart-impressions",
+              colour: "#0A66C2",
+              metric: "impressions_total",
+              gap: 10000,
+              yTitile: "Impressions",
+              chartTitle: "Linkedin Impressions"
+            };
+
+    paramsAllI = {
+          file: `{{ metrics.social_media_2.all_weekly.rows | dump | safe }}`,
+          domID: "all-chart-impressions",
+          colour: "#000000",
+          metric: "impressions_total",
+          gap: 30000,
+          yTitile: "Impressions",
+          chartTitle: "Total Impressions"
+        };
+
 
     fillGraph(paramsTwitter);
     fillGraph(paramsInstagram);
     fillGraph(paramsFacebook);
     fillGraph(paramsLinkedin);
+    fillGraph(paramsAll);
     fillGraph(paramsTwitterE);
     fillGraph(paramsInstagramE);
     fillGraph(paramsFacebookE);
     fillGraph(paramsLinkedinE);
-
-
-
+    fillGraph(paramsAllE);
+    fillGraph(paramsTwitterI);
+    fillGraph(paramsInstagramI);
+    fillGraph(paramsFacebookI);
+    fillGraph(paramsLinkedinI);
+    fillGraph(paramsAllI);
 
   });
 </script>
+
+

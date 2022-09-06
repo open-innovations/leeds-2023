@@ -56,6 +56,10 @@ site.copy('/assets');
   'roadshow_attendees/count_by_constituency.csv',
   'roadshow_attendees/count_by_ward.csv',
   'roadshow_attendees/summary.csv',
+  'social/twitter.csv',
+  'social/instagram.csv',
+  'social/linkedin.csv',
+  'social/facebook.csv'
 ].forEach(file => {
   site.remoteFile(`/data/${file}`, `./data/metrics/${file}`)
 })

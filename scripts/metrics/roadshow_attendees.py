@@ -64,10 +64,10 @@ def summarise():
 
     counts = data.postcode.value_counts().to_frame(name='value')
     counts = counts.merge(pc, left_index=True, right_on='postcode')
-    pd.DataFrame({
-        'postcode': counts.pcds,
-        'attendees': counts.value
-    }).to_csv(os.path.join(output_dir, 'count_by_postcode.csv'), index=False)
+    # pd.DataFrame({
+    #     'postcode': counts.pcds,
+    #     'attendees': counts.value
+    # }).to_csv(os.path.join(output_dir, 'count_by_postcode.csv'), index=False)
 
     wards = load_wards_2021()
     by_ward = counts.groupby('osward').value.sum().to_frame().merge(

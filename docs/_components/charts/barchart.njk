@@ -1,0 +1,109 @@
+---
+css: |
+  svg.barchart {
+    width: 100%;
+    /* border: 1px solid black; */
+  }
+  .barchart path {
+    --path-fill: none;
+    stroke: black;
+    fill: var(--path-fill);
+    stroke-width: 1px;
+  }
+  .barchart text {
+    stroke: none;
+    fill: black;
+  }
+---
+{%- set margin = 10 -%}
+{%- set width = 300 -%}
+{%- set title_height = 10 * title.length | default(0) %}
+{%- set series_height = 20 -%}
+{%- set series_label_width = 100 -%}
+{%- set axis_label_height = 30 -%}
+{%- set height = series_height * categories.length -%}
+{%- set stacked = stacked | default(false) -%}
+{%- set tickSize = tickSize | default(5) -%}
+
+{# Set max height as either sum of all longest bars #}
+{%- set max = 0 -%}
+{%- for s in series %}
+  {% set this_max = s | sort | last %}
+  {% if stacked %}
+    {# TODO this is not correct! #}
+    {% set max = max + this_max %}
+  {% else %}
+    {% set max = [ max, this_max ] | sort | last %}
+  {% endif %}
+{% endfor -%}
+{# Calculate scale factor #}
+{%- set x_scale = width / max -%}
+
+<svg class="barchart" viewBox="-{{ margin + series_label_width }} -{{ margin + title_height }} {{ width + series_label_width + 2 * margin }} {{ height + title_height+ axis_label_height + 2 * margin }}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="series">
+  {%- for s in series %}
+    {%- set series_index = loop.index0 -%}
+    {%- for v in s %}
+    <!-- {{ loop.index }} -->
+    {%- set bar_length = v * x_scale %}
+    <path
+      style="--path-fill: {{ colours[series_index][0] }}; stroke: none;"
+      transform="translate(0 {{ series_height * loop.index0 }})"
+      id="series-{{ series_index }}-{{ loop.index0 }}"
+      d="M0 1 l{{ bar_length }} 0 l0 {{ series_height - 2 }} l{{ -bar_length }} 0 L0 0"
+    />
+    {%- endfor -%}
+  {% endfor -%}
+  </g>
+  {% if title -%}
+  <g id="title">
+    <text
+      x={{ width / 2}}
+      dy=-5
+      text-anchor="middle"
+    >
+      {% for t in title %}
+        <tspan>
+          {{ title }}
+        </tspan>
+      {% endfor %}
+    </text>
+  </g>
+  {% endif -%}
+  <g id="axis" class="axis">
+    <path d="
+      M0 0 l0 {{ height }}
+      l{{ width }} 0
+      M0 {{ height }} l0 {{ tickSize }}
+      M{{ width }} {{ height }} l0 {{ tickSize }}
+      "></path>
+    <g id="category-labels">
+      {% for l in categories -%}
+        <text
+          id="category-label-{{ loop.index }}"
+          x=0
+          y={{ ( loop.index0 + 0.5 ) * series_height }}
+          dx=-5
+          text-anchor="end"
+          dominant-baseline="central"
+        >
+          {{- l -}}
+        </text>
+      {%- endfor %}
+    </g>
+    <g id="numeric-labels">
+      {% for l in [0, max] -%}
+        <text
+          id="category-label-{{ loop.index }}"
+          y={{ height }}
+          x={{ l * x_scale }}
+          dy={{ tickSize }}
+          text-anchor="middle"
+          dominant-baseline="text-before-edge"
+        >
+          {{- l -}}
+        </text>
+      {%- endfor %}
+    </g>
+  </g>
+</svg>

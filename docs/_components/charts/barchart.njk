@@ -18,15 +18,16 @@ css: |
     fill: black;
   }
 ---
-{%- set margin = 10 -%}
+{%- set margin = 15 -%}
 {%- set width = 400 -%}
-{%- set title_height = 10 * title.length | default(0) %}
-{%- set series_height = 20 -%}
+{%- set title_height = 20 * title.length | default(0) %}
+{%- set series_height = seriesHeight | default(50) -%}
 {%- set series_label_width = 100 -%}
 {%- set axis_label_height = 30 -%}
 {%- set height = series_height * categories.length -%}
 {%- set stacked = stacked | default(false) -%}
 {%- set tickSize = tickSize | default(5) -%}
+{%- set axis_resolution = 10 -%}
 
 {# Set max height as either sum of all longest bars #}
 {%- set max = 0 -%}
@@ -39,6 +40,7 @@ css: |
     {% set max = [ max, this_max ] | sort | last %}
   {% endif %}
 {% endfor -%}
+{% set max = ((max / axis_resolution) | round(0, 'ceil') ) * axis_resolution %}
 {# Calculate scale factor #}
 {%- set x_scale = width / max -%}
 
@@ -60,9 +62,9 @@ css: |
   </g>
   {% if title -%}
   <g id="title">
-    <text
+    <text class="chart-title"
       x={{ width / 2}}
-      dy=-5
+      dy=-10
       text-anchor="middle"
     >
       {% for t in title %}
@@ -77,8 +79,9 @@ css: |
     <path d="
       M0 0 l0 {{ height }}
       l{{ width }} 0
-      M0 {{ height }} l0 {{ tickSize }}
-      M{{ width }} {{ height }} l0 {{ tickSize }}
+      {% for l in range(axis_resolution, max+1, axis_resolution) -%}
+        M{{ l * x_scale }} {{ height }} l0 {{ tickSize }}
+      {% endfor %}
       "></path>
     <g id="category-labels">
       {% for l in categories -%}
@@ -95,7 +98,7 @@ css: |
       {%- endfor %}
     </g>
     <g id="numeric-labels">
-      {% for l in [0, max] -%}
+      {% for l in range(axis_resolution, max+1, axis_resolution) -%}
         <text
           id="category-label-{{ loop.index }}"
           y={{ height }}

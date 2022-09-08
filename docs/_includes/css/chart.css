@@ -1,0 +1,5 @@
+.chart-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: var(--title-fontstack);
+}

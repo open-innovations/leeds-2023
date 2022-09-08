@@ -4,6 +4,9 @@ css: |
     width: 100%;
     /* border: 1px solid black; */
   }
+  .barchart * {
+    vector-effect: non-scaling-stroke non-scaling-size;
+  }
   .barchart path {
     --path-fill: none;
     stroke: black;
@@ -16,7 +19,7 @@ css: |
   }
 ---
 {%- set margin = 10 -%}
-{%- set width = 300 -%}
+{%- set width = 400 -%}
 {%- set title_height = 10 * title.length | default(0) %}
 {%- set series_height = 20 -%}
 {%- set series_label_width = 100 -%}
@@ -47,7 +50,7 @@ css: |
     <!-- {{ loop.index }} -->
     {%- set bar_length = v * x_scale %}
     <path
-      style="--path-fill: {{ colours[series_index][0] }}; stroke: none;"
+      style="--path-fill: {{ colours[series_index][loop.index0 % colours[series_index].length] }}; stroke: none;"
       transform="translate(0 {{ series_height * loop.index0 }})"
       id="series-{{ series_index }}-{{ loop.index0 }}"
       d="M0 1 l{{ bar_length }} 0 l0 {{ series_height - 2 }} l{{ -bar_length }} 0 L0 0"

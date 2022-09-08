@@ -25,13 +25,6 @@ columns:
 
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
 {% comp 'layout.block' %}
-{{ comp.charts.table({
-  columns: columns,
-  rows: metrics.fundraising.count_by_stage.rows
-}) | safe }}
-{% endcomp %}
-
-{% comp 'layout.block' %}
 {{ comp.charts.barchart({
   title: [
     'Count of organisations per fundraising stage'
@@ -43,6 +36,13 @@ columns:
   colours: [
     [ "var(--l23-cyan)" ]
   ]
+}) | safe }}
+{% endcomp %}
+
+{% comp 'layout.block' %}
+{{ comp.charts.table({
+  columns: columns,
+  rows: metrics.fundraising.count_by_stage.rows
 }) | safe }}
 {% endcomp %}
 {% endcomp %}

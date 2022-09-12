@@ -22,6 +22,9 @@ columns:
   This summary shows the number of organisations at each stage of the fundraising cycle.
   NB the stages are not currently ordered by position in the lifecycle.
 </p>
+{%- macro popupContent(value) -%}
+  {{ value }} organisations
+{%- endmacro -%}
 
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
 {% comp 'layout.block' %}
@@ -32,6 +35,7 @@ columns:
   series: [
     metrics.fundraising.count_by_stage.columns.count
   ],
+  popupContent: popupContent,
   categories: metrics.fundraising.count_by_stage.columns.stage,
   colours: [
     [ "var(--l23-cyan)" ]

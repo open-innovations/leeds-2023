@@ -41,14 +41,17 @@ columns:
     [ "var(--l23-cyan)" ]
   ],
   plot: {
-    fill: "var(--l23-mint)"
+    grid: { x: true, category: true }
   },
   axis: {
     x: {
       title: 'Number of organisations',
+      show: false,
+      ticks: false,
       resolution: 25
     },
     category: {
+      show: false,
       height: 40
     }
   }

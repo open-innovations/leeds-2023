@@ -1,7 +1,7 @@
 ---
 css: |
   svg.barchart {
-    --plot-fill: none;
+    --plot-fill: white;
     width: 100%;
     /* border: 1px solid black; */
   }
@@ -13,9 +13,7 @@ css: |
   }
   .barchart path {
     --path-fill: none;
-    stroke: black;
     fill: var(--path-fill);
-    stroke-width: 1px;
   }
   .barchart text {
     stroke: none;
@@ -36,32 +34,39 @@ css: |
 
 {# Set max height as either sum of all longest bars #}
 {%- set max = 0 -%}
-{%- for s in series %}
-  {% set this_max = s | sort | last %}
-  {% if stacked %}
+{%- for s in series -%}
+  {% set this_max = s | sort | last -%}
+  {% if stacked -%}
     {# TODO this is not correct! #}
-    {% set max = max + this_max %}
-  {% else %}
-    {% set max = [max, this_max] | sort | last %}
-  {% endif %}
+    {% set max = max + this_max -%}
+  {% else -%}
+    {% set max = [max, this_max] | sort | last -%}
+  {% endif -%}
 {% endfor -%}
-{% set max = ((max / axis_resolution) | round(0, 'ceil')) * axis_resolution %}
+{%- set max = ((max / axis_resolution) | round(0, 'ceil')) * axis_resolution -%}
 {# Calculate scale factor #}
 {%- set x_scale = width / max -%}
 
 <svg class="barchart" viewBox="-{{ margin + series_label_width }} -{{ margin + title_height }} {{ width + series_label_width + 2 * margin }} {{ height + title_height+ axis_label_height + 2 * margin }}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   data-dependencies="/assets/js/interactive-chart.js"
   >
-  <g id="plot" class="plot"
-    {%- if plot.fill -%} style="--plot-fill: {{ plot.fill }};"{%- endif -%}
-  >
+  <g id="plot" class="plot">
     <rect x=0 y=0 width={{ width }} height={{ height }} />
+    {% if plot.grid.x -%}
+      <path class="grid x" d="
+        {%- for l in range(axis_resolution, max, axis_resolution) -%}
+          M{{ l * x_scale }} 0 l0 {{ height }} {% endfor -%}"/>
+    {%- endif %}
+    {% if plot.grid.category -%}
+      <path class="grid y" d="
+        {%- for l in range(series_height, height, series_height) -%}
+          M0 {{ l }} l{{ width }} 0{% endfor -%}"/>
+    {%- endif %}
   </g>
   <g id="series">
   {%- for s in series %}
     {%- set series_index = loop.index0 -%}
     {%- for v in s %}
-    <!-- {{ loop.index }} -->
     {%- set bar_length = v * x_scale %}
     <path
       style="--path-fill: {{ colours[series_index][loop.index0 % colours[series_index].length] }}; stroke: none;"
@@ -83,21 +88,23 @@ css: |
       dy=-10
       text-anchor="middle"
     >
-      {% for t in title %}
+      {% for t in title -%}
         <tspan>
-          {{ title }}
+          {{- title -}}
         </tspan>
-      {% endfor %}
+      {%- endfor %}
     </text>
   </g>
   {% endif -%}
-  <g id="axis" class="axis">
-    <path d="
-      M0 0 l0 {{ height }}
-      l{{ width }} 0
-      {% for l in range(axis_resolution, max+1, axis_resolution) -%}
-        M{{ l * x_scale }} {{ height }} l0 {{ tickSize }}
-      {% endfor %}
+  <g id="axis">
+    <path class="axis" d="
+      {% if not axis.category.show | default(true) == false %}M0 0 l0 {{ height }}{% endif %}
+      {% if not axis.x.show | default(true) == false %}M0 {{ height }} l{{ width }} 0{% endif %}
+      {% if not axis.x.ticks | default(true) == false -%} 
+        {% for l in range(axis_resolution, max+1, axis_resolution) -%}
+          M{{ l * x_scale }} {{ height }} l0 {{ tickSize }}
+        {%- endfor %}
+      {%- endif %}
       "></path>
     <g id="axis-titles">
       {% if axis.x.title -%}

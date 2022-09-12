@@ -3,3 +3,17 @@
   font-weight: bold;
   font-family: var(--title-fontstack);
 }
+
+.plot {
+  --plot-fill: var(--l23-mint);
+}
+
+.grid {
+  stroke: #aaa;
+  &.x {
+    stroke-dasharray: 7 4;
+  }
+}
+.axis {
+  stroke: #aaa;
+}

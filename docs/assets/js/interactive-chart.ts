@@ -1,29 +1,35 @@
 const POPUP_TIMEOUT = 2500;
 const MAX_TIMEOUT = 500;
 addEventListener('DOMContentLoaded', () => {
-  const hoverables = document.querySelectorAll('[data-hover]');
+  // Create and attach the popup
   const popup = document.createElement('aside');
   popup.className = 'popup';
   popup.style.display = 'none';
   popup.style.opacity = 0;
   document.body.appendChild(popup);
   let fader: number | undefined = undefined;
-  function showPopup({ target }) {
+
+  /**
+   * Event handler to show the popup.
+   * 
+   * @param event event target
+   */
+  function showPopup(event) {
     if (fader) clearTimeout(fader);
     popup.style.display = null;
-    popup.innerHTML = target.dataset.hover;
-    const loc = target.getBoundingClientRect();
-    const hoverPos = target.dataset.hoverPos || 'bottom';
+    popup.innerHTML = event.target.dataset.hover;
+    const loc = event.target.getBoundingClientRect();
+    const hoverPos = event.target.dataset.hoverPos || 'bottom';
     popup.dataset.hoverPos = hoverPos;
     switch (hoverPos) {
       case 'right':
-        popup.style.top = loc.top + (loc.height / 2) + 'px';
+        popup.style.top = loc.top + loc.height / 2 + 'px';
         popup.style.left = loc.right + 10 + 'px';
         break;
       case 'bottom':
       default:
         popup.style.top = loc.bottom + 10 + 'px';
-        popup.style.left = loc.left + (loc.width / 2) + 'px';
+        popup.style.left = loc.left + loc.width / 2 + 'px';
         break;
     }
     // Do this on the next event (left timeout out!)
@@ -31,17 +37,29 @@ addEventListener('DOMContentLoaded', () => {
       popup.style.opacity = 1;
     });
   }
-  function hidePopup() {
-    fader = setTimeout(function () {
-      popup.style.opacity = 0;
-      setTimeout(function () {
-        popup.style.display = 'none';
-        fader = undefined;
-      }, MAX_TIMEOUT);
-    }, POPUP_TIMEOUT);
+  /**
+   * Factory to create an event listener which hides the popup.
+   * @param delay - time period to wait before fading
+   * @returns 
+   */
+  function hidePopup(delay = POPUP_TIMEOUT) {
+    return function() {
+      fader = setTimeout(function () {
+        popup.style.opacity = 0;
+        setTimeout(function () {
+          popup.style.display = 'none';
+          fader = undefined;
+        }, MAX_TIMEOUT);
+      }, delay);
+    }
   }
+
+  // Attach listeners
+  addEventListener('scroll', hidePopup(0));
+  // Get all the hoverable elements
+  const hoverables = document.querySelectorAll('[data-hover]');
   for (const hoverable of hoverables) {
     hoverable.addEventListener('mouseover', showPopup);
-    hoverable.addEventListener('mouseout', hidePopup);
+    hoverable.addEventListener('mouseout', hidePopup());
   }
 });

@@ -22,6 +22,8 @@
   --l23-dark-cyan: hsl(191, 57%, 15%);
   --l23-yellow: hsl(52, 100%, 50%);
   --l23-magenta: hsl(321, 100%, 50%);
+  --l23-mint: hsl(87, 57%, 86%);
+
   /* Actual styles, but not proper names */
   --l23-dark-blue-grey: hsl(188, 100%, 12%);
 }

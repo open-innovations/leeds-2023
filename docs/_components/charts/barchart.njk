@@ -1,8 +1,12 @@
 ---
 css: |
   svg.barchart {
+    --plot-fill: none;
     width: 100%;
     /* border: 1px solid black; */
+  }
+  .plot {
+    fill: var(--plot-fill);
   }
   .barchart * {
     vector-effect: non-scaling-stroke non-scaling-size;
@@ -28,6 +32,7 @@ css: |
 {%- set stacked = stacked | default(false) -%}
 {%- set tickSize = tickSize | default(5) -%}
 {%- set axis_resolution = axis.x.resolution | default(10) -%}
+{%- set axis_spacing = 10 -%}
 
 {# Set max height as either sum of all longest bars #}
 {%- set max = 0 -%}
@@ -47,6 +52,11 @@ css: |
 <svg class="barchart" viewBox="-{{ margin + series_label_width }} -{{ margin + title_height }} {{ width + series_label_width + 2 * margin }} {{ height + title_height+ axis_label_height + 2 * margin }}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   data-dependencies="/assets/js/interactive-chart.js"
   >
+  <g id="plot" class="plot"
+    {%- if plot.fill -%} style="--plot-fill: {{ plot.fill }};"{%- endif -%}
+  >
+    <rect x=0 y=0 width={{ width }} height={{ height }} />
+  </g>
   <g id="series">
   {%- for s in series %}
     {%- set series_index = loop.index0 -%}
@@ -57,7 +67,7 @@ css: |
       style="--path-fill: {{ colours[series_index][loop.index0 % colours[series_index].length] }}; stroke: none;"
       transform="translate(0 {{ series_height * loop.index0 }})"
       id="series-{{ series_index }}-{{ loop.index0 }}"
-      d="M0 1 l{{ bar_length }} 0 l0 {{ series_height - 2 }} l{{ -bar_length }} 0 L0 0"
+      d="M0 {{ axis_spacing / 2 }} l{{ bar_length }} 0 l0 {{ series_height - axis_spacing }} l{{ -bar_length }} 0 L0 0"
       {% if popupContent -%}
         data-hover="{{ popupContent(value=v) | safe }}"
         data-hover-pos="right"

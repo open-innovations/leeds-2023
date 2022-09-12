@@ -7,24 +7,23 @@ addEventListener('DOMContentLoaded', () => {
   popup.style.display = 'none';
   popup.style.opacity = 0;
   document.body.appendChild(popup);
-  let fader = undefined;
+  let fader: number | undefined = undefined;
   function showPopup({ target }) {
     if (fader) clearTimeout(fader);
     popup.style.display = null;
     popup.innerHTML = target.dataset.hover;
     const loc = target.getBoundingClientRect();
-    const size = popup.getBoundingClientRect();
     const hoverPos = target.dataset.hoverPos || 'bottom';
     popup.dataset.hoverPos = hoverPos;
     switch (hoverPos) {
       case 'right':
-        popup.style.top = loc.top + (loc.height - size.height) / 2 + 'px';
+        popup.style.top = loc.top + (loc.height / 2) + 'px';
         popup.style.left = loc.right + 10 + 'px';
         break;
       case 'bottom':
       default:
         popup.style.top = loc.bottom + 10 + 'px';
-        popup.style.left = loc.x + (loc.width - size.width) / 2 + 'px';
+        popup.style.left = loc.left + (loc.width / 2) + 'px';
         break;
     }
     // Do this on the next event (left timeout out!)

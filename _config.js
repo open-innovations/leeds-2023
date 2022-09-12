@@ -1,5 +1,6 @@
 import lume from "lume/mod.ts";
 import base_path from "lume/plugins/base_path.ts";
+import esbuild from 'lume/plugins/esbuild.ts';
 import imagick from "lume/plugins/imagick.ts";
 import inline from "lume/plugins/inline.ts";
 import jsx from "lume/plugins/jsx.ts";
@@ -27,6 +28,19 @@ site.use(inline());
 site.use(jsx());
 site.use(metas());
 site.use(postcss());
+site.use(esbuild({
+  extensions: [".ts", ".js"],
+  options: {
+    bundle: true,
+    format: "iife",
+    minify: true,
+    keepNames: false,
+    platform: "browser",
+    target: "es6",
+    incremental: true,
+    treeShaking: true,
+  },
+}));
 
 site.loadPages([".html"]);
 
@@ -49,7 +63,7 @@ site.script("get-fonts", getFonts);
 site.remoteFile('/js/oi.linechart.min.js', 'https://raw.githubusercontent.com/open-innovations/oi.linechart.js/main/oi.linechart.min.js');
 site.remoteFile('/js/oi.hexmap.min.js', 'https://raw.githubusercontent.com/odileeds/odi.hexmap.js/main/odi.hexmap.min.js');
 site.copy('/js');
-site.copy('/assets');
+site.copy('/assets/images');
 
 // Publish raw data
 [

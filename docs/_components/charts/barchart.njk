@@ -21,13 +21,13 @@ css: |
 {%- set margin = 15 -%}
 {%- set width = 400 -%}
 {%- set title_height = 20 * title.length | default(0) %}
-{%- set series_height = seriesHeight | default(50) -%}
+{%- set series_height = axis.category.height | default(50) -%}
 {%- set series_label_width = 100 -%}
 {%- set axis_label_height = 30 -%}
 {%- set height = series_height * categories.length -%}
 {%- set stacked = stacked | default(false) -%}
 {%- set tickSize = tickSize | default(5) -%}
-{%- set axis_resolution = 10 -%}
+{%- set axis_resolution = axis.x.resolution | default(10) -%}
 
 {# Set max height as either sum of all longest bars #}
 {%- set max = 0 -%}
@@ -37,10 +37,10 @@ css: |
     {# TODO this is not correct! #}
     {% set max = max + this_max %}
   {% else %}
-    {% set max = [ max, this_max ] | sort | last %}
+    {% set max = [max, this_max] | sort | last %}
   {% endif %}
 {% endfor -%}
-{% set max = ((max / axis_resolution) | round(0, 'ceil') ) * axis_resolution %}
+{% set max = ((max / axis_resolution) | round(0, 'ceil')) * axis_resolution %}
 {# Calculate scale factor #}
 {%- set x_scale = width / max -%}
 
@@ -89,6 +89,17 @@ css: |
         M{{ l * x_scale }} {{ height }} l0 {{ tickSize }}
       {% endfor %}
       "></path>
+    <g id="axis-titles">
+      {% if axis.x.title -%}
+        <text
+          x={{ width / 2 }}
+          y={{ height }}
+          dy=25
+          text-anchor="middle"
+          dominant-baseline="text-before-edge"
+        >{{ axis.x.title }}</text>
+      {%- endif %}
+    </g>
     <g id="category-labels">
       {% for l in categories -%}
         <text

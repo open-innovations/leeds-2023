@@ -26,11 +26,11 @@ columns:
   {{ value }} organisations
 {%- endmacro -%}
 
-{% comp 'grid.autogrid', { min_width: '32rem' } %}
+{% comp 'grid.autogrid', {min_width: '32rem'} %}
 {% comp 'layout.block' %}
 {{ comp.charts.barchart({
   title: [
-    'Count of organisations per fundraising stage'
+    'Organisations at each fundraising stage'
   ],
   series: [
     metrics.fundraising.count_by_stage.columns.count
@@ -40,7 +40,15 @@ columns:
   colours: [
     [ "var(--l23-cyan)" ]
   ],
-  seriesHeight: 40
+  axis: {
+    x: {
+      title: 'Number of organisations',
+      resolution: 25
+    },
+    category: {
+      height: 40
+    }
+  }
 }) | safe }}
 {% endcomp %}
 

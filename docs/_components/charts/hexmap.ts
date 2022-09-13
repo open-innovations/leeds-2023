@@ -20,18 +20,21 @@ export const css = `
 type HexDefinition = {
   q: number;
   r: number;
+  n: string;
 };
 
 type HexmapOptions = {
   hexjson: { layout: string; hexes: Record<string, HexDefinition> };
   margin: number;
   hexWidth: number;
+  titleProp: string;
 };
 
 export default function ({
   hexjson,
   margin = 25,
   hexWidth = 100,
+  titleProp = 'n',
 }: HexmapOptions) {
   const { layout, hexes } = hexjson;
 
@@ -72,11 +75,14 @@ export default function ({
 
   const drawHex = (config: HexDefinition) => {
     const { x, y } = getCentre(config);
+    const label = config[titleProp];
+    console.log(label);
     return `<g
         transform="translate(${x - qWidth / 2} ${y})"
       >
         <path
           class="hex"
+          data-hover="${label}"
           d="
             M ${qWidth / 2},${-hexSide / 2}
             v ${hexSide}

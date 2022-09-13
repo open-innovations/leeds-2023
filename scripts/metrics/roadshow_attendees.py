@@ -1,11 +1,13 @@
 from __future__ import print_function
+
 import os
-from typeform import get_responses, get_field_from_item
-from util import naive_postcode_formatter, write_csv
-from util.date import round_to_nearest_hour
-import pandas as pd
 import shutil
 
+import pandas as pd
+from thefuzz import process
+from typeform import get_field_from_item, get_responses
+from util import naive_postcode_formatter, write_csv
+from util.date import round_to_nearest_hour
 
 working_dir = os.path.join('working')
 working_file = os.path.join(working_dir, 'roadshow_attendees.csv')
@@ -115,5 +117,28 @@ def process_workshop_attendees(freq='D'):
                 os.path.join(site_dir, 'by_ward.csv'))
 
 
-if __name__ == '__main__':
-    get_workshop_responses()
+def process_attendees_spreadsheet():
+    wards = load_wards_2021()
+    wards = pd.DataFrame({
+      'wd21cd': wards.WD21CD,
+      'wd21nm': wards.WD21NM
+    })
+
+    data = pd.read_excel(
+        './working/Leeds 2023 Roadshow Open Innovations.xlsx', sheet_name='Sheet1')
+    data.columns = ['ward', 'date', 'attendees']
+    data = data.dropna()
+    data['wd21nm'] = data.ward.apply(
+        lambda x: process.extractOne(x, wards.wd21nm)[0])
+    data = pd.merge(left=data, right=wards, on='wd21nm')
+    data = pd.DataFrame({
+      'wd21nm': data.wd21nm,
+      'wd21cd': data.wd21cd,
+      'date': data.date,
+      'attendees': data.attendees
+    })
+    data = data.sort_values(by='date')
+    print(data)
+    os.chdir(output_dir)
+    data.to_csv('attendees.csv', index=False)
+    

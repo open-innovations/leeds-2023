@@ -16,9 +16,14 @@ When viewing the below data, consideration should be given to the fact that resi
 
 We will visualise a more accurate count of attendees at each Roadshow event as this data is made available.
 
-
-{% include "visualisations/roadshow-attendees/ward-hex.njk" %}
-
+{% comp 'layout.block', { max_width: '35rem' } %}
+{{ comp.charts.hexmap({
+  hexjson: hex.wards_leeds,
+  data: metrics.roadshow_attendees.by_ward.rows,
+  matchKey: 'ward_code',
+  valueProp: 'attendees'
+}) | safe }}
+{% endcomp %}
 
 Updated automatically on a nightly basis, this chart shows the cumultative number of Roadshow surveys submitted per week.
 

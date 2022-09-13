@@ -119,6 +119,8 @@ def process_workshop_attendees(freq='D'):
 
 def process_attendees_spreadsheet():
     wards = load_wards_2021()
+    # Remove more southerly wards
+    wards = wards.drop(wards[wards['LAT'] < 52].index)
     wards = pd.DataFrame({
       'wd21cd': wards.WD21CD,
       'wd21nm': wards.WD21NM

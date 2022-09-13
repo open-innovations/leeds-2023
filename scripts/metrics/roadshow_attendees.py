@@ -79,16 +79,27 @@ def summarise():
     counts = data.postcode.value_counts().to_frame(name='responses')
     counts = counts.merge(pc, left_index=True, right_on='postcode')
 
+    responses_by_ward = pd.DataFrame({
+      'wd21cd': counts.osward,
+      'responses': counts.responses,
+    })
+    attendees_by_ward = pd.DataFrame({
+      'wd21cd': attendees.wd21cd,
+      'attendees': attendees.attendees
+    })
     wards = load_wards_2021()
-    by_ward = counts.groupby('osward').responses \
-        .sum().to_frame() \
-        .merge(wards, left_index=True, right_on='WD21CD', how='left') \
-        .merge(attendees, left_on='WD21CD', right_on='wd21cd')
+    by_ward = pd.merge(
+      left = pd.concat([attendees_by_ward, responses_by_ward]).groupby('wd21cd').sum(),
+      right = wards,
+      left_index=True,
+      right_on='WD21CD',
+    )
+
     pd.DataFrame({
         'ward_name': by_ward.WD21NM,
         'ward_code': by_ward.WD21CD,
-        'attendees': by_ward.attendees,
-        'responses': by_ward.responses,
+        'attendees': by_ward.attendees.astype(int),
+        'responses': by_ward.responses.astype(int),
     }).to_csv(os.path.join(output_dir, 'count_by_ward.csv'), index=False)
 
     cons = load_constituencies_2020()

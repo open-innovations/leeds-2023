@@ -18,7 +18,9 @@ We will visualise a more accurate count of attendees at each Roadshow event as t
 
 
 {% include "visualisations/roadshow-attendees/ward-hex.njk" %}
-
+{{ comp.charts.hexmap({
+  hexjson: hex.wards_leeds
+}) | safe }}
 
 Updated automatically on a nightly basis, this chart shows the cumultative number of Roadshow surveys submitted per week.
 

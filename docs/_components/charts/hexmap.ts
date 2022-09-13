@@ -3,10 +3,12 @@ export const css = `
     --hex-fill: var(--l23-cyan);
     background: var(--l23-mint);
     & .hex {
-      fill: var(--hex-fill);
-      transform: scale(0.95);
-      transition: transform 0.1s linear;
-      &:hover {
+      & path {
+        fill: var(--hex-fill);
+        transform: scale(0.95);
+        transition: transform 0.1s linear;
+      }
+      &:hover path {
         transform: scale(0.90);
       }
     }
@@ -25,18 +27,49 @@ type HexDefinition = {
 
 type HexmapOptions = {
   hexjson: { layout: string; hexes: Record<string, HexDefinition> };
+  data?: Record<string, unknown>[];
+  matchKey?: string;
   margin: number;
   hexWidth: number;
   titleProp: string;
+  valueProp: string;
+  popup: (params: Record<string, string | number>) => string;
+  colourScale: (value: number) => string;
+  labelProcessor: (label: string) => string;
 };
+
+function deepClone(o: unknown) {
+  return JSON.parse(JSON.stringify(o));
+}
+
+const defaultScale = (value = 0) => `hsl(173, 100%, ${100 - value * 50}%)`;
 
 export default function ({
   hexjson,
-  margin = 25,
-  hexWidth = 100,
+  data,
+  matchKey,
+  margin = 10,
+  hexWidth = 40,
   titleProp = 'n',
+  valueProp,
+  popup = ({ label, value }) => `${label}: ${value}`,
+  colourScale = defaultScale,
+  labelProcessor = (label) => label.slice(0, 3),
 }: HexmapOptions) {
-  const { layout, hexes } = hexjson;
+  const layout = hexjson.layout;
+  const hexes: Record<string, HexDefinition> = deepClone(hexjson.hexes);
+
+  if (matchKey && data) {
+    data.forEach((record) => {
+      const key = record[matchKey] as string;
+      if (!(key in hexes)) return;
+      hexes[key] = { ...hexes[key], ...record };
+    });
+  }
+
+  const maxAttendees = Object.values(hexes)
+    .map((h) => parseFloat(h[valueProp]))
+    .reduce((result, current) => Math.max(result, current), 0);
 
   const dimensions = Object.values(hexes)
     .map(({ q, r }) => ({ q, r }))
@@ -76,13 +109,14 @@ export default function ({
   const drawHex = (config: HexDefinition) => {
     const { x, y } = getCentre(config);
     const label = config[titleProp];
-    console.log(label);
+    const value = config[valueProp];
     return `<g
-        transform="translate(${x - qWidth / 2} ${y})"
-      >
-        <path
           class="hex"
-          data-hover="${label}"
+          transform="translate(${x - qWidth / 2} ${y})"
+        >
+        <path
+          data-hover="${popup({ label, value })}"
+          style="--hex-fill: ${colourScale(value / maxAttendees)}"
           d="
             M ${qWidth / 2},${-hexSide / 2}
             v ${hexSide}
@@ -93,6 +127,10 @@ export default function ({
             Z
           "
         />
+        <text
+          text-anchor="middle"
+          dominant-baseline="middle"
+          >${labelProcessor(label)}</text>
       </g>`;
   };
 
@@ -100,7 +138,7 @@ export default function ({
       class="hexmap"
       viewBox="
         ${-margin - hexWidth / 2} ${-margin - hexSide}
-        ${width + hexWidth + 2 * margin} ${height +  2 * (margin + hexSide)}
+        ${width + hexWidth + 2 * margin} ${height + 2 * (margin + hexSide)}
       "
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"

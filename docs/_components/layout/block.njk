@@ -22,6 +22,7 @@ css: |
 <div class="max-width-container" style="
   {%- if background_colour %}{{ space() }}--background-colour: {{ background_colour }};{% endif -%}
   {%- if vertical_padding %}{{ space() }}--vertical-padding: {{ vertical_padding }};{% endif -%}
+  {%- if max_width %}{{ space() }}--max-width: {{ max_width }};{% endif -%}
 ">
   {{ content | safe }}
 </div>

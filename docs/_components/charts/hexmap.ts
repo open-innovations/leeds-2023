@@ -1,7 +1,8 @@
 export const css = `
   .hexmap {
+    --hex-bg: none;
     --hex-fill: var(--l23-cyan);
-    background: var(--l23-mint);
+    background: var(--hex-bg);
     & .hex {
       & path {
         fill: var(--hex-fill);
@@ -38,7 +39,7 @@ type HexmapOptions = {
   labelProcessor: (label: string) => string;
 };
 
-function deepClone(o: unknown) {
+function deepClone<T>(o: T): T {
   return JSON.parse(JSON.stringify(o));
 }
 
@@ -57,7 +58,7 @@ export default function ({
   labelProcessor = (label) => label.slice(0, 3),
 }: HexmapOptions) {
   const layout = hexjson.layout;
-  const hexes: Record<string, HexDefinition> = deepClone(hexjson.hexes);
+  const hexes = deepClone(hexjson.hexes);
 
   if (matchKey && data) {
     data.forEach((record) => {

@@ -13,6 +13,7 @@ working_dir = os.path.join('working')
 working_file = os.path.join(working_dir, 'roadshow_attendees.csv')
 
 output_dir = os.path.join('data', 'metrics', 'roadshow_attendees')
+attendees_file = os.path.join(output_dir, 'attendees.csv')
 site_dir = os.path.join('docs', '_data', 'metrics', 'roadshow_attendees')
 
 
@@ -49,14 +50,25 @@ def get_workshop_responses():
 
 def summarise():
     data = pd.read_csv(working_file)
-    data['datetime'] = data['datetime'].apply(round_to_nearest_hour)
+    data['datetime'] = pd.to_datetime(data['datetime']).dt.round(freq='D')
 
     os.makedirs(output_dir, exist_ok=True)
 
+    attendees = pd.read_csv(attendees_file)
+    attendees.rename(columns={ 'date': 'datetime' }, inplace=True)
+    attendees['datetime'] = pd.to_datetime(attendees['datetime'], utc=True)
+
+    attendees_summary = attendees.groupby(by='datetime').sum()
+
     summary = data.groupby(by='datetime').count()
-    pd.DataFrame({
-        'attendees': summary.postcode
-    }).to_csv(os.path.join(output_dir, 'summary.csv'))
+    summary = pd.DataFrame({
+        'responses': summary.postcode
+    })
+
+    summary = pd.concat([attendees_summary, summary]).groupby('datetime').sum().astype(int)
+    summary.index.names=['date']
+    summary.to_csv(os.path.join(output_dir, 'summary.csv'),
+      date_format='%Y-%m-%d')
 
     pc = load_postcodes()
 
@@ -66,27 +78,27 @@ def summarise():
 
     counts = data.postcode.value_counts().to_frame(name='value')
     counts = counts.merge(pc, left_index=True, right_on='postcode')
-    # pd.DataFrame({
-    #     'postcode': counts.pcds,
-    #     'attendees': counts.value
-    # }).to_csv(os.path.join(output_dir, 'count_by_postcode.csv'), index=False)
 
     wards = load_wards_2021()
-    by_ward = counts.groupby('osward').value.sum().to_frame().merge(
-        wards, left_index=True, right_on='WD21CD', how='left')
+    by_ward = counts.groupby('osward').responses \
+        .sum().to_frame() \
+        .merge(wards, left_index=True, right_on='WD21CD', how='left') \
+        .merge(attendees, left_on='WD21CD', right_on='wd21cd')
     pd.DataFrame({
         'ward_name': by_ward.WD21NM,
         'ward_code': by_ward.WD21CD,
-        'attendees': by_ward.value,
+        'attendees': by_ward.attendees,
+        'responses': by_ward.responses,
     }).to_csv(os.path.join(output_dir, 'count_by_ward.csv'), index=False)
 
     cons = load_constituencies_2020()
-    by_pcon = counts.groupby('pcon').value.sum().to_frame().merge(
-        cons, left_index=True, right_on='PCON20CD', how='left')
+    by_pcon = counts.groupby('pcon').responses \
+        .sum().to_frame() \
+        .merge(cons, left_index=True, right_on='PCON20CD', how='left')
     pd.DataFrame({
         'constituency_name': by_pcon.PCON20NM,
         'constituency_code': by_pcon.PCON20CD,
-        'attendees': by_pcon.value,
+        'responses': by_pcon.responses,
     }).to_csv(os.path.join(output_dir, 'count_by_constituency.csv'), index=False)
 
 
@@ -140,7 +152,5 @@ def process_attendees_spreadsheet():
       'attendees': data.attendees
     })
     data = data.sort_values(by='date')
-    print(data)
-    os.chdir(output_dir)
-    data.to_csv('attendees.csv', index=False)
+    data.to_csv(attendees_file, index=False)
     

@@ -56,11 +56,11 @@ def get_metrics(data,metric_labels):
     return {m : get_metric(data,m) for m in metric_labels}
 
 def add_top_level_meta(tl_meta,summarys,keep_label=False):
-    label = tl_meta.get("data-files-label","data")
-    tl = tl_meta | { "data-file" : summarys}
-    tl[label] = tl.pop("data-file")
+    label = tl_meta.get("data_files_label","data")
+    tl = tl_meta | { "data_file" : summarys}
+    tl[label] = tl.pop("data_file")
     if not keep_label:
-        tl.pop("data-files-label")
+        tl.pop("data_files_label")
 
     return tl
 
@@ -68,7 +68,7 @@ def add_file_level_meta(file_meta,summary,keep_reserved=False):
     fl = file_meta | {"metrics" : summary}
 
     if not keep_reserved:
-        [fl.pop(key,"") for key in ["path","group-by-date"]]
+        [fl.pop(key,"") for key in ["path","group_by_date"]]
 
     return fl
 
@@ -81,7 +81,7 @@ def filter_data(data: pd.DataFrame,filter_col,filter_range):
 
 def get_summary_file(config):
     data = pd.read_csv(config["path"])
-    data = filter_data(data,config["filter-col"],config["filter-range"])
+    data = filter_data(data,config["filter_col"],config["filter_range"])
     metrics = get_metrics(data,config["metrics"])
     return metrics #format(metrics)
 
@@ -96,12 +96,12 @@ def get_summary_dir(config):
 def get_summary_file_group_by_date(config):
     summary = []
     data = pd.read_csv(config["path"])
-    data = filter_data(data,config["filter-col"],config["filter-range"])
-    column,period = config["group-by-date"].split("_")
+    data = filter_data(data,config["filter_col"],config["filter_range"])
+    column,period = config["group_by_date"].split("_")
     
     data[column] = pd.to_datetime(data[column])
     data["period"] = data[column].dt.to_period(period)
-    col_name = config["group-by-date-col"] if "group-by-date-col" in config.keys() else "key"
+    col_name = config["group_by_date_col"] if "group_by_date_col" in config.keys() else "key"
     for p in data["period"].unique():
         filtered_data = data[data[column].dt.to_period(period) == p]
         metrics = {col_name : str(p).split("/")[0]} | get_metrics(filtered_data,config["metrics"])
@@ -112,12 +112,12 @@ def get_summary_file_group_by_date(config):
 
 def get_summarys(input):
     summarys = {}
-    for file_key in input["data-file"].keys():
-        config = input["data-file"][file_key]
+    for file_key in input["data_file"].keys():
+        config = input["data_file"][file_key]
         if os.path.isfile(config["path"]):
-            if "group-by-date" in config.keys():
+            if "group_by_date" in config.keys():
                 data =  get_summary_file_group_by_date(config)
-                pd.json_normalize(data).to_csv(config["out-csv"],index=False)
+                pd.json_normalize(data).to_csv(config["out_csv"],index=False)
                 summarys[file_key] =  {}
                 #summarys[file_key] =  get_summary_file_group_by_date(config)                
             else:

@@ -1,6 +1,6 @@
 title: Leeds 2023 twitter Summary Statistics
-data-files-label: service
-data-file:
+data_files_label: service
+data_file:
   twitter:
     path: data\metrics\social\twitter.csv
     metrics: &metrics
@@ -8,20 +8,20 @@ data-file:
     - engagements_total
     - audience_gained_total
     - impressions_total
-    filter-range: &filter 2022-01-01:2022-12-31
-    filter-col: &filter_col_name date
+    filter_range: &filter 2022-01-01:2022-12-31
+    filter_col: &filter_col_name date
   facebook:
     path: data\metrics\social\facebook.csv
     metrics: *metrics
-    filter-range: *filter
-    filter-col: *filter_col_name
+    filter_range: *filter
+    filter_col: *filter_col_name
   instagram:
     path: data\metrics\social\instagram.csv
     metrics: *metrics
-    filter-range: *filter
-    filter-col: *filter_col_name
+    filter_range: *filter
+    filter_col: *filter_col_name
   linkedin:
     path: data\metrics\social\linkedin.csv
     metrics: *metrics
-    filter-range: *filter
-    filter-col: *filter_col_name
+    filter_range: *filter
+    filter_col: *filter_col_name

@@ -76,7 +76,7 @@ def summarise():
     data.postcode = data.postcode.str.upper().str.replace(r'\s+', '', regex=True)
     pc['postcode'] = pc.pcds.str.upper().str.replace(r'\s+', '', regex=True)
 
-    counts = data.postcode.value_counts().to_frame(name='value')
+    counts = data.postcode.value_counts().to_frame(name='responses')
     counts = counts.merge(pc, left_index=True, right_on='postcode')
 
     wards = load_wards_2021()
@@ -104,23 +104,25 @@ def summarise():
 
 def process_workshop_attendees(freq='D'):
     data = pd.read_csv(os.path.join(output_dir, 'summary.csv'),
-                       parse_dates=['datetime'])
+                       parse_dates=['date'])
     # Summarises by required frequency and fills in gaps
-    data = data.resample('W-Fri', on='datetime').sum().reset_index()
+    data = data.resample('W-Fri', on='date').sum().reset_index()
 
     data.rename(columns={
-        'datetime': 'week_ending'
+        'date': 'week_ending'
     }, inplace=True)
 
     data = pd.concat([
         data,
         pd.DataFrame.from_records([{
             'week_ending': data.week_ending.min() - pd.Timedelta(weeks=1),
-            'attendees': 0
+            'attendees': 0,
+            'responses': 0
         }])
     ]).sort_values('week_ending')
 
     data['cumulative_attendees'] = data.attendees.cumsum()
+    data['cumulative_responses'] = data.responses.cumsum()
 
     data.to_csv(os.path.join(site_dir, 'summary.csv'),
                 date_format="%Y-%m-%d", index=False)

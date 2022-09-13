@@ -10,6 +10,7 @@
   min-width: 1vh;
   box-shadow: 2px 2px 4px hsla(0, 100%, 0%, 30%);
   transform: translateX(-50%);
+  text-align: center;
 
   &::after {
     content: "";

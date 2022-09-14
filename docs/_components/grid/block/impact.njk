@@ -7,7 +7,7 @@ css: |
     background: var(--background);
     padding: 1rem;
     text-align: center;
-    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+    transition: color 0.3s linear, background-color 0.3s linear;
   }
   .impact-block:hover {
     color: white;
@@ -15,6 +15,9 @@ css: |
   }
 ---
 <div class="impact-block"
-  style="--foreground: {{ fg }}; --background: {{ bg }};">
+  style="
+    {%- if fg %}--foreground: {{ fg }};{% endif -%}
+    {%- if bg %}--background: {{ bg }};{% endif -%}
+  ">
   {{ content | safe }}
 </div>

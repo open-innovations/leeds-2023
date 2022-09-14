@@ -1,0 +1,61 @@
+---
+title: Social Media
+summary: Data about Leeds 2023 Social Media Accounts 
+metas:
+  title: LEEDS 2023 Metrics - Social Media
+  description: |
+    Visualisations of key metrics related to LEEDS 2023 social media accounts.
+---
+
+<h1>{{ title }}</h1>
+
+{% comp 'grid.autogrid', { min_width: '32rem' } %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Audience
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.social_media.all_weekly.columns.audience_last | last
+    }) | safe }}
+    <p>
+      As at {{ metrics.social_media.all_weekly.columns.week_starting | last | date('HUMAN_DATE') }}
+    </p>
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Engagement 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.social_media.summary.service.twitter.metrics.engagements_total + 
+        metrics.social_media.summary.service.instagram.metrics.engagements_total +
+        metrics.social_media.summary.service.facebook.metrics.engagements_total +
+        metrics.social_media.summary.service.linkedin.metrics.engagements_total
+    }) | safe }}
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Audience Gained 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.social_media.summary.service.twitter.metrics.audience_gained_total + 
+        metrics.social_media.summary.service.instagram.metrics.audience_gained_total +
+        metrics.social_media.summary.service.facebook.metrics.audience_gained_total +
+        metrics.social_media.summary.service.linkedin.metrics.audience_gained_total
+    }) | safe }}
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Impressions 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.social_media.summary.service.twitter.metrics.impressions_total + 
+        metrics.social_media.summary.service.instagram.metrics.impressions_total +
+        metrics.social_media.summary.service.facebook.metrics.impressions_total +
+        metrics.social_media.summary.service.linkedin.metrics.impressions_total
+    }) | safe }}
+  {% endcomp %}
+{% endcomp %}
+
+
+{% include "visualisations/social-media/social-graph.njk" %}
+

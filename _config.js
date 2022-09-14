@@ -8,6 +8,8 @@ import metas from "lume/plugins/metas.ts";
 import postcss from "lume/plugins/postcss.ts";
 import autoDependency from 'oi-lume-utils/processors/auto-dependency.ts';
 import csvLoader from 'oi-lume-utils/loaders/csv-loader.ts';
+import date from "lume/plugins/date.ts";
+
 
 import getFonts from 'local/oi/get-fonts.ts';
 
@@ -41,6 +43,7 @@ site.use(esbuild({
     treeShaking: true,
   },
 }));
+site.use(date());
 
 site.loadPages([".html"]);
 

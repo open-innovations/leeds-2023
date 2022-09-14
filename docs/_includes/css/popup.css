@@ -1,3 +1,10 @@
+[data-auto-popup] {
+  cursor: help;
+  & * {
+    cursor: inherit;
+  }
+}
+
 .popup {
   --bg-colour: black;
   position: fixed;

@@ -143,9 +143,7 @@ export default function ({
         ${-margin - hexWidth / 2} ${-margin - hexSide}
         ${width + hexWidth + 2 * margin} ${height + 2 * (margin + hexSide)}
       "
-      style="
-        {%- if bgColour %}--hex-bg: {{ bgColour }}{% endif -%}
-      "
+      style="${ bgColour ? `--hex-bg: ${ bgColour }` : ''}"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       data-dependencies="/assets/js/auto-popup.js"

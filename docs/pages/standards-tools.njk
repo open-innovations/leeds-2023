@@ -1,0 +1,27 @@
+---
+title: Standards & Tools
+url: /standards-tools/
+nav_order: 40
+---
+
+<h1>{{ title }}</h1>
+
+<p>This page contains a list of data standards and tools under consideration by LEEDS 2023.</p>
+
+<h2>Standards</h2>
+
+{% comp "grid.autogrid" %}
+  {% for id, standard in standards %}
+    {{ comp.grid.link(standard) | safe }}
+  {% endfor %}
+{% endcomp %}
+
+<h2>Tools</h2>
+
+{% comp 'grid.autogrid' %}
+  {% for id, tool in tools %}
+    {{ comp.grid.link(tool) | safe }}
+  {% endfor %}
+{% endcomp %}
+
+

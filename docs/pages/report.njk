@@ -1,9 +1,15 @@
 ---
 title: Reports
 url: /report/
-nav_order: 10
+# nav_order: 10
 ---
 <h1>{{ title }}</h1>
+
+<p>
+  These reports are work in progress, but show the direction we're hoping take for reporting.
+  Please do not rely on data presented in these reports.
+  We are publishing this online as work in progress so we can share with stakeholders for feedback.
+</p>
 
 {% comp 'grid.autogrid' %}
   {% for report in search.pages('report') %}

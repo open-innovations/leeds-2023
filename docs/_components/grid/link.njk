@@ -15,10 +15,5 @@
 } %}
   <h2>{{ title }}</h2>
   {% if summary %}<p>{{ summary }}</p>{% endif %}
-  {% if workInProgress %}{{
-    comp.wip_marker({
-      bg: 'var(--l23-yellow)',
-      fg: 'black'
-    })
-  | safe }}{% endif %}
+  {% if workInProgress %}{{ comp.work_in_progress() | safe }}{% endif %}
 {% endcomp %}

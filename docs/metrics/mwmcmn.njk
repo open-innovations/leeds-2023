@@ -1,0 +1,55 @@
+---
+title: My World, My City, My Neighbourhood
+work_in_progress:true
+summary: Data on the MWMCMN event series.
+manual_measure:
+    artists_employed: 999
+    total_participants: 999
+    total_young_people: 999
+---
+
+{# Set up some cyclers for block colouring #}
+{% set fg = cycler("black", "black") %}
+{% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)") %}
+
+<h1>{{ title }}</h1>
+
+<p>
+  This page shows data collected about the My World, My City, My Neighbourhood project delivered with Leeds 2023. 
+</p>
+
+{% comp 'grid.autogrid' %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total number of artists employed:
+  {{ comp.viz.bigNumber({ number: manual_measure.artists_employed }) | safe }}
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Some other metric:
+  {{ comp.viz.bigNumber({ number: manual_measure.artists_employed }) | safe }}
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total number of participants:
+  {{ comp.viz.bigNumber({ number: manual_measure.artists_employed }) | safe }}
+{% endcomp %}
+
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total number of young people engaged with:
+  {{ comp.viz.bigNumber({ number: manual_measure.artists_employed }) | safe }}
+{% endcomp %}
+
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Some other metric:
+  {{ comp.viz.bigNumber({ number: manual_measure.artists_employed }) | safe }}
+{% endcomp %}
+
+{% endcomp %}
+
+
+
+
+

@@ -36,7 +36,7 @@ metas:
 {%- endmacro -%}
 
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
-  <section>
+  <section style="--hex-bg: var(--l23-mint);">
     <h2>Attendees by hosting ward</h2>
     <p>
       This hexmap shows the number of attendees at the roadshows held in each ward.
@@ -46,7 +46,8 @@ metas:
       data: metrics.roadshow_attendees.by_ward.rows,
       matchKey: 'ward_code',
       valueProp: 'attendees',
-      popup: popupAttendees
+      popup: popupAttendees,
+      bgColour: 'red'
     }) | safe }}
   </section>
 

@@ -37,6 +37,7 @@ type HexmapOptions = {
   popup: (params: Record<string, string | number>) => string;
   colourScale: (value: number) => string;
   labelProcessor: (label: string) => string;
+  bgColour: string;
 };
 
 function deepClone<T>(o: T): T {
@@ -56,6 +57,7 @@ export default function ({
   popup = ({ label, value }) => `${label}: ${value}`,
   colourScale = defaultScale,
   labelProcessor = (label) => label.slice(0, 3),
+  bgColour = 'none',
 }: HexmapOptions) {
   const layout = hexjson.layout;
   const hexes = deepClone(hexjson.hexes);
@@ -140,6 +142,9 @@ export default function ({
       viewBox="
         ${-margin - hexWidth / 2} ${-margin - hexSide}
         ${width + hexWidth + 2 * margin} ${height + 2 * (margin + hexSide)}
+      "
+      style="
+        {%- if bgColour %}--hex-bg: {{ bgColour }}{% endif -%}
       "
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"

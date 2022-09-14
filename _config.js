@@ -85,6 +85,10 @@ site.copy('/data');
 site.remoteFile('/favicon.ico', 'https://leeds2023.co.uk/favicon.ico');
 site.copy('/favicon.ico');
 
+// Get some super tiny icons
+site.remoteFile('/assets/images/icons/github.svg', 'https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons@master/images/svg/github.svg');
+site.copy('/assets/images/icons');
+
 site.copy('.nojekyll');
 site.copy('CNAME');
 

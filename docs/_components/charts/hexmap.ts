@@ -114,9 +114,9 @@ export default function ({
     return `<g
           class="hex"
           transform="translate(${x - qWidth / 2} ${y})"
+          data-hover="${popup({ label, value })}"
         >
         <path
-          data-hover="${popup({ label, value })}"
           style="--hex-fill: ${colourScale(value / maxAttendees)}"
           d="
             M ${qWidth / 2},${-hexSide / 2}

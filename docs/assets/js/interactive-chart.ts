@@ -17,9 +17,11 @@ addEventListener('DOMContentLoaded', () => {
   function showPopup(event) {
     if (fader) clearTimeout(fader);
     popup.style.display = null;
-    popup.innerHTML = event.target.dataset.hover;
-    const loc = event.target.getBoundingClientRect();
-    const hoverPos = event.target.dataset.hoverPos || 'bottom';
+    console.log(event.target);
+    console.log(event.currentTarget);
+    popup.innerHTML = event.currentTarget.dataset.hover;
+    const loc = event.currentTarget.getBoundingClientRect();
+    const hoverPos = event.currentTarget.dataset.hoverPos || 'bottom';
     popup.dataset.hoverPos = hoverPos;
     switch (hoverPos) {
       case 'right':

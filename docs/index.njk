@@ -2,17 +2,10 @@
 title: LEEDS 2023 Data
 layout: layouts/default.njk
 links:
-  - title: Roadshow Attendees
-    link: ~/metrics/roadshow-attendees.md
-    summary: |
-      Data collection and visualisation of attendees at our roadshows
   - title: GitHub repo
     link: https://github.com/open-innovations/leeds-2023
     summary: |
       GitHub repo for the code and data.
-  - title: LEEDS 2023
-    link: https://leeds2023.co.uk/
-    summary: Website of LEEDS 2023 Year Of Culture
 ---
 
 {% comp "layout.block", { background_colour: 'var(--l23-yellow)', vertical_padding: '3rem' } %}
@@ -22,15 +15,53 @@ links:
 
 {% comp "layout.block", { vertical_padding: '2rem'} %}
 {% comp "grid.autogrid" %}
-  {% for link in links %}
-    {{ comp.grid.link({
-      title: link.title,
-      link: link.link | url,
-      summary: link.summary
-    }) | safe }}
-  {% endfor %}
-  {% comp "grid.block.full_width" %}
-    {{ comp.animatedLogo() | safe }}
+
+  {% comp "grid.block.impact", {
+    link: "https://leeds2023.co.uk/",
+    bg: "var(--l23-magenta);",
+    fg: "white"
+  } %}
+    <div style="fill: white;">
+      <img src="/assets/images/logo.svg" height="50" inline/>
+    </div>
+    <p>Visit the main LEEDS 2023 Year Of Culture website</p>
   {% endcomp %}
+
+  <!-- Some metrics -->
+
+  {% comp "grid.block.impact", {
+    link: "~/metrics/roadshow-attendees.njk",
+    bg: "var(--l23-yellow);"
+  } %}
+    <h2>Roadshow Attendees</h2>
+    {{ comp.viz.bigNumber({ number: metrics.roadshow_attendees.summary.columns.cumulative_attendees | last }) | safe }}
+    Between
+    {{ metrics.roadshow_attendees.summary.columns.week_ending | first | date('MMMM') }}
+    and
+    {{ metrics.roadshow_attendees.summary.columns.week_ending | last | date('MMMM') }}
+    {{ metrics.roadshow_attendees.summary.columns.week_ending | last | date('YYY') }}
+  {% endcomp %}
+
+  {% for link in links %}
+    {% comp "grid.block.impact", {
+      link: link.link | url,
+      bg: "var(--l23-cyan);"
+    } %}
+      <h2>{{ link.title }}</h2>
+      <img src="https://camo.githubusercontent.com/b079fe922f00c4b86f1b724fbc2e8141c468794ce8adbc9b7456e5e1ad09c622/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6769746875622e737667" inline>
+      <p>{{ link.summary }}</p>
+    {% endcomp %}
+  {% endfor %}
+
+  {% comp "grid.block.impact", {} %}
+    <h2>
+      About this site
+    </h2>
+    <p>
+      This microsite presents data about the Leeds 2023 Year of Culture.
+      It aims to tell the story of the Year of Culture in data.
+    </p>
+  {% endcomp %}
+
 {% endcomp %}
 {% endcomp %}

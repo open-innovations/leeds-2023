@@ -1,0 +1,3 @@
+import metrics.roadshow_attendees
+
+metrics.roadshow_attendees.process_attendees_spreadsheet()

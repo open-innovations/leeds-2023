@@ -1,44 +1,44 @@
-ward_name,ward_code,attendees
-Wharfedale,E05001366,3
-Batley East,E05001390,1
-Golcar,E05001401,1
-Heckmondwike,E05001403,2
-Airedale and Ferry Fryston,E05001445,1
-Altofts and Whitwood,E05001446,1
-Wakefield South,E05001462,1
-Tadcaster,E05010060,1
-Marston Moor,E05011336,1
-Spofforth with Lower Wharfedale,E05011345,1
-Ardsley & Robin Hood,E05011384,11
-Armley,E05011385,8
-Bramley & Stanningley,E05011387,12
-Burmantofts & Richmond Hill,E05011388,5
-Calverley & Farsley,E05011389,18
-Chapel Allerton,E05011390,20
-Cross Gates & Whinmoor,E05011391,6
-Gipton & Harehills,E05011394,5
-Guiseley & Rawdon,E05011395,6
-Harewood,E05011396,3
-Headingley & Hyde Park,E05011397,22
-Hunslet & Riverside,E05011399,6
-Killingbeck & Seacroft,E05011400,5
-Kippax & Methley,E05011401,19
-Kirkstall,E05011402,16
-Little London & Woodhouse,E05011403,12
-Middleton Park,E05011404,8
-Moortown,E05011405,3
-Morley North,E05011406,16
-Morley South,E05011407,13
-Pudsey,E05011409,14
-Rothwell,E05011410,4
-Roundhay,E05011411,2
-Weetwood,E05011413,26
-Wetherby,E05011414,3
-Horsforth,E05011547,11
-Otley & Yeadon,E05011549,3
-Beeston & Holbeck,E05012647,2
-Farnley & Wortley,E05012648,2
-Adel & Wharfedale,E05012841,11
-Alwoodley,E05012842,9
-Garforth & Swillington,E05013830,2
-Temple Newsam,E05013831,11
+ward_name,ward_code,attendees,responses
+Wharfedale,E05001366,0,3
+Batley East,E05001390,0,1
+Golcar,E05001401,0,1
+Heckmondwike,E05001403,0,2
+Airedale and Ferry Fryston,E05001445,0,1
+Altofts and Whitwood,E05001446,0,1
+Wakefield South,E05001462,0,1
+Tadcaster,E05010060,0,1
+Marston Moor,E05011336,0,1
+Spofforth with Lower Wharfedale,E05011345,0,1
+Ardsley & Robin Hood,E05011384,22,11
+Armley,E05011385,11,8
+Bramley & Stanningley,E05011387,18,12
+Burmantofts & Richmond Hill,E05011388,0,5
+Calverley & Farsley,E05011389,59,18
+Chapel Allerton,E05011390,17,20
+Cross Gates & Whinmoor,E05011391,6,6
+Gipton & Harehills,E05011394,35,5
+Guiseley & Rawdon,E05011395,18,6
+Harewood,E05011396,32,3
+Headingley & Hyde Park,E05011397,52,22
+Hunslet & Riverside,E05011399,17,6
+Killingbeck & Seacroft,E05011400,45,5
+Kippax & Methley,E05011401,56,19
+Kirkstall,E05011402,30,16
+Little London & Woodhouse,E05011403,0,12
+Middleton Park,E05011404,30,8
+Moortown,E05011405,28,3
+Morley North,E05011406,13,16
+Morley South,E05011407,28,13
+Pudsey,E05011409,25,14
+Rothwell,E05011410,6,4
+Roundhay,E05011411,77,2
+Weetwood,E05011413,33,26
+Wetherby,E05011414,7,3
+Horsforth,E05011547,32,11
+Otley & Yeadon,E05011549,5,3
+Beeston & Holbeck,E05012647,5,2
+Farnley & Wortley,E05012648,15,2
+Adel & Wharfedale,E05012841,16,11
+Alwoodley,E05012842,23,9
+Garforth & Swillington,E05013830,8,2
+Temple Newsam,E05013831,24,11

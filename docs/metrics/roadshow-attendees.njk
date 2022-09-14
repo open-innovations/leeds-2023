@@ -1,0 +1,80 @@
+---
+title: Roadshow Attendees
+summary: Data about the attendees at the LEEDS 2023 community roadshow events.
+metas:
+  title: LEEDS 2023 Metrics - Roadshow Attendees
+  description: |
+    Visualisations of key metrics related to the LEEDS 2023 community roadshow events.
+---
+
+<h1>
+  {{ title }}
+</h1>
+
+<p>
+  These <a href="https://open-innovations.org/blog/2017-05-08-mapping-election-with-hexes">Hex cartograms</a>
+  show the number of people who attended one of the 
+  <a href="https://leeds2023.co.uk/news/get-ready-for-the-roadshow-with-leeds-2023">Leeds 2023 Roadshow events</a>
+  and the number who subsequently submitted Typeform survey responses afterwards.
+  Attendees are shown by the ward in which the event was held, whereas responses are categorised by ward of residence.
+  This is based on the postcode supplied when they completed the form.
+</p>
+
+<p>
+  When viewing the below data, consideration should be given to the fact that residents will travel across ward boundaries to attend
+  events. In addition to this, based on supplied postcodes, others attended Roadshow events from beyond the city of Leeds.
+</p>
+
+{%- macro popupAttendees(params) -%}
+  {{ params.label }}</br>
+  {{ params.value }} attendees
+{%- endmacro -%}
+
+{%- macro popupResponses(params) -%}
+  {{ params.label }}</br>
+  {{ params.value }} responses submitted
+{%- endmacro -%}
+
+{% comp 'grid.autogrid', { min_width: '32rem' } %}
+  <section>
+    <h2>Attendees by hosting ward</h2>
+    <p>
+      This hexmap shows the number of attendees at the roadshows held in each ward.
+    </p>
+    {{ comp.charts.hexmap({
+      hexjson: hex.wards_leeds,
+      data: metrics.roadshow_attendees.by_ward.rows,
+      matchKey: 'ward_code',
+      valueProp: 'attendees',
+      popup: popupAttendees
+    }) | safe }}
+  </section>
+
+  <section>
+    <h2>Feedback responses by ward of residence</h2>
+    <p>
+      This hexmap shows the number of attendees living in each ward
+      who submitted feedback following their attendance at the roadshows.
+    </p>
+    {{ comp.charts.hexmap({
+      hexjson: hex.wards_leeds,
+      data: metrics.roadshow_attendees.by_ward.rows,
+      matchKey: 'ward_code',
+      valueProp: 'responses',
+      popup: popupResponses
+    }) | safe }}
+  </section>
+
+{% endcomp %}
+
+<section>
+  <h2>
+    Attendees and Feedback Responses cumulative totals
+  </h2>
+  <p>
+    Updated automatically on a nightly basis, this chart shows the cumultative number of Roadshow feedback responses submitted per week.
+  </p>
+  
+  {% include "visualisations/roadshow-attendees/cumulative-graph.njk" %}
+  
+</section>

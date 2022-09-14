@@ -19,19 +19,25 @@
     const dateFormatter = (date) => date.toLocaleString('default', { day: 'numeric', month: 'short' });
     const data = {
       week: rawData.map(x => new Date(x.week_ending)),
-      values: rawData.map(x => x.cumulative_attendees),
+      values: {
+        attendees: rawData.map(x => x.cumulative_attendees),
+        responses: rawData.map(x => x.cumulative_responses),
+      },
       axis: {
         yMax: Math.max(...rawData.map(x => x.cumulative_attendees))
       }
     };
 
     // Work out maximum y value and labels
-    const yMax = Math.ceil(Math.max(...data.values)/50) * 50;
+    const gridSpacing = 200;
+    const yMax = Math.ceil(Math.max(...data.values.attendees)/gridSpacing) * gridSpacing;
     const yLabels = {};
-    for (let l = 0; l <= yMax; l+=50) yLabels[l] = { label: l};
+    for (let l = 0; l <= yMax; l+=gridSpacing) yLabels[l] = { label: l };
 
     const labels = data.week.reduce((a, c, n) => ({ ...a, [n]: { label: dateFormatter(c) } }), {})
-    const attendees = data.values.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
+    const attendees = data.values.attendees.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
+    const responses = data.values.responses.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
+
     chart = OI.linechart(document.getElementById('wa-chart-1'), {
       left: 80,
       right: 30,
@@ -55,10 +61,20 @@
         }
       }
     });
+    const colours = [
+      'var(--l23-cyan)',
+      'var(--l23-magenta)'
+    ]
     chart.addSeries(attendees, {
-      'title': 'Attendee Responses (cumulative)',
-      'points': { 'size': 6, 'color': 'var(--l23-cyan)' },
-      'line': { 'color': 'var(--l23-cyan)' },
+      'title': 'Attendees (cumulative)',
+      'points': { 'size': 6, 'color': colours[0] },
+      'line': { 'color': colours[0] },
+      // 'tooltip': { 'label': 'Cumulative attendees' }
+    });
+    chart.addSeries(responses, {
+      'title': 'Feedback Responses (cumulative)',
+      'points': { 'size': 6, 'color': colours[1] },
+      'line': { 'color': colours[1] },
       // 'tooltip': { 'label': 'Cumulative attendees' }
     });
     chart.draw();

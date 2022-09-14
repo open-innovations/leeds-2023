@@ -1,20 +1,38 @@
 ---
 css: |
+  .impact-link {
+    text-decoration: none;
+  }
   .impact-block {
     --background: lightgrey;
     --foreground: black;
     color: var(--foreground);
     background: var(--background);
-    padding: 1rem;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
-    transition: color 0.3s ease-in, background-color 0.3s ease-in;
-  }
-  .impact-block:hover {
-    color: white;
-    background: black;
+    transition: color 0.3s linear, background-color 0.3s linear;
+    &:hover {
+      color: white;
+      background: black;
+    }
+    & > :first-child {
+      margin-top: 0;
+    }
+    & > :last-child {
+      margin-bottom: 0;
+    }
   }
 ---
+{%-if link -%}<a class="impact-link" href="{{ link | url }}">{%- endif -%}
 <div class="impact-block"
-  style="--foreground: {{ fg }}; --background: {{ bg }};">
+  style="
+    {%- if fg %}--foreground: {{ fg }};{% endif -%}
+    {%- if bg %}--background: {{ bg }};{% endif -%}
+  ">
   {{ content | safe }}
 </div>
+{%-if link -%}</a>{%- endif -%}

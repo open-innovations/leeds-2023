@@ -114,7 +114,7 @@ export default function ({
     return `<g
           class="hex"
           transform="translate(${x - qWidth / 2} ${y})"
-          data-hover="${popup({ label, value })}"
+          data-auto-popup="${popup({ label, value })}"
         >
         <path
           style="--hex-fill: ${colourScale(value / maxAttendees)}"
@@ -143,7 +143,7 @@ export default function ({
       "
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
-      data-dependencies="/assets/js/interactive-chart.js"
+      data-dependencies="/assets/js/auto-popup.js"
     >
       ${Object.values(hexes).map(drawHex).join('')}
     </svg>

@@ -48,7 +48,7 @@ css: |
 {%- set x_scale = width / max -%}
 
 <svg class="barchart" viewBox="-{{ margin + series_label_width }} -{{ margin + title_height }} {{ width + series_label_width + 2 * margin }} {{ height + title_height+ axis_label_height + 2 * margin }}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  data-dependencies="/assets/js/interactive-chart.js"
+  data-dependencies="/assets/js/auto-popup.js"
   >
   <g id="plot" class="plot">
     <rect x=0 y=0 width={{ width }} height={{ height }} />
@@ -74,8 +74,8 @@ css: |
       id="series-{{ series_index }}-{{ loop.index0 }}"
       d="M0 {{ axis_spacing / 2 }} l{{ bar_length }} 0 l0 {{ series_height - axis_spacing }} l{{ -bar_length }} 0 L0 0"
       {% if popupContent -%}
-        data-hover="{{ popupContent(value=v) | safe }}"
-        data-hover-pos="right"
+        data-auto-popup="{{ popupContent(value=v) | safe }}"
+        data-auto-popup-pos="right"
       {%- endif %}
     />
     {%- endfor -%}

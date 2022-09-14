@@ -53,6 +53,10 @@ links:
     {% endcomp %}
   {% endfor %}
 
+  <div
+    data-auto-popup="Need to agree text for About page and this summary"
+    data-dependencies="/assets/js/auto-popup.js"
+  >
   {% comp "grid.block.impact", {} %}
     <h2>
       About this site
@@ -62,6 +66,7 @@ links:
       It aims to tell the story of the Year of Culture in data.
     </p>
   {% endcomp %}
+  </div>
 
 {% endcomp %}
 {% endcomp %}

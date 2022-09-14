@@ -89,7 +89,7 @@
   }
   document.addEventListener('DOMContentLoaded', function () {
     paramsTwitter = {
-              file: `{{ metrics.social_media.twitter_weekly.rows | dump | safe }}`,
+              file: `{{ metrics.social_media.service.twitter_weekly.rows | dump | safe }}`,
               domID: "twitter-chart-audience",
               colour: "#1DA1F2",
               metric: "audience_last",
@@ -99,7 +99,7 @@
             };
 
     paramsInstagram = {
-              file: `{{ metrics.social_media.instagram_weekly.rows | dump | safe }}`,
+              file: `{{ metrics.social_media.service.instagram_weekly.rows | dump | safe }}`,
               domID: "instagram-chart-audience",
               colour: "#833AB4",
               metric: "audience_last",
@@ -109,7 +109,7 @@
             };
 
     paramsFacebook = {
-              file: `{{ metrics.social_media.facebook_weekly.rows | dump | safe }}`,
+              file: `{{ metrics.social_media.service.facebook_weekly.rows | dump | safe }}`,
               domID: "facebook-chart-audience",
               colour: "#4267B2",
               metric: "audience_last",
@@ -119,7 +119,7 @@
             };
 
     paramsLinkedin = {
-              file: `{{ metrics.social_media.linkedin_weekly.rows | dump | safe }}`,
+              file: `{{ metrics.social_media.service.linkedin_weekly.rows | dump | safe }}`,
               domID: "linkedin-chart-audience",
               colour: "#0A66C2",
               metric: "audience_last",
@@ -129,7 +129,7 @@
             };
 
     paramsAll = {
-              file: `{{ metrics.social_media_2.all_weekly.rows | dump | safe }}`,
+              file: `{{ metrics.social_media.all_weekly.rows | dump | safe }}`,
               domID: "all-chart-audience",
               colour: "#000000",
               metric: "audience_last",
@@ -139,7 +139,7 @@
             };
 
     paramsTwitterE = {
-              file: `{{ metrics.social_media.twitter_weekly.rows | dump | safe }}`,
+              file: `{{ metrics.social_media.service.twitter_weekly.rows | dump | safe }}`,
               domID: "twitter-chart-engagement",
               colour: "#1DA1F2",
               metric: "engagements_total",
@@ -149,7 +149,7 @@
             };
 
     paramsInstagramE = {
-              file: `{{ metrics.social_media.instagram_weekly.rows | dump | safe }}`,
+              file: `{{ metrics.social_media.service.instagram_weekly.rows | dump | safe }}`,
               domID: "instagram-chart-engagement",
               colour: "#833AB4",
               metric: "engagements_total",
@@ -159,7 +159,7 @@
             };
 
     paramsFacebookE = {
-              file: `{{ metrics.social_media.facebook_weekly.rows | dump | safe }}`,
+              file: `{{ metrics.social_media.service.facebook_weekly.rows | dump | safe }}`,
               domID: "facebook-chart-engagement",
               colour: "#4267B2",
               metric: "engagements_total",
@@ -169,7 +169,7 @@
             };
 
     paramsLinkedinE = {
-              file: `{{ metrics.social_media.linkedin_weekly.rows | dump | safe }}`,
+              file: `{{ metrics.social_media.service.linkedin_weekly.rows | dump | safe }}`,
               domID: "linkedin-chart-engagement",
               colour: "#0A66C2",
               metric: "engagements_total",
@@ -179,7 +179,7 @@
             };
 
     paramsAllE = {
-          file: `{{ metrics.social_media_2.all_weekly.rows | dump | safe }}`,
+          file: `{{ metrics.social_media.all_weekly.rows | dump | safe }}`,
           domID: "all-chart-engagement",
           colour: "#000000",
           metric: "engagements_total",
@@ -189,7 +189,7 @@
         };
 
     paramsTwitterI = {
-              file: `{{ metrics.social_media.twitter_weekly.rows | dump | safe }}`,
+              file: `{{ metrics.social_media.service.twitter_weekly.rows | dump | safe }}`,
               domID: "twitter-chart-impressions",
               colour: "#1DA1F2",
               metric: "impressions_total",
@@ -199,7 +199,7 @@
             };
 
     paramsInstagramI = {
-              file: `{{ metrics.social_media.instagram_weekly.rows | dump | safe }}`,
+              file: `{{ metrics.social_media.service.instagram_weekly.rows | dump | safe }}`,
               domID: "instagram-chart-impressions",
               colour: "#833AB4",
               metric: "impressions_total",
@@ -209,7 +209,7 @@
             };
 
     paramsFacebookI = {
-              file: `{{ metrics.social_media.facebook_weekly.rows | dump | safe }}`,
+              file: `{{ metrics.social_media.service.facebook_weekly.rows | dump | safe }}`,
               domID: "facebook-chart-impressions",
               colour: "#4267B2",
               metric: "impressions_total",
@@ -219,7 +219,7 @@
             };
 
     paramsLinkedinI = {
-              file: `{{ metrics.social_media.linkedin_weekly.rows | dump | safe }}`,
+              file: `{{ metrics.social_media.service.linkedin_weekly.rows | dump | safe }}`,
               domID: "linkedin-chart-impressions",
               colour: "#0A66C2",
               metric: "impressions_total",
@@ -229,7 +229,7 @@
             };
 
     paramsAllI = {
-          file: `{{ metrics.social_media_2.all_weekly.rows | dump | safe }}`,
+          file: `{{ metrics.social_media.all_weekly.rows | dump | safe }}`,
           domID: "all-chart-impressions",
           colour: "#000000",
           metric: "impressions_total",

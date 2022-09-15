@@ -107,8 +107,8 @@ export default function ({
       break;
     case 'odd-q':
     case 'even-q':
-      rHeight = hexWidth / 2;
-      qWidth = 3 * hexSide;
+      rHeight = hexWidth;
+      qWidth = 1.5 * hexSide;
       break;
     default:
       throw 'Unsupported layout';
@@ -128,26 +128,44 @@ export default function ({
    */
   const rOffset = (r: number) => {
     const isEven = r % 2 === 0;
-    const rLeftMostEven = dimensions.left.r % 2 === 0;
-    let shim = 0;
-    switch (layout) {
-      case 'odd-r':
-      case 'odd-q':
-        shim = rLeftMostEven ? 0 : qWidth / 2;
-        break;
-      case 'even-r':
-      case 'even-q':
-        shim = rLeftMostEven ? qWidth / 2 : 0;
-        break;
-    }
-    const offsetSize = (qWidth / 2);
-    let offset = 0;
-    if (layout === 'odd-r') offset = isEven ? 0 : offsetSize;
-    if (layout === 'even-r') offset = isEven ? offsetSize : 0;
-    if (layout === 'odd-q') offset = isEven ? 0 : offsetSize;
-    if (layout === 'even-q') offset = isEven ? offsetSize : 0;
-    return offset - shim;
+    const offsetSize = qWidth / 2;
+    if (layout === 'odd-r') return isEven ? 0 : offsetSize;
+    if (layout === 'even-r') return isEven ? offsetSize : 0;
+    return 0;
   };
+
+  /**
+   * Calculate the quolom offset given the prevailing layout
+   * 
+   * @param r row to calculate offset for
+   * @returns 
+   */
+   const qOffset = (q: number) => {
+    const isEven = q % 2 === 0;
+    const offsetSize = rHeight / 2;
+    if (layout === 'odd-q') return isEven ? 0 : offsetSize;
+    if (layout === 'even-q') return isEven ? offsetSize : 0;
+    return 0;
+  };
+  
+  const isEven = (n: number) => (n % 2) === 0;
+  const getShim = () => {
+    let x = 0;
+    let y = 0;
+
+    if (
+      (isEven(dimensions.left.q) && layout ==='even-r') ||
+      (!isEven(dimensions.left.q) && layout ==='odd-r')
+    ) x = -qWidth / 2
+
+    if (
+      (isEven(dimensions.top.r) && layout ==='even-q') ||
+      (!isEven(dimensions.left.r) && layout ==='odd-q')
+    ) y = qWidth / 2
+
+    return { x, y };
+  }
+  const shim = getShim();
 
   /**
    * Calculate the centre of a hex given a q and r value.
@@ -158,8 +176,8 @@ export default function ({
    * @returns 
    */
   function getCentre({ q, r }: HexDefinition) {
-    const x = (q - dimensions.left.q) * qWidth + rOffset(r);
-    const y = height - (r - dimensions.top.r) * rHeight;
+    const x = (q - dimensions.left.q) * qWidth + rOffset(r) + shim.x;
+    const y = height - (r - dimensions.top.r) * rHeight + qOffset(q) + shim.y;
     return { x, y };
   }
 
@@ -220,7 +238,7 @@ export default function ({
       class="hexmap"
       viewBox="
         ${ - margin - qWidth / 2} ${ - margin - rHeight / 2}
-        ${ width + qWidth + 2 * margin} ${height + rHeight + 2 * margin }
+        ${ width + qWidth + 2 * margin } ${height + rHeight + 2 * margin }
       "
       style="${ bgColour ? `--hex-bg: ${ bgColour }` : ''}"
       xmlns="http://www.w3.org/2000/svg"

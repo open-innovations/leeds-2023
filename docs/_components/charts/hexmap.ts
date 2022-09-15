@@ -91,13 +91,28 @@ export default function ({
       }
     );
 
-  // TODO Need to add calculations that take into account flat-top hexes, maybe
   // Length of side = width * tan(30deg)
   const hexSide = hexWidth * Math.tan(Math.PI / 6);
-  // Row height is 1 and a half - there is a half a side length overlap
-  const rHeight = 1.5 * hexSide;
-  // Column width is set by the hexWidth for point top hexes
-  const qWidth = hexWidth;
+
+  // Calculate row height and quolum width
+  let rHeight: number;
+  let qWidth: number;
+  switch(layout) {
+    case 'odd-r':
+    case 'even-r':
+      // Row height is 1 and a half - there is a half a side length overlap
+      rHeight = 1.5 * hexSide;
+      // Column width is set by the hexWidth for point top hexes
+      qWidth = hexWidth;
+      break;
+    case 'odd-q':
+    case 'even-q':
+      rHeight = hexWidth / 2;
+      qWidth = 3 * hexSide;
+      break;
+    default:
+      throw 'Unsupported layout';
+  }
 
   // Overall width of svg (from centre of left-most to centre of right-most)
   const width = (dimensions.right.q - dimensions.left.q) * qWidth;
@@ -111,15 +126,27 @@ export default function ({
    * @param r row to calculate offset for
    * @returns 
    */
-  // Formula to calculate row offset
   const rOffset = (r: number) => {
     const isEven = r % 2 === 0;
-    const offset = -hexWidth / 2
-    // This seems counter-intuitive, but the whole coordinate system is already
-    // offset, so removing the offset from rows that are not shifted right works!
-    if (layout === 'odd-r') return isEven ? offset : 0;
-    if (layout === 'even-r') return isEven ? 0 : offset;
-    return 0;
+    const rLeftMostEven = dimensions.left.r % 2 === 0;
+    let shim = 0;
+    switch (layout) {
+      case 'odd-r':
+      case 'odd-q':
+        shim = rLeftMostEven ? 0 : qWidth / 2;
+        break;
+      case 'even-r':
+      case 'even-q':
+        shim = rLeftMostEven ? qWidth / 2 : 0;
+        break;
+    }
+    const offsetSize = (qWidth / 2);
+    let offset = 0;
+    if (layout === 'odd-r') offset = isEven ? 0 : offsetSize;
+    if (layout === 'even-r') offset = isEven ? offsetSize : 0;
+    if (layout === 'odd-q') offset = isEven ? 0 : offsetSize;
+    if (layout === 'even-q') offset = isEven ? offsetSize : 0;
+    return offset - shim;
   };
 
   /**
@@ -140,6 +167,38 @@ export default function ({
     const { x, y } = getCentre(config);
     const label = config[titleProp];
     const value = config[valueProp];
+
+    // Calculate the path based on the layout
+    let hexPath = undefined;
+    switch (layout) {
+      case 'odd-r':
+      case 'even-r':
+        hexPath = `
+          M ${hexWidth/2},${-hexSide / 2}
+          v ${hexSide}
+          l ${-qWidth / 2},${hexSide / 2}
+          l ${-qWidth / 2},${-hexSide / 2}
+          v ${-hexSide}
+          l ${qWidth / 2},${-hexSide / 2}
+          Z
+        `;
+        break;
+      case 'odd-q':
+      case 'even-q':
+          hexPath = `
+          M ${-hexSide / 2},${ -hexWidth / 2}
+          h ${hexSide}
+          l ${hexSide / 2},${hexWidth / 2}
+          l ${-hexSide / 2},${hexWidth / 2}
+          h ${-hexSide }
+          l ${-hexSide / 2 },${-hexWidth / 2}
+          Z
+        `;
+        break;
+      default:
+        throw 'Unsupported layout';
+    }
+
     // TODO this only supports pointy-top hexes at the moment
     return `<g
           class="hex"
@@ -148,15 +207,7 @@ export default function ({
         >
         <path
           style="--hex-fill: ${colourScale(value / maxAttendees)}"
-          d="
-            M ${qWidth / 2},${-hexSide / 2}
-            v ${hexSide}
-            l ${-qWidth / 2},${hexSide / 2}
-            l ${-qWidth / 2},${-hexSide / 2}
-            v ${-hexSide}
-            l ${qWidth / 2},${-hexSide / 2}
-            Z
-          "
+          d="${hexPath}"
         />
         <text
           text-anchor="middle"
@@ -168,8 +219,8 @@ export default function ({
   return `<svg
       class="hexmap"
       viewBox="
-        ${-margin - hexWidth / 2} ${-margin - hexSide}
-        ${width + hexWidth + 2 * margin} ${height + 2 * (margin + hexSide)}
+        ${ - margin - qWidth / 2} ${ - margin - rHeight / 2}
+        ${ width + qWidth + 2 * margin} ${height + rHeight + 2 * margin }
       "
       style="${ bgColour ? `--hex-bg: ${ bgColour }` : ''}"
       xmlns="http://www.w3.org/2000/svg"

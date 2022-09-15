@@ -91,18 +91,45 @@ export default function ({
       }
     );
 
-  const hexSide = hexWidth / 2 / Math.cos(Math.PI / 6);
+  // TODO Need to add calculations that take into account flat-top hexes, maybe
+  // Length of side = width * tan(30deg)
+  const hexSide = hexWidth * Math.tan(Math.PI / 6);
+  // Row height is 1 and a half - there is a half a side length overlap
   const rHeight = 1.5 * hexSide;
+  // Column width is set by the hexWidth for point top hexes
   const qWidth = hexWidth;
+
+  // Overall width of svg (from centre of left-most to centre of right-most)
   const width = (dimensions.right.q - dimensions.left.q) * qWidth;
+
+  // Overall height of svg (from centre of top-most to centre of bottom-most)
   const height = (dimensions.bottom.r - dimensions.top.r) * rHeight;
+
+  /**
+   * Calculate the row offset given the prevailing layout
+   * 
+   * @param r row to calculate offset for
+   * @returns 
+   */
+  // Formula to calculate row offset
   const rOffset = (r: number) => {
     const isEven = r % 2 === 0;
-    // Add options for other layouts in here
-    if (layout === 'odd-r') return !isEven ? hexWidth / 2 : 0;
-    throw 'Unsupported layout';
+    const offset = -hexWidth / 2
+    // This seems counter-intuitive, but the whole coordinate system is already
+    // offset, so removing the offset from rows that are not shifted right works!
+    if (layout === 'odd-r') return isEven ? offset : 0;
+    if (layout === 'even-r') return isEven ? 0 : offset;
+    return 0;
   };
 
+  /**
+   * Calculate the centre of a hex given a q and r value.
+   * 
+   * Uses rOffset formula to decide which to shift
+   * 
+   * @param hexConfig - { q: number, r: number }
+   * @returns 
+   */
   function getCentre({ q, r }: HexDefinition) {
     const x = (q - dimensions.left.q) * qWidth + rOffset(r);
     const y = height - (r - dimensions.top.r) * rHeight;
@@ -113,9 +140,10 @@ export default function ({
     const { x, y } = getCentre(config);
     const label = config[titleProp];
     const value = config[valueProp];
+    // TODO this only supports pointy-top hexes at the moment
     return `<g
           class="hex"
-          transform="translate(${x - qWidth / 2} ${y})"
+          transform="translate(${x} ${y})"
           data-auto-popup="${popup({ label, value })}"
         >
         <path

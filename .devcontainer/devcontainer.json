@@ -27,7 +27,11 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"denoland.vscode-deno",
-				"ronnidc.nunjucks"
+				"ronnidc.nunjucks",
+				"oscarotero.vscode-lume",
+				"janisdd.vscode-edit-csv",
+				"docsmsft.docs-yaml",
+				"mechatroner.rainbow-csv"
 			]
 		}
 	},

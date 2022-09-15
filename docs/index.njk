@@ -34,7 +34,7 @@ links:
     bg: "var(--l23-yellow);"
   } %}
     <h2>Roadshow Attendees</h2>
-    {{ comp.viz.bigNumber({ number: metrics.roadshow_attendees.summary.columns.cumulative_attendees | last }) | safe }}
+    {{ comp.viz.bigNumber({ number: metrics.roadshow_attendees.summary.columns.cumulative_attendees | last | localize }) | safe }}
     Between
     {{ metrics.roadshow_attendees.summary.columns.week_ending | first | date('MMMM') }}
     and

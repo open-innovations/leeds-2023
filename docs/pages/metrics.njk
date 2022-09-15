@@ -24,7 +24,8 @@ nav_order: 20
       <h2>{{ metric.title }}</h2>
       {%- if metric.key and metric.key in key_metrics -%}
         {{ comp.viz.bigNumber({
-          number: key_metrics[metric.key].value
+          number: key_metrics[metric.key].value | localize
+
         }) | safe }}
       {%- endif -%}
       {%- if key_metrics[metric.key].measure -%}

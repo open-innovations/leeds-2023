@@ -17,7 +17,7 @@ metas:
       Total Audience
     </h2>
     {{ comp.viz.bigNumber({
-      number: metrics.social_media.all_weekly.columns.audience_last | last
+      number: metrics.social_media.all_weekly.columns.audience_last | last | localize
     }) | safe }}
     <p>
       As at {{ metrics.social_media.all_weekly.columns.week_starting | last | date('HUMAN_DATE') }}
@@ -28,10 +28,12 @@ metas:
       Total Engagement 2022
     </h2>
     {{ comp.viz.bigNumber({
-      number: metrics.social_media.summary.service.twitter.metrics.engagements_total + 
+      number: (
+        metrics.social_media.summary.service.twitter.metrics.engagements_total + 
         metrics.social_media.summary.service.instagram.metrics.engagements_total +
         metrics.social_media.summary.service.facebook.metrics.engagements_total +
         metrics.social_media.summary.service.linkedin.metrics.engagements_total
+       ) | localize
     }) | safe }}
   {% endcomp %}
   {% comp 'grid.block.impact' %}
@@ -39,10 +41,12 @@ metas:
       Total Audience Gained 2022
     </h2>
     {{ comp.viz.bigNumber({
-      number: metrics.social_media.summary.service.twitter.metrics.audience_gained_total + 
+      number: (
+        metrics.social_media.summary.service.twitter.metrics.audience_gained_total + 
         metrics.social_media.summary.service.instagram.metrics.audience_gained_total +
         metrics.social_media.summary.service.facebook.metrics.audience_gained_total +
         metrics.social_media.summary.service.linkedin.metrics.audience_gained_total
+      ) | localize
     }) | safe }}
   {% endcomp %}
   {% comp 'grid.block.impact' %}
@@ -50,10 +54,12 @@ metas:
       Total Impressions 2022
     </h2>
     {{ comp.viz.bigNumber({
-      number: metrics.social_media.summary.service.twitter.metrics.impressions_total + 
+      number: (
+        metrics.social_media.summary.service.twitter.metrics.impressions_total + 
         metrics.social_media.summary.service.instagram.metrics.impressions_total +
         metrics.social_media.summary.service.facebook.metrics.impressions_total +
         metrics.social_media.summary.service.linkedin.metrics.impressions_total
+      ) | localize
     }) | safe }}
   {% endcomp %}
 {% endcomp %}

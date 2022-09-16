@@ -1,0 +1,18 @@
+title: My World My City My neighbourhood Summary Metrics
+data_files_label: file
+data_file:
+  projects:
+    path: data\reference\mwmcmn_projects.csv
+    metrics:
+      - Artist_ID_count
+      - Sponsored_Artists_Days_total
+      - Other_Artists_Employed_Days_total
+      - Performance_Or_Exhibition_Days_total
+      - Sessions_For_Education_Training_Or_Participation_total
+      - Artists_Employed_total
+      - Participants_total
+      - Live_Audience_total
+      - Online_Audience_total
+    fillna: 0
+    to_int:
+      

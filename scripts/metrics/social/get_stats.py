@@ -48,12 +48,12 @@ stats = {
 #reserved-tl: data-file,data-files-label
 #reserved-fl: metrics,path,group-by-date
 
-def get_metric(data,metric_labels):
+def get_metric(data,metric_labels,to_int=False):
     column,stat = metric_labels.rsplit("_",1)
-    return stats[stat](data,column)
+    return int(stats[stat](data,column)) if to_int else stats[stat](data,column)
 
-def get_metrics(data,metric_labels):
-    return {m : get_metric(data,m) for m in metric_labels}
+def get_metrics(data,metric_labels,to_int=False):
+    return {m : get_metric(data,m,to_int) for m in metric_labels}
 
 def add_top_level_meta(tl_meta,summarys,keep_label=False):
     label = tl_meta.get("data_files_label","data")
@@ -68,7 +68,7 @@ def add_file_level_meta(file_meta,summary,keep_reserved=False):
     fl = file_meta | {"metrics" : summary}
 
     if not keep_reserved:
-        [fl.pop(key,"") for key in ["path","group_by_date"]]
+        [fl.pop(key,"") for key in ["path","group_by_date","fillna"]]
 
     return fl
 
@@ -81,8 +81,15 @@ def filter_data(data: pd.DataFrame,filter_col,filter_range):
 
 def get_summary_file(config):
     data = pd.read_csv(config["path"])
-    data = filter_data(data,config["filter_col"],config["filter_range"])
-    metrics = get_metrics(data,config["metrics"])
+    if "filter_col" in config:
+        data = filter_data(data,config["filter_col"],config["filter_range"])
+
+    if "fillna" in config:
+        data = data.fillna(config["fillna"])
+
+    to_int = True if "to_int" in config else False
+
+    metrics = get_metrics(data,config["metrics"],to_int)
     return metrics #format(metrics)
 
 
@@ -106,8 +113,7 @@ def get_summary_file_group_by_date(config):
         filtered_data = data[data[column].dt.to_period(period) == p]
         metrics = {col_name : str(p).split("/")[0]} | get_metrics(filtered_data,config["metrics"])
         summary.append(metrics)
-
-    
+ 
     return summary
 
 def get_summarys(input):

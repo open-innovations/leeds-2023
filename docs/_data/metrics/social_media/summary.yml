@@ -3,9 +3,9 @@ service:
   twitter:
     metrics:
       audience_last: 16901
-      engagements_total: 50213
+      engagements_total: 50207
       audience_gained_total: 1823
-      impressions_total: 2343592
+      impressions_total: 2343287
     filter_range: 2022-01-01:2022-12-31
     filter_col: date
   facebook:
@@ -20,15 +20,15 @@ service:
     metrics:
       audience_last: 5338
       engagements_total: 3674
-      audience_gained_total: 1082
-      impressions_total: 91691
+      audience_gained_total: 1083
+      impressions_total: 91708
     filter_range: 2022-01-01:2022-12-31
     filter_col: date
   linkedin:
     metrics:
       audience_last: 2440
-      engagements_total: 5686
-      audience_gained_total: 1288
-      impressions_total: 80189
+      engagements_total: 5696
+      audience_gained_total: 1285
+      impressions_total: 80247
     filter_range: 2022-01-01:2022-12-31
     filter_col: date

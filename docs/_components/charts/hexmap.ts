@@ -114,8 +114,29 @@ export default function ({
       throw 'Unsupported layout';
   }
 
+  const isEven = (n: number) => (n % 2) === 0;
+
+  const getShim = () => {
+    let x = 0;
+    let y = 0;
+
+    if (
+      (isEven(dimensions.left.r) && layout ==='even-r') ||
+      (!isEven(dimensions.left.r) && layout ==='odd-r')
+    ) x = -0.5
+
+    if (
+      (isEven(dimensions.top.q) && layout ==='even-q') ||
+      (!isEven(dimensions.left.q) && layout ==='odd-q')
+    ) y = 0.5
+
+    const width = ((dimensions.right.r - dimensions.left.r) % 2) / 2;
+    return { x, y, width };
+  }
+  const shim = getShim();
+
   // Overall width of svg (from centre of left-most to centre of right-most)
-  const width = (dimensions.right.q - dimensions.left.q) * qWidth;
+  const width = (dimensions.right.q - dimensions.left.q + shim.width) * qWidth;
 
   // Overall height of svg (from centre of top-most to centre of bottom-most)
   const height = (dimensions.bottom.r - dimensions.top.r) * rHeight;
@@ -127,10 +148,8 @@ export default function ({
    * @returns 
    */
   const rOffset = (r: number) => {
-    const isEven = r % 2 === 0;
-    const offsetSize = qWidth / 2;
-    if (layout === 'odd-r') return isEven ? 0 : offsetSize;
-    if (layout === 'even-r') return isEven ? offsetSize : 0;
+    if (layout === 'odd-r') return isEven(r) ? 0 : 0.5;
+    if (layout === 'even-r') return isEven(r) ? 0.5 : 0;
     return 0;
   };
 
@@ -141,32 +160,11 @@ export default function ({
    * @returns 
    */
    const qOffset = (q: number) => {
-    const isEven = q % 2 === 0;
-    const offsetSize = rHeight / 2;
-    if (layout === 'odd-q') return isEven ? 0 : offsetSize;
-    if (layout === 'even-q') return isEven ? offsetSize : 0;
+    if (layout === 'odd-q') return isEven(q) ? 0 : 0.5;
+    if (layout === 'even-q') return isEven(q) ? 0.5 : 0;
     return 0;
   };
   
-  const isEven = (n: number) => (n % 2) === 0;
-  const getShim = () => {
-    let x = 0;
-    let y = 0;
-
-    if (
-      (isEven(dimensions.left.q) && layout ==='even-r') ||
-      (!isEven(dimensions.left.q) && layout ==='odd-r')
-    ) x = -qWidth / 2
-
-    if (
-      (isEven(dimensions.top.r) && layout ==='even-q') ||
-      (!isEven(dimensions.left.r) && layout ==='odd-q')
-    ) y = qWidth / 2
-
-    return { x, y };
-  }
-  const shim = getShim();
-
   /**
    * Calculate the centre of a hex given a q and r value.
    * 
@@ -176,8 +174,8 @@ export default function ({
    * @returns 
    */
   function getCentre({ q, r }: HexDefinition) {
-    const x = (q - dimensions.left.q) * qWidth + rOffset(r) + shim.x;
-    const y = height - (r - dimensions.top.r) * rHeight + qOffset(q) + shim.y;
+    const x = (q - dimensions.left.q + rOffset(r) + shim.x) * qWidth;
+    const y = height - (r - dimensions.top.r  + qOffset(q) + shim.y) * rHeight;
     return { x, y };
   }
 

@@ -74,20 +74,26 @@ export default function ({
     .map((h) => parseFloat(h[valueProp]))
     .reduce((result, current) => Math.max(result, current), 0);
 
+  const isShiftedRow = (r: number) => {
+    if (layout === 'even-r' && isEven(r)) return true;
+    if (layout === 'odd-r' && !isEven(r)) return true;
+    return false;
+  }
+
   const dimensions = Object.values(hexes)
     .map(({ q, r }) => ({ q, r }))
     .reduce(
       ({ left, right, top, bottom }, { q, r }) => ({
-        left: q < left.q ? { q, r } : left,
-        right: q > right.q ? { q, r } : right,
-        top: r < top.r ? { q, r } : top,
-        bottom: r > bottom.r ? { q, r } : bottom,
+        left: Math.min(q, left),
+        right: Math.max(q, right),
+        top: Math.min(r, top),
+        bottom: Math.max(r, bottom),
       }),
       {
-        left: { q: Infinity, r: 0 },
-        right: { q: -Infinity, r: 0 },
-        top: { q: 0, r: Infinity },
-        bottom: { q: 0, r: -Infinity },
+        left: Infinity,
+        right: -Infinity,
+        top: Infinity,
+        bottom: -Infinity,
       }
     );
 
@@ -119,27 +125,36 @@ export default function ({
   const getShim = () => {
     let x = 0;
     let y = 0;
+    let width = 0;
+
+    // Left Outy Shift
+    // Work out if the left-hand column has only shifted rows. If so, move left by half a quoloum
+    const leftColUnshifted = Object.values(hexes).filter(({ q, r }) => (q ===  dimensions.left) && !isShiftedRow( r ));
+    if (leftColUnshifted.length === 0) {
+      x = -0.5;
+    }
+    
+    // Right Inny Shift
+    // Work out if the right-hand column has only unshifted rows. If so, adjust width to account for extra
+    const rightColShifted = Object.values(hexes).filter(({ q, r }) => (q ===  dimensions.right) && isShiftedRow( r ));
+    if (rightColShifted.length === 0) {
+      width = x + 0.5;
+    }
 
     if (
-      (isEven(dimensions.left.r) && layout === 'even-r') ||
-      (!isEven(dimensions.left.r) && layout === 'odd-r')
-    ) x = -0.5
-
-    if (
-      (isEven(dimensions.top.q) && layout === 'even-q') ||
-      (!isEven(dimensions.left.q) && layout === 'odd-q')
+      (isEven(dimensions.top) && layout === 'even-q') ||
+      (!isEven(dimensions.left) && layout === 'odd-q')
     ) y = 0.5
 
-    const width = ((dimensions.right.r - dimensions.left.r) % 2) / 2;
     return { x, y, width };
   }
   const shim = getShim();
 
   // Overall width of svg (from centre of left-most to centre of right-most)
-  const width = (dimensions.right.q - dimensions.left.q + shim.width) * qWidth;
+  const width = (dimensions.right - dimensions.left + shim.width) * qWidth;
 
   // Overall height of svg (from centre of top-most to centre of bottom-most)
-  const height = (dimensions.bottom.r - dimensions.top.r) * rHeight;
+  const height = (dimensions.bottom - dimensions.top) * rHeight;
 
   /**
    * Calculate the row offset given the prevailing layout
@@ -148,8 +163,7 @@ export default function ({
    * @returns 
    */
   const rOffset = (r: number) => {
-    if (layout === 'odd-r') return isEven(r) ? 0 : 0.5;
-    if (layout === 'even-r') return isEven(r) ? 0.5 : 0;
+    if (isShiftedRow(r)) return 0.5;
     return 0;
   };
 
@@ -174,8 +188,8 @@ export default function ({
    * @returns 
    */
   function getCentre({ q, r }: HexDefinition) {
-    const x = (q - dimensions.left.q + rOffset(r) + shim.x) * qWidth;
-    const y = height - (r - dimensions.top.r + qOffset(q) + shim.y) * rHeight;
+    const x = (q - dimensions.left + rOffset(r) + shim.x) * qWidth;
+    const y = height - (r - dimensions.top + qOffset(q) + shim.y) * rHeight;
     return { x, y };
   }
 

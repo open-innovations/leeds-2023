@@ -127,18 +127,17 @@ export default function ({
     let y = 0;
     let width = 0;
 
-    // Left Outy Shift
     // Work out if the left-hand column has only shifted rows. If so, move left by half a quoloum
+    // Left Outy Shift
     const leftColUnshifted = Object.values(hexes).filter(({ q, r }) => (q ===  dimensions.left) && !isShiftedRow( r ));
     if (leftColUnshifted.length === 0) {
       x = -0.5;
-    }
-    
-    // Right Inny Shift
-    // Work out if the right-hand column has only unshifted rows. If so, adjust width to account for extra
-    const rightColShifted = Object.values(hexes).filter(({ q, r }) => (q ===  dimensions.right) && isShiftedRow( r ));
-    if (rightColShifted.length === 0) {
-      width = x + 0.5;
+      // Work out if the right-hand column has only unshifted rows. If so, adjust width to account for extra
+      // Right Inny Shift
+      const rightColShifted = Object.values(hexes).filter(({ q, r }) => (q ===  dimensions.right) && isShiftedRow( r ));
+      if (rightColShifted.length === 0) {
+        width = -0.5;
+      }
     }
 
     if (

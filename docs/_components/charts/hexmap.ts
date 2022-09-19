@@ -97,7 +97,7 @@ export default function ({
   // Calculate row height and quolum width
   let rHeight: number;
   let qWidth: number;
-  switch(layout) {
+  switch (layout) {
     case 'odd-r':
     case 'even-r':
       // Row height is 1 and a half - there is a half a side length overlap
@@ -121,13 +121,13 @@ export default function ({
     let y = 0;
 
     if (
-      (isEven(dimensions.left.r) && layout ==='even-r') ||
-      (!isEven(dimensions.left.r) && layout ==='odd-r')
+      (isEven(dimensions.left.r) && layout === 'even-r') ||
+      (!isEven(dimensions.left.r) && layout === 'odd-r')
     ) x = -0.5
 
     if (
-      (isEven(dimensions.top.q) && layout ==='even-q') ||
-      (!isEven(dimensions.left.q) && layout ==='odd-q')
+      (isEven(dimensions.top.q) && layout === 'even-q') ||
+      (!isEven(dimensions.left.q) && layout === 'odd-q')
     ) y = 0.5
 
     const width = ((dimensions.right.r - dimensions.left.r) % 2) / 2;
@@ -159,12 +159,12 @@ export default function ({
    * @param r row to calculate offset for
    * @returns 
    */
-   const qOffset = (q: number) => {
+  const qOffset = (q: number) => {
     if (layout === 'odd-q') return isEven(q) ? 0 : 0.5;
     if (layout === 'even-q') return isEven(q) ? 0.5 : 0;
     return 0;
   };
-  
+
   /**
    * Calculate the centre of a hex given a q and r value.
    * 
@@ -175,7 +175,7 @@ export default function ({
    */
   function getCentre({ q, r }: HexDefinition) {
     const x = (q - dimensions.left.q + rOffset(r) + shim.x) * qWidth;
-    const y = height - (r - dimensions.top.r  + qOffset(q) + shim.y) * rHeight;
+    const y = height - (r - dimensions.top.r + qOffset(q) + shim.y) * rHeight;
     return { x, y };
   }
 
@@ -190,7 +190,7 @@ export default function ({
       case 'odd-r':
       case 'even-r':
         hexPath = `
-          M ${hexWidth/2},${-hexSide / 2}
+          M ${hexWidth / 2},${-hexSide / 2}
           v ${hexSide}
           l ${-qWidth / 2},${hexSide / 2}
           l ${-qWidth / 2},${-hexSide / 2}
@@ -201,13 +201,13 @@ export default function ({
         break;
       case 'odd-q':
       case 'even-q':
-          hexPath = `
-          M ${-hexSide / 2},${ -hexWidth / 2}
+        hexPath = `
+          M ${-hexSide / 2},${-hexWidth / 2}
           h ${hexSide}
           l ${hexSide / 2},${hexWidth / 2}
           l ${-hexSide / 2},${hexWidth / 2}
-          h ${-hexSide }
-          l ${-hexSide / 2 },${-hexWidth / 2}
+          h ${-hexSide}
+          l ${-hexSide / 2},${-hexWidth / 2}
           Z
         `;
         break;
@@ -235,10 +235,10 @@ export default function ({
   return `<svg
       class="hexmap"
       viewBox="
-        ${ - margin - qWidth / 2} ${ - margin - rHeight / 2}
-        ${ width + qWidth + 2 * margin } ${height + rHeight + 2 * margin }
+        ${- margin - qWidth / 2} ${- margin - rHeight / 2}
+        ${width + qWidth + 2 * margin} ${height + rHeight + 2 * margin}
       "
-      style="${ bgColour ? `--hex-bg: ${ bgColour }` : ''}"
+      style="${bgColour ? `--hex-bg: ${bgColour}` : ''}"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       data-dependencies="/assets/js/auto-popup.js"

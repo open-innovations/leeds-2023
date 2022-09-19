@@ -70,7 +70,7 @@ export default function ({
     });
   }
 
-  const maxAttendees = Object.values(hexes)
+  const maxValue = Object.values(hexes)
     .map((h) => parseFloat(h[valueProp]))
     .reduce((result, current) => Math.max(result, current), 0);
 
@@ -222,7 +222,7 @@ export default function ({
           data-auto-popup="${popup({ label, value })}"
         >
         <path
-          style="--hex-fill: ${colourScale(value / maxAttendees)}"
+          style="--hex-fill: ${colourScale(value / maxValue)}"
           d="${hexPath}"
         />
         <text

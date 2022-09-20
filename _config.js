@@ -64,8 +64,11 @@ site.loadData([".csv"], csvLoader);
 site.script("get-fonts", getFonts);
 
 site.remoteFile('/js/oi.linechart.min.js', 'https://raw.githubusercontent.com/open-innovations/oi.linechart.js/main/oi.linechart.min.js');
+site.remoteFile('/assets/js/vendors/mermaid.js', 'https://unpkg.com/mermaid@8.8.0/dist/mermaid.js');
+
 site.copy('/js');
 site.copy('/assets/images');
+site.copy('/assets/js/vendors');
 
 // Publish raw data
 [

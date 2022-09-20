@@ -1,0 +1,52 @@
+---
+title: Data Model
+url: /data-model/
+layout: layouts/project.njk
+---
+
+<p>
+  This page shows an incomplete data model for LEEDS 2023.
+</p>
+
+{% comp 'diagram.mermaid' %}
+classDiagram
+  %% Base classes
+  class Person {
+    name
+    email
+  }
+  class Project
+  class Event{
+    PostCode location
+    DateTime date
+  }
+  class ProduceEvent
+  class PartnerEvent
+  class PromoteEvent
+  class TicketSale
+  class EventReturn {
+    countOfRegistrations
+    countOfAttendees
+  }
+  class EventSummmary {
+    <<Report>>
+  }
+
+  %% Relationships
+  TicketSale <-- "1" Person : purchaser
+  TicketSale <-- "1..*" Person : attendee
+
+  ProduceEvent <-- "*" TicketSale : sale
+  PartnerEvent <-- EventReturn : describes
+  PromoteEvent <-- EventReturn : describes
+
+  %% Dependencies
+  EventReturn <.. EventSummmary
+  TicketSale <.. EventSummmary
+
+  %% Inheritance relationships
+  Event <|-- ProduceEvent
+  Event <|-- PartnerEvent
+  Event <|-- PromoteEvent
+
+{% endcomp %}

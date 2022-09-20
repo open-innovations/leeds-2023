@@ -1,3 +1,3 @@
-Year,count,reach
-2022,257,93819827
-2023,2,325095
+Period,count,cumulative_count,reach,cumulative_reach
+2022,257,257,93819827,93819827
+2023,2,259,325095,94144922

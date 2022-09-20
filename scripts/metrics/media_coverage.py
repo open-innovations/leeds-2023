@@ -41,6 +41,9 @@ def read_media_metrics(sheet_name='Aug 2021 - July 2022'):
 
     media_data['CIRC'] = media_data.CIRC.fillna(0).astype(int)
 
+    # Clean up names
+    media_data.columns = media_data.columns.str.strip()
+
     kpi = media_data.groupby(['Scope', 'Type', 'Month'], as_index=False).size()
 
     kpi = kpi.pivot(index=["Scope", "Type"], columns="Month", values="size")
@@ -55,12 +58,12 @@ def read_media_metrics(sheet_name='Aug 2021 - July 2022'):
 
 
 def summarise():
-    data = pd.read_csv(RAW_CSV, usecols=['Date', 'Subject ', 'CIRC'], parse_dates=["Date"])
+    data = pd.read_csv(RAW_CSV, usecols=['Date', 'Subject', 'CIRC'], parse_dates=["Date"])
 
     data['Year'] = data.Date.dt.to_period('A-JUL')
 
     summary = pd.DataFrame({
-      'count': data.groupby('Year').count()['Subject '],
+      'count': data.groupby('Year').count()['Subject'],
       'reach': data.groupby('Year').sum()['CIRC']
     })
     

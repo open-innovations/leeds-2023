@@ -16,6 +16,14 @@ export const css = `
   }
 `;
 
+const counter = () => {
+  const yielder = (function* () {
+    let i = 0;
+    while(true) yield i++;
+  })();
+  return () => yielder.next().value;
+}
+
 /**
  *
  * @param options HexmapOptions
@@ -38,6 +46,7 @@ type HexmapOptions = {
   colourScale: (value: number) => string;
   labelProcessor: (label: string) => string;
   bgColour: string;
+  title?: string;
 };
 
 function deepClone<T>(o: T): T {
@@ -58,9 +67,12 @@ export default function ({
   colourScale = defaultScale,
   labelProcessor = (label) => label.slice(0, 3),
   bgColour = 'none',
+  title = 'Hexmap',
 }: HexmapOptions) {
   const layout = hexjson.layout;
   const hexes = deepClone(hexjson.hexes);
+
+  const uuid = crypto.randomUUID();
 
   if (matchKey && data) {
     data.forEach((record) => {
@@ -129,12 +141,12 @@ export default function ({
 
     // Work out if the left-hand column has only shifted rows. If so, move left by half a quoloum
     // Left Outy Shift
-    const leftColUnshifted = Object.values(hexes).filter(({ q, r }) => (q ===  dimensions.left) && !isShiftedRow( r ));
+    const leftColUnshifted = Object.values(hexes).filter(({ q, r }) => (q === dimensions.left) && !isShiftedRow(r));
     if (leftColUnshifted.length === 0) {
       x = -0.5;
       // Work out if the right-hand column has only unshifted rows. If so, adjust width to account for extra
       // Right Inny Shift
-      const rightColShifted = Object.values(hexes).filter(({ q, r }) => (q ===  dimensions.right) && isShiftedRow( r ));
+      const rightColShifted = Object.values(hexes).filter(({ q, r }) => (q === dimensions.right) && isShiftedRow(r));
       if (rightColShifted.length === 0) {
         width = -0.5;
       }
@@ -192,13 +204,16 @@ export default function ({
     return { x, y };
   }
 
+  const hexCounter = counter();
+
   const drawHex = (config: HexDefinition) => {
+    const hexId = hexCounter();
     const { x, y } = getCentre(config);
     const label = config[titleProp];
     const value = config[valueProp];
 
     // Calculate the path based on the layout
-    let hexPath = undefined;
+    let hexPath: string | undefined = undefined;
     switch (layout) {
       case 'odd-r':
       case 'even-r':
@@ -230,11 +245,12 @@ export default function ({
 
     // TODO this only supports pointy-top hexes at the moment
     return `<g
+          id="${uuid}-hex-${hexId}"
           class="hex"
           transform="translate(${x} ${y})"
           data-auto-popup="${popup({ label, value })}"
-          tabindex="0"
-          aria-label="${  label } value ${ value }"
+          role="listitem"
+          aria-label="${label} value ${value}"
         >
         <path
           style="--hex-fill: ${colourScale(value / maxValue)}"
@@ -243,12 +259,13 @@ export default function ({
         <text
           text-anchor="middle"
           dominant-baseline="middle"
+          aria-hidden="true"
           >${labelProcessor(label)}</text>
-        <title>${label}</title>
       </g>`;
   };
 
   return `<svg
+      id="hexes-${uuid}"  
       class="hexmap"
       viewBox="
         ${- margin - qWidth / 2} ${- margin - rHeight / 2}
@@ -258,9 +275,10 @@ export default function ({
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       data-dependencies="/assets/js/auto-popup.js"
-      tabindex="0"
-      aria-label="Hexmap"
+      role="list"
+      aria-labelledby="title-${uuid}"
     >
+      <title id="title-${uuid}">${title}.</title>
       ${Object.values(hexes).map(drawHex).join('')}
     </svg>
   `;

@@ -233,6 +233,8 @@ export default function ({
           class="hex"
           transform="translate(${x} ${y})"
           data-auto-popup="${popup({ label, value })}"
+          tabindex="0"
+          aria-label="${  label } value ${ value }"
         >
         <path
           style="--hex-fill: ${colourScale(value / maxValue)}"
@@ -242,6 +244,7 @@ export default function ({
           text-anchor="middle"
           dominant-baseline="middle"
           >${labelProcessor(label)}</text>
+        <title>${label}</title>
       </g>`;
   };
 
@@ -255,6 +258,8 @@ export default function ({
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       data-dependencies="/assets/js/auto-popup.js"
+      tabindex="0"
+      aria-label="Hexmap"
     >
       ${Object.values(hexes).map(drawHex).join('')}
     </svg>

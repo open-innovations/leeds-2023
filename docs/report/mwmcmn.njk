@@ -11,6 +11,7 @@ manual_measure:
   total_days_other_artists: 184
   total_days_performace_exhibition: 108
   total_training_sessions: 487
+  total_young_people: 1172
   estimated_total_artists_employed: 23
   estimated_total_participants: 6900
   estimated_total_audience_live: 2300
@@ -18,6 +19,7 @@ manual_measure:
   estimated_total_days_other_artists: 1207
   estimated_total_days_performace_exhibition: 46
   estimated_total_training_sessions: 345
+
 ---
 
 {# Set up some cyclers for block colouring #}
@@ -74,7 +76,68 @@ Total Participants:
   {{ comp.viz.bigNumber({ number: manual_measure.total_training_sessions }) | safe }}
 {% endcomp %}
 
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total Young People Participated:
+  {{ comp.viz.bigNumber({ number: manual_measure.total_young_people }) | safe }}
 {% endcomp %}
+
+
+
+{% endcomp %}
+
+<h2>Participation and Impact on Young People:</h2>
+
+{% comp 'grid.autogrid' %}
+
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Number of young people involved that have experienced barriers to accessing the arts:
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Young people participated in the arts for the first time as a result of this project:
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Young people reported a positive experience of participating in the arts:
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Number of young people supported through your project have or intend to continue engagement with the arts:
+{% endcomp %}
+
+{% endcomp %}
+
+
+<h2>Impact on Community and Wellbeing:</h2>
+
+{% comp 'grid.autogrid' %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+People reported improved social networks as a result of the project:
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+People reported an increased sense of belonging to the community: 
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+People volunteered and/or supported their community as a result of the project:
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+People reported improved mental health and wellbeing as a result of the project: 
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+People reported improved physical health and wellbeing as a result of the project:
+{% endcomp %}
+
+
+{% endcomp %}
+
+
+
 
 
 

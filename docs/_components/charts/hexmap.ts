@@ -33,6 +33,14 @@ const deepClone = <T>(o: T): T => JSON.parse(JSON.stringify(o));
  * @returns 
  */
 const defaultScale = (value = 0) => `hsl(173, 100%, ${100 - value * 50}%)`;
+
+/**
+ * Check if the number is even
+ * 
+ * @param n 
+ * @returns 
+ */
+const isEven = (n: number) => (n % 2) === 0;
 /****************************/
 /* END OF UTILITY FUNCTIONS */
 /****************************/
@@ -46,6 +54,7 @@ export const css = `
     --hex-bg: none;
     --hex-fill: var(--l23-cyan);
     background: var(--hex-bg);
+    vector-effect: non-scaling-stroke;
     & .hex {
       & path {
         fill: var(--hex-fill);
@@ -81,6 +90,7 @@ type HexmapOptions = {
   title?: string;
 };
 
+// TODO set hex to something close to rems
 /**
  * Function to render a hexmap
  * 
@@ -91,7 +101,7 @@ export default function ({
   data,
   matchKey,
   margin = 10,
-  hexWidth = 40,
+  hexWidth = 60,
   titleProp = 'n',
   valueProp,
   popup = ({ label, value }) => `${label}: ${value}`,
@@ -106,25 +116,33 @@ export default function ({
   const uuid = crypto.randomUUID();
 
   // Merge data into hexes
+  // If the matchKey and data are defined
   if (matchKey && data) {
+    // Iterate over the data, accessing each entry as `record`
     data.forEach((record) => {
+      // Get the key from the key field from the record
       const key = record[matchKey] as string;
+      // If the key field is not one of the entries in the hexes, finish
       if (!(key in hexes)) return;
-      hexes[key] = { ...hexes[key], ...record };
+      // Otherwise update the relevant hex data with the entries in the record, but the hexes win - to avoid overwriting the critical fields
+      hexes[key] = { ...record, ...hexes[key] };
     });
   }
 
   // Find the biggest value in the hex map
+  // TODO Check if this works when the valueProp is a number
   const maxValue = Object.values(hexes)
     .map((h) => parseFloat(<string>h[valueProp]))
     .reduce((result, current) => Math.max(result, current), 0);
 
+  // Function to calculate if a given row should be shifted to the right
   const isShiftedRow = (r: number) => {
     if (layout === 'even-r' && isEven(r)) return true;
     if (layout === 'odd-r' && !isEven(r)) return true;
     return false;
   }
 
+  // Calculate the left, right, top and bottom
   const dimensions = Object.values(hexes)
     .map(({ q, r }) => ({ q, r }))
     .reduce(
@@ -143,6 +161,7 @@ export default function ({
     );
 
   // Length of side = width * tan(30deg)
+  // TODO rename hexWidth to something like minimum dimension / min diameter / faceToFace
   const hexSide = hexWidth * Math.tan(Math.PI / 6);
 
   // Calculate row height and quolum width
@@ -165,23 +184,26 @@ export default function ({
       throw 'Unsupported layout';
   }
 
-  const isEven = (n: number) => (n % 2) === 0;
-
   const getShim = () => {
+    // Amount to shift the whole hexmap by in a horizontal direction
     let x = 0;
+    // Amount to shift the whole hexmap by in a vertical direction
     let y = 0;
+    // Amount to adjust the width of the hexmap plot area
     let width = 0;
 
-    // Work out if the left-hand column has only shifted rows. If so, move left by half a quoloum
-    // Left Outy Shift
-    const leftColUnshifted = Object.values(hexes).filter(({ q, r }) => (q === dimensions.left) && !isShiftedRow(r));
-    if (leftColUnshifted.length === 0) {
-      x = -0.5;
-      // Work out if the right-hand column has only unshifted rows. If so, adjust width to account for extra
-      // Right Inny Shift
-      const rightColShifted = Object.values(hexes).filter(({ q, r }) => (q === dimensions.right) && isShiftedRow(r));
-      if (rightColShifted.length === 0) {
-        width = -0.5;
+    if (layout === 'odd-r' || layout === 'even-r') {
+      // Work out if the left-hand column has only shifted rows. i.e. Left Outy Shift
+      // If so, move left by half a quoloum
+      const unshiftedRowsInTheLeftColumn = Object.values(hexes).filter(({ q, r }) => (q === dimensions.left) && !isShiftedRow(r));
+      if (unshiftedRowsInTheLeftColumn.length === 0) {
+        x = -0.5;
+        // Work out if the right-hand column has only unshifted rows. i.e. Right Inny Shift
+        // If so, adjust width to account for extra
+        const shiftedRowsInTheRightColumn = Object.values(hexes).filter(({ q, r }) => (q === dimensions.right) && isShiftedRow(r));
+        if (shiftedRowsInTheRightColumn.length === 0) {
+          width = -0.5;
+        }
       }
     }
 
@@ -214,7 +236,7 @@ export default function ({
   /**
    * Calculate the quolom offset given the prevailing layout
    * 
-   * @param r row to calculate offset for
+   * @param q row to calculate offset for
    * @returns 
    */
   const qOffset = (q: number) => {
@@ -298,7 +320,7 @@ export default function ({
   };
 
   return `<svg
-      id="hexes-${uuid}"  
+      id="hexes-${uuid}"
       class="hexmap"
       viewBox="
         ${- margin - qWidth / 2} ${- margin - rHeight / 2}

@@ -76,18 +76,18 @@ type HexDefinition = {
 };
 
 type HexmapOptions = {
-  hexjson: { layout: string; hexes: Record<string, HexDefinition> };
+  bgColour: string;
+  colourScale: (value: number) => string;
   data?: Record<string, unknown>[];
-  matchKey?: string;
+  hexjson: { layout: string; hexes: Record<string, HexDefinition> };
+  hexScale: number;
+  labelProcessor: (label: string) => string;
   margin: number;
-  hexWidth: number;
+  matchKey?: string;
+  popup: (params: Record<string, string | number>) => string;
+  title?: string;
   titleProp: string;
   valueProp: string;
-  popup: (params: Record<string, string | number>) => string;
-  colourScale: (value: number) => string;
-  labelProcessor: (label: string) => string;
-  bgColour: string;
-  title?: string;
 };
 
 // TODO set hex to something close to rems
@@ -97,22 +97,29 @@ type HexmapOptions = {
  * @param options HexmapOptions object
  */
 export default function ({
-  hexjson,
+  bgColour = 'none',
+  colourScale = defaultScale,
   data,
+  hexjson,
+  hexScale = 1,
+  labelProcessor = (label) => label.slice(0, 3),
+  margin: marginScale = 0.25,
   matchKey,
-  margin = 10,
-  hexWidth = 60,
+  popup = ({ label, value }) => `${label}: ${value}`,
+  title = 'Hexmap',
   titleProp = 'n',
   valueProp,
-  popup = ({ label, value }) => `${label}: ${value}`,
-  colourScale = defaultScale,
-  labelProcessor = (label) => label.slice(0, 3),
-  bgColour = 'none',
-  title = 'Hexmap',
 }: HexmapOptions) {
+  // Capture the layout and hexes from the hexjson
   const layout = hexjson.layout;
   const hexes = deepClone(hexjson.hexes);
 
+  // Calculate hexCadence - the narrowest dimension of the hex
+  const hexCadence = hexScale * 75;
+  // The margin is a multiple of the hexSize
+  const margin = marginScale * hexCadence;
+
+  // Generate a UUID to identify the hexes
   const uuid = crypto.randomUUID();
 
   // Merge data into hexes
@@ -161,8 +168,7 @@ export default function ({
     );
 
   // Length of side = width * tan(30deg)
-  // TODO rename hexWidth to something like minimum dimension / min diameter / faceToFace
-  const hexSide = hexWidth * Math.tan(Math.PI / 6);
+  const hexSide = hexCadence * Math.tan(Math.PI / 6);
 
   // Calculate row height and quolum width
   let rHeight: number;
@@ -173,11 +179,11 @@ export default function ({
       // Row height is 1 and a half - there is a half a side length overlap
       rHeight = 1.5 * hexSide;
       // Column width is set by the hexWidth for point top hexes
-      qWidth = hexWidth;
+      qWidth = hexCadence;
       break;
     case 'odd-q':
     case 'even-q':
-      rHeight = hexWidth;
+      rHeight = hexCadence;
       qWidth = 1.5 * hexSide;
       break;
     default:
@@ -273,24 +279,24 @@ export default function ({
       case 'odd-r':
       case 'even-r':
         hexPath = `
-          M ${hexWidth / 2},${-hexSide / 2}
+          M ${hexCadence / 2},${-hexSide / 2}
           v ${hexSide}
-          l ${-qWidth / 2},${hexSide / 2}
-          l ${-qWidth / 2},${-hexSide / 2}
+          l ${-hexCadence / 2},${hexSide / 2}
+          l ${-hexCadence / 2},${-hexSide / 2}
           v ${-hexSide}
-          l ${qWidth / 2},${-hexSide / 2}
+          l ${hexCadence / 2},${-hexSide / 2}
           Z
         `;
         break;
       case 'odd-q':
       case 'even-q':
         hexPath = `
-          M ${-hexSide / 2},${-hexWidth / 2}
+          M ${-hexSide / 2},${-hexCadence / 2}
           h ${hexSide}
-          l ${hexSide / 2},${hexWidth / 2}
-          l ${-hexSide / 2},${hexWidth / 2}
+          l ${hexSide / 2},${hexCadence / 2}
+          l ${-hexSide / 2},${hexCadence / 2}
           h ${-hexSide}
-          l ${-hexSide / 2},${-hexWidth / 2}
+          l ${-hexSide / 2},${-hexCadence / 2}
           Z
         `;
         break;
@@ -323,8 +329,8 @@ export default function ({
       id="hexes-${uuid}"
       class="hexmap"
       viewBox="
-        ${- margin - qWidth / 2} ${- margin - rHeight / 2}
-        ${width + qWidth + 2 * margin} ${height + rHeight + 2 * margin}
+        ${- margin - qWidth / 2} ${- margin - hexSide}
+        ${width + qWidth + 2 * margin} ${height + 2 * hexSide + 2 * margin}
       "
       style="${bgColour ? `--hex-bg: ${bgColour}` : ''}"
       xmlns="http://www.w3.org/2000/svg"

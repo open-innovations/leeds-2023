@@ -1,0 +1,14 @@
+title: My World My City My neighbourhood Summary Metrics
+file:
+  projects:
+    metrics:
+      Artist_ID_count: 22
+      Sponsored_Artists_Days_total: 1195
+      Other_Artists_Employed_Days_total: 184
+      Performance_Or_Exhibition_Days_total: 108
+      Sessions_For_Education_Training_Or_Participation_total: 487
+      Artists_Employed_total: 165
+      Participants_total: 2105
+      Live_Audience_total: 3735
+      Online_Audience_total: 62898
+    to_int: null

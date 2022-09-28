@@ -34,7 +34,7 @@ links:
     bg: "var(--l23-yellow);"
   } %}
     <h2>Roadshow Attendees</h2>
-    {{ comp.viz.bigNumber({ number: metrics.roadshow_attendees.summary.columns.cumulative_attendees | last }) | safe }}
+    {{ comp.viz.bigNumber({ number: metrics.roadshow_attendees.summary.columns.cumulative_attendees | last | localize }) | safe }}
     Between
     {{ metrics.roadshow_attendees.summary.columns.week_ending | first | date('MMMM') }}
     and
@@ -48,11 +48,17 @@ links:
       bg: "var(--l23-cyan);"
     } %}
       <h2>{{ link.title }}</h2>
-      <img src="https://camo.githubusercontent.com/b079fe922f00c4b86f1b724fbc2e8141c468794ce8adbc9b7456e5e1ad09c622/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6769746875622e737667" inline>
+      <p>
+        <img src="/assets/images/icons/github.svg" class="mw-6" inline>
+      </p>
       <p>{{ link.summary }}</p>
     {% endcomp %}
   {% endfor %}
 
+  <div
+    data-auto-popup="Need to agree text for About page and this summary"
+    data-dependencies="/assets/js/auto-popup.js"
+  >
   {% comp "grid.block.impact", {} %}
     <h2>
       About this site
@@ -62,6 +68,7 @@ links:
       It aims to tell the story of the Year of Culture in data.
     </p>
   {% endcomp %}
+  </div>
 
 {% endcomp %}
 {% endcomp %}

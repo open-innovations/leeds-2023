@@ -3,7 +3,9 @@
   width: 100%;
 }
 
-img {
+img, svg {
   max-width: 100%;
+  &.mw-6 { 
+    max-width: 6em;
+  }
 }
-

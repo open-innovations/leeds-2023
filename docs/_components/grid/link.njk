@@ -1,0 +1,19 @@
+{#
+  parameters
+
+  * title
+  * link
+  * summary
+  * id
+  * cls = ''
+  * workInProgress = false
+#}
+{% comp 'grid.block.impact', {
+  bg: 'var(--l23-cyan)',
+  link: link,
+  align: 'unset'
+} %}
+  <h2>{{ title }}</h2>
+  {% if summary %}<p>{{ summary }}</p>{% endif %}
+  {% if workInProgress %}{{ comp.work_in_progress() | safe }}{% endif %}
+{% endcomp %}

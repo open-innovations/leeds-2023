@@ -26,25 +26,8 @@
     <div class='top-spacer'></div>
 
     <main id="main" role="main" aria-label="Content">
-      {% if work_in_progress %}
-        {% comp "layout.block" %}
-        {{ comp.wip_marker({
-          bg: 'var(--l23-yellow)',
-          fg: 'black'
-        }) | safe }}
-        {% endcomp %}
-      {% endif %}
-
+      {% if work_in_progress %}{{ comp.work_in_progress() | safe }}{% endif %}
       {{ content | safe }}
-
-      {% if work_in_progress %}
-        {% comp "layout.block" %}
-        {{ comp.wip_marker({
-          bg: 'var(--l23-yellow)',
-          fg: 'black'
-        }) | safe }}
-        {% endcomp %}
-      {% endif %}
     </main>
   </body>
 </html>

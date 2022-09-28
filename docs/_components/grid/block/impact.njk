@@ -6,6 +6,7 @@ css: |
   .impact-block {
     --background: lightgrey;
     --foreground: black;
+    --align: center;
     color: var(--foreground);
     background: var(--background);
     height: 100%;
@@ -13,8 +14,10 @@ css: |
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
+    text-align: var(--align);
     transition: color 0.3s linear, background-color 0.3s linear;
+    position: relative;
+    overflow: hidden;
     &:hover {
       color: white;
       background: black;
@@ -32,6 +35,7 @@ css: |
   style="
     {%- if fg %}--foreground: {{ fg }};{% endif -%}
     {%- if bg %}--background: {{ bg }};{% endif -%}
+    {%- if align %}--align: {{ align }};{% endif -%}
   ">
   {{ content | safe }}
 </div>

@@ -1,6 +1,7 @@
 ---
 title: Roadshow Attendees
-summary: Data about the attendees at the LEEDS 2023 community roadshow events.
+summary: Data about community roadshow events which ran May to September 2022
+key: roadshow_attendees
 metas:
   title: LEEDS 2023 Metrics - Roadshow Attendees
   description: |
@@ -15,7 +16,7 @@ metas:
   These <a href="https://open-innovations.org/blog/2017-05-08-mapping-election-with-hexes">Hex cartograms</a>
   show the number of people who attended one of the 
   <a href="https://leeds2023.co.uk/news/get-ready-for-the-roadshow-with-leeds-2023">Leeds 2023 Roadshow events</a>
-  and the number who subsequently submitted Typeform survey responses afterwards.
+  and the number who subsequently submitted event feedback responses via Typeform.
   Attendees are shown by the ward in which the event was held, whereas responses are categorised by ward of residence.
   This is based on the postcode supplied when they completed the form.
 </p>
@@ -36,8 +37,8 @@ metas:
 {%- endmacro -%}
 
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
-  <section>
-    <h2>Attendees by hosting ward</h2>
+  <section style="--hex-bg: var(--l23-mint);" aria-labelledby='attendees-by-hosting-ward'>
+    <h2 id='attendees-by-hosting-ward'>Attendees by hosting ward</h2>
     <p>
       This hexmap shows the number of attendees at the roadshows held in each ward.
     </p>
@@ -46,7 +47,9 @@ metas:
       data: metrics.roadshow_attendees.by_ward.rows,
       matchKey: 'ward_code',
       valueProp: 'attendees',
-      popup: popupAttendees
+      popup: popupAttendees,
+      bgColour: 'var(--l23-mint)',
+      title: 'Attendees at roadshows hosted in ward'
     }) | safe }}
   </section>
 
@@ -61,7 +64,8 @@ metas:
       data: metrics.roadshow_attendees.by_ward.rows,
       matchKey: 'ward_code',
       valueProp: 'responses',
-      popup: popupResponses
+      popup: popupResponses,
+      bgColour: 'var(--l23-mint)'
     }) | safe }}
   </section>
 
@@ -72,7 +76,7 @@ metas:
     Attendees and Feedback Responses cumulative totals
   </h2>
   <p>
-    Updated automatically on a nightly basis, this chart shows the cumultative number of Roadshow feedback responses submitted per week.
+    This chart shows the cumulative number of Roadshow feedback responses submitted per week.
   </p>
   
   {% include "visualisations/roadshow-attendees/cumulative-graph.njk" %}

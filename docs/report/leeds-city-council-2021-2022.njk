@@ -68,34 +68,62 @@ baseline:
   {% endcomp %}
   {# Data from AMA spreadsheet #}
   {# TODO add reach calculation #}
-  <ul>
-    <li>2020-2021:
-      number of articles = {{ baseline.media_coverage | localize }}.
-      Reach = {{ baseline.media_reach | localize }}.
-    </li>
-    <li>2021-2022:
-      number of articles = {{ metrics.media_coverage.summary.rows[0].count | localize}}.
-      Reach = {{ metrics.media_coverage.summary.rows[0].reach | float | localize }}.
-    </li>
-  </ul>
+
+  {%- set coverage = metrics.media_coverage.kpi.lcc_21_22.columns.cumulative_count | last -%}
+  {%- set reach = metrics.media_coverage.kpi.lcc_21_22.columns.cumulative_reach | last -%}
+
   {{ comp.viz.currentVsTarget({
-    current: (
-      (
-        (metrics.media_coverage.summary.rows[0].count / baseline.media_coverage) - 1
-      ) * 100
-    ) | round + '%',
+    current: ((( coverage / baseline.media_coverage ) - 1 ) * 100 ) | round + '%',
     target: target.coverage_pct_increase + '%',
-    label: 'Increase in number of articles'
+    label: 'Increase in Coverage (articles)'
   }) | safe }}
   {{ comp.viz.currentVsTarget({
-    current: (
-      (
-        (metrics.media_coverage.summary.rows[0].reach / baseline.media_reach) - 1
-      ) * 100
-    ) | round + '%',
+    current: ((( reach / baseline.media_reach ) - 1 ) * 100 ) | round + '%',
     target: target.reach_pct_increase + '%',
-    label: 'Increase in reach'
+    label: 'Increase in Reach (audience)'
   }) | safe }}
+
+  <section>
+    <table>
+      <tr>
+        <th>
+          Period
+        </th>
+        <th>
+          2020-21
+        </th>
+        <th>
+          2021-22
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Coverage
+        </td>
+        <td>
+          {{ baseline.media_coverage | localize }}
+        </td>
+        <td>
+          {{ coverage | localize}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Reach
+        </td>
+        <td>
+          {{ baseline.media_reach | localize }}
+        </td>
+        <td>
+          {{ reach | localize }}
+        </td>
+      </tr>
+    </table>
+    <p>
+      <strong>Coverage</strong> is the count of articles during the period.
+      <strong>Reach</strong> is the sum of the circulation per article.
+    </p>
+  </section>
 
   {% comp 'grid.block.full_width' %}
   <h2>

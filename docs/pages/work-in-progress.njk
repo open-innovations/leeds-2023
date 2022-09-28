@@ -1,0 +1,16 @@
+---
+url: /private/wip/
+layout: layouts/project.njk
+title: Work in Progress
+---
+
+{% comp 'grid.autogrid' %}
+{% for p in search.pages('work_in_progress=true') | data %}
+  {{ comp.grid.link({
+    title: p.title,
+    link: p.url,
+    summary: p.summary,
+    workInProgress: true
+  }) | safe }}
+{% endfor %}
+{% endcomp %}

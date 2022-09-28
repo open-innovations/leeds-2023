@@ -1,0 +1,82 @@
+---
+title: My World, My City, My Neighbourhood
+work_in_progress: true
+summary: Data on the MWMCMN event series.
+manual_measure:
+  total_artists_employed: 165
+  total_participants: 2105
+  total_audience_live: 3735
+  total_audience_online: 62898
+  total_days_sponsored_artists: 1195
+  total_days_other_artists: 184
+  total_days_performace_exhibition: 108
+  total_training_sessions: 487
+  estimated_total_artists_employed: 23
+  estimated_total_participants: 6900
+  estimated_total_audience_live: 2300
+  estimated_total_audience_online: 70000
+  estimated_total_days_other_artists: 1207
+  estimated_total_days_performace_exhibition: 46
+  estimated_total_training_sessions: 345
+---
+
+{# Set up some cyclers for block colouring #}
+{% set fg = cycler("black", "black") %}
+{% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)") %}
+
+<h1>{{ title }}</h1>
+
+<p>
+  This page shows data collected about the My World, My City, My Neighbourhood project delivered with Leeds 2023. 
+</p>
+
+{% comp 'grid.autogrid' %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total artists employed
+  {{ comp.viz.bigNumber({ number: manual_measure.total_artists_employed }) | safe }}
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total Participants
+  {{ comp.viz.bigNumber({ number: manual_measure.total_participants }) | safe }}
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total Live Audience 
+  {{ comp.viz.bigNumber({ number: manual_measure.total_audience_live }) | safe }}
+{% endcomp %}
+
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total Online Audience
+  {{ comp.viz.bigNumber({ number: manual_measure.total_audience_online }) | safe }}
+{% endcomp %}
+
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total Days Worked By Sponsored Artists 
+  {{ comp.viz.bigNumber({ number: manual_measure.total_days_sponsored_artists }) | safe }}
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total Days Worked By Other Artists
+  {{ comp.viz.bigNumber({ number: manual_measure.total_days_other_artists }) | safe }}
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total Performance And Exhibition Days
+  {{ comp.viz.bigNumber({ number: manual_measure.total_days_performace_exhibition }) | safe }}
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total Participants:
+  {{ comp.viz.bigNumber({ number: manual_measure.total_training_sessions }) | safe }}
+{% endcomp %}
+
+{% endcomp %}
+
+
+
+
+

@@ -1,3 +1,46 @@
+/*********************/
+/* UTILITY FUNCTIONS */
+/*********************/
+// TODO factor these out to a util library
+
+/**
+ * Generator function to return a counter function which can be used to create incrementing numbers
+ * on each call.
+ * 
+ * @returns A function which returns the next number each time it's called.
+ */
+const counter = () => {
+  let i = 0;
+  function* sequentialNumberGenerator() {
+    while (true) yield i++;
+  }
+  const sequentialNumber = sequentialNumberGenerator();
+  return () => sequentialNumber.next().value;
+}
+
+/**
+ * One-liner to clone an object using the stringigy->parse method.
+ * @param o Object to clone
+ * @returns 
+ */
+const deepClone = <T>(o: T): T => JSON.parse(JSON.stringify(o));
+
+/**
+ * Function which returns a sort of cyan colour scaled between completely white (lightness 100%) and
+ * full fat colour (50% lightness), based on provided value
+ *
+ * @param value Value to visualise from 0 to 1, where 1 is coloured and 0 is white
+ * @returns 
+ */
+const defaultScale = (value = 0) => `hsl(173, 100%, ${100 - value * 50}%)`;
+/****************************/
+/* END OF UTILITY FUNCTIONS */
+/****************************/
+
+
+/**
+ * Hexmap styles
+ */
 export const css = `
   .hexmap {
     --hex-bg: none;
@@ -16,22 +59,11 @@ export const css = `
   }
 `;
 
-const counter = () => {
-  const yielder = (function* () {
-    let i = 0;
-    while(true) yield i++;
-  })();
-  return () => yielder.next().value;
-}
-
-/**
- *
- * @param options HexmapOptions
- */
 type HexDefinition = {
   q: number;
   r: number;
   n: string;
+  [key: string]: unknown;
 };
 
 type HexmapOptions = {
@@ -49,12 +81,11 @@ type HexmapOptions = {
   title?: string;
 };
 
-function deepClone<T>(o: T): T {
-  return JSON.parse(JSON.stringify(o));
-}
-
-const defaultScale = (value = 0) => `hsl(173, 100%, ${100 - value * 50}%)`;
-
+/**
+ * Function to render a hexmap
+ * 
+ * @param options HexmapOptions object
+ */
 export default function ({
   hexjson,
   data,
@@ -74,6 +105,7 @@ export default function ({
 
   const uuid = crypto.randomUUID();
 
+  // Merge data into hexes
   if (matchKey && data) {
     data.forEach((record) => {
       const key = record[matchKey] as string;
@@ -82,8 +114,9 @@ export default function ({
     });
   }
 
+  // Find the biggest value in the hex map
   const maxValue = Object.values(hexes)
-    .map((h) => parseFloat(h[valueProp]))
+    .map((h) => parseFloat(<string>h[valueProp]))
     .reduce((result, current) => Math.max(result, current), 0);
 
   const isShiftedRow = (r: number) => {
@@ -209,8 +242,8 @@ export default function ({
   const drawHex = (config: HexDefinition) => {
     const hexId = hexCounter();
     const { x, y } = getCentre(config);
-    const label = config[titleProp];
-    const value = config[valueProp];
+    const label = <string>config[titleProp];
+    const value = <number>config[valueProp];
 
     // Calculate the path based on the layout
     let hexPath: string | undefined = undefined;

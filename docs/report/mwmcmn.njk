@@ -19,18 +19,27 @@ manual_measure:
   estimated_total_days_other_artists: 1207
   estimated_total_days_performace_exhibition: 46
   estimated_total_training_sessions: 345
-
+  num_barriers: 1045
+columns:
+  - key: project
+    name: Project
+  - key: count
+    name: Count
 ---
 
 {# Set up some cyclers for block colouring #}
 {% set fg = cycler("black", "black") %}
 {% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)") %}
 
+<br>
+<br>
+
 <h1>{{ title }}</h1>
 
 <p>
   This page shows data collected about the My World, My City, My Neighbourhood project delivered with Leeds 2023. 
 </p>
+
 
 {% comp 'grid.autogrid' %}
 
@@ -81,14 +90,114 @@ Total Young People Participated:
   {{ comp.viz.bigNumber({ number: manual_measure.total_young_people }) | safe }}
 {% endcomp %}
 
+{% endcomp %}
 
+
+<br>
+<br>
+
+<h2>Participation and Impact on Young People:</h2>
+
+<h3>
+>Number of young people involved that have experienced barriers to accessing the arts:
+</h3>
+
+{% comp 'grid.autogrid', {min_width: '40rem'} %}
+{% comp 'layout.block' %}
+
+{%- macro popupContent(value) -%}
+  {{ value }} people
+{%- endmacro -%}
+
+{{ comp.charts.barchart({
+  title: [
+    'Young people experiencing barriers'
+  ],
+  series: [
+    metrics.mwmcmn.barriers.columns.count
+  ],
+  popupContent: popupContent,
+  categories: metrics.mwmcmn.barriers.columns.stage,
+  colours: [
+    [ "var(--l23-cyan)" ]
+  ],
+  plot: {
+    grid: { x: true, category: true }
+  },
+  axis: {
+    x: {
+      title: 'Number of young people',
+      show: false,
+      ticks: false,
+      resolution:350
+    },
+    category: {
+      show: false,
+      height: 20
+    }
+  }
+}) | safe }}
+{% endcomp %}
 
 {% endcomp %}
+
+<br>
+<br>
+
+<h3>
+>Number of young people participating in the arts for the first time as a result of this project:
+</h3>
+
+
+{% comp 'grid.autogrid', {min_width: '40rem'} %}
+{% comp 'layout.block' %}
+
+
+
+{%- macro popupContent(value) -%}
+  {{ value }} people
+{%- endmacro -%}
+
+{{ comp.charts.barchart({
+  title: [
+    'First time experience'
+  ],
+  series: [
+    metrics.mwmcmn.barriers.columns.count
+  ],
+  popupContent: popupContent,
+  categories: metrics.mwmcmn.barriers.columns.stage,
+  colours: [
+    [ "var(--l23-cyan)" ]
+  ],
+  plot: {
+    grid: { x: true, category: true }
+  },
+  axis: {
+    x: {
+      title: 'Number of young people',
+      show: false,
+      ticks: false,
+      resolution:320
+    },
+    category: {
+      show: false,
+      height: 20
+    }
+  }
+}) | safe }}
+{% endcomp %}
+
+{% endcomp %}
+
+
+
+<br>
+<br>
 
 <h2>Participation and Impact on Young People:</h2>
 
 {% comp 'grid.autogrid' %}
-
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Number of young people involved that have experienced barriers to accessing the arts:
@@ -110,6 +219,7 @@ Number of young people supported through your project have or intend to continue
 
 
 <h2>Impact on Community and Wellbeing:</h2>
+
 
 {% comp 'grid.autogrid' %}
 
@@ -133,13 +243,26 @@ People reported improved mental health and wellbeing as a result of the project:
 People reported improved physical health and wellbeing as a result of the project:
 {% endcomp %}
 
-
 {% endcomp %}
 
+<br>
+<br>
 
+<h2>Number of My World, My City, My Neighbourhood Projects Taken Place by Ward</h2>
 
-
-
-
-
-
+{% comp 'grid.autogrid', {min_width: '40rem'} %}
+  <section style="--hex-bg: var(--l23-cyan);">
+    <p>
+      This hexmap could potentially show the number of projects carried out per ward. 
+    </p>
+    {{ comp.charts.hexmap({
+      hexjson: hex.wards_leeds,
+      data: metrics.roadshow_attendees.by_ward.rows,
+      matchKey: 'ward_code',
+      valueProp: 'attendees',
+      popup: popupAttendees,
+      bgColour: 'var(--l23-cyan)',
+      title: 'Number of projects taken place per ward'
+    }) | safe }}
+  </section>
+{% endcomp %}

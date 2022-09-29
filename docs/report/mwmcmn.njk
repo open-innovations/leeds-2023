@@ -3,6 +3,7 @@ title: My World, My City, My Neighbourhood
 work_in_progress: true
 summary: Data on the MWMCMN event series.
 manual_measure:
+  total_projects: 22
   total_artists_employed: 165
   total_participants: 2105
   total_audience_live: 3735
@@ -44,49 +45,37 @@ columns:
 {% comp 'grid.autogrid' %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total artists employed
+Total Projects:
+  {{ comp.viz.bigNumber({ number: manual_measure.total_projects }) | safe }}
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total artists involved:
   {{ comp.viz.bigNumber({ number: manual_measure.total_artists_employed }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Participants
+Total Participants:
   {{ comp.viz.bigNumber({ number: manual_measure.total_participants }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Live Audience 
+Total Live Audience:
   {{ comp.viz.bigNumber({ number: manual_measure.total_audience_live }) | safe }}
 {% endcomp %}
 
-
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Online Audience
-  {{ comp.viz.bigNumber({ number: manual_measure.total_audience_online }) | safe }}
-{% endcomp %}
-
-
-{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Days Worked By Sponsored Artists 
-  {{ comp.viz.bigNumber({ number: manual_measure.total_days_sponsored_artists }) | safe }}
-{% endcomp %}
-
-{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Days Worked By Other Artists
-  {{ comp.viz.bigNumber({ number: manual_measure.total_days_other_artists }) | safe }}
-{% endcomp %}
-
-{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Performance And Exhibition Days
+Total Performance And Exhibition Days:
   {{ comp.viz.bigNumber({ number: manual_measure.total_days_performace_exhibition }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Participants:
+Total Training/Education sessions:
   {{ comp.viz.bigNumber({ number: manual_measure.total_training_sessions }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Young People Participated:
+Total Participants (Young People):
   {{ comp.viz.bigNumber({ number: manual_measure.total_young_people }) | safe }}
 {% endcomp %}
 

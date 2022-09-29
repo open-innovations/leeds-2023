@@ -75,6 +75,7 @@ site.copy('/assets/js/vendors');
   'roadshow_attendees/count_by_constituency.csv',
   'roadshow_attendees/count_by_ward.csv',
   'roadshow_attendees/summary.csv',
+  'roadshow_attendees/attendees.csv',
   'social/twitter.csv',
   'social/instagram.csv',
   'social/linkedin.csv',

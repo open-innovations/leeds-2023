@@ -1,0 +1,38 @@
+---
+title: About
+url: /about/
+layout: layouts/project.njk
+---
+
+<h2>Licenses</h2>
+
+<h3>Data and Website</h3>
+
+<p>
+  The data shared in this site and the site content is licensed under a Creative Commons Attribution 4.0 license.
+</p>
+
+{% comp 'grid.autogrid' %}
+  {{ comp.license.cc_by({
+    title: 'LEEDS 2023 Open Data',
+    url: 'https://data.leeds2023.co.uk',
+    creator: 'LEEDS 2023',
+    creator_url: 'https://leeds2023.co.uk'
+  }) | safe }}
+
+  {{ comp.license.cc_by({
+    title: 'LEEDS 2023 Data Microsite',
+    url: 'https://data.leeds2023.co.uk',
+    creator: 'LEEDS 2023',
+    creator_url: 'https://leeds2023.co.uk'
+  }) | safe }}
+{% endcomp %}
+
+<h3>Code</h3>
+
+<p>
+  The code that creates the site is released under an MIT license, and is available in the
+  <a href="https://github.com/open-innovations/leeds-2023">
+    LEEDS 2023 Data GitHub Repository
+  </a>.
+</p>

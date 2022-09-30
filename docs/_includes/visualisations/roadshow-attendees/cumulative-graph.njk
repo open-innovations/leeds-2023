@@ -55,7 +55,7 @@
         'y': {
           'line': { show: false },
           'grid': { 'show': true, 'stroke-width': '0.5px' },
-          'title': { 'label': 'Attendees' },
+          'title': { 'label': 'Numbers' },
           'max': yMax,
           'labels': yLabels,
         }
@@ -66,13 +66,13 @@
       'var(--l23-magenta)'
     ]
     chart.addSeries(attendees, {
-      'title': 'Attendees (cumulative)',
+      'title': 'Attendances (cumulative)',
       'points': { 'size': 6, 'color': colours[0] },
       'line': { 'color': colours[0] },
       // 'tooltip': { 'label': 'Cumulative attendees' }
     });
     chart.addSeries(responses, {
-      'title': 'Feedback Responses (cumulative)',
+      'title': 'Completed Contact Consent Forms (cumulative)',
       'points': { 'size': 6, 'color': colours[1] },
       'line': { 'color': colours[1] },
       // 'tooltip': { 'label': 'Cumulative attendees' }

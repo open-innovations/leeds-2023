@@ -15,28 +15,28 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const rawData = JSON.parse(`{{ metrics.roadshow_attendees.summary.rows | dump | safe }}`);
+    const rawData = JSON.parse(`{{ metrics.roadshows.summary.rows | dump | safe }}`);
     const dateFormatter = (date) => date.toLocaleString('default', { day: 'numeric', month: 'short' });
     const data = {
       week: rawData.map(x => new Date(x.week_ending)),
       values: {
-        attendees: rawData.map(x => x.cumulative_attendees),
-        responses: rawData.map(x => x.cumulative_responses),
+        attendances: rawData.map(x => x.cumulative_attendance),
+        contactConsents: rawData.map(x => x.cumulative_contact_consents),
       },
       axis: {
-        yMax: Math.max(...rawData.map(x => x.cumulative_attendees))
+        yMax: Math.max(...rawData.map(x => x.cumulative_attendance))
       }
     };
 
     // Work out maximum y value and labels
     const gridSpacing = 200;
-    const yMax = Math.ceil(Math.max(...data.values.attendees)/gridSpacing) * gridSpacing;
+    const yMax = Math.ceil(Math.max(...data.values.attendances)/gridSpacing) * gridSpacing;
     const yLabels = {};
     for (let l = 0; l <= yMax; l+=gridSpacing) yLabels[l] = { label: l };
 
     const labels = data.week.reduce((a, c, n) => ({ ...a, [n]: { label: dateFormatter(c) } }), {})
-    const attendees = data.values.attendees.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
-    const responses = data.values.responses.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
+    const attendances = data.values.attendances.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
+    const contactConsents = data.values.contactConsents.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
 
     chart = OI.linechart(document.getElementById('wa-chart-1'), {
       left: 80,
@@ -65,13 +65,13 @@
       'var(--l23-cyan)',
       'var(--l23-magenta)'
     ]
-    chart.addSeries(attendees, {
+    chart.addSeries(attendances, {
       'title': 'Attendances (cumulative)',
       'points': { 'size': 6, 'color': colours[0] },
       'line': { 'color': colours[0] },
       // 'tooltip': { 'label': 'Cumulative attendees' }
     });
-    chart.addSeries(responses, {
+    chart.addSeries(contactConsents, {
       'title': 'Completed Contact Consent Forms (cumulative)',
       'points': { 'size': 6, 'color': colours[1] },
       'line': { 'color': colours[1] },

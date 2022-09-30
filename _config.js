@@ -72,10 +72,10 @@ site.copy('/assets/js/vendors');
 
 // Publish raw data
 [
-  'roadshow_attendees/count_by_constituency.csv',
-  'roadshow_attendees/count_by_ward.csv',
-  'roadshow_attendees/summary.csv',
-  'roadshow_attendees/attendees.csv',
+  'roadshows/count_by_constituency.csv',
+  'roadshows/count_by_ward.csv',
+  'roadshows/summary.csv',
+  'roadshows/attendees.csv',
   'social/twitter.csv',
   'social/instagram.csv',
   'social/linkedin.csv',

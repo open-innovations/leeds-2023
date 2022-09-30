@@ -1,4 +1,4 @@
-week_ending,attendees,responses,cumulative_attendees,cumulative_responses
+week_ending,attendance,contact_consents,cumulative_attendance,cumulative_contact_consents
 2022-05-06,0,0,0,0
 2022-05-13,12,12,12,12
 2022-05-20,80,31,92,43

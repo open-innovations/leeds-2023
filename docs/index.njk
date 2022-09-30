@@ -34,12 +34,12 @@ links:
     bg: "var(--l23-yellow);"
   } %}
     <h2>Roadshow Attendees</h2>
-    {{ comp.viz.bigNumber({ number: metrics.roadshow_attendees.summary.columns.cumulative_attendees | last | localize }) | safe }}
+    {{ comp.viz.bigNumber({ number: metrics.roadshows.summary.columns.cumulative_attendance | last | localize }) | safe }}
     Between
-    {{ metrics.roadshow_attendees.summary.columns.week_ending | first | date('MMMM') }}
+    {{ metrics.roadshows.summary.columns.week_ending | first | date('MMMM') }}
     and
-    {{ metrics.roadshow_attendees.summary.columns.week_ending | last | date('MMMM') }}
-    {{ metrics.roadshow_attendees.summary.columns.week_ending | last | date('YYY') }}
+    {{ metrics.roadshows.summary.columns.week_ending | last | date('MMMM') }}
+    {{ metrics.roadshows.summary.columns.week_ending | last | date('YYY') }}
   {% endcomp %}
 
   {% for link in links %}

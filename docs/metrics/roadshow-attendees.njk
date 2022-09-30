@@ -1,7 +1,7 @@
 ---
 title: Roadshow Attendees
 summary: Data about community roadshow events which ran May to September 2022
-key: roadshow_attendees
+key: roadshows
 metas:
   title: LEEDS 2023 Metrics - Roadshow Attendees
   description: |
@@ -44,9 +44,9 @@ metas:
     </p>
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,
-      data: metrics.roadshow_attendees.by_ward.rows,
+      data: metrics.roadshows.by_ward.rows,
       matchKey: 'ward_code',
-      valueProp: 'attendees',
+      valueProp: 'attendance',
       popup: popupAttendees,
       bgColour: 'var(--l23-mint)',
       title: 'Attendees at roadshows hosted in ward'
@@ -61,9 +61,9 @@ metas:
     </p>
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,
-      data: metrics.roadshow_attendees.by_ward.rows,
+      data: metrics.roadshows.by_ward.rows,
       matchKey: 'ward_code',
-      valueProp: 'responses',
+      valueProp: 'contact_consents',
       popup: popupResponses,
       bgColour: 'var(--l23-mint)'
     }) | safe }}

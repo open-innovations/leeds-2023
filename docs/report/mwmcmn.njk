@@ -257,9 +257,9 @@ People reported improved physical health and wellbeing as a result of the projec
     </p>
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,
-      data: metrics.roadshow_attendees.by_ward.rows,
+      data: metrics.roadshows.by_ward.rows,
       matchKey: 'ward_code',
-      valueProp: 'attendees',
+      valueProp: 'attendance',
       popup: popupAttendees,
       bgColour: 'var(--l23-cyan)',
       title: 'Number of projects taken place per ward'

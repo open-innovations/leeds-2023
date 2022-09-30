@@ -1,27 +1,12 @@
-import pandas as pd
-import combine
-import clean
-import os
+import pull_from_sprout
+import total
+import get_stats
 
-def clear_dir(dir: str):
-    for file in combine.dir_file_paths(dir):
-        os.remove(file)
-
-TEMP_DIR_LOCATION = "working/sprout"
-MASTER_FILE_LOCATION = "data/metrics/social/{}.csv"
-
-df =  combine.combine_dir(TEMP_DIR_LOCATION)
-split = df.groupby("Network")
-dfs = {table.lower() : split.get_group(table) for table in list(split.groups.keys())}
-
-#TODO new data should take priority over master file
-for key in dfs:
-    master_file_path = MASTER_FILE_LOCATION.format(key)
-    combine.combine_file_df(master_file_path,dfs[key],pre=clean.clean_df_1,post=clean.clean_df_2,write_path=master_file_path)
-
-#Use if nothing in data files
-#for key in dfs:
-#    master_file_path = MASTER_FILE_LOCATION.format(key)
-#    combine.combine_dfs([dfs[key]],pre=clean.clean_df_1,post=clean.clean_df_2,write_path=master_file_path)
-
-#clear_dir(TEMP_DIR_LOCATION)
+def main():
+    pull_from_sprout.main()
+    get_stats.summary_write_yaml("scripts\\metrics\\social\\total_summary_config.yml","docs\_data\metrics\social_media\summary.yml")
+    get_stats.summary_write_yaml("scripts\\metrics\\social\\weekly_summary_config.yml","working\junk.yml")
+    total.main()
+    
+if(__name__ == "__main__"):
+    main()

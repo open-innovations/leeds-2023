@@ -6,20 +6,17 @@ import urllib.request
 
 def get_leeds_postcode_centroids():
     '''
-    Download postcode centroids
+    Get the latest ONS Postcode Database from the ONS.
 
-    Homepage: https://data.gov.uk/dataset/6de48d19-b3a0-4e45-b98e-01bd781b035c/ons-postcode-directory-latest-centroids
+    https://www.ons.gov.uk/methodology/geography/geographicalproducts/postcodeproducts
     '''
-    CENTROIDS_URL = 'http://geoportal.statistics.gov.uk/datasets/75edec484c5d49bcadd4893c0ebca0ff_0.csv'
-    SOURCE_CSV = os.path.join('working', 'centroids.csv')
+    SOURCE_CSV = os.path.join('working', 'ONSPD_AUG_2022_UK.csv')
     PARQUET_FILE = os.path.join('working', 'centroids.parquet')
     CENTROIDS_CSV = os.path.join('data', 'reference', 'postcodes.csv')
     CENTROIDS_JSON = os.path.join('data', 'reference', 'postcodes.geojson')
 
     if not os.path.exists(SOURCE_CSV):
-        with urllib.request.urlopen(CENTROIDS_URL) as r:
-            with open(SOURCE_CSV, 'wb') as f:
-                f.write(r.read())
+        raise "Can't find source CSV {0}. Have you downloaded it?".format(SOURCE_CSV)
 
     columns = 'pcds lat long pcon osward lsoa11 msoa11'.split()
     if not os.path.exists(PARQUET_FILE):

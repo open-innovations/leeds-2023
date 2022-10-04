@@ -6,9 +6,6 @@ manual_measure:
   total_artists_employed: 165
   total_participants: 2105
   total_audience_live: 3735
-  total_audience_online: 62898
-  total_days_sponsored_artists: 1195
-  total_days_other_artists: 184
   total_days_performace_exhibition: 108
   total_training_sessions: 487
   total_young_people: 1172
@@ -44,7 +41,7 @@ columns:
 {% comp 'grid.autogrid' %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total artists employed
+Total number of artists
   {{ comp.viz.bigNumber({ number: manual_measure.total_artists_employed }) | safe }}
 {% endcomp %}
 
@@ -54,40 +51,18 @@ Total Participants
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total Young People Participated:
+  {{ comp.viz.bigNumber({ number: manual_measure.total_young_people }) | safe }}
+{% endcomp %}
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Total Live Audience 
   {{ comp.viz.bigNumber({ number: manual_measure.total_audience_live }) | safe }}
-{% endcomp %}
-
-
-{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Online Audience
-  {{ comp.viz.bigNumber({ number: manual_measure.total_audience_online }) | safe }}
-{% endcomp %}
-
-
-{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Days Worked By Sponsored Artists 
-  {{ comp.viz.bigNumber({ number: manual_measure.total_days_sponsored_artists }) | safe }}
-{% endcomp %}
-
-{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Days Worked By Other Artists
-  {{ comp.viz.bigNumber({ number: manual_measure.total_days_other_artists }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Total Performance And Exhibition Days
   {{ comp.viz.bigNumber({ number: manual_measure.total_days_performace_exhibition }) | safe }}
-{% endcomp %}
-
-{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Participants:
-  {{ comp.viz.bigNumber({ number: manual_measure.total_training_sessions }) | safe }}
-{% endcomp %}
-
-{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Young People Participated:
-  {{ comp.viz.bigNumber({ number: manual_measure.total_young_people }) | safe }}
 {% endcomp %}
 
 {% endcomp %}
@@ -248,12 +223,12 @@ People reported improved physical health and wellbeing as a result of the projec
 <br>
 <br>
 
-<h2>Number of My World, My City, My Neighbourhood Projects Taken Place by Ward</h2>
+<h2>Number of Celebration Events Taken Place by Ward</h2>
 
 {% comp 'grid.autogrid', {min_width: '40rem'} %}
   <section style="--hex-bg: var(--l23-cyan);">
     <p>
-      This hexmap could potentially show the number of projects carried out per ward. 
+      This hexmap shows the number of celebration events taking place per ward. 
     </p>
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,

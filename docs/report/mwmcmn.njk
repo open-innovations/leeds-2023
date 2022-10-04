@@ -87,10 +87,6 @@ Total Participants (Young People):
 
 <h2>Participation and Impact on Young People:</h2>
 
-<h3>
->Number of young people involved that have experienced barriers to accessing the arts:
-</h3>
-
 {% comp 'grid.autogrid', {min_width: '40rem'} %}
 {% comp 'layout.block' %}
 
@@ -100,13 +96,13 @@ Total Participants (Young People):
 
 {{ comp.charts.barchart({
   title: [
-    'Young people experiencing barriers'
+    'Young Participants - Age Breakdown'
   ],
   series: [
-    metrics.mwmcmn.barriers.columns.count
+    [1181,35,823,90,96,137]
   ],
   popupContent: popupContent,
-  categories: metrics.mwmcmn.barriers.columns.stage,
+  categories: ['Total','0-4','5-12','13-18','19-25','Unknown'],
   colours: [
     [ "var(--l23-cyan)" ]
   ],
@@ -118,11 +114,12 @@ Total Participants (Young People):
       title: 'Number of young people',
       show: false,
       ticks: false,
-      resolution:350
+      resolution:250
     },
     category: {
+      label: 'Age Bracket',
       show: false,
-      height: 20
+      height: 30
     }
   }
 }) | safe }}
@@ -133,58 +130,6 @@ Total Participants (Young People):
 <br>
 <br>
 
-<h3>
->Number of young people participating in the arts for the first time as a result of this project:
-</h3>
-
-
-{% comp 'grid.autogrid', {min_width: '40rem'} %}
-{% comp 'layout.block' %}
-
-
-
-{%- macro popupContent(value) -%}
-  {{ value }} people
-{%- endmacro -%}
-
-{{ comp.charts.barchart({
-  title: [
-    'First time experience'
-  ],
-  series: [
-    metrics.mwmcmn.barriers.columns.count
-  ],
-  popupContent: popupContent,
-  categories: metrics.mwmcmn.barriers.columns.stage,
-  colours: [
-    [ "var(--l23-cyan)" ]
-  ],
-  plot: {
-    grid: { x: true, category: true }
-  },
-  axis: {
-    x: {
-      title: 'Number of young people',
-      show: false,
-      ticks: false,
-      resolution:320
-    },
-    category: {
-      show: false,
-      height: 20
-    }
-  }
-}) | safe }}
-{% endcomp %}
-
-{% endcomp %}
-
-
-
-<br>
-<br>
-
-<h2>Participation and Impact on Young People:</h2>
 
 {% comp 'grid.autogrid' %}
 

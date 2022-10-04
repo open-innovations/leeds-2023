@@ -17,6 +17,14 @@ manual_measure:
   estimated_total_days_performace_exhibition: 46
   estimated_total_training_sessions: 345
   num_barriers: 1045
+  total_young_people_barriers_arts: 1045
+  total_young_people_first_time: 1124
+  total_young_people_positive_experience: 960
+  total_young_people_continue_engagement: 759
+  total_increased_belonging: 1072
+  total_volunteered: 1425
+  total_improved_mental_health: 485
+  total_improved_physical_health: 476
 columns:
   - key: project
     name: Project
@@ -85,9 +93,6 @@ Total Performance And Exhibition Days
 {%- endmacro -%}
 
 {{ comp.charts.barchart({
-  title: [
-    'Young people experiencing barriers'
-  ],
   series: [
     metrics.mwmcmn.barriers.columns.count
   ],
@@ -116,56 +121,6 @@ Total Performance And Exhibition Days
 
 {% endcomp %}
 
-<br>
-<br>
-
-<h3>
->Number of young people participating in the arts for the first time as a result of this project:
-</h3>
-
-
-{% comp 'grid.autogrid', {min_width: '40rem'} %}
-{% comp 'layout.block' %}
-
-
-
-{%- macro popupContent(value) -%}
-  {{ value }} people
-{%- endmacro -%}
-
-{{ comp.charts.barchart({
-  title: [
-    'First time experience'
-  ],
-  series: [
-    metrics.mwmcmn.barriers.columns.count
-  ],
-  popupContent: popupContent,
-  categories: metrics.mwmcmn.barriers.columns.stage,
-  colours: [
-    [ "var(--l23-cyan)" ]
-  ],
-  plot: {
-    grid: { x: true, category: true }
-  },
-  axis: {
-    x: {
-      title: 'Number of young people',
-      show: false,
-      ticks: false,
-      resolution:320
-    },
-    category: {
-      show: false,
-      height: 20
-    }
-  }
-}) | safe }}
-{% endcomp %}
-
-{% endcomp %}
-
-
 
 <br>
 <br>
@@ -176,18 +131,22 @@ Total Performance And Exhibition Days
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Number of young people involved that have experienced barriers to accessing the arts:
+ {{ comp.viz.bigNumber({ number: manual_measure.total_young_people_barriers_arts }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Young people participated in the arts for the first time as a result of this project:
+ {{ comp.viz.bigNumber({ number: manual_measure.total_young_people_first_time }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Young people reported a positive experience of participating in the arts:
+ {{ comp.viz.bigNumber({ number: manual_measure.total_young_people_positive_experience }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Number of young people supported through your project have or intend to continue engagement with the arts:
+ {{ comp.viz.bigNumber({ number: manual_measure.total_young_people_continue_engagement }) | safe }}
 {% endcomp %}
 
 {% endcomp %}
@@ -199,23 +158,23 @@ Number of young people supported through your project have or intend to continue
 {% comp 'grid.autogrid' %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-People reported improved social networks as a result of the project:
-{% endcomp %}
-
-{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 People reported an increased sense of belonging to the community: 
+ {{ comp.viz.bigNumber({ number: manual_measure.total_increased_belonging }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 People volunteered and/or supported their community as a result of the project:
+ {{ comp.viz.bigNumber({ number: manual_measure.total_volunteered }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 People reported improved mental health and wellbeing as a result of the project: 
+ {{ comp.viz.bigNumber({ number: manual_measure.total_improved_mental_health }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 People reported improved physical health and wellbeing as a result of the project:
+ {{ comp.viz.bigNumber({ number: manual_measure.total_improved_physical_health }) | safe }}
 {% endcomp %}
 
 {% endcomp %}

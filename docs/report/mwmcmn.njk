@@ -242,13 +242,13 @@ People reported improved physical health and wellbeing as a result of the projec
 {% comp 'grid.autogrid', {min_width: '40rem'} %}
   <section style="--hex-bg: var(--l23-cyan);">
     <p>
-      This hexmap could potentially show the number of projects carried out per ward. 
+      This hexmap shows how many celebration events were held in each ward.
     </p>
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,
-      data: metrics.roadshow_attendees.by_ward.rows,
+      data: metrics.mwmcmn.celeb_event_by_ward.rows,
       matchKey: 'ward_code',
-      valueProp: 'attendees',
+      valueProp: 'celeb_events',
       popup: popupAttendees,
       bgColour: 'var(--l23-cyan)',
       title: 'Number of projects taken place per ward'

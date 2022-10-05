@@ -1,0 +1,58 @@
+---
+title: Volunteers
+layout: layouts/metric.njk
+summary: Data about volunteering
+key: volunteers
+work_in_progress: true
+metas:
+  title: LEEDS 2023 Metrics - Volunteers
+  description: |
+    Visualisations of key metrics related to the LEEDS 2023 volunteering.
+---
+
+{%- macro popupPreApplication(params) -%}
+  {{ params.label }}</br>
+  {{ params.value }} signups
+{%- endmacro -%}
+{%- macro popupApplied(params) -%}
+  {{ params.label }}</br>
+  {{ params.value }} applications received
+{%- endmacro -%}
+
+<h2>Distribution of volunteers</h2>
+
+<p>
+  The hex cartograms below show the spread of volunteers by Leeds ward_code. There are some known issues:
+</p>
+
+<ul>
+  <li>Data currently only shows number of Rosterfy users in state, not those that have passed through the state already.</li>
+  <li>Does not show data from outside the Leeds wards at present</li>
+</ul>
+
+{% comp 'grid.autogrid', { min_width: '32rem' } %}
+  <section>
+    <h3>Signed-up</h3>
+    {{ comp.charts.hexmap({
+      hexjson: hex.wards_leeds,
+      data: metrics.volunteers.by_ward.rows,
+      matchKey: 'ward_code',
+      valueProp: 'created',
+      popup: popupPreApplication,
+      bgColour: '#BBB',
+      title: 'Initial sign-ups by people living in ward'
+    }) | safe }}
+  </section>
+  <section>
+    <h3>Applications</h3>
+    {{ comp.charts.hexmap({
+      hexjson: hex.wards_leeds,
+      data: metrics.volunteers.by_ward.rows,
+      matchKey: 'ward_code',
+      valueProp: 'applied',
+      popup: popupApplied,
+      bgColour: '#BBB',
+      title: 'Volunteer applications received from people in ward'
+    }) | safe }}
+  </section>
+{% endcomp %}

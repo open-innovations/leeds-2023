@@ -10,6 +10,7 @@ STATUS_OFFER = 'offered'
 STATUS_CONFIRMED = 'confirmed'
 STATUS_DROP = 'rejected'
 
+
 def hash_id(id):
     the_hash = blake2s(digest_size=10)
     # Could do with salting this hash

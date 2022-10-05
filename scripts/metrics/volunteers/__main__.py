@@ -18,9 +18,11 @@ data.ward_code.fillna('UNKNOWN', inplace=True)
 
 data.to_csv(os.path.join(DATA_DIR, 'volunteers.csv'), index=False)
 
-by_ward = data.groupby(['ward_code', 'status']).hash.count().unstack(level=1)
+by_ward = data.groupby(['ward_code', 'status']).hash.count().unstack(level=1) \
+  .fillna(0) \
+  .astype(int)
 
-by_ward.to_csv(os.path.join(VIEW_DIR, 'ward.csv'), na_rep=0)
+by_ward.to_csv(os.path.join(VIEW_DIR, 'by_ward.csv'), na_rep=0)
 
 # pd.DataFrame({
 #     'total': by_ward.hash.count(),

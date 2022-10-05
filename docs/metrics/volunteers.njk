@@ -9,7 +9,6 @@ metas:
   description: |
     Visualisations of key metrics related to the LEEDS 2023 volunteering.
 ---
-
 {%- macro popupPreApplication(params) -%}
   {{ params.label }}</br>
   {{ params.value }} signups
@@ -19,17 +18,32 @@ metas:
   {{ params.value }} applications received
 {%- endmacro -%}
 
+<h2>Volunteer Headlines</h2>
+
+{% comp 'grid.autogrid' %}
+  {% comp 'grid.block.impact',  { bg: 'var(--l23-mint)' } %}
+    <h3>Volunteer sign-ups</h3>
+    {{ comp.viz.bigNumber({
+      number: metrics.volunteers.by_week.columns.created | last
+    }) | safe }}
+  {% endcomp %}
+  {% comp 'grid.block.impact',  { bg: 'var(--l23-yellow)' } %}
+    <h3>Applications received</h3>
+    {{ comp.viz.bigNumber({
+      number: metrics.volunteers.by_week.columns.applied | last
+    }) | safe }}
+  {% endcomp %}
+{% endcomp %}
+
+<p>Page updated: {{ date | date('HUMAN_DATE') }}</p>
+
 <h2>Distribution of volunteers</h2>
 
 <p>
-  The hex cartograms below show the spread of volunteers by Leeds ward_code. There are some known issues:
+  The hex cartograms below show the distribution of volunteers home adress across the wards of Leeds.
+  Areas with a higher activity are coloured darker.
 </p>
-
-<ul>
-  <li>Data currently only shows number of Rosterfy users in state, not those that have passed through the state already.</li>
-  <li>Does not show data from outside the Leeds wards at present</li>
-</ul>
-
+  
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
   <section>
     <h3>Signed-up</h3>
@@ -56,3 +70,103 @@ metas:
     }) | safe }}
   </section>
 {% endcomp %}
+
+
+<h2>Growth in volunteering</h2>
+
+{{ comp.oi.linechart() | safe }}
+
+<div id="wa-chart-1" class="wa-chart chart"></div>
+
+<style>
+  .wa-chart {
+    height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .key rect {
+    stroke: none;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const rawData = JSON.parse(`{{ metrics.volunteers.by_week.rows | dump | safe }}`);
+    const dateFormatter = (date) => date.toLocaleString('default', { day: 'numeric', month: 'short' });
+    const data = {
+      week: rawData.map(x => new Date(x.week_ending)),
+      values: {
+        created: rawData.map(x => x.created),
+        applied: rawData.map(x => x.applied),
+      },
+      axis: {
+        yMax: Math.max(...rawData.map(x => x.created))
+      }
+    };
+
+    // Work out maximum y value and labels
+    const gridSpacing = 200;
+    const yMax = Math.ceil(Math.max(...data.values.created)/gridSpacing) * gridSpacing;
+    const yLabels = {};
+    for (let l = 0; l <= yMax; l+=gridSpacing) yLabels[l] = { label: l };
+
+    const labels = data.week.reduce((a, c, n) => ({ ...a, [n]: { label: dateFormatter(c) } }), {})
+    const created = data.values.created.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
+    const applied = data.values.applied.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
+
+    chart = OI.linechart(document.getElementById('wa-chart-1'), {
+      left: 80,
+      right: 30,
+      top: 30,
+      bottom: 60,
+      // Draw a key
+      key: { show: true, position: 'top left' },
+      // Define the axes
+      'axis': {
+        'x': {
+          'line': { 'show': true },
+          'title': { 'label': 'Week ending (Friday)', 'anchor': 'middle' },
+          'labels': labels,
+        },
+        'y': {
+          'line': { show: false },
+          'grid': { 'show': true, 'stroke-width': '0.5px' },
+          'title': { 'label': 'Volunteers' },
+          'max': yMax,
+          'labels': yLabels,
+        }
+      }
+    });
+    const colours = [
+      'var(--l23-cyan)',
+      'var(--l23-magenta)'
+    ]
+    chart.addSeries(created, {
+      'title': 'Sign-ups (cumulative)',
+      'points': { 'size': 6, 'color': colours[0] },
+      'line': { 'color': colours[0] },
+      // 'tooltip': { 'label': 'Cumulative attendees' }
+    });
+    chart.addSeries(applied, {
+      'title': 'Applications received (cumulative)',
+      'points': { 'size': 6, 'color': colours[1] },
+      'line': { 'color': colours[1] },
+      // 'tooltip': { 'label': 'Cumulative attendees' }
+    });
+    chart.draw();
+  });
+</script>
+
+
+<h2>Known issues</h2>
+
+<ul>
+  <li>
+    Application dates prior to the 5th October are estimated based on the last modification
+    date of the user record. This is very likely to incorrectly estimate the date that the application
+    was received. Overall numbers should still work.
+  </li>
+  <li>
+    The hexmaps do not show volunteers from outside the Leeds wards.
+  </li>
+</ul>

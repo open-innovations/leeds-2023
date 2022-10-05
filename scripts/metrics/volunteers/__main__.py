@@ -87,6 +87,7 @@ by_date = pd.DataFrame({
     STATUS_DROP: data.groupby(STATUS_DROP).hash.count(),
 })
 by_date.index = by_date.index.astype('datetime64[ns]')
+by_date.index.names = ['week_ending']
 by_date = by_date.resample('W-Fri').sum().fillna(0).astype(int)
 
 weekly_data_file = os.path.join(VIEW_DIR, 'by_week.csv')

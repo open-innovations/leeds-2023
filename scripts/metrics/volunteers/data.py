@@ -2,7 +2,7 @@ import pandas as pd
 from glob import glob
 from hashlib import blake2s
 
-from postcode import lookup_ward_from_postcode
+from postcode import match_ward
 
 STATUS_PRE_APPLY = 'created'
 STATUS_APPLY = 'applied'
@@ -29,17 +29,16 @@ def load_source_data_file(path):
     })
 
     # We want to map postcodes to ward codes
-    data['ward_code'] = data.postcode.apply(lookup_ward_from_postcode)
+    data = match_ward(data, postcode_field='postcode', ward_column='ward_code')
+
     # Report the entries which don't map to wards
-    no_ward = data[data.ward_code.isna()]
+    no_ward = data[data.ward_code == 'UNKNOWN']
     no_ward = pd.DataFrame({
         'id': no_ward.id,
         'postcode': no_ward.postcode,
         'checkpoint': no_ward.checkpoint,
     })
     no_ward.to_csv('working/rosterfy_errors.csv', index=False)
-    # Get rid of any invalid postcodes
-    # data = data.dropna(subset='ward_code')
 
     # We need to use the id between runs to identify state
     # change dates. We don't want to keep the proper hash
@@ -47,6 +46,7 @@ def load_source_data_file(path):
 
     # Make sure dates are valid
     data.sign_up_date = pd.to_datetime(data.sign_up_date)
+    data.modified = pd.to_datetime(data.modified)
 
     # Map checkpoint to status
     data['status'] = data.checkpoint.replace({
@@ -67,7 +67,8 @@ def load_source_data_file(path):
     })
 
     # Remove potentially personal data
-    # data = data.drop(columns=['id', 'postcode', 'checkpoint'])
+    data = data.drop(columns=['id', 'postcode', 'checkpoint'])
+
     return data
 
 

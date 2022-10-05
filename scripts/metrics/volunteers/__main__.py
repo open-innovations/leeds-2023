@@ -68,9 +68,14 @@ logging.info('Writing `%s`', raw_data)
 data.to_csv(raw_data, index=False)
 
 logging.info('Summarising by ward')
-by_ward = data.groupby(['ward_code', 'status']).hash.count().unstack(level=1) \
-    .fillna(0) \
-    .astype(int)
+by_ward = data.groupby(['ward_code'])
+by_ward = pd.DataFrame({
+  STATUS_PRE_APPLY: by_ward[STATUS_PRE_APPLY].count(),
+  STATUS_APPLY: by_ward[STATUS_APPLY].count(),
+  STATUS_OFFER: by_ward[STATUS_OFFER].count(),
+  STATUS_CONFIRMED: by_ward[STATUS_CONFIRMED].count(),
+  STATUS_DROP: by_ward[STATUS_DROP].count(),
+}).fillna(0).astype(int)
 
 ward_data_file = os.path.join(VIEW_DIR, 'by_ward.csv')
 logging.info('Writing `%s`', ward_data_file)

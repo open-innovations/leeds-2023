@@ -11,4 +11,22 @@ file:
       Participants_total: 2105
       Live_Audience_total: 3735
       Online_Audience_total: 62898
-    to_int: null
+  survey:
+    metrics:
+      Benefited_Total_total: 1181
+      Benefited_0_4_total: 35
+      Benefited_5_12_total: 823
+      Benefited_13_18_total: 90
+      Benefited_19_25_total: 96
+      Benefited_Unknown_total: 137
+      Q1_total: 1124
+      Q2_total: 1045
+      Q3_total: 191
+      Q4_total: 960
+      Q5_total: 1141
+      Q6_total: 759
+      Q7_total: 469
+      Q8_total: 1072
+      Q9_total: 1425
+      Q10_total: 485
+      Q11_total: 476

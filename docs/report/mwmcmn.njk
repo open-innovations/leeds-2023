@@ -3,28 +3,32 @@ title: My World, My City, My Neighbourhood
 work_in_progress: true
 summary: Data on the MWMCMN event series.
 manual_measure:
-  total_artists_employed: 165
-  total_participants: 2105
-  total_audience_live: 3735
-  total_days_performace_exhibition: 108
-  total_training_sessions: 487
-  total_young_people: 1172
-  estimated_total_artists_employed: 23
-  estimated_total_participants: 6900
-  estimated_total_audience_live: 2300
-  estimated_total_audience_online: 70000
-  estimated_total_days_other_artists: 1207
-  estimated_total_days_performace_exhibition: 46
-  estimated_total_training_sessions: 345
-  num_barriers: 1045
-  total_young_people_barriers_arts: 1045
-  total_young_people_first_time: 1124
-  total_young_people_positive_experience: 960
-  total_young_people_continue_engagement: 759
-  total_increased_belonging: 1072
-  total_volunteered: 1425
-  total_improved_mental_health: 485
-  total_improved_physical_health: 476
+  Artist_ID_count: 22
+  Sponsored_Artists_Days_total: 1195
+  Other_Artists_Employed_Days_total: 184
+  Performance_Or_Exhibition_Days_total: 108
+  Sessions_For_Education_Training_Or_Participation_total: 487
+  Artists_Employed_total: 165
+  Participants_total: 2105
+  Live_Audience_total: 3735
+  Online_Audience_total: 62898
+  Benefited_Total_total: 1181
+  Benefited_0_4_total: 35
+  Benefited_5_12_total: 823
+  Benefited_13_18_total: 90
+  Benefited_19_25_total: 96
+  Benefited_Unknown_total: 137
+  Q1_total: 1124    
+  Q2_total: 1045
+  Q3_total: 191
+  Q4_total: 960
+  Q5_total: 1141
+  Q6_total: 759
+  Q7_total: 469
+  Q8_total: 1072
+  Q9_total: 1425
+  Q10_total: 485
+  Q11_total: 476
 columns:
   - key: project
     name: Project
@@ -45,32 +49,45 @@ columns:
   This page shows data collected about the My World, My City, My Neighbourhood project delivered with Leeds 2023. 
 </p>
 
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse <br> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<h2> Headline Figures </h2>
+
+
+
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total Projects:
+  {{ comp.viz.bigNumber({ number: manual_measure.Artist_ID_count }) | safe }}
+{% endcomp %}
+
+<br>
+<br>
 
 {% comp 'grid.autogrid' %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total number of artists
-  {{ comp.viz.bigNumber({ number: manual_measure.total_artists_employed }) | safe }}
+Total artists involved:
+  {{ comp.viz.bigNumber({ number: manual_measure.Artists_Employed_total }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Participants
-  {{ comp.viz.bigNumber({ number: manual_measure.total_participants }) | safe }}
+Total Participants:
+  {{ comp.viz.bigNumber({ number: manual_measure.Participants_total }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Young People Participated:
-  {{ comp.viz.bigNumber({ number: manual_measure.total_young_people }) | safe }}
+Total Live Audience:
+  {{ comp.viz.bigNumber({ number: manual_measure.Live_Audience_total }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Live Audience 
-  {{ comp.viz.bigNumber({ number: manual_measure.total_audience_live }) | safe }}
+Total Performance And Exhibition Days:
+  {{ comp.viz.bigNumber({ number: manual_measure.Performance_Or_Exhibition_Days_total }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Total Performance And Exhibition Days
-  {{ comp.viz.bigNumber({ number: manual_measure.total_days_performace_exhibition }) | safe }}
+Total Participants (Young People):
+  {{ comp.viz.bigNumber({ number: manual_measure.Benefited_Total_total }) | safe }}
 {% endcomp %}
 
 {% endcomp %}
@@ -81,9 +98,7 @@ Total Performance And Exhibition Days
 
 <h2>Participation and Impact on Young People:</h2>
 
-<h3>
->Number of young people involved that have experienced barriers to accessing the arts:
-</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse <br> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 {% comp 'grid.autogrid', {min_width: '40rem'} %}
 {% comp 'layout.block' %}
@@ -93,11 +108,14 @@ Total Performance And Exhibition Days
 {%- endmacro -%}
 
 {{ comp.charts.barchart({
+  title: [
+    'Young Participants - Age Breakdown'
+  ],
   series: [
-    metrics.mwmcmn.barriers.columns.count
+    [1181,35,823,90,96,137]
   ],
   popupContent: popupContent,
-  categories: metrics.mwmcmn.barriers.columns.stage,
+  categories: ['Total','0-4','5-12','13-18','19-25','Unknown'],
   colours: [
     [ "var(--l23-cyan)" ]
   ],
@@ -109,12 +127,12 @@ Total Performance And Exhibition Days
       title: 'Number of young people',
       show: false,
       ticks: false,
-      resolution:350
+      resolution:250
     },
     category: {
-      title: 'Test title',
-      show: true,
-      height: 20
+      label: 'Age Bracket',
+      show: false,
+      height: 30
     }
   }
 }) | safe }}
@@ -122,97 +140,84 @@ Total Performance And Exhibition Days
 
 {% endcomp %}
 
-
 <br>
 <br>
-
+<div class='cen'>
 {% comp 'grid.autogrid' %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Number of young people involved that have experienced barriers to accessing the arts:
- {{ comp.viz.bigNumber({ number: manual_measure.total_young_people_barriers_arts }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.Q2_total }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Young people participated in the arts for the first time as a result of this project:
- {{ comp.viz.bigNumber({ number: manual_measure.total_young_people_first_time }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.Q1_total}) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Young people reported a positive experience of participating in the arts:
- {{ comp.viz.bigNumber({ number: manual_measure.total_young_people_positive_experience }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.Q4_total }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Number of young people supported through the project who intend to continue engagement with arts:
- {{ comp.viz.bigNumber({ number: manual_measure.total_young_people_continue_engagement }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.Q6_total }) | safe }}
 {% endcomp %}
 
 {% endcomp %}
-
+</div>
 <br>
 <br>
-
 
 <h2>Impact on Community and Wellbeing:</h2>
 
-
-<br>
-<br>
-
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse <br> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<br>
-
 {% comp 'grid.autogrid' %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 People reported an increased sense of belonging to the community: 
- {{ comp.viz.bigNumber({ number: manual_measure.total_increased_belonging }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.Q8_total }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 People volunteered and/or supported their community as a result of the project:
- {{ comp.viz.bigNumber({ number: manual_measure.total_volunteered }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.Q9_total }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 People reported improved mental health and wellbeing as a result of the project: 
- {{ comp.viz.bigNumber({ number: manual_measure.total_improved_mental_health }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.Q10_total }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 People reported improved physical health and wellbeing as a result of the project:
- {{ comp.viz.bigNumber({ number: manual_measure.total_improved_physical_health }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure. Q11_total }) | safe }}
 {% endcomp %}
 
 {% endcomp %}
 
-<br>
-<br>
-
+ <br>
+ <br>
 
 
 <h3>Number of Celebration Events Taken Place by Ward</h3>
 
 {% comp 'grid.autogrid', {min_width: '40rem'} %}
   <section style="--hex-bg: var(--l23-cyan);">
-    <p>
-      This hexmap shows the number of celebration events taking place per ward. 
-    </p>
+   
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,
-      data: metrics.roadshows.by_ward.rows,
+      data: metrics.mwmcmn.celeb_event_by_ward.rows,
       matchKey: 'ward_code',
-      valueProp: 'attendance',
+      valueProp: 'celeb_events',
       popup: popupAttendees,
       bgColour: 'var(--l23-cyan)',
       title: 'Number of projects taken place per ward'
     }) | safe }}
+
   </section>
 {% endcomp %}
 
-<br>
-<br>
-
-
+ <br>
+ <br>

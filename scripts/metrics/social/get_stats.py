@@ -68,7 +68,7 @@ def add_file_level_meta(file_meta,summary,keep_reserved=False):
     fl = file_meta | {"metrics" : summary}
 
     if not keep_reserved:
-        [fl.pop(key,"") for key in ["path","group_by_date","fillna"]]
+        [fl.pop(key,"") for key in ["path","group_by_date","fillna","to_int"]]
 
     return fl
 

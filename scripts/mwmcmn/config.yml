@@ -2,7 +2,7 @@ title: My World My City My neighbourhood Summary Metrics
 data_files_label: file
 data_file:
   projects:
-    path: data\reference\mwmcmn_projects.csv
+    path: data\reference\mwmcmn\mwmcmn_ace.csv
     metrics:
       - Artist_ID_count
       - Sponsored_Artists_Days_total
@@ -13,6 +13,28 @@ data_file:
       - Participants_total
       - Live_Audience_total
       - Online_Audience_total
+    fillna: 0
+    to_int:
+  survey:
+    path: data\reference\mwmcmn\mwmcmn_lcf.csv
+    metrics:
+      - Benefited_Total_total
+      - Benefited_0_4_total
+      - Benefited_5_12_total
+      - Benefited_13_18_total
+      - Benefited_19_25_total
+      - Benefited_Unknown_total
+      - Q1_total
+      - Q2_total
+      - Q3_total
+      - Q4_total
+      - Q5_total
+      - Q6_total
+      - Q7_total
+      - Q8_total
+      - Q9_total
+      - Q10_total
+      - Q11_total
     fillna: 0
     to_int:
       

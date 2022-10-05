@@ -1,2 +1,8 @@
 *
 !.gitignore
+
+# Don't ignore whole folders - this means that some files within folders can be included
+!*/
+
+# ...like this list
+!README.md

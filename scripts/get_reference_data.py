@@ -21,7 +21,7 @@ def get_leeds_postcode_centroids():
     columns = 'pcds lat long pcon osward lsoa11 msoa11'.split()
     if not os.path.exists(PARQUET_FILE):
         centroids = pd.read_csv(SOURCE_CSV, usecols=columns)
-        bbox = [-1.900634, 53.569676, -1.251068, 53.962549]
+        bbox = [-2.36, 53.26, -0.67, 54.15]
         centroids = centroids[(centroids.long >= bbox[0]) & (centroids.lat >= bbox[1]) & (centroids.long <= bbox[2]) & (centroids.lat <= bbox[3])]
 
         centroids = gpd.GeoDataFrame(

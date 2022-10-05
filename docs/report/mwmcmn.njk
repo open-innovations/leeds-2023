@@ -112,7 +112,8 @@ Total Performance And Exhibition Days
       resolution:350
     },
     category: {
-      show: false,
+      title: 'Test title',
+      show: true,
       height: 20
     }
   }
@@ -143,7 +144,7 @@ Young people reported a positive experience of participating in the arts:
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
-Number of young people supported through your project have or intend to continue engagement with the arts:
+Number of young people supported through the project who intend to continue engagement with arts:
  {{ comp.viz.bigNumber({ number: manual_measure.total_young_people_continue_engagement }) | safe }}
 {% endcomp %}
 

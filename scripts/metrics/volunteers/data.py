@@ -7,8 +7,8 @@ import pandas as pd
 from metrics.volunteers.states import STATUS_APPLY, STATUS_CONFIRMED, STATUS_DROP, STATUS_OFFER, STATUS_PRE_APPLY, set_created_date
 from util.postcode import match_ward
 
-from setup import DATA_DIR
-from states import add_states, map_checkpoints_to_states
+from metrics.volunteers.setup import DATA_DIR
+from metrics.volunteers.states import add_states, map_checkpoints_to_states
 
 file_path = os.path.join(DATA_DIR, 'volunteers.csv')
 

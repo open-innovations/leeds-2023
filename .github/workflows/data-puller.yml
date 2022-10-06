@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '30 22 * * *'
+    - cron:  '30 23 * * *'
 
 jobs:
   build:
@@ -26,6 +26,10 @@ jobs:
         env:
           TYPEFORM_PRIVATE_TOKEN: ${{ secrets.TYPEFORM_PRIVATE_TOKEN }}
           PYTHONPATH: scripts
+          OI_SFTP_HOST: ${{ secrets.OI_SFTP_HOST }}
+          OI_SFTP_USERNAME: ${{ secrets.OI_SFTP_USERNAME }}
+          OI_SFTP_PASSWORD: ${{ secrets.OI_SFTP_PASSWORD }}
+
         run: |
           python scripts/update_data.py
           python scripts/process_for_site.py

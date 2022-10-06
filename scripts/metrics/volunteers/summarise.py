@@ -1,6 +1,6 @@
 import logging
 import pandas as pd
-from states import STATUS_PRE_APPLY, STATUS_APPLY, STATUS_OFFER, STATUS_CONFIRMED, STATUS_DROP
+from metrics.volunteers.states import STATUS_PRE_APPLY, STATUS_APPLY, STATUS_OFFER, STATUS_CONFIRMED, STATUS_DROP
 
 
 def summarise_by_ward(data, file_path):

@@ -1,7 +1,9 @@
-import metrics.roadshow_attendees
+import util.logger
+
+import metrics.volunteers.process
 
 def main():
-    pass
+    metrics.volunteers.process.update()
 
 if __name__ == '__main__':
     main()

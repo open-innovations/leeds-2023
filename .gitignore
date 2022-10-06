@@ -7,8 +7,6 @@ _site/
 vendor/
 
 
-.known_hosts
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

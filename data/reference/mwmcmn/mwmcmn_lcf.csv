@@ -1,4 +1,4 @@
-Artist_ID,Benefited_Total,Benefited_0_4,Benefited_5_12,Benefited_13_18,Benefited_19_25,Benefited_Unknown,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11
+Artist_ID,YP_Benefited_Total,YP_Benefited_0_4,YP_Benefited_5_12,YP_Benefited_13_18,YP_Benefited_19_25,YP_Benefited_Unknown,YP_First_Time_Participation,YP_Previous_Barriers,YP_Increased_Cultural_Awareness,YP_Positive_Experience,YP_Self_Expression,YP_Continued_Engagement,Improved_Social_Networks,Increased_Belonging_Community,Community_Volunteers_Supporters,Improved_Mental_Health,Improved_Physcial_Health
 0,110,10,50,30,20,0,20,15,,30,25,20,50,50,80,60,60
 1,15,2,7,2,4,0,4,4,,2,1,1,40,20,30,10,0
 2,2,0,0,0,2,0,2,2,,1,1,1,12,12,10,12,6

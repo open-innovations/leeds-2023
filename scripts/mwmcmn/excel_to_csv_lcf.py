@@ -20,7 +20,7 @@ def makeFloatNullableInt(df:pd.DataFrame) -> pd.DataFrame:
 def clean(df: pd.DataFrame):
   df.index.name = "Artist_ID"
   df = makeFloatNullableInt(df)
-  df["Benefited_Total"] = df["Benefited_0_4"] + df["Benefited_5_12"] + df["Benefited_13_18"] + df["Benefited_19_25"] + df["Benefited_Unknown"]
+  df["YP_Benefited_Total"] = df["YP_Benefited_0_4"] + df["YP_Benefited_5_12"] + df["YP_Benefited_13_18"] + df["YP_Benefited_19_25"] + df["YP_Benefited_Unknown"]
   return df
    
 def main(in_args,out_args):
@@ -34,7 +34,7 @@ read_args = { "io" : "working\\mwmcmn\\MWMCMN 060622 LCF Data.xlsx",
             "skiprows" : range(6,7),
             "nrows" : 22,
             "usecols" : "C:N,P:T",
-            "names" : ["Benefited_Total","Benefited_0_4","Benefited_5_12","Benefited_13_18","Benefited_19_25","Benefited_Unknown","Q1","Q2","Q3","Q4","Q5","Q6","Q7","Q8","Q9","Q10","Q11"]
+            "names" : ["YP_Benefited_Total","YP_Benefited_0_4","YP_Benefited_5_12","YP_Benefited_13_18","YP_Benefited_19_25","YP_Benefited_Unknown","YP_First_Time_Participation","YP_Previous_Barriers","YP_Increased_Cultural_Awareness","YP_Positive_Experience","YP_Self_Expression","YP_Continued_Engagement","Improved_Social_Networks","Increased_Belonging_Community","Community_Volunteers_Supporters","Improved_Mental_Health","Improved_Physcial_Health"]
             }
 
 write_args = { "path_or_buf" : "data\\reference\\mwmcmn\\mwmcmn_lcf.csv",

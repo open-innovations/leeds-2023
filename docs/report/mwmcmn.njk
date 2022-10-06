@@ -12,23 +12,23 @@ manual_measure:
   Participants_total: 2105
   Live_Audience_total: 3735
   Online_Audience_total: 62898
-  Benefited_Total_total: 1181
-  Benefited_0_4_total: 35
-  Benefited_5_12_total: 823
-  Benefited_13_18_total: 90
-  Benefited_19_25_total: 96
-  Benefited_Unknown_total: 137
-  Q1_total: 1124    
-  Q2_total: 1045
-  Q3_total: 191
-  Q4_total: 960
-  Q5_total: 1141
-  Q6_total: 759
-  Q7_total: 469
-  Q8_total: 1072
-  Q9_total: 1425
-  Q10_total: 485
-  Q11_total: 476
+  YP_Benefited_Total_total: 1181
+  YP_Benefited_0_4_total: 35
+  YP_Benefited_5_12_total: 823
+  YP_Benefited_13_18_total: 90
+  YP_Benefited_19_25_total: 96
+  YP_Benefited_Unknown: 137
+  YP_First_Time_Participation_total: 1124    
+  YP_Previous_Barriers_total: 1045
+  YP_Increased_Cultural_Awareness_total: 191
+  YP_Positive_Experience_total: 960
+  YP_Self_Expression_total: 1141
+  YP_Continued_Engagement_total: 759
+  Improved_Social_Networks_total: 469
+  Increased_Belonging_Community_total: 1072
+  Community_Volunteers_Supporters_total: 1425
+  Improved_Mental_Health_total: 485
+  Improved_Physcial_Health_total: 476
 columns:
   - key: project
     name: Project
@@ -90,7 +90,7 @@ Total Performance And Exhibition Days:
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Total Participants (Young People):
-  {{ comp.viz.bigNumber({ number: manual_measure.Benefited_Total_total }) | safe }}
+  {{ comp.viz.bigNumber({ number: manual_measure.YP_Benefited_Total_total }) | safe }}
 {% endcomp %}
 
 {% endcomp %}
@@ -150,22 +150,22 @@ Total Participants (Young People):
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Number of young people involved that have experienced barriers to accessing the arts:
- {{ comp.viz.bigNumber({ number: manual_measure.Q2_total }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.YP_Previous_Barriers_total }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Young people participated in the arts for the first time as a result of this project:
- {{ comp.viz.bigNumber({ number: manual_measure.Q1_total}) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.YP_First_Time_Participation_total}) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Young people reported a positive experience of participating in the arts:
- {{ comp.viz.bigNumber({ number: manual_measure.Q4_total }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.YP_Positive_Experience_total }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Number of young people supported through the project who intend to continue engagement with arts:
- {{ comp.viz.bigNumber({ number: manual_measure.Q6_total }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.YP_Continued_Engagement_total }) | safe }}
 {% endcomp %}
 
 {% endcomp %}
@@ -180,22 +180,22 @@ Number of young people supported through the project who intend to continue enga
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 People reported an increased sense of belonging to the community: 
- {{ comp.viz.bigNumber({ number: manual_measure.Q8_total }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.Increased_Belonging_Community_total }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 People volunteered and/or supported their community as a result of the project:
- {{ comp.viz.bigNumber({ number: manual_measure.Q9_total }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.Community_Volunteers_Supporters_total }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 People reported improved mental health and wellbeing as a result of the project: 
- {{ comp.viz.bigNumber({ number: manual_measure.Q10_total }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.Improved_Mental_Health_total }) | safe }}
 {% endcomp %}
 
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 People reported improved physical health and wellbeing as a result of the project:
- {{ comp.viz.bigNumber({ number: manual_measure. Q11_total }) | safe }}
+ {{ comp.viz.bigNumber({ number: manual_measure.Improved_Physcial_Health_total }) | safe }}
 {% endcomp %}
 
 {% endcomp %}

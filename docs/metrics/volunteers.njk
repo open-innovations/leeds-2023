@@ -26,12 +26,14 @@ metas:
     {{ comp.viz.bigNumber({
       number: metrics.volunteers.by_week.columns.created | last
     }) | safe }}
+    <p>The number of people who have signed up to the volunteer system.</p>
   {% endcomp %}
   {% comp 'grid.block.impact',  { bg: 'var(--l23-yellow)' } %}
     <h3>Applications received</h3>
     {{ comp.viz.bigNumber({
       number: metrics.volunteers.by_week.columns.applied | last
     }) | safe }}
+    <p>The number of volunteering applications that have been received.</p>
   {% endcomp %}
 {% endcomp %}
 

@@ -1,5 +1,5 @@
 ---
-title: Roadshow Attendees
+title: Roadshow Attendances
 summary: Data about community roadshow events which ran May to September 2022
 key: roadshows
 metas:
@@ -12,19 +12,16 @@ metas:
   {{ title }}
 </h1>
 
-<p>
-  These <a href="https://open-innovations.org/blog/2017-05-08-mapping-election-with-hexes">Hex cartograms</a>
-  show the number of people who attended one of the 
-  <a href="https://leeds2023.co.uk/news/get-ready-for-the-roadshow-with-leeds-2023">Leeds 2023 Roadshow events</a>
-  and the number who subsequently submitted event feedback responses via Typeform.
-  Attendees are shown by the ward in which the event was held, whereas responses are categorised by ward of residence.
-  This is based on the postcode supplied when they completed the form.
-</p>
 
-<p>
-  When viewing the below data, consideration should be given to the fact that residents will travel across ward boundaries to attend
-  events. In addition to this, based on supplied postcodes, others attended Roadshow events from beyond the city of Leeds.
-</p>
+<p>These <a href="https://open-innovations.org/blog/2017-05-08-mapping-election-with-hexes">hex cartograms</a> show the number of attendances at one of the <a href="https://leeds2023.co.uk/news/get-ready-for-the-roadshow-with-leeds-2023">LEEDS 2023 Roadshow events</a> and the number of people who attended and subsequently submitted a sign-up form for communication from Leeds 2023. We are considering ‘attendances’ rather than attendees as any individual may have chosen to attend more than one roadshow.</p> 
+
+<p>One Roadshow was held in each ward of Leeds, other than Weetwood and Kirkstall where two events were held in each ward. The first event that took place in Kirkstall was held on the border with Little London & Woodhouse, and was considered to serve both wards.</p>
+
+<p>Attendances are shown by the ward in which the event was held, whereas responses are categorised by ward of residence based on the postcode supplied when they completed the sign-up form.</p>
+
+<p>When viewing the below data, consideration should be given to the fact that the total number of attendances may vary from that quoted at any given event. Attendance was counted at a single point in time, and as the event was open to all, attendees tended to come and go at times that suited their schedules.</p>
+
+<p>Furthermore, residents will travel across ward boundaries to attend events. As such, attendances at any given roadshow are likely to include attendees from other wards.</p>
 
 {%- macro popupAttendees(params) -%}
   {{ params.label }}</br>
@@ -38,10 +35,7 @@ metas:
 
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
   <section style="--hex-bg: var(--l23-mint);" aria-labelledby='attendees-by-hosting-ward'>
-    <h2 id='attendees-by-hosting-ward'>Attendees by hosting ward</h2>
-    <p>
-      This hexmap shows the number of attendees at the roadshows held in each ward.
-    </p>
+    <h2 id='attendees-by-hosting-ward'>Attendance numbers by hosting ward</h2>
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,
       data: metrics.roadshows.by_ward.rows,
@@ -51,14 +45,16 @@ metas:
       bgColour: 'var(--l23-mint)',
       title: 'Attendees at roadshows hosted in ward'
     }) | safe }}
+
+    
+    <p>This hexmap shows the number of attendances at the roadshows held in each ward.</p>
+    <p><strong>{{metrics.roadshows.summary.columns.cumulative_attendance | last | localize}}</strong> attendances were registered in total. Wards with a larger number of attendances are darker in colour, and hover over each hexagon to see the total number for that ward.</p>
   </section>
 
   <section>
-    <h2>Feedback responses by ward of residence</h2>
-    <p>
-      This hexmap shows the number of attendees living in each ward
-      who submitted feedback following their attendance at the roadshows.
-    </p>
+    <h2>Attendance numbers by ward of residence</h2>
+    
+      
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,
       data: metrics.roadshows.by_ward.rows,
@@ -67,17 +63,21 @@ metas:
       popup: popupResponses,
       bgColour: 'var(--l23-mint)'
     }) | safe }}
+
+    <p>This hexmap shows the number of attendees living in each ward who submitted a sign-up form for communication from Leeds 2023 following attendance at the roadshows.</p>
+    <p>This hexmap has used the <a href="https://www.ons.gov.uk/methodology/geography/geographicalproducts/postcodeproducts">ONS Postcode Directory</a> to look up postcodes submitted via the sign-up form and to identify the most likely ward this individual lives in. The data may not be fully accurate, as postcodes do not accurately align with ward boundaries.</p>
+    <p><strong>{{metrics.roadshows.summary.columns.cumulative_contact_consents | last | localize}}</strong> feedback forms were submitted in total. Of this, <strong>314*</strong> reside in Leeds, and the remainder either come from outside Leeds or were mistyped. </p>
+    <p>Wards with a larger number of attendances are darker in colour. Hover over each hexagon to see the total number for that ward.</p>
+    <p>*Not live figure</p>
   </section>
 
 {% endcomp %}
 
 <section>
   <h2>
-    Attendees and Feedback Responses cumulative totals
+    Roadshow Attendances and Communication Sign-Up forms cumulative totals
   </h2>
-  <p>
-    This chart shows the cumulative number of Roadshow feedback responses submitted per week.
-  </p>
+  <p>This chart shows the cumulative number of attendees at roadshow events per week, and the cumulative number of communication sign-up forms submitted per week.</p>
   
   {% include "visualisations/roadshow-attendees/cumulative-graph.njk" %}
   

@@ -7,8 +7,11 @@ logging.basicConfig(
 )
 
 import metrics.volunteers.process
+import util.oi_sftp_server
+
 
 logging.info('Processing volunteers...')
+util.oi_sftp_server.get('rosterfy/current-checkpoint.csv', 'working/rosterfy/current-checkpoint.csv')
 metrics.volunteers.process.update()
 metrics.volunteers.process.summarise()
 logging.info('Done!')

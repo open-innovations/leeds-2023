@@ -41,6 +41,19 @@ def add_states(data):
     return pd.concat([data, states])
 
 
+def update_states(data):
+    logging.info('Processing %d entries', len(data))
+    data = set_created_date(data)
+    data = set_applied_date(data)
+    # data = override_state_date(data, STATUS_APPLY)
+    data = set_offer_date(data)
+    data = set_confirmed_date(data)
+    data = set_dropped_date(data)
+
+    data.drop(columns=['sign_up_date', 'modified'], inplace=True)
+    return data
+
+
 def set_created_date(data):
     # Set created date to sign up date
     data.loc[
@@ -60,31 +73,26 @@ def override_state_date(data, state=STATUS_APPLY, modified='modified'):
     return data
 
 
-def set_applied_date(data):
+def set_status_to_now(data, status, future_states):
     data.loc[
-        (data[STATUS_APPLY].isnull()) &
-        (data.status.isin([STATUS_APPLY, STATUS_OFFER, STATUS_CONFIRMED, STATUS_DROP])), STATUS_OFFER] = datetime.now().date()
-    data[STATUS_APPLY] = data[STATUS_APPLY].astype('datetime64[ns]')
+        (data[status].isnull()) & (data.status.isin(future_states)),
+        status
+    ] = datetime.now().date()
+    data[status] = data[status].astype('datetime64[ns]')
     return data
+
+
+def set_applied_date(data):
+    return set_status_to_now(data, STATUS_APPLY, [STATUS_APPLY, STATUS_OFFER, STATUS_CONFIRMED, STATUS_DROP])
 
 
 def set_offer_date(data):
-    data.loc[
-        (data[STATUS_OFFER].isnull()) &
-        (data.status.isin([STATUS_OFFER, STATUS_CONFIRMED])), STATUS_OFFER] = datetime.now().date()
-    data[STATUS_OFFER] = data[STATUS_OFFER].astype('datetime64[ns]')
-    return data
+    return set_status_to_now(data, STATUS_OFFER, [STATUS_OFFER, STATUS_CONFIRMED])
 
 
 def set_confirmed_date(data):
-    data.loc[
-        (data[STATUS_CONFIRMED].isnull()) &
-        (data.status.isin([STATUS_CONFIRMED])), STATUS_CONFIRMED] = datetime.now().date()
-    return data
+    return set_status_to_now(data, STATUS_CONFIRMED, [STATUS_CONFIRMED])
 
 
 def set_dropped_date(data):
-    data.loc[
-        (data[STATUS_DROP].isnull()) &
-        (data.status.isin([STATUS_DROP])), STATUS_DROP] = datetime.now().date()
-    return data
+    return set_status_to_now(data, STATUS_DROP, [STATUS_DROP])

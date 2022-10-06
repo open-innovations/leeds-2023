@@ -19,6 +19,7 @@ def summarise_by_ward(data, file_path):
 
 def summarise_by_week(data, file_path):
     logging.info('Summarising by week')
+    data = data.reset_index()
     by_date = pd.DataFrame({
         STATUS_PRE_APPLY: data.groupby(STATUS_PRE_APPLY).hash.count(),
         STATUS_APPLY: data.groupby(STATUS_APPLY).hash.count(),

@@ -4,11 +4,13 @@ from glob import glob
 from hashlib import blake2s
 
 import pandas as pd
-from metrics.volunteers.states import set_created_date
+from metrics.volunteers.states import STATUS_APPLY, STATUS_CONFIRMED, STATUS_DROP, STATUS_OFFER, STATUS_PRE_APPLY, set_created_date
 from util.postcode import match_ward
 
 from setup import DATA_DIR
 from states import add_states, map_checkpoints_to_states
+
+file_path = os.path.join(DATA_DIR, 'volunteers.csv')
 
 
 def hash_id(id):
@@ -50,18 +52,22 @@ def load_source_data_file(path):
 
     # Map checkpoint to status
     data['status'] = map_checkpoints_to_states(data.checkpoint)
-    
+
     # Add empty placeholders for states
     data = add_states(data)
 
     # Remove potentially personal data
     data = data.drop(columns=['id', 'postcode', 'checkpoint'])
 
+    # Set the hash to the index
+    data = data.set_index('hash')
+
     return data
 
 
 def load_new_data():
     files = glob('working/rosterfy/*.csv')
+    logging.debug('Found %s', files)
     data = pd.concat(
         [load_source_data_file(f) for f in files]
     )
@@ -69,7 +75,22 @@ def load_new_data():
     return data
 
 
+def load_raw_data():
+    return pd.read_csv(file_path,
+                       index_col=['hash'],
+                       parse_dates=[
+                           STATUS_PRE_APPLY,
+                           STATUS_APPLY,
+                           STATUS_OFFER,
+                           STATUS_CONFIRMED,
+                           STATUS_DROP
+                       ])
+
+
 def save_raw_data(data):
-    file_path = os.path.join(DATA_DIR, 'volunteers.csv')
     logging.info('Writing `%s`', file_path)
-    data.to_csv(file_path, index=False)
+    data.sort_values(by=['created', 'hash'], ascending=[True, True])[
+        [
+          'ward_code', 'status', 'created', 'applied', 'offered', 'confirmed', 'rejected'
+        ]
+    ].to_csv(file_path)

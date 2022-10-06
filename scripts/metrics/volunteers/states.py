@@ -1,3 +1,6 @@
+import logging
+from datetime import datetime
+
 import pandas as pd
 
 STATUS_PRE_APPLY = 'created'
@@ -36,3 +39,52 @@ def add_states(data):
         STATUS_DROP,
     ], dtype='datetime64[ns]')
     return pd.concat([data, states])
+
+
+def set_created_date(data):
+    # Set created date to sign up date
+    data.loc[
+        data[STATUS_PRE_APPLY].isnull(),
+        STATUS_PRE_APPLY
+    ] = data.sign_up_date.dt.date.astype('datetime64[ns]')
+
+    return data
+
+
+def override_state_date(data, state=STATUS_APPLY, modified='modified'):
+    '''Set applied date to modified date if status date is null'''
+    # NB initial load assumed that the modified date is the time of the status change - as at 5th October
+    data.loc[
+        (data[state].isnull()) &
+        (data.status.isin([state])), state] = data[modified].dt.date.astype('datetime64[ns]')
+    return data
+
+
+def set_applied_date(data):
+    data.loc[
+        (data[STATUS_APPLY].isnull()) &
+        (data.status.isin([STATUS_APPLY, STATUS_OFFER, STATUS_CONFIRMED, STATUS_DROP])), STATUS_OFFER] = datetime.now().date()
+    data[STATUS_APPLY] = data[STATUS_APPLY].astype('datetime64[ns]')
+    return data
+
+
+def set_offer_date(data):
+    data.loc[
+        (data[STATUS_OFFER].isnull()) &
+        (data.status.isin([STATUS_OFFER, STATUS_CONFIRMED])), STATUS_OFFER] = datetime.now().date()
+    data[STATUS_OFFER] = data[STATUS_OFFER].astype('datetime64[ns]')
+    return data
+
+
+def set_confirmed_date(data):
+    data.loc[
+        (data[STATUS_CONFIRMED].isnull()) &
+        (data.status.isin([STATUS_CONFIRMED])), STATUS_CONFIRMED] = datetime.now().date()
+    return data
+
+
+def set_dropped_date(data):
+    data.loc[
+        (data[STATUS_DROP].isnull()) &
+        (data.status.isin([STATUS_DROP])), STATUS_DROP] = datetime.now().date()
+    return data

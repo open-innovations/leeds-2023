@@ -25,6 +25,7 @@ jobs:
       - name: Run a multi-line script
         env:
           TYPEFORM_PRIVATE_TOKEN: ${{ secrets.TYPEFORM_PRIVATE_TOKEN }}
+          PYTHONPATH: scripts
         run: |
           python scripts/update_data.py
           python scripts/process_for_site.py

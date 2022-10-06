@@ -4,12 +4,11 @@ from glob import glob
 from hashlib import blake2s
 
 import pandas as pd
+from metrics.volunteers.states import set_created_date
+from util.postcode import match_ward
 
-from postcode import match_ward
-from states import map_checkpoints_to_states
-
-DATA_DIR = os.path.join('data', 'metrics', 'volunteers')
-VIEW_DIR = os.path.join('docs', '_data', 'metrics', 'volunteers')
+from setup import DATA_DIR
+from states import add_states, map_checkpoints_to_states
 
 
 def hash_id(id):
@@ -51,6 +50,9 @@ def load_source_data_file(path):
 
     # Map checkpoint to status
     data['status'] = map_checkpoints_to_states(data.checkpoint)
+    
+    # Add empty placeholders for states
+    data = add_states(data)
 
     # Remove potentially personal data
     data = data.drop(columns=['id', 'postcode', 'checkpoint'])

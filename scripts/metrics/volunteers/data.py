@@ -1,14 +1,15 @@
-import pandas as pd
+import logging
+import os
 from glob import glob
 from hashlib import blake2s
 
-from postcode import match_ward
+import pandas as pd
 
-STATUS_PRE_APPLY = 'created'
-STATUS_APPLY = 'applied'
-STATUS_OFFER = 'offered'
-STATUS_CONFIRMED = 'confirmed'
-STATUS_DROP = 'rejected'
+from postcode import match_ward
+from states import map_checkpoints_to_states
+
+DATA_DIR = os.path.join('data', 'metrics', 'volunteers')
+VIEW_DIR = os.path.join('docs', '_data', 'metrics', 'volunteers')
 
 
 def hash_id(id):
@@ -49,22 +50,7 @@ def load_source_data_file(path):
     data.modified = pd.to_datetime(data.modified)
 
     # Map checkpoint to status
-    data['status'] = data.checkpoint.replace({
-        '1 Default': STATUS_PRE_APPLY,
-        '2 Application Completed (HOLDING)': STATUS_APPLY,
-        '2b Partner Profile Completed (HOLDING)': STATUS_APPLY,
-        '2c Student Profile Completed (HOLDING)': STATUS_APPLY,
-        '2d Neighbourhood Host Profile Complete (HOLDING)': STATUS_APPLY,
-        '2e Team Leader Profile Completed (HOLDING)': STATUS_APPLY,
-        '3 Invite to Meeting Session': STATUS_APPLY,
-        '3b NO Invite to Meeting Session': STATUS_DROP,
-        '3c NO Attendance at Meeting Session': STATUS_DROP,
-        '4 Attended Meeting Session (HOLDING)': STATUS_APPLY,
-        '5 Invite to Induction': STATUS_OFFER,
-        '5b NO Invite to Induction': STATUS_DROP,
-        '5c NO Attendance at Induction': STATUS_DROP,
-        '6 Confirmed Volunteer': STATUS_CONFIRMED,
-    })
+    data['status'] = map_checkpoints_to_states(data.checkpoint)
 
     # Remove potentially personal data
     data = data.drop(columns=['id', 'postcode', 'checkpoint'])
@@ -79,3 +65,9 @@ def load_new_data():
     )
 
     return data
+
+
+def save_raw_data(data):
+    file_path = os.path.join(DATA_DIR, 'volunteers.csv')
+    logging.info('Writing `%s`', file_path)
+    data.to_csv(file_path, index=False)

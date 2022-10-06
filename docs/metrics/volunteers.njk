@@ -18,7 +18,7 @@ metas:
   {{ params.value }} applications received
 {%- endmacro -%}
 
-<h2>Volunteer Headlines</h2>
+<h2>Headlines</h2>
 
 {% comp 'grid.autogrid' %}
   {% comp 'grid.block.impact',  { bg: 'var(--l23-mint)' } %}
@@ -26,7 +26,7 @@ metas:
     {{ comp.viz.bigNumber({
       number: metrics.volunteers.by_week.columns.created | last
     }) | safe }}
-    <p>The number of people who have signed up to the volunteer system.</p>
+    <p>The number of people who have signed up to the volunteer system (Rosterfy).</p>
   {% endcomp %}
   {% comp 'grid.block.impact',  { bg: 'var(--l23-yellow)' } %}
     <h3>Applications received</h3>
@@ -42,8 +42,9 @@ metas:
 <h2>Distribution of volunteers</h2>
 
 <p>
-  The hex cartograms below show the distribution of volunteers home adress across the wards of Leeds.
-  Areas with a higher activity are coloured darker.
+  The hex cartograms below show the distribution of volunteers' home addresses across
+  the wards of Leeds. Wards with a larger number of resident volunteers are darker in
+  colour.
 </p>
   
 {% comp 'grid.autogrid', { min_width: '32rem' } %}

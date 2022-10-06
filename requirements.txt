@@ -1,4 +1,5 @@
 et-xmlfile==1.1.0
+firebase-admin==6.0.0
 numpy==1.23.3
 openpyxl==3.0.10
 pandas==1.4.2

@@ -6,6 +6,9 @@ _site/
 .bundle/
 vendor/
 
+# Ignore credentials
+credentials/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

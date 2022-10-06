@@ -54,14 +54,17 @@ columns:
 <h2> Headline Figures </h2>
 
 
-
+<div style="display: flex; justify-content: center;">
+<div style="width: 30rem; max-width: 100%;">
 {% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
 Total Projects:
   {{ comp.viz.bigNumber({ number: manual_measure.Artist_ID_count }) | safe }}
 {% endcomp %}
+</div>
+</div>
 
 <br>
-<br>
+
 
 {% comp 'grid.autogrid' %}
 
@@ -130,7 +133,7 @@ Total Participants (Young People):
       resolution:250
     },
     category: {
-      label: 'Age Bracket',
+      title: 'Age Bracket',
       show: false,
       height: 30
     }

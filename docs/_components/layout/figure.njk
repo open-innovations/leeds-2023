@@ -1,0 +1,11 @@
+---
+css: |
+  figure figcaption {
+    font-style: italic;
+    text-align: center;
+  }
+---
+<figure>
+  <figcaption>{{ title }}</figcaption>
+  {{ content | safe }}
+</figure>

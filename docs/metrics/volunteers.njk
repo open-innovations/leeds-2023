@@ -35,6 +35,20 @@ metas:
     }) | safe }}
     <p>The number of volunteering applications that have been received.</p>
   {% endcomp %}
+  {% comp 'grid.block.impact',  { bg: 'var(--l23-cyan)' } %}
+    <h3>Volunteering offers made</h3>
+    {{ comp.viz.bigNumber({
+      number: metrics.volunteers.by_week.columns.offered | last or '--'
+    }) | safe }}
+    <p>The number of people who have offered volunteering positions.</p>
+  {% endcomp %}
+  {% comp 'grid.block.impact',  { bg: 'var(--l23-magenta)' } %}
+    <h3>Volunteers confirmed</h3>
+    {{ comp.viz.bigNumber({
+      number: metrics.volunteers.by_week.columns.confirmed | last or '--'
+    }) | safe }}
+    <p>The number of volunteers who have been appointed.</p>
+  {% endcomp %}
 {% endcomp %}
 
 <p>Page updated: {{ date | date('HUMAN_DATE') }}</p>
@@ -79,7 +93,11 @@ metas:
 
 {{ comp.oi.linechart() | safe }}
 
+{% comp 'layout.figure', {
+  title: 'Cumulative counts of volunteer user profiles by status'
+} %}
 <div id="wa-chart-1" class="wa-chart chart"></div>
+{% endcomp %}
 
 <style>
   .wa-chart {
@@ -101,6 +119,8 @@ metas:
       values: {
         created: rawData.map(x => x.created),
         applied: rawData.map(x => x.applied),
+        offered: rawData.map(x => x.offered),
+        confirmed: rawData.map(x => x.confirmed),
       },
       axis: {
         yMax: Math.max(...rawData.map(x => x.created))
@@ -114,8 +134,11 @@ metas:
     for (let l = 0; l <= yMax; l+=gridSpacing) yLabels[l] = { label: l };
 
     const labels = data.week.reduce((a, c, n) => ({ ...a, [n]: { label: dateFormatter(c) } }), {})
-    const created = data.values.created.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
-    const applied = data.values.applied.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
+    const makeCoordinates = (v, n) => ({ x: n, y: parseInt(v, 10) });
+    const created = data.values.created.map(makeCoordinates);
+    const applied = data.values.applied.map(makeCoordinates);
+    const offered = data.values.offered.map(makeCoordinates);
+    const confirmed = data.values.confirmed.map(makeCoordinates);
 
     chart = OI.linechart(document.getElementById('wa-chart-1'), {
       left: 80,
@@ -133,27 +156,41 @@ metas:
         },
         'y': {
           'line': { show: false },
-          'grid': { 'show': true, 'stroke-width': '0.5px' },
-          'title': { 'label': 'Volunteers' },
+          'grid': { show: true, 'stroke-width': '0.5px' },
+          'title': { label: 'Numbers of volunteers' },
           'max': yMax,
           'labels': yLabels,
         }
       }
     });
     const colours = [
+      'var(--l23-mint)',
+      'var(--l23-yellow)',
       'var(--l23-cyan)',
-      'var(--l23-magenta)'
+      'var(--l23-magenta)',
     ]
-    chart.addSeries(created, {
-      'title': 'Sign-ups (cumulative)',
-      'points': { 'size': 6, 'color': colours[0] },
-      'line': { 'color': colours[0] },
+    chart.addSeries(confirmed, {
+      'title': 'Volunteers appointed (cumulative)',
+      'points': { 'size': 6, 'color': colours[3] },
+      'line': { 'color': colours[3] },
+      // 'tooltip': { 'label': 'Cumulative attendees' }
+    });
+    chart.addSeries(offered, {
+      'title': 'Offers made (cumulative)',
+      'points': { 'size': 6, 'color': colours[2] },
+      'line': { 'color': colours[2] },
       // 'tooltip': { 'label': 'Cumulative attendees' }
     });
     chart.addSeries(applied, {
       'title': 'Applications received (cumulative)',
       'points': { 'size': 6, 'color': colours[1] },
       'line': { 'color': colours[1] },
+      // 'tooltip': { 'label': 'Cumulative attendees' }
+    });
+    chart.addSeries(created, {
+      'title': 'Sign-ups (cumulative)',
+      'points': { 'size': 6, 'color': colours[0] },
+      'line': { 'color': colours[0] },
       // 'tooltip': { 'label': 'Cumulative attendees' }
     });
     chart.draw();

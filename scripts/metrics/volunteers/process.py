@@ -18,9 +18,25 @@ def update():
     new_data = load_new_data()
 
     logging.info('Combining data')
+    # Capture some stats
+    old_rowcount = data.shape[0]
+    new_rowcount = new_data.shape[0]
+    # Copy the statust to a new column
+    new_data['new_status'] = new_data.status
+    # Merge the datasets! data wins!
     data = data.combine_first(new_data)
+    # Count how many rows have changed (i.e. were in the old dataset and have new status)
+    changed_rowcount = data[data.status != data.new_status].shape[0]
+    # Overwrite the status column
+    data.status = data.new_status
+    # Remove the new_status column
+    data.drop(columns=['new_status'], inplace=True)
+    logging.info('Adding {new} and updating status for {changes} volunteers'.format(
+      new=new_rowcount - old_rowcount,
+      changes=changed_rowcount
+    ))
 
-    logging.info('Updating data')
+    logging.info('Updating dates for the states')
     data = update_states(data)
 
     save_raw_data(data)

@@ -11,6 +11,7 @@ import util.oi_sftp_server
 
 def update():
     logging.info('Getting latest data')
+    logging.debug(os.getcwd())
     util.oi_sftp_server.get('rosterfy/current-checkpoint.csv', 'working/rosterfy/current-checkpoint.csv')
 
     logging.info('Loading data')

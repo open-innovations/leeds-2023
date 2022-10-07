@@ -59,7 +59,7 @@ def set_created_date(data):
     data.loc[
         data[STATUS_PRE_APPLY].isnull(),
         STATUS_PRE_APPLY
-    ] = data.sign_up_date.dt.date.astype('datetime64[ns]')
+    ] = data.sign_up_date.dt.floor('D')
 
     return data
 
@@ -69,7 +69,7 @@ def override_state_date(data, state=STATUS_APPLY, modified='modified'):
     # NB initial load assumed that the modified date is the time of the status change - as at 5th October
     data.loc[
         (data[state].isnull()) &
-        (data.status.isin([state])), state] = data[modified].dt.date.astype('datetime64[ns]')
+        (data.status.isin([state])), state] = data[modified].dt.floor('D')
     return data
 
 
@@ -77,8 +77,7 @@ def set_status_to_now(data, status, future_states):
     data.loc[
         (data[status].isnull()) & (data.status.isin(future_states)),
         status
-    ] = datetime.now().date()
-    data[status] = data[status].astype('datetime64[ns]')
+    ] = pd.Timestamp.now().floor('D')
     return data
 
 

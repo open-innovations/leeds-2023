@@ -1,0 +1,141 @@
+---
+title: Ballot Entries
+layout: layouts/metric.njk
+summary: Data about ballot entries
+key: ballot
+work_in_progress: true
+metas:
+  title: LEEDS 2023 Metrics - Ballot Entries
+  description: |
+    Visualisations of key metrics related to the LEEDS 2023 ballot.
+---
+{%- macro popupSubmissions(params) -%}
+  {{ params.label }}</br>
+  {{ params.value }} submissions
+{%- endmacro -%}
+
+<h2>Headlines</h2>
+
+{% comp 'grid.block.impact',  { bg: 'var(--l23-magenta)' } %}
+  <h3>Ballot entries</h3>
+  {{ comp.viz.bigNumber({
+    number: metrics.ballot.by_date.columns.cumulative_submissions | last
+  }) | safe }}
+  <p>Total number of ballot entries received.</p>
+{% endcomp %}
+
+
+
+<p>Page updated: {{ date | date('HUMAN_DATE') }}</p>
+
+<h2>Geographic distribution of ballot submissions</h2>
+
+<p>
+  The hex cartograms below show the distribution of ballot entrants' home addresses across
+  the wards of Leeds. Wards with a larger number of resident entrants are darker in
+  colour. Hexes outlined in dark blue have an associated value of zero.
+</p>
+  
+{{ comp.charts.hexmap({
+  hexjson: hex.wards_leeds,
+  data: metrics.ballot.by_ward.rows,
+  matchKey: 'ward_code',
+  valueProp: 'submissions',
+  popup: popupSubmissions,
+  bgColour: '#BBB',
+  title: 'Count of ballot submissions by ward of residence'
+}) | safe }}
+
+
+<h2>Ballot entry</h2>
+
+{{ comp.oi.linechart() | safe }}
+
+{% comp 'layout.figure', {
+  title: 'Cumulative counts of ballot entries'
+} %}
+<div id="wa-chart-1" class="wa-chart chart"></div>
+{% endcomp %}
+
+<style>
+  .wa-chart {
+    height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .key rect {
+    stroke: none;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const rawData = JSON.parse(`{{ metrics.ballot.by_date.rows | dump | safe }}`);
+    const dateFormatter = (date) => date.toLocaleString('default', { day: 'numeric', month: 'short' });
+    const data = {
+      date: rawData.map(x => new Date(x.date_submitted)),
+      values: {
+        submitted: rawData.map(x => x.cumulative_submissions),
+      },
+      axis: {
+        yMax: Math.max(...rawData.map(x => x.cumulative_submissions))
+      }
+    };
+
+    // Work out maximum y value and labels
+    const gridSpacing = 200;
+    const yMax = Math.ceil(Math.max(...data.values.submitted)/gridSpacing) * gridSpacing;
+    const yLabels = {};
+    for (let l = 0; l <= yMax; l+=gridSpacing) yLabels[l] = { label: l };
+
+    const labels = data.date.reduce((a, c, n) => ({ ...a, [n]: { label: n % 7 === 0 ? dateFormatter(c) : null } }), {})
+    const makeCoordinates = (v, n) => ({ x: n, y: parseInt(v, 10) });
+    const submitted = data.values.submitted.map(makeCoordinates);
+
+    chart = OI.linechart(document.getElementById('wa-chart-1'), {
+      left: 80,
+      right: 30,
+      top: 30,
+      bottom: 60,
+      // Draw a key
+      key: { show: true, position: 'top left' },
+      // Define the axes
+      'axis': {
+        'x': {
+          'line': { 'show': true },
+          'title': { 'label': 'Date', 'anchor': 'middle' },
+          'labels': labels,
+        },
+        'y': {
+          'line': { show: false },
+          'grid': { show: true, 'stroke-width': '0.5px' },
+          'title': { label: 'Number of ballot entries' },
+          'max': yMax,
+          'labels': yLabels,
+        }
+      }
+    });
+    const colours = [
+      'var(--l23-mint)',
+      'var(--l23-yellow)',
+      'var(--l23-cyan)',
+      'var(--l23-magenta)',
+    ]
+    chart.addSeries(submitted, {
+      'title': 'Total ballot entries (cumulative)',
+      'points': { 'size': 6, 'color': colours[3] },
+      'line': { 'color': colours[3] },
+      // 'tooltip': { 'label': 'Cumulative attendees' }
+    });
+    chart.draw();
+  });
+</script>
+
+
+<h2>Known issues</h2>
+
+<ul>
+  <li>
+    Some ballot entries do not have a postcode associated, so are impossible to map to a Leeds Ward.
+  </li>
+</ul>

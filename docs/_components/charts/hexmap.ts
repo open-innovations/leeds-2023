@@ -139,7 +139,7 @@ export default function ({
   // Find the biggest value in the hex map
   // TODO Check if this works when the valueProp is a number
   const maxValue = Object.values(hexes)
-    .map((h) => parseFloat(<string>h[valueProp]))
+    .map((h) => parseFloat(<string>h[valueProp]) || 0)
     .reduce((result, current) => Math.max(result, current), 0);
 
   // Function to calculate if a given row should be shifted to the right
@@ -271,7 +271,7 @@ export default function ({
     const hexId = hexCounter();
     const { x, y } = getCentre(config);
     const label = <string>config[titleProp];
-    const value = <number>config[valueProp];
+    const value = <number>config[valueProp] || 0;
 
     // Calculate the path based on the layout
     let hexPath: string | undefined = undefined;
@@ -310,6 +310,7 @@ export default function ({
           class="hex"
           transform="translate(${x} ${y})"
           data-auto-popup="${popup({ label, value })}"
+          data-value="${ value }"
           role="listitem"
           aria-label="${label} value ${value}"
         >

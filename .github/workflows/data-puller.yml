@@ -23,7 +23,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Setup Firebase secret key
-        uses: ttd2089/secret-file-action@v1.1
+        uses: ttd2089/secret-file-action@v1
         id: firebase-service-account-key
         with:
           secret: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}

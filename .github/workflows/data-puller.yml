@@ -22,23 +22,25 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: 
+      - name: Setup credentials file
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         run: |
-          echo ${GOOGLE_APPLICATION_CREDENTIALS}
+          echo ${GOOGLE_APPLICATION_CREDENTIALS} > ./credentials/serviceAccountKey.json
 
-      - name: Run a multi-line script
+      - name: Process data
         env:
           TYPEFORM_PRIVATE_TOKEN: ${{ secrets.TYPEFORM_PRIVATE_TOKEN }}
           PYTHONPATH: scripts
           OI_SFTP_HOST: ${{ secrets.OI_SFTP_HOST }}
           OI_SFTP_USERNAME: ${{ secrets.OI_SFTP_USERNAME }}
           OI_SFTP_PASSWORD: ${{ secrets.OI_SFTP_PASSWORD }}
+          GOOGLE_APPLICATION_CREDENTIALS: './credentials/serviceAccountKey.json'
 
         run: |
           python scripts/update_data.py
           python scripts/process_for_site.py
+          cat ${GOOGLE_APPLICATION_CREDENTIALS}
 
       - name: Commit changes to files
         working-directory: .

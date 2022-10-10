@@ -36,15 +36,20 @@ metas:
   colour. Hexes outlined in dark blue have an associated value of zero.
 </p>
   
-{{ comp.charts.hexmap({
-  hexjson: hex.wards_leeds,
-  data: metrics.ballot.by_ward.rows,
-  matchKey: 'ward_code',
-  valueProp: 'submissions',
-  popup: popupSubmissions,
-  bgColour: '#BBB',
-  title: 'Count of ballot submissions by ward of residence'
-}) | safe }}
+{% comp 'layout.figure', {
+  title: 'Count of ballot submissions by ward of residence',
+  max_width: '40rem'
+} %}
+  {{ comp.charts.hexmap({
+    hexjson: hex.wards_leeds,
+    data: metrics.ballot.by_ward.rows,
+    matchKey: 'ward_code',
+    valueProp: 'submissions',
+    popup: popupSubmissions,
+    bgColour: '#BBB',
+    title: 'Count of ballot submissions by ward of residence'
+  }) | safe }}
+{% endcomp %}
 
 
 <h2>Ballot entry</h2>

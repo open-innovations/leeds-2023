@@ -5,7 +5,7 @@ css: |
     text-align: center;
   }
 ---
-<figure>
+<figure style="{% if max_width %}--max-width:{{ max_width }};{% endif %}">
   <figcaption>{{ title }}</figcaption>
   {{ content | safe }}
 </figure>

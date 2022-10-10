@@ -26,6 +26,7 @@ jobs:
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         run: |
+          mkdir credentials
           echo ${GOOGLE_APPLICATION_CREDENTIALS} > ./credentials/serviceAccountKey.json
 
       - name: Process data

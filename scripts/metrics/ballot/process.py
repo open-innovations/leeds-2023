@@ -8,27 +8,16 @@ DATA_DIR = os.path.join('data', 'metrics', 'ballot')
 RAW_DATA = os.path.join(DATA_DIR, 'ballot_entries.csv')
 
 
-def map_doc_to_dict(doc):
-    dict = doc.get([
-        'dateSubmitted',
-        'postcode',
-        'artistAgeGroup',
-        'artworkMedium',
-        'advertisingSource'
-    ])
-    print(dict)
-
-
 def get_data():
     db = get_db()
-    ballot_ref = db.collection(u'ballot-data')
+    ballot_ref = db.collection(u'ballot-entries')
 
     docs = ballot_ref.select([
         'dateSubmitted',
+        'hasPostcode',
         'postcode',
         'artistAgeGroup',
         'artworkMedium',
-        'advertisingSource'
     ]).stream()
 
     # Create a dataframe
@@ -36,14 +25,14 @@ def get_data():
 
     # Map postcode to ward
     data = match_ward(data)
-    data = data.drop(columns=['postcode'])
+    data.loc[data.hasPostcode == False, 'ward_code'] = 'NOT_PROVIDED'
+    data = data.drop(columns=['postcode', 'hasPostcode'])
 
     # Rename columns
     data = data.rename(columns={
         'dateSubmitted': 'date_submitted',
         'artistAgeGroup': 'artist_age_group',
         'artworkMedium': 'artwork_medium',
-        'advertisingSource': 'advertising_source'
     })
 
     # Convert and round the date

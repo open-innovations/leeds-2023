@@ -22,6 +22,13 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Setup Firebase secret key
+        uses: ttd2089/secret-file-action@v1.1
+        id: firebase-service-account-key
+        with:
+          secret: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          b64-decode: false
+
       - name: Run a multi-line script
         env:
           TYPEFORM_PRIVATE_TOKEN: ${{ secrets.TYPEFORM_PRIVATE_TOKEN }}
@@ -29,10 +36,12 @@ jobs:
           OI_SFTP_HOST: ${{ secrets.OI_SFTP_HOST }}
           OI_SFTP_USERNAME: ${{ secrets.OI_SFTP_USERNAME }}
           OI_SFTP_PASSWORD: ${{ secrets.OI_SFTP_PASSWORD }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ steps.firebase-service-account-key.outputs.file }}
 
         run: |
           python scripts/update_data.py
           python scripts/process_for_site.py
+          cat ${GOOGLE_APPLICATION_CREDENTIALS}
 
       - name: Commit changes to files
         working-directory: .

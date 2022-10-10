@@ -51,6 +51,11 @@ def save_raw_data(data):
     )
 
 
+def load_raw_data():
+    data = pd.read_csv(RAW_DATA, parse_dates=['date_submitted'])
+    return data
+
+
 def update():
     data = get_data()
     save_raw_data(data)

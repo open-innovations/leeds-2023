@@ -3,17 +3,19 @@ export default function ({ search, url }) {
   const links = pages
     .map(
       (page) =>
-        `<a ${url == page.data.url ? 'class="active" ' : ''}href="${
+        `<li><a ${url == page.data.url ? 'class="active" ' : ''}href="${
           page.data.url
-        }">${page.data.title}</a>`
+        }">${page.data.title}</a></li>`
     )
     .join('');
 
-  return `<input hidden id="menu-state" class="menu-state" type="checkbox">
+  return `<nav>
+    <input hidden id="menu-state" class="menu-state" type="checkbox">
     <label class="menu-toggle" for="menu-state">
       <div class="menu-burger"><i></i><i></i><i></i></div>
     </label>
-    <nav class="menu-items">${links}</nav>`;
+    <ul class="menu-items">${links}</ul>
+  </nav>`;
 }
 
 export const css = `
@@ -60,6 +62,7 @@ export const css = `
 .menu-items {
   position: absolute;
   top: var(--header-height);
+  margin: 0;
   left: 100%;
   right: -100%;
   display: flex;

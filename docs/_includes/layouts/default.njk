@@ -15,12 +15,12 @@
     <div class="site-header-container">
       {% comp "layout.block", { background_colour: 'var(--l23-dark-blue-grey)' } %}
       <header class="site-header" role="banner">
-        {% if work_in_progress %}{{ comp.work_in_progress() | safe }}{% endif %}
         <a class="logo" rel="author" href="/">
           <img class='header-logo' src='/assets/images/logo.svg' inline />
           <h1>{{ header_title or metas.site }}</h1>
         </a>
         {{ comp.nav({ url: url }) | safe }}
+        {% if work_in_progress %}{{ comp.work_in_progress() | safe }}{% endif %}
       </header>
       {% endcomp %}
     </div>

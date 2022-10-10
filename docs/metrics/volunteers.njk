@@ -133,7 +133,7 @@ metas:
     const yLabels = {};
     for (let l = 0; l <= yMax; l+=gridSpacing) yLabels[l] = { label: l };
 
-    const labels = data.week.reduce((a, c, n) => ({ ...a, [n]: { label: dateFormatter(c) } }), {})
+    const labels = data.week.reduce((a, c, n) => ({ ...a, [n]: { label: n % 2 === 0 ? dateFormatter(c) : undefined } }), {})
     const makeCoordinates = (v, n) => ({ x: n, y: parseInt(v, 10) });
     const created = data.values.created.map(makeCoordinates);
     const applied = data.values.applied.map(makeCoordinates);

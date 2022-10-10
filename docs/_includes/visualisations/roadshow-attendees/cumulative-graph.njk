@@ -34,7 +34,7 @@
     const yLabels = {};
     for (let l = 0; l <= yMax; l+=gridSpacing) yLabels[l] = { label: l };
 
-    const labels = data.week.reduce((a, c, n) => ({ ...a, [n]: { label: dateFormatter(c) } }), {})
+    const labels = data.week.reduce((a, c, n) => ({ ...a, [n]: { label: n % 3 === 0 ? dateFormatter(c) : null } }), {})
     const attendances = data.values.attendances.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
     const contactConsents = data.values.contactConsents.map((v, n) => ({ x: n, y: parseInt(v, 10) }));
 

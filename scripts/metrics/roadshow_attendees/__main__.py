@@ -157,3 +157,7 @@ def process_roadshow_attendees(freq='D'):
 
     data.to_csv(ROADSHOW_SUMMARY,
                 date_format="%Y-%m-%d", index=False)
+
+get_contact_consent_responses()
+# process_attendance_spreadsheet()
+prepare_roadshow_data()

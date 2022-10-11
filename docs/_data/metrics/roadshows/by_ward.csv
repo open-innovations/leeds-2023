@@ -1,4 +1,5 @@
 ward_name,ward_code,attendance,contact_consents
+Keighley West,E05001357,0,1
 Wharfedale,E05001366,0,3
 Batley East,E05001390,0,1
 Golcar,E05001401,0,1
@@ -7,7 +8,10 @@ Airedale and Ferry Fryston,E05001445,0,1
 Altofts and Whitwood,E05001446,0,1
 Wakefield South,E05001462,0,1
 Tadcaster,E05010060,0,1
-Marston Moor,E05011336,0,1
+Dringhouses & Woodthorpe,E05010315,0,1
+Beauchief and Greenhill,E05010857,0,1
+Harrogate Coppice Valley,E05011315,0,1
+Marston Moor,E05011336,0,2
 Spofforth with Lower Wharfedale,E05011345,0,1
 Ardsley & Robin Hood,E05011384,22,11
 Armley,E05011385,11,8

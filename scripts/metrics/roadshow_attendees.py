@@ -13,7 +13,7 @@ CONTACT_CONSENT_RESPONSES = os.path.join(WORKING_DIR, 'contact_consent_responses
 
 OUTPUT_DIR = os.path.join('data', 'metrics', 'roadshows')
 ROADSHOW_ATTENDANCE_NUMBERS = os.path.join(OUTPUT_DIR, 'attendance.csv')
-SUMMARY = os.path.join(OUTPUT_DIR, 'attendance_and_contact_consent_summary.csv')
+SUMMARY = os.path.join(OUTPUT_DIR, 'attendance_and_communication_signup_summary.csv')
 
 VIEW_DIR = os.path.join('docs', '_data', 'metrics', 'roadshows')
 ROADSHOW_SUMMARY = os.path.join(VIEW_DIR, 'summary.csv')
@@ -93,7 +93,7 @@ def prepare_roadshow_data():
 
     contact_consents_summary = contact_consents.groupby(by='datetime').count()
     contact_consents_summary = pd.DataFrame({
-        'contact_consents': contact_consents_summary.postcode
+        'communication_signup': contact_consents_summary.postcode
     })
 
     summary = pd.concat([attendance_summary, contact_consents_summary]).groupby('datetime').sum().astype(int)

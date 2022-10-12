@@ -39,8 +39,17 @@
       fillGraph(params);
   }
   function fillGraph(params){
-    const rawData = JSON.parse(params.file);
-    const dateFormatter = (date) => date.toLocaleString('default', { day: 'numeric', month: 'short' });
+    rawData = JSON.parse(params.file);
+    
+    if(params.filter_date != null){
+      rawData = rawData.filter(function (i,n){
+          return i.week_starting >= params.filter_date[0] && i.week_starting <= params.filter_date[1];
+      });
+    }
+
+    //const dateFormatter = (date) => date.toLocaleString('default', { day: 'numeric', month: 'short' });
+    //const dateFormatter = (date) => "";
+    const dateFormatter = (date) => date.getDate() <= 7 ? date.toLocaleString('default', { month: 'short' }) : "";
     const data = {
       week: rawData.map(x => new Date(x.week_starting)),
       values: rawData.map(x => x[params.metric]),
@@ -48,7 +57,7 @@
         yMax: Math.max(...rawData.map(x => x[params.metric]))
       }
     };
-
+    
     // Work out maximum y value and labels
     const yMax = Math.ceil(Math.max(...data.values)/params.gap) * params.gap;
     const yLabels = {};
@@ -97,7 +106,8 @@
               metric: "audience_last",
               gap: 2000,
               yTitile: "Audience",
-              chartTitle: "Twitter Audience"
+              chartTitle: "Twitter Audience",
+              filter_date: ["2022-03-01","2022-08-30"]
             };
 
     paramsInstagram = {
@@ -107,7 +117,8 @@
               metric: "audience_last",
               gap: 500,
               yTitile: "Audience",
-              chartTitle: "Instagram Audience"
+              chartTitle: "Instagram Audience",
+              filter_date: ["2022-03-01","2022-08-31"]
             };
 
     paramsFacebook = {
@@ -117,7 +128,8 @@
               metric: "audience_last",
               gap: 200,
               yTitile: "Audience",
-              chartTitle: "Facebook Audience"
+              chartTitle: "Facebook Audience",
+              filter_date: ["2022-03-01","2022-08-31"]
             };
 
     paramsLinkedin = {
@@ -127,7 +139,8 @@
               metric: "audience_last",
               gap: 500,
               yTitile: "Audience",
-              chartTitle: "Linkedin Audience"
+              chartTitle: "Linkedin Audience",
+              filter_date: ["2022-03-01","2022-08-31"]
             };
 
     paramsAll = {
@@ -137,7 +150,8 @@
               metric: "audience_last",
               gap: 2000,
               yTitile: "Audience",
-              chartTitle: "Total Audience"
+              chartTitle: "Total Audience",
+              filter_date: ["2022-03-01","2022-08-31"]
             };
 
     paramsTwitterE = {

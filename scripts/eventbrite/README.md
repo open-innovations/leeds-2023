@@ -1,0 +1,1 @@
+Run `python .\scripts\eventbrite\info_organisation.py 14487847966 "scripts\eventbrite\attrs.txt" "data/metrics/eventbrite/leeds_2023_events.csv" start.utc`

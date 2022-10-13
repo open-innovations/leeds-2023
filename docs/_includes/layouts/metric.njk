@@ -5,3 +5,10 @@ layout: layouts/page.njk
 <h1>{{ title }}</h1>
 
 {{ content | safe }}
+
+{% if limitations %}
+<h2>Known Limitation and Issues</h2>
+<ul>
+  {% for item in limitations %}<li>{{ item }}</li>{% endfor %}
+</ul>
+{% endif %}

@@ -9,3 +9,7 @@ img, svg {
     max-width: 6em;
   }
 }
+
+main {
+  padding-bottom: 4em;
+}

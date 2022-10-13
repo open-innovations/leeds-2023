@@ -1,6 +1,5 @@
 ---
 title: Ballot Entries
-layout: layouts/metric.njk
 summary: Data about ballot entries
 key: ballot
 work_in_progress: true
@@ -9,6 +8,8 @@ metas:
   description: |
     Visualisations of key metrics related to the LEEDS 2023 ballot.
 order: 10
+limitations:
+  - Some ballot entries do not have a postcode associated, so are impossible to map to a Leeds Ward.
 ---
 {%- macro popupSubmissions(params) -%}
   {{ params.label }}</br>
@@ -136,12 +137,3 @@ order: 10
     chart.draw();
   });
 </script>
-
-
-<h2>Known issues</h2>
-
-<ul>
-  <li>
-    Some ballot entries do not have a postcode associated, so are impossible to map to a Leeds Ward.
-  </li>
-</ul>

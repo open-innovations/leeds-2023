@@ -29,5 +29,13 @@
     <main id="main" role="main" aria-label="Content">
       {{ content | safe }}
     </main>
+
+    {% comp 'layout.block' %}
+      <div>
+        <footer class="site-footer">
+          <p>&copy; Leeds 2023</p>
+        </footer>
+      </div>
+    {% endcomp %}
   </body>
 </html>

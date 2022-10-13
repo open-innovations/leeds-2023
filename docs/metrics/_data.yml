@@ -1,3 +1,4 @@
 tags:
   - metrics
 order: 10000
+layout: layouts/metric.njk

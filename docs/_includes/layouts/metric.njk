@@ -9,6 +9,6 @@ layout: layouts/page.njk
 {% if limitations %}
 <h2>Known Limitation and Issues</h2>
 <ul>
-  {% for item in limitations %}<li>{{ item }}</li>{% endfor %}
+  {% for item in limitations %}<li>{{ item | md(true) | safe }}</li>{% endfor %}
 </ul>
 {% endif %}

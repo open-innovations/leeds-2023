@@ -2,33 +2,33 @@ title: Leeds 2023 twitter Summary Statistics
 service:
   twitter:
     metrics:
-      audience_last: 17196
-      engagements_total: 56137
-      audience_gained_total: 2118
-      impressions_total: 2642443
+      audience_last: 17294
+      engagements_total: 56746
+      audience_gained_total: 2218
+      impressions_total: 2672521
     filter_range: 2022-01-01:2022-12-31
     filter_col: date
   facebook:
     metrics:
-      audience_last: 3893
-      engagements_total: 19375
-      audience_gained_total: 314
-      impressions_total: 562249
+      audience_last: 3908
+      engagements_total: 20546
+      audience_gained_total: 321
+      impressions_total: 594049
     filter_range: 2022-01-01:2022-12-31
     filter_col: date
   instagram:
     metrics:
-      audience_last: 5389
-      engagements_total: 3675
-      audience_gained_total: 1100
-      impressions_total: 91807
+      audience_last: 5713
+      engagements_total: 3936
+      audience_gained_total: 1456
+      impressions_total: 213335
     filter_range: 2022-01-01:2022-12-31
     filter_col: date
   linkedin:
     metrics:
-      audience_last: 2593
-      engagements_total: 6429
-      audience_gained_total: 1438
-      impressions_total: 89988
+      audience_last: 2646
+      engagements_total: 6633
+      audience_gained_total: 1480
+      impressions_total: 92994
     filter_range: 2022-01-01:2022-12-31
     filter_col: date

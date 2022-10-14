@@ -9,10 +9,6 @@
 }
 
 body {
-  background-color: var(--l23-dark-blue-grey);
-  color: #eee;
-}
-main {
-  background-color: #eee;
-  color: #111;
+  color: var(--colour-black);
+  background-color: var(--color-off-white);
 }

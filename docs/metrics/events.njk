@@ -8,7 +8,25 @@ metas:
     Visualisations of key metrics related to the LEEDS 2023 events posted on eventbrite.
 work_in_progress: true
 ---
+{% set fg = cycler("black", "black") %}
+{% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)") %}
 
 <h1>
   {{ title }}
 </h1>
+
+<h2> Headline Figures </h2>
+
+
+<div style="display: flex; justify-content: center;">
+<div style="width: 30rem; max-width: 100%;">
+{% comp 'grid.block.impact', { fg: fg.next(), bg: bg.next() } %}
+Total Events:
+  {{ comp.viz.bigNumber({ number: metrics.eventbrite.leeds_2023_events.columns.id.length }) | safe }}
+{% endcomp %}
+</div>
+</div>
+
+<br>
+
+

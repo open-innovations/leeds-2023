@@ -1,0 +1,7 @@
+.site-footer {
+  margin-top: 4em;
+  & footer {
+    border-top: 1px solid rgb(80, 113, 117);
+    padding: 40px 0;
+  }
+}

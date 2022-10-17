@@ -6,6 +6,7 @@
 @import "css/layout.css";
 @import "css/colours.css";
 @import "css/header.css";
+@import "css/footer.css";
 @import "css/nav.css";
 @import "css/table.css";
 @import "css/chart.css";
@@ -26,4 +27,7 @@
 
   /* Actual styles, but not proper names */
   --l23-dark-blue-grey: hsl(188, 100%, 12%);
+
+  --color-off-white: rgb(249, 246, 243);
+  --colour-black: #111;
 }

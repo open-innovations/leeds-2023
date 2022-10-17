@@ -72,7 +72,8 @@ site.copy('/assets/js/vendors');
 
 // Publish raw data
 [
-  'roadshows/attendance_and_contact_consent_summary.csv',
+  'ballot/ballot_entries.csv',
+  'roadshows/attendance_and_communication_signup_summary.csv',
   'roadshows/attendance.csv',
   'social/twitter.csv',
   'social/instagram.csv',

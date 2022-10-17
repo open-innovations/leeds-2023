@@ -1,6 +1,5 @@
 ---
 title: Volunteers
-layout: layouts/metric.njk
 summary: Data about volunteering
 key: volunteers
 work_in_progress: true
@@ -9,6 +8,12 @@ metas:
   description: |
     Visualisations of key metrics related to the LEEDS 2023 volunteering.
 order: 10
+limitations:
+  - |
+      Application dates prior to the 5th October are estimated based on the last modification
+      date of the user record. This is very likely to incorrectly estimate the date that the application
+      was received. Overall numbers should still work.
+  - The hexmaps do not show volunteers from outside the Leeds wards.
 ---
 {%- macro popupPreApplication(params) -%}
   {{ params.label }}</br>
@@ -198,16 +203,3 @@ order: 10
   });
 </script>
 
-
-<h2>Known issues</h2>
-
-<ul>
-  <li>
-    Application dates prior to the 5th October are estimated based on the last modification
-    date of the user record. This is very likely to incorrectly estimate the date that the application
-    was received. Overall numbers should still work.
-  </li>
-  <li>
-    The hexmaps do not show volunteers from outside the Leeds wards.
-  </li>
-</ul>

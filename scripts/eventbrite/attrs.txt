@@ -1,0 +1,1 @@
+id,slugified_name,venue.longitude,venue.latitude,start.utc,end.utc,online_event,status,format.name,name.text

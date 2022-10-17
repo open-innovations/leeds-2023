@@ -1,0 +1,23 @@
+id,slugified_name,venue.longitude,venue.latitude,start.utc,end.utc,online_event,status,format.name,name.text
+42191193997,what-next-for-leeds-2023,-1.5450029999999515,53.7994101,2018-01-31T16:00:00Z,2018-01-31T18:00:00Z,False,completed,Meeting or Networking Event,What next for Leeds 2023?
+156087908135,leeds-2023-open-call-for-artists,,,2021-05-28T14:30:00Z,2021-06-10T10:00:00Z,True,completed,Meeting or Networking Event,LEEDS 2023 Open Call for Artists
+161497382017,leeds-2023-and-leeds-dance-partnership-open-call-for-seed-commissions,,,2021-07-08T15:00:00Z,2021-07-22T11:00:00Z,True,completed,Meeting or Networking Event,LEEDS 2023 and Leeds Dance Partnership Open Call for Seed Commissions
+162424914291,leeds-2023-open-call-for-artists-my-world-my-city-my-neighbourhood,,,2021-07-15T16:00:00Z,2021-07-15T17:00:00Z,True,completed,Meeting or Networking Event,LEEDS 2023 Open Call for Artists My World My City My Neighbourhood
+162553723563,leeds-2023-people-make-it-work-workshops,,,2021-07-28T14:00:00Z,2021-07-29T16:30:00Z,True,completed,"Class, Training, or Workshop",LEEDS 2023 & people make it work Workshops
+165394476331,leeds-2023-open-sessions-for-artists-and-participants,,,2021-08-17T12:00:00Z,2021-09-01T17:45:00Z,True,completed,Meeting or Networking Event,LEEDS 2023 Open Sessions for Artists and Participants
+167062340959,prototyping-with-game-jams,,,2021-09-20T14:00:00Z,2021-09-20T15:30:00Z,True,completed,Seminar or Talk,Prototyping with GAME JAMS
+167067853447,leeds-2023-game-jam,,,2021-09-20T23:00:00Z,2021-09-30T22:59:00Z,True,completed,Seminar or Talk,LEEDS 2023 GAME JAM
+167070912597,presenting-game-jam-prototypes,,,2021-10-01T14:00:00Z,2021-10-01T16:00:00Z,True,completed,Seminar or Talk,Presenting GAME JAM Prototypes
+195786732387,leeds-2023-city-square-artist-commission-drop-in,,,2021-11-09T15:00:00Z,2021-11-16T17:00:00Z,True,completed,Meeting or Networking Event,LEEDS 2023 City Square  Artist Commission Drop-in
+198165206467,leeds-2023-tech-for-the-public-good-roundtables,,,2021-11-10T09:30:00Z,2021-11-24T12:00:00Z,True,completed,Seminar or Talk,LEEDS 2023 Tech for the Public Good Roundtables
+311828847477,paid-research-opportunity,-1.5390813,53.7948698,2022-04-19T11:30:00Z,2022-04-19T17:30:00Z,False,completed,Other,PAID RESEARCH OPPORTUNITY
+329604635337,leeds-2023-paid-research-opportunity,-1.5385328,53.794644,2022-05-04T09:30:00Z,2022-05-04T16:00:00Z,False,completed,,LEEDS 2023 Paid Research Opportunity
+395912333447,leeds-2023-art-with-ai,-1.53741,53.793547,2022-09-23T12:30:00Z,2022-09-23T14:00:00Z,False,completed,Other,LEEDS 2023  - Art with A.I
+414533158837,leeds2023-creative-learning-programme-briefing,,,2022-10-05T15:00:00Z,2022-10-05T16:30:00Z,True,completed,Meeting or Networking Event,LEEDS2023 Creative Learning Programme Briefing
+421225876937,women-of-the-world-think-ins-with-leeds-2023-woodhouse-community-centre,-1.5555846,53.8141962,2022-10-20T13:00:00Z,2022-10-20T16:00:00Z,False,live,"Class, Training, or Workshop",Women of the World Think Ins with LEEDS 2023: Woodhouse Community Centre
+429088865347,women-of-the-world-wow-think-ins-with-leeds-2023-online,,,2022-10-20T17:30:00Z,2022-10-20T19:30:00Z,True,live,"Class, Training, or Workshop",Women of the World (WOW) Think Ins with LEEDS 2023 : Online
+429101683687,women-of-the-world-wow-think-ins-with-leeds-2023-theatre-royal-wakefield,-1.502708,53.68204499999999,2022-10-21T10:00:00Z,2022-10-21T13:00:00Z,False,live,"Class, Training, or Workshop",Women of the World (WOW) Think Ins with LEEDS 2023: Theatre Royal Wakefield
+429110459937,women-of-the-world-think-ins-with-leeds-2023-artworks-halifaxcalderdale,-1.8548605,53.7139968,2022-10-22T10:00:00Z,2022-10-22T12:00:00Z,False,live,"Class, Training, or Workshop",Women of the World Think Ins with LEEDS 2023: Artworks (Halifax/Calderdale)
+429664436897,women-of-the-world-think-ins-with-leeds-2023-artworks-halifaxcalderdale,-1.8548605,53.7139968,2022-10-22T14:00:00Z,2022-10-22T16:00:00Z,False,live,"Class, Training, or Workshop",Women of the World Think Ins with LEEDS 2023: Artworks (Halifax/Calderdale)
+412861528947,the-awakening-ballot-leeds-cultural-heritage-facilitated-session,,,2022-10-31T08:00:00Z,2022-11-25T14:30:00Z,False,live,Other,The Awakening Ballot: Leeds Cultural Heritage Facilitated Session
+424096894227,leeds-2023-paid-research-opportunity,-1.5376362,53.7934186,2022-11-03T13:00:00Z,2022-11-03T17:00:00Z,False,live,,LEEDS 2023 Paid Research Opportunity

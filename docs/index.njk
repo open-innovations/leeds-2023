@@ -33,7 +33,7 @@ layout: layouts/default.njk
   }) | safe }}
   {{ comp.metric.headline({
     title: "Volunteer offers",
-    value: metrics.volunteers.by_week.columns.applied | last | localize,
+    value: metrics.volunteers.by_week.columns.offered | last | localize,
     description: "The number of people who have been offered a volunteering role.",
     link: "~/metrics/volunteers.njk",
     colour: "var(--l23-dark-blue-grey)",
@@ -41,7 +41,7 @@ layout: layouts/default.njk
   }) | safe }}
 
   {{ comp.metric.headline({
-    title: "Ballot entries",
+    title: "The Awakening Ballot entries",
     value: metrics.ballot.by_date.columns.cumulative_submissions | last,
     description: "The number of ballot entries recorded.",
     link: "~/metrics/ballot.njk",

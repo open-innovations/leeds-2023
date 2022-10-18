@@ -9,6 +9,7 @@ export const darkcyan = 'hsl(191, 57%, 15%)';
 export const scales = {
 	'mint': ColourScale(mint+' 0%, '+darkcyan+' 100%'),
 	'yellow': ColourScale(yellow+' 0%, '+darkcyan+' 100%'),
+	'cyan': ColourScale(cyan+' 0%, '+darkcyan+' 100%'),
 	'magenta': ColourScale(magenta+' 0%, rgb(0, 0, 0) 100%')
 };
 

@@ -47,6 +47,7 @@ type HexmapOptions = {
   hexjson: { layout: string; hexes: Record<string, HexDefinition> };
   hexScale: number;
   labelProcessor: (label: string) => string;
+  labelKey?: string;
   margin: number;
   matchKey?: string;
   popup: (params: Record<string, string | number>) => string;
@@ -69,6 +70,7 @@ export default function ({
   hexScale = 1,
   labelProcessor = (label) => label.slice(0, 3),
   margin: marginScale = 0.25,
+  labelKey = '',
   matchKey,
   popup = ({ label, value }) => `${label}: ${value}`,
   title = 'Hexmap',
@@ -231,12 +233,28 @@ export default function ({
   }
 
   const hexCounter = counter();
+  
+  function addTspan(str){
+	  if(str.indexOf("\n")>=0){
+		 let tspan,s,dy;
+		 tspan = str.split(/\n/);
+		 // Rebuild the string
+		 str = "";
+		 for(s = 0; s < tspan.length; s++){
+			 dy = 3*((s+0.5)-(tspan.length/2));
+			 str += '<tspan y="'+dy+'%" x="0">'+tspan[s]+'</tspan>'
+		 }
+	  }
+	  return str;
+  }
 
   const drawHex = (config: HexDefinition) => {
     const hexId = hexCounter();
     const { x, y } = getCentre(config);
     const label = <string>config[titleProp];
-    const value = <number>config[valueProp] || 0;
+	let labelText = labelProcessor(label);
+	if(labelKey != "" && typeof config[labelKey]==="string") labelText = addTspan(config[labelKey]);
+	const value = <number>config[valueProp] || 0;
 
     // Calculate the path based on the layout
     let hexPath: string | undefined = undefined;
@@ -288,7 +306,7 @@ export default function ({
           text-anchor="middle"
           dominant-baseline="middle"
           aria-hidden="true"
-          >${labelProcessor(label)}</text>
+          >${labelText}</text>
       </g>`;
   };
 

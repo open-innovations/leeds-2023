@@ -8,7 +8,6 @@ export const scales = {
 
 //console.log(Colour('hsl(87, 57%, 86%)'));
 
-
 /*
 export const mint = generateSingleColourScale(87, 57);
 export const yellow = generateTwoColourScale([52, 100, 50], [52, 100, 15]);

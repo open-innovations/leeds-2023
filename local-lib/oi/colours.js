@@ -1,8 +1,28 @@
-/* ============== */
-/* Colours v0.4.0 */
-// Colour('hsl(50, 50%, 78%)')
-// Colour('rgb(255, 200, 22)')
-// Colour('#ffdd22')
+/**
+	Colours v0.4.0
+
+	A Colour object can be created with:
+
+		Colour('hsl(50, 50%, 78%)')
+		Colour('rgb(255, 200, 22)')
+		Colour('#ffdd22')
+
+	A Colour contains:
+		Colour.rgb - RGB e.g. [0,0,0]
+		Colour.hex - a hex code e.g. '#000000'
+		Colour.hsl - HSL e.g. 'hsl(0,0,0)'
+		Colour.contrast - the most contrasting colour e.g. 'white'
+
+	A ColourScale function can be created with:
+
+		ColourScale('hsl(87, 57%, 86%) 0%, hsl(191, 57%, 15%) 100%')
+
+	The ColourScale object will, by default, return a colour given a 
+	value in the range 0 to 1. It is also possible to return:
+	
+		ColourScale.orig - the original colour stops string
+		ColourScale.gradient - a string for the CSS linear gradient
+ **/
 export function Colour(str){ return new C(str); }
 function C(str){
   // Parse the string

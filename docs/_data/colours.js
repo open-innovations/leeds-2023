@@ -1,5 +1,17 @@
-export const mint = generateSingleColourScale(87, 57)
-export const yellow = generateTwoColourScale([52, 100, 50], [52, 100, 15])
+import { Colour, ColourScale } from 'local/oi/colours.js';
+
+export const scales = {
+	'mint': ColourScale('hsl(87, 57%, 86%) 0%, hsl(191, 57%, 15%) 100%'),
+	'yellow': ColourScale('hsl(52, 100%, 50%) 0%, hsl(191, 57%, 15%) 100%'),
+	'magenta': ColourScale('hsl(321, 100%, 50%) 0%, rgb(0, 0, 0) 100%')
+};
+
+//console.log(Colour('hsl(87, 57%, 86%)'));
+
+
+/*
+export const mint = generateSingleColourScale(87, 57);
+export const yellow = generateTwoColourScale([52, 100, 50], [52, 100, 15]);
 
 function generateSingleColourScale(hue, saturation, startLightness=86, endLightness=50) {
   return function(value) {
@@ -23,3 +35,4 @@ function generateTwoColourScale(startHsl, endHsl) {
 
   }
 }
+*/

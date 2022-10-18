@@ -1,3 +1,5 @@
+import { Colour } from 'local/oi/colours.js';
+
 /*********************/
 /* UTILITY FUNCTIONS */
 /*********************/
@@ -282,6 +284,7 @@ export default function ({
           d="${hexPath}"
         />
         <text
+		  style="fill: ${(Colour(colourScale(value / maxValue))).contrast};"
           text-anchor="middle"
           dominant-baseline="middle"
           aria-hidden="true"

@@ -93,8 +93,9 @@ limitations:
       matchKey: 'ward_code',
       valueProp: 'created',
       popup: popupPreApplication,
-      bgColour: '#BBB',
-      title: 'Initial sign-ups by people living in ward'
+      bgColour: 'var(--l23-mint)',
+      title: 'Initial sign-ups by people living in ward',
+      colourScale: colours.mint
     }) | safe }}
 
    <p>Total within Leeds: <strong>{{metrics.volunteers.la_stats.created.Leeds}}</strong><br>
@@ -109,8 +110,9 @@ limitations:
       matchKey: 'ward_code',
       valueProp: 'applied',
       popup: popupApplied,
-      bgColour: '#BBB',
-      title: 'Volunteer applications received from people in ward'
+      bgColour: 'var(--l23-yellow)',
+      title: 'Volunteer applications received from people in ward',
+      colourScale: colours.yellow
     }) | safe }}
 
    <p>Total within Leeds: <strong>{{metrics.volunteers.la_stats.applied.Leeds}}</strong><br>

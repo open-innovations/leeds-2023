@@ -1,9 +1,15 @@
 import { Colour, ColourScale } from 'local/oi/colours.js';
 
+export const mint = 'hsl(87, 57%, 86%)';
+export const yellow = 'hsl(52, 100%, 50%)';
+export const magenta = 'hsl(321, 100%, 50%)';
+export const cyan = 'hsl(173, 65%, 61%)';
+export const darkcyan = 'hsl(191, 57%, 15%)';
+
 export const scales = {
-	'mint': ColourScale('hsl(87, 57%, 86%) 0%, hsl(191, 57%, 15%) 100%'),
-	'yellow': ColourScale('hsl(52, 100%, 50%) 0%, hsl(191, 57%, 15%) 100%'),
-	'magenta': ColourScale('hsl(321, 100%, 50%) 0%, rgb(0, 0, 0) 100%')
+	'mint': ColourScale(mint+' 0%, '+darkcyan+' 100%'),
+	'yellow': ColourScale(yellow+' 0%, '+darkcyan+' 100%'),
+	'magenta': ColourScale(magenta+' 0%, rgb(0, 0, 0) 100%')
 };
 
 //console.log(Colour('hsl(87, 57%, 86%)'));

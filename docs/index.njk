@@ -1,11 +1,6 @@
 ---
 title: LEEDS 2023 Data
 layout: layouts/default.njk
-links:
-  - title: GitHub repo
-    link: https://github.com/open-innovations/leeds-2023
-    summary: |
-      GitHub repo for the code and data.
 ---
 
 {% comp "layout.block", { background_colour: 'var(--l23-yellow)', vertical_padding: '3rem' } %}
@@ -28,32 +23,44 @@ links:
   {% endcomp %}
 
   <!-- Some metrics -->
+  {{ comp.metric.headline({
+    title: "Volunteer applications",
+    value: metrics.volunteers.by_week.columns.applied | last | localize,
+    description: "The number of people who have applied to be volunteers.",
+    link: "~/metrics/volunteers.njk",
+    colour: "var(--l23-yellow)",
+    background: "var(--l23-dark-blue-grey)"
+  }) | safe }}
+  {{ comp.metric.headline({
+    title: "Volunteer offers",
+    value: metrics.volunteers.by_week.columns.applied | last | localize,
+    description: "The number of people who have been offered a volunteering role.",
+    link: "~/metrics/volunteers.njk",
+    colour: "var(--l23-cyan)",
+    background: "var(--l23-dark-blue-grey)"
+  }) | safe }}
 
-  {% comp "grid.block.impact", {
+  {{ comp.metric.headline({
+    title: "Ballot entries",
+    value: metrics.ballot.by_date.columns.cumulative_submissions | last,
+    description: "The number of ballot entries recorded.",
+    link: "~/metrics/ballot.njk",
+    colour: "var(--l23-magenta)",
+    background: "var(--l23-dark-blue-grey)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Roadshow Attendees",
+    value: metrics.roadshows.summary.columns.cumulative_attendance | last | localize,
+    description: "Between " +
+      ( metrics.roadshows.summary.columns.week_ending | first | date('MMMM') ) + " and " +
+      ( metrics.roadshows.summary.columns.week_ending | last | date('MMMM') ) + " " +
+      ( metrics.roadshows.summary.columns.week_ending | last | date('YYY') ),
     link: "~/metrics/roadshow-attendees.njk",
-    bg: "var(--l23-yellow);"
-  } %}
-    <h2>Roadshow Attendees</h2>
-    {{ comp.viz.bigNumber({ number: metrics.roadshows.summary.columns.cumulative_attendance | last | localize }) | safe }}
-    Between
-    {{ metrics.roadshows.summary.columns.week_ending | first | date('MMMM') }}
-    and
-    {{ metrics.roadshows.summary.columns.week_ending | last | date('MMMM') }}
-    {{ metrics.roadshows.summary.columns.week_ending | last | date('YYY') }}
-  {% endcomp %}
+    colour: "var(--l23-yellow)",
+    background: "var(--l23-dark-blue-grey)"
+  }) | safe }}
 
-  {% for link in links %}
-    {% comp "grid.block.impact", {
-      link: link.link | url,
-      bg: "var(--l23-cyan);"
-    } %}
-      <h2>{{ link.title }}</h2>
-      <p>
-        <img src="/assets/images/icons/github.svg" class="mw-6" inline>
-      </p>
-      <p>{{ link.summary }}</p>
-    {% endcomp %}
-  {% endfor %}
 
   <div
     data-auto-popup="Need to agree text for About page and this summary"

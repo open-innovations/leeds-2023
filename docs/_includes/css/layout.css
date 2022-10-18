@@ -5,7 +5,8 @@
 
 img, svg {
   max-width: 100%;
-  &.mw-6 { 
-    max-width: 6em;
-  }
+}
+
+.social-icon {
+  max-width: 3em;
 }

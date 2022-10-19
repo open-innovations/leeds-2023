@@ -2,46 +2,11 @@
 title: My World, My City, My Neighbourhood
 work_in_progress: true
 summary: Data on the MWMCMN event series.
-manual_measure:
-  Artist_ID_count: 22
-  Sponsored_Artists_Days_total: 1195
-  Other_Artists_Employed_Days_total: 184
-  Performance_Or_Exhibition_Days_total: 108
-  Sessions_For_Education_Training_Or_Participation_total: 487
-  Artists_Employed_total: 165
-  Participants_total: 2105
-  Live_Audience_total: 3735
-  Online_Audience_total: 62898
-  YP_Benefited_Total_total: 1181
-  YP_Benefited_0_4_total: 35
-  YP_Benefited_5_12_total: 823
-  YP_Benefited_13_18_total: 90
-  YP_Benefited_19_25_total: 96
-  YP_Benefited_Unknown: 137
-  YP_First_Time_Participation_total: 1124    
-  YP_Previous_Barriers_total: 1045
-  YP_Increased_Cultural_Awareness_total: 191
-  YP_Positive_Experience_total: 960
-  YP_Self_Expression_total: 1141
-  YP_Continued_Engagement_total: 759
-  Improved_Social_Networks_total: 469
-  Increased_Belonging_Community_total: 1072
-  Community_Volunteers_Supporters_total: 1425
-  Improved_Mental_Health_total: 485
-  Improved_Physcial_Health_total: 476
-columns:
-  - key: project
-    name: Project
-  - key: count
-    name: Count
 ---
 
 {# Set up some cyclers for block colouring #}
 {% set fg = cycler("black", "black") %}
 {% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)") %}
-
-<br>
-<br>
 
 <h1>{{ title }}</h1>
 
@@ -62,8 +27,6 @@ Total Projects:
 {% endcomp %}
 </div>
 </div>
-
-<br>
 
 
 {% comp 'grid.autogrid' %}
@@ -94,10 +57,6 @@ Total Participants (Young People):
 {% endcomp %}
 
 {% endcomp %}
-
-
-<br>
-<br>
 
 <h2>Participation and Impact on Young People:</h2>
 
@@ -143,8 +102,6 @@ Total Participants (Young People):
 
 {% endcomp %}
 
-<br>
-<br>
 <div class='cen'>
 {% comp 'grid.autogrid' %}
 
@@ -170,8 +127,6 @@ Number of young people supported through the project who intend to continue enga
 
 {% endcomp %}
 </div>
-<br>
-<br>
 
 <h2>Impact on Community and Wellbeing:</h2>
 
@@ -200,9 +155,6 @@ People reported improved physical health and wellbeing as a result of the projec
 
 {% endcomp %}
 
- <br>
- <br>
-
 
 <h3>Number of Celebration Events Taken Place by Ward</h3>
 
@@ -221,6 +173,3 @@ People reported improved physical health and wellbeing as a result of the projec
 
   </section>
 {% endcomp %}
-
- <br>
- <br>

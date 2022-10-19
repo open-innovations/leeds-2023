@@ -4,7 +4,6 @@ export default function({ comp, metrics, title, value, description, link, colour
     comp.viz.bigNumber({ number: value }),
     `<p>${description}</p>`,
   ];
-  console.log(background, colour)
 
   return comp.grid.block.impact({
     link: link,

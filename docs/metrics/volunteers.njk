@@ -2,7 +2,6 @@
 title: Volunteers
 summary: Data about volunteering
 key: volunteers
-work_in_progress: true
 metas:
   title: LEEDS 2023 Metrics - Volunteers
   description: |
@@ -24,40 +23,54 @@ limitations:
   {{ params.value }} applications received
 {%- endmacro -%}
 
+<p>
+  Our volunteers will be the heart of the Year of Culture.
+  The data on this page shows how we're building our team of volunteers.
+  There is a simple application process you need to follow to become a volunteer,
+  starting with expressing interest by <strong>signing up</strong>.
+  After you've <strong>applied</strong>, we'll review your application and guide you through assessment,
+  before making <strong>offers</strong> to sucessful candidates we hope will become <strong>confirmed</strong> volunteers.
+  You can read more <a href="https://leeds2023.co.uk/volunteer-with-leeds-2023">about the volunteering programme on the LEEDS 2023 website</a>.
+</p>
+
+<p>
+  The data shown below was extracted from the Rosterfy voluteer management system which tracks all activity related to volunteering.
+  At the moment, this primarily the application process, but over time we will show data about the number of shifts that our volunteers complete.
+</p>
+
+<p>Page updated: {{ date | date('HUMAN_DATE') }}</p>
+
 <h2>Headlines</h2>
 
 {% comp 'grid.autogrid' %}
-  {% comp 'grid.block.impact',  { bg: 'var(--l23-mint)' } %}
-    <h3>Volunteer sign-ups</h3>
-    {{ comp.viz.bigNumber({
-      number: metrics.volunteers.by_week.columns.created | last
-    }) | safe }}
-    <p>The number of people who have signed up to the volunteer system (Rosterfy).</p>
-  {% endcomp %}
-  {% comp 'grid.block.impact',  { bg: 'var(--l23-yellow)' } %}
-    <h3>Applications received</h3>
-    {{ comp.viz.bigNumber({
-      number: metrics.volunteers.by_week.columns.applied | last
-    }) | safe }}
-    <p>The number of volunteering applications that have been received.</p>
-  {% endcomp %}
-  {% comp 'grid.block.impact',  { bg: 'var(--l23-cyan)' } %}
-    <h3>Volunteering offers made</h3>
-    {{ comp.viz.bigNumber({
-      number: metrics.volunteers.by_week.columns.offered | last or '--'
-    }) | safe }}
-    <p>The number of people who have offered volunteering positions.</p>
-  {% endcomp %}
-  {% comp 'grid.block.impact',  { bg: 'var(--l23-magenta)' } %}
-    <h3>Volunteers confirmed</h3>
-    {{ comp.viz.bigNumber({
-      number: metrics.volunteers.by_week.columns.confirmed | last or '--'
-    }) | safe }}
-    <p>The number of volunteers who have been appointed.</p>
-  {% endcomp %}
-{% endcomp %}
+  {{ comp.metric.headline({
+    title: "Volunteer sign-ups", headingLevel: 3,
+    value: metrics.volunteers.by_week.columns.created | last | localize,
+    description: "The number of people who have signed up to the volunteer system (Rosterfy).",
+    background: "var(--l23-mint)"
+  }) | safe }}
 
-<p>Page updated: {{ date | date('HUMAN_DATE') }}</p>
+  {{ comp.metric.headline({
+    title: "Volunteer applications", headingLevel: 3,
+    value: metrics.volunteers.by_week.columns.applied | last | localize,
+    description: "The number of volunteering applications that have been received.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Volunteer offers", headingLevel: 3,
+    value: metrics.volunteers.by_week.columns.offered | last or '--' | localize,
+    description: "The number of people who have been offered a volunteering role.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Volunteers confirmed", headingLevel: 3,
+    value: metrics.volunteers.by_week.columns.confirmed | last or '--' | localize,
+    description: "The number of volunteers who have been appointed.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+{% endcomp %}
 
 <h2>Distribution of volunteers</h2>
 

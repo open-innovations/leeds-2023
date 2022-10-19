@@ -14,6 +14,7 @@ limitations:
       was received. Overall numbers should still work.
   - The hexmaps do not show volunteers from outside the Leeds wards.
 ---
+{% from 'macros.njk' import dateFormatter %}
 {%- macro popupPreApplication(params) -%}
   {{ params.label }}</br>
   {{ params.value }} signups
@@ -110,109 +111,63 @@ limitations:
 
 <h2>Growth in volunteering</h2>
 
-{{ comp.oi.linechart() | safe }}
-
 {% comp 'layout.figure', {
   title: 'Cumulative counts of volunteer user profiles by status'
 } %}
-<div id="wa-chart-1" class="wa-chart chart"></div>
+
+{{ comp.oi.charts.chart.line({
+  categories: metrics.volunteers.by_week.columns.week_ending,
+  width: 25,
+  height: 12,
+  text: { colour: '#eee' },
+  xAxis: {
+    title: 'Week ending (Friday)',
+    titleOffset: 4,
+    labelRotate: 35,
+    majorTick: 1,
+    formatter: dateFormatter
+  },
+  yAxis: {
+    title: 'Number of volunteers',
+    titleOffset: 3,
+    majorTick: 200
+  },
+  plotArea: {
+    yMax: 800,
+    colour: 'var(--l23-dark-blue-grey)'
+  },
+  padding: {
+    left: 4,
+    bottom: 5
+  },
+  series: [
+    {
+      id: "offered", label: "Volunteers appointed (cumulative)",
+      yValues: metrics.volunteers.by_week.columns.confirmed,
+      colour: 'var(--l23-magenta)',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "offered", label: "Offers made (cumulative)",
+      yValues: metrics.volunteers.by_week.columns.offered,
+      colour: 'var(--l23-cyan)',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "applied", label: "Applications (cumulative)",
+      yValues: metrics.volunteers.by_week.columns.applied,
+      colour: 'var(--l23-yellow)',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "created", label: "Sign-ups (cumulative)",
+      yValues: metrics.volunteers.by_week.columns.created,
+      colour: 'var(--l23-mint)',
+      markerOptions: { s: 5 }
+    }
+  ],
+  legend: {
+    width: "20em"
+  }
+}) | safe }}
 {% endcomp %}
-
-<style>
-  .wa-chart {
-    height: 30rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .key rect {
-    stroke: none;
-  }
-</style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const rawData = JSON.parse(`{{ metrics.volunteers.by_week.rows | dump | safe }}`);
-    const dateFormatter = (date) => date.toLocaleString('default', { day: 'numeric', month: 'short' });
-    const data = {
-      week: rawData.map(x => new Date(x.week_ending)),
-      values: {
-        created: rawData.map(x => x.created),
-        applied: rawData.map(x => x.applied),
-        offered: rawData.map(x => x.offered),
-        confirmed: rawData.map(x => x.confirmed),
-      },
-      axis: {
-        yMax: Math.max(...rawData.map(x => x.created))
-      }
-    };
-
-    // Work out maximum y value and labels
-    const gridSpacing = 200;
-    const yMax = Math.ceil(Math.max(...data.values.created)/gridSpacing) * gridSpacing;
-    const yLabels = {};
-    for (let l = 0; l <= yMax; l+=gridSpacing) yLabels[l] = { label: l };
-
-    const labels = data.week.reduce((a, c, n) => ({ ...a, [n]: { label: n % 2 === 0 ? dateFormatter(c) : undefined } }), {})
-    const makeCoordinates = (v, n) => ({ x: n, y: parseInt(v, 10) });
-    const created = data.values.created.map(makeCoordinates);
-    const applied = data.values.applied.map(makeCoordinates);
-    const offered = data.values.offered.map(makeCoordinates);
-    const confirmed = data.values.confirmed.map(makeCoordinates);
-
-    chart = OI.linechart(document.getElementById('wa-chart-1'), {
-      left: 80,
-      right: 30,
-      top: 30,
-      bottom: 60,
-      // Draw a key
-      key: { show: true, position: 'top left' },
-      // Define the axes
-      'axis': {
-        'x': {
-          'line': { 'show': true },
-          'title': { 'label': 'Week ending (Friday)', 'anchor': 'middle' },
-          'labels': labels,
-        },
-        'y': {
-          'line': { show: false },
-          'grid': { show: true, 'stroke-width': '0.5px' },
-          'title': { label: 'Numbers of volunteers' },
-          'max': yMax,
-          'labels': yLabels,
-        }
-      }
-    });
-    const colours = [
-      'var(--l23-mint)',
-      'var(--l23-yellow)',
-      'var(--l23-cyan)',
-      'var(--l23-magenta)',
-    ]
-    chart.addSeries(confirmed, {
-      'title': 'Volunteers appointed (cumulative)',
-      'points': { 'size': 6, 'color': colours[3] },
-      'line': { 'color': colours[3] },
-      // 'tooltip': { 'label': 'Cumulative attendees' }
-    });
-    chart.addSeries(offered, {
-      'title': 'Offers made (cumulative)',
-      'points': { 'size': 6, 'color': colours[2] },
-      'line': { 'color': colours[2] },
-      // 'tooltip': { 'label': 'Cumulative attendees' }
-    });
-    chart.addSeries(applied, {
-      'title': 'Applications received (cumulative)',
-      'points': { 'size': 6, 'color': colours[1] },
-      'line': { 'color': colours[1] },
-      // 'tooltip': { 'label': 'Cumulative attendees' }
-    });
-    chart.addSeries(created, {
-      'title': 'Sign-ups (cumulative)',
-      'points': { 'size': 6, 'color': colours[0] },
-      'line': { 'color': colours[0] },
-      // 'tooltip': { 'label': 'Cumulative attendees' }
-    });
-    chart.draw();
-  });
-</script>
-

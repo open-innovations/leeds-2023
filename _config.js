@@ -1,15 +1,16 @@
 import lume from "lume/mod.ts";
 import base_path from "lume/plugins/base_path.ts";
+import date from "lume/plugins/date.ts";
 import esbuild from 'lume/plugins/esbuild.ts';
 import imagick from "lume/plugins/imagick.ts";
 import inline from "lume/plugins/inline.ts";
 import jsx from "lume/plugins/jsx.ts";
 import metas from "lume/plugins/metas.ts";
 import postcss from "lume/plugins/postcss.ts";
-import autoDependency from 'oi-lume-utils/processors/auto-dependency.ts';
-import csvLoader from 'oi-lume-utils/loaders/csv-loader.ts';
-import date from "lume/plugins/date.ts";
 
+import oiCharts from 'oi-lume-charts/mod.ts';
+import csvLoader from 'oi-lume-utils/loaders/csv-loader.ts';
+import autoDependency from 'oi-lume-utils/processors/auto-dependency.ts';
 
 import getFonts from 'local/oi/get-fonts.ts';
 
@@ -49,6 +50,10 @@ site.use(esbuild({
   },
 }));
 site.use(date());
+site.use(oiCharts({
+  assetPath: 'assets/oi',
+  componentNamespace: 'oi.charts',
+}));
 
 site.loadPages([".html"]);
 

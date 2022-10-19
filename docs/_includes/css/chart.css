@@ -23,3 +23,9 @@
   stroke: var(--l23-dark-blue-grey);
   stroke-width: 3px;
 }
+
+.chart {
+  & .line {
+    stroke-width: 2px;
+  }
+}

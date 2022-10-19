@@ -24,6 +24,11 @@ const site = lume({
 // Add dependencies
 site.process(['.html'], autoDependency);
 
+// Enforce standard styling of LEEDS 2023
+site.process(['.html'], (page) => {
+  page.document.body.innerHTML = page.document.body.innerHTML.replace(/leeds\s+2023/gi, '<span class="leeds-2023-logo">LEEDS 2023</span>');
+});
+
 site.use(base_path());
 site.use(imagick());
 site.use(inline());

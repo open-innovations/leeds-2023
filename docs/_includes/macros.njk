@@ -1,1 +1,2 @@
 {%- macro dateFormatter(x) %}{{ x | date('do MMM yyyy') }}{%- endmacro -%}
+{%- macro dateFormatterNoYear(x) %}{{ x | date('do MMM') }}{%- endmacro -%}

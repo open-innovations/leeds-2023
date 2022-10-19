@@ -50,7 +50,6 @@ order: 30
   <section>
     <h2>Attendance numbers by ward of residence</h2>
     
-      
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,
       data: metrics.roadshows.by_ward.rows,
@@ -74,7 +73,44 @@ order: 30
     Roadshow Attendances and Communication Sign-Up forms cumulative totals
   </h2>
   <p>This chart shows the cumulative number of attendees at roadshow events per week, and the cumulative number of communication sign-up forms submitted per week.</p>
-  
-  {% include "visualisations/roadshow-attendees/cumulative-graph.njk" %}
-  
+
+  {% from 'macros.njk' import dateFormatterNoYear as dateFormatter %}
+  {{ comp.oi.charts.chart.line({
+    categories: metrics.roadshows.summary.columns.week_ending,
+    width: 25,
+    height: 12,
+    padding: { left: 4 },
+    series: [
+      {
+        id: 'attendances',
+        label: 'Attendances (cumulative)',
+        yValues: metrics.roadshows.summary.columns.cumulative_attendance,
+        colour: 'var(--l23-cyan)',
+        markerOptions: { s: 5 }
+      },
+      {
+        id: 'comms',
+        label: 'Submitted Communication Sign-up Forms (cumulative)',
+        yValues: metrics.roadshows.summary.columns.cumulative_contact_consents,
+        colour: 'var(--l23-magenta)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    xAxis: {
+      title: 'Week ending (Friday)',
+      majorTick: 3,
+      formatter: dateFormatter
+    },
+    plotArea: {
+      yMax: 1000
+    },
+    yAxis: {
+      title: 'Numbers',
+      titleOffset: 3,
+      majorTick: 200
+    },
+    legend: {
+      width: '30em'
+    }
+  }) | safe }}
 </section>

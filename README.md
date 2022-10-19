@@ -3,6 +3,7 @@
 > Data processing and microsite for Leeds 2023
 
 [![data-puller](https://github.com/open-innovations/leeds-2023/actions/workflows/data-puller.yml/badge.svg)](https://github.com/open-innovations/leeds-2023/actions/workflows/data-puller.yml)
+[![publish-on-github-pages](https://github.com/open-innovations/leeds-2023/actions/workflows/deploy-site.yml/badge.svg)](https://github.com/open-innovations/leeds-2023/actions/workflows/deploy-site.yml)
 [![pages-build-deployment](https://github.com/open-innovations/leeds-2023/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/open-innovations/leeds-2023/actions/workflows/pages/pages-build-deployment)
 
 ## Scripts

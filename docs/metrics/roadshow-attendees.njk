@@ -9,15 +9,30 @@ metas:
 order: 30
 ---
 
-<p>These <a href="https://open-innovations.org/blog/2017-05-08-mapping-election-with-hexes">hex cartograms</a> show the number of attendances at one of the <a href="https://leeds2023.co.uk/news/get-ready-for-the-roadshow-with-leeds-2023">LEEDS 2023 Roadshow events</a> and the number of people who attended and subsequently submitted a sign-up form for communication from Leeds 2023. We are considering ‘attendances’ rather than attendees as any individual may have chosen to attend more than one roadshow.</p> 
+<p>
+  These <a href="https://open-innovations.org/blog/2017-05-08-mapping-election-with-hexes">hex cartograms</a> show the number of attendances at one of the <a href="https://leeds2023.co.uk/news/get-ready-for-the-roadshow-with-leeds-2023">LEEDS 2023 Roadshow events</a>
+  and the number of people who attended and subsequently submitted a sign-up form for
+  communication from Leeds 2023. We are considering 'attendances' rather than attendees
+  as any individual may have chosen to attend more than one roadshow.
+</p> 
 
-<p>One Roadshow was held in each ward of Leeds, other than Weetwood and Kirkstall where two events were held in each ward. The first event that took place in Kirkstall was held on the border with Little London & Woodhouse, and was considered to serve both wards.</p>
+<p>
+  Attendances are shown by the ward in which the event was held, whereas responses are
+  categorised by ward of residence based on the postcode supplied when they completed
+  the sign-up form.
+</p>
 
-<p>Attendances are shown by the ward in which the event was held, whereas responses are categorised by ward of residence based on the postcode supplied when they completed the sign-up form.</p>
+<p>
+  When viewing the below data, consideration should be given to the fact that the total
+  number of attendances may vary from that quoted at any given event. Attendance was counted
+  at a single point in time, and as the event was open to all, attendees tended to come and
+  go at times that suited their schedules.
+</p>
 
-<p>When viewing the below data, consideration should be given to the fact that the total number of attendances may vary from that quoted at any given event. Attendance was counted at a single point in time, and as the event was open to all, attendees tended to come and go at times that suited their schedules.</p>
-
-<p>Furthermore, residents will travel across ward boundaries to attend events. As such, attendances at any given roadshow are likely to include attendees from other wards.</p>
+<p>
+  Furthermore, residents will travel across ward boundaries to attend events. As such,
+  attendances at any given roadshow are likely to include attendees from other wards.
+</p>
 
 {%- macro popupAttendees(params) -%}
   {{ params.label }}</br>
@@ -44,6 +59,13 @@ order: 30
 
     
     <p>This hexmap shows the number of attendances at the roadshows held in each ward.</p>
+    
+    <p>
+      One Roadshow was held in each ward of Leeds, other than Weetwood and Kirkstall where two
+      events were held in each ward. The first event that took place in Kirkstall was held on
+      the border with Little London & Woodhouse, and was considered to serve both wards.
+    </p>
+
     <p><strong>{{metrics.roadshows.summary.columns.cumulative_attendance | last | localize}}</strong> attendances were registered in total. Wards with a larger number of attendances are darker in colour, and hover over each hexagon to see the total number for that ward. Hexes outlined in dark blue have an associated value of zero.</p>
   </section>
 

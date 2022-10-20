@@ -10,6 +10,8 @@ metas:
 order: 10
 limitations:
   - Some ballot entries do not have a postcode associated, so are impossible to map to a Leeds Ward.
+  - The figures shows may not include all physical submissions, as there is a backlog in registering these.
+  - Not everyone who submits a ballot entry provides a postcode. This is a design choice, as this removes a barrier to ballot entry for people with no fixed address.
 ---
 {%- macro popupSubmissions(params) -%}
   {{ params.label }}</br>

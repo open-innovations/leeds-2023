@@ -12,10 +12,6 @@ def fiona_2022_10_18():
     logging.info("Querying ballot database")
     docs = ballot_ref.select([
         'dateSubmitted',
-        'advertisingSource',
-        'artistPostcode',
-        'collegeUniversitySource',
-        'schoolSource',
         'source',
     ]).stream()
 

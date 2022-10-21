@@ -20,6 +20,7 @@ def get_data():
         'postcode',
         'artistAgeGroup',
         'artworkMedium',
+        'source',
     ]).stream()
 
     # Create a dataframe

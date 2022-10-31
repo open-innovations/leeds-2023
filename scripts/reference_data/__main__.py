@@ -1,5 +1,5 @@
 import argparse
-from postcodes import get_leeds_postcode_centroids
+import postcodes
 import logging
 
 
@@ -16,4 +16,4 @@ def parse_opts():
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
     opts = parse_opts()
-    get_leeds_postcode_centroids(force=opts.force)
+    postcodes.process(force=opts.force)

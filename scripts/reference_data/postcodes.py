@@ -1,22 +1,22 @@
 import os
 import pandas as pd
 import geopandas as gpd
-import urllib.request
 import logging
 
 logger = logging.getLogger(__name__)
 
+SOURCE_CSV = os.path.join('working', 'ONSPD_AUG_2022_UK.csv')
+PARQUET_FILE = os.path.join('working', 'centroids.parquet')
+CENTROIDS_CSV = os.path.join('data', 'reference', 'postcodes.csv')
+CENTROIDS_JSON = os.path.join('data', 'reference', 'postcodes.geojson')
 
-def get_leeds_postcode_centroids(force=False):
+
+def get_centroids(force=False):
     '''
     Get the latest ONS Postcode Database from the ONS.
 
     https://www.ons.gov.uk/methodology/geography/geographicalproducts/postcodeproducts
     '''
-    SOURCE_CSV = os.path.join('working', 'ONSPD_AUG_2022_UK.csv')
-    PARQUET_FILE = os.path.join('working', 'centroids.parquet')
-    CENTROIDS_CSV = os.path.join('data', 'reference', 'postcodes.csv')
-    CENTROIDS_JSON = os.path.join('data', 'reference', 'postcodes.geojson')
 
     if not os.path.exists(SOURCE_CSV):
         logger.error('Cannot find source CSV')
@@ -36,17 +36,32 @@ def get_leeds_postcode_centroids(force=False):
     if force or not os.path.exists(PARQUET_FILE):
         logger.info('Processing CSV to Parquet')
         centroids = pd.read_csv(SOURCE_CSV, usecols=columns)
-        bbox = [-2.36, 53.26, -0.67, 54.15]
-        centroids = centroids[(centroids.long >= bbox[0]) & (centroids.lat >= bbox[1]) & (
-            centroids.long <= bbox[2]) & (centroids.lat <= bbox[3])]
+        # bbox = [-2.36, 53.26, -0.67, 54.15]
+        # centroids = centroids[(centroids.long >= bbox[0]) & (centroids.lat >= bbox[1]) & (
+        #     centroids.long <= bbox[2]) & (centroids.lat <= bbox[3])]
 
-        centroids = gpd.GeoDataFrame(
-            centroids, geometry=gpd.points_from_xy(
-                centroids.long, centroids.lat)
-        )
         centroids.to_parquet(PARQUET_FILE)
     else:
         logger.info('Reading existing Parquet file')
-        centroids = gpd.read_parquet(PARQUET_FILE)
+        centroids = pd.read_parquet(PARQUET_FILE)
 
-    centroids.to_csv(CENTROIDS_CSV, index=False, columns=columns)
+    return centroids
+
+
+def create_geographic_files():
+    # Round numeric values to 5 decimal places
+    centroids = centroids.round({'lat': 5, 'long': 5})
+    centroids = gpd.GeoDataFrame(
+        centroids, geometry=gpd.points_from_xy(
+            centroids.long, centroids.lat)
+    )
+
+
+def save_ref_csv(centroids):
+    centroids[['pcds', 'oslaua', 'osward']].to_csv(
+        CENTROIDS_CSV, index=False)
+
+
+def process(force=False):
+    centroids = get_centroids(force=force)
+    save_ref_csv(centroids)

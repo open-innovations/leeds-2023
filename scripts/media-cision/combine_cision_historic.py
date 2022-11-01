@@ -27,7 +27,7 @@ historic_data_2.at[143,'News Date'] = '07.08.21'
 historic_data_2['News Date'] = pd.to_datetime(historic_data_2['News Date'],dayfirst=True)
 
 
-cision_data = pd.read_csv(CISION_PATH,parse_dates=['News Date']) #dayfirst=True
+cision_data = pd.read_csv(CISION_PATH,parse_dates=['News Date'],dayfirst=True)
 
                  
 # Drop columns and sort by date

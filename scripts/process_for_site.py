@@ -9,6 +9,7 @@ def main():
     metrics.volunteers.process.summarise()
 
     metrics.ballot.summarize.by_ward()
+    metrics.ballot.summarize.by_local_authority()
     metrics.ballot.summarize.by_date()
 
 

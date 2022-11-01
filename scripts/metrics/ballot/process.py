@@ -3,7 +3,7 @@ import logging
 
 import pandas as pd
 from metrics.ballot.firebase import get_db
-from util.postcode import match_ward
+from util.geography import match_ward, match_la
 
 DATA_DIR = os.path.join('data', 'metrics', 'ballot')
 RAW_DATA = os.path.join(DATA_DIR, 'ballot_entries.csv')
@@ -31,6 +31,13 @@ def get_data():
     logging.info("Mapping wards")
     data = match_ward(data)
     data.loc[data.hasPostcode == False, 'ward_code'] = 'NOT_PROVIDED'
+
+    # Map postcode to local authority
+    logging.info("Mapping local authorities")
+    data = match_la(data)
+    data.loc[data.hasPostcode == False, 'la_code'] = 'NOT_PROVIDED'
+
+    # Remove postcode and hasPostcode columns
     data = data.drop(columns=['postcode', 'hasPostcode'])
 
     # Rename columns
@@ -51,7 +58,7 @@ def save_raw_data(data):
     os.makedirs(DATA_DIR, exist_ok=True)
     logging.info("Saving %s", RAW_DATA)
     data.sort_values(
-        by='date_submitted'
+        by=['date_submitted', 'ward_code']
     ).to_csv(
         RAW_DATA, index=False
     )

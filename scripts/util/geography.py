@@ -14,14 +14,14 @@ def postcode_formatter(postcode):
         return postcode
 
 
-ward_data = load_postcodes(columns=['pcds', 'osward'])
+ward_data = load_postcodes(columns=['pcds', 'osward', 'oslaua'])
 
 
 def match_ward(data, postcode_field='postcode', ward_column='ward_code'):
     data[postcode_field] = data[postcode_field].apply(postcode_formatter)
     data = data.merge(
         how='left',
-        right=ward_data,
+        right=ward_data[['pcds', 'osward']],
         left_on=postcode_field,
         right_on='pcds',
         validate='many_to_one',
@@ -31,3 +31,23 @@ def match_ward(data, postcode_field='postcode', ward_column='ward_code'):
     data.rename(columns={'osward': ward_column}, inplace=True)
     return data
 
+
+def match_geo(data, postcode_field, geo_field, rename_to=None):
+    data[postcode_field] = data[postcode_field].apply(postcode_formatter)
+    data = data.merge(
+        how='left',
+        right=ward_data[['pcds', geo_field]],
+        left_on=postcode_field,
+        right_on='pcds',
+        validate='many_to_one',
+    )
+    data[geo_field].fillna('UNKNOWN', inplace=True)
+    data.drop(columns=['pcds'], inplace=True)
+    if rename_to != None:
+        data.rename(columns={geo_field: rename_to}, inplace=True)
+    return data
+
+
+def match_la(data, postcode_field='postcode', la_column='la_code'):
+    data = match_geo(data, postcode_field, 'oslaua', rename_to=la_column)
+    return data

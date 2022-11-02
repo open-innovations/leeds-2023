@@ -96,6 +96,8 @@ site.copy('/data');
 
 [
   'exec_summary_mwmcmn.pdf',
+  'mwmcmn_ace.csv',
+  'mwmcmn_lcf.csv'
 ].forEach(file => {
   site.remoteFile(`/data/report/${file}`, `./data/report/${file}`)
 })

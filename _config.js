@@ -94,6 +94,13 @@ site.copy('/assets/js/vendors');
 })
 site.copy('/data');
 
+[
+  'report/exec_summary_report.pdf',
+].forEach(file => {
+  site.remoteFile(`/data/${file}`, `./data/report/${file}`)
+})
+site.copy('/data');
+
 // Get Favicon
 site.remoteFile('/favicon.ico', 'https://leeds2023.co.uk/favicon.ico');
 site.copy('/favicon.ico');

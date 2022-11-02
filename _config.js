@@ -99,7 +99,7 @@ site.copy('/data');
   'mwmcmn_ace.csv',
   'mwmcmn_lcf.csv'
 ].forEach(file => {
-  site.remoteFile(`/data/report/${file}`, `./data/report/${file}`)
+  site.remoteFile(`/data/report/mwmcmn/${file}`, `./data/report/mwmcmn/${file}`)
 })
 site.copy('/data');
 

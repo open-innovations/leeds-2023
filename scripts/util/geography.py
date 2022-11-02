@@ -2,6 +2,8 @@ import os
 import re
 import pandas as pd
 
+LEEDS_LA_CODE = 'E08000035'
+
 
 def load_postcodes(columns=None):
     return pd.read_csv(os.path.join('data', 'reference', 'postcodes.csv'), usecols=columns)
@@ -56,7 +58,7 @@ def match_la(data, postcode_field='postcode', la_column='la_code'):
 def local_authority_stats(codes, counts):
     data = pd.DataFrame(data={'counts': counts}, index=codes)
     data['segment'] = 'OUTSIDE_LEEDS'
-    data.loc['E08000035', 'segment'] = 'Leeds'
+    data.loc[LEEDS_LA_CODE, 'segment'] = 'Leeds'
     data.loc['UNKNOWN', 'segment'] = 'UNKNOWN'
     data.loc['NOT_PROVIDED', 'segment'] = 'NOT_PROVIDED'
     data = pd.DataFrame({

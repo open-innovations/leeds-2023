@@ -1,0 +1,17 @@
+
+<h2>Events hosted per ward</h2>
+
+{% comp 'layout.figure', {
+  title: 'Count of events hosted in each ward',
+  max_width: '40rem'
+} %}
+
+{{ comp.charts.hexmap({
+  hexjson: hex.wards_leeds,
+  data: events.rows,
+  matchKey: 'ward_code',
+  valueProp: 'total'
+}) | safe
+}}
+
+{% endcomp %}

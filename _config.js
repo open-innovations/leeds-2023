@@ -95,7 +95,7 @@ site.copy('/assets/js/vendors');
 site.copy('/data');
 
 [
-  'exec_summary_report.pdf',
+  'exec_summary_mwmcmn.pdf',
 ].forEach(file => {
   site.remoteFile(`/data/report/${file}`, `./data/report/${file}`)
 })

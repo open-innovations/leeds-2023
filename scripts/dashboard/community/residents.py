@@ -1,0 +1,34 @@
+import pandas as pd
+
+from util.geography import LEEDS_LA_CODE
+
+
+def summarise_activity():
+    # Ballot
+    ballot = pd.read_csv('data/metrics/ballot/ballot_entries.csv', usecols=[
+        'date_submitted', 'ward_code', 'la_code'], parse_dates=['date_submitted']).rename(columns={'date_submitted': 'count'})
+    ballot = ballot[ballot['la_code'] == LEEDS_LA_CODE].drop(
+        columns=['la_code']).groupby('ward_code').count().reset_index()
+    ballot['activity'] = 'ballot'
+    print(ballot)
+
+    volunteers = pd.read_csv('data/metrics/volunteers/volunteers.csv', usecols=[
+        'hash', 'ward_code', 'local_authority_code']).rename(columns={'hash': 'count'})
+    volunteers = volunteers[volunteers['local_authority_code'] == LEEDS_LA_CODE].drop(
+        columns=['local_authority_code']).groupby('ward_code').count().reset_index()
+    volunteers['activity'] = 'volunteering'
+
+    report = pd.concat([
+        ballot,
+        volunteers,
+    ]).pivot(columns='activity', index='ward_code').droplevel([0], axis='columns').fillna(0).astype(int)
+
+    report['total'] = report.sum(1)
+
+    name_map = pd.read_csv(
+        'data/reference/leeds_wards.csv', index_col='WD21CD')
+    report = report.merge(name_map, left_index=True, right_index=True).rename(
+        columns={'WD21NM': 'ward_name'}).sort_values(by=['ward_name'])
+    report.index.names = ['ward_code']
+
+    report.to_csv('docs/dashboard/community/_data/residents.csv')

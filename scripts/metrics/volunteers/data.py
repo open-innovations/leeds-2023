@@ -5,7 +5,7 @@ from hashlib import blake2s
 
 import pandas as pd
 from metrics.volunteers.states import STATUS_APPLY, STATUS_CONFIRMED, STATUS_DROP, STATUS_OFFER, STATUS_PRE_APPLY, set_created_date
-from util.postcode import match_ward
+from util.geography import match_ward, match_la
 
 from metrics.volunteers.setup import DATA_DIR
 from metrics.volunteers.states import add_states, map_checkpoints_to_states
@@ -32,6 +32,7 @@ def load_source_data_file(path):
 
     # We want to map postcodes to ward codes
     data = match_ward(data, postcode_field='postcode', ward_column='ward_code')
+    data = match_la(data, postcode_field='postcode', la_column='local_authority_code')
 
     # Report the entries which don't map to wards
     no_ward = data[data.ward_code == 'UNKNOWN']
@@ -91,6 +92,6 @@ def save_raw_data(data):
     logging.info('Writing `%s`', file_path)
     data.sort_values(by=['created', 'hash'], ascending=[True, True])[
         [
-          'ward_code', 'status', 'created', 'applied', 'offered', 'confirmed', 'rejected'
+          'ward_code', 'local_authority_code', 'status', 'created', 'applied', 'offered', 'confirmed', 'rejected'
         ]
     ].to_csv(file_path)

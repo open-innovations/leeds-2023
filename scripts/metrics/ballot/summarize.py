@@ -16,6 +16,14 @@ def by_ward():
     }).to_csv(os.path.join(VIEW_DIR, 'by_ward.csv'))
 
 
+def by_local_authority():
+    logging.info('Summarising by local_authority')
+    data = load_raw_data()
+    pd.DataFrame({
+        'submissions': data.groupby('la_code').date_submitted.count()
+    }).to_csv(os.path.join(VIEW_DIR, 'by_local_authority.csv'))
+
+
 def by_date():
     logging.info('Summarising by date')
     data = load_raw_data()

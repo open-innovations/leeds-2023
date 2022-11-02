@@ -1,3 +1,13 @@
 title: Community Engagement
 work_in_progress: true
 layout: layouts/project.njk
+
+table_columns:
+  - key: ward_code
+    name: Ward Code
+  - key: total
+    name: Total
+  - key: celebration_event
+    name: Celebrations
+  - key: roadshow
+    name: Roadshows

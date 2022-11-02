@@ -11,7 +11,11 @@
   data: events.rows,
   matchKey: 'ward_code',
   valueProp: 'total'
-}) | safe
-}}
+}) | safe }}
 
 {% endcomp %}
+
+{{ comp.charts.table({
+  columns: table_columns,
+  rows: events.rows
+}) | safe }}

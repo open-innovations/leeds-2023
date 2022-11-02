@@ -19,4 +19,9 @@ def summarise_events():
 
     report['total'] = report.sum(1)
 
+    name_map = pd.read_csv('data/reference/leeds_wards.csv', index_col='WD21CD')
+    report = report.merge(name_map, left_index=True, right_index=True).rename(columns={'WD21NM': 'ward_name'}).sort_values(by=['ward_name'])
+    report.index.names = ['ward_code']
+    print(report)
+
     report.to_csv('docs/dashboard/community/_data/events.csv')

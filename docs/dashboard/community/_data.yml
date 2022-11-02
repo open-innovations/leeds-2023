@@ -3,8 +3,8 @@ work_in_progress: true
 layout: layouts/project.njk
 
 table_columns:
-  - key: ward_code
-    name: Ward Code
+  - key: ward_name
+    name: Ward Name
   - key: total
     name: Total
   - key: celebration_event

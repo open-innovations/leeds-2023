@@ -51,3 +51,15 @@ def match_geo(data, postcode_field, geo_field, rename_to=None):
 def match_la(data, postcode_field='postcode', la_column='la_code'):
     data = match_geo(data, postcode_field, 'oslaua', rename_to=la_column)
     return data
+
+
+def local_authority_stats(codes, counts):
+    data = pd.DataFrame(data={'counts': counts}, index=codes)
+    data['segment'] = 'OUTSIDE_LEEDS'
+    data.loc['E08000035', 'segment'] = 'Leeds'
+    data.loc['UNKNOWN', 'segment'] = 'UNKNOWN'
+    data.loc['NOT_PROVIDED', 'segment'] = 'NOT_PROVIDED'
+    data = pd.DataFrame({
+        'counts': data.groupby('segment').counts.sum()
+    })
+    return data.counts

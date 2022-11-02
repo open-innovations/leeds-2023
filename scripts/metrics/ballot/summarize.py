@@ -3,6 +3,7 @@ import os
 
 import pandas as pd
 from metrics.ballot.process import load_raw_data
+from util.geography import local_authority_stats
 
 VIEW_DIR = os.path.join('docs', '_data', 'metrics', 'ballot')
 os.makedirs(VIEW_DIR, exist_ok=True)
@@ -19,9 +20,12 @@ def by_ward():
 def by_local_authority():
     logging.info('Summarising by local_authority')
     data = load_raw_data()
-    pd.DataFrame({
+    by_la = pd.DataFrame({
         'submissions': data.groupby('la_code').date_submitted.count()
-    }).to_csv(os.path.join(VIEW_DIR, 'by_local_authority.csv'))
+    })
+    by_la.to_csv(os.path.join(VIEW_DIR, 'by_local_authority.csv'))
+    stats = local_authority_stats(codes=by_la.index, counts=by_la.submissions)
+    stats.to_json(os.path.join(VIEW_DIR, 'local_autority_stats.json'))
 
 
 def by_date():

@@ -55,6 +55,12 @@ limitations:
   }) | safe }}
 {% endcomp %}
 
+<p>
+  This hexmap shows <strong>{{ metrics.ballot.local_autority_stats.Leeds }}</strong> submissions associated with postcodes that are within Leeds City Council.
+  In addition, there are <strong>{{ metrics.ballot.local_autority_stats.OUTSIDE_LEEDS }}</strong> submissions from other local authorities.
+  <strong>{{ metrics.ballot.local_autority_stats.UNKNOWN }}</strong> submissions were from postcodes that could not be identified. This is either because the postcode is invalid, or potentially is not a UK postcode.
+  <strong>{{ metrics.ballot.local_autority_stats.NOT_PROVIDED }}</strong> ballot entries were submitted without postcodes.
+</p>
 
 <h2>Ballot entry</h2>
 

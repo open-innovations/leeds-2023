@@ -12,6 +12,8 @@ table_columns:
       name: Ballot
     - key: volunteering
       name: Volunteers
+    - key: roadshow_contact
+      name: Roadshow Contact
   events:
     - key: ward_name
       name: Ward Name

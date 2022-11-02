@@ -1,4 +1,27 @@
 
+<h2>Resident engagement per ward</h2>
+
+{% comp 'layout.figure', {
+  title: 'Count of activities by residents in each ward',
+  max_width: '40rem'
+} %}
+
+{{ comp.charts.hexmap({
+  hexjson: hex.wards_leeds,
+  data: residents.rows,
+  matchKey: 'ward_code',
+  valueProp: 'total'
+}) | safe }}
+
+{% endcomp %}
+
+{{ comp.charts.table({
+  columns: table_columns.residents,
+  rows: residents.rows
+}) | safe }}
+
+
+
 <h2>Events hosted per ward</h2>
 
 {% comp 'layout.figure', {
@@ -16,6 +39,6 @@
 {% endcomp %}
 
 {{ comp.charts.table({
-  columns: table_columns,
+  columns: table_columns.events,
   rows: events.rows
 }) | safe }}

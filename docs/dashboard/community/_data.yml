@@ -3,11 +3,21 @@ work_in_progress: true
 layout: layouts/project.njk
 
 table_columns:
-  - key: ward_name
-    name: Ward Name
-  - key: total
-    name: Total
-  - key: celebration_event
-    name: Celebrations
-  - key: roadshow
-    name: Roadshows
+  residents:
+    - key: ward_name
+      name: Ward Name
+    - key: total
+      name: Total
+    - key: ballot
+      name: Ballot
+    - key: volunteering
+      name: Volunteers
+  events:
+    - key: ward_name
+      name: Ward Name
+    - key: total
+      name: Total
+    - key: celebration_event
+      name: Celebrations
+    - key: roadshow
+      name: Roadshows

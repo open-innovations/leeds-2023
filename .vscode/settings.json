@@ -1,3 +1,10 @@
 {
-  "deno.enable": true
+  "deno.enable": true,
+  "terminal.integrated.env.linux": {
+    "PYTHONPATH": "${workspaceFolder}/scripts"
+  },
+  "terminal.integrated.env.windows": {
+    "PYTHONPATH": "${workspaceFolder}/scripts"
+  },
+  "python.envFile": "${workspaceFolder}/.env"
 }

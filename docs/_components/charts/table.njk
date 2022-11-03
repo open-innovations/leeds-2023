@@ -1,4 +1,10 @@
-<table>
+---
+css: |
+   .scroll-table {
+    overflow-x: scroll;
+  }
+---
+<table class="scroll-table">
   <thead>
     <tr>
         {% for column in columns %}

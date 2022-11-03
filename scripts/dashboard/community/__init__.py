@@ -1,7 +1,7 @@
-import events
-import residents
+import dashboard.community.events
+import dashboard.community.residents
 
 
 def process():
-    events.summarise_events()
-    residents.summarise_activity()
+    dashboard.community.events.summarise_events()
+    dashboard.community.residents.summarise_activity()

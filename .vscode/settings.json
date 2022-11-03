@@ -1,10 +1,16 @@
 {
   "deno.enable": true,
+  "terminal.integrated.env.osx": {
+    "PYTHONPATH": "${workspaceFolder}/scripts"
+  },
   "terminal.integrated.env.linux": {
     "PYTHONPATH": "${workspaceFolder}/scripts"
   },
   "terminal.integrated.env.windows": {
     "PYTHONPATH": "${workspaceFolder}/scripts"
   },
-  "python.envFile": "${workspaceFolder}/.env"
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.autoComplete.extraPaths": [
+  
+  ]
 }

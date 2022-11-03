@@ -940,9 +940,15 @@ date_submitted,artwork_medium,artist_age_group,source,ward_code,la_code
 2022-11-02,photo,55-59,recommendedByFriendOrFamily,E05012842,E08000035
 2022-11-02,photo,unspecified,advertising,NOT_PROVIDED,NOT_PROVIDED
 2022-11-02,photo,unspecified,,UNKNOWN,UNKNOWN
+2022-11-03,photo,under16,throughCulturalOrArtsOrg,E05000859,E08000010
+2022-11-03,photo,under16,throughCulturalOrArtsOrg,E05000859,E08000010
+2022-11-03,photo,20-24,recommendedByFriendOrFamily,E05011390,E08000035
 2022-11-03,photo,25-29,leeds2023Event,E05011397,E08000035
 2022-11-03,photo,under16,throughSchool,E05011404,E08000035
 2022-11-03,photo,60-64,leeds2023SocialMedia,E05011411,E08000035
+2022-11-03,photo,45-49,communityEventOrOrg,E05011547,E08000035
 2022-11-03,photo,under16,media,E05011549,E08000035
 2022-11-03,photo,under16,media,E05011549,E08000035
+2022-11-03,photo,35-39,recommendedByFriendOrFamily,E05012842,E08000035
+2022-11-03,photo,30-34,recommendedByFriendOrFamily,E05013831,E08000035
 2022-11-03,photo,25-29,workplace,UNKNOWN,UNKNOWN

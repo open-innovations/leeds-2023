@@ -2,11 +2,18 @@ import os
 import re
 import pandas as pd
 
+from thefuzz import process
+
 LEEDS_LA_CODE = 'E08000035'
 
 
 def load_postcodes(columns=None):
     return pd.read_csv(os.path.join('data', 'reference', 'postcodes.csv'), usecols=columns)
+
+
+def load_wards_2021():
+    wards = pd.read_csv(os.path.join('data', 'reference', 'Wards_(December_2021)_GB_BFC.csv'), usecols=['WD21CD','WD21NM','LAT','LONG'])
+    return wards
 
 
 def postcode_formatter(postcode):
@@ -65,3 +72,22 @@ def local_authority_stats(codes, counts):
         'counts': data.groupby('segment').counts.sum()
     })
     return data.counts
+
+
+def fuzzy_match_ward_name_to_code(data, ward_name_col="ward", ward_code_col="ward_code"):
+    wards = load_wards_2021()
+    wards = wards[
+      (wards.LAT > 53) &
+      (wards.LAT < 54) &
+      (wards.LONG > -1.69) &
+      (wards.LONG < -1.3)
+    ]
+    data['WD21NM'] = data[ward_name_col].apply(
+      lambda x: process.extractOne(x, wards.WD21NM)[0])
+    data = pd.merge(left=data, right=wards, on='WD21NM')
+    data = data.drop(columns=[ward_name_col, 'LONG', 'LAT'])
+    data = data.rename(columns={
+      'WD21CD': ward_code_col,
+      'WD21NM': ward_name_col
+    })
+    return data

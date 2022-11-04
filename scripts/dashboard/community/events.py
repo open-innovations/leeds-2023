@@ -1,5 +1,7 @@
 import pandas as pd
 
+import dashboard.community.schools
+
 # Event Handling
 def summarise_events():
     # Load Roadshows
@@ -12,9 +14,15 @@ def summarise_events():
                                     usecols=['ward_code', 'celeb_events']).rename(columns={'celeb_events': 'events'})
     celebration_event['event_type'] = 'celebration_event'
 
+    schools = dashboard.community.schools.load_schools().drop(
+      columns=['total_number_of_learners']
+    ).rename(columns={'total_engagements': 'events'})
+    schools['event_type'] = 'schools_engagement'
+
     report = pd.concat([
         roadshows,
         celebration_event,
+        schools,
     ]).pivot(columns='event_type', index='ward_code').droplevel([0], axis='columns').fillna(0).astype(int)
 
     report['ward_hosts'] = 1

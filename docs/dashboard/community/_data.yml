@@ -14,12 +14,18 @@ table_columns:
       name: Volunteers
     - key: roadshow_contact
       name: Roadshow Contact
+    - key: schools_learners
+      name: School Learners
   events:
     - key: ward_name
       name: Ward Name
     - key: total
       name: Total
+    - key: ward_hosts
+      name: Ward Hosts
     - key: celebration_event
       name: Celebrations
     - key: roadshow
       name: Roadshows
+    - key: schools_engagement
+      name: Schools Event

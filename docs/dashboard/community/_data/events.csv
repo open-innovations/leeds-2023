@@ -1,34 +1,34 @@
-ward_code,celebration_event,roadshow,total,ward_name
-E05012841,0,1,1,Adel and Wharfdale
-E05012842,0,1,1,Alwoodley
-E05011384,0,1,1,Ardsley and Robin Hood
-E05011385,2,1,3,Armley
-E05012647,0,1,1,Beeston and Holbeck
-E05011387,1,1,2,Bramley and Stanningley
-E05011388,2,1,3,Burmantofts and Richmond Hill
-E05011389,1,1,2,Calverley and Farsley
-E05011390,3,1,4,Chapel Allerton
-E05011391,0,1,1,Cross Gates and Whinmoor
-E05012648,0,1,1,Farnley and Wortley
-E05013830,1,1,2,Garforth and Swillington
-E05011394,1,1,2,Gipton and Harehills
-E05011395,1,1,2,Guiseley and Rawdon
-E05011396,0,1,1,Harewood
-E05011397,0,1,1,Headingley and Hyde Park
-E05011547,0,1,1,Horsforth
-E05011399,2,1,3,Hunslet and Riverside
-E05011400,1,1,2,Killingbeck and Seacroft
-E05011401,0,1,1,Kippax and Methley
-E05011402,1,2,3,Kirkstall
-E05011403,3,0,3,Little London and Woodhouse
-E05011404,0,1,1,Middleton Park
-E05011405,0,1,1,Moortown
-E05011406,0,1,1,Morley North
-E05011407,0,1,1,Morley South
-E05011549,0,1,1,Otley and Yeadon
-E05011409,0,1,1,Pudsey
-E05011410,0,1,1,Rothwell
-E05011411,0,1,1,Roundhay
-E05013831,0,1,1,Temple Newsam
-E05011413,1,2,3,Weetwood
-E05011414,0,1,1,Wetherby
+ward_code,celebration_event,roadshow,ward_hosts,total,ward_name
+E05012841,0,1,1,2,Adel and Wharfdale
+E05012842,0,1,1,2,Alwoodley
+E05011384,0,1,1,2,Ardsley and Robin Hood
+E05011385,2,1,1,4,Armley
+E05012647,0,1,1,2,Beeston and Holbeck
+E05011387,1,1,1,3,Bramley and Stanningley
+E05011388,2,1,1,4,Burmantofts and Richmond Hill
+E05011389,1,1,1,3,Calverley and Farsley
+E05011390,3,1,1,5,Chapel Allerton
+E05011391,0,1,1,2,Cross Gates and Whinmoor
+E05012648,0,1,1,2,Farnley and Wortley
+E05013830,1,1,1,3,Garforth and Swillington
+E05011394,1,1,1,3,Gipton and Harehills
+E05011395,1,1,1,3,Guiseley and Rawdon
+E05011396,0,1,1,2,Harewood
+E05011397,0,1,1,2,Headingley and Hyde Park
+E05011547,0,1,1,2,Horsforth
+E05011399,2,1,1,4,Hunslet and Riverside
+E05011400,1,1,1,3,Killingbeck and Seacroft
+E05011401,0,1,1,2,Kippax and Methley
+E05011402,1,2,1,4,Kirkstall
+E05011403,3,0,1,4,Little London and Woodhouse
+E05011404,0,1,1,2,Middleton Park
+E05011405,0,1,1,2,Moortown
+E05011406,0,1,1,2,Morley North
+E05011407,0,1,1,2,Morley South
+E05011549,0,1,1,2,Otley and Yeadon
+E05011409,0,1,1,2,Pudsey
+E05011410,0,1,1,2,Rothwell
+E05011411,0,1,1,2,Roundhay
+E05013831,0,1,1,2,Temple Newsam
+E05011413,1,2,1,4,Weetwood
+E05011414,0,1,1,2,Wetherby

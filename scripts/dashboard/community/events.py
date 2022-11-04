@@ -17,6 +17,8 @@ def summarise_events():
         celebration_event,
     ]).pivot(columns='event_type', index='ward_code').droplevel([0], axis='columns').fillna(0).astype(int)
 
+    report['ward_hosts'] = 1
+
     report['total'] = report.sum(1)
 
     name_map = pd.read_csv('data/reference/leeds_wards.csv', index_col='WD21CD')

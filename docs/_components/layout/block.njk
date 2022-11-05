@@ -19,7 +19,7 @@ css: |
   }
 ---
 {% set space = joiner(' ') %}
-<div class="max-width-container" style="
+<div class="max-width-container{% if classes %} {{ classes }}{% endif %}" style="
   {%- if background_colour %}{{ space() }}--background-colour: {{ background_colour }};{% endif -%}
   {%- if vertical_padding %}{{ space() }}--vertical-padding: {{ vertical_padding }};{% endif -%}
   {%- if max_width %}{{ space() }}--max-width: {{ max_width }};{% endif -%}

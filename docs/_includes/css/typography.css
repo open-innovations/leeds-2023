@@ -17,3 +17,6 @@ h1 {
 body * + * {
   margin-top: 1.5em;
 }
+.no-top-margin {
+  margin-top: 0;
+}

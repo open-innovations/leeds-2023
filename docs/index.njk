@@ -3,7 +3,7 @@ title: LEEDS 2023 Data
 layout: layouts/default.njk
 ---
 
-{% comp "layout.block", { background_colour: 'var(--l23-yellow)', vertical_padding: '3rem' } %}
+{% comp "layout.block", { background_colour: 'var(--l23-mint)', vertical_padding: '3rem', classes: 'no-spacing' } %}
   <h1 style="text-align: center; font-size: 3rem; margin-top: 0;">LEEDS 2023 Year of Culture</h1>
   <h2 style="text-align: center; font-size: 4rem; margin-top: 0;">Data Microsite</h2>
 {% endcomp %}
@@ -24,6 +24,14 @@ layout: layouts/default.njk
 
   <!-- Some metrics -->
   {{ comp.metric.headline({
+    title: "Volunteers confirmed",
+    value: metrics.volunteers.by_week.columns.confirmed | last or '--' | localize,
+    description: "The number of volunteers who have been confirmed.",
+    link: "~/metrics/volunteers.njk",
+    colour: "var(--l23-dark-blue-grey)",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+  {{ comp.metric.headline({
     title: "Volunteer applications",
     value: metrics.volunteers.by_week.columns.applied | last | localize,
     description: "The number of people who have applied to be volunteers.",
@@ -31,15 +39,6 @@ layout: layouts/default.njk
     colour: "var(--l23-dark-blue-grey)",
     background: "var(--l23-yellow)"
   }) | safe }}
-  {{ comp.metric.headline({
-    title: "Volunteer offers",
-    value: metrics.volunteers.by_week.columns.offered | last | localize,
-    description: "The number of people who have been offered a volunteering role.",
-    link: "~/metrics/volunteers.njk",
-    colour: "var(--l23-dark-blue-grey)",
-    background: "var(--l23-cyan)"
-  }) | safe }}
-
   {{ comp.metric.headline({
     title: "The Awakening Ballot entries",
     value: metrics.ballot.by_date.columns.cumulative_submissions | last,
@@ -58,7 +57,7 @@ layout: layouts/default.njk
       ( metrics.roadshows.summary.columns.week_ending | last | date('YYY') ),
     link: "~/metrics/roadshow-attendees.njk",
     colour: "var(--l23-dark-blue-grey)",
-    background: "var(--l23-yellow)"
+    background: "var(--l23-cyan)"
   }) | safe }}
 
 

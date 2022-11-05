@@ -68,7 +68,7 @@ limitations:
   {{ comp.metric.headline({
     title: "Volunteers confirmed", headingLevel: 3,
     value: metrics.volunteers.by_week.columns.confirmed | last or '--' | localize,
-    description: "The number of volunteers who have been appointed.",
+    description: "The number of volunteers who have been confirmed.",
     background: "var(--l23-magenta)"
   }) | safe }}
 {% endcomp %}

@@ -1,0 +1,11 @@
+
+dt {
+  font-family: var(--title-fontstack);
+  font-weight: bold;
+}
+dd {
+  padding-left: 2rem;
+}
+dt + dd {
+  margin-top: 0;
+}

@@ -1,5 +1,15 @@
+<p>
+  This dashboard shows the engagement across all wards in Leeds. It is a work in
+  progress that will be extended as more data is aggregated onto this data
+  microsite. Bringing this data together in one place will give a quick view of
+  areas where further engagement is needed.
+</p>
 
-<h2>Resident engagement per ward</h2>
+<h2>Resident engagement</h2>
+
+<p>
+  This section shows engagement by citizens of Leeds 2023.
+</p>  
 
 {% comp 'layout.figure', {
   title: 'Count of activities by residents in each ward',
@@ -10,10 +20,41 @@
   hexjson: hex.wards_leeds,
   data: residents.rows,
   matchKey: 'ward_code',
-  valueProp: 'total'
+  valueProp: 'total',
+  bgColour: '#BBB'
 }) | safe }}
 
 {% endcomp %}
+
+<p>
+  The metrics included in the overall hexmap are listed below. The data for each
+  can be found in the table below the hexmap. The activity has been allocated to
+  ward by mapping the postscodes associated with the activity. In the case of
+  some metrics (e.g. school learners), this is the postcode of the school, not
+  the residence postcode.
+</p>
+
+<dl>
+  <dt><a href="/metrics/ballot">Ballot entries</a></dt>
+  <dd>
+    Number of ballot entries received.
+  </dd>
+
+  <dt><a href="/metrics/volunteers">Volunteers</a></dt>
+  <dd>
+    Number of volunteers who have applied.
+  </dd>
+
+  <dt><a href="/metrics/roadshow-attendees">Roadshow contact</a></dt>
+  <dd>
+    Number of contact consent forms that were submitted following the roadshows.
+  </dd>
+
+  <dt>School learners</dt>
+  <dd>
+    Number of learners attending events held in school.
+  </dd>
+</dl>
 
 {{ comp.charts.table({
   columns: table_columns.residents,
@@ -21,8 +62,12 @@
 }) | safe }}
 
 
+<h2>Ward-focussed initiatives</h2>
 
-<h2>Events hosted per ward</h2>
+<p>
+  This section shows events and other initiatives (such as appointment of ward
+  hosts) across wards.
+</p>
 
 {% comp 'layout.figure', {
   title: 'Count of events hosted in each ward',
@@ -33,10 +78,41 @@
   hexjson: hex.wards_leeds,
   data: events.rows,
   matchKey: 'ward_code',
-  valueProp: 'total'
+  valueProp: 'total',
+  bgColour: '#BBB'
 }) | safe }}
 
 {% endcomp %}
+
+<p>
+  The metrics included in the overall hexmap are listed
+  below. The data for each can be found in the table below the hexmap.
+</p>
+
+<dl>
+  <dt>Ward Hosts</dt>
+  <dd>
+    Ward hosts appointed (one per ward).
+  </dd>
+
+  <dt>Celebrations</dt>
+  <dd>
+    Celebration events held in each of the wards. At the moment, this is based
+    on data from the <a href="/report/mwmcmn">My World, My City, My
+    Neighbourhood</a> project.
+  </dd>
+
+  <dt><a href="/metrics/roadshow-attendees">Roadshows</a></dt>
+  <dd>
+    Number of roadshow events hosted.
+  </dd>
+
+  <dt>Schools events</dt>
+  <dd>
+    Number of schools events held.
+  </dd>
+</dl>
+
 
 {{ comp.charts.table({
   columns: table_columns.events,

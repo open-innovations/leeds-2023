@@ -27,10 +27,10 @@ jobs:
           mkdir credentials
           echo ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }} | base64 -d > ./credentials/serviceAccountKey.json
 
-      - name: Process data
+      - name: Update data
         env:
-          TYPEFORM_PRIVATE_TOKEN: ${{ secrets.TYPEFORM_PRIVATE_TOKEN }}
           PYTHONPATH: scripts
+          TYPEFORM_PRIVATE_TOKEN: ${{ secrets.TYPEFORM_PRIVATE_TOKEN }}
           OI_SFTP_HOST: ${{ secrets.OI_SFTP_HOST }}
           OI_SFTP_USERNAME: ${{ secrets.OI_SFTP_USERNAME }}
           OI_SFTP_PASSWORD: ${{ secrets.OI_SFTP_PASSWORD }}
@@ -38,6 +38,12 @@ jobs:
 
         run: |
           python scripts/update_data.py
+
+      - name: Process data for site
+        env:
+          PYTHONPATH: scripts
+
+        run: |
           python scripts/process_for_site.py
 
       - name: Commit changes to files

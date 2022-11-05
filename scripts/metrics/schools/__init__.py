@@ -19,3 +19,6 @@ def load_schools():
     data = data.reset_index()
 
     return data
+
+def save_schools_data(data):
+    data.to_csv('data/metrics/schools/schools_engagement.csv', index=False)

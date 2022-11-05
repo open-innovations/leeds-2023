@@ -1,7 +1,7 @@
 import pandas as pd
 
 from util.geography import LEEDS_LA_CODE
-import dashboard.community.schools
+
 
 def summarise_activity():
     name_map = pd.read_csv(
@@ -25,8 +25,8 @@ def summarise_activity():
     roadshow = roadshow[roadshow.ward_code.isin(name_map.index.values)]
     roadshow['activity'] = 'roadshow_contact'
 
-    schools = dashboard.community.schools.load_schools().drop(
-      columns=['total_engagements']
+    schools = pd.read_csv('data/metrics/schools/schools_engagement.csv').drop(
+        columns=['total_engagements']
     ).rename(columns={'total_number_of_learners': 'count'})
     schools['activity'] = 'schools_learners'
 

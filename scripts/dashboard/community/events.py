@@ -1,8 +1,6 @@
 import pandas as pd
 
-import dashboard.community.schools
 
-# Event Handling
 def summarise_events():
     # Load Roadshows
     roadshows = pd.read_csv('data/metrics/roadshows/attendance.csv', usecols=[
@@ -14,8 +12,8 @@ def summarise_events():
                                     usecols=['ward_code', 'celeb_events']).rename(columns={'celeb_events': 'events'})
     celebration_event['event_type'] = 'celebration_event'
 
-    schools = dashboard.community.schools.load_schools().drop(
-      columns=['total_number_of_learners']
+    schools = pd.read_csv('data/metrics/schools/schools_engagement.csv').drop(
+        columns=['total_number_of_learners']
     ).rename(columns={'total_engagements': 'events'})
     schools['event_type'] = 'schools_engagement'
 
@@ -29,8 +27,10 @@ def summarise_events():
 
     report['total'] = report.sum(1)
 
-    name_map = pd.read_csv('data/reference/leeds_wards.csv', index_col='WD21CD')
-    report = report.merge(name_map, left_index=True, right_index=True).rename(columns={'WD21NM': 'ward_name'}).sort_values(by=['ward_name'])
+    name_map = pd.read_csv(
+        'data/reference/leeds_wards.csv', index_col='WD21CD')
+    report = report.merge(name_map, left_index=True, right_index=True).rename(
+        columns={'WD21NM': 'ward_name'}).sort_values(by=['ward_name'])
     report.index.names = ['ward_code']
 
     report.to_csv('docs/dashboard/community/_data/events.csv')

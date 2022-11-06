@@ -91,8 +91,7 @@ site.copy('/assets/js/vendors');
   'social/facebook.csv'
 ].forEach(file => {
   site.remoteFile(`/data/${file}`, `./data/metrics/${file}`)
-})
-site.copy('/data');
+});
 
 [
   'exec_summary_mwmcmn.pdf',

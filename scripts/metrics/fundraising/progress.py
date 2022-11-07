@@ -14,11 +14,13 @@ def process():
     data = data.rename(columns={'Date Applied' : 'type', 'Application status' : 'status' })
     data['type'] = data['type'].replace('Oct 2021','TRUSTS AND FOUNDATIONS').fillna(method='ffill')
     data = data[data['Amount '].notna()]
-    data['status'] = data['status'].fillna('UNKNOWN').str.upper().str.strip()
+    data['status'] = data['status'].fillna(method='backfill').str.upper().str.strip()
+    data.loc[(data['Organisation/Individual'].notna()),'status'] = data.loc[(data['Organisation/Individual'].notna()),'status'].str.replace('TOTAL ','')
     data['Organisation/Individual'] = data['Organisation/Individual'].str.strip()
+    data.to_csv('testing.csv',index=False)
     data = data[~data['status'].str.match(r'^TOTAL')]
    
-    data.to_csv('testing.csv',index=False)
+   
 
 
     by_stage = pd.DataFrame({

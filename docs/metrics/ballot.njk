@@ -21,15 +21,12 @@ limitations:
 
 <h2>Headlines</h2>
 
-{% comp 'grid.block.impact',  { bg: 'var(--l23-magenta)' } %}
-  <h3>Ballot entries</h3>
-  {{ comp.viz.bigNumber({
-    number: metrics.ballot.by_date.columns.cumulative_submissions | last
-  }) | safe }}
-  <p>Total number of ballot entries received.</p>
-{% endcomp %}
-
-
+{{ comp.metric.headline({
+  title: "Ballot entries", headingLevel: 3,
+  value: metrics.ballot.by_date.columns.cumulative_submissions | last | localize,
+  description: "Total number of ballot entries received.",
+  background: "var(--l23-magenta)"
+}) | safe }}
 
 <p>Page updated: {{ date | date('HUMAN_DATE') }}</p>
 

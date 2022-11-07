@@ -41,7 +41,7 @@ layout: layouts/default.njk
   }) | safe }}
   {{ comp.metric.headline({
     title: "The Awakening Ballot entries",
-    value: metrics.ballot.by_date.columns.cumulative_submissions | last,
+    value: metrics.ballot.by_date.columns.cumulative_submissions | last | localize,
     description: "The number of ballot entries recorded.",
     link: "~/metrics/ballot.njk",
     colour: "var(--l23-dark-blue-grey)",

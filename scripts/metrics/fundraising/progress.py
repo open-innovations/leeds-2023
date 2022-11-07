@@ -17,12 +17,8 @@ def process():
     data['status'] = data['status'].fillna(method='backfill').str.upper().str.strip()
     data.loc[(data['Organisation/Individual'].notna()),'status'] = data.loc[(data['Organisation/Individual'].notna()),'status'].str.replace('TOTAL ','')
     data['Organisation/Individual'] = data['Organisation/Individual'].str.strip()
-    data.to_csv('testing.csv',index=False)
     data = data[~data['status'].str.match(r'^TOTAL')]
    
-   
-
-
     by_stage = pd.DataFrame({
       'amount': data.groupby('status')['Amount '].sum()
     })

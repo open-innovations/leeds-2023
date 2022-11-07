@@ -47,6 +47,12 @@ site.use(esbuild({
     target: "es6",
     incremental: true,
     treeShaking: true,
+    logOverride: {
+      // This surpresses a warning caused by mermaid. Ideally, I'd like to
+      // prevent errors being raised by 3rd party libraries, as we have no
+      // control over them.
+      'equals-new-object': 'silent',
+    },
   },
 }));
 site.use(date());

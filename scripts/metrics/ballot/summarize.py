@@ -38,3 +38,32 @@ def by_date():
     data.index.set_names(['date_submitted'])
 
     data.to_csv(os.path.join(VIEW_DIR, 'by_date.csv'))
+
+
+def by_age():
+    logging.info('Summarising by age')
+    data = load_raw_data()
+    data = pd.DataFrame({
+        'submissions': data.groupby('artist_age_group').ward_code.count(),
+    }).fillna(0).astype(int)
+    data.index.set_names(['artist_age_group'])
+    data = data.reindex(index=[
+      'under16',
+      '16-19',
+      '20-24',
+      '25-29',
+      '30-34',
+      '35-39',
+      '40-44',
+      '45-49',
+      '50-54',
+      '55-59',
+      '60-64',
+      '65-69',
+      '70-74',
+      '75-79',
+      'over85',
+      'unspecified'
+    ])
+
+    data.to_csv(os.path.join(VIEW_DIR, 'by_age.csv'))

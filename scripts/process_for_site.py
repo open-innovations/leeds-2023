@@ -12,6 +12,7 @@ def main():
     metrics.ballot.summarize.by_ward()
     metrics.ballot.summarize.by_local_authority()
     metrics.ballot.summarize.by_date()
+    metrics.ballot.summarize.by_age()
 
     dashboard.community.process()
 

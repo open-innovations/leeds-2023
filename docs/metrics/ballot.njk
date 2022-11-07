@@ -69,13 +69,13 @@ limitations:
 } %}
 {{ comp.oi.charts.graph.line({
   categories: metrics.ballot.by_date.columns.date_submitted,
-  width: 35,
+  width: 25,
   height: 12,
   series: [
     { id: "submissions", label: "Total ballot entries (cumulative)",
       yValues: metrics.ballot.by_date.columns.cumulative_submissions,
       colour: 'var(--l23-magenta)',
-      markerOptions: { s: 6 }
+      markerOptions: { s: 5 }
     }
   ],
   plotArea: {

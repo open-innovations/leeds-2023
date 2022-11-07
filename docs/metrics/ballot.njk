@@ -137,3 +137,42 @@ limitations:
     }
   }) | safe }}
 {% endcomp %}
+
+<h2>
+  Source
+</h2>
+
+<p>
+  The chart below shows the the declared source that the entrant found out about the ballot.
+</p>
+
+{% comp 'layout.figure', {
+  title: 'Distribution of ballot entries by source', max_width: '40rem'
+} %}
+  {{ comp.charts.barchart({
+    categories: metrics.ballot.by_source.columns.source,
+    series: [
+      metrics.ballot.by_source.columns.submissions
+    ],
+    plot: {
+      grid: { x: true, category: true }
+    },
+    colours: [
+      [ "var(--l23-magenta)" ]
+    ],
+    axis: {
+      x: {
+        title: 'Count of submissions',
+        show: false,
+        ticks: false,
+        resolution:50
+      },
+      category: {
+        title: 'Source',
+        show: false,
+        height: 20,
+        label_width: 300
+      }
+    }
+  }) | safe }}
+{% endcomp %}

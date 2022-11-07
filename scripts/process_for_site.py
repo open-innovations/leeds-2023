@@ -9,10 +9,7 @@ def main():
     metrics.media_coverage.summarise()
     metrics.volunteers.process.summarise()
 
-    metrics.ballot.summarize.by_ward()
-    metrics.ballot.summarize.by_local_authority()
-    metrics.ballot.summarize.by_date()
-    metrics.ballot.summarize.by_age()
+    metrics.ballot.summarize.all()
 
     dashboard.community.process()
 

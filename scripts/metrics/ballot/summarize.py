@@ -67,3 +67,22 @@ def by_age():
     ])
 
     data.to_csv(os.path.join(VIEW_DIR, 'by_age.csv'))
+
+
+def by_source():
+    logging.info('Summarising by source')
+    data = load_raw_data()
+    data = pd.DataFrame({
+        'submissions': data.groupby('source').ward_code.count(),
+    }).fillna(0).astype(int)
+    data.index.set_names(['source'])
+
+    data.to_csv(os.path.join(VIEW_DIR, 'by_source.csv'))
+
+
+def all():
+    by_ward()
+    by_local_authority()
+    by_date()
+    by_age()
+    by_source()

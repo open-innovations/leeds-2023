@@ -30,7 +30,7 @@ css: |
 {%- set width = 400 -%}
 {%- set title_height = 20 * title.length | default(0) %}
 {%- set series_height = axis.category.height | default(50) -%}
-{%- set series_label_width = 100 -%}
+{%- set series_label_width = axis.category.label_width | default(100) -%}
 {%- set axis_label_height = 30 -%}
 {%- set height = series_height * categories.length -%}
 {%- set stacked = stacked | default(false) -%}
@@ -124,7 +124,7 @@ css: |
       {%- endif %}
       {% if axis.category.title -%}
         <text class="category-label"
-          x={{ -50 }}
+          x={{ -series_label_width + 40 }}
           y={{ height / 2  - 40 }}
           dy=25
           text-anchor="end"

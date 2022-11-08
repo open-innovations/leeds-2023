@@ -1,6 +1,6 @@
 title: Community Engagement
-work_in_progress: true
 layout: layouts/project.njk
+summary: A dashboard showing Leeds 2023 engagement across the wards of Leeds
 
 table_columns:
   residents:

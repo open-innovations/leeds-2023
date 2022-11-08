@@ -1,0 +1,23 @@
+---
+title: Dashboards
+url: /dashboards/
+nav_order: 15
+layout: layouts/project.njk
+---
+<p>
+  This page contains links to dashboards that have been created.
+</p>
+
+{% comp 'grid.autogrid' %}
+  {% for dashboard in search.pages('dashboard') | data %}
+    {% comp 'grid.block.impact', {
+      bg: dashboard.feature_colour or 'var(--l23-cyan)',
+      link: dashboard.url,
+      align: 'unset'
+    } %}
+      <h2>{{ dashboard.title }}</h2>
+      {% if dashboard.summary %}<p class="forced-top-margin">{{ dashboard.summary }}</p>{% endif %}
+      {% if dashboard.work_in_progress == true %}{{ comp.work_in_progress() | safe }}{% endif %}
+    {% endcomp %}
+  {% endfor %}
+{% endcomp %}

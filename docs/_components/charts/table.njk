@@ -1,11 +1,15 @@
 ---
 css: |
   .scroll-table {
-    overflow-x: scroll;
-    display: block;
+    overflow-x: auto;
+  }
+  .scroll-table > table {
+    margin-left: auto;
+    margin-right: auto;
   }
 ---
-<table class="scroll-table">
+<div class="scroll-table">
+<table>
   <thead>
     <tr>
         {% for column in columns %}
@@ -25,3 +29,4 @@ css: |
     {% endfor %}
   </tbody>
 </table>
+</div>

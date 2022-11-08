@@ -2,17 +2,22 @@
 title: Reports
 url: /report/
 nav_order: 10
+layout: layouts/project.njk
 ---
-<h1>{{ title }}</h1>
-
 <p>
-  These reports are work in progress, but show the direction we're hoping take for reporting.
-  Please do not rely on data presented in these reports.
-  We are publishing this online as work in progress so we can share with stakeholders for feedback.
+  This page contains links to reports that have been published about Leeds 2023 projects and other initiatives.
 </p>
 
 {% comp 'grid.autogrid' %}
-  {% for report in search.pages('report') %}
-    {{ comp.grid.link({ link: report.data.url, title: report.data.title, workInProgress: report.data.work_in_progress }) | safe }}
+  {% for report in search.pages('report work_in_progress!=true', 'publication_date=desc') %}
+    {% comp 'grid.block.impact', {
+      bg: report.data.feature_colour or 'var(--l23-cyan)',
+      link: report.data.url,
+      align: 'unset'
+    } %}
+      <h2>{{ report.data.title }}</h2>
+      <p>{{ report.data.publication_date | date('HUMAN_DATE') }}</p>
+      {% if report.data.summary %}<p class="forced-top-margin">{{ report.data.summary }}</p>{% endif %}
+    {% endcomp %}
   {% endfor %}
 {% endcomp %}

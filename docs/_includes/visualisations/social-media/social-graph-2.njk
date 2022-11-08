@@ -1,0 +1,289 @@
+{% from 'macros.njk' import dateFormatter %}
+{%- macro popupPreApplication(params) -%}
+  {{ params.label }}</br>
+  {{ params.value }} signups
+{%- endmacro -%}
+{%- macro popupApplied(params) -%}
+  {{ params.label }}</br>
+  {{ params.value }} applications received
+{%- endmacro -%}
+
+<h2>Total Audience</h2>
+
+{% comp 'layout.figure', {
+  title: 'Total Audience'
+} %}
+
+{{ comp.oi.charts.graph.line({
+  categories: metrics.social_media.all_weekly.columns.week_starting,
+  width: 25,
+  height: 12,
+  text: { colour: '#eee' },
+  xAxis: {
+    title: 'Week starting (Monday)',
+    titleOffset: 4,
+    labelRotate: 35,
+    majorTick: 1,
+    formatter: dateFormatter
+  },
+  yAxis: {
+    title: 'Total Audience',
+    titleOffset: 3,
+    majorTick: 5000
+  },
+  plotArea: {
+    yMin: 0,
+    yMax: 35000,
+    colour: 'var(--l23-dark-blue-grey)'
+  },
+  padding: {
+    left: 4,
+    bottom: 5
+  },
+  series: [
+    {
+      id: "all", label: "All",
+      yValues: metrics.social_media.all_weekly.columns.audience_last,
+      colour: 'var(--l23-magenta)',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "twitter", label: "Twitter",
+      yValues: metrics.social_media.service.twitter_weekly.columns.audience_last,
+      colour: '#1DA1F2',
+      markerOptions: { s: 5 }
+    },
+     {
+      id: "instagram", label: "Instagram",
+      yValues: metrics.social_media.service.instagram_weekly.columns.audience_last,
+      colour: '#833AB4',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "facebook", label: "Facebook",
+      yValues: metrics.social_media.service.facebook_weekly.columns.audience_last,
+      colour: 'var(--l23-mint)',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "linkedin", label: "Linkedin",
+      yValues: metrics.social_media.service.linkedin_weekly.columns.audience_last,
+      colour: 'var(--l23-cyan)',
+      markerOptions: { s: 5 }
+    }
+  ],
+  legend: {
+    width: "20em"
+  }
+}) | safe }}
+{% endcomp %}
+
+<h2>Audience Gained</h2>
+
+{% comp 'layout.figure', {
+  title: 'Audience Gained'
+} %}
+
+{{ comp.oi.charts.graph.line({
+  categories: metrics.social_media.all_weekly.columns.week_starting,
+  width: 25,
+  height: 12,
+  text: { colour: '#eee' },
+  xAxis: {
+    title: 'Week starting (Monday)',
+    titleOffset: 4,
+    labelRotate: 35,
+    majorTick: 1,
+    formatter: dateFormatter
+  },
+  yAxis: {
+    title: 'Audience Gained',
+    titleOffset: 3,
+    majorTick: 50
+  },
+  plotArea: {
+    yMin: 0,
+    yMax: 600,
+    colour: 'var(--l23-dark-blue-grey)'
+  },
+  padding: {
+    left: 4,
+    bottom: 5
+  },
+  series: [
+    {
+      id: "all", label: "All",
+      yValues: metrics.social_media.all_weekly.columns.audience_gained_total,
+      colour: 'var(--l23-magenta)',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "twitter", label: "Twitter",
+      yValues: metrics.social_media.service.twitter_weekly.columns.audience_gained_total,
+      colour: '#1DA1F2',
+      markerOptions: { s: 5 }
+    },
+     {
+      id: "instagram", label: "Instagram",
+      yValues: metrics.social_media.service.instagram_weekly.columns.audience_gained_total,
+      colour: '#833AB4',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "facebook", label: "Facebook",
+      yValues: metrics.social_media.service.facebook_weekly.columns.audience_gained_total,
+      colour: 'var(--l23-mint)',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "linkedin", label: "Linkedin",
+      yValues: metrics.social_media.service.linkedin_weekly.columns.audience_gained_total,
+      colour: 'var(--l23-cyan)',
+      markerOptions: { s: 5 }
+    }
+  ],
+  legend: {
+    width: "20em"
+  }
+}) | safe }}
+{% endcomp %}
+
+<h2>Engagements</h2>
+
+{% comp 'layout.figure', {
+  title: 'Engagements'
+} %}
+
+{{ comp.oi.charts.graph.line({
+  categories: metrics.social_media.all_weekly.columns.week_starting,
+  width: 25,
+  height: 12,
+  text: { colour: '#eee' },
+  xAxis: {
+    title: 'Week starting (Monday)',
+    titleOffset: 4,
+    labelRotate: 35,
+    majorTick: 1,
+    formatter: dateFormatter
+  },
+  yAxis: {
+    title: 'Engagements',
+    titleOffset: 3,
+    majorTick: 1000
+  },
+  plotArea: {
+    yMin: 0,
+    yMax: 10000,
+    colour: 'var(--l23-dark-blue-grey)'
+  },
+  padding: {
+    left: 4,
+    bottom: 5
+  },
+  series: [
+    {
+      id: "all", label: "All",
+      yValues: metrics.social_media.all_weekly.columns.engagements_total,
+      colour: 'var(--l23-magenta)',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "twitter", label: "Twitter",
+      yValues: metrics.social_media.service.twitter_weekly.columns.engagements_total,
+      colour: '#1DA1F2',
+      markerOptions: { s: 5 }
+    },
+     {
+      id: "instagram", label: "Instagram",
+      yValues: metrics.social_media.service.instagram_weekly.columns.engagements_total,
+      colour: '#833AB4',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "facebook", label: "Facebook",
+      yValues: metrics.social_media.service.facebook_weekly.columns.engagements_total,
+      colour: 'var(--l23-mint)',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "linkedin", label: "Linkedin",
+      yValues: metrics.social_media.service.linkedin_weekly.columns.engagements_total,
+      colour: 'var(--l23-cyan)',
+      markerOptions: { s: 5 }
+    }
+  ],
+  legend: {
+    width: "20em"
+  }
+}) | safe }}
+{% endcomp %}
+
+<h2>Impressions</h2>
+
+{% comp 'layout.figure', {
+  title: 'Impressions'
+} %}
+
+{{ comp.oi.charts.graph.line({
+  categories: metrics.social_media.all_weekly.columns.week_starting,
+  width: 25,
+  height: 12,
+  text: { colour: '#eee' },
+  xAxis: {
+    title: 'Week starting (Monday)',
+    titleOffset: 4,
+    labelRotate: 35,
+    majorTick: 1,
+    formatter: dateFormatter
+  },
+  yAxis: {
+    title: 'Impressions',
+    titleOffset: 3,
+    majorTick: 50000
+  },
+  plotArea: {
+    yMin: 0,
+    yMax: 250000,
+    colour: 'var(--l23-dark-blue-grey)'
+  },
+  padding: {
+    left: 4,
+    bottom: 5
+  },
+  series: [
+    {
+      id: "all", label: "All",
+      yValues: metrics.social_media.all_weekly.columns.impressions_total,
+      colour: 'var(--l23-magenta)',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "twitter", label: "Twitter",
+      yValues: metrics.social_media.service.twitter_weekly.columns.impressions_total,
+      colour: '#1DA1F2',
+      markerOptions: { s: 5 }
+    },
+     {
+      id: "instagram", label: "Instagram",
+      yValues: metrics.social_media.service.instagram_weekly.columns.impressions_total,
+      colour: '#833AB4',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "facebook", label: "Facebook",
+      yValues: metrics.social_media.service.facebook_weekly.columns.impressions_total,
+      colour: 'var(--l23-mint)',
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "linkedin", label: "Linkedin",
+      yValues: metrics.social_media.service.linkedin_weekly.columns.impressions_total,
+      colour: 'var(--l23-cyan)',
+      markerOptions: { s: 5 }
+    }
+  ],
+  legend: {
+    width: "20em"
+  }
+}) | safe }}
+{% endcomp %}

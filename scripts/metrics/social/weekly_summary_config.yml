@@ -6,7 +6,7 @@ data_file:
     out_csv: docs\_data\metrics\social_media\service\twitter_weekly.csv
     group_by_date: &period date_W-SUN
     group_by_date_col: &col_name week_starting
-    filter_range: &filter 2022-01-01:2022-12-31
+    filter_range: &filter 2022-04-04:2023-12-31
     filter_col: &filter_col_name date
     metrics: &metrics
     - audience_last

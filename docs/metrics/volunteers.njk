@@ -43,7 +43,7 @@ limitations:
 
 <h2>Headlines</h2>
 
-{% comp 'grid.autogrid' %}
+{% comp 'grid.autogrid', { min_width: '20rem' } %}
   {{ comp.metric.headline({
     title: "Volunteer sign-ups", headingLevel: 3,
     value: metrics.volunteers.by_week.columns.created | last | localize,
@@ -78,10 +78,10 @@ limitations:
 <p>
   The hex cartograms below show the distribution of volunteers' home addresses across
   the wards of Leeds. Wards with a larger number of resident volunteers are darker in
-  colour.
+  colour. Wards with a count of zero are outlined in a dark border.
 </p>
   
-{% comp 'grid.autogrid', { min_width: '32rem' } %}
+{% comp 'grid.autogrid', { min_width: '20rem' } %}
   <section>
     <h3>Signed-up</h3>
     {{ comp.charts.hexmap({
@@ -104,6 +104,30 @@ limitations:
       popup: popupApplied,
       bgColour: '#BBB',
       title: 'Volunteer applications received from people in ward'
+    }) | safe }}
+  </section>
+  <section>
+    <h3>Offers</h3>
+    {{ comp.charts.hexmap({
+      hexjson: hex.wards_leeds,
+      data: metrics.volunteers.by_ward.rows,
+      matchKey: 'ward_code',
+      valueProp: 'offered',
+      popup: popupApplied,
+      bgColour: '#BBB',
+      title: 'Volunteer posts offered to people in ward'
+    }) | safe }}
+  </section>
+  <section>
+    <h3>Confirmed</h3>
+    {{ comp.charts.hexmap({
+      hexjson: hex.wards_leeds,
+      data: metrics.volunteers.by_ward.rows,
+      matchKey: 'ward_code',
+      valueProp: 'confirmed',
+      popup: popupApplied,
+      bgColour: '#BBB',
+      title: 'Confirmed volunteers by ward'
     }) | safe }}
   </section>
 {% endcomp %}

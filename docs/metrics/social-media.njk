@@ -8,17 +8,31 @@ metas:
   description: |
     Visualisations of key metrics related to LEEDS 2023 social media accounts.
 ---
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'all')" id="defaultOpen">All Socials</button>
+  <button class="tablinks" onclick="openCity(event, 'twitter')">Twitter</button>
+  <button class="tablinks" onclick="openCity(event, 'instagram')">Instagram</button>
+  <button class="tablinks" onclick="openCity(event, 'facebook')">Facebook</button>
+  <button class="tablinks" onclick="openCity(event, 'linkedin')">Linkedin</button>
+</div>
+<style>
+.tab button.active {
+  background-color: #ccc;
+}
+</style>
 
+
+<div id="all" class="tabcontent">
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
   {% comp 'grid.block.impact' %}
     <h2>
       Total Audience
     </h2>
     {{ comp.viz.bigNumber({
-      number: metrics.social_media.all_weekly.columns.audience_last | last | localize
+      number: metrics.social_media.summary.service.all.metrics.audience_last | localize
     }) | safe }}
     <p>
-      As at {{ metrics.social_media.all_weekly.columns.week_starting | last | date('HUMAN_DATE') }}
+      As at {{ metrics.social_media.summary.service.twitter.metrics.date_last | date('HUMAN_DATE') }}
     </p>
   {% endcomp %}
   {% comp 'grid.block.impact' %}
@@ -27,9 +41,190 @@ metas:
     </h2>
     {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.twitter.metrics.engagements_total + 
-        metrics.social_media.summary.service.instagram.metrics.engagements_total +
-        metrics.social_media.summary.service.facebook.metrics.engagements_total +
+        metrics.social_media.summary.service.all.metrics.engagements_total
+       ) | localize
+    }) | safe }}
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Audience Gained 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: (
+        metrics.social_media.summary.service.all.metrics.audience_gained_total
+      ) | localize
+    }) | safe }}
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Impressions 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: (
+        metrics.social_media.summary.service.all.metrics.impressions_total
+      ) | localize
+    }) | safe }}
+  {% endcomp %}
+{% endcomp %}
+</div>
+
+<div id="twitter" class="tabcontent">
+{% comp 'grid.autogrid', { min_width: '32rem' } %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Audience
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.social_media.summary.service.twitter.metrics.audience_last | localize
+    }) | safe }}
+    <p>
+      As at {{ metrics.social_media.summary.service.twitter.metrics.date_last | date('HUMAN_DATE') }}
+    </p>
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Engagement 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: (
+        metrics.social_media.summary.service.twitter.metrics.engagements_total
+       ) | localize
+    }) | safe }}
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Audience Gained 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: (
+        metrics.social_media.summary.service.twitter.metrics.audience_gained_total
+      ) | localize
+    }) | safe }}
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Impressions 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: (
+        metrics.social_media.summary.service.twitter.metrics.impressions_total
+      ) | localize
+    }) | safe }}
+  {% endcomp %}
+{% endcomp %}
+</div>
+
+<div id="instagram" class="tabcontent">
+{% comp 'grid.autogrid', { min_width: '32rem' } %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Audience
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.social_media.summary.service.instagram.metrics.audience_last | localize
+    }) | safe }}
+    <p>
+      As at {{ metrics.social_media.summary.service.instagram.metrics.date_last | date('HUMAN_DATE') }}
+    </p>
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Engagement 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: (
+        metrics.social_media.summary.service.instagram.metrics.engagements_total
+       ) | localize
+    }) | safe }}
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Audience Gained 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: (
+        metrics.social_media.summary.service.instagram.metrics.audience_gained_total
+      ) | localize
+    }) | safe }}
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Impressions 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: (
+        metrics.social_media.summary.service.instagram.metrics.impressions_total
+      ) | localize
+    }) | safe }}
+  {% endcomp %}
+{% endcomp %}
+</div>
+
+<div id="facebook" class="tabcontent">
+{% comp 'grid.autogrid', { min_width: '32rem' } %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Audience
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.social_media.summary.service.facebook.metrics.audience_last | localize
+    }) | safe }}
+    <p>
+      As at {{ metrics.social_media.summary.service.facebook.metrics.date_last | date('HUMAN_DATE') }}
+    </p>
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Engagement 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: (
+        metrics.social_media.summary.service.facebook.metrics.engagements_total
+       ) | localize
+    }) | safe }}
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Audience Gained 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: (
+        metrics.social_media.summary.service.facebook.metrics.audience_gained_total
+      ) | localize
+    }) | safe }}
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Impressions 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: (
+        metrics.social_media.summary.service.facebook.metrics.impressions_total
+      ) | localize
+    }) | safe }}
+  {% endcomp %}
+{% endcomp %}
+</div>
+
+<div id="linkedin" class="tabcontent">
+{% comp 'grid.autogrid', { min_width: '32rem' } %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Audience
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.social_media.summary.service.linkedin.metrics.audience_last | localize
+    }) | safe }}
+    <p>
+      As at {{ metrics.social_media.summary.service.linkedin.metrics.date_last | date('HUMAN_DATE') }}
+    </p>
+  {% endcomp %}
+  {% comp 'grid.block.impact' %}
+    <h2>
+      Total Engagement 2022
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: (
         metrics.social_media.summary.service.linkedin.metrics.engagements_total
        ) | localize
     }) | safe }}
@@ -40,9 +235,6 @@ metas:
     </h2>
     {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.twitter.metrics.audience_gained_total + 
-        metrics.social_media.summary.service.instagram.metrics.audience_gained_total +
-        metrics.social_media.summary.service.facebook.metrics.audience_gained_total +
         metrics.social_media.summary.service.linkedin.metrics.audience_gained_total
       ) | localize
     }) | safe }}
@@ -53,14 +245,38 @@ metas:
     </h2>
     {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.twitter.metrics.impressions_total + 
-        metrics.social_media.summary.service.instagram.metrics.impressions_total +
-        metrics.social_media.summary.service.facebook.metrics.impressions_total +
         metrics.social_media.summary.service.linkedin.metrics.impressions_total
       ) | localize
     }) | safe }}
   {% endcomp %}
 {% endcomp %}
+</div>
+
+<script type="text/javascript">
+    function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
 
 
 {% include "visualisations/social-media/social-graph-2.njk" %}

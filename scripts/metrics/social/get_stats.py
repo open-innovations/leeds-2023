@@ -111,7 +111,7 @@ def get_summary_file_group_by_date(config):
     col_name = config["group_by_date_col"] if "group_by_date_col" in config.keys() else "key"
     for p in data["period"].unique():
         filtered_data = data[data[column].dt.to_period(period) == p]
-        metrics = {col_name : str(p).split("/")[0]} | get_metrics(filtered_data,config["metrics"])
+        metrics = {col_name : str(p).split("/")[1]} | get_metrics(filtered_data,config["metrics"])
         summary.append(metrics)
  
     return summary

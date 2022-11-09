@@ -1,11 +1,11 @@
 schema: '2.0'
 stages:
   ref-postcodes:
-    cmd: PYTHONPATH=scripts python3 scripts/reference_data/postcodes.py
+    cmd: PYTHONPATH=scripts python3 scripts/reference_data/postcodes.py working/ref/onspd-extract.csv
     deps:
     - path: scripts/reference_data/postcodes.py
-      md5: 4c95e450ca98f270fb6178991a64d917
-      size: 418
-    - path: working/ref/postcodes.csv
+      md5: c82704fedeccde3cde99e5cd97793874
+      size: 461
+    - path: working/ref/onspd-extract.csv
       md5: b527f4a308cb738f244a53c8a164d88c
       size: 129321340

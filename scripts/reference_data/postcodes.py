@@ -1,4 +1,5 @@
 import os
+import sys
 import pandas as pd
 import logging
 
@@ -12,10 +13,11 @@ def save_ref_csv(centroids):
         CENTROIDS_CSV, index=False)
 
 
-def load_input():
-    return pd.read_csv('working/ref/postcodes.csv')
+def load_input(input_file):
+    return pd.read_csv(input_file)
 
 
 if __name__ == '__main__':
-    data = load_input()
+    input_file = sys.argv[1]
+    data = load_input(input_file)
     save_ref_csv(data)

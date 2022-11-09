@@ -1,0 +1,11 @@
+md5: c2a0e3786a461387dff5e5b7b36eccdb
+frozen: true
+deps:
+- path: output/postcodes.csv
+  repo:
+    url: git@github.com:open-innovations/reference-data.git
+    rev_lock: 1e75eae0e8c84eb2de08beda039987fa723651d3
+outs:
+- md5: b527f4a308cb738f244a53c8a164d88c
+  size: 129321340
+  path: postcodes.csv

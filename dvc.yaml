@@ -1,0 +1,6 @@
+stages:
+  ref-postcodes:
+    cmd: PYTHONPATH=scripts python3 scripts/reference_data/postcodes.py
+    deps:
+    - scripts/reference_data/postcodes.py
+    - working/ref/postcodes.csv

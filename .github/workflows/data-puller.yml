@@ -62,4 +62,3 @@ jobs:
         with:
           commit_message: Data updates
           file_pattern: data docs
-          github_token: ${{ secrets.GITHUB_TOKEN }}

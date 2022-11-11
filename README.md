@@ -18,3 +18,24 @@ an error similar to this:
 ```
 ModuleNotFoundError: No module named 'metrics'
 ```
+
+## Pipelines
+
+Some of the scripts and data are managed in a [DVC](https://dvc.org/) pipeline.
+DVC has been added to the `requirements.txt` file, so ensure that your python
+environment has the required dependencies installed. This could be as simple as
+running `pip3 install -r requirements.txt`. It's recommended to use a virtual
+environment tool such as `virtualenv` to avoid clashing requirements.
+
+The repo uses data held in AWS S3 buckets. To access this, make sure
+`AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` are set for your environment.
+
+Here are some useful DVC commands:
+
+* Check the DVC status by running `dvc status`.
+* To pull the latest data run `dvc pull`.
+* You can run all pipelines with `dvc repro`. If no stage dependencies (input
+  files or code) have changed, nothing will be executed.
+* To list the available pipeline stages run `dvc stage list`. You can see the
+  dependency graph with `dvc dag`
+* You can force a stage to re-run using `dvc repro --force <stage name>`.

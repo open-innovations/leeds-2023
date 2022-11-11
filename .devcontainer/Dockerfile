@@ -12,4 +12,4 @@ ENV PATH=${DENO_INSTALL}/bin:${PATH} \
 
 # [Optional] Uncomment this section to install additional OS packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-   && apt-get -y install --no-install-recommends python3-pip
+   && apt-get -y install --no-install-recommends python3-pip python3-dev

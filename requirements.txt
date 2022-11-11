@@ -1,3 +1,5 @@
+dvc==2.34.0
+dvc-s3==2.21.0
 et-xmlfile==1.1.0
 firebase-admin==6.0.0
 numpy==1.23.3

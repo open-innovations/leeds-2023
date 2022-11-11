@@ -15,4 +15,5 @@ stages:
     deps:
     - scripts/metrics/callouts/stage.py
     outs:
-    - working/metrics/callout/
+    - working/metrics/callout/:
+        cache: false

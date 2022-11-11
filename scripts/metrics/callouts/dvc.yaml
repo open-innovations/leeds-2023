@@ -1,28 +1,23 @@
+# Callouts pipelines
 stages:
-  ref_postcodes:
-    cmd: PYTHONPATH=scripts python3 scripts/reference_data/postcodes.py working/ref/onspd-extract.csv
-    deps:
-    - scripts/reference_data/postcodes.py
-    - working/ref/onspd-extract.csv
-    outs:
-    - data/reference/postcodes.csv:
-        cache: false
-
-  # Callouts pipelines
-  callouts_stage:
+  stage:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/stage.py
+    wdir: ../../..
     always_changed: true
     deps:
     - scripts/metrics/callouts/stage.py
     outs:
     - working/metrics/callouts/:
+        persist: true
         cache: false
-  callouts_build:
+  build:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/build.py
+    wdir: ../../..
     deps:
     - scripts/metrics/callouts/build.py
     - working/metrics/callouts/
     - data/reference/postcodes.csv
     outs:
     - data/metrics/callouts/:
+        persist: true
         cache: false

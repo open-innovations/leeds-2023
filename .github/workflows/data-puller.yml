@@ -55,7 +55,7 @@ jobs:
 
         run: |
           dvc pull
-          dvc repro
+          dvc repro -R scripts/metrics
 
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v4

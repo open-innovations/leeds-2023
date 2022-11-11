@@ -15,5 +15,13 @@ stages:
     deps:
     - scripts/metrics/callouts/stage.py
     outs:
-    - working/metrics/callout/:
+    - working/metrics/callouts/:
+        cache: false
+  callouts_build:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/build.py
+    deps:
+    - scripts/metrics/callouts/build.py
+    - working/metrics/callouts/
+    outs:
+    - data/metrics/callouts/:
         cache: false

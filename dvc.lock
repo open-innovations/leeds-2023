@@ -17,10 +17,25 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/stage.py
     deps:
     - path: scripts/metrics/callouts/stage.py
-      md5: c1da11b27f5fbdec872630d7c754628d
-      size: 686
+      md5: 7f5602d084d7dd8772c8250fe79e0754
+      size: 687
     outs:
-    - path: working/metrics/callout/
+    - path: working/metrics/callouts/
       md5: bda73f4f2af7fffebdd88db99030ad92.dir
       size: 337
+      nfiles: 1
+  callouts_build:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/build.py
+    deps:
+    - path: scripts/metrics/callouts/build.py
+      md5: f0c3999b7395e8583f3ab4b9e2528a5f
+      size: 414
+    - path: working/metrics/callouts/
+      md5: bda73f4f2af7fffebdd88db99030ad92.dir
+      size: 337
+      nfiles: 1
+    outs:
+    - path: data/metrics/callouts/
+      md5: 81ef8e494d257811a7fcca352d0d6262.dir
+      size: 440
       nfiles: 1

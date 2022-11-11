@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from util.firebase import pull_collection
 
-STAGING_DIR = 'working/metrics/callout/'
+STAGING_DIR = 'working/metrics/callouts/'
 
 os.makedirs(STAGING_DIR, exist_ok=True)
 

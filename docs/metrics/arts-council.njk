@@ -1,0 +1,302 @@
+---
+title: Arts Council England
+summary: Data from Arts Council England
+key: arts-council
+---
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'leeds')" id="defaultOpen">Leeds</button>
+  <button class="tablinks" onclick="openCity(event, 'west_yorkshire')">West Yorkshire</button>
+</div>
+<style>
+.tab button.active {
+  background-color: #ccc;
+}
+</style>
+
+<div id="leeds" class="tabcontent">
+{% comp 'grid.autogrid', { min_width: '32rem' } %}
+{% comp 'layout.figure', {
+   max_width: '40rem'
+} %}
+  {{ comp.charts.barchart({
+    categories: metrics.arts_council.leeds_summary.columns.year,
+    series: [
+      metrics.arts_council.leeds_summary.columns.count_Leeds
+    ],
+    plot: {
+      grid: { x: true, category: true }
+    },
+    colours: [
+      ["var(--l23-cyan)"]
+    ],
+    axis: {
+      x: {
+        title: 'Grants',
+        show: false,
+        ticks: false,
+        resolution:50
+      },
+      category: {
+        title: 'Year',
+        show: false,
+        height: 20
+      }
+    }
+  }) | safe }}
+{% endcomp %}
+
+{% comp 'layout.figure', {
+   max_width: '40rem'
+} %}
+  {{ comp.charts.barchart({
+    categories: metrics.arts_council.leeds_summary.columns.year,
+    series: [
+      metrics.arts_council.leeds_summary.columns.count_per_Leeds
+    ],
+    plot: {
+      grid: { x: true, category: true }
+    },
+    colours: [
+      ["var(--l23-cyan)"]
+    ],
+    axis: {
+      x: {
+        title: 'Grants %',
+        show: false,
+        ticks: false,
+        resolution:0.5
+      },
+      category: {
+        title: 'Year',
+        show: false,
+        height: 20
+      }
+    }
+  }) | safe }}
+{% endcomp %}
+
+{% comp 'layout.figure', {
+   max_width: '40rem'
+} %}
+  {{ comp.charts.barchart({
+    categories: metrics.arts_council.leeds_summary.columns.year,
+    series: [
+      metrics.arts_council.leeds_summary.columns.sum_Leeds
+    ],
+    plot: {
+      grid: { x: true, category: true }
+    },
+    colours: [
+      ["var(--l23-cyan)"]
+    ],
+    axis: {
+      x: {
+        title: 'Grants Amount Given £',
+        show: false,
+        ticks: false,
+        resolution:1000000
+      },
+      category: {
+        title: 'Year',
+        show: false,
+        height: 20
+      }
+    }
+  }) | safe }}
+{% endcomp %}
+
+
+{% comp 'layout.figure', {
+   max_width: '40rem'
+} %}
+  {{ comp.charts.barchart({
+    categories: metrics.arts_council.leeds_summary.columns.year,
+    series: [
+      metrics.arts_council.leeds_summary.columns.sum_per_Leeds
+    ],
+    plot: {
+      grid: { x: true, category: true }
+    },
+    colours: [
+      ["var(--l23-cyan)"]
+    ],
+    axis: {
+      x: {
+        title: 'Grants Amount Given %',
+        show: false,
+        ticks: false,
+        resolution:0.5
+      },
+      category: {
+        title: 'Year',
+        show: false,
+        height: 20
+      }
+    }
+  }) | safe }}
+{% endcomp %}
+{% endcomp %}
+
+{% comp 'layout.block' %}
+{{ comp.charts.table({
+  columns: [{'key' : 'Recipient','name':'Recipient'},{'key':'Activity name','name':'Activity name'},{'key':'Award amount','name':'Award amount'},{'key':'Award date','name':'Award date'}],
+  rows: metrics.arts_council.leeds_recipients.rows
+}) | safe }}
+{% endcomp %}
+
+</div>
+
+<div id="west_yorkshire" class="tabcontent">
+{% comp 'grid.autogrid', { min_width: '32rem' } %}
+{% comp 'layout.figure', {
+   max_width: '40rem'
+} %}
+  {{ comp.charts.barchart({
+    categories: metrics.arts_council.leeds_summary.columns.year,
+    series: [
+      metrics.arts_council.leeds_summary.columns.count_West_Yorkshire
+    ],
+    plot: {
+      grid: { x: true, category: true }
+    },
+    colours: [
+      ["var(--l23-magenta)"]
+    ],
+    axis: {
+      x: {
+        title: 'Grants',
+        show: false,
+        ticks: false,
+        resolution:50
+      },
+      category: {
+        title: 'Year',
+        show: false,
+        height: 20
+      }
+    }
+  }) | safe }}
+{% endcomp %}
+
+{% comp 'layout.figure', {
+   max_width: '40rem'
+} %}
+  {{ comp.charts.barchart({
+    categories: metrics.arts_council.leeds_summary.columns.year,
+    series: [
+      metrics.arts_council.leeds_summary.columns.count_per_West_Yorkshire
+    ],
+    plot: {
+      grid: { x: true, category: true }
+    },
+    colours: [
+      ["var(--l23-magenta)"]
+    ],
+    axis: {
+      x: {
+        title: 'Grants %',
+        show: false,
+        ticks: false,
+        resolution:1
+      },
+      category: {
+        title: 'Year',
+        show: false,
+        height: 20
+      }
+    }
+  }) | safe }}
+{% endcomp %}
+
+{% comp 'layout.figure', {
+   max_width: '40rem'
+} %}
+  {{ comp.charts.barchart({
+    categories: metrics.arts_council.leeds_summary.columns.year,
+    series: [
+      metrics.arts_council.leeds_summary.columns.sum_West_Yorkshire
+    ],
+    plot: {
+      grid: { x: true, category: true }
+    },
+    colours: [
+      ["var(--l23-magenta)"]
+    ],
+    axis: {
+      x: {
+        title: 'Grants Amount Given £',
+        show: false,
+        ticks: false,
+        resolution:2000000
+      },
+      category: {
+        title: 'Year',
+        show: false,
+        height: 20
+      }
+    }
+  }) | safe }}
+{% endcomp %}
+
+
+{% comp 'layout.figure', {
+   max_width: '40rem'
+} %}
+  {{ comp.charts.barchart({
+    categories: metrics.arts_council.leeds_summary.columns.year,
+    series: [
+      metrics.arts_council.leeds_summary.columns.sum_per_West_Yorkshire
+    ],
+    plot: {
+      grid: { x: true, category: true }
+    },
+    colours: [
+      ["var(--l23-magenta)"]
+    ],
+    axis: {
+      x: {
+        title: 'Grants Amount Given %',
+        show: false,
+        ticks: false,
+        resolution:1
+      },
+      category: {
+        title: 'Year',
+        show: false,
+        height: 20
+      }
+    }
+  }) | safe }}
+{% endcomp %}
+{% endcomp %}
+
+{% comp 'layout.block' %}
+{{ comp.charts.table({
+  columns: [{'key' : 'Recipient','name':'Recipient'},{'key':'Activity name','name':'Activity name'},{'key':'Award amount','name':'Award amount'},{'key':'Local authority','name':'Local authority'},{'key':'Award date','name':'Award date'}],
+  rows: metrics.arts_council.wy_recipients.rows
+}) | safe }}
+{% endcomp %}
+</div>
+
+<script type="text/javascript">
+    function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>

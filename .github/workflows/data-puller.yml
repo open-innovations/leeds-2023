@@ -53,7 +53,9 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
-        run: dvc repro
+        run: |
+          dvc pull
+          dvc repro
 
       - name: Commit changes to files
         working-directory: .

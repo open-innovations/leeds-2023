@@ -27,6 +27,9 @@ stages:
   callouts_build:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/build.py
     deps:
+    - path: data/reference/postcodes.csv
+      md5: 7196768cdd13ac9750cf4148d19d498c
+      size: 75969456
     - path: scripts/metrics/callouts/build.py
       md5: f0c3999b7395e8583f3ab4b9e2528a5f
       size: 414

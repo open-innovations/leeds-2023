@@ -22,6 +22,7 @@ stages:
     deps:
     - scripts/metrics/callouts/build.py
     - working/metrics/callouts/
+    - data/reference/postcodes.csv
     outs:
     - data/metrics/callouts/:
         cache: false

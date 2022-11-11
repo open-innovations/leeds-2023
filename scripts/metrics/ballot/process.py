@@ -2,7 +2,7 @@ import os
 import logging
 
 import pandas as pd
-from metrics.ballot.firebase import get_db
+from util.firebase import pull_collection
 from util.geography import match_ward, match_la
 
 DATA_DIR = os.path.join('data', 'metrics', 'ballot')
@@ -10,21 +10,17 @@ RAW_DATA = os.path.join(DATA_DIR, 'ballot_entries.csv')
 
 
 def get_data():
-    db = get_db()
-    ballot_ref = db.collection(u'ballot-entries')
-
     logging.info("Querying ballot database")
-    docs = ballot_ref.select([
+    data = pull_collection(
+      collection_name=u'ballot-entries',
+      fields=[
         'dateSubmitted',
         'hasPostcode',
         'postcode',
         'artistAgeGroup',
         'artworkMedium',
         'source',
-    ]).stream()
-
-    # Create a dataframe
-    data = pd.DataFrame([doc.to_dict() for doc in docs])
+    ])
     logging.info("Got %d entries", data.shape[0])
 
     # Map postcode to ward

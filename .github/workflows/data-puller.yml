@@ -45,6 +45,11 @@ jobs:
 
         run: |
           python scripts/process_for_site.py
+      
+      - name: Run DVC pipelines
+        env:
+          PYTHONPATH: scripts
+        run: dvc repro
 
       - name: Commit changes to files
         working-directory: .

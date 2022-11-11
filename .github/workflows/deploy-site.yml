@@ -1,6 +1,6 @@
-name: publish-on-github-pages
+name: Data microsite build
 
-on:
+'on':
   workflow_dispatch: {}
   schedule:
     # * is a special character in YAML so you have to quote this string

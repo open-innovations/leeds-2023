@@ -49,6 +49,7 @@ jobs:
       - name: Run DVC pipelines
         env:
           PYTHONPATH: scripts
+          GOOGLE_APPLICATION_CREDENTIALS: './credentials/serviceAccountKey.json'
         run: dvc repro
 
       - name: Commit changes to files

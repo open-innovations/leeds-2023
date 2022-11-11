@@ -50,6 +50,9 @@ jobs:
         env:
           PYTHONPATH: scripts
           GOOGLE_APPLICATION_CREDENTIALS: './credentials/serviceAccountKey.json'
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
         run: dvc repro
 
       - name: Commit changes to files

@@ -55,6 +55,7 @@ jobs:
 
         run: |
           dvc pull
+          dvc repro -R scripts/reference_data
           dvc repro -R scripts/metrics
 
       - name: Commit and Push changes

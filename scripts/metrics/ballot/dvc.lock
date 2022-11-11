@@ -1,0 +1,31 @@
+schema: '2.0'
+stages:
+  stage_build:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/process.py
+    deps:
+    - path: data/reference/postcodes.csv
+      md5: 7196768cdd13ac9750cf4148d19d498c
+      size: 75969456
+    - path: scripts/metrics/ballot/process.py
+      md5: 09fec3b74a62a92a13c92d29ddeece06
+      size: 2090
+    outs:
+    - path: data/metrics/ballot/
+      md5: d641cb34c6551e0e2952f2a2e21d8b86.dir
+      size: 79864
+      nfiles: 1
+  summarise:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/summarize.py
+    deps:
+    - path: data/metrics/ballot/
+      md5: d641cb34c6551e0e2952f2a2e21d8b86.dir
+      size: 79864
+      nfiles: 1
+    - path: scripts/metrics/ballot/summarize.py
+      md5: 743d444d60f6b2be50c8bcaf412002f7
+      size: 2332
+    outs:
+    - path: docs/_data/metrics/ballot/
+      md5: d5c552fc1581deceb2ce08b92cbc2b54.dir
+      size: 5115
+      nfiles: 6

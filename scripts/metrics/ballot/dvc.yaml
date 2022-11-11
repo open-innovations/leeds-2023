@@ -1,0 +1,23 @@
+# Callouts pipelines
+stages:
+  stage_build:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/process.py
+    wdir: ../../..
+    always_changed: true
+    deps:
+    - scripts/metrics/ballot/process.py
+    - data/reference/postcodes.csv
+    outs:
+    - data/metrics/ballot/:
+        persist: true
+        cache: false
+  summarise:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/summarize.py
+    wdir: ../../..
+    deps:
+    - scripts/metrics/ballot/summarize.py
+    - data/metrics/ballot/
+    outs:
+    - docs/_data/metrics/ballot/:
+        persist: true
+        cache: false

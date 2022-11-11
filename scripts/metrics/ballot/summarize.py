@@ -86,3 +86,7 @@ def all():
     by_date()
     by_age()
     by_source()
+
+
+if __name__ == '__main__':
+    all()

@@ -51,10 +51,19 @@ def get_data():
 
 
 def save_raw_data(data):
+    cols = [
+      'date_submitted',
+      'la_code',
+      'ward_code',
+      'artist_age_group',
+      'artwork_medium',
+      'source',
+    ]
     os.makedirs(DATA_DIR, exist_ok=True)
     logging.info("Saving %s", RAW_DATA)
-    data.sort_values(
-        by=['date_submitted', 'ward_code']
+    data[cols].sort_values(
+        by=cols,
+        ignore_index=True
     ).to_csv(
         RAW_DATA, index=False
     )
@@ -71,3 +80,6 @@ def update():
     data = get_data()
     save_raw_data(data)
     logging.info('Completed ballot data update')
+
+if __name__ == '__main__':
+    update()

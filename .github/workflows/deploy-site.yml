@@ -1,4 +1,4 @@
-name: Data microsite build
+name: Microsite build
 
 'on':
   workflow_dispatch: {}

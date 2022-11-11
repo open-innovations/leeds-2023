@@ -34,8 +34,8 @@ Here are some useful DVC commands:
 
 * Check the DVC status by running `dvc status`.
 * To pull the latest data run `dvc pull`.
-* You can run all pipelines with `dvc repro`. If no stage dependencies (input
+* You can run all pipelines with `dvc repro -P`. If no stage dependencies (input
   files or code) have changed, nothing will be executed.
-* To list the available pipeline stages run `dvc stage list`. You can see the
+* To list the available pipeline stages run `dvc stage list --all`. You can see the
   dependency graph with `dvc dag`
 * You can force a stage to re-run using `dvc repro --force <stage name>`.

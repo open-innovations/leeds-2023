@@ -94,7 +94,8 @@ site.copy('/assets/js/vendors');
   'social/twitter.csv',
   'social/instagram.csv',
   'social/linkedin.csv',
-  'social/facebook.csv'
+  'social/facebook.csv',
+  'volunteers/volunteers.csv',
 ].forEach(file => {
   site.remoteFile(`/data/${file}`, `./data/metrics/${file}`)
 });

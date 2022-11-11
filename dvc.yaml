@@ -7,3 +7,12 @@ stages:
     outs:
     - data/reference/postcodes.csv:
         cache: false
+
+  # Callouts pipelines
+  callouts_stage:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/stage.py
+    always_changed: true
+    deps:
+    - scripts/metrics/callouts/stage.py
+    outs:
+    - working/metrics/callout/

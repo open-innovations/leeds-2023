@@ -13,3 +13,14 @@ stages:
     - path: data/reference/postcodes.csv
       md5: 7196768cdd13ac9750cf4148d19d498c
       size: 75969456
+  callouts_stage:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/stage.py
+    deps:
+    - path: scripts/metrics/callouts/stage.py
+      md5: c1da11b27f5fbdec872630d7c754628d
+      size: 686
+    outs:
+    - path: working/metrics/callout/
+      md5: bda73f4f2af7fffebdd88db99030ad92.dir
+      size: 337
+      nfiles: 1

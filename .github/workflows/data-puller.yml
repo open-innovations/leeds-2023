@@ -1,4 +1,4 @@
-name: data-puller
+name: Data Pipeline
 
 on:
   workflow_dispatch:

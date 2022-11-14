@@ -8,12 +8,20 @@ metas:
   description: |
     Visualisations of key metrics related to LEEDS 2023 social media accounts.
 ---
+
+{% set all_colour = "var(--l23-magenta)" %}
+{% set twitter_colour = "#1DA1F2" %}
+{% set instagram_colour = "#833AB4" %}
+{% set facebook_colour = "var(--l23-mint)" %}
+{% set linkedin_colour = "var(--l23-cyan)" %}
+
+
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'all')" id="defaultOpen">All Socials</button>
   <button class="tablinks" onclick="openCity(event, 'twitter')">Twitter</button>
   <button class="tablinks" onclick="openCity(event, 'instagram')">Instagram</button>
   <button class="tablinks" onclick="openCity(event, 'facebook')">Facebook</button>
-  <button class="tablinks" onclick="openCity(event, 'linkedin')">Linkedin</button>
+  <button class="tablinks" onclick="openCity(event, 'linkedin')">LinkedIn</button>
 </div>
 <style>
 .tab button {
@@ -28,9 +36,10 @@ metas:
 </style>
 
 
+
 <div id="all" class="tabcontent">
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: all_colour} %}
     <h2>
       Total Audience
     </h2>
@@ -41,7 +50,7 @@ metas:
       As at {{ metrics.social_media.summary.service.twitter.metrics.date_last | date('HUMAN_DATE') }}
     </p>
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: all_colour} %}
     <h2>
       Total Engagement 2022
     </h2>
@@ -51,7 +60,7 @@ metas:
        ) | localize
     }) | safe }}
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: all_colour} %}
     <h2>
       Total Audience Gained 2022
     </h2>
@@ -61,7 +70,7 @@ metas:
       ) | localize
     }) | safe }}
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: all_colour} %}
     <h2>
       Total Impressions 2022
     </h2>
@@ -76,7 +85,7 @@ metas:
 
 <div id="twitter" class="tabcontent">
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: twitter_colour} %}
     <h2>
       Total Audience
     </h2>
@@ -87,7 +96,7 @@ metas:
       As at {{ metrics.social_media.summary.service.twitter.metrics.date_last | date('HUMAN_DATE') }}
     </p>
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: twitter_colour} %}
     <h2>
       Total Engagement 2022
     </h2>
@@ -97,7 +106,7 @@ metas:
        ) | localize
     }) | safe }}
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: twitter_colour} %}
     <h2>
       Total Audience Gained 2022
     </h2>
@@ -107,7 +116,7 @@ metas:
       ) | localize
     }) | safe }}
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: twitter_colour} %}
     <h2>
       Total Impressions 2022
     </h2>
@@ -122,7 +131,7 @@ metas:
 
 <div id="instagram" class="tabcontent">
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: instagram_colour} %}
     <h2>
       Total Audience
     </h2>
@@ -133,7 +142,7 @@ metas:
       As at {{ metrics.social_media.summary.service.instagram.metrics.date_last | date('HUMAN_DATE') }}
     </p>
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: instagram_colour} %}
     <h2>
       Total Engagement 2022
     </h2>
@@ -143,7 +152,7 @@ metas:
        ) | localize
     }) | safe }}
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: instagram_colour} %}
     <h2>
       Total Audience Gained 2022
     </h2>
@@ -153,7 +162,7 @@ metas:
       ) | localize
     }) | safe }}
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: instagram_colour} %}
     <h2>
       Total Impressions 2022
     </h2>
@@ -168,7 +177,7 @@ metas:
 
 <div id="facebook" class="tabcontent">
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: facebook_colour} %}
     <h2>
       Total Audience
     </h2>
@@ -179,7 +188,7 @@ metas:
       As at {{ metrics.social_media.summary.service.facebook.metrics.date_last | date('HUMAN_DATE') }}
     </p>
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: facebook_colour} %}
     <h2>
       Total Engagement 2022
     </h2>
@@ -189,7 +198,7 @@ metas:
        ) | localize
     }) | safe }}
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: facebook_colour} %}
     <h2>
       Total Audience Gained 2022
     </h2>
@@ -199,7 +208,7 @@ metas:
       ) | localize
     }) | safe }}
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: facebook_colour} %}
     <h2>
       Total Impressions 2022
     </h2>
@@ -214,7 +223,7 @@ metas:
 
 <div id="linkedin" class="tabcontent">
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: linkedin_colour} %}
     <h2>
       Total Audience
     </h2>
@@ -225,7 +234,7 @@ metas:
       As at {{ metrics.social_media.summary.service.linkedin.metrics.date_last | date('HUMAN_DATE') }}
     </p>
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: linkedin_colour} %}
     <h2>
       Total Engagement 2022
     </h2>
@@ -235,7 +244,7 @@ metas:
        ) | localize
     }) | safe }}
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: linkedin_colour} %}
     <h2>
       Total Audience Gained 2022
     </h2>
@@ -245,7 +254,7 @@ metas:
       ) | localize
     }) | safe }}
   {% endcomp %}
-  {% comp 'grid.block.impact' %}
+  {% comp 'grid.block.impact', {bg: linkedin_colour} %}
     <h2>
       Total Impressions 2022
     </h2>
@@ -285,5 +294,302 @@ metas:
 </script>
 
 
-{% include "visualisations/social-media/social-graph-2.njk" %}
+{% from 'macros.njk' import dateFormatter %}
+{%- macro popupPreApplication(params) -%}
+  {{ params.label }}</br>
+  {{ params.value }} signups
+{%- endmacro -%}
+{%- macro popupApplied(params) -%}
+  {{ params.label }}</br>
+  {{ params.value }} applications received
+{%- endmacro -%}
+
+
+
+{% comp 'grid.autogrid', { min_width: '32rem' } %}
+
+<div>
+<h2>Total Audience</h2>
+{% comp 'layout.figure', {
+  title: 'Total Audience'
+} %}
+
+{{ comp.oi.charts.graph.line({
+  categories: metrics.social_media.all_weekly.columns.week_ending,
+  width: 25,
+  height: 12,
+  text: { colour: '#eee' },
+  xAxis: {
+    title: 'Week ending (Sunday)',
+    titleOffset: 4,
+    labelRotate: 35,
+    majorTick: 2,
+    formatter: dateFormatter
+  },
+  yAxis: {
+    title: 'Total Audience',
+    titleOffset: 3,
+    majorTick: 5000
+  },
+  plotArea: {
+    yMin: 0,
+    yMax: 35000,
+    colour: 'var(--l23-dark-blue-grey)'
+  },
+  padding: {
+    left: 4,
+    bottom: 5
+  },
+  series: [
+    {
+      id: "all", label: "All",
+      yValues: metrics.social_media.all_weekly.columns.audience_last,
+      colour: all_colour,
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "twitter", label: "Twitter",
+      yValues: metrics.social_media.service.twitter_weekly.columns.audience_last,
+      colour: twitter_colour,
+      markerOptions: { s: 5 }
+    },
+     {
+      id: "instagram", label: "Instagram",
+      yValues: metrics.social_media.service.instagram_weekly.columns.audience_last,
+      colour: instagram_colour,
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "facebook", label: "Facebook",
+      yValues: metrics.social_media.service.facebook_weekly.columns.audience_last,
+      colour: facebook_colour,
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "linkedin", label: "Linkedin",
+      yValues: metrics.social_media.service.linkedin_weekly.columns.audience_last,
+      colour: linkedin_colour,
+      markerOptions: { s: 5 }
+    }
+  ],
+  legend: {
+    width: "20em"
+  }
+}) | safe }}
+{% endcomp %}
+</div>
+<div>
+<h2>Audience Gained</h2>
+
+{% comp 'layout.figure', {
+  title: 'Audience Gained'
+} %}
+
+{{ comp.oi.charts.graph.line({
+  categories: metrics.social_media.all_weekly.columns.week_ending,
+  width: 25,
+  height: 12,
+  text: { colour: '#eee' },
+  xAxis: {
+    title: 'Week ending (Sunday)',
+    titleOffset: 4,
+    labelRotate: 35,
+    majorTick: 2,
+    formatter: dateFormatter
+  },
+  yAxis: {
+    title: 'Audience Gained',
+    titleOffset: 3,
+    majorTick: 50
+  },
+  plotArea: {
+    yMin: 0,
+    yMax: 600,
+    colour: 'var(--l23-dark-blue-grey)'
+  },
+  padding: {
+    left: 4,
+    bottom: 5
+  },
+  series: [
+    {
+      id: "all", label: "All",
+      yValues: metrics.social_media.all_weekly.columns.audience_gained_total,
+      colour: all_colour,
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "twitter", label: "Twitter",
+      yValues: metrics.social_media.service.twitter_weekly.columns.audience_gained_total,
+      colour: twitter_colour,
+      markerOptions: { s: 5 }
+    },
+     {
+      id: "instagram", label: "Instagram",
+      yValues: metrics.social_media.service.instagram_weekly.columns.audience_gained_total,
+      colour: instagram_colour,
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "facebook", label: "Facebook",
+      yValues: metrics.social_media.service.facebook_weekly.columns.audience_gained_total,
+      colour: facebook_colour,
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "linkedin", label: "Linkedin",
+      yValues: metrics.social_media.service.linkedin_weekly.columns.audience_gained_total,
+      colour: linkedin_colour,
+      markerOptions: { s: 5 }
+    }
+  ],
+  legend: {
+    width: "20em"
+  }
+}) | safe }}
+{% endcomp %}
+</div>
+<div>
+<h2>Engagements</h2>
+
+{% comp 'layout.figure', {
+  title: 'Engagements'
+} %}
+
+{{ comp.oi.charts.graph.line({
+  categories: metrics.social_media.all_weekly.columns.week_ending,
+  width: 25,
+  height: 12,
+  text: { colour: '#eee' },
+  xAxis: {
+    title: 'Week ending (Sunday)',
+    titleOffset: 4,
+    labelRotate: 35,
+    majorTick: 2,
+    formatter: dateFormatter
+  },
+  yAxis: {
+    title: 'Engagements',
+    titleOffset: 3,
+    majorTick: 1000
+  },
+  plotArea: {
+    yMin: 0,
+    yMax: 10000,
+    colour: 'var(--l23-dark-blue-grey)'
+  },
+  padding: {
+    left: 4,
+    bottom: 5
+  },
+  series: [
+    {
+      id: "all", label: "All",
+      yValues: metrics.social_media.all_weekly.columns.engagements_total,
+      colour: all_colour,
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "twitter", label: "Twitter",
+      yValues: metrics.social_media.service.twitter_weekly.columns.engagements_total,
+      colour: twitter_colour,
+      markerOptions: { s: 5 }
+    },
+     {
+      id: "instagram", label: "Instagram",
+      yValues: metrics.social_media.service.instagram_weekly.columns.engagements_total,
+      colour: instagram_colour,
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "facebook", label: "Facebook",
+      yValues: metrics.social_media.service.facebook_weekly.columns.engagements_total,
+      colour: facebook_colour,
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "linkedin", label: "Linkedin",
+      yValues: metrics.social_media.service.linkedin_weekly.columns.engagements_total,
+      colour: linkedin,
+      markerOptions: { s: 5 }
+    }
+  ],
+  legend: {
+    width: "20em"
+  }
+}) | safe }}
+{% endcomp %}
+</div>
+<div>
+<h2>Impressions</h2>
+
+{% comp 'layout.figure', {
+  title: 'Impressions'
+} %}
+
+{{ comp.oi.charts.graph.line({
+  categories: metrics.social_media.all_weekly.columns.week_ending,
+  width: 25,
+  height: 12,
+  text: { colour: '#eee' },
+  xAxis: {
+    title: 'Week ending (Sunday)',
+    titleOffset: 4,
+    labelRotate: 35,
+    majorTick: 2,
+    formatter: dateFormatter
+  },
+  yAxis: {
+    title: 'Impressions',
+    titleOffset: 3,
+    majorTick: 50000
+  },
+  plotArea: {
+    yMin: 0,
+    yMax: 250000,
+    colour: 'var(--l23-dark-blue-grey)'
+  },
+  padding: {
+    left: 4,
+    bottom: 5
+  },
+  series: [
+    {
+      id: "all", label: "All",
+      yValues: metrics.social_media.all_weekly.columns.impressions_total,
+      colour: all_colour,
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "twitter", label: "Twitter",
+      yValues: metrics.social_media.service.twitter_weekly.columns.impressions_total,
+      colour: twitter_colour,
+      markerOptions: { s: 5 }
+    },
+     {
+      id: "instagram", label: "Instagram",
+      yValues: metrics.social_media.service.instagram_weekly.columns.impressions_total,
+      colour: instagram_colour,
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "facebook", label: "Facebook",
+      yValues: metrics.social_media.service.facebook_weekly.columns.impressions_total,
+      colour: facebook_colour,
+      markerOptions: { s: 5 }
+    },
+    {
+      id: "linkedin", label: "Linkedin",
+      yValues: metrics.social_media.service.linkedin_weekly.columns.impressions_total,
+      colour: linkedin_colour,
+      markerOptions: { s: 5 }
+    }
+  ],
+  legend: {
+    width: "20em"
+  }
+}) | safe }}
+{% endcomp %}
+</div>
+{% endcomp %}
 

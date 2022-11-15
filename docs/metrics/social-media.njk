@@ -14,7 +14,9 @@ metas:
 {% set instagram_colour = "#833AB4" %}
 {% set facebook_colour = "var(--l23-mint)" %}
 {% set linkedin_colour = "var(--l23-cyan)" %}
-
+<p>All Stats have been derived from data extracted from <a href="https://sproutsocial.com/">Sprout Social</a>. The raw data extracted from sprout is broken down by day and has been aggregated appropriately (either by summing up values or finding the latest value in a given data range). </p>
+<p></p>
+<h2 id="headlinetitle">Headlines</h2>
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'all')" id="defaultOpen">All Socials</button>
@@ -287,7 +289,10 @@ metas:
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
+    document.getElementById("headlinetitle").innerHTML = "Headlines - " + evt.currentTarget.innerHTML
   }
+
+  
 
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
@@ -305,7 +310,7 @@ metas:
 {%- endmacro -%}
 
 
-
+<h2>Stats Over Time </h2>
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
 
 <div>

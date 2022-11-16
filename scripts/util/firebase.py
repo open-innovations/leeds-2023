@@ -3,9 +3,10 @@ from firebase_admin import firestore
 import pandas as pd
 
 
-def get_db():
-    firebase_admin.initialize_app()
+firebase_admin.initialize_app()
 
+
+def get_db():
     db = firestore.client()
     return db
 

@@ -9,6 +9,27 @@ metas:
 order: 30
 ---
 
+{# Set up some cyclers for block colouring #}
+{% set fg = cycler("black", "black") %}
+{% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)") %}
+
+{% comp 'grid.autogrid', { min_width: '20rem' } %}
+  {{ comp.metric.headline({
+    title: "Total attendances", headingLevel: 3,
+    value: metrics.roadshows.summary.columns.cumulative_attendance | last | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Communication sign-up forms submitted", headingLevel: 3,
+    value: metrics.roadshows.summary.columns.cumulative_contact_consents | last | localize,
+    description: "",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+{% endcomp %}
+
+<br>
 <p>
   These <a href="https://open-innovations.org/blog/2017-05-08-mapping-election-with-hexes">hex cartograms</a> show the number of attendances at one of the <a href="https://leeds2023.co.uk/news/get-ready-for-the-roadshow-with-leeds-2023">LEEDS 2023 Roadshow events</a>
   and the number of people who attended and subsequently submitted a sign-up form for
@@ -32,6 +53,10 @@ order: 30
 <p>
   Furthermore, residents will travel across ward boundaries to attend events. As such,
   attendances at any given roadshow are likely to include attendees from other wards.
+</p>
+
+<p>
+  The raw data can be viewed on <a href="https://datamillnorth.org/dataset/leeds-2023-roadshow-attendees?q=leeds%202023">Data Mill North</a>.
 </p>
 
 {%- macro popupAttendees(params) -%}

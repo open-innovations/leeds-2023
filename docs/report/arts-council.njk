@@ -4,7 +4,14 @@ summary: Data from Arts Council England
 key: arts-council
 work_in_progress: true
 ---
+<h1>{{ title }}</h1>
 
+<h2>Local Authority Hexmap</h2>
+<p><a href="https://open-innovations.org/projects/hexmaps/builder.html?https://docs.google.com/spreadsheets/d/1RGcyMyKtyNDnL3nX2ISTC8nQGN4ABd3c_pzSHyJXFi0/gviz/tq?tqx=out:csv&colourscale=Viridis8&borders=false&attribute=sum_total&labels=false">Breakdown of Arts Council Funding by Local Authority.</a> 'count' refers to the number of grants, 'sum' refers to the total amount given in pounds. The link will show 'sum_total' by default however this can be changed in the options menu under the diagram.</p>
+
+<h2>Leeds and West Yorkshire Funding Breakdown</h2>
+
+<p>Showing number of and monetray value of grants given per year. Raw amount and as percentage of all grants nationwide.</p>
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'leeds')" id="defaultOpen">Leeds</button>
   <button class="tablinks" onclick="openCity(event, 'west_yorkshire')">West Yorkshire</button>
@@ -14,6 +21,7 @@ work_in_progress: true
   background-color: #ccc;
 }
 </style>
+
 
 <div id="leeds" class="tabcontent">
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
@@ -137,13 +145,6 @@ work_in_progress: true
     }
   }) | safe }}
 {% endcomp %}
-{% endcomp %}
-
-{% comp 'layout.block' %}
-{{ comp.charts.table({
-  columns: [{'key' : 'Recipient','name':'Recipient'},{'key':'Activity name','name':'Activity name'},{'key':'Award amount','name':'Award amount'},{'key':'Award date','name':'Award date'}],
-  rows: arts_council.leeds_recipients.rows
-}) | safe }}
 {% endcomp %}
 
 </div>
@@ -272,10 +273,42 @@ work_in_progress: true
 {% endcomp %}
 {% endcomp %}
 
+</div>
+
+
+<h2>Largest Grants</h2>
+
+<p>Top 25 grants by amount of money given in Leeds, West Yorkshire and Nationwide</p>
+
+<div class="tab">
+  <button class="tablinks_l" onclick="openCity_l(event, 'leeds_l')" id="defaultOpen_l">Leeds</button>
+  <button class="tablinks_l" onclick="openCity_l(event, 'west_yorkshire_l')">West Yorkshire</button>
+  <button class="tablinks_l" onclick="openCity_l(event, 'national_l')">National</button>
+</div>
+
+<div id="leeds_l" class="tabcontent_l">
+{% comp 'layout.block' %}
+{{ comp.charts.table({
+  columns: [{'key' : 'Recipient','name':'Recipient'},{'key':'Activity name','name':'Activity name'},{'key':'Award amount','name':'Award amount'},{'key':'Award date','name':'Award date'}],
+  rows: arts_council.leeds_recipients.rows
+}) | safe }}
+{% endcomp %}
+</div>
+
+<div id="west_yorkshire_l" class="tabcontent_l">
 {% comp 'layout.block' %}
 {{ comp.charts.table({
   columns: [{'key' : 'Recipient','name':'Recipient'},{'key':'Activity name','name':'Activity name'},{'key':'Award amount','name':'Award amount'},{'key':'Local authority','name':'Local authority'},{'key':'Award date','name':'Award date'}],
   rows: arts_council.wy_recipients.rows
+}) | safe }}
+{% endcomp %}
+</div>
+
+<div id="national_l" class="tabcontent_l">
+{% comp 'layout.block' %}
+{{ comp.charts.table({
+  columns: [{'key' : 'Recipient','name':'Recipient'},{'key':'Activity name','name':'Activity name'},{'key':'Award amount','name':'Award amount'},{'key':'Local authority','name':'Local authority'},{'key':'Award date','name':'Award date'}],
+  rows: arts_council.national_recipients.rows
 }) | safe }}
 {% endcomp %}
 </div>
@@ -298,6 +331,26 @@ work_in_progress: true
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+  function openCity_l(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent_l");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks_l");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen_l").click();
 </script>

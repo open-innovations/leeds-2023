@@ -2,6 +2,7 @@
 title: Arts Council England
 summary: Data from Arts Council England
 key: arts-council
+work_in_progress: true
 ---
 
 <div class="tab">
@@ -20,9 +21,9 @@ key: arts-council
    max_width: '40rem'
 } %}
   {{ comp.charts.barchart({
-    categories: metrics.arts_council.leeds_summary.columns.year,
+    categories: arts_council.leeds_summary.columns.year,
     series: [
-      metrics.arts_council.leeds_summary.columns.count_Leeds
+      arts_council.leeds_summary.columns.count_Leeds
     ],
     plot: {
       grid: { x: true, category: true }
@@ -50,9 +51,9 @@ key: arts-council
    max_width: '40rem'
 } %}
   {{ comp.charts.barchart({
-    categories: metrics.arts_council.leeds_summary.columns.year,
+    categories: arts_council.leeds_summary.columns.year,
     series: [
-      metrics.arts_council.leeds_summary.columns.count_per_Leeds
+      arts_council.leeds_summary.columns.count_per_Leeds
     ],
     plot: {
       grid: { x: true, category: true }
@@ -80,9 +81,9 @@ key: arts-council
    max_width: '40rem'
 } %}
   {{ comp.charts.barchart({
-    categories: metrics.arts_council.leeds_summary.columns.year,
+    categories: arts_council.leeds_summary.columns.year,
     series: [
-      metrics.arts_council.leeds_summary.columns.sum_Leeds
+      arts_council.leeds_summary.columns.sum_Leeds
     ],
     plot: {
       grid: { x: true, category: true }
@@ -111,9 +112,9 @@ key: arts-council
    max_width: '40rem'
 } %}
   {{ comp.charts.barchart({
-    categories: metrics.arts_council.leeds_summary.columns.year,
+    categories: arts_council.leeds_summary.columns.year,
     series: [
-      metrics.arts_council.leeds_summary.columns.sum_per_Leeds
+      arts_council.leeds_summary.columns.sum_per_Leeds
     ],
     plot: {
       grid: { x: true, category: true }
@@ -141,7 +142,7 @@ key: arts-council
 {% comp 'layout.block' %}
 {{ comp.charts.table({
   columns: [{'key' : 'Recipient','name':'Recipient'},{'key':'Activity name','name':'Activity name'},{'key':'Award amount','name':'Award amount'},{'key':'Award date','name':'Award date'}],
-  rows: metrics.arts_council.leeds_recipients.rows
+  rows: arts_council.leeds_recipients.rows
 }) | safe }}
 {% endcomp %}
 
@@ -153,9 +154,9 @@ key: arts-council
    max_width: '40rem'
 } %}
   {{ comp.charts.barchart({
-    categories: metrics.arts_council.leeds_summary.columns.year,
+    categories: arts_council.leeds_summary.columns.year,
     series: [
-      metrics.arts_council.leeds_summary.columns.count_West_Yorkshire
+      arts_council.leeds_summary.columns.count_West_Yorkshire
     ],
     plot: {
       grid: { x: true, category: true }
@@ -183,9 +184,9 @@ key: arts-council
    max_width: '40rem'
 } %}
   {{ comp.charts.barchart({
-    categories: metrics.arts_council.leeds_summary.columns.year,
+    categories: arts_council.leeds_summary.columns.year,
     series: [
-      metrics.arts_council.leeds_summary.columns.count_per_West_Yorkshire
+      arts_council.leeds_summary.columns.count_per_West_Yorkshire
     ],
     plot: {
       grid: { x: true, category: true }
@@ -213,9 +214,9 @@ key: arts-council
    max_width: '40rem'
 } %}
   {{ comp.charts.barchart({
-    categories: metrics.arts_council.leeds_summary.columns.year,
+    categories: arts_council.leeds_summary.columns.year,
     series: [
-      metrics.arts_council.leeds_summary.columns.sum_West_Yorkshire
+      arts_council.leeds_summary.columns.sum_West_Yorkshire
     ],
     plot: {
       grid: { x: true, category: true }
@@ -244,9 +245,9 @@ key: arts-council
    max_width: '40rem'
 } %}
   {{ comp.charts.barchart({
-    categories: metrics.arts_council.leeds_summary.columns.year,
+    categories: arts_council.leeds_summary.columns.year,
     series: [
-      metrics.arts_council.leeds_summary.columns.sum_per_West_Yorkshire
+      arts_council.leeds_summary.columns.sum_per_West_Yorkshire
     ],
     plot: {
       grid: { x: true, category: true }
@@ -274,7 +275,7 @@ key: arts-council
 {% comp 'layout.block' %}
 {{ comp.charts.table({
   columns: [{'key' : 'Recipient','name':'Recipient'},{'key':'Activity name','name':'Activity name'},{'key':'Award amount','name':'Award amount'},{'key':'Local authority','name':'Local authority'},{'key':'Award date','name':'Award date'}],
-  rows: metrics.arts_council.wy_recipients.rows
+  rows: arts_council.wy_recipients.rows
 }) | safe }}
 {% endcomp %}
 </div>

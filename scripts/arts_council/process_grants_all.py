@@ -32,7 +32,9 @@ data=  data.pivot(columns='year')
 
 
 data.columns = ['_'.join(col).strip() for col in data.columns.values]
-data.to_csv('docs\\_data\\metrics\\arts_council\\all_summary.csv')
+data['count_total'] = sum([data[col].fillna(0) for col in data.columns if 'count' in col])
+data['sum_total'] = sum([data[col].fillna(0) for col in data.columns if 'sum' in col])
+data.to_csv('docs\\_data\\arts_council\\all_summary.csv')
 
 data['las'] = data.index
 with open('working\\arts_council\\la.json') as f:
@@ -42,9 +44,9 @@ combined = pd.merge(hex_data,data,left_on='n',right_on='Local Authority',how='le
 combined.pop('region')
 combined = combined.rename(columns={'n':'id'})
 
-for col in ['count_2018-19','count_2019-20','count_2020-21','count_2021-22','count_2022-23','sum_2018-19','sum_2019-20','sum_2020-21','sum_2021-22','sum_2022-23']:
-    combined[col] = combined[col].astype('Int64')
-    combined[col] = combined[col].fillna(0)
+#for col in ['count_2018-19','count_2019-20','count_2020-21','count_2021-22','count_2022-23','sum_2018-19','sum_2019-20','sum_2020-21','sum_2021-22','sum_2022-23']:
+#    combined[col] = combined[col].astype('Int64')
+#    combined[col] = combined[col].fillna(0)
 
-combined.to_csv('docs\\_data\\metrics\\arts_council\\all_summary_hex.csv',index=False)
+combined.to_csv('working\\arts_council\\all_summary_hex.csv',index=False)
 print(combined)

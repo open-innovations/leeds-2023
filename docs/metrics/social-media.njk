@@ -35,6 +35,12 @@ metas:
   color: var(--l23-yellow);
   background-color: var(--l23-magenta);
 }
+
+.show {
+  border-radius: 3em;
+  border-style: none;
+  padding: 0.3em 1em;
+}
 </style>
 
 
@@ -83,13 +89,15 @@ metas:
     }) | safe }}
   {% endcomp %}
 {% endcomp %}
-
-<ul>
-<li><dfn>Total Audience</dfn> - The sum of Total Audience for Twitter, Instagram, Facebook and LinkedIn</li>
-<li><dfn>Total Engagement</dfn> - The sum of Total Engagement for Twitter, Instagram, Facebook and LinkedIn</li>
-<li><dfn>Total Impressions</dfn> - The sum of Total Impressions for Twitter, Instagram, Facebook and LinkedIn</li>
-<li><dfn>Total Audience Gained</dfn> - The sum of Total Audience Gained for Twitter, Instagram, Facebook and LinkedIn</li>
-</ul>
+<button class="show" onclick="myFunction('alldef')">Show/Hide Defenitions</button>
+  <div id="alldef">
+  <ul>
+    <li><dfn>Total Audience</dfn> - The sum of Total Audience for Twitter, Instagram, Facebook and LinkedIn</li>
+    <li><dfn>Total Engagement</dfn> - The sum of Total Engagement for Twitter, Instagram, Facebook and LinkedIn</li>
+    <li><dfn>Total Impressions</dfn> - The sum of Total Impressions for Twitter, Instagram, Facebook and LinkedIn</li>
+    <li><dfn>Total Audience Gained</dfn> - The sum of Total Audience Gained for Twitter, Instagram, Facebook and LinkedIn</li>
+  </ul>
+  </div>
 </div>
 
 <div id="twitter" class="tabcontent">
@@ -136,13 +144,15 @@ metas:
     }) | safe }}
   {% endcomp %}
 {% endcomp %}
-
+<button class="show" onclick="myFunction('twitterdef')">Show/Hide Defenitions</button>
+  <div id="twitterdef">
 <ul>
 <li><dfn>Total Audience</dfn> - Twitter Followers</li>
 <li><dfn>Total Engagement</dfn> - "The number of times that users engaged with your posts, including when they liked, @replied, retweeted, or clicked on your posts. This does not include quote tweets of your posts."</li>
 <li><dfn>Total Impressions</dfn> - "The number of times your posts were displayed to users. This includes impressions when your posts are retweeted by other users."</li>
 <li><dfn>Total Audience Gained</dfn> - The sum of Total Audience Gained for Twitter, Instagram, Facebook and LinkedIn</li>
 </ul>
+  </div>
 </div>
 
 <div id="instagram" class="tabcontent">
@@ -190,12 +200,15 @@ metas:
   {% endcomp %}
 {% endcomp %}
 
+<button class="show" onclick="myFunction('instagramdef')">Show/Hide Defenitions</button>
+  <div id="instagramdef">
 <ul>
 <li><dfn>Total Audience</dfn> - Instagram Followers</li>
 <li><dfn>Total Engagement</dfn> - "The number of times users liked, commented, and saved your posts, replied to your stories, and shared your Reels."</li>
 <li><dfn>Total Impressions</dfn> - "The number of times your content was displayed to users. This does not include profile visitors. For Reels post-level metrics, impressions are mapped to plays on native as Instagram does not provide post-level impressions on Reels."</li>
 <li><dfn>Total Audience Gained</dfn> - Gross number of Followers acquired</li>
 </ul>
+</div>
 </div>
 
 <div id="facebook" class="tabcontent">
@@ -243,12 +256,15 @@ metas:
   {% endcomp %}
 {% endcomp %}
 
+<button class="show" onclick="myFunction('facebookdef')">Show/Hide Defenitions</button>
+  <div id="facebookdef">
 <ul>
 <li><dfn>Total Audience</dfn> - Facebook Page Likes</li>
 <li><dfn>Total Engagement</dfn> - "The number of times that users reacted to, commented on, shared, or clicked on your posts."</li>
 <li><dfn>Total Impressions</dfn> - "The number of times content associated with your page was displayed to users."</li>
 <li><dfn>Total Audience Gained</dfn> - Gross number of Page Likes acquired</li>
 </ul>
+</div>
 </div>
 
 <div id="linkedin" class="tabcontent">
@@ -295,12 +311,15 @@ metas:
     }) | safe }}
   {% endcomp %}
 {% endcomp %}
+<button class="show" onclick="myFunction('linkedindef')">Show/Hide Defenitions</button>
+  <div id="linkedindef">
 <ul>
 <li><dfn>Total Audience</dfn> - LinkedIn Followers</li>
 <li><dfn>Total Engagement</dfn> - "The number of times that users engaged with your posts, including when they reacted to, commented on, shared, or clicked on your post."</li>
 <li><dfn>Total Impressions</dfn> - "The number of times your posts were displayed to users. This does not include impressions when your posts are shared by other users."</li>
 <li><dfn>Total Audience Gained</dfn> - Gross number of Followers acquired</li>
 </ul>
+</div>
 </div>
 
 <script type="text/javascript">
@@ -325,7 +344,17 @@ metas:
     evt.currentTarget.className += " active";
     document.getElementById("headlinetitle").innerHTML = "Headlines - " + evt.currentTarget.innerHTML
   }
+  
 
+
+  function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+  }
+  }
   
 
   // Get the element with id="defaultOpen" and click on it

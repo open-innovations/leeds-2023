@@ -1,48 +1,48 @@
 service:
   all:
     metrics:
-      audience_gained_total: 6475
-      audience_last: 30480
-      engagements_total: 105525
-      impressions_total: 3951380
+      audience_gained_total: 6917
+      audience_last: 30893
+      engagements_total: 112090
+      impressions_total: 4177690
   facebook:
     filter_col: date
     filter_range: 2022-01-01:2022-12-31
     metrics:
-      audience_gained_total: 393
-      audience_last: 4060
+      audience_gained_total: 420
+      audience_last: 4115
       date_first: '2022-01-01'
-      date_last: '2022-11-06'
-      engagements_total: 29370
-      impressions_total: 700885
+      date_last: '2022-11-20'
+      engagements_total: 32770
+      impressions_total: 798407
   instagram:
     filter_col: date
     filter_range: 2022-01-01:2022-12-31
     metrics:
-      audience_gained_total: 1890
-      audience_last: 6040
+      audience_gained_total: 2027
+      audience_last: 6152
       date_first: '2022-01-01'
-      date_last: '2022-11-06'
-      engagements_total: 6798
-      impressions_total: 277864
+      date_last: '2022-11-20'
+      engagements_total: 7138
+      impressions_total: 300488
   linkedin:
     filter_col: date
     filter_range: 2022-01-01:2022-12-31
     metrics:
-      audience_gained_total: 1710
-      audience_last: 2870
+      audience_gained_total: 1786
+      audience_last: 2947
       date_first: '2022-01-01'
-      date_last: '2022-11-06'
-      engagements_total: 7621
-      impressions_total: 107534
+      date_last: '2022-11-20'
+      engagements_total: 8101
+      impressions_total: 113511
   twitter:
     filter_col: date
     filter_range: 2022-01-01:2022-12-31
     metrics:
-      audience_gained_total: 2482
-      audience_last: 17510
+      audience_gained_total: 2684
+      audience_last: 17679
       date_first: '2022-01-01'
-      date_last: '2022-11-06'
-      engagements_total: 61736
-      impressions_total: 2865097
+      date_last: '2022-11-20'
+      engagements_total: 64081
+      impressions_total: 2965284
 title: Leeds 2023 twitter Summary Statistics

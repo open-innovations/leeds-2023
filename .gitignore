@@ -1,3 +1,7 @@
+## TEMP FIX
+deno.lock
+
+
 _site/
 .sass-cache/
 .jekyll-cache/

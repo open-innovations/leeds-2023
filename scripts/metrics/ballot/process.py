@@ -129,6 +129,9 @@ def pull_group_entries():
     )
 
 
+def load_group_data():
+    return pd.read_csv(RAW_GROUP_DATA, parse_dates=['date_submitted'])
+
 if __name__ == '__main__':
     update()
     pull_group_entries()

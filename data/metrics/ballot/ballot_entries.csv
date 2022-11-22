@@ -1712,6 +1712,7 @@ date_submitted,la_code,ward_code,artist_age_group,artwork_medium,source
 2022-11-21,E08000035,E05011397,20-24,photo,workplace
 2022-11-21,E08000035,E05011397,20-24,photo,workplace
 2022-11-21,E08000035,E05011397,30-34,photo,advertising
+2022-11-21,E08000035,E05011397,50-54,photo,recommendedByFriendOrFamily
 2022-11-21,E08000035,E05011397,under16,photo,leeds2023SocialMedia
 2022-11-21,E08000035,E05011397,unspecified,photo,leeds2023Event
 2022-11-21,E08000035,E05011397,unspecified,photo,leeds2023Event
@@ -1761,6 +1762,7 @@ date_submitted,la_code,ward_code,artist_age_group,artwork_medium,source
 2022-11-21,E08000036,E05001462,60-64,photo,leeds2023SocialMedia
 2022-11-21,E08000036,E05001464,under16,photo,leeds2023Event
 2022-11-21,NOT_PROVIDED,NOT_PROVIDED,25-29,photo,throughSchool
+2022-11-21,NOT_PROVIDED,NOT_PROVIDED,40-44,photo,throughCulturalOrArtsOrg
 2022-11-21,UNKNOWN,UNKNOWN,25-29,media,workplace
 2022-11-21,UNKNOWN,UNKNOWN,30-34,media,recommendedByFriendOrFamily
 2022-11-21,UNKNOWN,UNKNOWN,30-34,media,recommendedByFriendOrFamily
@@ -1774,3 +1776,16 @@ date_submitted,la_code,ward_code,artist_age_group,artwork_medium,source
 2022-11-21,UNKNOWN,UNKNOWN,unspecified,photo,leeds2023Event
 2022-11-21,UNKNOWN,UNKNOWN,unspecified,photo,leeds2023Event
 2022-11-21,UNKNOWN,UNKNOWN,unspecified,photo,leeds2023Event
+2022-11-22,E07000165,E05011318,45-49,photo,leeds2023SocialMedia
+2022-11-22,E08000035,E05011389,40-44,photo,recommendedByFriendOrFamily
+2022-11-22,E08000035,E05011390,70-74,photo,communityEventOrOrg
+2022-11-22,E08000035,E05011404,under16,photo,leeds2023Event
+2022-11-22,E08000035,E05011405,55-59,photo,recommendedByFriendOrFamily
+2022-11-22,E08000035,E05011405,55-59,photo,recommendedByFriendOrFamily
+2022-11-22,E08000035,E05011411,45-49,photo,advertising
+2022-11-22,E08000035,E05011413,55-59,photo,leeds2023Event
+2022-11-22,E08000035,E05012647,35-39,photo,leeds2023SocialMedia
+2022-11-22,E08000035,E05012842,40-44,photo,leeds2023Event
+2022-11-22,E08000035,E05012842,40-44,photo,recommendedByFriendOrFamily
+2022-11-22,E08000035,E05013831,20-24,media,recommendedByFriendOrFamily
+2022-11-22,E08000036,E05001464,50-54,photo,leeds2023SocialMedia

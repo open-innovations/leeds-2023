@@ -22,20 +22,36 @@ limitations:
 
 <h2>Headlines</h2>
 
+{% comp 'grid.autogrid', { min_width: '24rem' } %}
 {{ comp.metric.headline({
-  title: "Ballot entries", headingLevel: 3,
-  value: metrics.ballot.by_date.columns.cumulative_submissions | last | localize,
+  title: "Individual ballot entries", headingLevel: 3,
+  value: metrics.ballot.current.submissions | localize,
   description: "Total number of ballot entries received.",
   background: "var(--l23-magenta)"
 }) | safe }}
 
+{{ comp.metric.headline({
+  title: "Group ballot entries", headingLevel: 3,
+  value: metrics.ballot.current.group_submissions | localize,
+  description: "Total number of group ballot entries received.",
+  background: "var(--l23-cyan)"
+}) | safe }}
+
+{{ comp.metric.headline({
+  title: "Seats allocated", headingLevel: 3,
+  value: metrics.ballot.current.tickets | localize,
+  description: "Total number of seats allocated based on individual and group entries received.",
+  background: "var(--l23-yellow)"
+}) | safe }}
+{% endcomp %}
+
 <p>Page updated: {{ date | date('HUMAN_DATE') }}</p>
 <h2>Where ballot entries are coming from</h2>
-<p>This chart shows where <a href="https://leeds2023.co.uk/whats-on/the-awakening/enter-the-ballot">ballot entries</a> for <a href="https://leeds2023.co.uk/whats-on/the-awakening/">The Awakening</a> are coming from across Leeds and beyond. Each hexagon represents a council ward in Leeds. The chart shows the distribution of ballot entrants home addresses across these wards.</p>
+<p>This chart shows where individual <a href="https://leeds2023.co.uk/whats-on/the-awakening/enter-the-ballot">ballot entries</a> for <a href="https://leeds2023.co.uk/whats-on/the-awakening/">The Awakening</a> are coming from across Leeds and beyond. Each hexagon represents a council ward in Leeds. The chart shows the distribution of ballot entrants home addresses across these wards.</p>
 <p>KEY: The hexagons that are darker in colour show wards with a higher number of entries.</p>
   
 {% comp 'layout.figure', {
-  title: 'Count of ballot submissions by ward of residence',
+  title: 'Count of individual ballot entries by ward of residence',
   max_width: '40rem'
 } %}
   {{ comp.charts.hexmap({
@@ -57,25 +73,32 @@ limitations:
 </p>
 
 <h2>
-  Growth in ballot entries over time
+  Growth in ballot entries and allocated seats over time
 </h2>
 
 {% comp 'layout.figure', {
-  title: 'Cumulative counts of ballot entries'
+  title: 'Cumulative counts of individual ballot entries and allocated seats'
 } %}
 {{ comp.oi.charts.graph.line({
   categories: metrics.ballot.by_date.columns.date_submitted,
   width: 25,
   height: 12,
+  text: { colour: '#eee' },
   series: [
-    { id: "submissions", label: "Total ballot entries (cumulative)",
+    { id: "submissions", label: "Cumulative individual ballot entries",
       yValues: metrics.ballot.by_date.columns.cumulative_submissions,
       colour: 'var(--l23-magenta)',
-      markerOptions: { s: 5 }
+      markerOptions: { s: 4 }
+    },
+    { id: "tickets", label: "Cumulative seats allocated",
+      yValues: metrics.ballot.by_date.columns.cumulative_tickets,
+      colour: 'var(--l23-yellow)',
+      markerOptions: { s: 4 }
     }
   ],
   plotArea: {
-    yMax: metrics.ballot.by_date.columns.cumulative_submissions | last + 1 | round(-2, 'ceil')
+    yMax: metrics.ballot.current.tickets + 1 | round(-3, 'ceil'),
+    colour: 'var(--l23-dark-blue-grey)'
   },
   padding: {
     left: 4,
@@ -91,7 +114,7 @@ limitations:
   yAxis: {
     title: 'Number of ballot entries',
     titleOffset: 3,
-    majorTick: 200
+    majorTick: 1000
   }
 }) | safe }}
 {% endcomp %}
@@ -123,7 +146,7 @@ limitations:
         title: 'Count of submissions',
         show: false,
         ticks: false,
-        resolution:50
+        resolution: 100
       },
       category: {
         title: 'Age Bracket',
@@ -161,7 +184,7 @@ limitations:
         title: 'Count of submissions',
         show: false,
         ticks: false,
-        resolution:50
+        resolution: 100
       },
       category: {
         title: 'Source',

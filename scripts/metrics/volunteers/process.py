@@ -4,7 +4,7 @@ import os
 from metrics.volunteers.data import load_new_data, load_raw_data, save_raw_data
 from metrics.volunteers.setup import VIEW_DIR
 from metrics.volunteers.states import update_states
-from metrics.volunteers.summarise import summarise_by_ward, summarise_by_week
+from metrics.volunteers.summarise import summarise_by_ward, summarise_by_week,summarise_by_local_authority
 
 import util.oi_sftp_server
 
@@ -47,6 +47,7 @@ def summarise():
     data = load_raw_data()
     summarise_by_ward(data, os.path.join(VIEW_DIR, 'by_ward.csv'))
     summarise_by_week(data, os.path.join(VIEW_DIR, 'by_week.csv'))
+    summarise_by_local_authority(data, os.path.join(VIEW_DIR, 'by_local_authority.csv'))
 
 
 def patch():

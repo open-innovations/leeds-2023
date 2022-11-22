@@ -2,6 +2,19 @@ import logging
 import pandas as pd
 from metrics.volunteers.states import STATUS_PRE_APPLY, STATUS_APPLY, STATUS_OFFER, STATUS_CONFIRMED, STATUS_DROP
 
+def summarise_by_local_authority(data, file_path):
+    logging.info('Summarising by local authority')
+    by_local_authority = data.groupby(['local_authority_code'])
+    by_local_authority = pd.DataFrame({
+        STATUS_PRE_APPLY: by_local_authority[STATUS_PRE_APPLY].count(),
+        STATUS_APPLY: by_local_authority[STATUS_APPLY].count(),
+        STATUS_OFFER: by_local_authority[STATUS_OFFER].count(),
+        STATUS_CONFIRMED: by_local_authority[STATUS_CONFIRMED].count(),
+        STATUS_DROP: by_local_authority[STATUS_DROP].count(),
+    }).fillna(0).astype(int)
+    logging.info('Writing `%s`', file_path)
+    by_local_authority.to_csv(file_path, na_rep=0)
+
 
 def summarise_by_ward(data, file_path):
     logging.info('Summarising by ward')

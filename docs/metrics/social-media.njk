@@ -155,7 +155,7 @@ metas:
 
 <div id="instagram" class="tabcontent">
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
-  {% comp 'grid.block.impact', {bg: instagram_colour} %}
+  {% comp 'grid.block.impact', {bg: instagram_colour, fg:'#FFFFFF'} %}
     <h2>
       Total Audience
     </h2>
@@ -166,7 +166,7 @@ metas:
       As at {{ metrics.social_media.summary.service.instagram.metrics.date_last | date('HUMAN_DATE') }}
     </p>
   {% endcomp %}
-  {% comp 'grid.block.impact', {bg: instagram_colour} %}
+  {% comp 'grid.block.impact', {bg: instagram_colour,fg:'#FFFFFF'} %}
     <h2>
       Total Engagement 2022
     </h2>
@@ -176,7 +176,7 @@ metas:
        ) | localize
     }) | safe }}
   {% endcomp %}
-  {% comp 'grid.block.impact', {bg: instagram_colour} %}
+  {% comp 'grid.block.impact', {bg: instagram_colour,fg:'#FFFFFF'} %}
     <h2>
       Total Audience Gained 2022
     </h2>
@@ -186,7 +186,7 @@ metas:
       ) | localize
     }) | safe }}
   {% endcomp %}
-  {% comp 'grid.block.impact', {bg: instagram_colour} %}
+  {% comp 'grid.block.impact', {bg: instagram_colour,fg:'#FFFFFF'} %}
     <h2>
       Total Impressions 2022
     </h2>
@@ -576,7 +576,7 @@ metas:
     {
       id: "linkedin", label: "Linkedin",
       yValues: metrics.social_media.service.linkedin_weekly.columns.engagements_total,
-      colour: linkedin,
+      colour: linkedin_colour,
       markerOptions: { s: 5 }
     }
   ],

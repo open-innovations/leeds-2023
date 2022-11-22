@@ -11,21 +11,21 @@ stages:
       size: 3369
     outs:
     - path: data/metrics/ballot/
-      md5: 06e877dcf9c8ebbc5ec0e2aaacedbd3d.dir
-      size: 110473
+      md5: 5125d8b23b70cfc24fbbe90bc5f47383.dir
+      size: 114633
       nfiles: 2
   summarise:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/summarize.py
     deps:
     - path: data/metrics/ballot/
-      md5: 06e877dcf9c8ebbc5ec0e2aaacedbd3d.dir
-      size: 110473
+      md5: 5125d8b23b70cfc24fbbe90bc5f47383.dir
+      size: 114633
       nfiles: 2
     - path: scripts/metrics/ballot/summarize.py
       md5: 6170e927787ed0429b9b5711d6ac35dd
       size: 3589
     outs:
     - path: docs/_data/metrics/ballot/
-      md5: 2b84f03034ce9b9f3f2026d8f182fb63.dir
-      size: 6889
+      md5: 90c5108f9bf80cd5cef84d0dc219000b.dir
+      size: 6974
       nfiles: 7

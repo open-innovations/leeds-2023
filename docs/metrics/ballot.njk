@@ -102,7 +102,6 @@ limitations:
   categories: metrics.ballot.by_date.columns.date_submitted,
   width: 25,
   height: 12,
-  text: { colour: '#eee' },
   series: [
     { id: "submissions", label: "Cumulative individual ballot entries",
       yValues: metrics.ballot.by_date.columns.cumulative_submissions,
@@ -116,8 +115,7 @@ limitations:
     }
   ],
   plotArea: {
-    yMax: metrics.ballot.current.tickets + 1 | round(-3, 'ceil'),
-    colour: 'var(--l23-dark-blue-grey)'
+    yMax: metrics.ballot.current.tickets + 1 | round(-3, 'ceil')
   },
   padding: {
     left: 4,

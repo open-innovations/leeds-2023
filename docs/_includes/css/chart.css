@@ -25,6 +25,8 @@
 }
 
 .chart {
+  --colour:#eee;
+  --plot-background:var(--l23-dark-blue-grey);
   & .line {
     stroke-width: 2px;
   }

@@ -47,7 +47,7 @@ def summarise():
     data = load_raw_data()
     summarise_by_ward(data, os.path.join(VIEW_DIR, 'by_ward.csv'))
     summarise_by_week(data, os.path.join(VIEW_DIR, 'by_week.csv'))
-    summarise_by_local_authority(data, os.path.join(VIEW_DIR, 'by_local_authority.csv'))
+    summarise_by_local_authority(data, os.path.join(VIEW_DIR, 'by_local_authority.csv'),os.path.join(VIEW_DIR, 'la_stats.json'))
 
 
 def patch():

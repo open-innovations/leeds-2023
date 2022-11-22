@@ -1,8 +1,10 @@
 import logging
 import pandas as pd
 from metrics.volunteers.states import STATUS_PRE_APPLY, STATUS_APPLY, STATUS_OFFER, STATUS_CONFIRMED, STATUS_DROP
+from util.geography import local_authority_stats
 
-def summarise_by_local_authority(data, file_path):
+
+def summarise_by_local_authority(data, file_path_csv, file_path_json ):
     logging.info('Summarising by local authority')
     by_local_authority = data.groupby(['local_authority_code'])
     by_local_authority = pd.DataFrame({
@@ -12,8 +14,14 @@ def summarise_by_local_authority(data, file_path):
         STATUS_CONFIRMED: by_local_authority[STATUS_CONFIRMED].count(),
         STATUS_DROP: by_local_authority[STATUS_DROP].count(),
     }).fillna(0).astype(int)
-    logging.info('Writing `%s`', file_path)
-    by_local_authority.to_csv(file_path, na_rep=0)
+    logging.info('Writing `%s`', file_path_csv)
+    by_local_authority.to_csv(file_path_csv, na_rep=0)
+
+    stats = {}
+    for col in [STATUS_PRE_APPLY, STATUS_APPLY, STATUS_OFFER, STATUS_CONFIRMED, STATUS_DROP]:
+        stats[col] = local_authority_stats(codes=by_local_authority.index, counts=by_local_authority[col]).convert_dtypes(convert_integer=True)
+
+    pd.DataFrame(stats).to_json(file_path_json)
 
 
 def summarise_by_ward(data, file_path):

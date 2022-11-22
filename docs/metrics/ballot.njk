@@ -72,6 +72,25 @@ limitations:
   <strong>{{ metrics.ballot.local_autority_stats.NOT_PROVIDED }}</strong> ballot entries were submitted without postcodes.
 </p>
 
+<p>
+  Entries from the Leeds City Region are shown below.
+</p>
+
+{% comp 'layout.figure', {
+  title: 'Count of individual ballot entries by local authority of residence',
+  max_width: '40rem'
+} %}
+  {{ comp.charts.hexmap({
+    hexjson: hex.leeds_city_region,
+    data: metrics.ballot.by_local_authority.rows,
+    matchKey: 'la_code',
+    valueProp: 'submissions',
+    popup: popupSubmissions,
+    bgColour: '#BBB',
+    title: 'Count of ballot submissions by local authority of residence'
+  }) | safe }}
+{% endcomp %}
+
 <h2>
   Growth in ballot entries and allocated seats over time
 </h2>

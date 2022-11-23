@@ -30,3 +30,7 @@ def process():
     })
     print(by_stage_and_type)
     by_stage_and_type.to_csv('data/metrics/fundraising/amount_by_stage_and_type.csv')
+
+
+if __name__ == '__main__':
+    process()

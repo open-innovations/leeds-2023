@@ -55,6 +55,7 @@ jobs:
 
         run: |
           dvc pull
+          dvc update -R working
           dvc repro -R scripts/reference_data
           dvc repro -R scripts/metrics
 

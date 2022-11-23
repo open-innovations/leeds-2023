@@ -1,0 +1,31 @@
+schema: '2.0'
+stages:
+  transform:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/fundraising/transform.py
+    deps:
+    - path: scripts/metrics/fundraising/transform.py
+      md5: d0b3ec00fb8e93c87b182f44d8e79247
+      size: 1059
+    - path: working/fundraising/data_organisation_fundraising.csv
+      md5: 0bf9f06b2b0f6cdcafae14047cb0fa7e
+      size: 67947
+    outs:
+    - path: data/metrics/fundraising/pipeline.csv
+      md5: f44cf19f17494e2adb30ce61e1ef8ed7
+      size: 8258
+  prepare:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/fundraising/prepare.py
+    deps:
+    - path: data/metrics/fundraising/pipeline.csv
+      md5: f44cf19f17494e2adb30ce61e1ef8ed7
+      size: 8258
+    - path: scripts/metrics/fundraising/prepare.py
+      md5: d3187f6e903e4bc0e4601bc4f152ebfc
+      size: 833
+    outs:
+    - path: docs/_data/metrics/fundraising/count_by_sector_and_stage.csv
+      md5: 0b703172cdf4569c510d59307adc164b
+      size: 1812
+    - path: docs/_data/metrics/fundraising/count_by_stage.csv
+      md5: b1313317512ebf2b9068f7e04d7e3cc8
+      size: 123

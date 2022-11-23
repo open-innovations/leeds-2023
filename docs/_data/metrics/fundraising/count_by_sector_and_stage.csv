@@ -1,12 +1,22 @@
 sector,stage,count
+Arts And Culture,Ask/Proposal,1
+Arts And Culture,Research,4
+Arts And Culture,Unknown,4
+Arts And Culture,Won,3
+Charity,Identify,1
+Charity,Research,1
+Construction,Ask/Proposal,2
 Construction,Cultivate,3
 Construction,Identify,2
-Construction,Research,12
+Construction,Research,11
 Construction,Steward,3
 Construction,Won,1
+Consultancy,Lost,1
 Consultancy,Research,3
 Consultancy,Steward,2
+Education,Research,1
 Education,Steward,8
+Engineering,Ask/Proposal,1
 Engineering,Research,1
 Fashion,Steward,1
 Finance,Ask/Proposal,1
@@ -23,26 +33,28 @@ Food And Beverage,Negotiation,1
 Food And Beverage,Plan,1
 Hospitality,Cultivate,3
 Hospitality,Research,6
+Hospitality,Steward,1
 Law,Ask/Proposal,1
-Law,Cultivate,3
+Law,Cultivate,2
 Law,Identify,3
 Law,Research,7
-Law,Steward,2
+Law,Steward,3
+Local Government,Cultivate,1
 Logistics,Research,2
 Manufacturing,Research,5
-Marketing,Cultivate,1
+Marketing,Steward,1
 Media,Cultivate,2
 Media,Plan,1
 Media,Research,1
 Media,Steward,1
 Property And Real Estate,Ask/Proposal,2
-Property And Real Estate,Cultivate,5
+Property And Real Estate,Cultivate,4
 Property And Real Estate,Identify,2
 Property And Real Estate,Lost,2
 Property And Real Estate,Negotiation,1
-Property And Real Estate,Research,20
+Property And Real Estate,Research,21
 Property And Real Estate,Steward,1
-Property And Real Estate,Won,1
+Property And Real Estate,Won,3
 Recruitment,Research,1
 Retail,Ask/Proposal,1
 Retail,Cultivate,1
@@ -50,14 +62,22 @@ Retail,Lost,1
 Retail,Plan,1
 Retail,Research,2
 Sport,Cultivate,1
-Tech,Ask/Proposal,1
+Tech,Ask/Proposal,3
 Tech,Cultivate,4
 Tech,Lost,1
 Tech,Plan,2
-Tech,Research,18
-Travel,Ask/Proposal,1
-Travel,Cultivate,2
+Tech,Research,17
+Travel,Ask/Proposal,2
+Travel,Cultivate,1
 Travel,Lost,1
 Travel,Research,1
+Travel,Won,1
+Unknown,Ask/Proposal,8
+Unknown,Cultivate,3
+Unknown,Lost,3
+Unknown,Plan,2
+Unknown,Research,40
+Unknown,Unknown,8
+Unknown,Won,10
 Utilities,Cultivate,1
 Utilities,Research,1

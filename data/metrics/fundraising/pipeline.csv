@@ -1,0 +1,267 @@
+id,sector,stage,bid_stage_sponsor
+3,Tech,Research,Unknown
+4,Law,Steward,No
+5,Finance,Research,Unknown
+6,Property And Real Estate,Research,Unknown
+7,Tech,Research,Pledged but unpaid
+8,Hospitality,Research,No
+9,Construction,Research,Unknown
+10,Food And Beverage,Lost,No
+11,Construction,Identify,Unknown
+12,Retail,Ask/Proposal,Unknown
+13,Construction,Research,Unknown
+14,Tech,Research,Unknown
+15,Property And Real Estate,Research,No
+16,Tech,Research,Unknown
+17,Tech,Research,Unknown
+18,Construction,Won,No
+19,Finance,Plan,Unknown
+20,Food And Beverage,Cultivate,Unknown
+21,Tech,Cultivate,Unknown
+22,Unknown,Cultivate,Unknown
+23,Media,Research,Unknown
+24,Finance,Research,Unknown
+25,Property And Real Estate,Won,Unknown
+26,Tech,Cultivate,Unknown
+27,Fashion,Steward,Unknown
+28,Construction,Identify,Unknown
+29,Construction,Ask/Proposal,Unknown
+30,Food And Beverage,Identify,Unknown
+31,Property And Real Estate,Research,No
+32,Property And Real Estate,Research,Unknown
+33,Media,Cultivate,Unknown
+34,Property And Real Estate,Cultivate,Unknown
+35,Tech,Plan,Unknown
+36,Construction,Research,Unknown
+37,Law,Ask/Proposal,Unknown
+38,Logistics,Research,Unknown
+39,Tech,Research,Unknown
+40,Finance,Research,Unknown
+41,Tech,Research,Unknown
+42,Hospitality,Cultivate,Unknown
+43,Construction,Research,Unknown
+44,Property And Real Estate,Research,Unknown
+45,Unknown,Ask/Proposal,Unknown
+46,Law,Steward,Unknown
+47,Property And Real Estate,Research,No
+48,Construction,Research,Unknown
+49,Construction,Research,Unknown
+50,Property And Real Estate,Research,Unknown
+51,Unknown,Research,Unknown
+52,Travel,Won,Unknown
+53,Finance,Research,Unknown
+54,Tech,Research,Unknown
+55,Law,Research,Unknown
+56,Retail,Research,Unknown
+57,Property And Real Estate,Research,Unknown
+58,Property And Real Estate,Research,Unknown
+59,Property And Real Estate,Research,Unknown
+60,Education,Steward,No
+61,Property And Real Estate,Research,Unknown
+62,Law,Cultivate,Unknown
+63,Construction,Steward,No
+64,Food And Beverage,Plan,Unknown
+65,Logistics,Research,Unknown
+66,Tech,Ask/Proposal,Unknown
+67,Consultancy,Research,Unknown
+68,Utilities,Research,Unknown
+69,Hospitality,Research,No
+70,Consultancy,Research,Unknown
+71,Construction,Cultivate,Unknown
+72,Property And Real Estate,Research,Unknown
+73,Property And Real Estate,Identify,Unknown
+74,Property And Real Estate,Steward,Unknown
+75,Property And Real Estate,Research,No
+76,Law,Research,No
+77,Consultancy,Steward,Unknown
+78,Property And Real Estate,Won,Unknown
+79,Education,Steward,Unknown
+80,Education,Steward,Unknown
+81,Retail,Plan,Unknown
+82,Travel,Research,Unknown
+83,Finance,Steward,Unknown
+84,Education,Steward,Unknown
+85,Sport,Cultivate,Unknown
+86,Unknown,Research,Unknown
+87,Travel,Ask/Proposal,Unknown
+88,Education,Steward,Unknown
+89,Retail,Cultivate,Unknown
+90,Travel,Cultivate,Unknown
+91,Unknown,Research,Unknown
+92,Finance,Cultivate,Unknown
+93,Manufacturing,Research,Unknown
+94,Finance,Ask/Proposal,No
+95,Law,Identify,Unknown
+96,Hospitality,Research,Unknown
+97,Property And Real Estate,Ask/Proposal,Unknown
+98,Construction,Steward,Unknown
+99,Property And Real Estate,Negotiation,Unknown
+100,Property And Real Estate,Research,Unknown
+101,Tech,Research,Unknown
+102,Hospitality,Cultivate,Unknown
+103,Tech,Research,Unknown
+104,Food And Beverage,Negotiation,Unknown
+105,Manufacturing,Research,Unknown
+106,Education,Steward,Unknown
+107,Education,Steward,Unknown
+108,Tech,Research,Unknown
+110,Hospitality,Research,No
+111,Property And Real Estate,Research,Unknown
+112,Travel,Lost,No
+113,Property And Real Estate,Lost,Unknown
+114,Tech,Research,Unknown
+115,Law,Research,No
+116,Tech,Research,Unknown
+117,Unknown,Research,Unknown
+118,Unknown,Research,Unknown
+119,Consultancy,Steward,Unknown
+120,Construction,Steward,Unknown
+121,Construction,Research,Unknown
+122,Manufacturing,Research,Unknown
+123,Retail,Lost,Unknown
+124,Unknown,Lost,Unknown
+125,Property And Real Estate,Cultivate,Unknown
+126,Property And Real Estate,Research,Unknown
+127,Unknown,Research,Unknown
+128,Law,Identify,Unknown
+129,Tech,Research,Unknown
+130,Finance,Steward,Unknown
+131,Tech,Research,Unknown
+132,Media,Plan,Unknown
+133,Tech,Lost,Unknown
+134,Tech,Research,Unknown
+135,Construction,Research,Unknown
+136,Law,Research,Unknown
+137,Law,Steward,Unknown
+138,Property And Real Estate,Research,Unknown
+139,Property And Real Estate,Cultivate,No
+140,Engineering,Research,Unknown
+141,Tech,Research,Unknown
+142,Property And Real Estate,Research,No
+143,Hospitality,Research,No
+144,Property And Real Estate,Identify,Unknown
+145,Recruitment,Research,Unknown
+146,Finance,Research,Unknown
+147,Media,Steward,Unknown
+148,Property And Real Estate,Lost,Unknown
+149,Education,Steward,Unknown
+150,Manufacturing,Research,Unknown
+151,Finance,Research,Unknown
+152,Property And Real Estate,Ask/Proposal,Unknown
+153,Finance,Lost,Unknown
+154,Law,Identify,Unknown
+155,Construction,Cultivate,Unknown
+156,Law,Cultivate,Unknown
+157,Construction,Research,Unknown
+158,Construction,Research,Unknown
+159,Property And Real Estate,Cultivate,Unknown
+160,Construction,Cultivate,Unknown
+161,Tech,Cultivate,Unknown
+162,Finance,Lost,Paid
+163,Utilities,Cultivate,Unknown
+258,Marketing,Steward,No
+259,Property And Real Estate,Won,No
+261,Construction,Research,No
+262,Law,Research,No
+263,Property And Real Estate,Research,No
+265,Hospitality,Cultivate,No
+267,Unknown,Won,Unknown
+268,Unknown,Cultivate,Unknown
+269,Unknown,Plan,Unknown
+270,Finance,Negotiation,Unknown
+271,Consultancy,Lost,Unknown
+272,Unknown,Won,Unknown
+273,Manufacturing,Research,No
+338,Media,Cultivate,Unknown
+339,Tech,Cultivate,Unknown
+340,Arts And Culture,Unknown,No
+341,Unknown,Ask/Proposal,Unknown
+342,Tech,Ask/Proposal,No
+343,Arts And Culture,Unknown,Unknown
+344,Arts And Culture,Unknown,Unknown
+345,Arts And Culture,Unknown,Unknown
+366,Construction,Ask/Proposal,Paid
+406,Tech,Ask/Proposal,Unknown
+407,Law,Research,No
+408,Hospitality,Research,No
+409,Law,Research,Unknown
+410,Retail,Research,No
+411,Consultancy,Research,No
+414,Unknown,Won,Unknown
+416,Unknown,Won,Unknown
+417,Unknown,Cultivate,Unknown
+418,Local Government,Cultivate,Unknown
+419,Arts And Culture,Won,Unknown
+427,Charity,Identify,Unknown
+444,Unknown,Unknown,Unknown
+450,Unknown,Won,Unknown
+451,Unknown,Won,Unknown
+452,Unknown,Unknown,Unknown
+459,Unknown,Unknown,Unknown
+460,Unknown,Won,Unknown
+463,Unknown,Unknown,Unknown
+466,Unknown,Research,Unknown
+471,Unknown,Unknown,Unknown
+483,Hospitality,Steward,Unknown
+490,Unknown,Won,Unknown
+491,Unknown,Unknown,Unknown
+498,Unknown,Research,Unknown
+506,Unknown,Won,Unknown
+530,Arts And Culture,Won,Unknown
+531,Arts And Culture,Won,Unknown
+574,Tech,Plan,Unknown
+575,Engineering,Ask/Proposal,Unknown
+576,Unknown,Won,Unknown
+577,Unknown,Research,Unknown
+578,Unknown,Lost,Unknown
+579,Unknown,Unknown,Unknown
+580,Unknown,Unknown,Unknown
+581,Unknown,Ask/Proposal,Unknown
+582,Unknown,Ask/Proposal,Unknown
+583,Unknown,Research,Unknown
+584,Unknown,Research,Unknown
+585,Unknown,Research,Unknown
+586,Unknown,Research,Unknown
+587,Unknown,Research,Unknown
+588,Unknown,Research,Unknown
+589,Unknown,Research,Unknown
+599,Arts And Culture,Ask/Proposal,Unknown
+600,Unknown,Research,No
+601,Unknown,Research,Unknown
+602,Unknown,Ask/Proposal,Unknown
+603,Unknown,Research,Unknown
+604,Unknown,Research,Unknown
+605,Unknown,Research,Unknown
+606,Unknown,Research,Unknown
+607,Unknown,Research,Unknown
+608,Unknown,Ask/Proposal,Unknown
+609,Unknown,Research,Unknown
+610,Arts And Culture,Research,Unknown
+613,Unknown,Research,Unknown
+614,Unknown,Research,Unknown
+615,Unknown,Research,Unknown
+616,Unknown,Research,Unknown
+617,Unknown,Research,Unknown
+618,Unknown,Research,Unknown
+619,Unknown,Research,Unknown
+620,Arts And Culture,Research,Unknown
+621,Arts And Culture,Research,Unknown
+622,Arts And Culture,Research,Unknown
+623,Unknown,Research,Unknown
+624,Unknown,Research,Unknown
+625,Unknown,Lost,Unknown
+627,Unknown,Research,Unknown
+628,Unknown,Research,Unknown
+629,Unknown,Ask/Proposal,Unknown
+630,Unknown,Research,Unknown
+631,Unknown,Research,Unknown
+632,Unknown,Plan,Unknown
+633,Unknown,Research,Unknown
+634,Unknown,Research,Unknown
+635,Unknown,Ask/Proposal,Unknown
+638,Property And Real Estate,Research,Unknown
+639,Property And Real Estate,Research,Unknown
+640,Education,Research,Unknown
+641,Travel,Ask/Proposal,Unknown
+646,Unknown,Research,Unknown
+647,Charity,Research,Unknown

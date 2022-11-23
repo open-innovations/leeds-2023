@@ -1,0 +1,24 @@
+stages:
+  transform:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/fundraising/transform.py
+    wdir: ../../..
+    deps:
+      - scripts/metrics/fundraising/transform.py
+      - working/fundraising/data_organisation_fundraising.csv
+    outs:
+      - data/metrics/fundraising/pipeline.csv:
+          persist: true
+          cache: false
+  prepare:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/fundraising/prepare.py
+    wdir: ../../..
+    deps:
+      - scripts/metrics/fundraising/prepare.py
+      - data/metrics/fundraising/pipeline.csv
+    outs:
+      - docs/_data/metrics/fundraising/count_by_sector_and_stage.csv:
+          persist: true
+          cache: false
+      - docs/_data/metrics/fundraising/count_by_stage.csv:
+          persist: true
+          cache: false

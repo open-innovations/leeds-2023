@@ -1,0 +1,10 @@
+md5: 4018df9a333320e92672efd630386deb
+frozen: true
+deps:
+- etag: 288062ae85e8b54ed788009817c9a40d
+  size: 67947
+  path: s3://open-innovations-data/filestash/leeds2023/fundraising/data_organisation_fundraising.csv
+outs:
+- md5: 0bf9f06b2b0f6cdcafae14047cb0fa7e
+  size: 67947
+  path: data_organisation_fundraising.csv

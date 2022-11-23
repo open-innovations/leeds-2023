@@ -22,16 +22,29 @@ def update():
     # Capture some stats
     old_rowcount = data.shape[0]
     new_rowcount = new_data.shape[0]
-    # Copy the statust to a new column
+
+    # Copy the status, ward code and la code to new columns
     new_data['new_status'] = new_data.status
+    new_data['new_ward_code'] = new_data.ward_code
+    new_data['new_local_authority_code'] = new_data.local_authority_code
+
     # Merge the datasets! data wins!
     data = data.combine_first(new_data)
+
     # Count how many rows have changed (i.e. were in the old dataset and have new status)
     changed_rowcount = data[data.status != data.new_status].shape[0]
+
+    # Check if the record is still current
+    data['current'] = data.index.isin(new_data.index)
+
     # Overwrite the status column
     data.status = data.new_status
-    # Remove the new_status column
-    data.drop(columns=['new_status'], inplace=True)
+    data.ward_code = data.new_ward_code.fillna('UNKNOWN')
+    data.local_authority_code = data.new_local_authority_code.fillna('UNKNOWN')
+
+    # Remove the new_* columns
+    data.drop(columns=['new_status', 'new_ward_code', 'new_local_authority_code'], inplace=True)
+
     logging.info('Adding {new} and updating status for {changes} volunteers'.format(
       new=new_rowcount - old_rowcount,
       changes=changed_rowcount

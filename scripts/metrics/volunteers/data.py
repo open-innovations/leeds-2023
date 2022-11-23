@@ -92,6 +92,6 @@ def save_raw_data(data):
     logging.info('Writing `%s`', file_path)
     data.sort_values(by=['created', 'hash'], ascending=[True, True])[
         [
-          'ward_code', 'local_authority_code', 'status', 'created', 'applied', 'offered', 'confirmed', 'rejected'
+          'ward_code', 'local_authority_code', 'status', 'current', 'created', 'applied', 'offered', 'confirmed', 'rejected'
         ]
     ].to_csv(file_path)

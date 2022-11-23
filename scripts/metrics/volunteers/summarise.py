@@ -4,7 +4,7 @@ from metrics.volunteers.states import STATUS_PRE_APPLY, STATUS_APPLY, STATUS_OFF
 from util.geography import local_authority_stats
 
 
-def summarise_by_local_authority(data, file_path_csv, file_path_json ):
+def summarise_by_local_authority(data, file_path_csv, file_path_json, file_path_wy ):
     logging.info('Summarising by local authority')
     by_local_authority = data.groupby(['local_authority_code'])
     by_local_authority = pd.DataFrame({
@@ -17,6 +17,16 @@ def summarise_by_local_authority(data, file_path_csv, file_path_json ):
     logging.info('Writing `%s`', file_path_csv)
     by_local_authority.to_csv(file_path_csv, na_rep=0)
 
+    
+    wy = (by_local_authority.loc[by_local_authority.index.isin(['E08000035','E08000032','E08000036','E08000034','E08000033'])]
+                .rename(index={'E08000035':'Leeds','E08000032':'Bradford','E08000036':'Wakefield','E08000034':'Kirklees','E08000033':'Calderdale'})
+                .sort_values(['created','applied','offered'],ascending=False))
+
+    wy.index.name = 'Local Authority'
+    wy.columns = wy.columns.str.title()        
+    wy.to_csv(file_path_wy)
+    
+    #wy .to_csv(os.path.join(VIEW_DIR, 'west_yorkshire.csv'))
     stats = {}
     for col in [STATUS_PRE_APPLY, STATUS_APPLY, STATUS_OFFER, STATUS_CONFIRMED, STATUS_DROP]:
         stats[col] = local_authority_stats(codes=by_local_authority.index, counts=by_local_authority[col]).convert_dtypes(convert_integer=True)

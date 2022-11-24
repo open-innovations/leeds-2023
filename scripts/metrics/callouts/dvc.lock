@@ -1,9 +1,9 @@
 schema: '2.0'
 stages:
   extract:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/stage.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/extract.py
     deps:
-    - path: scripts/metrics/callouts/stage.py
+    - path: scripts/metrics/callouts/extract.py
       md5: 7f5602d084d7dd8772c8250fe79e0754
       size: 687
     outs:
@@ -12,14 +12,14 @@ stages:
       size: 615
       nfiles: 1
   transform:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/build.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/transform.py
     deps:
     - path: data/reference/postcodes.csv
       md5: 7196768cdd13ac9750cf4148d19d498c
       size: 75969456
-    - path: scripts/metrics/callouts/build.py
-      md5: f0c3999b7395e8583f3ab4b9e2528a5f
-      size: 414
+    - path: scripts/metrics/callouts/transform.py
+      md5: a9d9491a9e4a2d623c1f0e94bd456454
+      size: 416
     - path: working/metrics/callouts/
       md5: 1167c18836960f1f9ec28feaa01c4a61.dir
       size: 615

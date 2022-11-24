@@ -1,20 +1,20 @@
 # Callouts pipelines
 stages:
   extract:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/stage.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/extract.py
     wdir: ../../..
     always_changed: true
     deps:
-    - scripts/metrics/callouts/stage.py
+    - scripts/metrics/callouts/extract.py
     outs:
     - working/metrics/callouts/:
         persist: true
         cache: false
   transform:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/build.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/transform.py
     wdir: ../../..
     deps:
-    - scripts/metrics/callouts/build.py
+    - scripts/metrics/callouts/transform.py
     - working/metrics/callouts/
     - data/reference/postcodes.csv
     outs:

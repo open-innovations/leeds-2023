@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from stage import STAGING_DIR
+from extract import STAGING_DIR
 import util.geography as geo
 
 DATA_DIR='data/metrics/callouts/'

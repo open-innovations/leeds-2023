@@ -1,0 +1,16 @@
+schema: '2.0'
+stages:
+  transform:
+    cmd: PYTHONPATH=scripts/ python3 scripts/metrics/schools/transform.py
+    deps:
+    - path: scripts/metrics/schools/transform.py
+      md5: 6e7e6376e484442855bf760001ee624c
+      size: 1036
+    - path: working/manual/schools/
+      md5: 68c7f388830321813da144a2d07ba6df.dir
+      size: 54399
+      nfiles: 1
+    outs:
+    - path: data/metrics/schools/schools_engagement.csv
+      md5: 9392a50d1849768c95f8132d29c5dd44
+      size: 529

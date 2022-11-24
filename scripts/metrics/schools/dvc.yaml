@@ -1,0 +1,14 @@
+stages:
+  transform:
+    wdir: ../../..
+    cmd: PYTHONPATH=scripts/ python3 scripts/metrics/schools/transform.py
+    deps:
+      - scripts/metrics/schools/transform.py
+      - working/manual/schools/
+    outs:
+      - data/metrics/schools/schools_engagement.csv:
+          persist: true
+          cache: false
+
+
+      

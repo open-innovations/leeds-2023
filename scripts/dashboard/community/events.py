@@ -34,3 +34,7 @@ def summarise_events():
     report.index.names = ['ward_code']
 
     report.to_csv('docs/dashboard/community/_data/events.csv')
+
+
+if __name__ == '__main__':
+    summarise_events()

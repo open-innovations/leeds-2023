@@ -1,0 +1,40 @@
+schema: '2.0'
+stages:
+  prepare_events:
+    cmd: PYTHONPATH=scripts/ python3 scripts/dashboard/community/events.py
+    deps:
+    - path: data/metrics/roadshows/attendance.csv
+      md5: 79c0a79fcc6634d13321b4fa4db9ce20
+      size: 1353
+    - path: data/metrics/schools/schools_engagement.csv
+      md5: 9392a50d1849768c95f8132d29c5dd44
+      size: 529
+    - path: docs/_data/metrics/mwmcmn/celeb_event_by_ward.csv
+      md5: db4113d3ce3ebaba57437389ce5285e6
+      size: 950
+    outs:
+    - path: docs/dashboard/community/_data/events.csv
+      md5: d933467485da7f60458e68f441ccee56
+      size: 1297
+  prepare_residents:
+    cmd: PYTHONPATH=scripts/ python3 scripts/dashboard/community/residents.py
+    deps:
+    - path: data/metrics/ballot/ballot_entries.csv
+      md5: 0e00682efa57a7ce97fcab263dcca293
+      size: 132838
+    - path: data/metrics/schools/schools_engagement.csv
+      md5: 9392a50d1849768c95f8132d29c5dd44
+      size: 529
+    - path: data/metrics/volunteers/volunteers.csv
+      md5: 67805ed30588f053c5ebc4bfcb287c80
+      size: 77850
+    - path: data/reference/leeds_wards.csv
+      md5: def43962ef47532a30dbd40136b2d0be
+      size: 1034
+    - path: docs/_data/metrics/roadshows/by_ward.csv
+      md5: a6c1eabb3c8da4db2c07cc46d07eb70f
+      size: 1517
+    outs:
+    - path: docs/dashboard/community/_data/residents.csv
+      md5: 1a36790abe78aaae0bc94b9f4cb85ba4
+      size: 1424

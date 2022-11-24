@@ -48,3 +48,6 @@ def summarise_activity():
 
     # Save to CSV
     report.to_csv('docs/dashboard/community/_data/residents.csv')
+
+if __name__ == '__main__':
+    summarise_activity()

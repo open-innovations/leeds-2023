@@ -1,6 +1,6 @@
 # Callouts pipelines
 stages:
-  stage_build:
+  extract_transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/process.py
     wdir: ../../..
     always_changed: true
@@ -11,7 +11,7 @@ stages:
     - data/metrics/ballot/:
         persist: true
         cache: false
-  summarise:
+  prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/summarize.py
     wdir: ../../..
     deps:

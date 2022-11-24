@@ -1987,6 +1987,8 @@ date_submitted,la_code,ward_code,artist_age_group,artwork_medium,source
 2022-11-24,E06000057,E05009142,50-54,photo,recommendedByFriendOrFamily
 2022-11-24,E07000115,E05009579,60-64,photo,throughCulturalOrArtsOrg
 2022-11-24,E07000165,E05011317,under16,photo,leeds2023Event
+2022-11-24,E08000032,E05001354,40-44,photo,leeds2023SocialMedia
+2022-11-24,E08000032,E05001362,40-44,photo,communityEventOrOrg
 2022-11-24,E08000032,E05001362,under16,photo,communityEventOrOrg
 2022-11-24,E08000032,E05001362,under16,photo,communityEventOrOrg
 2022-11-24,E08000032,E05001362,under16,photo,workplace
@@ -1997,6 +1999,11 @@ date_submitted,la_code,ward_code,artist_age_group,artwork_medium,source
 2022-11-24,E08000035,E05011384,80-84,photo,recommendedByFriendOrFamily
 2022-11-24,E08000035,E05011384,under16,photo,recommendedByFriendOrFamily
 2022-11-24,E08000035,E05011385,40-44,photo,advertising
+2022-11-24,E08000035,E05011388,50-54,photo,communityEventOrOrg
+2022-11-24,E08000035,E05011388,under16,photo,communityEventOrOrg
+2022-11-24,E08000035,E05011388,under16,photo,communityEventOrOrg
+2022-11-24,E08000035,E05011388,under16,photo,communityEventOrOrg
+2022-11-24,E08000035,E05011388,under16,photo,communityEventOrOrg
 2022-11-24,E08000035,E05011390,40-44,photo,leeds2023Website
 2022-11-24,E08000035,E05011390,50-54,photo,throughCulturalOrArtsOrg
 2022-11-24,E08000035,E05011390,60-64,photo,recommendedByFriendOrFamily
@@ -2017,7 +2024,9 @@ date_submitted,la_code,ward_code,artist_age_group,artwork_medium,source
 2022-11-24,E08000035,E05011402,40-44,photo,throughSchool
 2022-11-24,E08000035,E05011402,unspecified,photo,leeds2023Event
 2022-11-24,E08000035,E05011402,unspecified,photo,recommendedByFriendOrFamily
+2022-11-24,E08000035,E05011403,16-19,photo,other
 2022-11-24,E08000035,E05011403,20-24,photo,recommendedByFriendOrFamily
+2022-11-24,E08000035,E05011403,25-29,photo,media
 2022-11-24,E08000035,E05011403,25-29,photo,throughCollegeOrUniversity
 2022-11-24,E08000035,E05011403,40-44,photo,throughCulturalOrArtsOrg
 2022-11-24,E08000035,E05011403,unspecified,photo,leeds2023Event
@@ -2031,6 +2040,7 @@ date_submitted,la_code,ward_code,artist_age_group,artwork_medium,source
 2022-11-24,E08000035,E05011403,unspecified,photo,leeds2023Event
 2022-11-24,E08000035,E05011403,unspecified,photo,leeds2023Event
 2022-11-24,E08000035,E05011405,25-29,photo,recommendedByFriendOrFamily
+2022-11-24,E08000035,E05011405,35-39,photo,throughCulturalOrArtsOrg
 2022-11-24,E08000035,E05011405,40-44,photo,leeds2023Event
 2022-11-24,E08000035,E05011405,75-79,photo,recommendedByFriendOrFamily
 2022-11-24,E08000035,E05011405,under16,photo,media
@@ -2042,6 +2052,7 @@ date_submitted,la_code,ward_code,artist_age_group,artwork_medium,source
 2022-11-24,E08000035,E05012841,60-64,photo,leeds2023Website
 2022-11-24,E08000035,E05012842,65-69,photo,leeds2023Event
 2022-11-24,E08000035,E05012842,75-79,photo,media
+2022-11-24,E08000035,E05013830,16-19,photo,throughCollegeOrUniversity
 2022-11-24,E08000036,E05001464,60-64,photo,communityEventOrOrg
 2022-11-24,E09000033,E05013798,60-64,media,other
 2022-11-24,NOT_PROVIDED,NOT_PROVIDED,unspecified,photo,leeds2023Event

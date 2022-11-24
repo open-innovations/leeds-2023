@@ -1,6 +1,6 @@
 schema: '2.0'
 stages:
-  stage:
+  extract:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/stage.py
     deps:
     - path: scripts/metrics/callouts/stage.py
@@ -11,7 +11,7 @@ stages:
       md5: 1167c18836960f1f9ec28feaa01c4a61.dir
       size: 615
       nfiles: 1
-  build:
+  transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/build.py
     deps:
     - path: data/reference/postcodes.csv

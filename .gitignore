@@ -1,6 +1,8 @@
 ## TEMP FIX
 deno.lock
 
+.env.fish
+
 
 _site/
 .sass-cache/

@@ -1,6 +1,6 @@
 # Callouts pipelines
 stages:
-  stage:
+  extract:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/stage.py
     wdir: ../../..
     always_changed: true
@@ -10,7 +10,7 @@ stages:
     - working/metrics/callouts/:
         persist: true
         cache: false
-  build:
+  transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/build.py
     wdir: ../../..
     deps:

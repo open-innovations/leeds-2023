@@ -4,9 +4,9 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/fundraising/transform.py
     deps:
     - path: scripts/metrics/fundraising/transform.py
-      md5: d0b3ec00fb8e93c87b182f44d8e79247
-      size: 1059
-    - path: working/fundraising/data_organisation_fundraising.csv
+      md5: 77ad96a164895e9df8f5e6cc1aea6ab9
+      size: 1066
+    - path: working/manual/fundraising/data_organisation_fundraising.csv
       md5: 509c80a5f25c3f4d52aa2821539b8a05
       size: 68055
     outs:

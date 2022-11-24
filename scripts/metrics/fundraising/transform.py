@@ -12,7 +12,7 @@ columns = {
 
 
 def load_extract():
-    return pd.read_csv('working/fundraising/data_organisation_fundraising.csv',
+    return pd.read_csv('working/manual/fundraising/data_organisation_fundraising.csv',
                        usecols=columns.keys()).rename(columns=columns)
 
 

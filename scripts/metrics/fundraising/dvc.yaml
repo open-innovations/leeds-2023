@@ -4,7 +4,7 @@ stages:
     wdir: ../../..
     deps:
       - scripts/metrics/fundraising/transform.py
-      - working/fundraising/data_organisation_fundraising.csv
+      - working/manual/fundraising/data_organisation_fundraising.csv
     outs:
       - data/metrics/fundraising/pipeline.csv:
           persist: true

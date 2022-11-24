@@ -1,10 +1,10 @@
 name: Data Pipeline
 
-'on':
+"on":
   workflow_dispatch:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '30 23 * * *'
+    - cron: "30 23 * * *"
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: "3.10"
           cache: pip
 
       - name: Install dependencies
@@ -27,6 +27,19 @@ jobs:
           mkdir credentials
           echo ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }} | base64 -d > ./credentials/serviceAccountKey.json
 
+      - name: Run DVC pipelines
+        env:
+          PYTHONPATH: scripts
+          GOOGLE_APPLICATION_CREDENTIALS: "./credentials/serviceAccountKey.json"
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+        run: |
+          # dvc pull
+          dvc update -R working
+          dvc repro -R scripts/reference_data
+          dvc repro -R scripts/metrics
+
       - name: Update data
         env:
           PYTHONPATH: scripts
@@ -34,7 +47,7 @@ jobs:
           OI_SFTP_HOST: ${{ secrets.OI_SFTP_HOST }}
           OI_SFTP_USERNAME: ${{ secrets.OI_SFTP_USERNAME }}
           OI_SFTP_PASSWORD: ${{ secrets.OI_SFTP_PASSWORD }}
-          GOOGLE_APPLICATION_CREDENTIALS: './credentials/serviceAccountKey.json'
+          GOOGLE_APPLICATION_CREDENTIALS: "./credentials/serviceAccountKey.json"
 
         run: |
           python scripts/update_data.py
@@ -45,19 +58,6 @@ jobs:
 
         run: |
           python scripts/process_for_site.py
-      
-      - name: Run DVC pipelines
-        env:
-          PYTHONPATH: scripts
-          GOOGLE_APPLICATION_CREDENTIALS: './credentials/serviceAccountKey.json'
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-
-        run: |
-          # dvc pull
-          dvc update -R working
-          dvc repro -R scripts/reference_data
-          dvc repro -R scripts/metrics
 
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v4

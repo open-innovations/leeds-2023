@@ -1,0 +1,12 @@
+md5: abd12063dcacd8d3b6355dedd97916d4
+frozen: true
+deps:
+- md5: eed610e70846ae203b6b3102c6d94ef9.dir
+  size: 122454
+  nfiles: 2
+  path: s3://open-innovations-data/filestash/leeds2023/
+outs:
+- md5: 6d5002956c62a292e87be78b91642464.dir
+  size: 122454
+  nfiles: 2
+  path: manual

@@ -7,25 +7,25 @@ stages:
       md5: d0b3ec00fb8e93c87b182f44d8e79247
       size: 1059
     - path: working/fundraising/data_organisation_fundraising.csv
-      md5: 0bf9f06b2b0f6cdcafae14047cb0fa7e
-      size: 67947
+      md5: 509c80a5f25c3f4d52aa2821539b8a05
+      size: 68055
     outs:
     - path: data/metrics/fundraising/pipeline.csv
-      md5: f44cf19f17494e2adb30ce61e1ef8ed7
-      size: 8258
+      md5: ed92206916ed97e19315605c31699a6e
+      size: 8068
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/fundraising/prepare.py
     deps:
     - path: data/metrics/fundraising/pipeline.csv
-      md5: f44cf19f17494e2adb30ce61e1ef8ed7
-      size: 8258
+      md5: ed92206916ed97e19315605c31699a6e
+      size: 8068
     - path: scripts/metrics/fundraising/prepare.py
       md5: d3187f6e903e4bc0e4601bc4f152ebfc
       size: 833
     outs:
     - path: docs/_data/metrics/fundraising/count_by_sector_and_stage.csv
-      md5: 0b703172cdf4569c510d59307adc164b
-      size: 1812
+      md5: 380bb0ec146285205c2d3b19d29c6f91
+      size: 1235
     - path: docs/_data/metrics/fundraising/count_by_stage.csv
-      md5: b1313317512ebf2b9068f7e04d7e3cc8
-      size: 123
+      md5: 3468f07c9c55366d5e8acf06670890a8
+      size: 63

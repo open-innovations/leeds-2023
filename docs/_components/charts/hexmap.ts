@@ -69,6 +69,7 @@ type HexmapOptions = {
   title?: string;
   titleProp: string;
   valueProp: string;
+  colourValueProp?: string;
 };
 
 // TODO set hex to something close to rems
@@ -91,6 +92,7 @@ export default function ({
   title = 'Hexmap',
   titleProp = 'n',
   valueProp,
+  colourValueProp,
 }: HexmapOptions) {
   // Capture the layout and hexes from the hexjson
   const layout = hexjson.layout;
@@ -121,7 +123,7 @@ export default function ({
   // Find the biggest value in the hex map
   // TODO Check if this works when the valueProp is a number
   const maxValue = Object.values<HexDefinition>(hexes)
-    .map((h) => parseFloat(<string>h[valueProp]) || 0)
+    .map((h) => parseFloat(<string>h[colourValueProp || valueProp]) || 0)
     .reduce((result, current) => Math.max(result, current), 0);
 
   // Function to calculate if a given row should be shifted to the right
@@ -256,7 +258,9 @@ export default function ({
     const label = <string>config[titleProp];
     let labelText = labelProcessor(label);
     if (labelKey != "" && typeof config[labelKey] === "string") labelText = addTspan(config[labelKey] as string);
+
     const value = <number>config[valueProp] || 0;
+    const colourValue = <number>config[colourValueProp || valueProp] || value;
 
     // Calculate the path based on the layout
     let hexPath: string | undefined = undefined;
@@ -288,7 +292,8 @@ export default function ({
       default:
         throw 'Unsupported layout';
     }
-
+    const fill = colourScale(colourValue / maxValue);
+    
     // TODO this only supports pointy-top hexes at the moment
     return `<g
           id="${uuid}-hex-${hexId}"
@@ -300,11 +305,11 @@ export default function ({
           aria-label="${label} value ${value}"
         >
         <path
-          style="--hex-fill: ${colourScale(value / maxValue)}"
+          style="--hex-fill: ${fill}"
           d="${hexPath}"
         />
         <text
-		  style="fill: ${(Colour(colourScale(value / maxValue))).contrast};"
+		      style="fill: ${(Colour(fill)).contrast};"
           text-anchor="middle"
           dominant-baseline="middle"
           aria-hidden="true"

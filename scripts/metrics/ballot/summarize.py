@@ -2,6 +2,7 @@ import logging
 import os
 
 import pandas as pd
+import numpy as np
 from metrics.ballot.process import load_raw_data, load_group_data
 from util.geography import local_authority_stats
 
@@ -26,6 +27,7 @@ def by_local_authority():
     by_la = pd.DataFrame({
         'submissions': data.groupby('la_code').date_submitted.count()
     })
+    by_la['submissions_scaled'] = np.power(by_la.submissions, 1/3)
     by_la.to_csv(os.path.join(VIEW_DIR, 'by_local_authority.csv'))
     stats = local_authority_stats(codes=by_la.index, counts=by_la.submissions)
     stats.to_json(os.path.join(VIEW_DIR, 'local_autority_stats.json'))

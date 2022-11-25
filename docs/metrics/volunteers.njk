@@ -78,7 +78,10 @@ limitations:
 <p>
   The hex cartograms below show the distribution of volunteers' home addresses across
   the wards of Leeds. Wards with a larger number of resident volunteers are darker in
-  colour. Wards with a count of zero are outlined in a dark border.
+  colour. Wards with a count of zero are outlined in a dark border. Below each cartogram, 
+  there is a breakdown of the total amount of volunteer addresses that are within Leeds, outside 
+  of Leeds and invalid/unknown. An address is invalid/unknown if it could not be mapped to a valid UK postcode.
+  This could be due to a typing error or because it is outside of the UK. 
 </p>
   
 {% comp 'grid.autogrid', { min_width: '20rem' } %}
@@ -93,6 +96,10 @@ limitations:
       bgColour: '#BBB',
       title: 'Initial sign-ups by people living in ward'
     }) | safe }}
+
+   <p>Total within Leeds: <strong>{{metrics.volunteers.la_stats.created.Leeds}}</strong><br>
+    Total outside Leeds: <strong>{{metrics.volunteers.la_stats.created.OUTSIDE_LEEDS}}</strong><br>
+    Total unknown/invalid: <strong>{{metrics.volunteers.la_stats.created.UNKNOWN + metrics.volunteers.la_stats.created.NOT_PROVIDED}}</strong></p>
   </section>
   <section>
     <h3>Applications</h3>
@@ -105,6 +112,10 @@ limitations:
       bgColour: '#BBB',
       title: 'Volunteer applications received from people in ward'
     }) | safe }}
+
+   <p>Total within Leeds: <strong>{{metrics.volunteers.la_stats.applied.Leeds}}</strong><br>
+    Total outside Leeds: <strong>{{metrics.volunteers.la_stats.applied.OUTSIDE_LEEDS}}</strong><br>
+    Total unknown/invalid: <strong>{{metrics.volunteers.la_stats.applied.UNKNOWN + metrics.volunteers.la_stats.applied.NOT_PROVIDED}}</strong></p>
   </section>
   <section>
     <h3>Offers</h3>
@@ -117,6 +128,10 @@ limitations:
       bgColour: '#BBB',
       title: 'Volunteer posts offered to people in ward'
     }) | safe }}
+
+    <p>Total within Leeds: <strong>{{metrics.volunteers.la_stats.offered.Leeds}}</strong><br>
+    Total outside Leeds: <strong>{{metrics.volunteers.la_stats.offered.OUTSIDE_LEEDS}}</strong><br>
+    Total unknown/invalid: <strong>{{metrics.volunteers.la_stats.offered.UNKNOWN + metrics.volunteers.la_stats.offered.NOT_PROVIDED}}</strong></p>
   </section>
   <section>
     <h3>Confirmed</h3>
@@ -129,10 +144,20 @@ limitations:
       bgColour: '#BBB',
       title: 'Confirmed volunteers by ward'
     }) | safe }}
+
+    <p>Total within Leeds: <strong>{{metrics.volunteers.la_stats.confirmed.Leeds}}</strong><br>
+    Total outside Leeds: <strong>{{metrics.volunteers.la_stats.confirmed.OUTSIDE_LEEDS}}</strong><br>
+    Total unknown/invalid: <strong>{{metrics.volunteers.la_stats.confirmed.UNKNOWN + metrics.volunteers.la_stats.confirmed.NOT_PROVIDED}}</strong></p>
   </section>
 {% endcomp %}
 
-
+<h3> West Yorkshire Volunteers</h3>
+{% comp 'layout.block' %}
+{{ comp.charts.table({
+  columns: [{'key' : 'Local Authority','name':'Local Authority'},{'key':'Created','name':'Created'},{'key':'Applied','name':'Applied'},{'key':'Offered','name':'Offered'},{'key':'Confirmed','name':'Confirmed'}],
+  rows: metrics.volunteers.west_yorkshire.rows
+}) | safe }}
+{% endcomp %}
 <h2>Growth in volunteering</h2>
 
 {% comp 'layout.figure', {

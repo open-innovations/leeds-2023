@@ -33,7 +33,7 @@ The repo uses data held in AWS S3 buckets. To access this, make sure
 Here are some useful DVC commands:
 
 * Check the DVC status by running `dvc status`.
-* To pull the latest data run `dvc pull`.
+* To pull the latest data run `dvc update -R working`.
 * You can run all pipelines with `dvc repro -P`. If no stage dependencies (input
   files or code) have changed, nothing will be executed.
 * To list the available pipeline stages run `dvc stage list --all`. You can see the

@@ -1,50 +1,13 @@
 /*********************/
 /* UTILITY FUNCTIONS */
 /*********************/
-// TODO factor these out to a util library
-
-/**
- * Generator function to return a counter function which can be used to create incrementing numbers
- * on each call.
- * 
- * @returns A function which returns the next number each time it's called.
- */
-const counter = () => {
-  let i = 0;
-  function* sequentialNumberGenerator() {
-    while (true) yield i++;
-  }
-  const sequentialNumber = sequentialNumberGenerator();
-  return () => sequentialNumber.next().value;
-}
-
-/**
- * One-liner to clone an object using the stringigy->parse method.
- * @param o Object to clone
- * @returns 
- */
-const deepClone = <T>(o: T): T => JSON.parse(JSON.stringify(o));
-
-/**
- * Function which returns a sort of cyan colour scaled between completely white (lightness 100%) and
- * full fat colour (50% lightness), based on provided value
- *
- * @param value Value to visualise from 0 to 1, where 1 is coloured and 0 is white
- * @returns 
- */
-const defaultScale = (value = 0) => `hsl(173, 100%, ${100 - value * 50}%)`;
-
-/**
- * Check if the number is even
- * 
- * @param n 
- * @returns 
- */
-const isEven = (n: number) => (n % 2) === 0;
+import { counter } from "local/util/counter.ts";
+import { deepClone } from "local/util/deep-clone.ts";
+import { defaultScale } from "local/util/default-scale.ts";
+import { isEven } from "local/util/is-even.ts";
 /****************************/
 /* END OF UTILITY FUNCTIONS */
 /****************************/
-
 
 /**
  * Hexmap styles

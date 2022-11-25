@@ -20,14 +20,14 @@ Here is how to extract it.
 6) If you see a `fundraising` folder navigate into it.
 7) Upload the csv file into that folder, overwriting the previous file.
 
-## Adding to the repo
+## Adding to the repo (this is already done!)
 
 Assuming that you have a valid `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
 set in your shell, the file can be added to the repo by issueing the following
 command from the workspace root.
 
 ```
-dvc import-url s3://open-innovations-data/filestash/leeds2023/fundraising/data_organisation_fundraising.csv working/fundraising
+dvc import-url s3://open-innovations-data/filestash/leeds2023/fundraising/data_organisation_fundraising.csv working/manual/fundraising
 ```
 
 This can be updated with the command
@@ -38,4 +38,4 @@ dvc update --recursive working/fundraising/
 
 ## Running the scripts:
 
-There are two 
+TODO Complete this!

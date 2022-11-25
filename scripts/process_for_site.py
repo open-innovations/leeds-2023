@@ -1,10 +1,10 @@
-import metrics.media_coverage
+import scripts.metrics.media_coverage.media_coverage
 import metrics.volunteers.process
 import dashboard.community
 
 
 def main():
-    metrics.media_coverage.summarise()
+    scripts.metrics.media_coverage.media_coverage.summarise()
     metrics.volunteers.process.summarise()
     dashboard.community.process()
 

@@ -7,6 +7,21 @@ import { counter } from "local/util/counter.ts";
 import { deepClone } from "local/util/deep-clone.ts";
 import { defaultScale } from "local/util/default-scale.ts";
 import { isEven } from "local/util/is-even.ts";
+
+function addTspan(str: string) {
+  // If string has no newlines, just return it
+  if (!str.includes('\n')) return str;
+
+  const tspan = str.split(/\n/);
+  // Build a new string
+  let newString = "";
+  for (let s = 0; s < tspan.length; s++) {
+    const dy = 3 * ((s + 0.5) - (tspan.length / 2));
+    newString += '<tspan y="' + dy + '%" x="0">' + tspan[s] + '</tspan>'
+  }
+  return newString;
+}
+
 /****************************/
 /* END OF UTILITY FUNCTIONS */
 /****************************/
@@ -105,7 +120,7 @@ export default function ({
 
   // Find the biggest value in the hex map
   // TODO Check if this works when the valueProp is a number
-  const maxValue = Object.values(hexes)
+  const maxValue = Object.values<HexDefinition>(hexes)
     .map((h) => parseFloat(<string>h[valueProp]) || 0)
     .reduce((result, current) => Math.max(result, current), 0);
 
@@ -117,7 +132,7 @@ export default function ({
   }
 
   // Calculate the left, right, top and bottom
-  const dimensions = Object.values(hexes)
+  const dimensions = Object.values<HexDefinition>(hexes)
     .map(({ q, r }) => ({ q, r }))
     .reduce(
       ({ left, right, top, bottom }, { q, r }) => ({
@@ -168,12 +183,12 @@ export default function ({
     if (layout === 'odd-r' || layout === 'even-r') {
       // Work out if the left-hand column has only shifted rows. i.e. Left Outy Shift
       // If so, move left by half a quoloum
-      const unshiftedRowsInTheLeftColumn = Object.values(hexes).filter(({ q, r }) => (q === dimensions.left) && !isShiftedRow(r));
+      const unshiftedRowsInTheLeftColumn = Object.values<HexDefinition>(hexes).filter(({ q, r }) => (q === dimensions.left) && !isShiftedRow(r));
       if (unshiftedRowsInTheLeftColumn.length === 0) {
         x = -0.5;
         // Work out if the right-hand column has only unshifted rows. i.e. Right Inny Shift
         // If so, adjust width to account for extra
-        const shiftedRowsInTheRightColumn = Object.values(hexes).filter(({ q, r }) => (q === dimensions.right) && isShiftedRow(r));
+        const shiftedRowsInTheRightColumn = Object.values<HexDefinition>(hexes).filter(({ q, r }) => (q === dimensions.right) && isShiftedRow(r));
         if (shiftedRowsInTheRightColumn.length === 0) {
           width = -0.5;
         }
@@ -234,27 +249,14 @@ export default function ({
 
   const hexCounter = counter();
   
-  function addTspan(str){
-	  if(str.indexOf("\n")>=0){
-		 let tspan,s,dy;
-		 tspan = str.split(/\n/);
-		 // Rebuild the string
-		 str = "";
-		 for(s = 0; s < tspan.length; s++){
-			 dy = 3*((s+0.5)-(tspan.length/2));
-			 str += '<tspan y="'+dy+'%" x="0">'+tspan[s]+'</tspan>'
-		 }
-	  }
-	  return str;
-  }
-
   const drawHex = (config: HexDefinition) => {
     const hexId = hexCounter();
     const { x, y } = getCentre(config);
+
     const label = <string>config[titleProp];
-	let labelText = labelProcessor(label);
-	if(labelKey != "" && typeof config[labelKey]==="string") labelText = addTspan(config[labelKey]);
-	const value = <number>config[valueProp] || 0;
+    let labelText = labelProcessor(label);
+    if (labelKey != "" && typeof config[labelKey] === "string") labelText = addTspan(config[labelKey] as string);
+    const value = <number>config[valueProp] || 0;
 
     // Calculate the path based on the layout
     let hexPath: string | undefined = undefined;
@@ -325,7 +327,7 @@ export default function ({
       aria-labelledby="title-${uuid}"
     >
       <title id="title-${uuid}">${title}.</title>
-      ${Object.values(hexes).map(drawHex).join('')}
+      ${Object.values<HexDefinition>(hexes).map(drawHex).join('')}
     </svg>
   `;
 }

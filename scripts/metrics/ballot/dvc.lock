@@ -22,10 +22,10 @@ stages:
       size: 153348
       nfiles: 2
     - path: scripts/metrics/ballot/summarize.py
-      md5: b286ae2aa48fa8f8233c777bb6f8656c
-      size: 3675
+      md5: 4c5ff5f5c7b6322e072048da5c005f65
+      size: 3664
     outs:
     - path: docs/_data/metrics/ballot/
-      md5: 299b671de6da1689ec2e615aafa2b0b3.dir
-      size: 8628
+      md5: 9b81d2449b0971ab32b206f91d056c98.dir
+      size: 8630
       nfiles: 7

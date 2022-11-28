@@ -39,14 +39,12 @@ def by_date():
     submission_data = pd.DataFrame({
         'submissions': data.groupby('date_submitted').ward_code.count(),
     }).resample('D').sum()
-    submission_data['cumulative_submissions'] = submission_data.submissions.cumsum()
     submission_data.index.set_names(['date_submitted'])
 
     group_submission_data = pd.DataFrame({
         'group_submissions': group_data.groupby('date_submitted').ward_code.count(),
         'group_tickets': group_data.groupby('date_submitted').count_of_tickets.sum(),
     }).resample('D').sum()
-    group_submission_data['cumulative_group_submissions'] = group_submission_data.group_submissions.cumsum()
     group_submission_data.index.set_names(['date_submitted'])
 
     submission_data = submission_data.merge(
@@ -57,6 +55,9 @@ def by_date():
 
     # Fill holes up and convert to int
     submission_data = submission_data.fillna(0).astype(int)
+
+    submission_data['cumulative_submissions'] = submission_data.submissions.cumsum()
+    submission_data['cumulative_group_submissions'] = submission_data.group_submissions.cumsum()
 
     # Calculate tickets per day
     submission_data['tickets'] = (

@@ -63,9 +63,9 @@ limitations:
     matchKey: 'ward_code',
     valueProp: 'submissions',
     popup: popupSubmissions,
-    bgColour: 'var(--l23-magenta)',
-	labelKey: 'label',
+    labelKey: 'label',
     title: 'Count of ballot submissions by ward of residence',
+    bgColour: '#ddd',
     colourScale: colours.scales.magenta
   }) | safe }}
 {% endcomp %}
@@ -91,8 +91,9 @@ limitations:
     matchKey: 'la_code',
     valueProp: 'submissions',
     popup: popupSubmissions,
-    bgColour: '#BBB',
-    title: 'Count of ballot submissions by local authority of residence'
+    title: 'Count of ballot submissions by local authority of residence',
+    bgColour: '#ddd',
+    colourScale: colours.scales.magenta
   }) | safe }}
 {% endcomp %}
 

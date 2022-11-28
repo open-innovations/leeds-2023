@@ -43,6 +43,10 @@ def get_data():
             'artworkMedium',
             'source',
         ])
+
+    # Filter out entries wit missing submission date
+    data = data.loc[~data.dateSubmitted.isna()]
+
     logging.info("Got %d entries", data.shape[0])
 
     data = geo_match(data)

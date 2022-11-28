@@ -1,0 +1,12 @@
+md5: 080ca86561f08d87b5357e7521b4105c
+frozen: true
+deps:
+- md5: 35eaa5f27a2bc7a68949dfac5d8ba9ba.dir
+  size: 68055
+  nfiles: 1
+  path: s3://open-innovations-data/filestash/leeds2023/fundraising
+outs:
+- md5: f268999d6debe1dd020ad64e293adc0a.dir
+  size: 68055
+  nfiles: 1
+  path: fundraising

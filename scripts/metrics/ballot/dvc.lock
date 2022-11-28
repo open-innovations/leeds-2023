@@ -7,8 +7,8 @@ stages:
       md5: 7196768cdd13ac9750cf4148d19d498c
       size: 75969456
     - path: scripts/metrics/ballot/process.py
-      md5: cb00af9f4342550d46eaff4d15336564
-      size: 3471
+      md5: 98be462ed6dc1bd7f9b0720d36796e47
+      size: 3472
     outs:
     - path: data/metrics/ballot/
       md5: 6d5924c257e18da2de04cf72038b9d5d.dir

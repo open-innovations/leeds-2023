@@ -37,4 +37,5 @@ combined_data = (pd.concat([cision_data,historic_data,historic_data_2])
                 )
 
 combined_data['Audience Reach'] = combined_data['Audience Reach'].astype('string').str.replace(',|\s|\.0|N/A','',regex=True).replace('',None).astype('Int64')
+combined_data['UV*'] = combined_data['UV*'].astype('Int64')
 combined_data.to_csv(OUTPUT_PATH,index=False)

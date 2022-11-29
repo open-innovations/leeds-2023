@@ -1,0 +1,74 @@
+---
+css: |
+  .panels {
+    list-style: none;
+    margin-left: 0;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 0.5em;
+    margin-bottom: 0.5em;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    font-size: 3.5vw;
+  }
+
+  @media only screen and (min-width: 30rem) {
+    .panels {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      font-size: 2vw;
+    }
+  }
+  @media only screen and (min-width: 50rem) {
+    .panels {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      font-size: 1.4vw;
+    }
+  }
+  /* Cap the max size of font in the panels */
+  @media only screen and (min-width: 85rem) {
+    .panels { font-size: 1.2rem; }
+  }
+  .panels > li {
+    padding: 0.5em;
+    --background: lightgrey;
+    --foreground: black;
+    color: var(--foreground);
+    background: var(--background);
+    height: 100%;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    margin-bottom: 0;
+    transition: color 0.3s linear, background-color 0.3s linear;
+    overflow: hidden;
+     &:hover {
+      color: white;
+      background: black;
+    }
+    & * {
+      margin-top: 0;
+    }
+  }
+  .panels > li:focus {
+    outline: 4px solid #061eff;
+  }
+  .panels > li > * {
+    line-height: 1.2em;
+  }
+  .panels > li > span {
+    display: block;
+  }
+
+  .panels > li > .footnote {
+    font-size: 0.7em;
+  }
+
+---
+
+<ul class="panels"
+  style="
+    {%- if fg %}--foreground: {{ fg }};{% endif -%}
+    {%- if bg %}--background: {{ bg }};{% endif -%}
+    {%- if align %}--align: {{ align }};{% endif -%}
+    ">  
+  {{ content | safe }}
+</ul>

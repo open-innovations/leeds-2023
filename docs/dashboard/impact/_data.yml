@@ -1,1 +1,4 @@
 title: Impact Dashboard
+layout: layouts/project.njk
+tags:
+  - dashboard

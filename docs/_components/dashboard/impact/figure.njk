@@ -1,0 +1,22 @@
+---
+css: |
+  .figure {
+    min-width: 10%;
+    font-size: 10rem;
+  }
+
+  figure > caption {
+    font-style: italic;
+    text-align: center;
+  }
+---
+<figure style="
+    {% if max_width %}--max-width:{{ max_width }};
+    {% elif min_width %}--min-width:{{ min_width }};
+    {% elif rows %}grid-row:auto/span {{ rows }};
+    {% elif columns %}grid-column:span {{ columns }}
+    {% endif %}">
+  <figcaption>{{ title }}</figcaption>
+  {{ content | safe }}
+</figure>
+

@@ -1,0 +1,19 @@
+---
+css: |
+
+
+
+---
+
+
+{%-if link -%}<a class="panels-link" href="{{ link | url }}">{%- endif -%}
+<li style="
+    {% if rows %}grid-row:auto/span {{ rows }};{% endif %}
+    {% if columns %}grid-column:span {{ columns }};{% endif %}
+    {%- if fg %}--foreground: {{ fg }};{% endif -%}
+    {%- if bg %}--background: {{ bg }};{% endif -%}
+    {%- if align %}--align: {{ align }};{% endif -%}
+    " tabindex="0">
+  {{ content | safe }}
+</li>
+{%-if link -%}</a>{%- endif -%}

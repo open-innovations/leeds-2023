@@ -39,7 +39,7 @@ operational systems.
   {{ params.value }} applications received
 {%- endmacro -%}
 
-<div>
+<div style="--big-number-size: 6vw;">
 {% comp 'dashboard.impact.panels' %}
     {% comp 'dashboard.impact.panel', { fg: fg.next(), bg: bg.next() }%}
     <h3>Events held</h3>
@@ -54,13 +54,12 @@ operational systems.
     {{ comp.viz.bigNumber({ number: 33 }) | safe }}
 {% endcomp %} 
 {% comp 'dashboard.impact.panel', { rows: 3, columns: 2, fg: fg.next(), bg: bg.next() } %}
-    {% comp 'dashboard.impact.figure' %}
+    {% comp 'dashboard.impact.embedded_figure', { title: 'A title' } %}
     {{ comp.charts.hexmap({
         hexjson: hex.wards_leeds,
         data: dashboard.community.residents.rows,
         matchKey: 'ward_code',
-        valueProp: 'total',
-        bgColour: 'var(--l23-dark-blue-grey)'
+        valueProp: 'total'
     }) | safe }}
     {% endcomp %}
 {% endcomp %}
@@ -95,7 +94,7 @@ operational systems.
     <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
 {% endcomp %}
 
-    {% comp 'dashboard.impact.figure', { columns: 2 } %} 
+    {% comp 'dashboard.impact.embedded_figure', { columns: 2 } %} 
     {{ comp.oi.charts.graph.line({
     title: 'Total online audience',
     categories: metrics.social_media.all_weekly.columns.week_ending,
@@ -161,7 +160,7 @@ operational systems.
     }) | safe }}
 {% endcomp %}
 
-{% comp 'dashboard.impact.figure', { columns: 2 } %} 
+{% comp 'dashboard.impact.embedded_figure', { columns: 2 } %} 
 {{ comp.oi.charts.graph.line({
   title: 'Total engagements',
   categories: metrics.social_media.all_weekly.columns.week_ending,

@@ -6,7 +6,7 @@ css: |
   }
 ---
 <figure style="{% if max_width %}--max-width:{{ max_width }};{% endif %}">
-  <figcaption>{{ title }}</figcaption>
+  {% if title  %}<figcaption>{{ title }}</figcaption>{% endif %}
   {{ content | safe }}
 </figure>
 

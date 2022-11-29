@@ -1,0 +1,17 @@
+---
+css: |
+  .dashboard-figure {
+    & > * {
+      height: 100%;
+    }
+  }
+---
+<figure class="dashboard-figure" style="
+    {%- if max_width %}--max-width:{{ max_width }};{% endif -%}
+    {%- if min_width %}--min-width:{{ min_width }};{% endif -%}
+    {%- if rows %}grid-row:auto/span {{ rows }};{% endif -%}
+    {%- if columns %}grid-column:span {{ columns }};{% endif -%}">
+  {{ content | safe }}
+  {% if title  %}<figcaption>{{ title }}</figcaption>{% endif %}
+</figure>
+

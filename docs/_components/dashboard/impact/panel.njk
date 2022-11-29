@@ -1,13 +1,5 @@
----
-css: |
-
-
-
----
-
-
 {%-if link -%}<a class="panels-link" href="{{ link | url }}">{%- endif -%}
-<li style="
+<li class="dashboard-panel" style="
     {% if rows %}grid-row:auto/span {{ rows }};{% endif %}
     {% if columns %}grid-column:span {{ columns }};{% endif %}
     {%- if fg %}--foreground: {{ fg }};{% endif -%}

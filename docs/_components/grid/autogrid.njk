@@ -3,9 +3,10 @@
 css: |
   .auto-grid {
     --auto-grid-min-size: 16rem;
+    --auto-grid-gap: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--auto-grid-min-size)), 1fr));
-    grid-gap: 0.5rem;
+    grid-gap: var(--auto-grid-gap);
     & > * {
       margin: 0;
     }

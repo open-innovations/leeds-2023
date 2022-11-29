@@ -3,10 +3,9 @@ css: |
   figure figcaption {
     font-style: italic;
     text-align: center;
-    
   }
 ---
-<figure style="{% if max_width %}--max-width:{{ max_width }};{% elif rows %}grid-row:auto/span {{ rows }};{% elif min_width %}--min-width:{{ min_width }};{% elif columns %}grid-column:auto/span {{ column }}{% endif %}">
+<figure style="{% if max_width %}--max-width:{{ max_width }};{% endif %}">
   <figcaption>{{ title }}</figcaption>
   {{ content | safe }}
 </figure>

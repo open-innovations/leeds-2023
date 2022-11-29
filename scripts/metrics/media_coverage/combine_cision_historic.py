@@ -33,7 +33,7 @@ cision_data = pd.read_csv(CISION_PATH,parse_dates=['News Date'],dayfirst=True)
 # Drop columns and sort by date
 combined_data = (pd.concat([cision_data,historic_data,historic_data_2])
                     .drop(columns=['Tier','Type','Messaging','News Text'])
-                    .sort_values(by='News Date')
+                    .sort_values(by=['News Date','News Headline','Medium'])
                 )
 
 combined_data['Audience Reach'] = combined_data['Audience Reach'].astype('string').str.replace(',|\s|\.0|N/A','',regex=True).replace('',None).astype('Int64')

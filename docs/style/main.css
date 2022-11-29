@@ -14,6 +14,10 @@
 @import "css/popup.css";
 /* @import "css/grid.css"; */
 
+body * + * {
+  margin-top: 0rem;
+}
+
 :root {
   --body-fontstack: 'DM Sans', sans-serif;
   --title-fontstack: 'Rebond Grotesque', 'Rebond Grotesk', sans-serif;  
@@ -31,6 +35,5 @@
 
   --color-off-white: rgb(249, 246, 243);
   --colour-black: #111;
-
 }
 

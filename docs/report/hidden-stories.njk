@@ -1,0 +1,67 @@
+---
+title: Hidden Stories
+work_in_progress: true
+---
+<h1>{{ title }}</h1>
+
+<h2>Headlines</h2>
+{% comp 'grid.autogrid' %}
+
+{% comp 'grid.block.impact', {bg : "var(--l23-cyan)" } %}
+Number of Events:
+  {{ comp.viz.bigNumber({ number: metrics.hidden_stories.stats.event_count }) | safe }}
+{% endcomp %}
+
+{% comp 'grid.block.impact', { bg : "var(--l23-cyan)"  } %}
+Total Audience
+  {{ comp.viz.bigNumber({ number: metrics.hidden_stories.stats.audience_sum }) | safe }}
+{% endcomp %}
+
+{% comp 'grid.block.impact', { bg : "var(--l23-cyan)" } %}
+Total Participants
+  {{ comp.viz.bigNumber({ number: metrics.hidden_stories.stats.participants_sum}) | safe }}
+{% endcomp %}
+
+{% comp 'grid.block.impact', { bg : "var(--l23-cyan)"  } %}
+Largest Audience (Single Event)
+  {{ comp.viz.bigNumber({ number: metrics.hidden_stories.stats.audience_max }) | safe }}
+{% endcomp %}
+
+{% comp 'grid.block.impact', { bg : "var(--l23-cyan)" } %}
+Largest Participants (Single Event)
+  {{ comp.viz.bigNumber({ number: metrics.hidden_stories.stats.participants_max}) | safe }}
+{% endcomp %}
+
+{% endcomp %}
+
+<h2>Event Locations</h2>
+{% comp 'grid.autogrid', {min_width: '40rem'} %}
+  <section style="--hex-bg: var(--l23-cyan);">
+   
+    {{ comp.charts.hexmap({
+      hexjson: hex.wards_leeds,
+      data: metrics.hidden_stories.wards.rows,
+      matchKey: 'ward_code',
+      valueProp: 'count',
+      popup: popupAttendees,
+      bgColour: '#BBB',
+      title: 'Number of projects taken place per ward'
+    }) | safe }}
+  </section>
+{% endcomp %}
+
+<h2>Event Audience/Participants</h2>
+{% comp 'grid.autogrid', {min_width: '40rem'} %}
+  <section style="--hex-bg: var(--l23-cyan);">
+   
+    {{ comp.charts.hexmap({
+      hexjson: hex.wards_leeds,
+      data: metrics.hidden_stories.wards.rows,
+      matchKey: 'ward_code',
+      valueProp: 'total_sum',
+      popup: popupAttendees,
+      bgColour: '#BBB',
+      title: 'Number of projects taken place per ward'
+    }) | safe }}
+  </section>
+{% endcomp %}

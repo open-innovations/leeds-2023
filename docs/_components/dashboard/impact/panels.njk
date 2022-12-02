@@ -2,7 +2,7 @@
 css: |
   .panels {
     list-style: none;
-    margin-left: 0;
+    padding: 0;
     display: grid;
     grid-auto-rows: 1fr;
     grid-gap: 0.5em;
@@ -29,7 +29,9 @@ css: |
   }
   /* Cap the max size of font in the panels */
   @media only screen and (min-width: 85rem) {
-    .panels { font-size: 1.2rem; }
+    .panels {
+      font-size: 1.2rem;
+    }
   }
   .panels > li {
     padding: 0.5em;

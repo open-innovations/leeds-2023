@@ -6,6 +6,8 @@ import pandas as pd
 from util.firebase import pull_collection
 from util.geography import match_ward, match_la
 
+from metrics.ballot.extract import load_individual, load_group
+
 DATA_DIR = os.path.join('data', 'metrics', 'ballot')
 RAW_DATA = os.path.join(DATA_DIR, 'ballot_entries.csv')
 RAW_GROUP_DATA = os.path.join(DATA_DIR, 'ballot_group_entries.csv')
@@ -33,19 +35,7 @@ def truncate_date(series):
 
 def get_data():
     logging.info("Querying ballot database")
-    data = pull_collection(
-        collection_name=u'ballot-entries',
-        fields=[
-            'dateSubmitted',
-            'hasPostcode',
-            'postcode',
-            'artistAgeGroup',
-            'artworkMedium',
-            'source',
-        ])
-
-    # Filter out entries wit missing submission date
-    data = data.loc[~data.dateSubmitted.isna()]
+    data = load_individual()
 
     logging.info("Got %d entries", data.shape[0])
 
@@ -99,16 +89,7 @@ def update():
 
 
 def pull_group_entries():
-    data = pull_collection(
-        collection_name=u'form-builder-submissions/groupBallotEntry/responses',
-        fields=[
-            'dateSubmitted',
-            'postcodeSkipped',
-            'postcode',
-            'noTickets',
-        ])
-
-    data = data.loc[~data.noTickets.isna()]
+    data = load_group()
 
     data = data.rename(columns={
         'dateSubmitted': 'date_submitted',

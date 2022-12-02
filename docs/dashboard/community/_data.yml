@@ -29,3 +29,5 @@ table_columns:
       name: Roadshows
     - key: schools_engagement
       name: Schools Event
+    - key: hidden_stories
+      name: Hidden Stories

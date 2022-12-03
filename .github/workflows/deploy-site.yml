@@ -2,9 +2,10 @@ name: Microsite build
 
 'on':
   workflow_dispatch: {}
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '45 23 * * *'
+  workflow_run:
+    workflows: ["Data Pipeline"]
+    types:
+      - completed
   push:
     branches: [ main ]
     paths:

@@ -4,27 +4,27 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/extract.py
     deps:
     - path: data/reference/postcodes.csv
-      md5: 7196768cdd13ac9750cf4148d19d498c
-      size: 75969456
+      md5: 3c332ace66b28524c0a710fca1a4b1c0
+      size: 76072682
     - path: scripts/metrics/ballot/process.py
       md5: 3d129afbd5414fb3390205597ef14881
       size: 2937
     outs:
     - path: working/ballot/
-      md5: 1250b83737e6ba30e2503c221783d856.dir
+      md5: 2769bcb8857f55b67795e49b5320f82b.dir
       size: 184272
       nfiles: 2
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/process.py
     deps:
     - path: data/reference/postcodes.csv
-      md5: 7196768cdd13ac9750cf4148d19d498c
-      size: 75969456
+      md5: 3c332ace66b28524c0a710fca1a4b1c0
+      size: 76072682
     - path: scripts/metrics/ballot/process.py
       md5: 3d129afbd5414fb3390205597ef14881
       size: 2937
     - path: working/ballot/
-      md5: 1250b83737e6ba30e2503c221783d856.dir
+      md5: 2769bcb8857f55b67795e49b5320f82b.dir
       size: 184272
       nfiles: 2
     outs:

@@ -15,8 +15,8 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/transform.py
     deps:
     - path: data/reference/postcodes.csv
-      md5: 7196768cdd13ac9750cf4148d19d498c
-      size: 75969456
+      md5: 3c332ace66b28524c0a710fca1a4b1c0
+      size: 76072682
     - path: scripts/metrics/callouts/transform.py
       md5: a9d9491a9e4a2d623c1f0e94bd456454
       size: 416

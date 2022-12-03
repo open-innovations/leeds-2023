@@ -1,11 +1,11 @@
-md5: eb92221b357407dc31cc1c9fe82e0f65
+md5: a901db6f1ebd059d56d86fcc0802c683
 frozen: true
 deps:
 - path: output/onspd-extract.csv
   repo:
     url: https://github.com/open-innovations/reference-data.git
-    rev_lock: 822f36776f8e41301a73fa1b44ab347d389aa8d7
+    rev_lock: 4218e0c4169cb6a28951c6cf4021a24198e627ae
 outs:
-- md5: b527f4a308cb738f244a53c8a164d88c
-  size: 129321340
+- md5: c33cab07a62f2d02607a9d155bd968f4
+  size: 129496640
   path: onspd-extract.csv

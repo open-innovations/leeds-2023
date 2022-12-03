@@ -27,6 +27,21 @@ def extract_individual():
     data.to_csv(INDIVIDUAL_RAW, index=False)
 
 
+def extract_group():
+    data = pull_collection(
+        collection_name=u'form-builder-submissions/groupBallotEntry/responses',
+        fields=[
+            'dateSubmitted',
+            'postcodeSkipped',
+            'postcode',
+            'noTickets',
+        ])
+
+    data = data.loc[~data.noTickets.isna()]
+    os.makedirs(EXTRACT_DIR, exist_ok=True)
+    data.to_csv(GROUP_RAW, index=False)
+
+
 def load_individual():
     return pd.read_csv(INDIVIDUAL_RAW)
 
@@ -37,3 +52,4 @@ def load_group():
 
 if __name__ == '__main__':
     extract_individual()
+    extract_group()

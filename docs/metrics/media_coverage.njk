@@ -1,0 +1,76 @@
+---
+title: Media Coverage
+summary: Data about media coverage
+work_in_progress: true
+limitations:
+  - Stats have been derived from two different data sources and there is stil work to be done in reconciling these. This page should be seen as more of a wireframe.
+---
+<p> All data concerns media coverage from 2021 an 2022.</p>
+<h2>Headlines</h2>
+
+{% comp 'grid.autogrid', { min_width: '32rem' } %}
+  {% comp 'grid.block.impact', {bg: all_colour} %}
+    <h2>
+      Total Articles and Appearances
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.media_coverage.summary_new.stats.total_media | localize
+    }) | safe }}
+    
+  {% endcomp %}
+  {% endcomp %}
+
+<h2>Coverage Over Time</h2>
+{% from 'macros.njk' import dateFormatterNoDay %}
+{%- macro popupPreApplication(params) -%}
+  {{ params.label }}</br>
+  {{ params.value }} signups
+{%- endmacro -%}
+{%- macro popupApplied(params) -%}
+  {{ params.label }}</br>
+  {{ params.value }} applications received
+{%- endmacro -%}
+
+{% comp 'layout.figure', {
+  title: 'Monthly Media Coverage'
+} %}
+
+{{ comp.oi.charts.graph.line({
+  categories: metrics.media_coverage.summary_new.monthly_count.columns.month,
+  width: 25,
+  height: 12,
+  text: { colour: '#eee' },
+  xAxis: {
+    title: 'Month',
+    titleOffset: 4,
+    labelRotate: 35,
+    majorTick: 2,
+    formatter: dateFormatterNoDay
+  },
+  yAxis: {
+    title: 'Media Coverage',
+    titleOffset: 3,
+    majorTick: 50
+  },
+  plotArea: {
+    yMin: 0,
+    yMax: 300,
+    colour: 'var(--l23-dark-blue-grey)'
+  },
+  padding: {
+    left: 4,
+    bottom: 5
+  },
+  series: [
+    {
+      id: "all", label: "All",
+      yValues: metrics.media_coverage.summary_new.monthly_count.columns.count,
+      colour: all_colour,
+      markerOptions: { s: 5 }
+    }
+  ],
+  legend: {
+    width: "20em"
+  }
+}) | safe }}
+{% endcomp %}

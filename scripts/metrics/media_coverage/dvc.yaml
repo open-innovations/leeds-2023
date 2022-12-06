@@ -1,0 +1,11 @@
+stages:
+  transform:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/combine_cision.py
+    wdir: ../../..
+    deps:
+    - scripts/metrics/media_coverage/combine_cision.py
+    - working/manual/media/
+    outs:
+    - data/metrics/media_coverage/:
+        persist: true
+        cache: false

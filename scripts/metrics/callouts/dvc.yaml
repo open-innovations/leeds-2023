@@ -8,7 +8,7 @@ stages:
     - scripts/metrics/callouts/extract.py
     outs:
     - working/metrics/callouts/:
-        persist: true
+        persist: false
         cache: false
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/transform.py
@@ -19,5 +19,5 @@ stages:
     - data/reference/postcodes.csv
     outs:
     - data/metrics/callouts/:
-        persist: true
+        persist: false
         cache: false

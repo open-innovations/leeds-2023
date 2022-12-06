@@ -3,12 +3,28 @@ import pandas as pd
 from extract import STAGING_DIR
 import util.geography as geo
 
-DATA_DIR='data/metrics/callouts/'
+DATA_DIR = 'data/metrics/callouts/'
 os.makedirs(DATA_DIR, exist_ok=True)
 
 
 if __name__ == '__main__':
-    data_dol = pd.read_csv(STAGING_DIR + 'dancers_of_leeds.csv')
-    data_dol = geo.match_ward(data_dol)
-    data_dol = data_dol.drop(columns=['postcode'])
-    data_dol.to_csv(DATA_DIR + 'dancers_of_leeds.csv', index=False)
+    callouts = os.listdir(STAGING_DIR)
+    data = pd.DataFrame()
+
+    # Load each file add a key and append to the big result data frame 
+    for filename in callouts:
+        key = filename.replace(r".csv", "")
+        callout = pd.read_csv(os.path.join(STAGING_DIR, filename))
+        callout['callout'] = key
+        data = pd.concat([data, callout])
+
+    # Do the ward match
+    data = geo.match_ward(data)
+    data = data.drop(columns=['postcode'])
+
+    # Save to csv
+    data.sort_values(by=[
+        'date_submitted',
+        'callout',
+        'ward_code'
+    ]).to_csv(os.path.join(DATA_DIR, 'responses.csv'), index=False)

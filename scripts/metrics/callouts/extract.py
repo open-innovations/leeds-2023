@@ -17,12 +17,24 @@ def clean_callout(data):
 
 
 if __name__ == '__main__':
-    
-    data = pull_collection(
-      collection_name=u'form-builder-submissions/dancersOfLeeds/responses',
-      fields=[
-        'dateSubmitted',
-        'postcode',
-      ])
-    data = clean_callout(data)
-    data.to_csv(STAGING_DIR + 'dancers_of_leeds.csv', index=False)
+    callouts = [
+      {
+        'key': 'dancers_of_leeds',
+        'collection': u'form-builder-submissions/dancersOfLeeds/responses',
+      },
+      {
+        'key': 'leeds_on_wheels',
+        'collection': u'form-builder-submissions/leedsOnWheels/responses',
+      }
+    ]
+
+    for callout in callouts:
+        data = pull_collection(
+          collection_name=callout['collection'],
+          fields=[
+            'dateSubmitted',
+            'postcode',
+          ])
+        data=clean_callout(data)
+        data.to_csv(os.path.join(
+            STAGING_DIR, callout['key'] + '.csv'), index = False)

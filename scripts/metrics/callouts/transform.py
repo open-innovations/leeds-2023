@@ -19,6 +19,7 @@ if __name__ == '__main__':
         data = pd.concat([data, callout])
 
     # Do the ward match
+    data = geo.match_la(data)
     data = geo.match_ward(data)
     data = data.drop(columns=['postcode'])
 
@@ -26,5 +27,6 @@ if __name__ == '__main__':
     data.sort_values(by=[
         'date_submitted',
         'callout',
-        'ward_code'
+        'la_code',
+        'ward_code',
     ]).to_csv(os.path.join(DATA_DIR, 'responses.csv'), index=False)

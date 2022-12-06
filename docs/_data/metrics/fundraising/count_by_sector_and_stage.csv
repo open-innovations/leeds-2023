@@ -1,25 +1,25 @@
 sector,Research,Prospect,Won,Lost,Unknown
-Arts And Culture,4.0,1.0,3.0,,4.0
-Charity,2.0,,,,
-Construction,13.0,5.0,4.0,,
-Consultancy,3.0,,2.0,1.0,
-Education,1.0,,8.0,,
-Engineering,1.0,1.0,,,
-Fashion,,,1.0,,
-Finance,6.0,4.0,2.0,2.0,
-Food And Beverage,1.0,3.0,,1.0,
-Hospitality,6.0,3.0,1.0,,
-Law,10.0,3.0,3.0,,
-Local Government,,1.0,,,
-Logistics,2.0,,,,
-Manufacturing,5.0,,,,
-Marketing,,,1.0,,
-Media,1.0,3.0,1.0,,
-Property And Real Estate,23.0,7.0,4.0,2.0,
-Recruitment,1.0,,,,
-Retail,2.0,3.0,,1.0,
-Sport,,1.0,,,
-Tech,17.0,8.0,1.0,1.0,
-Travel,1.0,3.0,1.0,1.0,
-Unknown,40.0,13.0,10.0,3.0,8.0
-Utilities,1.0,1.0,,,
+Arts And Culture,4,1,3,0,4
+Charity,2,0,0,0,0
+Construction,13,5,4,0,0
+Consultancy,3,0,2,1,0
+Education,1,0,8,0,0
+Engineering,1,1,0,0,0
+Fashion,0,0,1,0,0
+Finance,6,4,2,2,0
+Food And Beverage,1,3,0,1,0
+Hospitality,6,3,1,0,0
+Law,10,3,3,0,0
+Local Government,0,1,0,0,0
+Logistics,2,0,0,0,0
+Manufacturing,5,0,0,0,0
+Marketing,0,0,1,0,0
+Media,1,3,1,0,0
+Property And Real Estate,23,7,4,2,0
+Recruitment,1,0,0,0,0
+Retail,2,3,0,1,0
+Sport,0,1,0,0,0
+Tech,17,8,1,1,0
+Travel,1,3,1,1,0
+Unknown,40,13,10,3,8
+Utilities,1,1,0,0,0

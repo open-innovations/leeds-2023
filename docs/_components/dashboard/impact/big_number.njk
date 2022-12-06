@@ -1,0 +1,11 @@
+---
+css: |
+  .impact-big-number {
+    font-family: var(--title-fontstack);
+    font-size: clamp(4vw, 10vw, 54px);
+    font-weight: bold;
+    text-align: center;
+  }
+---
+<div class='impact-big-number'>{{ prefix | d('') }}{{ number }}{{ suffix | d('') }}</div>
+

@@ -19,10 +19,11 @@ operational systems.
 </div>
 
 {# Set up colours #}
-{% set magenta = "var(--l23-magenta)" %}
-{% set mint = "var(--l23-mint)" %}
-{% set cyan = "var(--l23-cyan)" %}
-{% set dark = "var(--l23-dark-blue-grey)" %}
+{% set all_colour = "var(--l23-magenta)" %}
+{% set twitter_colour = "#1DA1F2" %}
+{% set instagram_colour = "#833AB4" %}
+{% set facebook_colour = "var(--l23-mint)" %}
+{% set linkedin_colour = "var(--l23-cyan)" %}
 
 
 {# Set up some cyclers for block colouring #}
@@ -30,31 +31,24 @@ operational systems.
 {% set bg = cycler("var(--l23-mint)", "var(--l23-dark-blue-grey)"  ) %}
 
 {% from 'macros.njk' import dateFormatter %}
-{%- macro popupPreApplication(params) -%}
-  {{ params.label }}</br>
-  {{ params.value }} signups
-{%- endmacro -%}
-{%- macro popupApplied(params) -%}
-  {{ params.label }}</br>
-  {{ params.value }} applications received
-{%- endmacro -%}
 
 <div style="--big-number-size: 4em;">
 {% comp 'dashboard.impact.panels' %}
-    {% comp 'dashboard.impact.panel', { fg: fg.next(), bg: bg.next() }%}
+    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" }%}
     <h3>Events held</h3>
-    {{ comp.viz.bigNumber({ number: dashboard.community.events.columns.total | sum | localize }) | safe }}
+    {{ comp.dashboard.impact.big_number({ number: dashboard.community.events.columns.total | sum | localize }) | safe }}
 {% endcomp %}
-    {% comp 'dashboard.impact.panel', { fg: fg.next(), bg: bg.next() }%}
-    <h3>Event breakdown by type:</h3>
-    {{ comp.viz.bigNumber({ number: 999 }) | safe }}
+    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" }%}
+    <h3>Total Engagements</h3>
+    {{ comp.dashboard.impact.big_number({ number: dashboard.community.events.columns.total | sum | localize }) | safe }}
 {% endcomp %}
-{% comp 'dashboard.impact.panel', { fg: fg.next(), bg: bg.next() } %}
-    <h3>Leeds wards engaged with:</h3>
-    {{ comp.viz.bigNumber({ number: 33 }) | safe }}
-{% endcomp %} 
-{% comp 'dashboard.impact.panel', { rows: 3, columns: 2, fg: fg.next(), bg: bg.next() } %}
-    {% comp 'dashboard.impact.embedded_figure', { title: 'A title' } %}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    <h3>Artists employed</h3>
+    {{ comp.dashboard.impact.big_number({ number: 999 }) | safe }}
+    <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
+{% endcomp %}
+{% comp 'dashboard.impact.panel', { rows: 3, columns: 2, bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    {% comp 'dashboard.impact.embedded_figure', { title: 'Community Engagement' } %}
     {{ comp.charts.hexmap({
         hexjson: hex.wards_leeds,
         data: dashboard.community.residents.rows,
@@ -63,36 +57,66 @@ operational systems.
     }) | safe }}
     {% endcomp %}
 {% endcomp %}
-{% comp 'dashboard.impact.panel', { fg: fg.next(), bg: bg.next() } %}
-    <h3>Total funding raised</h3>
-    {{ comp.viz.bigNumber({ number: 999 }) | safe }}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    <h3>Total funds raised</h3>
+    {{ comp.dashboard.impact.big_number({ prefix: '£', number: 999 }) | safe }}
     <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
 {% endcomp %}
-{% comp 'dashboard.impact.panel', { fg: fg.next(), bg: bg.next() } %}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
     <h3>Funding breakdown by sector</h3>
-    {{ comp.viz.bigNumber({ number: 999 }) | safe }}
+    {{ comp.dashboard.impact.big_number({ number: 999 }) | safe }}
     <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
 {% endcomp %}
-{% comp 'dashboard.impact.panel', { fg: fg.next(), bg: bg.next() } %}
-    <h3>Funds raised over time</h3>
-    {{ comp.viz.bigNumber({ number: 999 }) | safe }}
-    <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
-{% endcomp %}
-{% comp 'dashboard.impact.panel', { fg: fg.next(), bg: bg.next() } %}
-    <h3>Volunteer sign ups</h3>
-    {{ comp.viz.bigNumber({ number: metrics.volunteers.by_week.columns.created | last | localize }) | safe }}
-    <p class="footnote">The number of people who have signed up to the volunteer system (Rosterfy).</p>
-{% endcomp %} 
-{% comp 'dashboard.impact.panel', { fg: fg.next(), bg: bg.next() } %}
-    <h3>Artists employed</h3>
-    {{ comp.viz.bigNumber({ number: 999 }) | safe }}
-    <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
-{% endcomp %}
-{% comp 'dashboard.impact.panel', { fg: fg.next(), bg: bg.next() } %}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    <h3>Funding breakdown by stage</h3>
+    {% comp 'dashboard.impact.embedded_figure' %}
+    {{ comp.charts.barchart({
+    bg_col: 'var(--l23-dark-blue-grey)',
+    text_col: 'white',
+    series: [
+        metrics.fundraising.count_by_stage.columns.count
+    ],
+    popupContent: popupContent,
+    categories: metrics.fundraising.count_by_stage.columns.stage,
+    colours: [
+        [ "var(--l23-cyan)" ]
+    ],
+    plot: {
+        grid: { x: true, category: true }
+    },
+    axis: {
+        x: {
+        title: 'Number of organisations',
+        show: false,
+        ticks: false,
+        resolution: 25
+        },
+        category: {
+        label_width: 75,
+        show: false,
+        height: 65,
+        width: 10
+        }
+    }
+    }) | safe }}
+    {% endcomp %} 
+    {% endcomp %}
+
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
     <h3>People employed by Leeds Culture Trust</h3>
-    {{ comp.viz.bigNumber({ number: 999 }) | safe }}
+    {{ comp.dashboard.impact.big_number({ number: 999 }) | safe }}
     <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
 {% endcomp %}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    <h3>Volunteer applications</h3>
+    {{ comp.dashboard.impact.big_number({ number: metrics.volunteers.by_week.columns.applied | last | localize }) | safe }}
+    <p class="footnote">The number of volunteering applications that have been received.</p>
+{% endcomp %}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    <h3>Volunteer Offers</h3>
+    {{ comp.dashboard.impact.big_number({ number: metrics.volunteers.by_week.columns.offered | last or '--' | localize }) | safe }}
+    <p class="footnote">The number of people who have been offered a volunteering role.</p>
+{% endcomp %} 
 
     {% comp 'dashboard.impact.embedded_figure', { columns: 2 } %} 
     {{ comp.oi.charts.graph.line({
@@ -103,14 +127,14 @@ operational systems.
     text: { colour: 'white' },
     xAxis: {
         title: 'Week ending (Sunday)',
-        titleOffset: 4,
+        titleOffset: 4.2,
         labelRotate: 35,
-        majorTick: 2,
+        majorTick: 4,
         formatter: dateFormatter
     },
     yAxis: {
         title: 'Total Audience',
-        titleOffset: 3,
+        titleOffset: 3.4,
         majorTick: 5000
     },
     plotArea: {
@@ -126,31 +150,31 @@ operational systems.
         {
         id: "all", label: "All",
         yValues: metrics.social_media.all_weekly.columns.audience_last,
-        colour: 'white',
+        colour: all_colour,
         markerOptions: { s: 5 }
         },
         {
         id: "twitter", label: "Twitter",
         yValues: metrics.social_media.service.twitter_weekly.columns.audience_last,
-        colour: 'white',
+        colour: twitter_colour,
         markerOptions: { s: 5 }
         },
         {
         id: "instagram", label: "Instagram",
         yValues: metrics.social_media.service.instagram_weekly.columns.audience_last,
-        colour: 'white',
+        colour: instagram_colour,
         markerOptions: { s: 5 }
         },
         {
         id: "facebook", label: "Facebook",
         yValues: metrics.social_media.service.facebook_weekly.columns.audience_last,
-        colour: 'white',
+        colour: facebook_colour,
         markerOptions: { s: 5 }
         },
         {
         id: "linkedin", label: "Linkedin",
         yValues: metrics.social_media.service.linkedin_weekly.columns.audience_last,
-        colour: 'white',
+        colour: linkedin_colour,
         markerOptions: { s: 5 }
         }
     ],
@@ -166,23 +190,23 @@ operational systems.
   categories: metrics.social_media.all_weekly.columns.week_ending,
   width: 25,
   height: 8,
-  text: { colour: 'black' },
+  text: { colour: 'white' },
   xAxis: {
     title: 'Week ending (Sunday)',
-    titleOffset: 4,
+    titleOffset: 4.2,
     labelRotate: 35,
-    majorTick: 2,
+    majorTick: 4,
     formatter: dateFormatter
   },
   yAxis: {
     title: 'Engagements',
     titleOffset: 3,
-    majorTick: 1000
+    majorTick: 2000
   },
   plotArea: {
     yMin: 0,
     yMax: 10000,
-    colour: 'var(--l23-mint)'
+    colour: "var(--l23-dark-blue-grey)"
   },
   padding: {
     left: 4,
@@ -192,31 +216,31 @@ operational systems.
     {
       id: "all", label: "All",
       yValues: metrics.social_media.all_weekly.columns.engagements_total,
-      colour: black,
+      colour: all_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "twitter", label: "Twitter",
       yValues: metrics.social_media.service.twitter_weekly.columns.engagements_total,
-      colour: 'black',
+      colour: twitter_colour,
       markerOptions: { s: 5 }
     },
      {
       id: "instagram", label: "Instagram",
       yValues: metrics.social_media.service.instagram_weekly.columns.engagements_total,
-      colour: 'black',
+      colour: instagram_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "facebook", label: "Facebook",
       yValues: metrics.social_media.service.facebook_weekly.columns.engagements_total,
-      colour: 'facebook_colour',
+      colour: facebook_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "linkedin", label: "Linkedin",
       yValues: metrics.social_media.service.linkedin_weekly.columns.engagements_total,
-      colour: 'linkedin_colour',
+      colour: linkedin_colour,
       markerOptions: { s: 5 }
     }
   ],
@@ -226,33 +250,37 @@ operational systems.
 }) | safe }}
 {% endcomp %}
 
-{% comp 'dashboard.impact.panel', { fg: fg.next(), bg: bg.next() } %}
-    <h3>Schools & skill partnerships</h3>
-    {{ comp.viz.bigNumber({ number: 999 }) | safe }}
+
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    <h3>Percentage of Leeds schools engaged with:</h3>
+    {{ comp.dashboard.impact.big_number({ number: 999, suffix: '%' }) | safe }}
     <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
 {% endcomp %}
-{% comp 'dashboard.impact.panel', { fg: fg.next(), bg: bg.next() } %}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
     <h3>Total featured articles</h3>
-    {{ comp.viz.bigNumber({ number: 999 }) | safe }}
+    {{ comp.dashboard.impact.big_number({ number: 0 }) | safe }}
     <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
 {% endcomp %}
-{% comp 'dashboard.impact.panel', { fg: fg.next(), bg: bg.next() } %}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
     <h3>International online mentions</h3>
-    {{ comp.viz.bigNumber({ number: 999 }) | safe }}
+    {{ comp.dashboard.impact.big_number({ number: 999 }) | safe }}
     <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
 {% endcomp %}
-{% comp 'dashboard.impact.panel', { fg: fg.next(), bg: bg.next() } %}
-    <h3>% Positive Sentiment online</h3>
-    {{ comp.viz.bigNumber({ number: 999 }) | safe }}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    <h3>Another metric here</h3>
+    {{ comp.dashboard.impact.big_number({ number: 999 }) | safe }}
     <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
 {% endcomp %}
-{% comp 'dashboard.impact.panel', { columns: 2, fg: fg.next(), bg: bg.next() } %}
-    <h3>Featured articles over time (graph)</h3>
-    {{ comp.viz.bigNumber({ number: 999 }) | safe }}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    <h3>Another metric here</h3>
+    {{ comp.dashboard.impact.big_number({ number: 999 }) | safe }}
     <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
 {% endcomp %}
-
-
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    <h3>Number of pupils engaged with:</h3>
+    {{ comp.dashboard.impact.big_number({ number: 999 }) | safe }}
+    <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
+{% endcomp %}
 {% endcomp %}
 </div>
 

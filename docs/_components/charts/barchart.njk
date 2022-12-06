@@ -2,6 +2,7 @@
 css: |
   svg.barchart {
     --plot-fill: white;
+    --text-colour: black;
     width: 100%;
     /* border: 1px solid black; */
   }
@@ -17,7 +18,7 @@ css: |
   }
   .barchart text {
     stroke: none;
-    fill: black;
+    fill: var(--text-colour);
   }
 
   .barchart .category-label {
@@ -55,8 +56,12 @@ css: |
 
 <svg class="barchart" viewBox="-{{ margin + series_label_width }} -{{ margin + title_height }} {{ width + series_label_width + 2 * margin }} {{ height + title_height+ axis_label_height + 2 * margin }}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   data-dependencies="/assets/js/auto-popup.js"
+  {% if text_col %} style="--text-colour: {{ text_col }};"{% endif %}
   >
-  <g id="plot" class="plot">
+  <g id="plot" class="plot" 
+  {% if bg_col %} style="--plot-fill: {{ bg_col }};"{% endif %}
+  
+  >
     <rect x=0 y=0 width={{ width }} height={{ height }} />
     {% if plot.grid.x -%}
       <path class="grid x" d="

@@ -34,4 +34,4 @@ if __name__ == '__main__':
     # TODO Do a combine_first with existing data - unique key needed
 
     # Save to file
-    combined_data.to_csv(OUTPUT_FILE_PATH, index=False)
+    combined_data.sort_values(by=['news_date', 'news_headline', 'outlet_name', 'medium']).to_csv(OUTPUT_FILE_PATH, index=False)

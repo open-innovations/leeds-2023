@@ -5,19 +5,29 @@ stages:
     wdir: ../../..
     always_changed: true
     deps:
-    - scripts/metrics/callouts/extract.py
+      - scripts/metrics/callouts/extract.py
     outs:
-    - working/metrics/callouts/:
-        persist: false
-        cache: false
+      - working/metrics/callouts/:
+          persist: false
+          cache: false
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/transform.py
     wdir: ../../..
     deps:
-    - scripts/metrics/callouts/transform.py
-    - working/metrics/callouts/
-    - data/reference/postcodes.csv
+      - scripts/metrics/callouts/transform.py
+      - working/metrics/callouts/
+      - data/reference/postcodes.csv
     outs:
-    - data/metrics/callouts/:
-        persist: false
-        cache: false
+      - data/metrics/callouts/:
+          persist: false
+          cache: false
+  prepare:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/prepare.py
+    wdir: ../../..
+    deps:
+      - scripts/metrics/callouts/prepare.py
+      - data/metrics/callouts/
+    outs:
+      - docs/_data/metrics/callouts/:
+          persist: false
+          cache: false

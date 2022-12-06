@@ -7,7 +7,7 @@ stages:
     - working/manual/media/
     outs:
     - data/metrics/media_coverage/combined_cision.csv:
-        persist: false
+        persist: true
         cache: false
   transform_historic:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/combine_historic.py

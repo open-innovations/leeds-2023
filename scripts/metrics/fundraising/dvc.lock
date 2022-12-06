@@ -20,12 +20,12 @@ stages:
       md5: ed92206916ed97e19315605c31699a6e
       size: 8068
     - path: scripts/metrics/fundraising/prepare.py
-      md5: d3187f6e903e4bc0e4601bc4f152ebfc
-      size: 833
+      md5: cafb19217e9d07ac6e8d826da68a0742
+      size: 1005
     outs:
     - path: docs/_data/metrics/fundraising/count_by_sector_and_stage.csv
-      md5: 380bb0ec146285205c2d3b19d29c6f91
-      size: 1235
+      md5: f558cd6e19a5c9a1357eda994a7ce782
+      size: 608
     - path: docs/_data/metrics/fundraising/count_by_stage.csv
       md5: 3468f07c9c55366d5e8acf06670890a8
       size: 63

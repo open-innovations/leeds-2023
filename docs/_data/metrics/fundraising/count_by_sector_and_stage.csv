@@ -1,61 +1,25 @@
-sector,stage,count
-Arts And Culture,Prospect,1
-Arts And Culture,Research,4
-Arts And Culture,Unknown,4
-Arts And Culture,Won,3
-Charity,Research,2
-Construction,Prospect,5
-Construction,Research,13
-Construction,Won,4
-Consultancy,Lost,1
-Consultancy,Research,3
-Consultancy,Won,2
-Education,Research,1
-Education,Won,8
-Engineering,Prospect,1
-Engineering,Research,1
-Fashion,Won,1
-Finance,Lost,2
-Finance,Prospect,4
-Finance,Research,6
-Finance,Won,2
-Food And Beverage,Lost,1
-Food And Beverage,Prospect,3
-Food And Beverage,Research,1
-Hospitality,Prospect,3
-Hospitality,Research,6
-Hospitality,Won,1
-Law,Prospect,3
-Law,Research,10
-Law,Won,3
-Local Government,Prospect,1
-Logistics,Research,2
-Manufacturing,Research,5
-Marketing,Won,1
-Media,Prospect,3
-Media,Research,1
-Media,Won,1
-Property And Real Estate,Lost,2
-Property And Real Estate,Prospect,7
-Property And Real Estate,Research,23
-Property And Real Estate,Won,4
-Recruitment,Research,1
-Retail,Lost,1
-Retail,Prospect,3
-Retail,Research,2
-Sport,Prospect,1
-Tech,Lost,1
-Tech,Prospect,8
-Tech,Research,17
-Tech,Won,1
-Travel,Lost,1
-Travel,Prospect,3
-Travel,Research,1
-Travel,Won,1
-Unknown,Lost,3
-Unknown,Prospect,13
-Unknown,Research,40
-Unknown,Unknown,8
-Unknown,Won,10
-Utilities,Prospect,1
-Utilities,Research,1
+sector,Research,Prospect,Won,Lost,Unknown
+Arts And Culture,4.0,1.0,3.0,,4.0
+Charity,2.0,,,,
+Construction,13.0,5.0,4.0,,
+Consultancy,3.0,,2.0,1.0,
+Education,1.0,,8.0,,
+Engineering,1.0,1.0,,,
+Fashion,,,1.0,,
+Finance,6.0,4.0,2.0,2.0,
+Food And Beverage,1.0,3.0,,1.0,
+Hospitality,6.0,3.0,1.0,,
+Law,10.0,3.0,3.0,,
+Local Government,,1.0,,,
+Logistics,2.0,,,,
+Manufacturing,5.0,,,,
+Marketing,,,1.0,,
+Media,1.0,3.0,1.0,,
+Property And Real Estate,23.0,7.0,4.0,2.0,
+Recruitment,1.0,,,,
+Retail,2.0,3.0,,1.0,
+Sport,,1.0,,,
+Tech,17.0,8.0,1.0,1.0,
+Travel,1.0,3.0,1.0,1.0,
+Unknown,40.0,13.0,10.0,3.0,8.0
+Utilities,1.0,1.0,,,

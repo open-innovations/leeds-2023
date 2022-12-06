@@ -12,6 +12,7 @@ import oiCharts from 'oi-lume-charts/mod.ts';
 import csvLoader from 'oi-lume-utils/loaders/csv-loader.ts';
 import autoDependency from 'oi-lume-utils/processors/auto-dependency.ts';
 
+import * as filters from 'local/filters.ts';
 import getFonts from 'local/oi/get-fonts.ts';
 
 const site = lume({
@@ -122,5 +123,6 @@ site.copy('.nojekyll');
 site.copy('CNAME');
 
 site.filter('localize', (num) => num.toLocaleString())
+site.filter('lookup', filters.lookup);
 
 export default site;

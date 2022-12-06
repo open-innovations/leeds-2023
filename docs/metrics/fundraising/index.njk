@@ -1,6 +1,7 @@
 ---
 title: Fundraising
 work_in_progress: true
+key: fundraising
 summary: Data about the organisations who are funding LEEDS 2023.
 columns:
   - key: stage
@@ -8,7 +9,6 @@ columns:
   - key: count
     name: Count
 ---
-
 <p>
   This page presents data about Leeds 2023 Fundraising activity.
 </p>
@@ -63,4 +63,29 @@ columns:
   rows: metrics.fundraising.count_by_stage.rows
 }) | safe }}
 {% endcomp %}
+{% endcomp %}
+
+{% comp 'layout.block' %}
+<table class="scroll-table">
+  <thead>
+    <tr>
+      <th>Sector</th>
+      <th>Research</th>
+      <th>Prospect</th>
+      <th>Won</th>
+      <th>Lost</th>
+      <th>Unknown</th>
+    </tr>
+  </thead>
+{% for row in metrics.fundraising.count_by_sector_and_stage.rows %}
+  <tr>
+    <td>{{ row.sector }}</td>
+    <td>{{ row.Research }}</td>
+    <td>{{ row.Prospect }}</td>
+    <td>{{ row.Won }}</td>
+    <td>{{ row.Lost }}</td>
+    <td>{{ row.Unknown }}</td>
+  </tr>
+{% endfor %}
+</table>
 {% endcomp %}

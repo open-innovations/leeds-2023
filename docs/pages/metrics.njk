@@ -23,6 +23,10 @@ nav_order: 20
   callouts: {
     value: metrics.callouts.summary.responses,
     measure: "Total number of callout responses."
+  },
+  fundraising: {
+    value: metrics.fundraising.count_by_stage.rows | lookup('stage', 'Won', 'count'),
+    measure: 'Number of organisational funders'
   }
 } -%}
 
@@ -39,11 +43,10 @@ nav_order: 20
       {%- if metric.key and metric.key in key_metrics -%}
         {{ comp.viz.bigNumber({
           number: key_metrics[metric.key].value | localize
-
         }) | safe }}
-      {%- endif -%}
-      {%- if key_metrics[metric.key].measure -%}
-        <p>{{ key_metrics[metric.key].measure }}</p>
+        {%- if key_metrics[metric.key].measure -%}
+          <p>{{ key_metrics[metric.key].measure }}</p>
+        {%- endif -%}
       {%- endif -%}
       {% if metric.work_in_progress %}{{ comp.work_in_progress() | safe }}{% endif %}
     {% endcomp %}

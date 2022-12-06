@@ -5,7 +5,7 @@ work_in_progress: true
 limitations:
   - Stats have been derived from two different data sources and there is stil work to be done in reconciling these. This page should be seen as more of a wireframe.
 ---
-<p> All data concerns media coverage from 2021 an 2022.</p>
+<p> All data concerns media coverage from 2021 and 2022.</p>
 <h2>Headlines</h2>
 
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
@@ -18,9 +18,101 @@ limitations:
     }) | safe }}
     
   {% endcomp %}
+
+  {% comp 'grid.block.impact', {bg: all_colour} %}
+    <h2>
+      Total International Articles and Appearances
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.media_coverage.summary_new.stats.total_media_international | localize
+    }) | safe }}
+    
   {% endcomp %}
 
-<h2>Coverage Over Time</h2>
+  {% comp 'grid.block.impact', {bg: all_colour} %}
+    <h2>
+      Largest Online Viewership
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.media_coverage.summary_new.stats.uv_max | localize
+    }) | safe }}
+    <p>{{metrics.media_coverage.summary_new.stats.uv_max_outlet}}</p>
+  {% endcomp %}
+  {% comp 'grid.block.impact', {bg: all_colour} %}
+    <h2>
+      Largest Audience Reached 
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.media_coverage.summary_new.stats.reach_max | localize
+    }) | safe }}
+    <p>{{metrics.media_coverage.summary_new.stats.reach_max_outlet}}</p>
+  {% endcomp %}
+  {% endcomp %}
+
+<h2>Further Breakdowns</h2>
+{% comp 'grid.autogrid', { min_width: '32rem' } %}
+
+
+
+{{ comp.charts.barchart({
+  title: [
+    'Breakdown by Scope'
+  ],
+  series: [
+    metrics.media_coverage.summary_new.regional_count.columns.count
+  ],
+  popupContent: popupContent,
+  categories: metrics.media_coverage.summary_new.regional_count.columns.custom_tags,
+  colours: [
+    [ "var(--l23-cyan)" ]
+  ],
+  plot: {
+    grid: { x: true, category: true }
+  },
+  axis: {
+    x: {
+      title: 'Amount of Coverage',
+      show: false,
+      ticks: false,
+      resolution: 100
+    },
+    category: {
+      show: false,
+      height: 40
+    }
+  }
+}) | safe }}
+
+{{ comp.charts.barchart({
+  title: [
+    'Breakdown by Medium'
+  ],
+  series: [
+    metrics.media_coverage.summary_new.medium_count.columns.count
+  ],
+  popupContent: popupContent,
+  categories: metrics.media_coverage.summary_new.medium_count.columns.medium,
+  colours: [
+    [ "var(--l23-cyan)" ]
+  ],
+  plot: {
+    grid: { x: true, category: true }
+  },
+  axis: {
+    x: {
+      title: 'Amount of Coverage',
+      show: false,
+      ticks: false,
+      resolution: 100
+    },
+    category: {
+      show: false,
+      height: 40
+    }
+  }
+}) | safe }}
+<div><br><br><br><br><br><br></div>
+<div></div>
 {% from 'macros.njk' import dateFormatterNoDay %}
 {%- macro popupPreApplication(params) -%}
   {{ params.label }}</br>
@@ -73,4 +165,15 @@ limitations:
     width: "20em"
   }
 }) | safe }}
+{% endcomp %}
+
+
+{% comp 'layout.block' %}
+<h3>Media outlets with most appearances</h3>
+{{ comp.charts.table({
+  columns: [{'key' : 'outlet_name','name':'Outlet Name'},{'key':'count','name':'Count'}],
+  rows: metrics.media_coverage.summary_new.outlet_count.rows
+}) | safe }}
+{% endcomp %}
+
 {% endcomp %}

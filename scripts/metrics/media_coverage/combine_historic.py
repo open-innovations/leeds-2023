@@ -49,7 +49,7 @@ combined_data.columns = combined_data.columns.str.replace(' ','_').str.replace('
 df_obj = combined_data.select_dtypes(['object'])
 combined_data[df_obj.columns] = df_obj.apply(lambda x: x.str.strip())
 
-""""
+
 #Rename outlets to cision name if found
 combined_data['outlet_name'] = combined_data['outlet_name'].replace({
   'Yorkshire evening post' : 'Yorkshire Evening Post',
@@ -67,8 +67,11 @@ combined_data['outlet_name'] = combined_data['outlet_name'].replace({
   'Yorkshirepost' : 'Yorkshire Post, The',
   'Yorkshire post business' : 'Yorkshire Post, The',
   'Yorkshire Post - Business' : 'Yorkshire Post, The',
-  'yorkshire post' : 'Yorkshire Post, The'
+  'yorkshire post' : 'Yorkshire Post, The',
+  'Yorkshireeveningpost.co.uk':'Yorkshire Evening Post - Yorkshireeveningpost.co.uk',
+  'yorkshireeveningpost.co.uk':'Yorkshire Evening Post - Yorkshireeveningpost.co.uk'
+  
 })
-"""
+
 
 combined_data.to_csv(OUTPUT_PATH,index=False)

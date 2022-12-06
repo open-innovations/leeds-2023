@@ -1,0 +1,52 @@
+---
+title: Callouts
+summary: Data about callouts
+key: callouts
+metas:
+  title: LEEDS 2023 Metrics - Callouts
+  description: |
+    Visualisations of key metrics related to the LEEDS 2023 callouts.
+order: 20
+---
+
+<h2>Headlines</h2>
+
+{{ comp.metric.headline({
+  title: "Callout responses", headingLevel: 3,
+  value: metrics.callouts.summary.responses | localize,
+  description: "Total number of callout responses."
+}) | safe }}
+
+<h2>Callout Responses</h2>
+
+{% comp "grid.autogrid", { min_width: '32rem' } %}
+
+{% comp 'layout.block' %}
+<table class="scroll-table">
+  <thead>
+    <tr>
+      <th>Callout</th>
+      <th>Responses received</th>
+    </tr>
+  </thead>
+{% for row in metrics.callouts.responses_by_callout.rows %}
+  <tr>
+    <td>{{ names[row.callout] }}</td>
+    <td>{{ row.responses }}</td>
+  </tr>
+{% endfor %}
+</table>
+{% endcomp %}
+
+{% comp 'layout.figure' %}
+{{ comp.charts.hexmap({
+  hexjson: hex.wards_leeds,
+  data: metrics.callouts.responses_by_ward.rows,
+  matchKey: 'ward_code',
+  valueProp: 'responses',
+  bgColour: '#ddd',
+    colourScale: colours.scales.cyan
+}) | safe }}
+{% endcomp %}
+
+{% endcomp %}

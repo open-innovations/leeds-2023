@@ -19,6 +19,10 @@ nav_order: 20
   },
   ballot: {
     value: metrics.ballot.by_date.columns.cumulative_submissions | last
+  },
+  callouts: {
+    value: metrics.callouts.summary.responses,
+    measure: "Total number of callout responses."
   }
 } -%}
 
@@ -29,6 +33,9 @@ nav_order: 20
       bg: 'var(--l23-cyan)'
     } %}
       <h2>{{ metric.title }}</h2>
+      <p>
+        {{ metric.summary }}
+      </p>
       {%- if metric.key and metric.key in key_metrics -%}
         {{ comp.viz.bigNumber({
           number: key_metrics[metric.key].value | localize
@@ -38,9 +45,6 @@ nav_order: 20
       {%- if key_metrics[metric.key].measure -%}
         <p>{{ key_metrics[metric.key].measure }}</p>
       {%- endif -%}
-      <p>
-        {{ metric.summary }}
-      </p>
       {% if metric.work_in_progress %}{{ comp.work_in_progress() | safe }}{% endif %}
     {% endcomp %}
   {% endfor %}

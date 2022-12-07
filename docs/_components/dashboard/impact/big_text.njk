@@ -1,0 +1,10 @@
+---
+css: |
+  .impact-big-text {
+    font-family: var(--title-fontstack);
+    font-size: clamp(4vw, 10vw, 54px);
+    font-weight: bold;
+    text-align: center;
+  }
+---
+<div class='impact-big-text'>{{ prefix | d('') }}{{ content | d('') }}{{ suffix | d('') }}</div>

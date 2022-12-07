@@ -54,28 +54,28 @@ limitations:
 {% comp 'grid.autogrid', { min_width: '20rem' } %}
   {{ comp.metric.headline({
     title: "Volunteer sign-ups", headingLevel: 3,
-    value: metrics.volunteers.by_week.columns.created | last | localize,
+    value: by_week.columns.created | last | localize,
     description: "The number of people who have signed up to the volunteer system (Rosterfy).",
     background: "var(--l23-mint)"
   }) | safe }}
 
   {{ comp.metric.headline({
     title: "Volunteer applications", headingLevel: 3,
-    value: metrics.volunteers.by_week.columns.applied | last | localize,
+    value: by_week.columns.applied | last | localize,
     description: "The number of volunteering applications that have been received.",
     background: "var(--l23-yellow)"
   }) | safe }}
 
   {{ comp.metric.headline({
     title: "Volunteer offers", headingLevel: 3,
-    value: metrics.volunteers.by_week.columns.offered | last or '--' | localize,
+    value: by_week.columns.offered | last or '--' | localize,
     description: "The number of people who have been offered a volunteering role.",
     background: "var(--l23-cyan)"
   }) | safe }}
 
   {{ comp.metric.headline({
     title: "Volunteers confirmed", headingLevel: 3,
-    value: metrics.volunteers.by_week.columns.confirmed | last or '--' | localize,
+    value: by_week.columns.confirmed | last or '--' | localize,
     description: "The number of volunteers who have been confirmed.",
     background: "var(--l23-magenta)"
   }) | safe }}
@@ -97,7 +97,7 @@ limitations:
     <h3>Signed-up</h3>
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,
-      data: metrics.volunteers.by_ward.rows,
+      data: by_ward.rows,
       matchKey: 'ward_code',
       valueProp: 'created',
       popup: popupPreApplication,
@@ -107,15 +107,15 @@ limitations:
       colourScale: colours.scales.mint
     }) | safe }}
 
-   <p>Total within Leeds: <strong>{{metrics.volunteers.la_stats.created.Leeds}}</strong><br>
-    Total outside Leeds: <strong>{{metrics.volunteers.la_stats.created.OUTSIDE_LEEDS}}</strong><br>
-    Total unknown/invalid: <strong>{{metrics.volunteers.la_stats.created.UNKNOWN + metrics.volunteers.la_stats.created.NOT_PROVIDED}}</strong></p>
+   <p>Total within Leeds: <strong>{{la_stats.created.Leeds}}</strong><br>
+    Total outside Leeds: <strong>{{la_stats.created.OUTSIDE_LEEDS}}</strong><br>
+    Total unknown/invalid: <strong>{{la_stats.created.UNKNOWN + la_stats.created.NOT_PROVIDED}}</strong></p>
   </section>
   <section>
     <h3>Applications</h3>
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,
-      data: metrics.volunteers.by_ward.rows,
+      data: by_ward.rows,
       matchKey: 'ward_code',
       valueProp: 'applied',
       popup: popupApplied,
@@ -125,15 +125,15 @@ limitations:
       colourScale: colours.scales.yellow
     }) | safe }}
 
-   <p>Total within Leeds: <strong>{{metrics.volunteers.la_stats.applied.Leeds}}</strong><br>
-    Total outside Leeds: <strong>{{metrics.volunteers.la_stats.applied.OUTSIDE_LEEDS}}</strong><br>
-    Total unknown/invalid: <strong>{{metrics.volunteers.la_stats.applied.UNKNOWN + metrics.volunteers.la_stats.applied.NOT_PROVIDED}}</strong></p>
+   <p>Total within Leeds: <strong>{{la_stats.applied.Leeds}}</strong><br>
+    Total outside Leeds: <strong>{{la_stats.applied.OUTSIDE_LEEDS}}</strong><br>
+    Total unknown/invalid: <strong>{{la_stats.applied.UNKNOWN + la_stats.applied.NOT_PROVIDED}}</strong></p>
   </section>
   <section>
     <h3>Offers</h3>
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,
-      data: metrics.volunteers.by_ward.rows,
+      data: by_ward.rows,
       matchKey: 'ward_code',
       valueProp: 'offered',
       popup: popupOffered,
@@ -142,15 +142,15 @@ limitations:
       colourScale: colours.scales.cyan
     }) | safe }}
 
-    <p>Total within Leeds: <strong>{{metrics.volunteers.la_stats.offered.Leeds}}</strong><br>
-    Total outside Leeds: <strong>{{metrics.volunteers.la_stats.offered.OUTSIDE_LEEDS}}</strong><br>
-    Total unknown/invalid: <strong>{{metrics.volunteers.la_stats.offered.UNKNOWN + metrics.volunteers.la_stats.offered.NOT_PROVIDED}}</strong></p>
+    <p>Total within Leeds: <strong>{{la_stats.offered.Leeds}}</strong><br>
+    Total outside Leeds: <strong>{{la_stats.offered.OUTSIDE_LEEDS}}</strong><br>
+    Total unknown/invalid: <strong>{{la_stats.offered.UNKNOWN + la_stats.offered.NOT_PROVIDED}}</strong></p>
   </section>
   <section>
     <h3>Confirmed</h3>
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,
-      data: metrics.volunteers.by_ward.rows,
+      data: by_ward.rows,
       matchKey: 'ward_code',
       valueProp: 'confirmed',
       popup: popupConfirmed,
@@ -159,9 +159,9 @@ limitations:
       colourScale: colours.scales.magenta
     }) | safe }}
 
-    <p>Total within Leeds: <strong>{{metrics.volunteers.la_stats.confirmed.Leeds}}</strong><br>
-    Total outside Leeds: <strong>{{metrics.volunteers.la_stats.confirmed.OUTSIDE_LEEDS}}</strong><br>
-    Total unknown/invalid: <strong>{{metrics.volunteers.la_stats.confirmed.UNKNOWN + metrics.volunteers.la_stats.confirmed.NOT_PROVIDED}}</strong></p>
+    <p>Total within Leeds: <strong>{{la_stats.confirmed.Leeds}}</strong><br>
+    Total outside Leeds: <strong>{{la_stats.confirmed.OUTSIDE_LEEDS}}</strong><br>
+    Total unknown/invalid: <strong>{{la_stats.confirmed.UNKNOWN + la_stats.confirmed.NOT_PROVIDED}}</strong></p>
   </section>
 {% endcomp %}
 
@@ -169,7 +169,7 @@ limitations:
 {% comp 'layout.block' %}
 {{ comp.charts.table({
   columns: [{'key' : 'Local Authority','name':'Local Authority'},{'key':'Created','name':'Created'},{'key':'Applied','name':'Applied'},{'key':'Offered','name':'Offered'},{'key':'Confirmed','name':'Confirmed'}],
-  rows: metrics.volunteers.west_yorkshire.rows
+  rows: west_yorkshire.rows
 }) | safe }}
 {% endcomp %}
 <h2>Growth in volunteering</h2>
@@ -179,7 +179,7 @@ limitations:
 } %}
 
 {{ comp.oi.charts.graph.line({
-  categories: metrics.volunteers.by_week.columns.week_ending,
+  categories: by_week.columns.week_ending,
   width: 25,
   height: 12,
   text: { colour: '#eee' },
@@ -206,25 +206,25 @@ limitations:
   series: [
     {
       id: "offered", label: "Volunteers appointed (cumulative)",
-      yValues: metrics.volunteers.by_week.columns.confirmed,
+      yValues: by_week.columns.confirmed,
       colour: 'var(--l23-magenta)',
       markerOptions: { s: 5 }
     },
     {
       id: "offered", label: "Offers made (cumulative)",
-      yValues: metrics.volunteers.by_week.columns.offered,
+      yValues: by_week.columns.offered,
       colour: 'var(--l23-cyan)',
       markerOptions: { s: 5 }
     },
     {
       id: "applied", label: "Applications (cumulative)",
-      yValues: metrics.volunteers.by_week.columns.applied,
+      yValues: by_week.columns.applied,
       colour: 'var(--l23-yellow)',
       markerOptions: { s: 5 }
     },
     {
       id: "created", label: "Sign-ups (cumulative)",
-      yValues: metrics.volunteers.by_week.columns.created,
+      yValues: by_week.columns.created,
       colour: 'var(--l23-mint)',
       markerOptions: { s: 5 }
     }

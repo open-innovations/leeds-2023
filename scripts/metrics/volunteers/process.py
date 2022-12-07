@@ -6,14 +6,8 @@ from metrics.volunteers.setup import VIEW_DIR
 from metrics.volunteers.states import update_states
 from metrics.volunteers.summarise import summarise_by_ward, summarise_by_week,summarise_by_local_authority
 
-import util.oi_sftp_server
-
 
 def update():
-    logging.info('Getting latest data')
-    logging.debug(os.getcwd())
-    util.oi_sftp_server.get('rosterfy/current-checkpoint.csv', 'working/rosterfy/current-checkpoint.csv')
-
     logging.info('Loading data')
     data = load_raw_data()
     new_data = load_new_data()

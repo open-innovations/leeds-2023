@@ -1,2 +1,4 @@
 [core]
     autostage = true
+['remote "oicloud"']
+    url = ssh://cloud.open-innovations.org

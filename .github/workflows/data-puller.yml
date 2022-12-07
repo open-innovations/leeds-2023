@@ -23,9 +23,14 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Setup credentials file
+        env:
+          OI_SFTP_USERNAME: ${{ secrets.OI_SFTP_USERNAME }}
+          OI_SFTP_PASSWORD: ${{ secrets.OI_SFTP_PASSWORD }}
         run: |
           mkdir credentials
           echo ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }} | base64 -d > ./credentials/serviceAccountKey.json
+          dvc remote modify --local oicloud user ${{ secrets.OI_SFTP_USERNAME }}
+          dvc remote modify --local oicloud password ${{ secrets.OI_SFTP_PASSWORD }}
 
       - name: Run DVC pipelines
         env:
@@ -39,18 +44,6 @@ jobs:
           dvc update -R working
           dvc repro -R scripts/reference_data
           dvc repro -R scripts/metrics
-
-      - name: Update data
-        env:
-          PYTHONPATH: scripts
-          TYPEFORM_PRIVATE_TOKEN: ${{ secrets.TYPEFORM_PRIVATE_TOKEN }}
-          OI_SFTP_HOST: ${{ secrets.OI_SFTP_HOST }}
-          OI_SFTP_USERNAME: ${{ secrets.OI_SFTP_USERNAME }}
-          OI_SFTP_PASSWORD: ${{ secrets.OI_SFTP_PASSWORD }}
-          GOOGLE_APPLICATION_CREDENTIALS: "./credentials/serviceAccountKey.json"
-
-        run: |
-          python scripts/update_data.py
 
       - name: Process data for site
         env:

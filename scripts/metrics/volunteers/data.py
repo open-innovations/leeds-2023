@@ -11,6 +11,8 @@ from metrics.volunteers.setup import DATA_DIR
 from metrics.volunteers.states import add_states, map_checkpoints_to_states
 
 file_path = os.path.join(DATA_DIR, 'volunteers.csv')
+WORKING_DIR = os.path.join('working', 'metrics', 'rosterfy')
+RAW_DATA = os.path.join(WORKING_DIR, 'current-checkpoint.csv')
 
 
 def hash_id(id):
@@ -67,12 +69,7 @@ def load_source_data_file(path):
 
 
 def load_new_data():
-    files = glob('working/rosterfy/*.csv')
-    logging.debug('Found %s', files)
-    data = pd.concat(
-        [load_source_data_file(f) for f in files]
-    )
-
+    data = load_source_data_file(RAW_DATA)
     return data
 
 

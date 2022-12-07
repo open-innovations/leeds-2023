@@ -111,12 +111,12 @@ operational systems.
 {% endcomp %}
 {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/volunteers' } %}
     <h3>Volunteer applications</h3>
-    {{ comp.dashboard.impact.big_number({ number: metrics.volunteers.by_week.columns.applied | last | localize }) | safe }}
+    {{ comp.dashboard.impact.big_number({ number: search.data("metrics/volunteers").by_week.columns.applied | last | localize }) | safe }}
     <p class="footnote">The number of volunteering applications that have been received.</p>
 {% endcomp %}
 {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/volunteers' } %}
     <h3>Volunteer Offers</h3>
-    {{ comp.dashboard.impact.big_number({ number: metrics.volunteers.by_week.columns.offered | last or '--' | localize }) | safe }}
+    {{ comp.dashboard.impact.big_number({ number: search.data("metrics/volunteers").by_week.columns.offered | last or '--' | localize }) | safe }}
     <p class="footnote">The number of people who have been offered a volunteering role.</p>
 {% endcomp %} 
 

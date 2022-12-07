@@ -1,0 +1,30 @@
+stages:
+  # extract:
+  #   cmd: dvc update working/metrics/rosterfy.dvc
+  #   wdir: ../../..
+  #   deps:
+  #     - remote://oicloud/home/leeds2023/rosterfy/
+  #   outs:
+  #     - working/metrics/rosterfy/:
+  #         persist: true
+  #         cache: false
+  transform:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform.py
+    wdir: ../../..
+    deps:
+      - scripts/metrics/volunteers/transform.py
+      - working/metrics/rosterfy/current-checkpoint.csv
+    outs:
+      - data/metrics/volunteers/volunteers.csv:
+          persist: true
+          cache: false
+  prepare:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/prepare.py
+    wdir: ../../..
+    deps:
+      - scripts/metrics/volunteers/prepare.py
+      - data/metrics/volunteers/volunteers.csv
+    outs:
+      - docs/metrics/volunteers/_data:
+          persist: true
+          cache: false

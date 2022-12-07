@@ -42,7 +42,7 @@ layout: layouts/default.njk
     title: "Volunteers confirmed",
     value: metrics.volunteers.by_week.columns.confirmed | last or '--' | localize,
     description: "The number of volunteers who have been confirmed.",
-    link: "~/metrics/volunteers.njk",
+    link: "~/metrics/volunteers/index.njk",
     colour: "var(--l23-dark-blue-grey)",
     background: "var(--l23-magenta)"
   }) | safe }}
@@ -50,7 +50,7 @@ layout: layouts/default.njk
     title: "Volunteer applications",
     value: metrics.volunteers.by_week.columns.applied | last | localize,
     description: "The number of people who have applied to be volunteers.",
-    link: "~/metrics/volunteers.njk",
+    link: "~/metrics/volunteers/index.njk",
     colour: "var(--l23-dark-blue-grey)",
     background: "var(--l23-yellow)"
   }) | safe }}

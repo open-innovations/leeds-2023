@@ -193,10 +193,10 @@ limitations:
   yAxis: {
     title: 'Number of volunteers',
     titleOffset: 3,
-    majorTick: 200
+    majorTick: 250
   },
   plotArea: {
-    yMax: 1000,
+    yMax: by_week.columns.created | last | round(-2, "ceil"),
     colour: 'var(--l23-dark-blue-grey)'
   },
   padding: {

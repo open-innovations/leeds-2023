@@ -1,0 +1,8 @@
+envFile:
+  - .env
+scripts:
+  credentials:
+    desc: Set up DVC credentials
+    cmd:
+      - dvc remote modify --local oicloud user $OI_SFTP_USERNAME
+      - dvc remote modify --local oicloud password $OI_SFTP_PASSWORD

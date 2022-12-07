@@ -8,6 +8,8 @@
 
 ## Scripts
 
+NEW NEW NEW: This repo contains a `velociraptor.yaml` file to capture scripts. Take a look at https://velociraptor.run/ More documentation to come...
+
 The repo contains a series of pipelines which are used to collect and process data.
 
 If you are running the python scripts, you will need to install the dependencies listed in `requirements.txt`.

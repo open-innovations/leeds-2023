@@ -2,6 +2,8 @@
 title: Impact Dashboard
 work_in_progress: true
 summary: A health check across a number of key areas of interest.
+limitations:
+  - Data may not be accurate and should be used as a guide. 
 ---
 
 
@@ -280,3 +282,9 @@ operational systems.
 {% endcomp %}
 </div>
 
+{% if limitations %}
+<h2>Known Limitations and Issues</h2>
+<ul>
+  {% for item in limitations %}<li>{{ item | md(true) | safe }}</li>{% endfor %}
+</ul>
+{% endif %}

@@ -11,7 +11,7 @@ stages:
       size: 2937
     outs:
     - path: working/ballot/
-      md5: 37fc85566e0f74260da5174a5a7d4057.dir
+      md5: 96204a2fa63f266458950310c80c811c.dir
       size: 184272
       nfiles: 2
   transform:
@@ -24,7 +24,7 @@ stages:
       md5: 3d129afbd5414fb3390205597ef14881
       size: 2937
     - path: working/ballot/
-      md5: 37fc85566e0f74260da5174a5a7d4057.dir
+      md5: 96204a2fa63f266458950310c80c811c.dir
       size: 184272
       nfiles: 2
     outs:
@@ -40,10 +40,10 @@ stages:
       size: 148284
       nfiles: 2
     - path: scripts/metrics/ballot/summarize.py
-      md5: 4c5ff5f5c7b6322e072048da5c005f65
+      md5: 97558bf53d7e05aa6b29510a706b7d54
       size: 3664
     outs:
-    - path: docs/_data/metrics/ballot/
+    - path: docs/metrics/ballot/_data
       md5: 33b7f041d9a8305c4551eda1923d3611.dir
       size: 8733
       nfiles: 7

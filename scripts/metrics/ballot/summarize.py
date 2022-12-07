@@ -6,7 +6,7 @@ import numpy as np
 from metrics.ballot.process import load_raw_data, load_group_data
 from util.geography import local_authority_stats
 
-VIEW_DIR = os.path.join('docs', '_data', 'metrics', 'ballot')
+VIEW_DIR = os.path.join('docs', 'metrics', 'ballot', '_data')
 os.makedirs(VIEW_DIR, exist_ok=True)
 
 

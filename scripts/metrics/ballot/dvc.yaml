@@ -29,6 +29,6 @@ stages:
     - scripts/metrics/ballot/summarize.py
     - data/metrics/ballot/
     outs:
-    - docs/_data/metrics/ballot/:
+    - docs/metrics/ballot/_data:
         persist: true
         cache: false

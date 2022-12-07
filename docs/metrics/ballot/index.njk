@@ -28,21 +28,21 @@ limitations:
 {% comp 'grid.autogrid', { min_width: '24rem' } %}
 {{ comp.metric.headline({
   title: "Individual ballot entries", headingLevel: 3,
-  value: metrics.ballot.current.submissions | localize,
+  value: current.submissions | localize,
   description: "Total number of ballot entries received.",
   background: "var(--l23-magenta)"
 }) | safe }}
 
 {{ comp.metric.headline({
   title: "Group ballot entries", headingLevel: 3,
-  value: metrics.ballot.current.group_submissions | localize,
+  value: current.group_submissions | localize,
   description: "Total number of group ballot entries received.",
   background: "var(--l23-cyan)"
 }) | safe }}
 
 {{ comp.metric.headline({
   title: "Seats allocated", headingLevel: 3,
-  value: metrics.ballot.current.tickets | localize,
+  value: current.tickets | localize,
   description: "Total number of seats allocated based on individual and group entries received.",
   background: "var(--l23-yellow)"
 }) | safe }}
@@ -59,7 +59,7 @@ limitations:
 } %}
   {{ comp.charts.hexmap({
     hexjson: hex.wards_leeds,
-    data: metrics.ballot.by_ward.rows,
+    data: by_ward.rows,
     matchKey: 'ward_code',
     valueProp: 'submissions',
     popup: popupSubmissions,
@@ -71,10 +71,10 @@ limitations:
 {% endcomp %}
 
 <p>
-  This hexmap shows <strong>{{ metrics.ballot.local_autority_stats.Leeds }}</strong> submissions associated with postcodes that are within Leeds City Council.
-  In addition, there are <strong>{{ metrics.ballot.local_autority_stats.OUTSIDE_LEEDS }}</strong> submissions from other local authorities.
-  <strong>{{ metrics.ballot.local_autority_stats.UNKNOWN }}</strong> submissions were from postcodes that could not be identified. This is either because the postcode is invalid, or potentially is not a UK postcode.
-  <strong>{{ metrics.ballot.local_autority_stats.NOT_PROVIDED }}</strong> ballot entries were submitted without postcodes.
+  This hexmap shows <strong>{{ local_autority_stats.Leeds }}</strong> submissions associated with postcodes that are within Leeds City Council.
+  In addition, there are <strong>{{ local_autority_stats.OUTSIDE_LEEDS }}</strong> submissions from other local authorities.
+  <strong>{{ local_autority_stats.UNKNOWN }}</strong> submissions were from postcodes that could not be identified. This is either because the postcode is invalid, or potentially is not a UK postcode.
+  <strong>{{ local_autority_stats.NOT_PROVIDED }}</strong> ballot entries were submitted without postcodes.
 </p>
 
 <p>
@@ -87,7 +87,7 @@ limitations:
 } %}
   {{ comp.charts.hexmap({
     hexjson: hex.leeds_city_region,
-    data: metrics.ballot.by_local_authority.rows,
+    data: by_local_authority.rows,
     matchKey: 'la_code',
     valueProp: 'submissions',
     colourValueProp: 'submissions_scaled',
@@ -106,23 +106,23 @@ limitations:
   title: 'Cumulative counts of individual ballot entries and allocated seats'
 } %}
 {{ comp.oi.charts.graph.line({
-  categories: metrics.ballot.by_date.columns.date_submitted,
+  categories: by_date.columns.date_submitted,
   width: 25,
   height: 12,
   series: [
     { id: "submissions", label: "Cumulative individual ballot entries",
-      yValues: metrics.ballot.by_date.columns.cumulative_submissions,
+      yValues: by_date.columns.cumulative_submissions,
       colour: 'var(--l23-magenta)',
       markerOptions: { s: 4 }
     },
     { id: "tickets", label: "Cumulative seats allocated",
-      yValues: metrics.ballot.by_date.columns.cumulative_tickets,
+      yValues: by_date.columns.cumulative_tickets,
       colour: 'var(--l23-yellow)',
       markerOptions: { s: 4 }
     }
   ],
   plotArea: {
-    yMax: metrics.ballot.current.tickets + 1 | round(-3, 'ceil')
+    yMax: current.tickets + 1 | round(-3, 'ceil')
   },
   padding: {
     left: 4,
@@ -155,9 +155,9 @@ limitations:
   title: 'Distribution of ballot entries by age', max_width: '40rem'
 } %}
   {{ comp.charts.barchart({
-    categories: metrics.ballot.by_age.columns.artist_age_group,
+    categories: by_age.columns.artist_age_group,
     series: [
-      metrics.ballot.by_age.columns.submissions
+      by_age.columns.submissions
     ],
     plot: {
       grid: { x: true, category: true }
@@ -193,9 +193,9 @@ limitations:
   title: 'Distribution of ballot entries by source', max_width: '40rem'
 } %}
   {{ comp.charts.barchart({
-    categories: metrics.ballot.by_source.columns.source,
+    categories: by_source.columns.source,
     series: [
-      metrics.ballot.by_source.columns.submissions
+      by_source.columns.submissions
     ],
     plot: {
       grid: { x: true, category: true }

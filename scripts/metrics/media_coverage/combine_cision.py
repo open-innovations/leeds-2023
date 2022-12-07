@@ -57,8 +57,7 @@ if __name__ == '__main__':
     #existing_data = existing_data.drop_duplicates(subset=['news_date','outlet_name','news_headline'])
    
     # Combine, with the new data being priority
-    combined_data = existing_data.combine_first(combined_data)
-    
+    combined_data = combined_data.combine_first(existing_data)
 
     # Save to file
     combined_data.sort_values(by=['news_date', 'news_headline', 'outlet_name', 'medium']).to_csv(OUTPUT_FILE_PATH, index=False)

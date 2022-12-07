@@ -34,7 +34,8 @@ if __name__ == '__main__':
     combined_data = (pd.concat(dfs)
                      .drop(columns=['News Text', 'Contact Name', 'News Attachment Name'], errors='ignore')
                      .sort_values(by=['News Date', 'News Headline', 'Medium'])
-                     .reindex(columns=columns_order))
+                     .reindex(columns=columns_order)
+                     .drop_duplicates(subset=['News Date', 'News Headline', 'Medium','Outlet Name']))
 
     # Convert viewship to int
     combined_data['UV*'] = combined_data['UV*'].astype('Int64')
@@ -46,15 +47,18 @@ if __name__ == '__main__':
     # Combine new and existing data
     # Create a new hash index
     combined_data = set_hash_index(combined_data)
-
+    
     # Read existing data and set hash index
     existing_data = pd.read_csv(OUTPUT_FILE_PATH, parse_dates=['news_date'], dtype={
       'uv': 'Int64',
     })
-    existing_data = set_hash_index(existing_data)
 
+    existing_data = set_hash_index(existing_data)
+    #existing_data = existing_data.drop_duplicates(subset=['news_date','outlet_name','news_headline'])
+   
     # Combine, with the new data being priority
-    combined_data = combined_data.combine_first(existing_data)
+    combined_data = existing_data.combine_first(combined_data)
+    
 
     # Save to file
     combined_data.sort_values(by=['news_date', 'news_headline', 'outlet_name', 'medium']).to_csv(OUTPUT_FILE_PATH, index=False)

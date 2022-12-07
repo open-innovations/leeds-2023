@@ -13,7 +13,6 @@ news_date,news_headline,outlet_name,audience_reach,uv,tone,medium,outlet_type,cu
 2022-09-23,City aims to change lives through art,"Yorkshire Post - North Yorks edition, The",40746,,NEU,Newspaper,Newspaper,Regional,
 2022-09-23,Creativity is just the ticket,TheTicketingBusiness News,0,,POS,Online,"Online, consumer",International,Leeds Year Of Culture
 2022-09-23,ITV Lunchtime News,ITV 1 Yorkshire West,790001,,NEU,Broadcast,Television station,Regional,Leeds 2023; The Awakening
-2022-09-23,ITV Lunchtime News,ITV 1 Yorkshire West,790001,,NEU,Broadcast,Television station,Regional,Leeds 2023; The Awakening
 2022-09-23,ITV News London,ITV 1 Yorkshire West,790001,,NEU,Broadcast,Television station,Regional,Leeds Year Of Culture; The Awakening
 2022-09-23,Leeds 2023 announces huge opening show at Headingley Stadium with star-studded lineup,Yorkshire Evening Post - Yorkshireeveningpost.co.uk,0,237450,POS,Online,"Online, consumer",Local,Leeds 2023; The Awakening
 2022-09-23,Leeds 2023 announces initial programme,"Stage - Online, The",0,,NEU,Online,"Online, trade/industry",National; Trade,Leeds 2023
@@ -110,7 +109,6 @@ news_date,news_headline,outlet_name,audience_reach,uv,tone,medium,outlet_type,cu
 2022-09-26,BBC News at One,BBC 1 Oxford,229000,,NEU,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,BBC News at One,BBC Cymru Wales,1145001,,NEU,Broadcast,Television station,,Leeds 2023
 2022-09-26,BBC News at One,BBC London,5001000,,NEU,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,BBC News at One,BBC London,0,,NEU,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,BBC News at One,BBC News Channel,505000,,NEU,Broadcast,Television station,National; Regional,Leeds 2023
 2022-09-26,BBC News at One,BBC Northern Ireland,687000,,NEU,Broadcast,Television station,,Leeds 2023
 2022-09-26,BBC News at One,BBC One Channel Islands,0,,NEU,Broadcast,Television station,Regional,Leeds 2023
@@ -128,50 +126,23 @@ news_date,news_headline,outlet_name,audience_reach,uv,tone,medium,outlet_type,cu
 2022-09-26,BBC News at One,BBC West Midlands,458000,,NEU,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,BBC News at One,BBC1 Cambridge,0,,NEU,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,Breakfast,BBC 1 Oxford,229000,,POS,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC 1 Oxford,229000,,POS,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,Breakfast,BBC Cymru Wales,1145001,,NEU,Broadcast,Television station,,Leeds 2023
-2022-09-26,Breakfast,BBC Cymru Wales,1145001,,POS,Broadcast,Television station,,Leeds 2023
 2022-09-26,Breakfast,BBC London,0,,POS,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC London,5001000,,POS,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC London,0,,POS,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC London,5001000,,POS,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC News Channel,505000,,POS,Broadcast,Television station,National; Regional,Leeds 2023
 2022-09-26,Breakfast,BBC News Channel,505000,,POS,Broadcast,Television station,National; Regional,Leeds 2023
 2022-09-26,Breakfast,BBC Northern Ireland,687000,,NEU,Broadcast,Television station,,Leeds 2023
-2022-09-26,Breakfast,BBC Northern Ireland,687000,,POS,Broadcast,Television station,,Leeds 2023
-2022-09-26,Breakfast,BBC One Channel Islands,0,,NEU,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,Breakfast,BBC One Channel Islands,0,,NEU,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,Breakfast,BBC One East,412000,,NEU,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC One East,412000,,POS,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,Breakfast,BBC One East Midlands,687000,,NEU,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC One East Midlands,687000,,POS,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC One North East & Cumbria,802000,,POS,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,Breakfast,BBC One North East & Cumbria,802000,,POS,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,Breakfast,BBC One North West,916001,,NEU,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC One North West,916001,,POS,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,Breakfast,BBC One South,687000,,NEU,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC One South,687000,,POS,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,Breakfast,BBC One South East,916001,,NEU,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC One South East,916001,,POS,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC One South West,458000,,POS,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,Breakfast,BBC One South West,458000,,POS,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,Breakfast,BBC One West,687000,,POS,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC One West,687000,,POS,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC One Yorks & Lincs,870001,,NEU,Broadcast,Television station,Regional,Leeds City of Culture; The Awakening
-2022-09-26,Breakfast,BBC One Yorks & Lincs,870001,,NEU,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC One Yorks & Lincs,870001,,NEU,Broadcast,Television station,Regional,Leeds City of Culture; The Awakening
-2022-09-26,Breakfast,BBC One Yorks & Lincs,870001,,POS,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,Breakfast,BBC One Yorks & Lincs,870001,,NEU,Broadcast,Television station,Regional,Leeds City of Culture; The Awakening
 2022-09-26,Breakfast,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,Regional,Leeds City of Culture; The Awakening
-2022-09-26,Breakfast,BBC One Yorkshire,824001,,POS,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,Regional,Leeds City of Culture; The Awakening
-2022-09-26,Breakfast,BBC One Yorkshire,824001,,POS,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,Regional,Leeds City of Culture
-2022-09-26,Breakfast,BBC Scotland,1833000,,POS,Broadcast,Television station,National,Leeds 2023
 2022-09-26,Breakfast,BBC Scotland,1833000,,POS,Broadcast,Television station,National,Leeds 2023
 2022-09-26,Breakfast,BBC West Midlands,458000,,POS,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC West Midlands,458000,,POS,Broadcast,Television station,Regional,Leeds 2023
-2022-09-26,Breakfast,BBC1 Cambridge,0,,POS,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,Breakfast,BBC1 Cambridge,0,,POS,Broadcast,Television station,Regional,Leeds 2023
 2022-09-26,Details revealed on Leeds 2023 programme,Insider Media,0,91697,POS,Online,"Online, trade/industry",Regional,Leeds 2023; The Awakening
 2022-09-26,Newsletter,Insider Daily (Yorkshire) Newsletter,0,,NEU,Newspaper,Newspaper,Regional,Leeds 2023

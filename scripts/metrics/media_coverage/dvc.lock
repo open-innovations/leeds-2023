@@ -42,6 +42,6 @@ stages:
       size: 2297
     outs:
     - path: docs/_data/metrics/media_coverage/
-      md5: fb1cd8ff100a1a23a963e52e6c1ac12e.dir
-      size: 1318
+      md5: 247b9961597762fa95ff28ae2970983f.dir
+      size: 1316
       nfiles: 8

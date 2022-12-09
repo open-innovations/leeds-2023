@@ -1,0 +1,36 @@
+---
+title: Arts Council England
+summary: Data from Arts Council England
+key: arts-council
+work_in_progress: true
+---
+
+
+<h1>{{ title }}</h1>
+
+<p>Hexmap showing the total amount of funding recieved from Arts Council England (from April 2018 to August 2022) per person by Local Authority.</p>
+{% from 'macros.njk' import dateFormatter %}
+{%- macro popupCountTotal(params) -%}
+  {{ params.label }}</br>£
+  {{ params.value }} </br> Funding Received Per Person
+{%- endmacro -%}
+
+
+<div style="display: flex; justify-content: center;">
+<div style="width: 40rem; max-width: 100%;">
+{{ comp.charts.hexmap({
+      hexjson: arts_council.la,
+      data: arts_council.all_summary_hex.rows,
+      matchKey: 'la_code',
+      valueProp: 'sum_total_per_capita',
+      bgColour: '#ddd',
+      popup: popupCountTotal,
+      title: 'Arts Council Funding by Local Authority Per Capita'
+    }) | safe }}
+
+</div>
+</div>
+
+
+
+

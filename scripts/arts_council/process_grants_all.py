@@ -40,13 +40,12 @@ data=  data.pivot(columns='year')
 
 #clean and add total columns
 data.columns = ['_'.join(col).strip() for col in data.columns.values]
-data['count_total'] = sum([data[col].fillna(0) for col in data.columns if 'count' in col])
-data['sum_total'] = sum([data[col].fillna(0) for col in data.columns if 'sum' in col])
+data['count_total'] = sum([data[col].fillna(0) for col in data.columns if 'count' in col]).astype('Int64')
+data['sum_total'] = sum([data[col].fillna(0) for col in data.columns if 'sum' in col]).astype('Int64')
 data['las'] = data.index
 
-numeric_cols = ['count_2018-19','count_2019-20','count_2020-21','count_2021-22','count_2022-23','sum_2018-19','sum_2019-20','sum_2020-21','sum_2021-22','sum_2022-23','sum_total','count_total']
-for col in numeric_cols:
-    data[col] = data[col].astype('Int64')
+numeric_cols = ['count_2018-19','count_2019-20','count_2020-21','count_2021-22','count_2022-23','sum_2018-19','sum_2019-20','sum_2020-21','sum_2021-22','sum_2022-23']
+data = data.drop(columns=numeric_cols)
 
 #Merge to get local authority code
 with open(os.path.join('working','arts_council','la.json')) as f:
@@ -65,9 +64,11 @@ population_stats = pd.read_excel(PS_PATH,skiprows=7,usecols=['Code','Name','Geog
 population_stats = population_stats[population_stats['Geography'].isin(['Unitary Authority','Metropolitan District','Non-metropolitan District','London Borough','Council Area','Local Government District'])]
 
 combined = (pd.merge(combined,population_stats,left_on='la_code',right_on='Code',how='left')
-               .drop(columns=['las','Name','Code']))
+               .drop(columns=['las','Name','Code','Geography'])
+               .rename(columns={'All ages' : 'population'})
+               .sort_values('la_code'))
 
-combined['sum_total_per_capita'] = ((combined['sum_total'] / combined['All ages']).round(2)).fillna(0).map('{:,.2f}'.format).replace({'0.00':'0'})
-
+combined['sum_total_per_capita'] = ((combined['sum_total'] / combined['population']).round(2)).fillna(0).map('{:,.2f}'.format).replace({'0.00':'0'})
+combined = combined[['la_code','local_authority','population','count_total','sum_total','sum_total_per_capita']]
 combined.to_csv(os.path.join('docs','_data','arts_council','all_summary_hex.csv'),index=False)
 #print(combined)

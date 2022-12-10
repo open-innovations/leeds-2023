@@ -34,26 +34,43 @@ by_la = pd.DataFrame({
     'sum_total' : data.groupby('Local authority')['Award amount'].sum().astype('Int64')
 })
 
-#Merge to get local authority code
+#Merge to get local and region authority code
 with open(os.path.join('working','arts_council','la.json')) as f:
     hex_data = pd.DataFrame.from_dict(json.load(f)['hexes'],orient='index')
 
 hex_data['la_code'] = hex_data.index
 
-combined = (pd.merge(hex_data,by_la,left_on='n',right_index=True,how='left')
-              .rename(columns={'n':'local_authority'}).drop(columns=['q','r','region','lad19nmw','colour']))
+combined_la = (pd.merge(hex_data,by_la,left_on='n',right_index=True,how='left')
+              .rename(columns={'n':'local_authority'}).drop(columns=['q','r','lad19nmw','colour']))
 
+combined_region = pd.DataFrame({
+    'count_total' : combined_la.groupby('region')['count_total'].sum().astype('Int64'),
+    'sum_total' : combined_la.groupby('region')['sum_total'].sum().astype('Int64')
+})
 
 #Merge with population stats
 PS_PATH = os.path.join('working','arts_council','ukpopestimatesmid2020on2021geography.xlsx')
-population_stats = pd.read_excel(PS_PATH,skiprows=7,usecols=['Code','Name','Geography','All ages'])
+population_stats = pd.read_excel(PS_PATH,skiprows=7,usecols=['Code','Name','Geography','All ages'],index_col='Code')
 
-
-combined = (pd.merge(combined,population_stats,left_on='la_code',right_on='Code',how='inner')
-               .drop(columns=['Name','Code','Geography'])
+combined_la = (pd.merge(combined_la,population_stats,left_on='la_code',right_index=True,how='inner')
+               .drop(columns=['Name','Geography'])
                .rename(columns={'All ages' : 'population'})
                .sort_values('la_code'))
 
-combined['sum_total_per_capita'] = ((combined['sum_total'] / combined['population']).round(2)).fillna(0).map('{:,.2f}'.format).replace({'0.00':'0'})
-combined = combined[['la_code','local_authority','population','count_total','sum_total','sum_total_per_capita']]
-combined.to_csv(os.path.join('docs','_data','arts_council','all_summary_hex.csv'),index=False)
+
+combined_region = (pd.merge(combined_region,population_stats,left_index=True,right_index=True,how='inner')
+               .drop(columns=['Geography'])
+               .rename(columns={'All ages' : 'population','Name' : 'region'})
+               .rename_axis('region_code')
+               .sort_index())
+
+          
+
+combined_la['sum_total_per_capita'] = ((combined_la['sum_total'] / combined_la['population']).round(2)).fillna(0).map('{:,.2f}'.format).replace({'0.00':'0'})
+combined_la = combined_la[['la_code','local_authority','population','count_total','sum_total','sum_total_per_capita']]
+combined_la.to_csv(os.path.join('docs','_data','arts_council','all_summary_hex.csv'),index=False)
+
+
+combined_region['sum_total_per_capita'] = ((combined_region['sum_total'] / combined_region['population']).round(2)).fillna(0).map('{:,.2f}'.format).replace({'0.00':'0'})
+combined_region = combined_region[['region','population','count_total','sum_total','sum_total_per_capita']]
+combined_region.to_csv(os.path.join('docs','_data','arts_council','all_summary_region.csv'))

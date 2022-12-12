@@ -11,8 +11,7 @@ if __name__ == '__main__':
     files = glob.glob(os.path.join(WORKING_DIR, '*.csv'))
 
     # Load each file into a list of data frames
-    dfs = [pd.read_csv(file, parse_dates=['News Date'], dayfirst=True)
-           for file in files]
+    dfs = [pd.read_csv(file) for file in files]
 
     # Set columns order
     columns_order = ['News Date', 'News Headline', 'Outlet Name', 'Audience Reach',
@@ -24,6 +23,12 @@ if __name__ == '__main__':
                      .sort_values(by=['News Date', 'News Headline', 'Medium'])
                      .reindex(columns=columns_order))
 
+    # Drop rows with empty news headline (Cision has started adding a footer)
+    combined_data = combined_data[~combined_data['News Headline'].isna()]
+
+    # Convert news date into datetime format
+    combined_data['News Date'] = pd.to_datetime(combined_data['News Date'], dayfirst=True)
+    
     # Convert viewship to int
     combined_data['UV*'] = combined_data['UV*'].astype('Int64')
 

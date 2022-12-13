@@ -84,3 +84,24 @@ out_region = combined_region[['sum_total_per_capita_f']].to_dict()['sum_total_pe
 print(out_region)
 with open(os.path.join('docs','_data','arts_council','region_map.yaml'),'w') as f:
     yaml.safe_dump(out_region,f)
+
+
+uk_pop = population_stats[population_stats['Name'] == 'UNITED KINGDOM']['All ages'][0]
+england_pop = population_stats[population_stats['Name'] == 'ENGLAND']['All ages'][0]
+stats = {
+    'total_count' : data['Award amount'].count(),
+    'total_sum' : data['Award amount'].sum(), 
+    'uk_count' : combined_region['count_total'].sum(),
+    'uk_sum' : combined_region['sum_total'].sum(),
+    'england_count' : combined_region[~combined_region['region'].isin(['NORTHERN IRELAND','SCOTLAND','WALES'])]['count_total'].sum(),
+    'england_sum' : combined_region[~combined_region['region'].isin(['NORTHERN IRELAND','SCOTLAND','WALES'])]['sum_total'].sum(),
+    'uk_population' : uk_pop,
+    'england_population' : england_pop
+}
+
+for s in stats.keys():
+    stats[s] = int(stats[s])
+
+print(stats)
+with open(os.path.join('docs','_data','arts_council','stats.yaml'),'w') as f:
+    yaml.safe_dump(stats,f)

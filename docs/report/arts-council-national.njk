@@ -7,7 +7,10 @@ work_in_progress: true
 
 
 <h1>{{ title }}</h1>
-
+<p>Arts Council England gave a total of <strong>{{arts_council.stats.total_count | localize}}</strong> grants worth at total of <strong>£{{arts_council.stats.total_sum | localize}}</strong>.</p>
+<p>A total of <strong>{{arts_council.stats.uk_count | localize}}</strong> went to organisations in the UK, worth at total of <strong>£{{arts_council.stats.uk_sum | localize}}</strong>.</p>
+<p>A total of <strong>{{arts_council.stats.england_count | localize}}</strong> went to organisations in England, worth at total of <strong>£{{arts_council.stats.england_sum | localize}}</strong>. 
+Engalnd has a population of <strong>{{arts_council.stats.england_population | localize}}</strong> so this equates to <strong>£{{(arts_council.stats.total_sum / arts_council.stats.england_population) | round(2) | localize}}</strong> per person.</p>
 <p>Hexmap showing the total amount of funding recieved from Arts Council England (from April 2018 to August 2022) per person by Local Authority.</p>
 {% from 'macros.njk' import dateFormatter %}
 {%- macro popupCountTotal(params) -%}
@@ -31,6 +34,7 @@ work_in_progress: true
 </div>
 </div>
 
+<p>Map showing the total amount of funding recieved from Arts Council England (from April 2018 to August 2022) per person by Region.</p>
 {%- macro popup_text(label, value, total) -%}
   £{{value}} total funding per person in {{ label }}
 {%- endmacro -%}

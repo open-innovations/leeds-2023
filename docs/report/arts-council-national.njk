@@ -31,6 +31,21 @@ work_in_progress: true
 </div>
 </div>
 
+{%- macro popup_text(label, value, total) -%}
+  £{{value}} total funding per person in {{ label }}
+{%- endmacro -%}
+<div style="display: flex; justify-content: center;">
+<div style="width: 40rem; max-width: 100%;">
+{{ comp.map.uk({
+      width: '80%',
+      values: arts_council.region_map,
+      max: 11.86,
+      popup_formatter: popup_text
+    }) | safe }}
+
+</div>
+</div>
+
 
 
 

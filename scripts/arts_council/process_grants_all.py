@@ -1,6 +1,7 @@
 import pandas as pd
 import json
 import os
+import yaml
 
 YEARS = ['2018-19_0','2019-20_0','2020-21_0','2021-22_0','2022-23']
 WORKING_DIR = os.path.join('working','arts_council')
@@ -74,3 +75,12 @@ combined_la.to_csv(os.path.join('docs','_data','arts_council','all_summary_hex.c
 combined_region['sum_total_per_capita'] = ((combined_region['sum_total'] / combined_region['population']).round(2)).fillna(0).map('{:,.2f}'.format).replace({'0.00':'0'})
 combined_region = combined_region[['region','population','count_total','sum_total','sum_total_per_capita']]
 combined_region.to_csv(os.path.join('docs','_data','arts_council','all_summary_region.csv'))
+
+#yaml region file
+combined_region['sum_total_per_capita_f'] = (combined_region['sum_total'] / combined_region['population']).round(2)
+combined_region.index = combined_region['region'].str.title()
+
+out_region = combined_region[['sum_total_per_capita_f']].to_dict()['sum_total_per_capita_f']
+print(out_region)
+with open(os.path.join('docs','_data','arts_council','region_map.yaml'),'w') as f:
+    yaml.safe_dump(out_region,f)

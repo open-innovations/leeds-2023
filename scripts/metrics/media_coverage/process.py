@@ -31,6 +31,16 @@ if __name__ == '__main__':
     regional_count = pd.DataFrame({'count' : data[data['custom_tags'].isin(region_tags)].groupby(['custom_tags'])['news_headline'].count()}).sort_values('count')
     regional_count.to_csv(os.path.join(VIEW_DIR,'regional_count.csv'))
 
+    #All Tags count
+    tag_count = (data         
+                    .filter(['custom_tags'])
+                    .apply(lambda x: x.str.split(';').explode().str.strip())
+                    .value_counts()   
+                )
+
+    print(tag_count)
+
+
     uv_max = int(data['uv'].max())
     reach_max = int(data['audience_reach'].max())
     stats = ({

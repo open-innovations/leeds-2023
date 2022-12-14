@@ -50,6 +50,8 @@ if __name__ == '__main__':
     df_obj = combined_data.select_dtypes(['object'])
     combined_data[df_obj.columns] = df_obj.apply(lambda x: x.str.strip())
 
+    #Change to title case
+    combined_data['custom_tags'] = combined_data['custom_tags'].str.title()
 
     #Rename outlets to cision name if found
     combined_data['outlet_name'] = combined_data['outlet_name'].replace({

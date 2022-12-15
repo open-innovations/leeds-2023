@@ -30,6 +30,17 @@ limitations:
     }) | safe }}
     
   {% endcomp %}
+
+    {% comp 'grid.block.impact', {bg: all_colour} %}
+    <h2>
+      Total Local Articles and Appearances
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.media_coverage.summary_new.stats.total_media_local | localize
+    }) | safe }}
+    
+  {% endcomp %}
+
 {# Removed for initial show and tell
   {% comp 'grid.block.impact', {bg: all_colour} %}
     <h2>

@@ -21,22 +21,42 @@ limitations:
     
   {% endcomp %}
 
+      {% comp 'grid.block.impact', {bg: all_colour} %}
+    <h2>
+      Total Local Articles and Appearances
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.media_coverage.summary_new.stats.total_media_local | localize
+    }) | safe }}
+    
+  {% endcomp %}
+
+      {% comp 'grid.block.impact', {bg: all_colour} %}
+    <h2>
+      Total Regional Articles and Appearances
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.media_coverage.summary_new.stats.total_media_regional | localize
+    }) | safe }}
+    
+  {% endcomp %}
+
+      {% comp 'grid.block.impact', {bg: all_colour} %}
+    <h2>
+      Total National Articles and Appearances
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: metrics.media_coverage.summary_new.stats.total_media_national | localize
+    }) | safe }}
+    
+  {% endcomp %}
+
   {% comp 'grid.block.impact', {bg: all_colour} %}
     <h2>
       Total International Articles and Appearances
     </h2>
     {{ comp.viz.bigNumber({
       number: metrics.media_coverage.summary_new.stats.total_media_international | localize
-    }) | safe }}
-    
-  {% endcomp %}
-
-    {% comp 'grid.block.impact', {bg: all_colour} %}
-    <h2>
-      Total Local Articles and Appearances
-    </h2>
-    {{ comp.viz.bigNumber({
-      number: metrics.media_coverage.summary_new.stats.total_media_local | localize
     }) | safe }}
     
   {% endcomp %}

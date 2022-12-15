@@ -57,7 +57,7 @@ if __name__ == '__main__':
         'uv_max_outlet' : data[data['uv'] == uv_max]['outlet_name'].values[0],
         'reach_max' : reach_max,
         'reach_max_outlet' : data[data['audience_reach'] == reach_max]['outlet_name'].values[0],
-        'total_media_international' : int(data[data['custom_tags'] == 'International']['news_headline'].count())})
+        'total_media_international' : int(regional_count.loc['International','count'])})
 
     with open(os.path.join(VIEW_DIR,'stats.yml'),'w') as f:
         yaml.safe_dump(stats,f)

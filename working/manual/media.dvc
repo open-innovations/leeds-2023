@@ -1,10 +1,10 @@
-md5: 50cdbf8c815293a3f8834e6a814421af
+md5: d637b0472ee0e6cf2df52fc4cde4981f
 frozen: true
 deps:
 - md5: 2a30b7520221d0b6fa3ef0509ef28312.dir
   size: 742211
   nfiles: 5
-  path: s3://open-innovations-data/filestash/leeds2023/media/
+  path: s3://open-innovations-filestash/leeds2023/media/
 outs:
 - md5: ded1142712b63cc619b2c5ae10d6e84f.dir
   size: 742211

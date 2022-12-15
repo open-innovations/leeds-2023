@@ -1,10 +1,10 @@
-md5: 22a1020fe4a24d875089ac7a6b81ba36
+md5: 3a80f1f7c6663ece7c0a1c2229c18bd9
 frozen: true
 deps:
 - md5: 9f830d4fa2ae1f234110d50f682f7d52.dir
   size: 44225
   nfiles: 3
-  path: s3://open-innovations-data/filestash/leeds2023/mwmcmn/
+  path: s3://open-innovations-filestash/leeds2023/mwmcmn/
 outs:
 - md5: 9a464c3e15d24372869acae04a5586c4.dir
   size: 44225

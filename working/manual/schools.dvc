@@ -1,10 +1,10 @@
-md5: 186a2a5ef9ed06e75c3f7b9300dae8f4
+md5: 5c0f3c18075e59291312fcfc759a6133
 frozen: true
 deps:
 - md5: f2b420c0a075cdcb4d3d0fa529b3b341.dir
   size: 54399
   nfiles: 1
-  path: s3://open-innovations-data/filestash/leeds2023/schools/
+  path: s3://open-innovations-filestash/leeds2023/schools/
 outs:
 - md5: 68c7f388830321813da144a2d07ba6df.dir
   size: 54399

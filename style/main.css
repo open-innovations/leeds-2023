@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@font-face {
+  font-family: DM Sans;
+  src: url(https://leeds2023.co.uk/_next/static/media/DMSans-BoldItalic.b1e68348.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/DMSans-BoldItalic.215e6945.woff) format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: DM Sans;
+  src: url(https://leeds2023.co.uk/_next/static/media/DMSans-MediumItalic.e1c27f13.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/DMSans-MediumItalic.f4ad3dfc.woff) format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: DM Sans;
+  src: url(https://leeds2023.co.uk/_next/static/media/DMSans-Regular.bff198ba.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/DMSans-Regular.043bc03e.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: DM Sans;
+  src: url(https://leeds2023.co.uk/_next/static/media/DMSans-Italic.386920f4.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/DMSans-Italic.22438281.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: DM Sans;
+  src: url(https://leeds2023.co.uk/_next/static/media/DMSans-Medium.10941ca6.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/DMSans-Medium.795c897d.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: DM Sans;
+  src: url(https://leeds2023.co.uk/_next/static/media/DMSans-Bold.32657747.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/DMSans-Bold.f53aa3f1.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rebond Grotesque;
+  src: url(https://leeds2023.co.uk/_next/static/media/RebondGrotesque-Medium.47af8e4d.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/RebondGrotesque-Medium.f4c7dbcd.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rebond Grotesque;
+  src: url(https://leeds2023.co.uk/_next/static/media/RebondGrotesque-Bold.c02f4686.woff2) format("woff2"),url(https://leeds2023.co.uk/_next/static/media/RebondGrotesque-Bold.7f5910ca.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: var(--body-fontstack);
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  color: #11363E;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-fontstack);
+}
+
+h1 {
+  font-size: 2em;
+}
+
+body * + *, .forced-top-margin {
+  margin-top: 1.5em;
+}
+
+.no-top-margin {
+  margin-top: 0;
+}
+
+.top-spacer {
+  height: var(--header-height);
+  width: 100%;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+.social-icon {
+  max-width: 3em;
+}
+
+dt {
+  font-family: var(--title-fontstack);
+  font-weight: bold;
+}
+
+dd {
+  padding-left: 2rem;
+}
+
+dt + dd {
+  margin-top: 0;
+}
+
+.c5-bg {
+  color: #000;
+  background-color: var(--l23-cyan);
+  display: block;
+}
+
+.c5-bg:hover {
+    background-color: #000;
+    color: white;
+  }
+
+body {
+  color: var(--colour-black);
+  background-color: var(--color-off-white);
+}
+
+.site-header-container {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.site-header {
+  height: var(--header-height);
+  color: white;
+  font-size: 1.125rem;
+}
+
+.site-header h1 {
+    font-size: 1.5rem;
+  }
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header .logo {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    align-items: center;
+  }
+
+.site-header .logo svg {
+      width: 127px;
+      fill: white;
+    }
+
+.site-header a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.site-header a:hover, .site-header a.active {
+      text-decoration: underline;
+    }
+
+.site-header * {
+    margin-top: 0;
+  }
+
+.site-footer {
+  margin-top: 4em;
+}
+
+.site-footer footer {
+    border-top: 1px solid rgb(80, 113, 117);
+    padding: 40px 0;
+  }
+
+.menu-burger i {
+    background-color: white;
+  }
+
+.menu-items {
+  background-color: var(--background-colour);
+  list-style: none;
+}
+
+.menu-items > li + li {
+    margin-top: 0.5em;
+  }
+
+@media screen and (min-width: 800px) {
+
+.menu-items > li + li {
+      margin-top: 0;
+  }
+    }
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 0.4rem;
+}
+
+td:first-child {
+    border-left: none;
+  }
+
+td:last-child {
+    border-right: none;
+  }
+
+th {
+  font-weight: bold;
+  font-family: var(--title-fontstack);
+}
+
+td, th {
+  padding: 0.5rem;
+}
+
+.chart-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: var(--title-fontstack);
+}
+
+.plot {
+  --plot-fill: var(--l23-mint);
+}
+
+.grid {
+  stroke: #aaa;
+}
+
+.grid.x {
+    stroke-dasharray: 7 4;
+  }
+
+.axis {
+  stroke: #aaa;
+}
+
+/* Outline zero valued hexes in black */
+
+.hexmap [data-value="0"] path {
+  stroke: var(--l23-dark-blue-grey);
+  stroke-width: 3px;
+}
+
+.chart {
+  --colour:#eee;
+  --plot-background:var(--l23-dark-blue-grey);
+}
+
+.chart .line {
+    stroke-width: 2px;
+  }
+
+[data-auto-popup] {
+  cursor: help;
+}
+
+[data-auto-popup] * {
+    cursor: inherit;
+  }
+
+.popup {
+  --bg-colour: black;
+  position: fixed;
+  color: white;
+  background-color: var(--bg-colour);
+  z-index: 1000;
+  padding: 0.5rem;
+  margin-top: 0;
+  display: inline-block;
+  transition: left 0.1s linear, top 0.1s linear, opacity 0.5s ease-in-out;
+  min-width: 1vh;
+  box-shadow: 2px 2px 4px hsla(0, 100%, 0%, 30%);
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.popup::after {
+    content: "";
+    position: absolute;
+    bottom: auto;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 0;
+    transform: translate3d(-50%, -100%, 0);
+    border: 0.5rem solid #ffffff00;
+    border-bottom-color: var(--bg-colour);
+  }
+
+.popup[data-auto-popup-pos='right'] {
+    transform: translateY(-50%);
+  }
+
+.popup[data-auto-popup-pos='right']::after {
+      left: 0;
+      top: 50%;
+      transform: translate3d(-100%, -50%, 0);
+      border: 0.5rem solid #ffffff00;
+      border-right-color: var(--bg-colour);
+    }
+
+/* @import "css/grid.css"; */
+
+:root {
+  --body-fontstack: 'DM Sans', sans-serif;
+  --title-fontstack: 'Rebond Grotesque', 'Rebond Grotesk', sans-serif;  
+  --max-width: 1440px;
+  --header-height: 80px;
+  --background-colour: initial;
+  --big-number-size: 5vw;
+  --l23-cyan: hsl(173, 65%, 61%);
+  --l23-dark-cyan: hsl(191, 57%, 15%);
+  --l23-yellow: hsl(52, 100%, 50%);
+  --l23-magenta: hsl(321, 100%, 50%);
+  --l23-mint: hsl(87, 57%, 86%);
+
+  /* Actual styles, but not proper names */
+  --l23-dark-blue-grey: hsl(188, 100%, 12%);
+
+  --color-off-white: rgb(249, 246, 243);
+  --colour-black: #111;
+}
+

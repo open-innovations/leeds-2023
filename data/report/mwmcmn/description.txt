@@ -1,0 +1,45 @@
+--------------------------------------------------------------------------------
+
+My World, My City, My Neighbourhood - LEEDS 2023 
+
+These datasets contain aggregated analysis of artist and participant feedback. 
+
+The column headings in the two datasets were shortened for easier processing. 
+
+The new column headings are mapped to the original survey questions and metrics
+below. 
+
+mwmcmn_lcf.csv -->
+    Artist_ID = Artist (anonymised)
+    YP_Benefitted_Total = 'How many young people directly benefited from the activity? Please count unique, individual people and not attendances or footfall.' 
+    YP_Benefitted_0_4 = 'How many early years children aged 0-4 directly benefited from the activity?'
+    YP_Benefitted_5_12 = 'How many children aged 5-12 directly benefited from the activity?'
+    YP_Benefitted_13_18 = 'How many young people aged 13-18 directly benefited from the activity?'
+    YP_Benefitted_19_25 = 'How many young adults aged 19-25 directly benefited from the activity?'
+    YP_Benefitted_Unknown = 'How many children and young people whose age wasn't asked or wasn't known directly benefited from the activity?'
+    YP_First_Time_Participation = 'Can you give an estimate number of how many young people participated in art and the arts for the first time as a result of this project?'
+    YP_Previous_Barriers = 'Can you give an estimate of the number of young people involved in your project had previously faced barriers to accessing art and the arts?'
+    YP_Increased_Cultural_Awareness = 'From observation how many young people reported an increased awareness of the range of arts and cultural offer within the city?'
+    YP_Positive_Experience 'From observation how many young people reported a positive experience of participating in art and the arts in your project?'
+    YP_Self_Expression = 'From observation how many people reported increased self-expression through engagement with the arts?'
+    YP_Continued_Engagement = 'Can you make an estimate or assessment of how young people supported through your project have or intend to continue engagement with the artist?'
+    Improved_Social_Networks = 'From observation how many people reported improved social networks as a result of this project?'
+    Increased_Belonging_Community = 'From observation how many people reported an increased sense of belonging to the community as a result of this project?'
+    Community_Volunteers_Supporters 'From observation how many people volunteered and/or supported their community as a result of this project?'
+    Improved_Mental_Health = 'From observation how many people reported improved mental health and wellbeing as a result of this project?'
+    Improved_Physical_Health = 'From observation how many people reported improved physical health and wellbeing as a result of this project?'
+
+    
+mwmcmn_ace.csv --> 
+    Artist_ID = Artist (anonymised)
+    Sponsored_Artists_Days = 'How many days did you as the artist(s) work on this commissioned activity?'
+    Other_Artists_Employed_Days = 'How many days did you employ other artists, creators or specialists in number of days?'
+    Performance_Or_Exhibition_Days = 'NUMBER OF PERFORMANCE OR EXHIBITION DAYS'
+    Sessions_For_Education_Training_Or_Participation = 'NUMBER OF SESSIONS FOR EDUCATION TRAINING OR PARTICIPATION'
+    Artists_Employed = 'artists and creatives or specialists'
+    Participants = 'participants'
+    Live_Audience = 'Audience Live'
+    Online_Audience = 'Audience broadcast online in writing'
+
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Release Process (DRAFT)</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/style/components.css">
+    <link rel="stylesheet" href="/style/main.css">
+    
+  </head>
+
+  <body>
+    <div class="site-header-container no-top-margin">
+      
+<div class="max-width-container" style="--background-colour: var(--l23-dark-blue-grey);">
+  
+      <header class="site-header" role="banner">
+        <a class="logo" rel="author" href="/">
+          <img class='header-logo' src='/assets/images/logo.svg' inline />
+          <h1>Data</h1>
+        </a>
+        <nav>
+    <input hidden id="menu-state" class="menu-state" type="checkbox">
+    <label class="menu-toggle" for="menu-state">
+      <div class="menu-burger"><i></i><i></i><i></i></div>
+    </label>
+    <ul class="menu-items"><li><a href="/report/">Reports</a></li><li><a href="/dashboards/">Dashboards</a></li><li><a href="/metric/">Metrics</a></li><li><a href="/standards-tools/">Standards & Tools</a></li></ul>
+  </nav>
+        
+      </header>
+      
+</div>
+    </div>
+    <div class='top-spacer no-top-margin'></div>
+
+    <main id="main" role="main" aria-label="Content" class="no-top-margin">
+      
+<div class="max-width-container forced-top-margin" style="">
+  
+  <h1>Data Release Process (DRAFT)</h1>
+<p>This process will be used prior to release of any new dataset or any significant new release of an existing dataset.</p>
+<ol>
+<li>Extract data from operational systems and prepare for release</li>
+<li>Review data against <a href="#data-release-criteria">release criteria</a> with: Communications Team, Data Partner (Open Innovations), Business Owner</li>
+<li>Create data release announcement and related communications material</li>
+<li>Release data to Data Mill North and publish news story</li>
+</ol>
+<h2>Data Release Criteria</h2>
+<p>Datasets may be released when the following criteria are met (operational and data governance concerns)</p>
+<ul>
+<li>No personal data is present in the dataset to be released</li>
+<li>No significant <a href="https://en.wikipedia.org/wiki/Data_re-identification">re-identification risk</a> in dataset</li>
+<li>The narrative of the dataset is understood by the team</li>
+<li>The dataset release does not coincide with other significant communication activity</li>
+</ul>
+
+
+</div>
+
+    </main>
+
+    <div class='site-footer'>
+    
+<div class="max-width-container" style="">
+  
+      <footer>
+        <p>&copy; Leeds 2023</p>
+        <p><a href="https://github.com/open-innovations/leeds-2023" title="Visit the GitHub repository"><img src="/assets/images/icons/github.svg" class="social-icon" inline></p>
+      </footer>
+    
+</div>
+    </div>
+  </body>
+</html>

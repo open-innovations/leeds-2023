@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Impact Dashboard</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/style/components.css">
+    <link rel="stylesheet" href="/style/main.css">
+    
+  <script src="/assets/js/auto-popup.js" data-auto-dependency="true"></script><meta property="og:type" content="website">
+<meta property="og:site_name" content="LEEDS 2023 Data Microsite">
+<meta property="og:locale" content="en">
+<meta property="og:title" content="LEEDS 2023 Data">
+<meta property="og:description" content="LEEDS 2023 Year of Culture data microsite. Metrics and visualisations
+describing the impact of LEEDS 2023.">
+<meta property="og:url" content="https://data.leeds2023.open-innovations.org/dashboard/impact/">
+<meta property="og:image" content="https://data.leeds2023.open-innovations.org/favicon.ico">
+<meta name="twitter:title" content="LEEDS 2023 Data">
+<meta name="twitter:description" content="LEEDS 2023 Year of Culture data microsite. Metrics and visualisations
+describing the impact of LEEDS 2023.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://data.leeds2023.open-innovations.org/favicon.ico">
+<meta name="twitter:site" content="@leeds_2023">
+<meta itemprop="name" content="LEEDS 2023 Data">
+<meta itemprop="description" content="LEEDS 2023 Year of Culture data microsite. Metrics and visualisations
+describing the impact of LEEDS 2023.">
+<meta itemprop="image" content="https://data.leeds2023.open-innovations.org/favicon.ico">
+<meta name="description" content="LEEDS 2023 Year of Culture data microsite. Metrics and visualisations
+describing the impact of LEEDS 2023.">
+<meta name="generator" content="Lume v1.14.2">
+</head>
+
+  <body>
+    <div class="site-header-container no-top-margin">
+      
+<div class="max-width-container" style="--background-colour: var(--l23-dark-blue-grey);">
+  
+      <header class="site-header" role="banner">
+        <a class="logo" rel="author" href="/">
+          <svg viewbox="0 0 46 18" xmlns="http://www.w3.org/2000/svg" width="100%" class="header-logo">
+  <path d="M45.587 14.346c-.175-.446-.51-.749-.933-.964-.032-.016-.072-.032-.112-.056a.53.53 0 01.088-.055c.654-.406.934-1.107.734-1.848-.167-.62-.582-1.01-1.157-1.265-.415-.184-.846-.247-1.293-.247-.503 0-.998.071-1.453.294-.582.279-.981.709-1.093 1.362-.04.239-.04.477.016.708h1.445c-.008-.047-.016-.08-.016-.111-.04-.342.055-.637.343-.852.375-.263 1.077-.27 1.452-.008a.773.773 0 01.088 1.21c-.191.183-.43.263-.694.279-.264.016-.527.016-.782.016h-.096v1.051c.032 0 .064.008.096.008h.534c.28 0 .551.032.806.135.232.096.431.231.56.454a.9.9 0 01-.36 1.234c-.543.303-1.101.303-1.66.024a.883.883 0 01-.503-.685c-.024-.159-.008-.318-.008-.485l-1.492.223c-.04.51.072.979.399 1.393.327.414.766.66 1.269.796a4.396 4.396 0 001.931.08c.479-.088.926-.263 1.309-.581.638-.502.87-1.362.582-2.11zm-9.114 1.425c.296-.136.6-.255.886-.406.575-.287 1.118-.621 1.549-1.091.766-.828.99-1.784.59-2.835-.287-.748-.886-1.178-1.66-1.393a3.987 3.987 0 00-2.075-.016c-.59.151-1.093.438-1.444.932-.559.764-.575 1.879-.064 2.683h1.548c-.335-.462-.47-.971-.351-1.529.096-.47.367-.796.854-.931.295-.088.59-.088.894-.024.415.087.694.334.846.716.111.271.135.558.104.852-.056.47-.272.868-.615 1.203-.391.382-.854.668-1.34.923-.695.366-1.413.677-2.132.964-.056.023-.08.047-.08.111v1.051h5.69V15.82H36.41c.016-.024.04-.032.064-.048zm-12.785 0c.296-.136.599-.255.894-.406.575-.287 1.11-.621 1.549-1.091.766-.828.99-1.784.59-2.835-.287-.748-.886-1.178-1.66-1.393a3.987 3.987 0 00-2.075-.016c-.59.151-1.093.438-1.444.932-.56.764-.575 1.879-.064 2.683h1.548c-.335-.462-.47-.971-.351-1.529.096-.47.367-.796.854-.931.295-.088.59-.088.894-.024.415.087.694.334.846.716.111.271.135.558.103.852-.055.47-.271.868-.614 1.203-.391.382-.854.668-1.34.923-.695.366-1.413.677-2.132.964-.056.023-.08.047-.08.111v1.051h5.69V15.82h-3.264c.008-.024.032-.032.056-.048zm-10.287-.128c0 .558-.215.844-.646.844-.431 0-.647-.286-.647-.844v-1.592h-.638v1.64c0 .876.455 1.354 1.285 1.354.822 0 1.285-.494 1.285-1.354v-1.64h-.647v1.592h.008zm4.988-4.1h-1.237v-.709h1.453v-.533h-2.1v2.938h.64v-1.163h1.236v-.533h.008zm-2.498 3.838h-.758v-.797h.758c.272 0 .407.136.407.399 0 .254-.135.398-.407.398zm.59.318c.312-.143.48-.406.48-.764 0-.558-.4-.884-1.062-.884h-1.404v2.938h.638V15.89h.655c.398 0 .558.287.598 1.083v.024h.646v-.024c-.04-.685-.215-1.083-.55-1.274zm-1.835-4.912c.495 0 .83.39.83.979s-.335.987-.83.987c-.495 0-.83-.398-.83-.987 0-.59.335-.98.83-.98zm.008 2.508c.878 0 1.493-.63 1.493-1.537 0-.9-.615-1.52-1.493-1.52-.878 0-1.492.628-1.492 1.52s.622 1.537 1.492 1.537zm17.159 1.608c-.112.294-.264.557-.519.756-.519.414-1.628.399-2.09-.39a2.628 2.628 0 01-.336-.995 4.741 4.741 0 01.08-1.895c.064-.247.167-.486.319-.7.519-.765 1.875-.757 2.37.087.2.334.303.7.351 1.075.024.223.04.446.048.573-.016.581-.056 1.043-.223 1.489zm.718-4.14c-.582-.59-1.309-.852-2.147-.844-.415 0-.822.071-1.205.239-.662.286-1.125.772-1.428 1.393-.24.486-.352.995-.392 1.52-.055.701 0 1.394.24 2.063.423 1.162 1.245 1.879 2.562 1.99a2.934 2.934 0 001.476-.23c.647-.28 1.102-.741 1.405-1.346.327-.637.43-1.322.439-2.023 0-.43-.048-.844-.152-1.258-.136-.565-.383-1.074-.798-1.504zm-8.73-3.13h-1.246V3.51H23.8c1.197 0 1.924.693 1.924 2.054 0 1.425-.807 2.07-1.924 2.07zm0-5.501h-2.666v6.887h2.673c2.035 0 3.376-1.386 3.376-3.456 0-2.062-1.357-3.431-3.384-3.431zm-4.885 5.47l-4.054.016c-.168 0-.687 0-1.046-.048-.535-.08-.535-.295-.59-.637-.048-.319-.44-.382-.687-.414-.399-.056-1.452-.175-2.969-.183-.75 0-1.404.023-1.93.055V5.07a26.72 26.72 0 011.93-.056c1.668.008 2.57.12 2.818.151.247.032.63.12.686.438.056.334.056.557.59.637.352.048.87.048 1.038.048h4.206v1.314h.008zm-5.38-5.486c-.534-.08-.534-.295-.59-.637-.047-.319-.439-.398-.686-.438-.247-.032-1.021-.152-2.69-.16-2.075-.007-3.4.207-3.4.207v1.41s1.325-.215 3.4-.207c1.668.008 2.443.12 2.69.159.247.032.63.111.686.438.056.334.056.557.59.637.352.048.87.048 1.038.048h4.334v1.305l-4.206.016c-.168 0-.686 0-1.045-.047-.535-.08-.535-.295-.591-.637-.048-.319-.439-.406-.686-.438-.248-.032-1.15-.144-2.817-.152-2.075-.007-3.4.207-3.4.207v4.109s1.325-.183 3.4-.175c1.667.008 2.72.143 2.968.183.248.032.63.096.687.414.056.334.056.557.59.637.351.048.87.048 1.038.048h5.53V2.147l-5.794.016c-.167 0-.686 0-1.045-.047zm4.534 13.623h1.245v-.534H18.07v-.629h1.453v-.533h-2.1v2.938h2.14v-.533h-1.501v-.709h.008zm-9.56-1.155h.98v2.405h.647v-2.405h.982v-.533h-2.61v.533zm-.935-3.718l.455 1.282h-.91l.455-1.282zm.63 1.792l.216.58h.663l-1.15-2.937h-.758l-1.141 2.938h.694l.216-.581h1.26zm-6.623.58h.638V12.22l1.213-1.911h-.702l-.838 1.266-.814-1.274H.345l1.237 1.91v1.028zm4.23-.533h-1.5v-.708h1.244v-.534H4.311v-.629h1.453v-.533H3.673v2.938h2.139v-.534zm-.12 2.938c0 .558-.216.844-.647.844-.43 0-.646-.286-.646-.844v-1.592h-.638v1.64c0 .876.454 1.354 1.284 1.354.822 0 1.285-.494 1.285-1.354v-1.64h-.638v1.592zm5.044-4.013h-.759v-.796h.759c.271 0 .407.136.407.398 0 .263-.144.399-.407.399zm1.133 1.585c-.04-.669-.216-1.075-.543-1.266.311-.143.48-.406.48-.764 0-.558-.4-.884-1.062-.884H9.339v2.938h.638V12.14h.655c.399 0 .55.287.598 1.083v.024h.647l-.008-.032zm-4.445.836h-.639v2.938h2.139v-.533h-1.5V14.05zm22.96-4.88c1.716 0 2.825-.837 2.825-2.222 0-2.668-4.15-1.402-4.15-2.93 0-.526.487-.86 1.245-.86.918 0 1.421.461 1.301 1.266h1.429c.175-1.465-.91-2.445-2.706-2.445-1.644 0-2.713.82-2.713 2.182 0 2.707 4.142 1.401 4.142 2.93 0 .533-.503.892-1.34.892-.966 0-1.51-.47-1.461-1.282h-1.429c-.12 1.513 1.038 2.468 2.857 2.468zM5.564 7.983V6.519c-1.325.159-2.721.406-3.52.581V1.55s-.853.144-1.524.303v7.166c-.008.008 1.812-.597 5.044-1.035zm-2.81 7.898a.712.712 0 01-.733.613c-.503 0-.854-.406-.854-.987 0-.573.343-.98.846-.98.215 0 .399.072.51.208a.65.65 0 01.12.541l-.008.024h.663v-.016a1.045 1.045 0 00-.224-.868c-.24-.278-.63-.446-1.07-.446-.877 0-1.492.63-1.492 1.53 0 .915.623 1.544 1.509 1.544.758 0 1.309-.454 1.404-1.155v-.024h-.678l.008.016z"></path>
+</svg>
+          <h1>Data</h1>
+        </a>
+        <nav>
+    <input hidden="" id="menu-state" class="menu-state" type="checkbox">
+    <label class="menu-toggle" for="menu-state">
+      <div class="menu-burger"><i></i><i></i><i></i></div>
+    </label>
+    <ul class="menu-items"><li><a href="/report/">Reports</a></li><li><a href="/dashboards/">Dashboards</a></li><li><a href="/metric/">Metrics</a></li><li><a href="/standards-tools/">Standards &amp; Tools</a></li></ul>
+  </nav>
+        <div class="corner-flash">
+  <div class="message">
+    Work in Progress
+  </div>
+</div>
+      </header>
+      
+</div>
+    </div>
+    <div class="top-spacer no-top-margin"></div>
+
+    <main id="main" role="main" aria-label="Content" class="no-top-margin">
+      
+<div class="max-width-container forced-top-margin" style="">
+  
+  <h1>Impact Dashboard</h1>
+
+<div>
+The impact dashboard aims to show in near realtime data which gives a sense of
+what <span class="leeds-2023-logo">LEEDS 2023</span> is acheiving in some areas of interest.
+
+It does not not replace the evaluation report which will answer specific targets
+set at the start of the Year of Culture, but should be treated as an overview of
+some key topics that will be treated in depth in this evaluation report.
+
+The focus of the dashboard is on live summary indicators extracted from the
+operational systems.
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<div style="--big-number-size: 4em;">
+<ul class="panels" style="">  
+  
+    <a class="panels-link" href="/dashboard/community"><li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>Events held</h3>
+    <div class="impact-big-number">113</div>
+
+
+
+</li></a>
+    <a class="panels-link" href="/dashboard/community"><li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>Total attendances</h3>
+    <div class="impact-big-number">3,677</div>
+
+
+    <p class="footnote">Count of activities attended by residents in each ward.</p>
+
+</li></a>
+<li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>Number of partners</h3>
+    <div class="impact-big-number">TBC</div>
+
+
+
+</li>
+<li class="dashboard-panel" style="
+    grid-row:auto/span 3;
+    grid-column:span 2;--foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <figure class="dashboard-figure" style="">
+  
+    <h3>Community Engagement</h3>
+    <svg id="hexes-2a01000c-74f4-4d71-be7a-01d85251e6f2" class="hexmap" viewbox="
+        -56.25 -62.05127018922193
+        562.5 513.8139720814413
+      " style="--hex-bg: none" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" data-dependencies="/assets/js/auto-popup.js" role="list" aria-labelledby="title-2a01000c-74f4-4d71-be7a-01d85251e6f2">
+      <title id="title-2a01000c-74f4-4d71-be7a-01d85251e6f2">Hexmap.</title>
+      <g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-0" class="hex" transform="translate(75 0)" data-auto-popup="Guiseley and Rawdon: 3" data-value="3" role="listitem" aria-label="Guiseley and Rawdon value 3">
+        <path style="--hex-fill: hsl(173, 100%, 83.33333333333334%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Gui</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-1" class="hex" transform="translate(150 0)" data-auto-popup="Otley and Yeadon: 3" data-value="3" role="listitem" aria-label="Otley and Yeadon value 3">
+        <path style="--hex-fill: hsl(173, 100%, 83.33333333333334%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Otl</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-2" class="hex" transform="translate(225 0)" data-auto-popup="Adel and Wharfdale: 3" data-value="3" role="listitem" aria-label="Adel and Wharfdale value 3">
+        <path style="--hex-fill: hsl(173, 100%, 83.33333333333334%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Ade</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-3" class="hex" transform="translate(300 0)" data-auto-popup="Alwoodley: 2" data-value="2" role="listitem" aria-label="Alwoodley value 2">
+        <path style="--hex-fill: hsl(173, 100%, 88.88888888888889%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Alw</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-4" class="hex" transform="translate(375 0)" data-auto-popup="Harewood: 3" data-value="3" role="listitem" aria-label="Harewood value 3">
+        <path style="--hex-fill: hsl(173, 100%, 83.33333333333334%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Har</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-5" class="hex" transform="translate(450 0)" data-auto-popup="Wetherby: 2" data-value="2" role="listitem" aria-label="Wetherby value 2">
+        <path style="--hex-fill: hsl(173, 100%, 88.88888888888889%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Wet</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-6" class="hex" transform="translate(112.5 64.9519052838329)" data-auto-popup="Horsforth: 2" data-value="2" role="listitem" aria-label="Horsforth value 2">
+        <path style="--hex-fill: hsl(173, 100%, 88.88888888888889%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Hor</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-7" class="hex" transform="translate(187.5 64.9519052838329)" data-auto-popup="Weetwood: 4" data-value="4" role="listitem" aria-label="Weetwood value 4">
+        <path style="--hex-fill: hsl(173, 100%, 77.77777777777777%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Wee</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-8" class="hex" transform="translate(262.5 64.9519052838329)" data-auto-popup="Moortown: 3" data-value="3" role="listitem" aria-label="Moortown value 3">
+        <path style="--hex-fill: hsl(173, 100%, 83.33333333333334%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Moo</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-9" class="hex" transform="translate(337.5 64.9519052838329)" data-auto-popup="Roundhay: 3" data-value="3" role="listitem" aria-label="Roundhay value 3">
+        <path style="--hex-fill: hsl(173, 100%, 83.33333333333334%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Rou</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-10" class="hex" transform="translate(0 129.9038105676658)" data-auto-popup="Calverley and Farsley: 4" data-value="4" role="listitem" aria-label="Calverley and Farsley value 4">
+        <path style="--hex-fill: hsl(173, 100%, 77.77777777777777%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Cal</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-11" class="hex" transform="translate(75 129.9038105676658)" data-auto-popup="Bramley and Stanningley: 4" data-value="4" role="listitem" aria-label="Bramley and Stanningley value 4">
+        <path style="--hex-fill: hsl(173, 100%, 77.77777777777777%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Bra</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-12" class="hex" transform="translate(150 129.9038105676658)" data-auto-popup="Kirkstall: 4" data-value="4" role="listitem" aria-label="Kirkstall value 4">
+        <path style="--hex-fill: hsl(173, 100%, 77.77777777777777%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Kir</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-13" class="hex" transform="translate(225 129.9038105676658)" data-auto-popup="Headingley and Hyde Park: 2" data-value="2" role="listitem" aria-label="Headingley and Hyde Park value 2">
+        <path style="--hex-fill: hsl(173, 100%, 88.88888888888889%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Hea</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-14" class="hex" transform="translate(300 129.9038105676658)" data-auto-popup="Chapel Allerton: 9" data-value="9" role="listitem" aria-label="Chapel Allerton value 9">
+        <path style="--hex-fill: hsl(173, 100%, 50%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Cha</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-15" class="hex" transform="translate(375 129.9038105676658)" data-auto-popup="Killingbeck and Seacroft: 3" data-value="3" role="listitem" aria-label="Killingbeck and Seacroft value 3">
+        <path style="--hex-fill: hsl(173, 100%, 83.33333333333334%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Kil</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-16" class="hex" transform="translate(37.5 194.8557158514987)" data-auto-popup="Pudsey: 2" data-value="2" role="listitem" aria-label="Pudsey value 2">
+        <path style="--hex-fill: hsl(173, 100%, 88.88888888888889%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Pud</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-17" class="hex" transform="translate(112.5 194.8557158514987)" data-auto-popup="Armley: 4" data-value="4" role="listitem" aria-label="Armley value 4">
+        <path style="--hex-fill: hsl(173, 100%, 77.77777777777777%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Arm</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-18" class="hex" transform="translate(187.5 194.8557158514987)" data-auto-popup="Little London and Woodhouse: 5" data-value="5" role="listitem" aria-label="Little London and Woodhouse value 5">
+        <path style="--hex-fill: hsl(173, 100%, 72.22222222222223%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Lit</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-19" class="hex" transform="translate(262.5 194.8557158514987)" data-auto-popup="Gipton and Harehills: 5" data-value="5" role="listitem" aria-label="Gipton and Harehills value 5">
+        <path style="--hex-fill: hsl(173, 100%, 72.22222222222223%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Gip</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-20" class="hex" transform="translate(337.5 194.8557158514987)" data-auto-popup="Cross Gates and Whinmoor: 2" data-value="2" role="listitem" aria-label="Cross Gates and Whinmoor value 2">
+        <path style="--hex-fill: hsl(173, 100%, 88.88888888888889%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Cro</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-21" class="hex" transform="translate(75 259.8076211353316)" data-auto-popup="Farnley and Wortley: 4" data-value="4" role="listitem" aria-label="Farnley and Wortley value 4">
+        <path style="--hex-fill: hsl(173, 100%, 77.77777777777777%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Far</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-22" class="hex" transform="translate(150 259.8076211353316)" data-auto-popup="Beeston and Holbeck: 5" data-value="5" role="listitem" aria-label="Beeston and Holbeck value 5">
+        <path style="--hex-fill: hsl(173, 100%, 72.22222222222223%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Bee</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-23" class="hex" transform="translate(225 259.8076211353316)" data-auto-popup="Hunslet &amp; Riverside: 6" data-value="6" role="listitem" aria-label="Hunslet &amp; Riverside value 6">
+        <path style="--hex-fill: hsl(173, 100%, 66.66666666666667%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Hun</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-24" class="hex" transform="translate(300 259.8076211353316)" data-auto-popup="Burmantofts and Richmond Hill: 7" data-value="7" role="listitem" aria-label="Burmantofts and Richmond Hill value 7">
+        <path style="--hex-fill: hsl(173, 100%, 61.11111111111111%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Bur</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-25" class="hex" transform="translate(375 259.8076211353316)" data-auto-popup="Temple Newsam: 2" data-value="2" role="listitem" aria-label="Temple Newsam value 2">
+        <path style="--hex-fill: hsl(173, 100%, 88.88888888888889%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Tem</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-26" class="hex" transform="translate(112.5 324.7595264191645)" data-auto-popup="Morley North: 2" data-value="2" role="listitem" aria-label="Morley North value 2">
+        <path style="--hex-fill: hsl(173, 100%, 88.88888888888889%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Mor</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-27" class="hex" transform="translate(187.5 324.7595264191645)" data-auto-popup="Middleton Park: 4" data-value="4" role="listitem" aria-label="Middleton Park value 4">
+        <path style="--hex-fill: hsl(173, 100%, 77.77777777777777%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Mid</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-28" class="hex" transform="translate(262.5 324.7595264191645)" data-auto-popup="Rothwell: 2" data-value="2" role="listitem" aria-label="Rothwell value 2">
+        <path style="--hex-fill: hsl(173, 100%, 88.88888888888889%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Rot</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-29" class="hex" transform="translate(337.5 324.7595264191645)" data-auto-popup="Garforth and Swillington: 3" data-value="3" role="listitem" aria-label="Garforth and Swillington value 3">
+        <path style="--hex-fill: hsl(173, 100%, 83.33333333333334%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Gar</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-30" class="hex" transform="translate(150 389.7114317029974)" data-auto-popup="Morley South: 2" data-value="2" role="listitem" aria-label="Morley South value 2">
+        <path style="--hex-fill: hsl(173, 100%, 88.88888888888889%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Mor</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-31" class="hex" transform="translate(225 389.7114317029974)" data-auto-popup="Ardsley and Robin Hood: 2" data-value="2" role="listitem" aria-label="Ardsley and Robin Hood value 2">
+        <path style="--hex-fill: hsl(173, 100%, 88.88888888888889%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Ard</text>
+      </g><g id="2a01000c-74f4-4d71-be7a-01d85251e6f2-hex-32" class="hex" transform="translate(300 389.7114317029974)" data-auto-popup="Kippax and Methley: 2" data-value="2" role="listitem" aria-label="Kippax and Methley value 2">
+        <path style="--hex-fill: hsl(173, 100%, 88.88888888888889%)" d="
+          M 37.5,-21.650635094610966
+          v 43.30127018922193
+          l -37.5,21.650635094610966
+          l -37.5,-21.650635094610966
+          v -43.30127018922193
+          l 37.5,-21.650635094610966
+          Z
+        "></path>
+        <text style="fill: black;" text-anchor="middle" dominant-baseline="middle" aria-hidden="true">Kip</text>
+      </g>
+    </svg>
+  
+    <p class="footnote">Count of events hosted in each ward.</p>
+     
+  
+</figure>
+
+</li>
+<a class="panels-link" href="/metrics/fundraising"><li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>Total funds raised</h3>
+    <div class="impact-big-number">£TBC</div>
+
+
+
+</li></a>
+<a class="panels-link" href="/metrics/fundraising"><li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>Funding breakdown by sector</h3>
+    <div class="impact-big-number">TBC</div>
+
+
+
+</li></a>
+<a class="panels-link" href="/metrics/fundraising"><li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>Funding breakdown by stage</h3>
+    <figure class="dashboard-figure" style="">
+  
+    <svg class="barchart" viewbox="-90 -15 505 385" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" data-dependencies="/assets/js/auto-popup.js" style="--text-colour: white;">
+  <g id="plot" class="plot" style="--plot-fill: var(--l23-dark-blue-grey);">
+    <rect x="0" y="0" width="400" height="325"></rect>
+    <path class="grid x" d="M66.66666666666666 0 l0 325 M133.33333333333331 0 l0 325 M200 0 l0 325 M266.66666666666663 0 l0 325 M333.3333333333333 0 l0 325 "></path>
+    <path class="grid y" d="M0 65 l400 0M0 130 l400 0M0 195 l400 0M0 260 l400 0"></path>
+  </g>
+  <g id="series">
+    <path style="--path-fill: var(--l23-cyan); stroke: none;" transform="translate(0 0)" id="series-0-0" d="M0 5 l32 0 l0 55 l-32 0 L0 0"></path>
+    <path style="--path-fill: var(--l23-cyan); stroke: none;" transform="translate(0 65)" id="series-0-1" d="M0 5 l160 0 l0 55 l-160 0 L0 0"></path>
+    <path style="--path-fill: var(--l23-cyan); stroke: none;" transform="translate(0 130)" id="series-0-2" d="M0 5 l373.3333333333333 0 l0 55 l-373.3333333333333 0 L0 0"></path>
+    <path style="--path-fill: var(--l23-cyan); stroke: none;" transform="translate(0 195)" id="series-0-3" d="M0 5 l32 0 l0 55 l-32 0 L0 0"></path>
+    <path style="--path-fill: var(--l23-cyan); stroke: none;" transform="translate(0 260)" id="series-0-4" d="M0 5 l112 0 l0 55 l-112 0 L0 0"></path></g>
+  <g id="axis">
+    <path class="axis" d="
+      
+      
+      
+      "></path>
+    <g id="axis-titles">
+      <text x="200" y="325" dy="25" text-anchor="middle" dominant-baseline="text-before-edge">Number of organisations</text>
+      
+    </g>
+    <g id="category-labels">
+      <text id="category-label-1" x="0" y="32.5" dx="-5" text-anchor="end" dominant-baseline="central">Lost</text><text id="category-label-2" x="0" y="97.5" dx="-5" text-anchor="end" dominant-baseline="central">Prospect</text><text id="category-label-3" x="0" y="162.5" dx="-5" text-anchor="end" dominant-baseline="central">Research</text><text id="category-label-4" x="0" y="227.5" dx="-5" text-anchor="end" dominant-baseline="central">Unknown</text><text id="category-label-5" x="0" y="292.5" dx="-5" text-anchor="end" dominant-baseline="central">Won</text>
+    </g>
+    <g id="numeric-labels">
+      <text id="category-label-1" y="325" x="66.66666666666666" dy="5" text-anchor="middle" dominant-baseline="text-before-edge">25</text><text id="category-label-2" y="325" x="133.33333333333331" dy="5" text-anchor="middle" dominant-baseline="text-before-edge">50</text><text id="category-label-3" y="325" x="200" dy="5" text-anchor="middle" dominant-baseline="text-before-edge">75</text><text id="category-label-4" y="325" x="266.66666666666663" dy="5" text-anchor="middle" dominant-baseline="text-before-edge">100</text><text id="category-label-5" y="325" x="333.3333333333333" dy="5" text-anchor="middle" dominant-baseline="text-before-edge">125</text><text id="category-label-6" y="325" x="400" dy="5" text-anchor="middle" dominant-baseline="text-before-edge">150</text>
+    </g>
+  </g>
+</svg>
+     
+  
+</figure> 
+    
+</li></a>
+
+<li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>People employed by Leeds Culture Trust</h3>
+    <div class="impact-big-number">TBC</div>
+
+
+
+</li>
+<a class="panels-link" href="/metrics/volunteers"><li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>Volunteer applications</h3>
+    <div class="impact-big-number">644</div>
+
+
+    <p class="footnote">The number of volunteering applications that have been received.</p>
+
+</li></a>
+<a class="panels-link" href="/metrics/volunteers"><li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>Volunteer Offers</h3>
+    <div class="impact-big-number">393</div>
+
+
+    <p class="footnote">The number of people who have been offered a volunteering role.</p>
+
+</li></a> 
+
+<li class="dashboard-panel" style="
+    
+    grid-column:span 2;--foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <figure class="dashboard-figure" style="">
+   
+    <svg class="chart" style="--plot-background:var(--l23-dark-blue-grey);--colour:white;" viewbox="
+      -120
+      -60
+      900
+      450
+    " role="document">
+    
+      <title>Total online audience</title>
+      <text class="title" x="375" dy="-30">Total online audience</text>
+    
+    
+    <g class="axis">
+      <g class="y-axis">
+        <title>Y Axis</title>
+        <path d="M 0,240 v -240"></path>
+        <path d="M0,240h-10M0,205.71428571428572h-10M0,171.42857142857144h-10M0,137.14285714285714h-10M0,102.85714285714286h-10M0,68.57142857142857h-10M0,34.2857142857143h-10M0,0h-10"></path>
+        <text class="tick-label" x="0" y="240" dx="-20">0</text><text class="tick-label" x="0" y="205.71428571428572" dx="-20">5000</text><text class="tick-label" x="0" y="171.42857142857144" dx="-20">10000</text><text class="tick-label" x="0" y="137.14285714285714" dx="-20">15000</text><text class="tick-label" x="0" y="102.85714285714286" dx="-20">20000</text><text class="tick-label" x="0" y="68.57142857142857" dx="-20">25000</text><text class="tick-label" x="0" y="34.2857142857143" dx="-20">30000</text><text class="tick-label" x="0" y="0" dx="-20">35000</text>
+        
+        <text class="label" x="0" y="0" transform="translate(-102 120) rotate(-90)">
+            Total Audience
+        </text>
+    
+      </g>
+      <g class="x-axis rotated">
+        <title>X Axis</title>
+        <path d="M 0,240 h 750"></path>
+        <path d="M10.714285714285715,240v10M96.42857142857143,240v10M182.14285714285714,240v10M267.8571428571429,240v10M353.5714285714286,240v10M439.2857142857143,240v10M525,240v10M610.7142857142858,240v10M696.4285714285714,240v10"></path>
+        <text class="tick-label" x="0" y="0" transform="translate(10.714285714285715 260) rotate(-35)">10th Apr 2022</text><text class="tick-label" x="0" y="0" transform="translate(96.42857142857143 260) rotate(-35)">8th May 2022</text><text class="tick-label" x="0" y="0" transform="translate(182.14285714285714 260) rotate(-35)">5th Jun 2022</text><text class="tick-label" x="0" y="0" transform="translate(267.8571428571429 260) rotate(-35)">3rd Jul 2022</text><text class="tick-label" x="0" y="0" transform="translate(353.5714285714286 260) rotate(-35)">31st Jul 2022</text><text class="tick-label" x="0" y="0" transform="translate(439.2857142857143 260) rotate(-35)">28th Aug 2022</text><text class="tick-label" x="0" y="0" transform="translate(525 260) rotate(-35)">25th Sep 2022</text><text class="tick-label" x="0" y="0" transform="translate(610.7142857142858 260) rotate(-35)">23rd Oct 2022</text><text class="tick-label" x="0" y="0" transform="translate(696.4285714285714 260) rotate(-35)">20th Nov 2022</text>
+        
+        <text class="label" x="375" y="240" dy="126">
+            Week ending (Sunday)
+        </text>
+    
+      </g>
+    </g>
+  
+    <g style="--colour: var(--l23-magenta)" id="all" class="series"><path class="line" d="
+        M 10.714285714285715,66.8502857142857
+        L 32.14285714285714,66.048 L 53.57142857142858,65.40342857142858 L 75,64.77257142857142 L 96.42857142857143,64.01828571428572 L 117.85714285714286,63.16114285714286 L 139.2857142857143,62.132571428571424 L 160.71428571428572,61.28914285714286 L 182.14285714285714,59.66400000000001 L 203.57142857142856,58.85485714285715 L 225,57.469714285714275 L 246.42857142857144,56.61257142857142 L 267.8571428571429,55.49485714285715 L 289.2857142857143,54.62400000000001 L 310.7142857142857,53.84228571428572 L 332.1428571428571,52.868571428571435 L 353.5714285714286,51.565714285714286 L 375,50.71542857142856 L 396.42857142857144,48.51428571428572 L 417.8571428571429,47.43085714285713 L 439.2857142857143,46.52571428571428 L 460.7142857142857,45.81942857142857 L 482.14285714285717,45.08571428571428 L 503.57142857142856,44.489142857142845 L 525,41.101714285714294 L 546.4285714285714,39.305142857142854 L 567.8571428571429,37.74171428571429 L 589.2857142857142,35.86285714285715 L 610.7142857142858,34.35428571428571 L 632.1428571428572,32.372571428571426 L 653.5714285714286,30.987428571428577 L 675,29.821714285714283 L 696.4285714285714,28.16914285714286 L 717.8571428571429,26.256000000000014 L 739.2857142857142,25.926857142857152
+      "></path>
+    <circle class="marker filled" cx="10.714285714285715" cy="66.8502857142857" r="5"></circle><circle class="marker filled" cx="32.14285714285714" cy="66.048" r="5"></circle><circle class="marker filled" cx="53.57142857142858" cy="65.40342857142858" r="5"></circle><circle class="marker filled" cx="75" cy="64.77257142857142" r="5"></circle><circle class="marker filled" cx="96.42857142857143" cy="64.01828571428572" r="5"></circle><circle class="marker filled" cx="117.85714285714286" cy="63.16114285714286" r="5"></circle><circle class="marker filled" cx="139.2857142857143" cy="62.132571428571424" r="5"></circle><circle class="marker filled" cx="160.71428571428572" cy="61.28914285714286" r="5"></circle><circle class="marker filled" cx="182.14285714285714" cy="59.66400000000001" r="5"></circle><circle class="marker filled" cx="203.57142857142856" cy="58.85485714285715" r="5"></circle><circle class="marker filled" cx="225" cy="57.469714285714275" r="5"></circle><circle class="marker filled" cx="246.42857142857144" cy="56.61257142857142" r="5"></circle><circle class="marker filled" cx="267.8571428571429" cy="55.49485714285715" r="5"></circle><circle class="marker filled" cx="289.2857142857143" cy="54.62400000000001" r="5"></circle><circle class="marker filled" cx="310.7142857142857" cy="53.84228571428572" r="5"></circle><circle class="marker filled" cx="332.1428571428571" cy="52.868571428571435" r="5"></circle><circle class="marker filled" cx="353.5714285714286" cy="51.565714285714286" r="5"></circle><circle class="marker filled" cx="375" cy="50.71542857142856" r="5"></circle><circle class="marker filled" cx="396.42857142857144" cy="48.51428571428572" r="5"></circle><circle class="marker filled" cx="417.8571428571429" cy="47.43085714285713" r="5"></circle><circle class="marker filled" cx="439.2857142857143" cy="46.52571428571428" r="5"></circle><circle class="marker filled" cx="460.7142857142857" cy="45.81942857142857" r="5"></circle><circle class="marker filled" cx="482.14285714285717" cy="45.08571428571428" r="5"></circle><circle class="marker filled" cx="503.57142857142856" cy="44.489142857142845" r="5"></circle><circle class="marker filled" cx="525" cy="41.101714285714294" r="5"></circle><circle class="marker filled" cx="546.4285714285714" cy="39.305142857142854" r="5"></circle><circle class="marker filled" cx="567.8571428571429" cy="37.74171428571429" r="5"></circle><circle class="marker filled" cx="589.2857142857142" cy="35.86285714285715" r="5"></circle><circle class="marker filled" cx="610.7142857142858" cy="34.35428571428571" r="5"></circle><circle class="marker filled" cx="632.1428571428572" cy="32.372571428571426" r="5"></circle><circle class="marker filled" cx="653.5714285714286" cy="30.987428571428577" r="5"></circle><circle class="marker filled" cx="675" cy="29.821714285714283" r="5"></circle><circle class="marker filled" cx="696.4285714285714" cy="28.16914285714286" r="5"></circle><circle class="marker filled" cx="717.8571428571429" cy="26.256000000000014" r="5"></circle><circle class="marker filled" cx="739.2857142857142" cy="25.926857142857152" r="5"></circle></g><g style="--colour: #1DA1F2" id="twitter" class="series"><path class="line" d="
+        M 10.714285714285715,135.1337142857143
+        L 32.14285714285714,134.8182857142857 L 53.57142857142858,134.5302857142857 L 75,134.32457142857143 L 96.42857142857143,134.05714285714285 L 117.85714285714286,133.632 L 139.2857142857143,133.0697142857143 L 160.71428571428572,132.672 L 182.14285714285714,131.49942857142855 L 203.57142857142856,131.232 L 225,130.26514285714285 L 246.42857142857144,129.71657142857143 L 267.8571428571429,129.16114285714283 L 289.2857142857143,128.66057142857142 L 310.7142857142857,128.2697142857143 L 332.1428571428571,127.71428571428571 L 353.5714285714286,126.99428571428571 L 375,126.60342857142857 L 396.42857142857144,125.45142857142856 L 417.8571428571429,125.06057142857142 L 439.2857142857143,124.68342857142856 L 460.7142857142857,124.47085714285714 L 482.14285714285717,124.21714285714286 L 503.57142857142856,123.98399999999998 L 525,122.75657142857143 L 546.4285714285714,122.08457142857144 L 567.8571428571429,121.41257142857143 L 589.2857142857142,120.78171428571429 L 610.7142857142858,120.45257142857142 L 632.1428571428572,120.15771428571429 L 653.5714285714286,119.93142857142855 L 675,119.62971428571427 L 696.4285714285714,118.77257142857142 L 717.8571428571429,117.93599999999999 L 739.2857142857142,118.18285714285715
+      "></path>
+    <circle class="marker filled" cx="10.714285714285715" cy="135.1337142857143" r="5"></circle><circle class="marker filled" cx="32.14285714285714" cy="134.8182857142857" r="5"></circle><circle class="marker filled" cx="53.57142857142858" cy="134.5302857142857" r="5"></circle><circle class="marker filled" cx="75" cy="134.32457142857143" r="5"></circle><circle class="marker filled" cx="96.42857142857143" cy="134.05714285714285" r="5"></circle><circle class="marker filled" cx="117.85714285714286" cy="133.632" r="5"></circle><circle class="marker filled" cx="139.2857142857143" cy="133.0697142857143" r="5"></circle><circle class="marker filled" cx="160.71428571428572" cy="132.672" r="5"></circle><circle class="marker filled" cx="182.14285714285714" cy="131.49942857142855" r="5"></circle><circle class="marker filled" cx="203.57142857142856" cy="131.232" r="5"></circle><circle class="marker filled" cx="225" cy="130.26514285714285" r="5"></circle><circle class="marker filled" cx="246.42857142857144" cy="129.71657142857143" r="5"></circle><circle class="marker filled" cx="267.8571428571429" cy="129.16114285714283" r="5"></circle><circle class="marker filled" cx="289.2857142857143" cy="128.66057142857142" r="5"></circle><circle class="marker filled" cx="310.7142857142857" cy="128.2697142857143" r="5"></circle><circle class="marker filled" cx="332.1428571428571" cy="127.71428571428571" r="5"></circle><circle class="marker filled" cx="353.5714285714286" cy="126.99428571428571" r="5"></circle><circle class="marker filled" cx="375" cy="126.60342857142857" r="5"></circle><circle class="marker filled" cx="396.42857142857144" cy="125.45142857142856" r="5"></circle><circle class="marker filled" cx="417.8571428571429" cy="125.06057142857142" r="5"></circle><circle class="marker filled" cx="439.2857142857143" cy="124.68342857142856" r="5"></circle><circle class="marker filled" cx="460.7142857142857" cy="124.47085714285714" r="5"></circle><circle class="marker filled" cx="482.14285714285717" cy="124.21714285714286" r="5"></circle><circle class="marker filled" cx="503.57142857142856" cy="123.98399999999998" r="5"></circle><circle class="marker filled" cx="525" cy="122.75657142857143" r="5"></circle><circle class="marker filled" cx="546.4285714285714" cy="122.08457142857144" r="5"></circle><circle class="marker filled" cx="567.8571428571429" cy="121.41257142857143" r="5"></circle><circle class="marker filled" cx="589.2857142857142" cy="120.78171428571429" r="5"></circle><circle class="marker filled" cx="610.7142857142858" cy="120.45257142857142" r="5"></circle><circle class="marker filled" cx="632.1428571428572" cy="120.15771428571429" r="5"></circle><circle class="marker filled" cx="653.5714285714286" cy="119.93142857142855" r="5"></circle><circle class="marker filled" cx="675" cy="119.62971428571427" r="5"></circle><circle class="marker filled" cx="696.4285714285714" cy="118.77257142857142" r="5"></circle><circle class="marker filled" cx="717.8571428571429" cy="117.93599999999999" r="5"></circle><circle class="marker filled" cx="739.2857142857142" cy="118.18285714285715" r="5"></circle></g><g style="--colour: #833AB4" id="instagram" class="series"><path class="line" d="
+        M 10.714285714285715,207.5862857142857
+        L 32.14285714285714,207.3874285714286 L 53.57142857142858,207.1817142857143 L 75,206.98285714285714 L 96.42857142857143,206.80457142857142 L 117.85714285714286,206.51657142857144 L 139.2857142857143,206.24914285714286 L 160.71428571428572,205.97485714285716 L 182.14285714285714,205.81714285714284 L 203.57142857142856,205.50857142857143 L 225,205.37142857142857 L 246.42857142857144,205.26171428571428 L 267.8571428571429,205.1862857142857 L 289.2857142857143,205.152 L 310.7142857142857,205.04228571428573 L 332.1428571428571,204.912 L 353.5714285714286,204.71314285714286 L 375,204.58971428571428 L 396.42857142857144,204.24685714285715 L 417.8571428571429,204.15085714285715 L 439.2857142857143,203.87657142857142 L 460.7142857142857,203.712 L 482.14285714285717,203.49942857142858 L 503.57142857142856,203.33485714285715 L 525,202.0662857142857 L 546.4285714285714,201.696 L 567.8571428571429,201.2982857142857 L 589.2857142857142,200.5645714285714 L 610.7142857142858,200.01600000000002 L 632.1428571428572,199.12457142857141 L 653.5714285714286,198.58285714285714 L 675,198.2262857142857 L 696.4285714285714,197.81485714285714 L 717.8571428571429,197.22514285714286 L 739.2857142857142,196.9782857142857
+      "></path>
+    <circle class="marker filled" cx="10.714285714285715" cy="207.5862857142857" r="5"></circle><circle class="marker filled" cx="32.14285714285714" cy="207.3874285714286" r="5"></circle><circle class="marker filled" cx="53.57142857142858" cy="207.1817142857143" r="5"></circle><circle class="marker filled" cx="75" cy="206.98285714285714" r="5"></circle><circle class="marker filled" cx="96.42857142857143" cy="206.80457142857142" r="5"></circle><circle class="marker filled" cx="117.85714285714286" cy="206.51657142857144" r="5"></circle><circle class="marker filled" cx="139.2857142857143" cy="206.24914285714286" r="5"></circle><circle class="marker filled" cx="160.71428571428572" cy="205.97485714285716" r="5"></circle><circle class="marker filled" cx="182.14285714285714" cy="205.81714285714284" r="5"></circle><circle class="marker filled" cx="203.57142857142856" cy="205.50857142857143" r="5"></circle><circle class="marker filled" cx="225" cy="205.37142857142857" r="5"></circle><circle class="marker filled" cx="246.42857142857144" cy="205.26171428571428" r="5"></circle><circle class="marker filled" cx="267.8571428571429" cy="205.1862857142857" r="5"></circle><circle class="marker filled" cx="289.2857142857143" cy="205.152" r="5"></circle><circle class="marker filled" cx="310.7142857142857" cy="205.04228571428573" r="5"></circle><circle class="marker filled" cx="332.1428571428571" cy="204.912" r="5"></circle><circle class="marker filled" cx="353.5714285714286" cy="204.71314285714286" r="5"></circle><circle class="marker filled" cx="375" cy="204.58971428571428" r="5"></circle><circle class="marker filled" cx="396.42857142857144" cy="204.24685714285715" r="5"></circle><circle class="marker filled" cx="417.8571428571429" cy="204.15085714285715" r="5"></circle><circle class="marker filled" cx="439.2857142857143" cy="203.87657142857142" r="5"></circle><circle class="marker filled" cx="460.7142857142857" cy="203.712" r="5"></circle><circle class="marker filled" cx="482.14285714285717" cy="203.49942857142858" r="5"></circle><circle class="marker filled" cx="503.57142857142856" cy="203.33485714285715" r="5"></circle><circle class="marker filled" cx="525" cy="202.0662857142857" r="5"></circle><circle class="marker filled" cx="546.4285714285714" cy="201.696" r="5"></circle><circle class="marker filled" cx="567.8571428571429" cy="201.2982857142857" r="5"></circle><circle class="marker filled" cx="589.2857142857142" cy="200.5645714285714" r="5"></circle><circle class="marker filled" cx="610.7142857142858" cy="200.01600000000002" r="5"></circle><circle class="marker filled" cx="632.1428571428572" cy="199.12457142857141" r="5"></circle><circle class="marker filled" cx="653.5714285714286" cy="198.58285714285714" r="5"></circle><circle class="marker filled" cx="675" cy="198.2262857142857" r="5"></circle><circle class="marker filled" cx="696.4285714285714" cy="197.81485714285714" r="5"></circle><circle class="marker filled" cx="717.8571428571429" cy="197.22514285714286" r="5"></circle><circle class="marker filled" cx="739.2857142857142" cy="196.9782857142857" r="5"></circle></g><g style="--colour: var(--l23-mint)" id="facebook" class="series"><path class="line" d="
+        M 10.714285714285715,215.904
+        L 32.14285714285714,215.91085714285714 L 53.57142857142858,215.88342857142857 L 75,215.86285714285714 L 96.42857142857143,215.82171428571428 L 117.85714285714286,215.7737142857143 L 139.2857142857143,215.73257142857142 L 160.71428571428572,215.68457142857145 L 182.14285714285714,215.65714285714284 L 203.57142857142856,215.57485714285713 L 225,215.45142857142855 L 246.42857142857144,215.35542857142858 L 267.8571428571429,215.19771428571428 L 289.2857142857143,215.136 L 310.7142857142857,215.08114285714288 L 332.1428571428571,214.98514285714285 L 353.5714285714286,214.85485714285716 L 375,214.79314285714284 L 396.42857142857144,214.38857142857142 L 417.8571428571429,214.34057142857142 L 439.2857142857143,214.29257142857142 L 460.7142857142857,214.14171428571427 L 482.14285714285717,214.01142857142855 L 503.57142857142856,213.93599999999998 L 525,213.54514285714285 L 546.4285714285714,213.30514285714284 L 567.8571428571429,213.17485714285712 L 589.2857142857142,212.98971428571429 L 610.7142857142858,212.87314285714285 L 632.1428571428572,212.4205714285714 L 653.5714285714286,212.15314285714288 L 675,211.9542857142857 L 696.4285714285714,211.78971428571427 L 717.8571428571429,211.55657142857143 L 739.2857142857142,211.488
+      "></path>
+    <circle class="marker filled" cx="10.714285714285715" cy="215.904" r="5"></circle><circle class="marker filled" cx="32.14285714285714" cy="215.91085714285714" r="5"></circle><circle class="marker filled" cx="53.57142857142858" cy="215.88342857142857" r="5"></circle><circle class="marker filled" cx="75" cy="215.86285714285714" r="5"></circle><circle class="marker filled" cx="96.42857142857143" cy="215.82171428571428" r="5"></circle><circle class="marker filled" cx="117.85714285714286" cy="215.7737142857143" r="5"></circle><circle class="marker filled" cx="139.2857142857143" cy="215.73257142857142" r="5"></circle><circle class="marker filled" cx="160.71428571428572" cy="215.68457142857145" r="5"></circle><circle class="marker filled" cx="182.14285714285714" cy="215.65714285714284" r="5"></circle><circle class="marker filled" cx="203.57142857142856" cy="215.57485714285713" r="5"></circle><circle class="marker filled" cx="225" cy="215.45142857142855" r="5"></circle><circle class="marker filled" cx="246.42857142857144" cy="215.35542857142858" r="5"></circle><circle class="marker filled" cx="267.8571428571429" cy="215.19771428571428" r="5"></circle><circle class="marker filled" cx="289.2857142857143" cy="215.136" r="5"></circle><circle class="marker filled" cx="310.7142857142857" cy="215.08114285714288" r="5"></circle><circle class="marker filled" cx="332.1428571428571" cy="214.98514285714285" r="5"></circle><circle class="marker filled" cx="353.5714285714286" cy="214.85485714285716" r="5"></circle><circle class="marker filled" cx="375" cy="214.79314285714284" r="5"></circle><circle class="marker filled" cx="396.42857142857144" cy="214.38857142857142" r="5"></circle><circle class="marker filled" cx="417.8571428571429" cy="214.34057142857142" r="5"></circle><circle class="marker filled" cx="439.2857142857143" cy="214.29257142857142" r="5"></circle><circle class="marker filled" cx="460.7142857142857" cy="214.14171428571427" r="5"></circle><circle class="marker filled" cx="482.14285714285717" cy="214.01142857142855" r="5"></circle><circle class="marker filled" cx="503.57142857142856" cy="213.93599999999998" r="5"></circle><circle class="marker filled" cx="525" cy="213.54514285714285" r="5"></circle><circle class="marker filled" cx="546.4285714285714" cy="213.30514285714284" r="5"></circle><circle class="marker filled" cx="567.8571428571429" cy="213.17485714285712" r="5"></circle><circle class="marker filled" cx="589.2857142857142" cy="212.98971428571429" r="5"></circle><circle class="marker filled" cx="610.7142857142858" cy="212.87314285714285" r="5"></circle><circle class="marker filled" cx="632.1428571428572" cy="212.4205714285714" r="5"></circle><circle class="marker filled" cx="653.5714285714286" cy="212.15314285714288" r="5"></circle><circle class="marker filled" cx="675" cy="211.9542857142857" r="5"></circle><circle class="marker filled" cx="696.4285714285714" cy="211.78971428571427" r="5"></circle><circle class="marker filled" cx="717.8571428571429" cy="211.55657142857143" r="5"></circle><circle class="marker filled" cx="739.2857142857142" cy="211.488" r="5"></circle></g><g style="--colour: var(--l23-cyan)" id="linkedin" class="series"><path class="line" d="
+        M 10.714285714285715,228.2262857142857
+        L 32.14285714285714,227.93142857142857 L 53.57142857142858,227.80800000000002 L 75,227.60228571428573 L 96.42857142857143,227.33485714285715 L 117.85714285714286,227.23885714285714 L 139.2857142857143,227.08114285714285 L 160.71428571428572,226.95771428571427 L 182.14285714285714,226.69028571428572 L 203.57142857142856,226.53942857142857 L 225,226.3817142857143 L 246.42857142857144,226.27885714285716 L 267.8571428571429,225.9497142857143 L 289.2857142857143,225.67542857142857 L 310.7142857142857,225.44914285714285 L 332.1428571428571,225.25714285714287 L 353.5714285714286,225.00342857142857 L 375,224.72914285714288 L 396.42857142857144,224.42742857142855 L 417.8571428571429,223.87885714285716 L 439.2857142857143,223.67314285714286 L 460.7142857142857,223.49485714285714 L 482.14285714285717,223.35771428571428 L 503.57142857142856,223.2342857142857 L 525,222.7337142857143 L 546.4285714285714,222.21942857142858 L 567.8571428571429,221.856 L 589.2857142857142,221.52685714285715 L 610.7142857142858,221.01257142857145 L 632.1428571428572,220.6697142857143 L 653.5714285714286,220.32000000000002 L 675,220.01142857142858 L 696.4285714285714,219.79199999999997 L 717.8571428571429,219.53828571428573 L 739.2857142857142,219.27771428571427
+      "></path>
+    <circle class="marker filled" cx="10.714285714285715" cy="228.2262857142857" r="5"></circle><circle class="marker filled" cx="32.14285714285714" cy="227.93142857142857" r="5"></circle><circle class="marker filled" cx="53.57142857142858" cy="227.80800000000002" r="5"></circle><circle class="marker filled" cx="75" cy="227.60228571428573" r="5"></circle><circle class="marker filled" cx="96.42857142857143" cy="227.33485714285715" r="5"></circle><circle class="marker filled" cx="117.85714285714286" cy="227.23885714285714" r="5"></circle><circle class="marker filled" cx="139.2857142857143" cy="227.08114285714285" r="5"></circle><circle class="marker filled" cx="160.71428571428572" cy="226.95771428571427" r="5"></circle><circle class="marker filled" cx="182.14285714285714" cy="226.69028571428572" r="5"></circle><circle class="marker filled" cx="203.57142857142856" cy="226.53942857142857" r="5"></circle><circle class="marker filled" cx="225" cy="226.3817142857143" r="5"></circle><circle class="marker filled" cx="246.42857142857144" cy="226.27885714285716" r="5"></circle><circle class="marker filled" cx="267.8571428571429" cy="225.9497142857143" r="5"></circle><circle class="marker filled" cx="289.2857142857143" cy="225.67542857142857" r="5"></circle><circle class="marker filled" cx="310.7142857142857" cy="225.44914285714285" r="5"></circle><circle class="marker filled" cx="332.1428571428571" cy="225.25714285714287" r="5"></circle><circle class="marker filled" cx="353.5714285714286" cy="225.00342857142857" r="5"></circle><circle class="marker filled" cx="375" cy="224.72914285714288" r="5"></circle><circle class="marker filled" cx="396.42857142857144" cy="224.42742857142855" r="5"></circle><circle class="marker filled" cx="417.8571428571429" cy="223.87885714285716" r="5"></circle><circle class="marker filled" cx="439.2857142857143" cy="223.67314285714286" r="5"></circle><circle class="marker filled" cx="460.7142857142857" cy="223.49485714285714" r="5"></circle><circle class="marker filled" cx="482.14285714285717" cy="223.35771428571428" r="5"></circle><circle class="marker filled" cx="503.57142857142856" cy="223.2342857142857" r="5"></circle><circle class="marker filled" cx="525" cy="222.7337142857143" r="5"></circle><circle class="marker filled" cx="546.4285714285714" cy="222.21942857142858" r="5"></circle><circle class="marker filled" cx="567.8571428571429" cy="221.856" r="5"></circle><circle class="marker filled" cx="589.2857142857142" cy="221.52685714285715" r="5"></circle><circle class="marker filled" cx="610.7142857142858" cy="221.01257142857145" r="5"></circle><circle class="marker filled" cx="632.1428571428572" cy="220.6697142857143" r="5"></circle><circle class="marker filled" cx="653.5714285714286" cy="220.32000000000002" r="5"></circle><circle class="marker filled" cx="675" cy="220.01142857142858" r="5"></circle><circle class="marker filled" cx="696.4285714285714" cy="219.79199999999997" r="5"></circle><circle class="marker filled" cx="717.8571428571429" cy="219.53828571428573" r="5"></circle><circle class="marker filled" cx="739.2857142857142" cy="219.27771428571427" r="5"></circle></g>
+    
+    <foreignobject class="legend-container" style="--width: 20em;"><ul class="legend">
+      <li>
+        <svg viewbox="-15 -10 30 20" class="series" style="height: 2em; --colour: var(--l23-magenta)">
+        <path class="line" d="M-10,0 h20"></path>
+        <circle class="marker filled" cx="0" cy="0" r="3"></circle>
+        </svg>
+        <span>All</span>
+      </li><li>
+        <svg viewbox="-15 -10 30 20" class="series" style="height: 2em; --colour: #1DA1F2">
+        <path class="line" d="M-10,0 h20"></path>
+        <circle class="marker filled" cx="0" cy="0" r="3"></circle>
+        </svg>
+        <span>Twitter</span>
+      </li><li>
+        <svg viewbox="-15 -10 30 20" class="series" style="height: 2em; --colour: #833AB4">
+        <path class="line" d="M-10,0 h20"></path>
+        <circle class="marker filled" cx="0" cy="0" r="3"></circle>
+        </svg>
+        <span>Instagram</span>
+      </li><li>
+        <svg viewbox="-15 -10 30 20" class="series" style="height: 2em; --colour: var(--l23-mint)">
+        <path class="line" d="M-10,0 h20"></path>
+        <circle class="marker filled" cx="0" cy="0" r="3"></circle>
+        </svg>
+        <span>Facebook</span>
+      </li><li>
+        <svg viewbox="-15 -10 30 20" class="series" style="height: 2em; --colour: var(--l23-cyan)">
+        <path class="line" d="M-10,0 h20"></path>
+        <circle class="marker filled" cx="0" cy="0" r="3"></circle>
+        </svg>
+        <span>Linkedin</span>
+      </li>
+    </ul></foreignobject>
+    
+  </svg>
+ 
+  
+</figure>
+
+</li>
+
+
+<figure class="dashboard-figure" style="grid-column:span 2;">
+   
+<svg class="chart" style="--plot-background:var(--l23-dark-blue-grey);--colour:white;" viewbox="
+      -120
+      -60
+      900
+      450
+    " role="document">
+    
+      <title>Total engagements</title>
+      <text class="title" x="375" dy="-30">Total engagements</text>
+    
+    
+    <g class="axis">
+      <g class="y-axis">
+        <title>Y Axis</title>
+        <path d="M 0,240 v -240"></path>
+        <path d="M0,240h-10M0,192h-10M0,144h-10M0,96h-10M0,47.999999999999986h-10M0,0h-10"></path>
+        <text class="tick-label" x="0" y="240" dx="-20">0</text><text class="tick-label" x="0" y="192" dx="-20">2000</text><text class="tick-label" x="0" y="144" dx="-20">4000</text><text class="tick-label" x="0" y="96" dx="-20">6000</text><text class="tick-label" x="0" y="47.999999999999986" dx="-20">8000</text><text class="tick-label" x="0" y="0" dx="-20">10000</text>
+        
+        <text class="label" x="0" y="0" transform="translate(-90 120) rotate(-90)">
+            Engagements
+        </text>
+    
+      </g>
+      <g class="x-axis rotated">
+        <title>X Axis</title>
+        <path d="M 0,240 h 750"></path>
+        <path d="M10.714285714285715,240v10M96.42857142857143,240v10M182.14285714285714,240v10M267.8571428571429,240v10M353.5714285714286,240v10M439.2857142857143,240v10M525,240v10M610.7142857142858,240v10M696.4285714285714,240v10"></path>
+        <text class="tick-label" x="0" y="0" transform="translate(10.714285714285715 260) rotate(-35)">10th Apr 2022</text><text class="tick-label" x="0" y="0" transform="translate(96.42857142857143 260) rotate(-35)">8th May 2022</text><text class="tick-label" x="0" y="0" transform="translate(182.14285714285714 260) rotate(-35)">5th Jun 2022</text><text class="tick-label" x="0" y="0" transform="translate(267.8571428571429 260) rotate(-35)">3rd Jul 2022</text><text class="tick-label" x="0" y="0" transform="translate(353.5714285714286 260) rotate(-35)">31st Jul 2022</text><text class="tick-label" x="0" y="0" transform="translate(439.2857142857143 260) rotate(-35)">28th Aug 2022</text><text class="tick-label" x="0" y="0" transform="translate(525 260) rotate(-35)">25th Sep 2022</text><text class="tick-label" x="0" y="0" transform="translate(610.7142857142858 260) rotate(-35)">23rd Oct 2022</text><text class="tick-label" x="0" y="0" transform="translate(696.4285714285714 260) rotate(-35)">20th Nov 2022</text>
+        
+        <text class="label" x="375" y="240" dy="126">
+            Week ending (Sunday)
+        </text>
+    
+      </g>
+    </g>
+  
+    <g style="--colour: var(--l23-magenta)" id="all" class="series"><path class="line" d="
+        M 10.714285714285715,213.648
+        L 32.14285714285714,199.368 L 53.57142857142858,218.76 L 75,212.184 L 96.42857142857143,221.544 L 117.85714285714286,206.688 L 139.2857142857143,211.2 L 160.71428571428572,217.20000000000002 L 182.14285714285714,106.752 L 203.57142857142856,223.728 L 225,190.44 L 246.42857142857144,183.38400000000001 L 267.8571428571429,187.536 L 289.2857142857143,214.56 L 310.7142857142857,210.72 L 332.1428571428571,207.312 L 353.5714285714286,215.61599999999999 L 375,225.33599999999998 L 396.42857142857144,111.55199999999999 L 417.8571428571429,209.496 L 439.2857142857143,223.56 L 460.7142857142857,235.56 L 482.14285714285717,231.912 L 503.57142857142856,238.632 L 525,87.28800000000001 L 546.4285714285714,190.152 L 567.8571428571429,189.864 L 589.2857142857142,135.14399999999998 L 610.7142857142858,203.928 L 632.1428571428572,39.144000000000005 L 653.5714285714286,172.08 L 675,175.32 L 696.4285714285714,128.304 L 717.8571428571429,48.6 L 739.2857142857142,186.45600000000002
+      "></path>
+    <circle class="marker filled" cx="10.714285714285715" cy="213.648" r="5"></circle><circle class="marker filled" cx="32.14285714285714" cy="199.368" r="5"></circle><circle class="marker filled" cx="53.57142857142858" cy="218.76" r="5"></circle><circle class="marker filled" cx="75" cy="212.184" r="5"></circle><circle class="marker filled" cx="96.42857142857143" cy="221.544" r="5"></circle><circle class="marker filled" cx="117.85714285714286" cy="206.688" r="5"></circle><circle class="marker filled" cx="139.2857142857143" cy="211.2" r="5"></circle><circle class="marker filled" cx="160.71428571428572" cy="217.20000000000002" r="5"></circle><circle class="marker filled" cx="182.14285714285714" cy="106.752" r="5"></circle><circle class="marker filled" cx="203.57142857142856" cy="223.728" r="5"></circle><circle class="marker filled" cx="225" cy="190.44" r="5"></circle><circle class="marker filled" cx="246.42857142857144" cy="183.38400000000001" r="5"></circle><circle class="marker filled" cx="267.8571428571429" cy="187.536" r="5"></circle><circle class="marker filled" cx="289.2857142857143" cy="214.56" r="5"></circle><circle class="marker filled" cx="310.7142857142857" cy="210.72" r="5"></circle><circle class="marker filled" cx="332.1428571428571" cy="207.312" r="5"></circle><circle class="marker filled" cx="353.5714285714286" cy="215.61599999999999" r="5"></circle><circle class="marker filled" cx="375" cy="225.33599999999998" r="5"></circle><circle class="marker filled" cx="396.42857142857144" cy="111.55199999999999" r="5"></circle><circle class="marker filled" cx="417.8571428571429" cy="209.496" r="5"></circle><circle class="marker filled" cx="439.2857142857143" cy="223.56" r="5"></circle><circle class="marker filled" cx="460.7142857142857" cy="235.56" r="5"></circle><circle class="marker filled" cx="482.14285714285717" cy="231.912" r="5"></circle><circle class="marker filled" cx="503.57142857142856" cy="238.632" r="5"></circle><circle class="marker filled" cx="525" cy="87.28800000000001" r="5"></circle><circle class="marker filled" cx="546.4285714285714" cy="190.152" r="5"></circle><circle class="marker filled" cx="567.8571428571429" cy="189.864" r="5"></circle><circle class="marker filled" cx="589.2857142857142" cy="135.14399999999998" r="5"></circle><circle class="marker filled" cx="610.7142857142858" cy="203.928" r="5"></circle><circle class="marker filled" cx="632.1428571428572" cy="39.144000000000005" r="5"></circle><circle class="marker filled" cx="653.5714285714286" cy="172.08" r="5"></circle><circle class="marker filled" cx="675" cy="175.32" r="5"></circle><circle class="marker filled" cx="696.4285714285714" cy="128.304" r="5"></circle><circle class="marker filled" cx="717.8571428571429" cy="48.6" r="5"></circle><circle class="marker filled" cx="739.2857142857142" cy="186.45600000000002" r="5"></circle></g><g style="--colour: #1DA1F2" id="twitter" class="series"><path class="line" d="
+        M 10.714285714285715,220.488
+        L 32.14285714285714,207.768 L 53.57142857142858,225.912 L 75,216.33599999999998 L 96.42857142857143,229.056 L 117.85714285714286,216.48000000000002 L 139.2857142857143,222.12 L 160.71428571428572,225.45600000000002 L 182.14285714285714,122.928 L 203.57142857142856,233.88 L 225,201.84 L 246.42857142857144,194.184 L 267.8571428571429,215.04 L 289.2857142857143,221.136 L 310.7142857142857,223.296 L 332.1428571428571,222.6 L 353.5714285714286,229.464 L 375,232.992 L 396.42857142857144,139.03199999999998 L 417.8571428571429,225.912 L 439.2857142857143,227.952 L 460.7142857142857,237.408 L 482.14285714285717,235.68 L 503.57142857142856,239.808 L 525,123.52799999999999 L 546.4285714285714,214.27200000000002 L 567.8571428571429,225.576 L 589.2857142857142,192.168 L 610.7142857142858,222.144 L 632.1428571428572,207.19199999999998 L 653.5714285714286,219.432 L 675,218.064 L 696.4285714285714,204.912 L 717.8571428571429,173.208 L 739.2857142857142,215.856
+      "></path>
+    <circle class="marker filled" cx="10.714285714285715" cy="220.488" r="5"></circle><circle class="marker filled" cx="32.14285714285714" cy="207.768" r="5"></circle><circle class="marker filled" cx="53.57142857142858" cy="225.912" r="5"></circle><circle class="marker filled" cx="75" cy="216.33599999999998" r="5"></circle><circle class="marker filled" cx="96.42857142857143" cy="229.056" r="5"></circle><circle class="marker filled" cx="117.85714285714286" cy="216.48000000000002" r="5"></circle><circle class="marker filled" cx="139.2857142857143" cy="222.12" r="5"></circle><circle class="marker filled" cx="160.71428571428572" cy="225.45600000000002" r="5"></circle><circle class="marker filled" cx="182.14285714285714" cy="122.928" r="5"></circle><circle class="marker filled" cx="203.57142857142856" cy="233.88" r="5"></circle><circle class="marker filled" cx="225" cy="201.84" r="5"></circle><circle class="marker filled" cx="246.42857142857144" cy="194.184" r="5"></circle><circle class="marker filled" cx="267.8571428571429" cy="215.04" r="5"></circle><circle class="marker filled" cx="289.2857142857143" cy="221.136" r="5"></circle><circle class="marker filled" cx="310.7142857142857" cy="223.296" r="5"></circle><circle class="marker filled" cx="332.1428571428571" cy="222.6" r="5"></circle><circle class="marker filled" cx="353.5714285714286" cy="229.464" r="5"></circle><circle class="marker filled" cx="375" cy="232.992" r="5"></circle><circle class="marker filled" cx="396.42857142857144" cy="139.03199999999998" r="5"></circle><circle class="marker filled" cx="417.8571428571429" cy="225.912" r="5"></circle><circle class="marker filled" cx="439.2857142857143" cy="227.952" r="5"></circle><circle class="marker filled" cx="460.7142857142857" cy="237.408" r="5"></circle><circle class="marker filled" cx="482.14285714285717" cy="235.68" r="5"></circle><circle class="marker filled" cx="503.57142857142856" cy="239.808" r="5"></circle><circle class="marker filled" cx="525" cy="123.52799999999999" r="5"></circle><circle class="marker filled" cx="546.4285714285714" cy="214.27200000000002" r="5"></circle><circle class="marker filled" cx="567.8571428571429" cy="225.576" r="5"></circle><circle class="marker filled" cx="589.2857142857142" cy="192.168" r="5"></circle><circle class="marker filled" cx="610.7142857142858" cy="222.144" r="5"></circle><circle class="marker filled" cx="632.1428571428572" cy="207.19199999999998" r="5"></circle><circle class="marker filled" cx="653.5714285714286" cy="219.432" r="5"></circle><circle class="marker filled" cx="675" cy="218.064" r="5"></circle><circle class="marker filled" cx="696.4285714285714" cy="204.912" r="5"></circle><circle class="marker filled" cx="717.8571428571429" cy="173.208" r="5"></circle><circle class="marker filled" cx="739.2857142857142" cy="215.856" r="5"></circle></g><g style="--colour: #833AB4" id="instagram" class="series"><path class="line" d="
+        M 10.714285714285715,239.088
+        L 32.14285714285714,238.368 L 53.57142857142858,238.152 L 75,238.632 L 96.42857142857143,238.368 L 117.85714285714286,236.256 L 139.2857142857143,236.04000000000002 L 160.71428571428572,238.20000000000002 L 182.14285714285714,236.952 L 203.57142857142856,238.296 L 225,239.832 L 246.42857142857144,237.072 L 267.8571428571429,235.68 L 289.2857142857143,238.584 L 310.7142857142857,239.736 L 332.1428571428571,239.54399999999998 L 353.5714285714286,238.8 L 375,238.728 L 396.42857142857144,232.464 L 417.8571428571429,236.4 L 439.2857142857143,238.87199999999999 L 460.7142857142857,239.88000000000002 L 482.14285714285717,238.20000000000002 L 503.57142857142856,239.736 L 525,228.792 L 546.4285714285714,234.648 L 567.8571428571429,237.168 L 589.2857142857142,224.4 L 610.7142857142858,233.616 L 632.1428571428572,220.104 L 653.5714285714286,226.944 L 675,234 L 696.4285714285714,237.84 L 717.8571428571429,219.216 L 739.2857142857142,236.88
+      "></path>
+    <circle class="marker filled" cx="10.714285714285715" cy="239.088" r="5"></circle><circle class="marker filled" cx="32.14285714285714" cy="238.368" r="5"></circle><circle class="marker filled" cx="53.57142857142858" cy="238.152" r="5"></circle><circle class="marker filled" cx="75" cy="238.632" r="5"></circle><circle class="marker filled" cx="96.42857142857143" cy="238.368" r="5"></circle><circle class="marker filled" cx="117.85714285714286" cy="236.256" r="5"></circle><circle class="marker filled" cx="139.2857142857143" cy="236.04000000000002" r="5"></circle><circle class="marker filled" cx="160.71428571428572" cy="238.20000000000002" r="5"></circle><circle class="marker filled" cx="182.14285714285714" cy="236.952" r="5"></circle><circle class="marker filled" cx="203.57142857142856" cy="238.296" r="5"></circle><circle class="marker filled" cx="225" cy="239.832" r="5"></circle><circle class="marker filled" cx="246.42857142857144" cy="237.072" r="5"></circle><circle class="marker filled" cx="267.8571428571429" cy="235.68" r="5"></circle><circle class="marker filled" cx="289.2857142857143" cy="238.584" r="5"></circle><circle class="marker filled" cx="310.7142857142857" cy="239.736" r="5"></circle><circle class="marker filled" cx="332.1428571428571" cy="239.54399999999998" r="5"></circle><circle class="marker filled" cx="353.5714285714286" cy="238.8" r="5"></circle><circle class="marker filled" cx="375" cy="238.728" r="5"></circle><circle class="marker filled" cx="396.42857142857144" cy="232.464" r="5"></circle><circle class="marker filled" cx="417.8571428571429" cy="236.4" r="5"></circle><circle class="marker filled" cx="439.2857142857143" cy="238.87199999999999" r="5"></circle><circle class="marker filled" cx="460.7142857142857" cy="239.88000000000002" r="5"></circle><circle class="marker filled" cx="482.14285714285717" cy="238.20000000000002" r="5"></circle><circle class="marker filled" cx="503.57142857142856" cy="239.736" r="5"></circle><circle class="marker filled" cx="525" cy="228.792" r="5"></circle><circle class="marker filled" cx="546.4285714285714" cy="234.648" r="5"></circle><circle class="marker filled" cx="567.8571428571429" cy="237.168" r="5"></circle><circle class="marker filled" cx="589.2857142857142" cy="224.4" r="5"></circle><circle class="marker filled" cx="610.7142857142858" cy="233.616" r="5"></circle><circle class="marker filled" cx="632.1428571428572" cy="220.104" r="5"></circle><circle class="marker filled" cx="653.5714285714286" cy="226.944" r="5"></circle><circle class="marker filled" cx="675" cy="234" r="5"></circle><circle class="marker filled" cx="696.4285714285714" cy="237.84" r="5"></circle><circle class="marker filled" cx="717.8571428571429" cy="219.216" r="5"></circle><circle class="marker filled" cx="739.2857142857142" cy="236.88" r="5"></circle></g><g style="--colour: var(--l23-mint)" id="facebook" class="series"><path class="line" d="
+        M 10.714285714285715,238.20000000000002
+        L 32.14285714285714,235.75199999999998 L 53.57142857142858,237.144 L 75,238.704 L 96.42857142857143,237.12 L 117.85714285714286,236.112 L 139.2857142857143,234.31199999999998 L 160.71428571428572,236.496 L 182.14285714285714,234.528 L 203.57142857142856,234.024 L 225,232.39200000000002 L 246.42857142857144,234.552 L 267.8571428571429,225.888 L 289.2857142857143,237.50400000000002 L 310.7142857142857,235.92 L 332.1428571428571,230.52 L 353.5714285714286,234.072 L 375,237.072 L 396.42857142857144,225.36 L 417.8571428571429,236.832 L 439.2857142857143,239.37599999999998 L 460.7142857142857,239.256 L 482.14285714285717,238.32 L 503.57142857142856,239.59199999999998 L 525,226.968 L 546.4285714285714,226.728 L 567.8571428571429,211.92000000000002 L 589.2857142857142,204.768 L 610.7142857142858,232.39200000000002 L 632.1428571428572,100.416 L 653.5714285714286,210.528 L 675,210.888 L 696.4285714285714,169.44 L 717.8571428571429,145.77599999999998 L 739.2857142857142,222.288
+      "></path>
+    <circle class="marker filled" cx="10.714285714285715" cy="238.20000000000002" r="5"></circle><circle class="marker filled" cx="32.14285714285714" cy="235.75199999999998" r="5"></circle><circle class="marker filled" cx="53.57142857142858" cy="237.144" r="5"></circle><circle class="marker filled" cx="75" cy="238.704" r="5"></circle><circle class="marker filled" cx="96.42857142857143" cy="237.12" r="5"></circle><circle class="marker filled" cx="117.85714285714286" cy="236.112" r="5"></circle><circle class="marker filled" cx="139.2857142857143" cy="234.31199999999998" r="5"></circle><circle class="marker filled" cx="160.71428571428572" cy="236.496" r="5"></circle><circle class="marker filled" cx="182.14285714285714" cy="234.528" r="5"></circle><circle class="marker filled" cx="203.57142857142856" cy="234.024" r="5"></circle><circle class="marker filled" cx="225" cy="232.39200000000002" r="5"></circle><circle class="marker filled" cx="246.42857142857144" cy="234.552" r="5"></circle><circle class="marker filled" cx="267.8571428571429" cy="225.888" r="5"></circle><circle class="marker filled" cx="289.2857142857143" cy="237.50400000000002" r="5"></circle><circle class="marker filled" cx="310.7142857142857" cy="235.92" r="5"></circle><circle class="marker filled" cx="332.1428571428571" cy="230.52" r="5"></circle><circle class="marker filled" cx="353.5714285714286" cy="234.072" r="5"></circle><circle class="marker filled" cx="375" cy="237.072" r="5"></circle><circle class="marker filled" cx="396.42857142857144" cy="225.36" r="5"></circle><circle class="marker filled" cx="417.8571428571429" cy="236.832" r="5"></circle><circle class="marker filled" cx="439.2857142857143" cy="239.37599999999998" r="5"></circle><circle class="marker filled" cx="460.7142857142857" cy="239.256" r="5"></circle><circle class="marker filled" cx="482.14285714285717" cy="238.32" r="5"></circle><circle class="marker filled" cx="503.57142857142856" cy="239.59199999999998" r="5"></circle><circle class="marker filled" cx="525" cy="226.968" r="5"></circle><circle class="marker filled" cx="546.4285714285714" cy="226.728" r="5"></circle><circle class="marker filled" cx="567.8571428571429" cy="211.92000000000002" r="5"></circle><circle class="marker filled" cx="589.2857142857142" cy="204.768" r="5"></circle><circle class="marker filled" cx="610.7142857142858" cy="232.39200000000002" r="5"></circle><circle class="marker filled" cx="632.1428571428572" cy="100.416" r="5"></circle><circle class="marker filled" cx="653.5714285714286" cy="210.528" r="5"></circle><circle class="marker filled" cx="675" cy="210.888" r="5"></circle><circle class="marker filled" cx="696.4285714285714" cy="169.44" r="5"></circle><circle class="marker filled" cx="717.8571428571429" cy="145.77599999999998" r="5"></circle><circle class="marker filled" cx="739.2857142857142" cy="222.288" r="5"></circle></g><g style="--colour: var(--l23-cyan)" id="linkedin" class="series"><path class="line" d="
+        M 10.714285714285715,235.872
+        L 32.14285714285714,237.48000000000002 L 53.57142857142858,237.552 L 75,238.512 L 96.42857142857143,237 L 117.85714285714286,237.84 L 139.2857142857143,238.728 L 160.71428571428572,237.048 L 182.14285714285714,232.344 L 203.57142857142856,237.52800000000002 L 225,236.376 L 246.42857142857144,237.576 L 267.8571428571429,230.928 L 289.2857142857143,237.336 L 310.7142857142857,231.768 L 332.1428571428571,234.648 L 353.5714285714286,233.28 L 375,236.544 L 396.42857142857144,234.696 L 417.8571428571429,230.352 L 439.2857142857143,237.35999999999999 L 460.7142857142857,239.016 L 482.14285714285717,239.71200000000002 L 503.57142857142856,239.496 L 525,228 L 546.4285714285714,234.504 L 567.8571428571429,235.2 L 589.2857142857142,233.808 L 610.7142857142858,235.776 L 632.1428571428572,231.43200000000002 L 653.5714285714286,235.176 L 675,232.368 L 696.4285714285714,236.112 L 717.8571428571429,230.39999999999998 L 739.2857142857142,231.43200000000002
+      "></path>
+    <circle class="marker filled" cx="10.714285714285715" cy="235.872" r="5"></circle><circle class="marker filled" cx="32.14285714285714" cy="237.48000000000002" r="5"></circle><circle class="marker filled" cx="53.57142857142858" cy="237.552" r="5"></circle><circle class="marker filled" cx="75" cy="238.512" r="5"></circle><circle class="marker filled" cx="96.42857142857143" cy="237" r="5"></circle><circle class="marker filled" cx="117.85714285714286" cy="237.84" r="5"></circle><circle class="marker filled" cx="139.2857142857143" cy="238.728" r="5"></circle><circle class="marker filled" cx="160.71428571428572" cy="237.048" r="5"></circle><circle class="marker filled" cx="182.14285714285714" cy="232.344" r="5"></circle><circle class="marker filled" cx="203.57142857142856" cy="237.52800000000002" r="5"></circle><circle class="marker filled" cx="225" cy="236.376" r="5"></circle><circle class="marker filled" cx="246.42857142857144" cy="237.576" r="5"></circle><circle class="marker filled" cx="267.8571428571429" cy="230.928" r="5"></circle><circle class="marker filled" cx="289.2857142857143" cy="237.336" r="5"></circle><circle class="marker filled" cx="310.7142857142857" cy="231.768" r="5"></circle><circle class="marker filled" cx="332.1428571428571" cy="234.648" r="5"></circle><circle class="marker filled" cx="353.5714285714286" cy="233.28" r="5"></circle><circle class="marker filled" cx="375" cy="236.544" r="5"></circle><circle class="marker filled" cx="396.42857142857144" cy="234.696" r="5"></circle><circle class="marker filled" cx="417.8571428571429" cy="230.352" r="5"></circle><circle class="marker filled" cx="439.2857142857143" cy="237.35999999999999" r="5"></circle><circle class="marker filled" cx="460.7142857142857" cy="239.016" r="5"></circle><circle class="marker filled" cx="482.14285714285717" cy="239.71200000000002" r="5"></circle><circle class="marker filled" cx="503.57142857142856" cy="239.496" r="5"></circle><circle class="marker filled" cx="525" cy="228" r="5"></circle><circle class="marker filled" cx="546.4285714285714" cy="234.504" r="5"></circle><circle class="marker filled" cx="567.8571428571429" cy="235.2" r="5"></circle><circle class="marker filled" cx="589.2857142857142" cy="233.808" r="5"></circle><circle class="marker filled" cx="610.7142857142858" cy="235.776" r="5"></circle><circle class="marker filled" cx="632.1428571428572" cy="231.43200000000002" r="5"></circle><circle class="marker filled" cx="653.5714285714286" cy="235.176" r="5"></circle><circle class="marker filled" cx="675" cy="232.368" r="5"></circle><circle class="marker filled" cx="696.4285714285714" cy="236.112" r="5"></circle><circle class="marker filled" cx="717.8571428571429" cy="230.39999999999998" r="5"></circle><circle class="marker filled" cx="739.2857142857142" cy="231.43200000000002" r="5"></circle></g>
+    
+    <foreignobject class="legend-container" style="--width: 20em;"><ul class="legend">
+      <li>
+        <svg viewbox="-15 -10 30 20" class="series" style="height: 2em; --colour: var(--l23-magenta)">
+        <path class="line" d="M-10,0 h20"></path>
+        <circle class="marker filled" cx="0" cy="0" r="3"></circle>
+        </svg>
+        <span>All</span>
+      </li><li>
+        <svg viewbox="-15 -10 30 20" class="series" style="height: 2em; --colour: #1DA1F2">
+        <path class="line" d="M-10,0 h20"></path>
+        <circle class="marker filled" cx="0" cy="0" r="3"></circle>
+        </svg>
+        <span>Twitter</span>
+      </li><li>
+        <svg viewbox="-15 -10 30 20" class="series" style="height: 2em; --colour: #833AB4">
+        <path class="line" d="M-10,0 h20"></path>
+        <circle class="marker filled" cx="0" cy="0" r="3"></circle>
+        </svg>
+        <span>Instagram</span>
+      </li><li>
+        <svg viewbox="-15 -10 30 20" class="series" style="height: 2em; --colour: var(--l23-mint)">
+        <path class="line" d="M-10,0 h20"></path>
+        <circle class="marker filled" cx="0" cy="0" r="3"></circle>
+        </svg>
+        <span>Facebook</span>
+      </li><li>
+        <svg viewbox="-15 -10 30 20" class="series" style="height: 2em; --colour: var(--l23-cyan)">
+        <path class="line" d="M-10,0 h20"></path>
+        <circle class="marker filled" cx="0" cy="0" r="3"></circle>
+        </svg>
+        <span>Linkedin</span>
+      </li>
+    </ul></foreignobject>
+    
+  </svg>
+ 
+  
+</figure>
+
+
+<li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>Percentage of Leeds schools engaged with:</h3>
+    <div class="impact-big-number">TBC%</div>
+
+
+
+</li>
+<a class="panels-link" href="/metrics/media_coverage/"><li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>Total featured articles</h3>
+    <div class="impact-big-number">TBC</div>
+
+
+
+</li></a>
+<a class="panels-link" href="/metrics/media_coverage/"><li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>International online mentions</h3>
+    <div class="impact-big-number">TBC</div>
+
+
+
+</li></a>
+<li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>Another metric here</h3>
+    <div class="impact-big-number">TBC</div>
+
+
+    <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
+
+</li>
+<li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>Another metric here</h3>
+    <div class="impact-big-number">TBC</div>
+
+
+    <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
+
+</li>
+<li class="dashboard-panel" style="
+    
+    --foreground: white;--background: var(--l23-dark-blue-grey);" tabindex="0">
+  
+    <h3>Number of pupils engaged with:</h3>
+    <div class="impact-big-number">TBC</div>
+
+
+
+</li>
+
+</ul>
+
+</div>
+
+
+<h2>Known Limitations and Issues</h2>
+<ul>
+  <li>Data may not be accurate and should be used as a guide.</li>
+</ul>
+
+
+
+</div>
+
+    </main>
+
+    <div class="site-footer">
+    
+<div class="max-width-container" style="">
+  
+      <footer>
+        <p>© <span class="leeds-2023-logo">LEEDS 2023</span></p>
+        <p><a href="https://github.com/open-innovations/leeds-2023" title="Visit the GitHub repository"><svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewbox="0 0 512 512" class="social-icon"><rect width="512" height="512" rx="15%" fill="#181717"></rect><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-44c-71 16-86-34-86-34-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"></path></svg></a></p><a href="https://github.com/open-innovations/leeds-2023" title="Visit the GitHub repository">
+      </a></footer><a href="https://github.com/open-innovations/leeds-2023" title="Visit the GitHub repository">
+    
+</a></div><a href="https://github.com/open-innovations/leeds-2023" title="Visit the GitHub repository">
+    </a></div><a href="https://github.com/open-innovations/leeds-2023" title="Visit the GitHub repository">
+  
+</a></body></html>

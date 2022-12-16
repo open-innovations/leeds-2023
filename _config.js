@@ -15,12 +15,20 @@ import autoDependency from 'oi-lume-utils/processors/auto-dependency.ts';
 import * as filters from 'local/filters.ts';
 import getFonts from 'local/oi/get-fonts.ts';
 
+const nunjucks = {
+  options: {
+    throwOnUndefined: false,
+  },
+};
+
 const site = lume({
   location: new URL("https://data.leeds2023.open-innovations.org/"),
   src: "./docs",
   components: {
     cssFile: '/style/components.css'
   }
+}, {
+  nunjucks,
 });
 
 // Add dependencies

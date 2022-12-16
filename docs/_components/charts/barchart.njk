@@ -85,7 +85,7 @@ css: |
       id="series-{{ series_index }}-{{ loop.index0 }}"
       d="M0 {{ axis_spacing / 2 }} l{{ bar_length }} 0 l0 {{ series_height - axis_spacing }} l{{ -bar_length }} 0 L0 0"
       {% if popupContent -%}
-        data-auto-popup="{{ popupContent(value=v) | safe }}"
+        data-auto-popup="{{ popupContent(value=v, category=categories[loop.index0]) | safe }}"
         data-auto-popup-pos="right"
       {%- endif %}
     />

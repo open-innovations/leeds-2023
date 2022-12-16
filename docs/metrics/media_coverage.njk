@@ -7,6 +7,10 @@ limitations:
   - Stats have been derived from two different data sources and there is stil work to be done in reconciling these. This page should be seen as more of a wireframe.
   - There is currently a gap in data between October and November. The figures for these months are lower than reality. This will be resolved soon.
 ---
+{%- macro popupContent({ value: value, category: category }) -%}
+  {{ value }} articles and appearances in the {{ category }} category
+{%- endmacro -%}
+
 <p> All data concerns media coverage from 2021 and 2022.</p>
 <h2>Headlines</h2>
 

@@ -254,9 +254,9 @@ operational systems.
 {% endcomp %}
 {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/media_coverage/' } %}
     <h3>Media coverage</h3>
-    <span class="subtext">Local: 999%</span>
-    <span class="subtext">Regional: 999%</span>
-    <span class="subtext">National: 999%</span>
+    <span class="subtext">Local: {{  metrics.media_coverage.summary_new.stats.total_media_local | localize  }}%</span>
+    <span class="subtext">Regional: {{ metrics.media_coverage.summary_new.stats.total_media_regional | localize }}%</span>
+    <span class="subtext">National: {{ metrics.media_coverage.summary_new.stats.total_media_national | localize }}%</span>
 {% endcomp %}
 {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/media_coverage/' } %}
     <h3>International online mentions</h3>

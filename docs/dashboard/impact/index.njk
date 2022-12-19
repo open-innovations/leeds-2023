@@ -70,42 +70,27 @@ operational systems.
     {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
 {% endcomp %}
 {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/fundraising' } %}
-    <h3>Funding breakdown by stage</h3>
-    {% comp 'dashboard.impact.embedded_figure' %}
-    {{ comp.charts.barchart({
-    bg_col: 'var(--l23-dark-blue-grey)',
-    text_col: 'white',
-    series: [
-        metrics.fundraising.count_by_stage.columns.count
-    ],
-    popupContent: popupContent,
-    categories: metrics.fundraising.count_by_stage.columns.stage,
-    colours: [
-        [ "var(--l23-cyan)" ]
-    ],
-    plot: {
-        grid: { x: true, category: true }
-    },
-    axis: {
-        x: {
-        title: 'Number of organisations',
-        show: false,
-        ticks: false,
-        resolution: 25
-        },
-        category: {
-        label_width: 75,
-        show: false,
-        height: 65,
-        width: 10
-        }
-    }
-    }) | safe }}
-    {% endcomp %} 
-    {% endcomp %}
-
+    <h3>Funding prospects</h3>
+    {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
+{% endcomp %}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/fundraising' } %}
+    <h3>Secured funders</h3>
+    {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
+{% endcomp %}
 {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
-    <h3>People employed by Leeds Culture Trust</h3>
+    <h3>People directly employed by Leeds Cultural Trust</h3>
+    {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
+{% endcomp %}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    <h3>Freelancers employed by Leeds Cultural Trust</h3>
+    {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
+{% endcomp %}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    <h3>Contracted organisations in Leeds</h3>
+    {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
+{% endcomp %}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    <h3>Preferred suppliers</h3>
     {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
 {% endcomp %}
 {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/volunteers' } %}
@@ -118,7 +103,11 @@ operational systems.
     {{ comp.dashboard.impact.big_number({ number: search.data("metrics/volunteers").by_week.columns.offered | last or '--' | localize }) | safe }}
     <p class="footnote">The number of people who have been offered a volunteering role.</p>
 {% endcomp %} 
-
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    <h3>Another metric here</h3>
+    {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
+    <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
+{% endcomp %}
 {% comp 'dashboard.impact.panel', { columns: 2, bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
     {% comp 'dashboard.impact.embedded_figure' %} 
     {{ comp.oi.charts.graph.line({
@@ -264,13 +253,14 @@ operational systems.
     {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
 {% endcomp %}
 {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/media_coverage/' } %}
+    <h3>Media coverage</h3>
+    <span class="subtext">Local: 999%</span>
+    <span class="subtext">Regional: 999%</span>
+    <span class="subtext">National: 999%</span>
+{% endcomp %}
+{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/media_coverage/' } %}
     <h3>International online mentions</h3>
     {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
-{% endcomp %}
-{% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
-    <h3>Another metric here</h3>
-    {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
-    <p class="footnote">Some more figures will go here as we build out the dashboard.</p>
 {% endcomp %}
 {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
     <h3>Another metric here</h3>

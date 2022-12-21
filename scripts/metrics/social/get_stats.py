@@ -96,7 +96,7 @@ def get_summary_file(config):
 def get_summary_dir(config):
     summary = []
     for file in os.listdir(config["path"]):
-        summary.append({"key" : file.replace(".csv","")} | get_summary_file(config | {"path" : config["path"] + file}))
+        summary.append({"key" : file.replace(".csv","")} | get_summary_file(config | {"path" : os.path.join(config["path"],file)}))
  
     return summary
 
@@ -120,10 +120,11 @@ def get_summarys(input):
     summarys = {}
     for file_key in input["data_file"].keys():
         config = input["data_file"][file_key]
+        config["path"] = os.path.join(*(config["path"].split(',')))
         if os.path.isfile(config["path"]):
             if "group_by_date" in config.keys():
                 data =  get_summary_file_group_by_date(config)
-                pd.json_normalize(data).to_csv(config["out_csv"],index=False)
+                pd.json_normalize(data).to_csv(os.path.join(*(config["out_csv"].split(','))),index=False)
                 summarys[file_key] =  {}
                 #summarys[file_key] =  get_summary_file_group_by_date(config)                
             else:

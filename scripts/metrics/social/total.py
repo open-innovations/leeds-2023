@@ -1,8 +1,8 @@
 import combine
 import yaml
-from collections import defaultdict
+import os
 
-SUMMARY_DIR = "docs\_data\metrics\social_media\summary.yml"
+SUMMARY_DIR = os.path.join('docs','_data','metrics','social_media','summary.yml')
 def summary_total():
     socials = ['twitter','instagram','facebook','linkedin']
     metrics = ['audience_last','engagements_total','audience_gained_total','impressions_total']
@@ -18,8 +18,8 @@ def summary_total():
         yaml.safe_dump(stats,f)
 
 def main():
-    DATA_DIR = "docs\\_data\\metrics\\social_media\\service"
-    OUT = "docs\\_data\\metrics\\social_media\\all_weekly.csv"
+    DATA_DIR = os.path.join('docs','_data','metrics','social_media','service')
+    OUT = os.path.join('docs','_data','metrics','social_media','all_weekly.csv')
     all = combine.combine_dir(DATA_DIR).groupby(by="week_ending").sum()
     print(all)
     all.to_csv(OUT,index=True)

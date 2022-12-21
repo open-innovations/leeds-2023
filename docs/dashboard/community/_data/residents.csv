@@ -1,10 +1,10 @@
 ward_code,ballot,roadshow_contact,schools_learners,volunteering,total,ward_name
 E05012841,50,11,28,28,117,Adel and Wharfdale
-E05012842,57,9,0,29,95,Alwoodley
+E05012842,57,9,0,30,96,Alwoodley
 E05011384,24,11,0,18,53,Ardsley and Robin Hood
 E05011385,42,8,0,14,64,Armley
 E05012647,77,2,83,20,182,Beeston and Holbeck
-E05011387,52,12,30,12,106,Bramley and Stanningley
+E05011387,52,12,30,13,107,Bramley and Stanningley
 E05011388,47,5,240,11,303,Burmantofts and Richmond Hill
 E05011389,43,18,0,23,84,Calverley and Farsley
 E05011390,130,20,150,51,351,Chapel Allerton
@@ -28,7 +28,7 @@ E05011407,42,13,0,17,72,Morley South
 E05011549,18,3,0,8,29,Otley and Yeadon
 E05011409,19,14,0,21,54,Pudsey
 E05011410,27,4,0,9,40,Rothwell
-E05011411,68,2,30,35,135,Roundhay
+E05011411,68,2,30,36,136,Roundhay
 E05013831,29,11,0,18,58,Temple Newsam
 E05011413,68,26,0,44,138,Weetwood
 E05011414,15,3,0,8,26,Wetherby

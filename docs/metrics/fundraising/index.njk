@@ -35,10 +35,10 @@ limitations:
     'Organisations at each fundraising stage'
   ],
   series: [
-    metrics.fundraising.count_by_stage.columns.count
+    count_by_stage.columns.count
   ],
   popupContent: popupContent,
-  categories: metrics.fundraising.count_by_stage.columns.stage,
+  categories: count_by_stage.columns.stage,
   colours: [
     [ "var(--l23-cyan)" ]
   ],
@@ -63,7 +63,7 @@ limitations:
 {% comp 'layout.block' %}
 {{ comp.charts.table({
   columns: columns,
-  rows: metrics.fundraising.count_by_stage.rows
+  rows: count_by_stage.rows
 }) | safe }}
 {% endcomp %}
 {% endcomp %}
@@ -80,7 +80,7 @@ limitations:
       <th>Unknown</th>
     </tr>
   </thead>
-{% for row in metrics.fundraising.count_by_sector_and_stage.rows %}
+{% for row in count_by_sector_and_stage.rows %}
   <tr>
     <td>{{ row.sector }}</td>
     <td>{{ row.Research }}</td>

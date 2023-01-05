@@ -71,11 +71,11 @@ operational systems.
 {% endcomp %}
 {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/fundraising' } %}
     <h3>Funding prospects</h3>
-    {{ comp.dashboard.impact.big_number({ number: metrics.fundraising.count_by_stage.columns.count[2] | localize }) | safe }}
+    {{ comp.dashboard.impact.big_number({ number: search.data('metrics/fundraising').count_by_stage.columns.count[2] | localize }) | safe }}
 {% endcomp %}
 {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/fundraising' } %}
     <h3>Secured funders</h3>
-    {{ comp.dashboard.impact.big_number({ number: metrics.fundraising.count_by_stage.columns.count[1] | localize }) | safe }}
+    {{ comp.dashboard.impact.big_number({ number: search.data('metrics/fundraising').count_by_stage.columns.count[1] | localize }) | safe }}
 {% endcomp %}
 {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
     <h3>People directly employed by Leeds Cultural Trust</h3>

@@ -3,7 +3,7 @@ import pandas as pd
 
 from metrics.fundraising.transform import load_transformed
 
-SITE_DATA_PATH = os.path.join("docs", "_data", "metrics", "fundraising")
+SITE_DATA_PATH = os.path.join("docs", "metrics", "fundraising", "_data")
 
 
 def summarise(data):

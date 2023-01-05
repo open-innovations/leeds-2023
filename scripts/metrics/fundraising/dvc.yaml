@@ -16,9 +16,9 @@ stages:
       - scripts/metrics/fundraising/prepare.py
       - data/metrics/fundraising/pipeline.csv
     outs:
-      - docs/_data/metrics/fundraising/count_by_sector_and_stage.csv:
+      - docs/metrics/fundraising/_data/count_by_sector_and_stage.csv:
           persist: true
           cache: false
-      - docs/_data/metrics/fundraising/count_by_stage.csv:
+      - docs/metrics/fundraising/_data/count_by_stage.csv:
           persist: true
           cache: false

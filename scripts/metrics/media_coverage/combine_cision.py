@@ -2,6 +2,7 @@ import pandas as pd
 import os
 import glob
 
+
 WORKING_DIR = os.path.join('working', 'manual', 'media')
 OUTPUT_FILE_PATH = os.path.join(
     'data', 'metrics', 'media_coverage', 'combined_cision.csv')
@@ -32,6 +33,9 @@ def load_new_file(filepath):
     # Convert viewship to int
     data['uv'] = data['uv'].astype('Int64')
 
+    # Convert reach to int
+    data['audience_reach'] = data['audience_reach'].astype('Int64')
+
     # Add identifier
     data['hash'] = pd.util.hash_pandas_object(
         data[['news_date', 'news_headline', 'outlet_name']], hash_key=HASH_KEY, index=False)
@@ -40,22 +44,54 @@ def load_new_file(filepath):
 
 
 def combine_new_data(dfs):
-    # Set columns order
-    columns_order = ['news_date', 'news_headline', 'outlet_name', 'audience_reach',
-                     'uv', 'tone', 'medium', 'outlet_type', 'custom_tags', 'news_company_mentions', 'hash']
-
     # Concatenate all data
     data = (pd.concat(dfs)
-            .drop(columns=['news_text', 'contact_name', 'news_attachment_name'])
-            .sort_values(by=['news_date', 'news_headline', 'medium'])
-            .reindex(columns=columns_order))
+            .drop(columns=['news_text', 'contact_name', 'news_attachment_name'], errors='ignore')
+            .sort_values(by=['news_date', 'news_headline', 'medium']))
 
     return data
 
 
-if __name__ == '__main__':
+def update_existing(new_data):
+    # Get list of known hashes
+    hashes = new_data.hash.unique()
+
+    # Load existing data
+    existing_data = load_combined()
+
+    # Find existing data that is (probably) not in the new data
+    existing_data = existing_data[~existing_data.hash.isin(hashes)]
+
+    # Combine hashes not in new data
+    return pd.concat([existing_data, new_data])
+
+
+def save_combined(data):
+    # Set columns order
+    columns_order = ['news_date', 'news_headline', 'outlet_name', 'audience_reach',
+                     'uv', 'tone', 'medium', 'outlet_type', 'custom_tags', 'news_company_mentions', 'hash']
+    data = data.reindex(columns=columns_order)
+
+    data.sort_values(by=['news_date', 'news_headline', 'outlet_name', 'medium']).to_csv(
+        OUTPUT_FILE_PATH, index=False)
+
+
+def load_combined():
+    data = pd.read_csv(OUTPUT_FILE_PATH, parse_dates=['news_date'])
+
+    data['uv'] = data['uv'].astype('Int64')
+    data['audience_reach'] = data['audience_reach'].astype('Int64')
+
+    return data
+
+
+def transform():
     # Getting list of files
     files = glob.glob(os.path.join(WORKING_DIR, '*.csv'))
+
+    # If no files, nothing to do, so return
+    if len(files) == 0:
+        return
 
     # Load each file into a list of data frames
     dfs = [load_new_file(file) for file in files]
@@ -64,7 +100,12 @@ if __name__ == '__main__':
     combined_data = combine_new_data(dfs)
 
     # TODO Do a combine_first with existing data - unique key needed
+    # THIS DOES NOT QUITE WORK
+    # combined_data = update_existing(combined_data)
 
     # Save to file
-    combined_data.sort_values(by=['news_date', 'news_headline', 'outlet_name', 'medium']).to_csv(
-        OUTPUT_FILE_PATH, index=False)
+    save_combined(combined_data)
+
+
+if __name__ == '__main__':
+    transform()

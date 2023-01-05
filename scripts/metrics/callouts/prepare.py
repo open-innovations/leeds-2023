@@ -3,7 +3,7 @@ import pandas as pd
 
 from metrics.callouts.transform import RESPONSE_CSV
 
-SITE_DIR = os.path.join('docs', '_data', 'metrics', 'callouts')
+SITE_DIR = os.path.join('docs', 'metrics', 'callouts', '_data')
 os.makedirs(SITE_DIR, exist_ok=True)
 
 if __name__ == '__main__':
@@ -28,4 +28,4 @@ if __name__ == '__main__':
         SITE_DIR, 'responses_by_ward.csv'))
 
     summary = responses_by_callout.sum()
-    summary.to_json(os.path.join(SITE_DIR, 'summary.json'))
+    summary.to_json(os.path.join(SITE_DIR, 'headline.json'))

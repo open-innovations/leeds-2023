@@ -28,6 +28,6 @@ stages:
       - scripts/metrics/callouts/prepare.py
       - data/metrics/callouts/
     outs:
-      - docs/_data/metrics/callouts/:
-          persist: false
+      - docs/metrics/callouts/_data:
+          persist: true
           cache: false

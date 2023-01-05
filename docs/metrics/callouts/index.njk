@@ -19,7 +19,7 @@ work_in_progress: true
 
 {{ comp.metric.headline({
   title: "Callout responses", headingLevel: 3,
-  value: metrics.callouts.summary.responses | localize,
+  value: headline.responses | localize,
   description: "Total number of callout responses."
 }) | safe }}
 
@@ -44,7 +44,7 @@ work_in_progress: true
       <th>Responses received</th>
     </tr>
   </thead>
-{% for row in metrics.callouts.responses_by_callout.rows %}
+{% for row in responses_by_callout.rows %}
   <tr>
     <td>{{ names[row.callout] }}</td>
     <td>{{ row.responses }}</td>
@@ -56,7 +56,7 @@ work_in_progress: true
 {% comp 'layout.figure' %}
 {{ comp.charts.hexmap({
   hexjson: hex.wards_leeds,
-  data: metrics.callouts.responses_by_ward.rows,
+  data: responses_by_ward.rows,
   matchKey: 'ward_code',
   valueProp: 'responses',
   bgColour: '#ddd',

@@ -6,37 +6,60 @@ WORKING_DIR = os.path.join('working', 'manual', 'media')
 OUTPUT_FILE_PATH = os.path.join(
     'data', 'metrics', 'media_coverage', 'combined_cision.csv')
 
+
+def load_new_file(filepath):
+    data = pd.read_csv(filepath)
+
+    # Normalise names of columns
+    data.columns = data.columns.str.replace(
+        ' ', '_').str.replace('*', '', regex=False).str.lower()
+
+    # Drop rows with empty news headline (Cision has started adding a footer)
+    data = data[~data['news_headline'].isna()]
+
+    # Convert news date into datetime format
+    try:
+        data['news_date'] = pd.to_datetime(
+            data['news_date'], format="%d/%m/%Y")
+        # If date before 2022-09-17 or after today, something is fishy
+        # TODO implement this
+    except:
+        # Sometimes it's in MM/DD/YYYY format!
+        data['news_date'] = pd.to_datetime(
+            data['news_date'], format="%m/%d/%Y")
+
+    # Convert viewship to int
+    data['uv'] = data['uv'].astype('Int64')
+
+    return data
+
+
+def combine_new_data(dfs):
+    # Set columns order
+    columns_order = ['news_date', 'news_headline', 'outlet_name', 'audience_reach',
+                     'uv', 'tone', 'medium', 'outlet_type', 'custom_tags', 'news_company_mentions']
+
+    # Concatenate all data
+    data = (pd.concat(dfs)
+            .drop(columns=['news_text', 'contact_name', 'news_attachment_name'])
+            .sort_values(by=['news_date', 'news_headline', 'medium'])
+            .reindex(columns=columns_order))
+
+    return data
+
+
 if __name__ == '__main__':
     # Getting list of files
     files = glob.glob(os.path.join(WORKING_DIR, '*.csv'))
 
     # Load each file into a list of data frames
-    dfs = [pd.read_csv(file) for file in files]
-
-    # Set columns order
-    columns_order = ['News Date', 'News Headline', 'Outlet Name', 'Audience Reach',
-                     'UV*', 'Tone', 'Medium', 'Outlet Type', 'Custom Tags', 'News Company Mentions']
+    dfs = [load_new_file(file) for file in files]
 
     # Concatenate all data
-    combined_data = (pd.concat(dfs)
-                     .drop(columns=['News Text', 'Contact Name', 'News Attachment Name'])
-                     .sort_values(by=['News Date', 'News Headline', 'Medium'])
-                     .reindex(columns=columns_order))
-
-    # Drop rows with empty news headline (Cision has started adding a footer)
-    combined_data = combined_data[~combined_data['News Headline'].isna()]
-
-    # Convert news date into datetime format
-    combined_data['News Date'] = pd.to_datetime(combined_data['News Date'], dayfirst=True)
-    
-    # Convert viewship to int
-    combined_data['UV*'] = combined_data['UV*'].astype('Int64')
-
-    # Normalise names of columns
-    combined_data.columns = combined_data.columns.str.replace(
-        ' ', '_').str.replace('*', '', regex=False).str.lower()
+    combined_data = combine_new_data(dfs)
 
     # TODO Do a combine_first with existing data - unique key needed
 
     # Save to file
-    combined_data.sort_values(by=['news_date', 'news_headline', 'outlet_name', 'medium']).to_csv(OUTPUT_FILE_PATH, index=False)
+    combined_data.sort_values(by=['news_date', 'news_headline', 'outlet_name', 'medium']).to_csv(
+        OUTPUT_FILE_PATH, index=False)

@@ -5,6 +5,7 @@ import glob
 WORKING_DIR = os.path.join('working', 'manual', 'media')
 OUTPUT_FILE_PATH = os.path.join(
     'data', 'metrics', 'media_coverage', 'combined_cision.csv')
+HASH_KEY = "2023202320232023"
 
 
 def load_new_file(filepath):
@@ -31,13 +32,17 @@ def load_new_file(filepath):
     # Convert viewship to int
     data['uv'] = data['uv'].astype('Int64')
 
+    # Add identifier
+    data['hash'] = pd.util.hash_pandas_object(
+        data[['news_date', 'news_headline', 'outlet_name']], hash_key=HASH_KEY, index=False)
+
     return data
 
 
 def combine_new_data(dfs):
     # Set columns order
     columns_order = ['news_date', 'news_headline', 'outlet_name', 'audience_reach',
-                     'uv', 'tone', 'medium', 'outlet_type', 'custom_tags', 'news_company_mentions']
+                     'uv', 'tone', 'medium', 'outlet_type', 'custom_tags', 'news_company_mentions', 'hash']
 
     # Concatenate all data
     data = (pd.concat(dfs)

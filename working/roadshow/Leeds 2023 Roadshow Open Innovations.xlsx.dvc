@@ -1,0 +1,11 @@
+md5: 92cb1ce6cd804c27055f0dd551abaf51
+frozen: true
+deps:
+- etag: e5dce940e2a40ae8ee6e998b5f3afe02
+  size: 18951
+  path: s3://open-innovations-filestash/leeds2023/roadshows/Leeds 2023 Roadshow Open
+    Innovations.xlsx
+outs:
+- md5: e5dce940e2a40ae8ee6e998b5f3afe02
+  size: 18951
+  path: Leeds 2023 Roadshow Open Innovations.xlsx

@@ -1,0 +1,36 @@
+# Roadshows pipelines
+stages:
+  extract:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/roadshows/extract.py
+    wdir: ../../..
+    always_changed: true
+    deps:
+    - scripts/metrics/roadshows/extract.py
+    outs:
+    - working/roadshow/contact_consent_responses.csv:
+        persist: true
+        cache: false
+  transform:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/roadshows/transform.py
+    wdir: ../../..
+    deps:
+    - scripts/metrics/roadshows/transform.py
+    - working/roadshow/Leeds 2023 Roadshow Open Innovations.xlsx
+    - working/roadshow/contact_consent_responses.csv
+    - data/reference/Wards_(December_2021)_GB_BFC.csv
+    - data/reference/postcodes.csv
+    outs:
+    - data/metrics/roadshows/:
+        persist: true
+        cache: false
+  prepare:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/roadshows/prepare.py
+    wdir: ../../..
+    deps:
+    - scripts/metrics/roadshows/prepare.py
+    - data/reference/Wards_(December_2021)_GB_BFC.csv
+    - data/metrics/roadshows/
+    outs:
+    - docs/_data/metrics/roadshows/:
+        persist: true
+        cache: false

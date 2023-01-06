@@ -1,0 +1,53 @@
+schema: '2.0'
+stages:
+  extract:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/roadshows/extract.py
+    deps:
+    - path: scripts/metrics/roadshows/extract.py
+      md5: d6ca8716549e5dae18b59aa1a96a6942
+      size: 962
+    outs:
+    - path: working/roadshow/contact_consent_responses.csv
+      md5: 448b9242e8ca3152853ad2947f940403
+      size: 10413
+  transform:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/roadshows/transform.py
+    deps:
+    - path: data/reference/Wards_(December_2021)_GB_BFC.csv
+      md5: 798580bbded11e61dcbdbab96d607594
+      size: 1145625
+    - path: data/reference/postcodes.csv
+      md5: 3c332ace66b28524c0a710fca1a4b1c0
+      size: 76072682
+    - path: scripts/metrics/roadshows/transform.py
+      md5: 6f17ed523ac0da3f7c06e8787d08294c
+      size: 2867
+    - path: working/roadshow/Leeds 2023 Roadshow Open Innovations.xlsx
+      md5: e5dce940e2a40ae8ee6e998b5f3afe02
+      size: 18951
+    - path: working/roadshow/contact_consent_responses.csv
+      md5: 448b9242e8ca3152853ad2947f940403
+      size: 10413
+    outs:
+    - path: data/metrics/roadshows/
+      md5: c101489e58b71f8ff496df6fb5319c97.dir
+      size: 12972
+      nfiles: 3
+  prepare:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/roadshows/prepare.py
+    deps:
+    - path: data/metrics/roadshows/
+      md5: c101489e58b71f8ff496df6fb5319c97.dir
+      size: 12972
+      nfiles: 3
+    - path: data/reference/Wards_(December_2021)_GB_BFC.csv
+      md5: 798580bbded11e61dcbdbab96d607594
+      size: 1145625
+    - path: scripts/metrics/roadshows/prepare.py
+      md5: 01443a841b4c5c35e675562328226c2d
+      size: 2077
+    outs:
+    - path: docs/_data/metrics/roadshows/
+      md5: d0cd946520cbeae04e0c38f798df364c.dir
+      size: 2040
+      nfiles: 2

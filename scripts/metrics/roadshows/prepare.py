@@ -3,8 +3,8 @@ import pandas as pd
 
 from transform import CONTACT_CONSENT_NUMBERS, ROADSHOW_ATTENDANCE_NUMBERS, SUMMARY
 
-VIEW_DIR = os.path.join('docs', '_data', 'metrics', 'roadshows')
-ROADSHOW_SUMMARY = os.path.join(VIEW_DIR, 'summary.csv')
+VIEW_DIR = os.path.join('docs', 'metrics', 'roadshow-attendees', '_data')
+COUNT_BY_DATE = os.path.join(VIEW_DIR, 'by_date.csv')
 COUNT_BY_WARD = os.path.join(VIEW_DIR, 'by_ward.csv')
 
 os.makedirs(VIEW_DIR, exist_ok=True)
@@ -44,7 +44,7 @@ def by_ward():
     ]].to_csv(COUNT_BY_WARD, index=False)
 
 
-def summarise():
+def by_date():
     summary = pd.read_csv(SUMMARY, parse_dates=['date'])
     summary = summary.resample('W-Fri', on='date').sum().reset_index()
     summary.rename(columns={
@@ -63,13 +63,13 @@ def summarise():
     summary['cumulative_attendance'] = summary.attendance.cumsum()
     summary['cumulative_contact_consents'] = summary.contact_consents.cumsum()
 
-    summary.to_csv(ROADSHOW_SUMMARY,
+    summary.to_csv(COUNT_BY_DATE,
                    date_format="%Y-%m-%d", index=False)
 
 
 def prepare():
     by_ward()
-    summarise()
+    by_date()
 
 
 if __name__ == '__main__':

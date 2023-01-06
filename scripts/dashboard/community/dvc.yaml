@@ -18,8 +18,8 @@ stages:
       - data/reference/leeds_wards.csv
       - data/metrics/ballot/ballot_entries.csv
       - data/metrics/volunteers/volunteers.csv
-      - docs/_data/metrics/roadshows/by_ward.csv
       - data/metrics/schools/schools_engagement.csv
+      - docs/metrics/roadshow-attendees/_data/by_ward.csv
     outs:
       - docs/dashboard/community/_data/residents.csv:
           persist: true

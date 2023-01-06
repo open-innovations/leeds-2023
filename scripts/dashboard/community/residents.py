@@ -20,7 +20,7 @@ def summarise_activity():
         columns=['local_authority_code']).groupby('ward_code').count().reset_index()
     volunteers['activity'] = 'volunteering'
 
-    roadshow = pd.read_csv('docs/_data/metrics/roadshows/by_ward.csv', usecols=[
+    roadshow = pd.read_csv('docs/metrics/roadshow-attendees/_data/by_ward.csv', usecols=[
                            'ward_code', 'contact_consents']).rename(columns={'contact_consents': 'count'})
     roadshow = roadshow[roadshow.ward_code.isin(name_map.index.values)]
     roadshow['activity'] = 'roadshow_contact'

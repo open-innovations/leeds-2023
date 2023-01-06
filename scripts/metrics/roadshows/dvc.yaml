@@ -31,6 +31,6 @@ stages:
     - data/reference/Wards_(December_2021)_GB_BFC.csv
     - data/metrics/roadshows/
     outs:
-    - docs/_data/metrics/roadshows/:
+    - docs/metrics/roadshow-attendees/_data/:
         persist: true
         cache: false

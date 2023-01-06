@@ -65,12 +65,12 @@ layout: layouts/default.njk
 
   {{ comp.metric.headline({
     title: "Roadshow Attendees",
-    value: metrics.roadshows.summary.columns.cumulative_attendance | last | localize,
+    value: search.data('metrics/roadshow-attendees').by_date.columns.cumulative_attendance | last | localize,
     description: "Between " +
-      ( metrics.roadshows.summary.columns.week_ending | first | date('MMMM') ) + " and " +
-      ( metrics.roadshows.summary.columns.week_ending | last | date('MMMM') ) + " " +
-      ( metrics.roadshows.summary.columns.week_ending | last | date('YYY') ),
-    link: "~/metrics/roadshow-attendees.njk",
+      ( search.data('metrics/roadshow-attendees').by_date.columns.week_ending | first | date('MMMM') ) + " and " +
+      ( search.data('metrics/roadshow-attendees').by_date.columns.week_ending | last | date('MMMM') ) + " " +
+      ( search.data('metrics/roadshow-attendees').by_date.columns.week_ending | last | date('YYY') ),
+    link: "~/metrics/roadshow-attendees/index.njk",
     colour: "var(--l23-dark-blue-grey)",
     background: "var(--l23-cyan)"
   }) | safe }}

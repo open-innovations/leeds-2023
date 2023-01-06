@@ -44,10 +44,10 @@ stages:
       md5: 798580bbded11e61dcbdbab96d607594
       size: 1145625
     - path: scripts/metrics/roadshows/prepare.py
-      md5: 01443a841b4c5c35e675562328226c2d
-      size: 2077
+      md5: a3b29a6a0468e775868080419414cc38
+      size: 2147
     outs:
-    - path: docs/_data/metrics/roadshows/
-      md5: d0cd946520cbeae04e0c38f798df364c.dir
+    - path: docs/metrics/roadshow-attendees/_data/
+      md5: 923a1d188ed33e87d70f0fd9d960d4b7.dir
       size: 2040
       nfiles: 2

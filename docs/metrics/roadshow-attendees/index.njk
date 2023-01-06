@@ -16,14 +16,14 @@ order: 30
 {% comp 'grid.autogrid', { min_width: '20rem' } %}
   {{ comp.metric.headline({
     title: "Total attendances", headingLevel: 3,
-    value: metrics.roadshows.summary.columns.cumulative_attendance | last | localize,
+    value: by_date.columns.cumulative_attendance | last | localize,
     description: "",
     background: "var(--l23-cyan)"
   }) | safe }}
 
   {{ comp.metric.headline({
     title: "Communication sign-up forms submitted", headingLevel: 3,
-    value: metrics.roadshows.summary.columns.cumulative_contact_consents | last | localize,
+    value: by_date.columns.cumulative_contact_consents | last | localize,
     description: "",
     background: "var(--l23-yellow)"
   }) | safe }}
@@ -74,7 +74,7 @@ order: 30
     <h2 id='attendees-by-hosting-ward'>Attendance numbers by hosting ward</h2>
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,
-      data: metrics.roadshows.by_ward.rows,
+      data: by_ward.rows,
       matchKey: 'ward_code',
       valueProp: 'attendance',
       popup: popupAttendees,
@@ -93,7 +93,7 @@ order: 30
       the border with Little London & Woodhouse, and was considered to serve both wards.
     </p>
 
-    <p><strong>{{metrics.roadshows.summary.columns.cumulative_attendance | last | localize}}</strong> attendances were registered in total. Wards with a larger number of attendances are darker in colour, and hover over each hexagon to see the total number for that ward. Hexes outlined in dark blue have an associated value of zero.</p>
+    <p><strong>{{ by_date.columns.cumulative_attendance | last | localize}}</strong> attendances were registered in total. Wards with a larger number of attendances are darker in colour, and hover over each hexagon to see the total number for that ward. Hexes outlined in dark blue have an associated value of zero.</p>
   </section>
 
   <section>
@@ -101,7 +101,7 @@ order: 30
     
     {{ comp.charts.hexmap({
       hexjson: hex.wards_leeds,
-      data: metrics.roadshows.by_ward.rows,
+      data: by_ward.rows,
       matchKey: 'ward_code',
       valueProp: 'contact_consents',
       popup: popupResponses,
@@ -112,7 +112,7 @@ order: 30
 
     <p>This hexmap shows the number of attendees living in each ward who submitted a sign-up form for communication from Leeds 2023 following attendance at the roadshows.</p>
     <p>This hexmap has used the <a href="https://www.ons.gov.uk/methodology/geography/geographicalproducts/postcodeproducts">ONS Postcode Directory</a> to look up postcodes submitted via the sign-up form and to identify the most likely ward this individual lives in. The data may not be fully accurate, as postcodes do not accurately align with ward boundaries.</p>
-    <p><strong>{{metrics.roadshows.summary.columns.cumulative_contact_consents | last | localize}}</strong> communication sign up forms were submitted in total. Of this, <strong>314*</strong> reside in Leeds, and the remainder either come from outside Leeds or were mistyped. </p>
+    <p><strong>{{ by_date.columns.cumulative_contact_consents | last | localize}}</strong> communication sign up forms were submitted in total. Of this, <strong>314*</strong> reside in Leeds, and the remainder either come from outside Leeds or were mistyped. </p>
     <p>Wards with a larger number of attendances are darker in colour. Hover over each hexagon to see the total number for that ward.</p>
     <p>*Not live figure</p>
   </section>
@@ -127,7 +127,7 @@ order: 30
 
   {% from 'macros.njk' import dateFormatterNoYear as dateFormatter %}
   {{ comp.oi.charts.graph.line({
-    categories: metrics.roadshows.summary.columns.week_ending,
+    categories: by_date.columns.week_ending,
     width: 25,
     height: 12,
     padding: { left: 4 },
@@ -135,14 +135,14 @@ order: 30
       {
         id: 'attendances',
         label: 'Attendances (cumulative)',
-        yValues: metrics.roadshows.summary.columns.cumulative_attendance,
+        yValues: by_date.columns.cumulative_attendance,
         colour: 'var(--l23-cyan)',
         markerOptions: { s: 5 }
       },
       {
         id: 'comms',
         label: 'Submitted Communication Sign-up Forms (cumulative)',
-        yValues: metrics.roadshows.summary.columns.cumulative_contact_consents,
+        yValues: by_date.columns.cumulative_contact_consents,
         colour: 'var(--l23-magenta)',
         markerOptions: { s: 5 }
       }

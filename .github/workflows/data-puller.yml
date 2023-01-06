@@ -42,8 +42,7 @@ jobs:
         run: |
           # dvc pull
           dvc update -R working
-          dvc repro -R scripts/reference_data
-          dvc repro -R scripts/metrics
+          dvc repro -R scripts
 
       - name: Process data for site
         env:

@@ -1,0 +1,16 @@
+schema: '2.0'
+stages:
+  transform:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/activity/transform.py
+    deps:
+    - path: scripts/metrics/activity/transform.py
+      md5: 5280c11e090a94c0dcc1c8c7c4ba8766
+      size: 1885
+    - path: working/manual/activity/Leeds 2023 activity logging MASTER.xlsx
+      md5: ff25f2a6d28d929fd3b7850e0c3cc899
+      size: 1492756
+    outs:
+    - path: data/metrics/activity/
+      md5: e81aa7b14b8acea8e9a9365ff9e83628.dir
+      size: 17866
+      nfiles: 1

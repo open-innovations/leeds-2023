@@ -22,7 +22,7 @@ const nunjucks = {
 };
 
 const site = lume({
-  location: new URL("https://data.leeds2023.open-innovations.org/"),
+  location: new URL("https://data.leeds2023.co.uk/"),
   src: "./docs",
   components: {
     cssFile: '/style/components.css'

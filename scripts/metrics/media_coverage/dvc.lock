@@ -4,16 +4,16 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/combine_cision.py
     deps:
     - path: scripts/metrics/media_coverage/combine_cision.py
-      md5: 6ab2f0e2e7a46a5f19d62f1cca435e96
-      size: 3214
+      md5: fecd436d6c8eb73d96d32b1a314eda93
+      size: 3520
     - path: working/manual/media/
-      md5: b638eb845a0e8b225b36ed18696b6600.dir
-      size: 746809
-      nfiles: 7
+      md5: bcfe651570af61766f50c2da186a32c1.dir
+      size: 840133
+      nfiles: 8
     outs:
     - path: data/metrics/media_coverage/combined_cision.csv
-      md5: 5e215375959f66ea056a00cd59c4f11a
-      size: 54675
+      md5: 29619425a62a387d3e3d237822c55527
+      size: 117777
   transform_historic:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/combine_historic.py
     deps:
@@ -21,9 +21,9 @@ stages:
       md5: a8c712f97a4d9a3bf32732cfefe8afe9
       size: 4333
     - path: working/manual/media/
-      md5: b638eb845a0e8b225b36ed18696b6600.dir
-      size: 746809
-      nfiles: 7
+      md5: bcfe651570af61766f50c2da186a32c1.dir
+      size: 840133
+      nfiles: 8
     outs:
     - path: data/metrics/media_coverage/combined_historic.csv
       md5: c628b5ab73ed68e7db5160c3b4a9ae5d
@@ -32,16 +32,16 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/process.py
     deps:
     - path: data/metrics/media_coverage/combined_cision.csv
-      md5: 5e215375959f66ea056a00cd59c4f11a
-      size: 54675
+      md5: 29619425a62a387d3e3d237822c55527
+      size: 117777
     - path: data/metrics/media_coverage/combined_historic.csv
       md5: c628b5ab73ed68e7db5160c3b4a9ae5d
       size: 65199
     - path: scripts/metrics/media_coverage/process.py
-      md5: a468785c425ce8803685a907fc68bac5
+      md5: 5745cc501b75779fa9ba18b258cb4d5d
       size: 2996
     outs:
     - path: docs/_data/metrics/media_coverage/
-      md5: 2fc69137c15c463686a4e4d8623247a3.dir
-      size: 1393
+      md5: 1eb984bf74ec84dcc7fc16587aef4fb5.dir
+      size: 1411
       nfiles: 8

@@ -5,6 +5,8 @@ import yaml
 DATA_DIR = os.path.join('data','metrics','media_coverage')
 VIEW_DIR = os.path.join('docs','_data','metrics','media_coverage','summary_new')
 
+MEDIA_START_DATE = '2021-01-01'
+MEDIA_END_DATE = '2023-12-31'
 
 if __name__ == '__main__':
     cision_data = pd.read_csv(os.path.join(DATA_DIR,'combined_cision.csv'),parse_dates=['news_date'])
@@ -13,7 +15,7 @@ if __name__ == '__main__':
 
     #combine historic 
     data = pd.concat([cision_data,historic_data]).sort_values('news_date')
-    data = data[data['news_date'].between('2021-01-01','2022-12-31')]
+    data = data[data['news_date'].between(MEDIA_START_DATE,MEDIA_END_DATE)]
 
     #Coverage by Outlet - TODO: rename hsitoric outlets
     outlet_count = pd.DataFrame({'count' : data.groupby(['outlet_name'])['news_headline'].count()}).sort_values('count',ascending=False).head(5)

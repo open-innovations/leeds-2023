@@ -13,7 +13,7 @@ def load_new_file(filepath):
     data = pd.read_csv(filepath)
 
     # Normalise names of columns
-    data.columns = data.columns.str.replace(
+    data.columns = data.columns.str.strip().str.replace(
         ' ', '_').str.replace('*', '', regex=False).str.lower()
 
     # Drop rows with empty news headline (Cision has started adding a footer)
@@ -31,10 +31,16 @@ def load_new_file(filepath):
             data['news_date'], format="%m/%d/%Y")
 
     # Convert viewship to int
-    data['uv'] = data['uv'].astype('Int64')
+    try:
+        data['uv'] = data['uv'].astype('Int64')
+    except:
+        data['uv'] = pd.to_numeric(data['uv'].str.strip().str.replace(',', ''), errors="coerce").astype('Int64')
 
     # Convert reach to int
-    data['audience_reach'] = data['audience_reach'].astype('Int64')
+    try:
+        data['audience_reach'] = data['audience_reach'].astype('Int64')
+    except:
+        data.audience_reach = pd.to_numeric(data.audience_reach.str.strip().str.replace(',', ''), errors="coerce").astype('Int64')
 
     # Add identifier
     data['hash'] = pd.util.hash_pandas_object(

@@ -38,10 +38,10 @@ stages:
       md5: c628b5ab73ed68e7db5160c3b4a9ae5d
       size: 65199
     - path: scripts/metrics/media_coverage/process.py
-      md5: 5745cc501b75779fa9ba18b258cb4d5d
-      size: 2996
+      md5: c4093c5f09332693d1940164900e2257
+      size: 3087
     outs:
-    - path: docs/_data/metrics/media_coverage/
-      md5: 1eb984bf74ec84dcc7fc16587aef4fb5.dir
-      size: 1411
-      nfiles: 8
+    - path: docs/metrics/media_coverage/_data
+      md5: 00aade4cb9bce38e34fec0acd8c30c06.dir
+      size: 793
+      nfiles: 5

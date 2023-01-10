@@ -3,7 +3,8 @@ import os
 import yaml
 
 DATA_DIR = os.path.join('data','metrics','media_coverage')
-VIEW_DIR = os.path.join('docs','_data','metrics','media_coverage','summary_new')
+VIEW_DIR = os.path.join('docs','metrics','media_coverage','_data')
+os.makedirs(VIEW_DIR, exist_ok=True)
 
 MEDIA_START_DATE = '2021-01-01'
 MEDIA_END_DATE = '2023-12-31'

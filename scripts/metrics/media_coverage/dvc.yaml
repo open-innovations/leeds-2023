@@ -27,6 +27,6 @@ stages:
     - data/metrics/media_coverage/combined_cision.csv
     - data/metrics/media_coverage/combined_historic.csv
     outs:
-    - docs/_data/metrics/media_coverage/:
+    - docs/metrics/media_coverage/_data:
         persist: true
         cache: false

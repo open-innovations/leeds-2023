@@ -69,8 +69,8 @@ baseline:
   {# Data from AMA spreadsheet #}
   {# TODO add reach calculation #}
 
-  {%- set coverage = metrics.media_coverage.kpi.lcc_21_22.columns.cumulative_count | last -%}
-  {%- set reach = metrics.media_coverage.kpi.lcc_21_22.columns.cumulative_reach | last -%}
+  {%- set coverage = metrics.media_coverage_OLD.kpi.lcc_21_22.columns.cumulative_count | last -%}
+  {%- set reach = metrics.media_coverage_OLD.kpi.lcc_21_22.columns.cumulative_reach | last -%}
 
   {{ comp.viz.currentVsTarget({
     current: ((( coverage / baseline.media_coverage ) - 1 ) * 100 ) | round + '%',

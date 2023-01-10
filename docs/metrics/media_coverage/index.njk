@@ -20,7 +20,7 @@ limitations:
       Total Articles and Appearances
     </h2>
     {{ comp.viz.bigNumber({
-      number: metrics.media_coverage.summary_new.stats.total_media | localize
+      number: stats.total_media | localize
     }) | safe }}
     
   {% endcomp %}
@@ -30,7 +30,7 @@ limitations:
       Total Local Articles and Appearances
     </h2>
     {{ comp.viz.bigNumber({
-      number: metrics.media_coverage.summary_new.stats.total_media_local | localize
+      number: stats.total_media_local | localize
     }) | safe }}
     
   {% endcomp %}
@@ -40,7 +40,7 @@ limitations:
       Total Regional Articles and Appearances
     </h2>
     {{ comp.viz.bigNumber({
-      number: metrics.media_coverage.summary_new.stats.total_media_regional | localize
+      number: stats.total_media_regional | localize
     }) | safe }}
     
   {% endcomp %}
@@ -50,7 +50,7 @@ limitations:
       Total National Articles and Appearances
     </h2>
     {{ comp.viz.bigNumber({
-      number: metrics.media_coverage.summary_new.stats.total_media_national | localize
+      number: stats.total_media_national | localize
     }) | safe }}
     
   {% endcomp %}
@@ -60,7 +60,7 @@ limitations:
       Total International Articles and Appearances
     </h2>
     {{ comp.viz.bigNumber({
-      number: metrics.media_coverage.summary_new.stats.total_media_international | localize
+      number: stats.total_media_international | localize
     }) | safe }}
     
   {% endcomp %}
@@ -71,18 +71,18 @@ limitations:
       Largest Online Viewership
     </h2>
     {{ comp.viz.bigNumber({
-      number: metrics.media_coverage.summary_new.stats.uv_max | localize
+      number: stats.uv_max | localize
     }) | safe }}
-    <p>{{metrics.media_coverage.summary_new.stats.uv_max_outlet}}</p>
+    <p>{{stats.uv_max_outlet}}</p>
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: all_colour} %}
     <h2>
       Largest Audience Reached 
     </h2>
     {{ comp.viz.bigNumber({
-      number: metrics.media_coverage.summary_new.stats.reach_max | localize
+      number: stats.reach_max | localize
     }) | safe }}
-    <p>{{metrics.media_coverage.summary_new.stats.reach_max_outlet}}</p>
+    <p>{{stats.reach_max_outlet}}</p>
   {% endcomp %}
 #}
   {% endcomp %}
@@ -97,10 +97,10 @@ limitations:
     'Breakdown by Scope'
   ],
   series: [
-    metrics.media_coverage.summary_new.regional_count.columns.count
+    regional_count.columns.count
   ],
   popupContent: popupContent,
-  categories: metrics.media_coverage.summary_new.regional_count.columns.custom_tags,
+  categories: regional_count.columns.custom_tags,
   colours: [
     [ "var(--l23-cyan)" ]
   ],
@@ -126,10 +126,10 @@ limitations:
     'Breakdown by Medium'
   ],
   series: [
-    metrics.media_coverage.summary_new.medium_count.columns.count
+    medium_count.columns.count
   ],
   popupContent: popupContent,
-  categories: metrics.media_coverage.summary_new.medium_count.columns.medium,
+  categories: medium_count.columns.medium,
   colours: [
     [ "var(--l23-cyan)" ]
   ],
@@ -166,7 +166,7 @@ limitations:
 } %}
 
 {{ comp.oi.charts.graph.line({ config: {
-  categories: metrics.media_coverage.summary_new.monthly_count.columns.month,
+  categories: monthly_count.columns.month,
   width: 25,
   height: 12,
   text: { colour: '#eee' },
@@ -194,7 +194,7 @@ limitations:
   series: [
     {
       id: "all", label: "All",
-      yValues: metrics.media_coverage.summary_new.monthly_count.columns.count,
+      yValues: monthly_count.columns.count,
       colour: 'var(--l23-yellow)',
       markerOptions: { s: 5 }
     }
@@ -210,7 +210,7 @@ limitations:
 <h3>Media outlets with most appearances</h3>
 {{ comp.charts.table({
   columns: [{'key' : 'outlet_name','name':'Outlet Name'},{'key':'count','name':'Count'}],
-  rows: metrics.media_coverage.summary_new.outlet_count.rows
+  rows: outlet_count.rows
 }) | safe }}
 {% endcomp %}
 

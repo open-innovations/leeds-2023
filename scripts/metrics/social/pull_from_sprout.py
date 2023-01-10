@@ -3,12 +3,14 @@ import combine
 import clean
 import os
 
+TEMP_DIR_LOCATION = os.path.join('working','manual','sprout')
+
+
 def clear_dir(dir: str):
     for file in combine.dir_file_paths(dir):
         os.remove(file)
 
 def main():
-    TEMP_DIR_LOCATION = os.path.join('working','sprout')
     MASTER_FILE_LOCATION = os.path.join('data','metrics','social')
     MASTER_FILE_NAME_TEMP = '{}.csv'
 

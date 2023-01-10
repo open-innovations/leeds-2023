@@ -10,7 +10,7 @@ data_file:
     - impressions_total
     - date_first
     - date_last
-    filter_range: &filter 2022-01-01:2022-12-31
+    filter_range: &filter 2022-01-01:2023-12-31
     filter_col: &filter_col_name date
   facebook:
     path: data,metrics,social,facebook.csv

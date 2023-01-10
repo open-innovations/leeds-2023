@@ -65,7 +65,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: all_colour} %}
     <h2>
-      Total Engagement 2022
+      Total Engagement
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -75,7 +75,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: all_colour} %}
     <h2>
-      Total Audience Gained 2022
+      Total Audience Gained
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -85,7 +85,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: all_colour} %}
     <h2>
-      Total Impressions 2022
+      Total Impressions
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -120,7 +120,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: twitter_colour} %}
     <h2>
-      Total Engagement 2022
+      Total Engagement
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -130,7 +130,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: twitter_colour} %}
     <h2>
-      Total Audience Gained 2022
+      Total Audience Gained
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -140,7 +140,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: twitter_colour} %}
     <h2>
-      Total Impressions 2022
+      Total Impressions
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -175,7 +175,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: instagram_colour,fg:'#FFFFFF'} %}
     <h2>
-      Total Engagement 2022
+      Total Engagement
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -185,7 +185,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: instagram_colour,fg:'#FFFFFF'} %}
     <h2>
-      Total Audience Gained 2022
+      Total Audience Gained
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -195,7 +195,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: instagram_colour,fg:'#FFFFFF'} %}
     <h2>
-      Total Impressions 2022
+      Total Impressions
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -231,7 +231,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: facebook_colour} %}
     <h2>
-      Total Engagement 2022
+      Total Engagement
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -241,7 +241,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: facebook_colour} %}
     <h2>
-      Total Audience Gained 2022
+      Total Audience Gained
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -251,7 +251,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: facebook_colour} %}
     <h2>
-      Total Impressions 2022
+      Total Impressions
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -287,7 +287,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: linkedin_colour} %}
     <h2>
-      Total Engagement 2022
+      Total Engagement
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -297,7 +297,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: linkedin_colour} %}
     <h2>
-      Total Audience Gained 2022
+      Total Audience Gained
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -307,7 +307,7 @@ limitations:
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: linkedin_colour} %}
     <h2>
-      Total Impressions 2022
+      Total Impressions
     </h2>
     {{ comp.viz.bigNumber({
       number: (
@@ -382,7 +382,6 @@ limitations:
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
 
 <div>
-<h2>Total Audience</h2>
 {% comp 'layout.figure', {
   title: 'Total Audience'
 } %}
@@ -396,7 +395,7 @@ limitations:
     title: 'Week ending (Sunday)',
     titleOffset: 4,
     labelRotate: 35,
-    majorTick: 2,
+    majorTick: 4,
     formatter: dateFormatter
   },
   yAxis: {
@@ -406,11 +405,11 @@ limitations:
   },
   plotArea: {
     yMin: 0,
-    yMax: 35000,
+    yMax: 40000,
     colour: 'var(--l23-dark-blue-grey)'
   },
   padding: {
-    left: 4,
+    left: 5,
     bottom: 5
   },
   series: [
@@ -452,7 +451,6 @@ limitations:
 {% endcomp %}
 </div>
 <div>
-<h2>Audience Gained</h2>
 
 {% comp 'layout.figure', {
   title: 'Audience Gained'
@@ -467,21 +465,21 @@ limitations:
     title: 'Week ending (Sunday)',
     titleOffset: 4,
     labelRotate: 35,
-    majorTick: 2,
+    majorTick: 4,
     formatter: dateFormatter
   },
   yAxis: {
     title: 'Audience Gained',
     titleOffset: 3,
-    majorTick: 50
+    majorTick: 500
   },
   plotArea: {
     yMin: 0,
-    yMax: 600,
+    yMax: 2500,
     colour: 'var(--l23-dark-blue-grey)'
   },
   padding: {
-    left: 4,
+    left: 5,
     bottom: 5
   },
   series: [
@@ -523,7 +521,6 @@ limitations:
 {% endcomp %}
 </div>
 <div>
-<h2>Engagements</h2>
 
 {% comp 'layout.figure', {
   title: 'Engagements'
@@ -538,21 +535,21 @@ limitations:
     title: 'Week ending (Sunday)',
     titleOffset: 4,
     labelRotate: 35,
-    majorTick: 2,
+    majorTick: 4,
     formatter: dateFormatter
   },
   yAxis: {
     title: 'Engagements',
     titleOffset: 3,
-    majorTick: 1000
+    majorTick: 5000
   },
   plotArea: {
     yMin: 0,
-    yMax: 10000,
+    yMax: 30000,
     colour: 'var(--l23-dark-blue-grey)'
   },
   padding: {
-    left: 4,
+    left: 5,
     bottom: 5
   },
   series: [
@@ -594,8 +591,6 @@ limitations:
 {% endcomp %}
 </div>
 <div>
-<h2>Impressions</h2>
-
 {% comp 'layout.figure', {
   title: 'Impressions'
 } %}
@@ -609,21 +604,21 @@ limitations:
     title: 'Week ending (Sunday)',
     titleOffset: 4,
     labelRotate: 35,
-    majorTick: 2,
+    majorTick: 4,
     formatter: dateFormatter
   },
   yAxis: {
     title: 'Impressions',
-    titleOffset: 3,
-    majorTick: 50000
+    titleOffset: 4,
+    majorTick: 100000
   },
   plotArea: {
     yMin: 0,
-    yMax: 250000,
+    yMax: 1000000,
     colour: 'var(--l23-dark-blue-grey)'
   },
   padding: {
-    left: 4,
+    left: 5,
     bottom: 5
   },
   series: [

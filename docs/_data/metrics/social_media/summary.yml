@@ -1,48 +1,48 @@
 service:
   all:
     metrics:
-      audience_gained_total: 7859
-      audience_last: 31658
-      engagements_total: 131362
-      impressions_total: 4761260
+      audience_gained_total: 10857
+      audience_last: 34872
+      engagements_total: 171611
+      impressions_total: 5954115
   facebook:
     filter_col: date
-    filter_range: 2022-01-01:2022-12-31
+    filter_range: 2022-01-01:2023-12-31
     metrics:
-      audience_gained_total: 483
-      audience_last: 4211
+      audience_gained_total: 686
+      audience_last: 4644
       date_first: '2022-01-01'
-      date_last: '2022-12-18'
-      engagements_total: 40593
-      impressions_total: 954743
+      date_last: '2023-01-09'
+      engagements_total: 51625
+      impressions_total: 1089006
   instagram:
     filter_col: date
-    filter_range: 2022-01-01:2022-12-31
+    filter_range: 2022-01-01:2023-12-31
     metrics:
-      audience_gained_total: 2345
-      audience_last: 6402
+      audience_gained_total: 3745
+      audience_last: 7817
       date_first: '2022-01-01'
-      date_last: '2022-12-18'
-      engagements_total: 9152
-      impressions_total: 354926
+      date_last: '2023-01-09'
+      engagements_total: 13743
+      impressions_total: 535150
   linkedin:
     filter_col: date
-    filter_range: 2022-01-01:2022-12-31
+    filter_range: 2022-01-01:2023-12-31
     metrics:
-      audience_gained_total: 2017
-      audience_last: 3178
+      audience_gained_total: 2285
+      audience_last: 3420
       date_first: '2022-01-01'
-      date_last: '2022-12-18'
-      engagements_total: 10021
-      impressions_total: 138519
+      date_last: '2023-01-09'
+      engagements_total: 12088
+      impressions_total: 161502
   twitter:
     filter_col: date
-    filter_range: 2022-01-01:2022-12-31
+    filter_range: 2022-01-01:2023-12-31
     metrics:
-      audience_gained_total: 3014
-      audience_last: 17867
+      audience_gained_total: 4141
+      audience_last: 18991
       date_first: '2022-01-01'
-      date_last: '2022-12-18'
-      engagements_total: 71596
-      impressions_total: 3313072
+      date_last: '2023-01-09'
+      engagements_total: 94155
+      impressions_total: 4168457
 title: Leeds 2023 twitter Summary Statistics

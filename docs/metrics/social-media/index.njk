@@ -386,7 +386,7 @@ limitations:
   title: 'Total Audience'
 } %}
 
-{{ comp.oi.charts.graph.line({
+{{ comp.oi.charts.graph.line({ config: {
   categories: metrics.social_media.all_weekly.columns.week_ending,
   width: 25,
   height: 12,
@@ -447,7 +447,7 @@ limitations:
   legend: {
     width: "20em"
   }
-}) | safe }}
+} }) | safe }}
 {% endcomp %}
 </div>
 <div>
@@ -456,7 +456,7 @@ limitations:
   title: 'Audience Gained'
 } %}
 
-{{ comp.oi.charts.graph.line({
+{{ comp.oi.charts.graph.line({ config: {
   categories: metrics.social_media.all_weekly.columns.week_ending,
   width: 25,
   height: 12,
@@ -517,7 +517,7 @@ limitations:
   legend: {
     width: "20em"
   }
-}) | safe }}
+} }) | safe }}
 {% endcomp %}
 </div>
 <div>
@@ -526,7 +526,7 @@ limitations:
   title: 'Engagements'
 } %}
 
-{{ comp.oi.charts.graph.line({
+{{ comp.oi.charts.graph.line({ config: {
   categories: metrics.social_media.all_weekly.columns.week_ending,
   width: 25,
   height: 12,
@@ -587,7 +587,7 @@ limitations:
   legend: {
     width: "20em"
   }
-}) | safe }}
+} }) | safe }}
 {% endcomp %}
 </div>
 <div>
@@ -595,7 +595,7 @@ limitations:
   title: 'Impressions'
 } %}
 
-{{ comp.oi.charts.graph.line({
+{{ comp.oi.charts.graph.line({ config: {
   categories: metrics.social_media.all_weekly.columns.week_ending,
   width: 25,
   height: 12,
@@ -656,7 +656,7 @@ limitations:
   legend: {
     width: "20em"
   }
-}) | safe }}
+} }) | safe }}
 {% endcomp %}
 </div>
 {% endcomp %}

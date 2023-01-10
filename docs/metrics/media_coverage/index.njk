@@ -165,7 +165,7 @@ limitations:
   title: 'Monthly Media Coverage'
 } %}
 
-{{ comp.oi.charts.graph.line({
+{{ comp.oi.charts.graph.line({ config: {
   categories: metrics.media_coverage.summary_new.monthly_count.columns.month,
   width: 25,
   height: 12,
@@ -202,7 +202,7 @@ limitations:
   legend: {
     width: "20em"
   }
-}) | safe }}
+} }) | safe }}
 {% endcomp %}
 
 

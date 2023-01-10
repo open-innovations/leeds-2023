@@ -105,7 +105,7 @@ This chart shows where individual ballot entries came from. Each hexagon represe
 {% comp 'layout.figure', {
   title: 'Cumulative counts of individual ballot entries and allocated seats'
 } %}
-{{ comp.oi.charts.graph.line({
+{{ comp.oi.charts.graph.line({ config: {
   categories: by_date.columns.date_submitted,
   width: 25,
   height: 12,
@@ -140,7 +140,7 @@ This chart shows where individual ballot entries came from. Each hexagon represe
     titleOffset: 3,
     majorTick: 1000
   }
-}) | safe }}
+} }) | safe }}
 {% endcomp %}
 
 <h2>

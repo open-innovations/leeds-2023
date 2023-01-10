@@ -178,7 +178,7 @@ limitations:
   title: 'Cumulative counts of volunteer user profiles by status'
 } %}
 
-{{ comp.oi.charts.graph.line({
+{{ comp.oi.charts.graph.line({ config: {
   categories: by_week.columns.week_ending,
   width: 25,
   height: 12,
@@ -232,5 +232,5 @@ limitations:
   legend: {
     width: "20em"
   }
-}) | safe }}
+} }) | safe }}
 {% endcomp %}

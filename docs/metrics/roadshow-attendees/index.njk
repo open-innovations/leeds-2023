@@ -126,7 +126,7 @@ order: 30
   <p>This chart shows the cumulative number of attendees at roadshow events per week, and the cumulative number of communication sign-up forms submitted per week.</p>
 
   {% from 'macros.njk' import dateFormatterNoYear as dateFormatter %}
-  {{ comp.oi.charts.graph.line({
+  {{ comp.oi.charts.graph.line({ config: {
     categories: by_date.columns.week_ending,
     width: 25,
     height: 12,
@@ -163,5 +163,5 @@ order: 30
     legend: {
       width: '30em'
     }
-  }) | safe }}
+  } }) | safe }}
 </section>

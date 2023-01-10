@@ -206,6 +206,58 @@ limitations:
 } }) | safe }}
 {% endcomp %}
 
+{% if 'barchart_by_month' in featureToggles %}
+{% comp 'layout.figure', {
+  title: 'Monthly Media Coverage'
+} %}
+
+{{ comp.oi.charts.chart.bar({ config: {
+  data: monthly_count.rows,
+  title: {
+    label: "KSADHKASD"
+  },
+  category: 'month',
+  series: [
+    { title: 'Count of articles', value: 'count', colour: "var(--l23-magenta)" }
+  ],
+  padding: { right:20 },
+  legend: {
+    show: true,
+    position: "top right"
+  },
+  axis: {
+    x: {
+      title: {
+        label: "Count of articles"
+      },
+      "font-weight": "normal",
+      min: 0, max: 450,
+      grid: {
+        "stroke-dasharray": "2 4",
+        "stroke-width": 1
+      },
+      ticks: [
+        { label: '0', value: 0 },
+        { label: '100', value: 100 },
+        { label: '200', value: 200 },
+        { label: '300', value: 300 },
+        { label: '400', value: 400 }
+      ]
+    },
+    y: {
+      title: {
+        label: "Month"
+      },
+      "font-weight": "normal",
+      grid: {
+        "stroke-width": 0.5
+      }
+    }
+  }
+} }) | safe }}
+
+{% endcomp %}
+{% endif %}
 
 {% comp 'layout.block' %}
 <h3>Media outlets with most appearances</h3>

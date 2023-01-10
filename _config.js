@@ -66,7 +66,7 @@ site.use(esbuild({
 }));
 site.use(date());
 site.use(oiCharts({
-  assetPath: 'assets/oi',
+  assetPath: '/assets/oi',
   componentNamespace: 'oi.charts',
 }));
 

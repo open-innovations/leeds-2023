@@ -1,0 +1,3 @@
+redirects:
+  - url: /metrics/media_coverage/
+    redirectTarget: ~/metrics/media_coverage/index.njk

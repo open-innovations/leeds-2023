@@ -40,3 +40,10 @@ Here are some useful DVC commands:
 * To list the available pipeline stages run `dvc stage list --all`. You can see the
   dependency graph with `dvc dag`
 * You can force a stage to re-run using `dvc repro --force <stage name>`.
+
+## Known issues 
+
+* May encounter an issue with npm package markdown-it-attrs that prevents serving the site, 
+  displaying the error message 'could not find npm package markdown-it-attrs'
+* This is a known bug due to an issue with how deno caches NPM packages. Run the command 
+  'echo "import 'lume/cli.ts'" | deno run --unstable -A --reload -' to refresh deno's cache.

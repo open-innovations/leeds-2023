@@ -1,0 +1,24 @@
+stages:
+  # Extract is via DVC Update into /working/manual/social
+
+  transform:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/social/transform.py
+    wdir: ../../..
+    deps:
+      - scripts/metrics/social/transform.py
+      - working/manual/sprout/
+    outs:
+      - data/metrics/social/:
+          persist: true
+          cache: false
+
+  prepare:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/social/prepare.py
+    wdir: ../../..
+    deps:
+      - scripts/metrics/social/prepare.py
+      - data/metrics/social/
+    outs:
+      - docs/_data/metrics/social_media/:
+          persist: true
+          cache: false

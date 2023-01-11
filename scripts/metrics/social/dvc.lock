@@ -1,0 +1,32 @@
+schema: '2.0'
+stages:
+  transform:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/social/transform.py
+    deps:
+    - path: scripts/metrics/social/transform.py
+      md5: 1dbc527aebffc665c2d580237aa21c23
+      size: 1067
+    - path: working/manual/sprout/
+      md5: 6a901337ba2e9c6a5623233defe72a30.dir
+      size: 685087
+      nfiles: 1
+    outs:
+    - path: data/metrics/social/
+      md5: 0acac2c139d4c70670d5dea009b70ee5.dir
+      size: 194706
+      nfiles: 4
+  prepare:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/social/prepare.py
+    deps:
+    - path: data/metrics/social/
+      md5: 0acac2c139d4c70670d5dea009b70ee5.dir
+      size: 194706
+      nfiles: 4
+    - path: scripts/metrics/social/prepare.py
+      md5: 888ed934810147a49a138493e1295a2b
+      size: 572
+    outs:
+    - path: docs/_data/metrics/social_media/
+      md5: 1887e357c4348dab74db4b58f5383d2f.dir
+      size: 7704
+      nfiles: 6

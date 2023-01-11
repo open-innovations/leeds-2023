@@ -17,6 +17,9 @@ stages:
     wdir: ../../..
     deps:
       - scripts/metrics/social/prepare.py
+      - scripts/metrics/social/total.py
+      - scripts/metrics/social/combine.py
+      - scripts/metrics/social/get_stats.py
       - data/metrics/social/
     outs:
       - docs/_data/metrics/social_media/:

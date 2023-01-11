@@ -22,9 +22,18 @@ stages:
       md5: 0acac2c139d4c70670d5dea009b70ee5.dir
       size: 194706
       nfiles: 4
+    - path: scripts/metrics/social/combine.py
+      md5: f1798db219ae1e07f2d5744a9c138742
+      size: 1924
+    - path: scripts/metrics/social/get_stats.py
+      md5: 0972b922d32eb2598695c47a51e89678
+      size: 4796
     - path: scripts/metrics/social/prepare.py
       md5: 888ed934810147a49a138493e1295a2b
       size: 572
+    - path: scripts/metrics/social/total.py
+      md5: da76249c58618c833c3b436679ff942e
+      size: 1031
     outs:
     - path: docs/_data/metrics/social_media/
       md5: 1887e357c4348dab74db4b58f5383d2f.dir

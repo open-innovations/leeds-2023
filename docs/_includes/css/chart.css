@@ -31,3 +31,6 @@
     stroke-width: 2px;
   }
 }
+div.chart {
+  padding: 1rem;
+}

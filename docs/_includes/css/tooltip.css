@@ -1,0 +1,13 @@
+.tooltip {
+  margin-top: -0.75rem;
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.7));
+  white-space: nowrap;
+
+  transition: left 0.03s linear, top 0.03s linear;
+}
+.tooltip * {
+  margin-top: 0;
+}
+.tooltip .inner {
+  padding: 0.5rem 1rem;
+}

@@ -11,8 +11,17 @@ limitations:
 {%- macro popupContent({ value: value, category: category }) -%}
   {{ value }} articles and appearances in the {{ category }} category
 {%- endmacro -%}
+{% from 'macros.njk' import dateFormatterNoDay %}
+{%- macro popupPreApplication(params) -%}
+  {{ params.label }}</br>
+  {{ params.value }} signups
+{%- endmacro -%}
+{%- macro popupApplied(params) -%}
+  {{ params.label }}</br>
+  {{ params.value }} applications received
+{%- endmacro -%}
 
-<p> All data concerns media coverage from 2021 and 2022.</p>
+
 <h2>Headlines</h2>
 
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
@@ -88,15 +97,13 @@ limitations:
 #}
   {% endcomp %}
 
-<h2>Further Breakdowns</h2>
+<h2>Detailed charts</h2>
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
 
 
-
+<div>
+<h3>Media Coverage by Scope</h3>
 {{ comp.charts.barchart({
-  title: [
-    'Breakdown by Scope'
-  ],
   series: [
     regional_count.columns.count
   ],
@@ -121,11 +128,10 @@ limitations:
     }
   }
 }) | safe }}
-
+</div>
+<div>
+<h3>Media Coverage by Medium</h3>
 {{ comp.charts.barchart({
-  title: [
-    'Breakdown by Medium'
-  ],
   series: [
     medium_count.columns.count
   ],
@@ -150,121 +156,104 @@ limitations:
     }
   }
 }) | safe }}
-<div><br><br><br><br><br><br></div>
-<div></div>
-{% from 'macros.njk' import dateFormatterNoDay %}
-{%- macro popupPreApplication(params) -%}
-  {{ params.label }}</br>
-  {{ params.value }} signups
-{%- endmacro -%}
-{%- macro popupApplied(params) -%}
-  {{ params.label }}</br>
-  {{ params.value }} applications received
-{%- endmacro -%}
+</div>
 
-{% comp 'layout.figure', {
-  title: 'Monthly Media Coverage'
-} %}
-
-{{ comp.oi.charts.graph.line({ config: {
-  categories: monthly_count.columns.month,
-  width: 25,
-  height: 12,
-  text: { colour: '#eee' },
-  xAxis: {
-    title: 'Month',
-    titleOffset: 4,
-    labelRotate: 35,
-    majorTick: 2,
-    formatter: dateFormatterNoDay
-  },
-  yAxis: {
-    title: 'Media Coverage',
-    titleOffset: 3,
-    majorTick: 50
-  },
-  plotArea: {
-    yMin: 0,
-    yMax: 500,
-    colour: 'var(--l23-dark-blue-grey)'
-  },
-  padding: {
-    left: 4,
-    bottom: 5
-  },
-  series: [
-    {
-      id: "all", label: "All",
-      yValues: monthly_count.columns.count,
-      colour: 'var(--l23-yellow)',
-      markerOptions: { s: 5 }
-    }
-  ],
-  legend: {
-    width: "20em"
-  }
-} }) | safe }}
-{% endcomp %}
+<div>
+<h3>Monthly Media Coverage</h3>
+{% comp 'layout.figure' %}
 
 {% if 'barchart_by_month' in featureToggles %}
-{% comp 'layout.figure', {
-  title: 'Monthly Media Coverage'
-} %}
-
-{{ comp.oi.charts.chart.bar({ config: {
-  data: monthly_count.rows,
-  title: {
-    label: "KSADHKASD"
-  },
-  category: 'month',
-  series: [
-    { title: 'Count of articles', value: 'count', colour: "var(--l23-magenta)" }
-  ],
-  padding: { right:20 },
-  legend: {
-    show: true,
-    position: "top right"
-  },
-  axis: {
-    x: {
-      title: {
-        label: "Count of articles"
-      },
-      "font-weight": "normal",
-      min: 0, max: 450,
-      grid: {
-        "stroke-dasharray": "2 4",
-        "stroke-width": 1
-      },
-      ticks: [
-        { label: '0', value: 0 },
-        { label: '100', value: 100 },
-        { label: '200', value: 200 },
-        { label: '300', value: 300 },
-        { label: '400', value: 400 }
-      ]
+  {{ comp.oi.charts.chart.bar({ config: {
+    data: monthly_count.rows,
+    category: 'month',
+    series: [
+      { title: 'Count of articles', value: 'count', colour: "var(--l23-yellow)" }
+    ],
+    legend: {
+      show: true,
+      position: "top right"
     },
-    y: {
-      title: {
-        label: "Month"
+    axis: {
+      x: {
+        title: {
+          label: "Count of articles"
+        },
+        "font-weight": "normal",
+        min: 0, max: 450,
+        grid: {
+          "stroke-dasharray": "2 4",
+          "stroke-width": 1
+        },
+        ticks: [
+          { label: '0', value: 0, 'font-weight': 'normal' },
+          { label: '100', value: 100, 'font-weight': 'normal' },
+          { label: '200', value: 200, 'font-weight': 'normal' },
+          { label: '300', value: 300, 'font-weight': 'normal' },
+          { label: '400', value: 400, 'font-weight': 'normal' }
+        ]
       },
-      "font-weight": "normal",
-      grid: {
-        "stroke-width": 0.5
+      y: {
+        title: {
+          label: "Month"
+        },
+        "font-weight": "normal",
+        grid: {
+          "stroke-width": 0.5
+        }
       }
     }
-  }
-} }) | safe }}
+  } }) | safe }}
 
-{% endcomp %}
+{% else %}
+  {{ comp.oi.charts.graph.line({ config: {
+    categories: monthly_count.columns.month,
+    width: 25,
+    height: 12,
+    text: { colour: '#eee' },
+    xAxis: {
+      title: 'Month',
+      titleOffset: 4,
+      labelRotate: 35,
+      majorTick: 2,
+      formatter: dateFormatterNoDay
+    },
+    yAxis: {
+      title: 'Media Coverage',
+      titleOffset: 3,
+      majorTick: 50
+    },
+    plotArea: {
+      yMin: 0,
+      yMax: 500,
+      colour: 'var(--l23-dark-blue-grey)'
+    },
+    padding: {
+      left: 4,
+      bottom: 5
+    },
+    series: [
+      {
+        id: "all", label: "All",
+        yValues: monthly_count.columns.count,
+        colour: 'var(--l23-yellow)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    legend: {
+      width: "20em"
+    }
+  } }) | safe }}
+
 {% endif %}
+{% endcomp %}
+</div>
 
-{% comp 'layout.block' %}
+<div>
 <h3>Media outlets with most appearances</h3>
 {{ comp.charts.table({
   columns: [{'key' : 'outlet_name','name':'Outlet Name'},{'key':'count','name':'Count'}],
   rows: outlet_count.rows
 }) | safe }}
-{% endcomp %}
+</div>
 
 {% endcomp %}

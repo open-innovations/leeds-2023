@@ -2,3 +2,11 @@ title: Impact Dashboard
 layout: layouts/project.njk
 tags:
   - dashboard
+
+# Set this to true to force all panels to render whether or not they are in the feature_toggle
+toggle_override: false
+
+# Set individual toggle names in this list below
+feature_toggle:
+  - YOU NEED AT LEAST ONE ENTRY!
+  # - Events Held

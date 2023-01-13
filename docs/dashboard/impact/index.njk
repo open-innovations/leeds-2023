@@ -3,7 +3,7 @@ title: Impact Dashboard
 work_in_progress: true
 summary: A health check across a number of key areas of interest.
 limitations:
-  - Data may not be accurate and should be used as a guide. 
+  - Data may not be accurate and should be used as a guide.
 ---
 
 
@@ -29,12 +29,30 @@ operational systems.
 
 {% from 'macros.njk' import dateFormatter %}
 
+{% macro checkToggle(toggleName) %}
+  {% if
+    not toggleName
+    or
+    toggleName in feature_toggle
+    or
+    toggle_override
+  %}
+    {{ caller() }}
+  {% else %}
+    <p>Metric not yet available</p>
+  {% endif %}
+{% endmacro %}
+
 <div style="--big-number-size: 4em;">
 {% comp 'dashboard.impact.panels' %}
+
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/dashboard/community' }%}
-    <h3>Events held</h3>
-    {{ comp.dashboard.impact.big_number({ number: search.data('dashboard/community').events.columns.total | sum | localize }) | safe }}
-{% endcomp %}
+      <h3>Events held</h3>
+      {% call checkToggle('Events Held') -%}
+        {{ comp.dashboard.impact.big_number({ number: search.data('dashboard/community').events.columns.total | sum | localize }) | safe }}
+      {%- endcall %}
+    {% endcomp %}
+
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/dashboard/community' }%}
     <h3>Total attendances</h3>
     {{ comp.dashboard.impact.big_number({ number: search.data('dashboard/community').residents.columns.total | sum | localize }) | safe }}

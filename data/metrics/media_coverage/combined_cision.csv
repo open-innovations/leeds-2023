@@ -287,8 +287,8 @@ news_date,news_headline,outlet_name,audience_reach,uv,tone,medium,outlet_type,cu
 2022-12-02,New Images Unveiled Of City Square In Leeds,Timber in Construction - Online,0,40983,POS,Online,,National; Trade,Leeds 2023,3199774719071181204
 2022-12-02,Radio clip from Times Radio at 2022-12-02 15:50:04.000,Times Radio,0,,NEU,Broadcast,,National,Leeds 2023,9280612201450178786
 2022-12-02,Radio clip from Times Radio at 2022-12-02 15:55:04.000,Times Radio,0,,NEU,Broadcast,,National,Leeds 2023,7924755775049527384
-2022-12-02,The Rough Guide to the best travel destinations in 2023,Rough Guides,0,212587,POS,Online,,International; National,Leeds 2023,6267836001471373383
 2022-12-02,The Rough Guide to the best travel destinations in 2023,Rough Guides,0,212587,POS,Online,,International,Leeds 2023,6267836001471373383
+2022-12-02,The Rough Guide to the best travel destinations in 2023,Rough Guides,0,212587,POS,Online,,International; National,Leeds 2023,6267836001471373383
 2022-12-03,Singers recording Ntantu's track Tomorrow which will be part of The Awakening at the launch of Leeds 2023,MSN UK,0,63510000,NEU,Online,,National,Leeds 2023; The Awakening,14139902669855010072
 2022-12-05,"2023. Leeds Beckett University, a Principal Education Partner of LEEDS 2023, will host the event on Friday, 24th February",Record of the Day,0,3702,POS,Online,,,Leeds 2023,9401077196314921676
 2022-12-05,In the studio with rapper Ntantu as Leeds 2023 announces its ticket ballot results,Yorkshire Evening Post - Yorkshireeveningpost.co.uk,0,237450,POS,Online,,Local,Leeds 2023; The Awakening,761583655408137961
@@ -350,6 +350,8 @@ news_date,news_headline,outlet_name,audience_reach,uv,tone,medium,outlet_type,cu
 2022-12-21,Radio clip from BBC Leeds at 2022-12-21 07:53:13.000,BBC Radio Leeds,78000,,,,Radio station,,Leeds 2023,15751920535109217826
 2022-12-21,Radio clip from BBC Leeds at 2022-12-21 07:58:14.000,BBC Radio Leeds,78000,,,,Radio station,,The Awakening,3947764060873757545
 2022-12-23,Radio clip from BBC Radio 4 at 2022-12-22 19:55:53.000,BBC Radio 4,3280000,,,,Radio network,,Leeds 2023,3665038511801305029
+2023-01-01,10 things you need to know about LEEDS2023,Yorkshire Life,13350,,POS,Magazine,"Magazine, consumer",,Leeds 2023; The Awakening,16835126791528064422
+2023-01-01,"101 Things to look forward to in 2023…[CR-LF][CR-LF] By Moneymagpie Team[CR-LF] Posted on January 1, 2023 [CR-LF][CR-LF][CR-LF]No Comments",Moneymagpie.com,0,40976,POS,Online,"Online, consumer",,Leeds 2023; The Awakening,3499552747708372774
 2023-01-01,LEEDING LIGHT,Hospitality & Events North,15000,,,,"Magazine, consumer",,Leeds 2023; The Awakening,16291960301476981027
 2023-01-01,LOOK Ahead,Hospitality & Events North,15000,,,,"Magazine, consumer",,Leeds Year Of Culture,8280132973128377251
 2023-01-07,33 incredible things to look forward to in Leeds in 2023,Leeds Live,,216161,POS,Online,,,Leeds 2023,12139655120992234126
@@ -659,91 +661,317 @@ news_date,news_headline,outlet_name,audience_reach,uv,tone,medium,outlet_type,cu
 2023-01-08,bbc.co.uk: «Leeds 2023: Stadium show launches year of culture after Brexit blow»,Newstral,,186573,NEU,Online,,International,Leeds 2023,15136410471667065144
 2023-01-08,expressandstar.com: «Leeds kickstarts Year Of Culture 2023 with a bang»,Newstral,,186573,NEU,Online,,International,,4227660074900189372
 2023-01-09,"""Culture has officially been let loose"", Leeds starts its own year of festival","Yorkshire Post - yorkshirepost.co.uk, The",,256221,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,2512511053315149772
+2023-01-09,"""Culture has officially been let loose"", Leeds starts its own year of festival","Yorkshire Post - yorkshirepost.co.uk, The",0,256221,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,2512511053315149772
+2023-01-09,BBC London News,BBC One Yorkshire,824001,,POS,Broadcast,Television station,,Leeds 2023,3014361375287480139
 2023-01-09,BBC Weekend News,BBC One Yorkshire,824001,,POS,Broadcast,,National,Leeds 2023,446494990991445513
+2023-01-09,BBC Weekend News,BBC One Yorkshire,824001,,POS,Broadcast,Television station,National,Leeds 2023,446494990991445513
 2023-01-09,Best pictures from Leeds 2023's The Awakening as Headingley stadium kicks off city's year of culture,Yorkshire Evening Post - Yorkshireeveningpost.co.uk,,237450,POS,Online,,,Leeds 2023; The Awakening,12385540945919892678
+2023-01-09,Best pictures from Leeds 2023's The Awakening as Headingley stadium kicks off city's year of culture,Yorkshire Evening Post - Yorkshireeveningpost.co.uk,0,237450,POS,Online,"Online, consumer",,Leeds 2023; The Awakening,12385540945919892678
 2023-01-09,Blaze of culture,"Herald (Scotland), The",22415,,POS,Newspaper,,,Leeds Year Of Culture; The Awakening,15050581621457427452
+2023-01-09,Blaze of culture,"Herald (Scotland), The",22415,,POS,Newspaper,Newspaper,,Leeds Year Of Culture; The Awakening,15050581621457427452
+2023-01-09,Bramley RL archives: Why 1961-62 was a golden season for the Villagers,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,6289974102203183824
 2023-01-09,City's Awakening launches 2023 year of culture,Yorkshire Evening Post,36512,,POS,Newspaper,,,Leeds 2023; The Awakening,4510473655429660131
+2023-01-09,City's Awakening launches 2023 year of culture,Yorkshire Evening Post,36512,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,4510473655429660131
 2023-01-09,City's golden wake-up call,i newspaper,143204,,POS,Newspaper,,National,Leeds Year Of Culture; The Awakening,8672714897954771414
+2023-01-09,City's golden wake-up call,i newspaper,143204,,POS,Newspaper,Newspaper,National,Leeds Year Of Culture; The Awakening,8672714897954771414
 2023-01-09,Culture event starts,Birmingham Mail,10011,,POS,Newspaper,,,Leeds 2023; The Awakening,1194239958100786718
+2023-01-09,Culture event starts,Birmingham Mail,10011,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,1194239958100786718
 2023-01-09,Culture event starts,Bristol Post,7292,,POS,Newspaper,,,Leeds 2023; The Awakening,14621047403506637914
+2023-01-09,Culture event starts,Bristol Post,7292,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,14621047403506637914
 2023-01-09,Culture event starts,Burton Mail,3940,,POS,Newspaper,,,Leeds 2023; The Awakening,1977207554926883363
+2023-01-09,Culture event starts,Burton Mail,3940,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,1977207554926883363
 2023-01-09,Culture event starts,Cambridge News,4485,,POS,Newspaper,,,Leeds 2023; The Awakening,5254194718712587472
+2023-01-09,Culture event starts,Cambridge News,4485,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,5254194718712587472
 2023-01-09,Culture event starts,"Chronicle (Newcastle), The",13832,,POS,Newspaper,,,Leeds 2023; The Awakening,10322091181048913668
+2023-01-09,Culture event starts,"Chronicle (Newcastle), The",13832,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,10322091181048913668
 2023-01-09,Culture event starts,Coventry Telegraph,7218,,POS,Newspaper,,,Leeds 2023; The Awakening,14562127074348557216
+2023-01-09,Culture event starts,Coventry Telegraph,7218,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,14562127074348557216
 2023-01-09,Culture event starts,Daily Post (Wales),14250,,POS,Newspaper,,,Leeds 2023; The Awakening,15038870650896444245
+2023-01-09,Culture event starts,Daily Post (Wales),14250,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,15038870650896444245
 2023-01-09,Culture event starts,Derbyshire Live,11059,,POS,Newspaper,,,Leeds 2023; The Awakening,16255792004278802917
+2023-01-09,Culture event starts,Derbyshire Live,11059,,POS,Newspaper,Newspaper,,Leeds 2023; The Awakening,16255792004278802917
 2023-01-09,Culture event starts,"Gazette (Middlesbrough/Teesside), The",10812,,POS,Newspaper,,,Leeds 2023; The Awakening,1073405389178472099
+2023-01-09,Culture event starts,"Gazette (Middlesbrough/Teesside), The",10812,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,1073405389178472099
 2023-01-09,Culture event starts,Grimsby Live,9086,,POS,Newspaper,,,Leeds 2023; The Awakening,14165723293396509917
+2023-01-09,Culture event starts,Grimsby Live,9086,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,14165723293396509917
 2023-01-09,Culture event starts,"Huddersfield Daily Examiner, The",6552,,POS,Newspaper,,,Leeds 2023; The Awakening,14548693793435507008
+2023-01-09,Culture event starts,"Huddersfield Daily Examiner, The",6552,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,14548693793435507008
 2023-01-09,Culture event starts,Hull Daily Mail,13399,,POS,Newspaper,,,Leeds 2023; The Awakening,8011299661531134716
+2023-01-09,Culture event starts,Hull Daily Mail,13399,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,8011299661531134716
 2023-01-09,Culture event starts,"Journal (Newcastle), The",6015,,POS,Newspaper,,,Leeds 2023; The Awakening,13967577953913791580
+2023-01-09,Culture event starts,"Journal (Newcastle), The",6015,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,13967577953913791580
 2023-01-09,Culture event starts,Leicester Mercury,12058,,POS,Newspaper,,,Leeds 2023; The Awakening,3288739051666963344
+2023-01-09,Culture event starts,Leicester Mercury,12058,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,3288739051666963344
 2023-01-09,Culture event starts,Liverpool Echo,23414,,POS,Newspaper,,,Leeds 2023; The Awakening,17170534202725652054
+2023-01-09,Culture event starts,Liverpool Echo,23414,,POS,Newspaper,Newspaper,,Leeds 2023; The Awakening,17170534202725652054
 2023-01-09,Culture event starts,Manchester Evening News,29613,,POS,Newspaper,,,Leeds 2023; The Awakening,15946335125102775473
+2023-01-09,Culture event starts,Manchester Evening News,29613,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,15946335125102775473
 2023-01-09,Culture event starts,Nottingham Post,8434,,POS,Newspaper,,,Leeds 2023; The Awakening,202035427620846045
+2023-01-09,Culture event starts,Nottingham Post,8434,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,202035427620846045
 2023-01-09,Culture event starts,Paisley Daily Express,3387,,POS,Newspaper,,,Leeds 2023; The Awakening,1407161860689674416
+2023-01-09,Culture event starts,Paisley Daily Express,3387,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,1407161860689674416
 2023-01-09,Culture event starts,Plymouth Live,8406,,POS,Newspaper,,,Leeds 2023; The Awakening,2474613302250830701
+2023-01-09,Culture event starts,Plymouth Live,8406,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,2474613302250830701
 2023-01-09,Culture event starts,"Sentinel (Stoke), The",15077,,POS,Newspaper,,,Leeds 2023; The Awakening,17575806730074952802
+2023-01-09,Culture event starts,"Sentinel (Stoke), The",15077,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,17575806730074952802
 2023-01-09,Culture event starts,WalesOnline,8628,,POS,Newspaper,,,Leeds 2023; The Awakening,18366659785058989751
+2023-01-09,Culture event starts,WalesOnline,8628,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,18366659785058989751
+2023-01-09,Decision 'this month' over £20m West Leeds parks and Armley Town Street 'levelling up' bid,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,18025529921829460528
+2023-01-09,Farsley Celtic aim to stretch unbeaten run at Alfreton,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,8384165960381974829
+2023-01-09,Farsley's The Constitutional closes its doors - updated,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,3713586059574765139
 2023-01-09,Great Yorkshire show Carnival dancers [...],"Times & The Sunday Times, The",365880,,POS,Newspaper,,National,Leeds Year Of Culture; The Awakening,42124340318177951
 2023-01-09,Great Yorkshire show Carnival dancers [...],"Times - Irish Edition, The",365880,,POS,Newspaper,,International,Leeds Year Of Culture; The Awakening,13914111072052334488
+2023-01-09,Great Yorkshire show Carnival dancers [...],"Times - Irish Edition, The",365880,,POS,Newspaper,Newspaper,International,Leeds Year Of Culture; The Awakening,13914111072052334488
 2023-01-09,Great Yorkshire show Carnival dancers [...],"Times - Scottish Edition, The",18542,,POS,Newspaper,,,Leeds Year Of Culture; The Awakening,15614482324911449977
+2023-01-09,Great Yorkshire show Carnival dancers [...],"Times - Scottish Edition, The",18542,,POS,Newspaper,Newspaper,,Leeds Year Of Culture; The Awakening,15614482324911449977
+2023-01-09,Great Yorkshire show Carnival dancers [...],"Times, The",365880,,POS,Newspaper,Newspaper,National,Leeds Year Of Culture; The Awakening,3356715055498209940
+2023-01-09,Huddersfield Giants thrilled after hitting new season ticket milestone,Examiner Live,0,284804,POS,Online,"Online, consumer",,The Awakening,7101723027404741404
+2023-01-09,Jake Bibby's bible reference illustrates Huddersfield Giants' hopes of success,Examiner Live,0,284804,NEU,Online,"Online, consumer",,The Awakening,10147047257336437216
+2023-01-09,KICKSTARTING THE YEAR,Morning Star,20000,,POS,Newspaper,Newspaper,,Leeds Year Of Culture; The Awakening,10071341203716172469
+2023-01-09,Kindness Postbox shortlisted for prestigious award,Fermanagh Herald (Online),0,2576,POS,Online,"Online, consumer",,Leeds 2023,14853876923506679438
 2023-01-09,Leeds 2023 The Awakening:  Stunning photos show launch of Year of Culture,"Yorkshire Post - yorkshirepost.co.uk, The",,256221,POS,Online,,,Leeds 2023; The Awakening,7808340673791427049
+2023-01-09,Leeds 2023 The Awakening:  Stunning photos show launch of Year of Culture,"Yorkshire Post - yorkshirepost.co.uk, The",0,256221,POS,Online,"Online, consumer",,Leeds 2023; The Awakening,7808340673791427049
+2023-01-09,Leeds 2023 kicks off with Awakenings stadium show,Access All Areas,0,500,POS,Online,"Online, trade/industry",,Leeds 2023; The Awakening,15737880634605993057
 2023-01-09,Leeds 2023: Stadium show launches year of culture after Brexit blow,www.newsdump.co.uk,,291,NEU,Online,,National,Leeds 2023,1172709689667632602
+2023-01-09,Leeds 2023: Stadium show launches year of culture after Brexit blow,www.newsdump.co.uk,0,291,NEU,Online,"Online, consumer",National,Leeds 2023,1172709689667632602
 2023-01-09,Leeds 2023: city to kick off year-long festival with 'epic' opening ceremony,Yours Bulletin,,,NEU,Online,,International,Leeds 2023; The Awakening,18049760169309018984
+2023-01-09,Leeds 2023: city to kick off year-long festival with 'epic' opening ceremony,Yours Bulletin,0,,NEU,Online,"Online, consumer",International,Leeds 2023; The Awakening,18049760169309018984
 2023-01-09,Leeds 2023: city to kick off year-long festival with 'epic' opening ceremony | Leeds,Web Today (US),,,NEU,Online,,International,Leeds 2023; The Awakening,3433299426063733282
+2023-01-09,Leeds 2023: city to kick off year-long festival with 'epic' opening ceremony | Leeds,Web Today (US),0,,NEU,Online,"Online, consumer",International,Leeds 2023; The Awakening,3433299426063733282
+2023-01-09,Leeds Rhinos' Man of Steel odds with star halfback deemed favourite,Leeds Live,0,216161,NEU,Online,"Online, consumer",,The Awakening,8596939308896561296
 2023-01-09,Leeds defies the odds - and the rain - to kick of f its Year of Culture,"Daily Telegraph, The",317817,,NEU,Newspaper,,National,Leeds 2023; Leeds Year Of Culture; The Awakening,6934066910693070359
+2023-01-09,Leeds defies the odds - and the rain - to kick of f its Year of Culture,"Daily Telegraph, The",317817,,NEU,Newspaper,Newspaper,National,Leeds 2023; Leeds Year Of Culture; The Awakening,6934066910693070359
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,"Argus (Brighton) - www.theargus.co.uk, The",,156492,NEU,Online,,,Leeds 2023; The Awakening,454493045127621927
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,"Argus (Brighton) - www.theargus.co.uk, The",0,156492,NEU,Online,"Online, consumer",,Leeds 2023; The Awakening,454493045127621927
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Bicester Advertiser,,5010,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,11408574675592329881
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Bicester Advertiser,0,5010,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,11408574675592329881
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,"Bolton News - www.theboltonnews.co.uk, The",,93526,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,4355128633247801448
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,"Bolton News - www.theboltonnews.co.uk, The",0,93526,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,4355128633247801448
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Brentwood Live,,1427,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,7479587397508093666
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Brentwood Live,0,1427,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,7479587397508093666
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Bridgwater Mercury (Online),,10402,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,17965176152766163824
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Bridgwater Mercury (Online),0,10402,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,17965176152766163824
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,BridportNEWS,,8101,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,685816732234052978
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,BridportNEWS,0,8101,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,685816732234052978
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Chard & Ilminster News,,8166,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,8547925872791068351
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Chard & Ilminster News,0,8166,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,8547925872791068351
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Chester Standard,,29015,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,14527777999132789463
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Chester Standard,0,29015,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,14527777999132789463
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Darlington and Stockton Times,,11890,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,1772966542484889732
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Darlington and Stockton Times,0,11890,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,1772966542484889732
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,East Anglian Daily Times - eadt.co.uk,,105897,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,16830513234864899786
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,East Anglian Daily Times - eadt.co.uk,0,105897,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,16830513234864899786
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Enfield Independant,,14966,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,574745531153245486
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Enfield Independant,0,14966,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,574745531153245486
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Falmouth Packet,,30229,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,8149468800935404268
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Falmouth Packet,0,30229,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,8149468800935404268
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Harrow Times (Online),,20308,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,4484052160725408352
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Harrow Times (Online),0,20308,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,4484052160725408352
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,ITV online,,2734285,NEU,Online,,,Leeds 2023; The Awakening,5741826940347797201
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,ITV online,0,2734285,NEU,Online,"Online, news and business",,Leeds 2023; The Awakening,5741826940347797201
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,"Ilkley, Wharfedale & Airedale Gazette & Observer",,500,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,14756802961537721742
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,"Ilkley, Wharfedale & Airedale Gazette & Observer",0,500,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,14756802961537721742
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Keighley News,,9094,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,17278428552371859469
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Keighley News,0,9094,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,17278428552371859469
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,KentOnline,,235717,NEU,Online,,,Leeds 2023; The Awakening,12297501414141932749
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,KentOnline,0,235717,NEU,Online,"Online, consumer",,Leeds 2023; The Awakening,12297501414141932749
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,LUDLOW & TENBURY WELLS Advertiser,,5000,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,13555962543899486966
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,LUDLOW & TENBURY WELLS Advertiser,0,5000,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,13555962543899486966
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,MailOnline,,23912681,NEU,Online,,National,Leeds 2023; The Awakening,1590650407497753530
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,MailOnline,0,23912681,NEU,Online,"Online, consumer",National,Leeds 2023; The Awakening,1590650407497753530
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,"National Scot, The",,215077,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,9145515019838227916
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,"National Scot, The",0,215077,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,9145515019838227916
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,News Shopper Series - Newsshopper.co.uk,,88080,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,15120813063033357490
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,News Shopper Series - Newsshopper.co.uk,0,88080,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,15120813063033357490
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Penarth Times (Online),,5000,NEU,Online,,,Leeds Year Of Culture,10601554018620998535
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Penarth Times (Online),0,5000,NEU,Online,"Online, consumer",,Leeds Year Of Culture,10601554018620998535
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Quest Media,,500,POS,Online,,,,10968564026454431802
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Quest Media,0,500,POS,Online,"Online, consumer",,,10968564026454431802
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Radio News Hub,,,NEU,Online,,,Leeds 2023; The Awakening,4080121543526230903
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Radio News Hub,0,,NEU,Online,"Online, consumer",,Leeds 2023; The Awakening,4080121543526230903
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,South Wales Guardian,,7152,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,9634672539846155481
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,South Wales Guardian,0,7152,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,9634672539846155481
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Southern Daily Echo - dailyecho.co.uk,,115302,NEU,Online,,,Leeds 2023; The Awakening,6777068106223546457
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Southern Daily Echo - dailyecho.co.uk,0,115302,NEU,Online,"Online, consumer",,Leeds 2023; The Awakening,6777068106223546457
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,This Is Oxfordshire,,4495,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,51227135274822856
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,This Is Oxfordshire,0,4495,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,51227135274822856
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,This is Local London,,33943,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,17697058491802550929
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,This is Local London,0,33943,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,17697058491802550929
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Tivy-Side Advertiser,,500,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,14780843863523274674
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Tivy-Side Advertiser,0,500,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,14780843863523274674
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,"Watford Observer, The",,53353,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,11538308317423918402
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,"Watford Observer, The",0,53353,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,11538308317423918402
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,"Westmorland Gazette, The",,33341,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,1923923991156774626
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,"Westmorland Gazette, The",0,33341,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,1923923991156774626
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Wiltshire Gazette and Herald - www.gazetteandherald.co.uk,,21710,NEU,Online,,,Leeds 2023; The Awakening,711512535265306520
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Wiltshire Gazette and Herald - www.gazetteandherald.co.uk,0,21710,NEU,Online,"Online, consumer",,Leeds 2023; The Awakening,711512535265306520
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Wiltshire Times,,21710,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,4901578650352025159
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Wiltshire Times,0,21710,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,4901578650352025159
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Wirral Globe - Wirralglobe.co.uk,,36852,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,16286119478165720689
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Wirral Globe - Wirralglobe.co.uk,0,36852,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,16286119478165720689
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,World News Network,,197405,POS,Online,,,,8787135850537420269
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,World News Network,0,197405,POS,Online,"Online, consumer",,,8787135850537420269
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Wrexham Leader,,50061,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,17049027577146349405
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Wrexham Leader,0,50061,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,17049027577146349405
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Your Local Guardian,,46439,NEU,Online,,,Leeds 2023; Leeds Year Of Culture; The Awakening,4810306427030057697
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,Your Local Guardian,0,46439,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,4810306427030057697
 2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,www.newsdump.co.uk,,291,NEU,Online,,National,,12661425580768717281
+2023-01-09,Leeds kickstarts Year Of Culture 2023 with a bang,www.newsdump.co.uk,0,291,NEU,Online,"Online, consumer",National,,12661425580768717281
+2023-01-09,Lemn Sissay at Leeds Lit Fest,Creative Tourist,0,6621,NEU,Online,"Online, consumer",,Leeds 2023,10642041233811424504
+2023-01-09,New images show how 'vibrant community' for older people in Armley could look,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,3270093011888614196
+2023-01-09,Photos capture Bramley Baths swimmers jumping into tenth anniversary celebrations,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,1845470507502681896
 2023-01-09,Picture of the day,"Courier (Dundee), The",24924,,POS,Newspaper,,,Leeds Year Of Culture; The Awakening,10383590621651514856
+2023-01-09,Picture of the day,"Courier (Dundee), The",24924,,POS,Newspaper,"Newspaper, community",,Leeds Year Of Culture; The Awakening,10383590621651514856
+2023-01-09,Police appeal to trace missing Wortley teenagers who may be together,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,7810551704566516526
+2023-01-09,READING & LEEDS FESTIVAL NEWS: #AD  Get amped up for Reading & Leeds 2023. Pay with your Barclaycard to get…,FESTIVAL FLYER,0,419,POS,Online,"Online, consumer",,Leeds 2023,814582015305941491
 2023-01-09,Radio clip from BBC Leeds at 2023-01-09 06:01:48.000,BBC Radio Leeds,78000,,NEU,Broadcast,,,Leeds 2023; The Awakening,7275535872035382114
+2023-01-09,Radio clip from BBC Leeds at 2023-01-09 06:01:48.000,BBC Radio Leeds,78000,,NEU,Broadcast,Radio station,,Leeds 2023; The Awakening,7275535872035382114
 2023-01-09,Radio clip from BBC Leeds at 2023-01-09 06:17:48.000,BBC Radio Leeds,78000,,NEU,Broadcast,,,Leeds 2023; The Awakening,8966535393958085767
+2023-01-09,Radio clip from BBC Leeds at 2023-01-09 06:17:48.000,BBC Radio Leeds,78000,,NEU,Broadcast,Radio station,,Leeds 2023; The Awakening,8966535393958085767
 2023-01-09,Radio clip from BBC Leeds at 2023-01-09 06:47:03.000,BBC Radio Leeds,78000,,POS,Broadcast,,,Leeds 2023; The Awakening,10814500347535900894
+2023-01-09,Radio clip from BBC Leeds at 2023-01-09 06:47:03.000,BBC Radio Leeds,78000,,POS,Broadcast,Radio station,,Leeds 2023; The Awakening,10814500347535900894
 2023-01-09,Radio clip from BBC Leeds at 2023-01-09 07:17:48.000,BBC Radio Leeds,78000,,NEU,Broadcast,,,Leeds 2023; The Awakening,6584400757836875763
+2023-01-09,Radio clip from BBC Leeds at 2023-01-09 07:17:48.000,BBC Radio Leeds,78000,,NEU,Broadcast,Radio station,,Leeds 2023; The Awakening,6584400757836875763
 2023-01-09,Radio clip from BBC Leeds at 2023-01-09 07:46:48.000,BBC Radio Leeds,78000,,NEU,Broadcast,,,Leeds 2023; The Awakening,3914031801013704497
+2023-01-09,Radio clip from BBC Leeds at 2023-01-09 07:46:48.000,BBC Radio Leeds,78000,,NEU,Broadcast,Radio station,,Leeds 2023; The Awakening,3914031801013704497
 2023-01-09,Radio clip from BBC Leeds at 2023-01-09 08:50:45.000,BBC Radio Leeds,78000,,NEU,Broadcast,,,Leeds 2023; The Awakening,11420538585381494762
+2023-01-09,Radio clip from BBC Leeds at 2023-01-09 08:50:45.000,BBC Radio Leeds,78000,,NEU,Broadcast,Radio station,,Leeds 2023; The Awakening,11420538585381494762
 2023-01-09,Radio clip from BBC Leeds at 2023-01-09 08:55:45.000,BBC Radio Leeds,78000,,POS,Broadcast,,,Leeds 2023; The Awakening,15052137926888030744
+2023-01-09,Radio clip from BBC Leeds at 2023-01-09 08:55:45.000,BBC Radio Leeds,78000,,POS,Broadcast,Radio station,,Leeds 2023; The Awakening,15052137926888030744
 2023-01-09,Radio clip from BBC Leeds at 2023-01-09 12:17:07.000,BBC Radio Leeds,78000,,POS,Broadcast,,,Leeds 2023,5937191452527556366
+2023-01-09,Radio clip from BBC Leeds at 2023-01-09 12:17:07.000,BBC Radio Leeds,78000,,POS,Broadcast,Radio station,,Leeds 2023,5937191452527556366
+2023-01-09,Radio clip from BBC Leeds at 2023-01-09 17:07:56.000,BBC Radio Leeds,78000,,NEU,Broadcast,Radio station,,Leeds 2023; The Awakening,17739265261715873180
+2023-01-09,Radio clip from BBC Leeds at 2023-01-09 17:12:56.000,BBC Radio Leeds,78000,,NEU,Broadcast,Radio station,,Leeds 2023; The Awakening,11454861954040008344
+2023-01-09,Radio clip from BBC Leeds at 2023-01-09 17:17:48.000,BBC Radio Leeds,78000,,POS,Broadcast,Radio station,,Leeds 2023; The Awakening,18333597308389445995
+2023-01-09,Radio clip from BBC Leeds at 2023-01-09 18:55:06.000,BBC Radio Leeds,78000,,NEU,Broadcast,Radio station,,Leeds 2023,16625066927320028339
 2023-01-09,Radio clip from BBC Manchester at 2023-01-08 20:14:33.000,BBC Radio Manchester,71000,,POS,Broadcast,,,,12061757417634167574
+2023-01-09,Radio clip from BBC Manchester at 2023-01-08 20:14:33.000,BBC Radio Manchester,71000,,POS,Broadcast,Radio station,,,12061757417634167574
 2023-01-09,Review: Our suburbs name-dropped at Leeds 2023 launch event,West Leeds Dispatch,,3141,NEU,Online,,,Leeds 2023; The Awakening,4145640302074188120
+2023-01-09,Review: Our suburbs name-dropped at Leeds 2023 launch event,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023; The Awakening,4145640302074188120
+2023-01-09,Royal Albert Hall appoints James Ainscough CEO,Access All Areas,0,500,POS,Online,"Online, trade/industry",,Leeds 2023,5640812814431605448
 2023-01-09,Shrewd Awakening for city's Year of Culture,"Yorkshire Post, The",21817,,POS,Newspaper,,,Leeds Year Of Culture; The Awakening,11299559279415661289
+2023-01-09,Shrewd Awakening for city's Year of Culture,"Yorkshire Post, The",21817,,POS,Newspaper,"Newspaper, community",,Leeds Year Of Culture; The Awakening,11299559279415661289
 2023-01-09,Stadium show launches year of culture after Brexit blow,Fiji Broadcasting Corporation - Online,269,,POS,Online,,International,Leeds 2023; The Awakening,9648376229324842287
+2023-01-09,Stadium show launches year of culture after Brexit blow,Fiji Broadcasting Corporation - Online,269,,POS,Online,"Online, news and business",International,Leeds 2023; The Awakening,9648376229324842287
 2023-01-09,Stadium show launches year of culture after Brexit blow,Ogun State Television,,356,POS,Online,,International,Leeds 2023; Leeds Year Of Culture; The Awakening,4016695640452881231
+2023-01-09,Stadium show launches year of culture after Brexit blow,Ogun State Television,0,356,POS,Online,"Online, consumer",International,Leeds 2023; Leeds Year Of Culture; The Awakening,4016695640452881231
 2023-01-09,Stunning aerial footage captures the moment a giant head appeared in the sky above Headingley Stadium,Yorkshire Evening Post - Yorkshireeveningpost.co.uk,,237450,NEU,Online,,,Leeds 2023; The Awakening,807113038107204410
+2023-01-09,Stunning aerial footage captures the moment a giant head appeared in the sky above Headingley Stadium,Yorkshire Evening Post - Yorkshireeveningpost.co.uk,0,237450,NEU,Online,"Online, consumer",,Leeds 2023; The Awakening,807113038107204410
 2023-01-09,Stunning opening to Leeds 2023 festival,"Yorkshire Post, The",21817,,POS,Newspaper,,,Leeds 2023; The Awakening,4302949614390897392
+2023-01-09,Stunning opening to Leeds 2023 festival,"Yorkshire Post, The",21817,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,4302949614390897392
+2023-01-09,"The Awakening, or L double-E D S wot wot!",South Leeds Life,0,1687,POS,Online,"Online, consumer",,Leeds 2023; The Awakening,2908661878007711763
+2023-01-09,Wakefield Trinity's Mark Applegarth mentors include NRL and Super League coaches,Examiner Live,0,284804,POS,Online,"Online, consumer",,The Awakening,11017138605273622621
+2023-01-09,West Leeds planning applications: 8 January 2023,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,1171487606839563032
+2023-01-10,Armley plea: 'Please leave Fudge the horse alone!',West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,16413738203473697321
+2023-01-10,Armley takeaway owner targeted by robber,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,6648723794994938829
+2023-01-10,Awakening our city to the 2023 year of culture,Yorkshire Evening Post,36512,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,12565173347781260147
+2023-01-10,Celebrating Leeds,"Times, The",365880,,NEU,Newspaper,Newspaper,,Leeds 2023; The Awakening,3405612831689303644
+2023-01-10,Culture club,Yorkshire Evening Post,36512,,NEU,Newspaper,"Newspaper, community",,Leeds 2023,332065013848249770
+2023-01-10,"Editor's letter: Big dips, Fudge the horse and join our community reporters",West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,1414548436894399918
+2023-01-10,"Events, books - and a warm community hub in Bramley",West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,14085513533816009720
+2023-01-10,Farsley Celtic make two new appointments to strengthen board,West Leeds Dispatch,0,3141,POS,Online,"Online, consumer",,Leeds 2023,3048952435796548063
+2023-01-10,Green light for new veterinary surgery in Pudsey,West Leeds Dispatch,0,3141,POS,Online,"Online, consumer",,Leeds 2023,6518207771308731516
+2023-01-10,I get knocked down: Leeds's year of culture rises from the ashes of Brexit,Newzealand News,0,4013,POS,Online,"Online, consumer",,Leeds 2023,13132909315720350716
+2023-01-10,I get knocked down: Leeds's yr of tradition rises from the ashes of Brexit,Occlipper,0,,NEU,Online,"Online, consumer",,Leeds 2023,3965469777979365927
+2023-01-10,Leeds Half Marathon moves away from Kirkstall to new Headingley route,West Leeds Dispatch,0,3141,POS,Online,"Online, consumer",,Leeds 2023,7164094116019825647
+2023-01-10,Leeds shows off its deep culture,"Argus (Brighton), The",8503,,NEU,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,3544470972942550513
+2023-01-10,Leeds shows off its deep culture,"Bolton News, The",8166,,NEU,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,6600036279150119197
+2023-01-10,Leeds shows off its deep culture,"Daily Gazette, The",6894,,NEU,Newspaper,Newspaper,,Leeds 2023; The Awakening,179363699943028736
+2023-01-10,Leeds shows off its deep culture,Echo (Essex),56380,,NEU,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,1281034712014357663
+2023-01-10,Leeds shows off its deep culture,Echo (Essex) - Southend Newsdesk,56380,,NEU,Newspaper,"Newspaper, community",,Leeds 2023,8882773222183144418
+2023-01-10,Leeds shows off its deep culture,Lancashire Telegraph,6074,,NEU,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,10222583476932915698
+2023-01-10,Leeds shows off its deep culture,News & Star,15600,,NEU,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,17310349037259108560
+2023-01-10,Leeds shows off its deep culture,Telegraph & Argus,9357,,NEU,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,14212094550683102928
+2023-01-10,Leeds shows off its deep culture,Worcester News,5373,,NEU,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,1540706551696490717
+2023-01-10,Leeds's year of culture rises from the ashes of Brexit,World News Network,0,197405,NEU,Online,"Online, consumer",,Leeds 2023,3736031435944919429
+2023-01-10,Lemn Sissay OBE Headlines Leeds Lit Fest 2023,Cumbria Times Feed,0,,POS,Online,"Online, consumer",,Leeds 2023,3445540330598841833
+2023-01-10,Lemn Sissay OBE Headlines Leeds Lit Fest 2023,Lancashire Times,0,,POS,Online,"Online, consumer",,Leeds 2023,469043301088810846
+2023-01-10,Lemn Sissay OBE Headlines Leeds Lit Fest 2023,North East Post,0,,POS,Online,"Online, consumer",,Leeds 2023,11164956580778897083
+2023-01-10,Lemn Sissay OBE Headlines Leeds Lit Fest 2023,"Yorkshire Times, The",0,5564,POS,Online,"Online, consumer",,Leeds 2023,8168421972992400966
+2023-01-10,Matt Peet's surprise Kevin Sinfield assistance helping Wigan Warriors progress,Examiner Live,0,284804,POS,Online,"Online, consumer",,The Awakening,7963970825559591653
+2023-01-10,New volunteers sought at Hollybush Conservation Centre,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,12405545214718989924
+2023-01-10,Police appeal to trace missing Wortley teenagers who may be together - updated,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,4325252463890731573
+2023-01-10,Pudsey warm space offers family films,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,15175300133141563383
+2023-01-10,Radio clip from BBC Leeds at 2023-01-09 19:53:48.000,BBC Radio Leeds,78000,,NEU,Broadcast,Radio station,,Leeds 2023,17758245723010986206
+2023-01-10,Radio clip from BBC Leeds at 2023-01-09 20:05:06.000,BBC Radio Leeds,78000,,NEU,Broadcast,Radio station,,Leeds 2023,8425688643720006102
+2023-01-10,Radio clip from BBC Leeds at 2023-01-09 20:40:46.000,BBC Radio Leeds,78000,,NEU,Broadcast,Radio station,,Leeds 2023; The Awakening,1431647756150162236
+2023-01-10,Ranking every Super League club's opening fixtures with tough start for some,Examiner Live,0,284804,NEU,Online,"Online, consumer",,The Awakening,1930324003833607778
+2023-01-10,Road closure warning at busy Kirkstall Bridge junction,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,14246284426848010687
+2023-01-10,Shadow education secretary visits Castleton Primary School,West Leeds Dispatch,0,3141,POS,Online,"Online, consumer",,Leeds 2023,5865150045134691011
+2023-01-10,Spector review – a complex portrait of the murderer behind pop's most iconic songs,TrendRadars,0,36708,NEU,Online,"Online, consumer",,Leeds 2023,98867508486829979
+2023-01-10,Stadium show launches year of culture after Brexit blow,BBC News Online,0,24207801,NEU,Online,"Online, consumer",,Leeds 2023; The Awakening,16983029236302244626
+2023-01-10,Sunny Bank Mills: Cornerstone of creativity in Leeds 2023,West Leeds Dispatch,0,3141,POS,Online,"Online, consumer",,Leeds 2023,16812866329909819594
+2023-01-10,"The Day in Photos – January 10, 2023",avax.news,0,22928,NEG,Online,"Online, consumer",,Leeds Year Of Culture; The Awakening,7503726099461981928
+2023-01-10,The Times view on a well-deserved place in the limelight: Celebrating Leeds,"Times - thetimes.co.uk, The",0,3210000,NEU,Online,"Online, consumer",,Leeds 2023; The Awakening,13419117351978153990
+2023-01-10,Unlucky Farsley Celtic slip to Alfreton defeat,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,17191497905537836365
+2023-01-10,"Youngest stadium rockers set sights on Glastonbury after thrilling 10,000 strong Leeds crowd","Yorkshire Post - yorkshirepost.co.uk, The",0,256221,POS,Online,"Online, consumer",,Leeds 2023; The Awakening,15800715247310563886
+2023-01-11,'Leggy' Farsley Celtic slip to defeat at Hereford,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,6787306871747997631
+2023-01-11,"Armley charity appeals for old Christmas cards as it bids to create 3,000 gift tags",West Leeds Dispatch,0,3141,POS,Online,"Online, consumer",,Leeds 2023,12554176866222080411
+2023-01-11,Creative project appeals to public for award votes,"Cambrian News - Aberystwyth, Machynlleth & Llanidloes Bureau",12141,,POS,Newspaper,"Newspaper, community",,Leeds 2023,4640450998492805562
+2023-01-11,Decision 'this month' over £20m West Leeds parks and Armley Town Street 'levelling up' bid,West Leeds Dispatch,0,3141,POS,Online,"Online, consumer",,Leeds 2023,5650491335134035330
+2023-01-11,Doric TV shortlisted for Creative Lives Award,"Scotsman - Scotsman.com, The",0,1008534,POS,Online,"Online, consumer",,Leeds 2023,12980385846050968817
+2023-01-11,Dr Dre deplores 'hateful' Marjorie Taylor Greene using his song in removed video,TrendRadars,0,36708,NEU,Online,"Online, consumer",,Leeds Year Of Culture,17386087498731695278
+2023-01-11,Farsley's The Constitutional closes its doors - updated,West Leeds Dispatch,0,3141,POS,Online,"Online, consumer",,Leeds 2023,15232949828074663333
+2023-01-11,I get knocked down ¿,"Guardian, The",109243,,NEU,Newspaper,Newspaper,,Leeds 2023; The Awakening,4016426764378096835
+2023-01-11,I get knocked down: Leeds' year of culture rises from the ashes of Brexit,"British Club, The",0,5000,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture,6002985691827582020
+2023-01-11,I get knocked down: Leeds' year of culture rises from the ashes of Brexit,Business Times Online,0,257755,NEU,Online,"Online, trade/industry",,Leeds 2023; Leeds Year Of Culture,13431924335876843427
+2023-01-11,I get knocked down: Leeds' year of culture rises from the ashes of Brexit,"Guardian - theguardian.com, The",0,31717429,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,8018063480739114988
+2023-01-11,I get knocked down: Leeds' year of culture rises from the ashes of Brexit,News Break,0,1552000,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture; The Awakening,10697449443965099052
+2023-01-11,I get knocked down: Leeds' year of culture rises from the ashes of Brexit,Yours Bulletin,0,,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture,3485601181329975917
+2023-01-11,I get knocked down: Leeds's year of culture rises from the ashes of Brexit | UK city of culture,Web Today (US),0,,NEU,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture,2001573771651198455
+2023-01-11,LEEDS 2023 kicks off with spectacular show featuring Poet Laureate,My Science (uk),0,272,POS,Online,"Online, consumer",,Leeds 2023,8629016127848176310
+2023-01-11,LEEDS 2023 kicks off with spectacular show featuring Poet Laureate,University of Leeds,492369,,POS,Online,"Online, consumer",,Leeds 2023,18255854559865334691
+2023-01-11,Leeds 2023: city to kick off year-long festival with 'epic' opening ceremony,UK News To day,0,,POS,Online,"Online, consumer",,Leeds 2023,13230176198241677711
+2023-01-11,National award shortlist nomination for Aberdeenshire Saxophone Orchestra and Ugie Voices collaboration,Grampian Online,0,7790,POS,Online,"Online, consumer",,Leeds 2023,69787797895406404
+2023-01-11,National award shortlist nomination for Aberdeenshire Saxophone Orchestra and Ugie Voices collaboration : UK News,Press24 (UK),0,5000,POS,Online,"Online, consumer",,Leeds 2023,18209073066820508622
+2023-01-11,Next chapter for Lit Fest as event returns for fifth year,Yorkshire Evening Post,36512,,POS,Newspaper,"Newspaper, community",,Leeds 2023,10541801257899869188
+2023-01-11,Prince Harry's autobiography Spare is UK's fastest-selling nonfiction book,TrendRadars,0,36708,NEU,Online,"Online, consumer",,Leeds Year Of Culture,16250733570069208695
+2023-01-11,Review: Our suburbs name-dropped at Leeds 2023 launch event,West Leeds Dispatch,0,3141,POS,Online,"Online, consumer",,Leeds 2023; The Awakening,4768457604807153018
+2023-01-11,Rob Burrow and Kevin Sinfield given freedom of Leeds for work on and off field,"Sunday Post, The",0,295940,NEU,Online,"Online, consumer",,,9317343307698705874
+2023-01-11,The US and the Holocaust review – unmissable Ken Burns doc reveals how Hitler was inspired by America,TrendRadars,0,36708,NEU,Online,"Online, consumer",,Leeds Year Of Culture,337462311436456912
+2023-01-11,Young stadium rockers aim for top,"Yorkshire Post, The",21817,,NEU,Newspaper,"Newspaper, community",,Leeds 2023,14564050028260555482
+2023-01-11,eNews 11 January,Forstaff main index,0,,POS,Online,"Online, consumer",,Leeds 2023,313005103186050148
+2023-01-12,Bramley RL archives: Why 1961-62 was a golden season for the Villagers,West Leeds Dispatch,0,3141,NEU,Online,"Online, consumer",,Leeds 2023,10730910274588294269
+2023-01-12,Britain Daily Life,"Argus-Press Online, The",0,4993,POS,Online,"Online, consumer",,Leeds Year Of Culture; The Awakening,12582303066368632640
+2023-01-12,Britain Daily Life,"Daily Sentinel Online, The",0,10129,POS,Online,"Online, consumer",,Leeds Year Of Culture; The Awakening,14298737575989472672
+2023-01-12,Britain Daily Life,Herald Chronicle Online,0,9658,POS,Online,"Online, consumer",,Leeds Year Of Culture; The Awakening,1639561564280291799
+2023-01-12,Britain Daily Life,Manchester Times Online,0,14646,POS,Online,"Online, consumer",,Leeds Year Of Culture; The Awakening,12799354732021120274
+2023-01-12,Doric TV shortlisted for Creative Lives Award,Ellon Times,1502,,POS,Newspaper,"Newspaper, community",,Leeds 2023,15951947062208745373
+2023-01-12,"Leeds 2023, Year of Culture!",H&N Magazine - Online,0,895,POS,Online,"Online, consumer",,Leeds 2023; The Awakening,11989445220969333671
+2023-01-12,Leeds shows off its deep culture,Ludlow & Tenbury Wells Advertiser,2499,,NEU,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,15116796801127138833
+2023-01-12,National Youth Theatre Announce Free Auditions Around The Country Next Month,Broadway World,0,467374,POS,Online,"Online, consumer",,Leeds 2023,1200131899828487892
+2023-01-12,Radio clip from BBC Humberside at 2023-01-11 19:48:52.000,BBC Radio Humberside,61000,,NEU,Broadcast,Radio station,,Leeds 2023,10778987390136533026
+2023-01-12,Radio clip from BBC Leeds at 2023-01-12 08:17:56.000,BBC Radio Leeds,78000,,POS,Broadcast,Radio station,,,4545709440371653930
+2023-01-12,Radio clip from BBC Leeds at 2023-01-12 09:09:56.000,BBC Radio Leeds,78000,,NEU,Broadcast,Radio station,,Leeds 2023,8950051875315239433
+2023-01-12,Radio clip from BBC Leeds at 2023-01-12 09:14:58.000,BBC Radio Leeds,78000,,NEU,Broadcast,Radio station,,Leeds 2023,1965694159370819821
+2023-01-12,Radio clip from BBC Leeds at 2023-01-12 11:43:26.000,BBC Radio Leeds,78000,,NEU,Broadcast,Radio station,,,15235276818140263765
+2023-01-12,Recovery position - Big Issue North,"Big Issue in the North, The",0,500,NEU,Online,"Online, consumer",,Leeds 2023,12796732333914307055
+2023-01-12,Reisbucketlist voor 2023: 23x 'net even anders' op vakantie binnen Europa,GoodBye,0,1590,POS,Online,"Online, consumer",,Leeds 2023,2685707457246680752
+2023-01-12,Sunny Bank Mills: Cornerstone of creativity in Leeds 2023,West Leeds Dispatch,0,3141,POS,Online,"Online, consumer",,Leeds 2023,3404238622122019952
+2023-01-13,Artistic spirit of city springs to front and centre,"Yorkshire Post, The",21817,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,13770544590498011749
+2023-01-13,Atlanta Symphony Orchestra – General Manager,Arts Journal,0,25113,POS,Online,"Online, trade/industry",,Leeds 2023,17967681486702358700
+2023-01-13,Cultural triumph,"Yorkshire Post, The",21817,,NEU,Newspaper,"Newspaper, community",,Leeds 2023,10628030803943081862
+2023-01-13,Executive Artistic Director – The New Harmony Project,Arts Journal,0,25113,POS,Online,"Online, trade/industry",,Leeds 2023,6250560316551292819
+2023-01-13,ITB - Travel Industry News,ITB Berlin News,0,249,POS,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture,17351195883152323933
+2023-01-13,KPMG Yorkshire senior partner optimistic of continued strong deals market,Insider Media,0,91697,POS,Online,"Online, trade/industry",,Leeds 2023,2181716275389451862
+2023-02-01,10 things you need to know about LEEDS 2023,Oracle,0,14729,POS,Online,"Online, trade/industry",,Leeds 2023; The Awakening,18243812412584553222
+2023-03-01,10 things you need to know about LEEDS 2023,Head Topics (UK),0,,NEU,Online,"Online, consumer",,Leeds 2023,17466236310403907635
+2023-03-01,23 Reiseziele für 2023,SeeSicht Magazin,0,737,NEU,Online,"Online, consumer",International,,13128351402622735806
+2023-03-01,Business review of 2022: Chaos at heart of Government hit business hard,"Yorkshire Post - yorkshirepost.co.uk, The",0,256221,NEU,Online,"Online, consumer",,Leeds 2023,3731383208349108344
+2023-04-01,1ST EVER LEEDS AFRICAN INTERNATIONAL FESTIVAL TAKES PLACE THIS YEAR – DO NOT MISS IT,My Fernandez,0,,POS,None,,,Leeds 2023,16256023547019640400
+2023-04-01,"Best seats in West, from Bard to The Bodyguard","Yorkshire Post, The",21817,,POS,Newspaper,"Newspaper, community",,Leeds 2023,13081001255145564250
+2023-04-01,Burberry links with Leeds 2023 to celebrate culture in West Yorkshire,Fashionnetwork (NL),0,5000,POS,Online,"Online, consumer",International,Leeds 2023,13676154424511974110
+2023-04-01,_ Ești A-OK în Marea Britanie! Cele mai bune evenimente și cazare pentru cazare pentru a rezerva în 2023 - crimes,Fluierul,0,,,Online,"Online, consumer",International,Leeds 2023,5194421077508650909
+2023-05-01,A look ahead to some of the highlights coming up in West Yorkshire's theatres this year,"Yorkshire Post - yorkshirepost.co.uk, The",0,256221,POS,Online,"Online, consumer",,Leeds 2023,2486557794242419152
+2023-06-01,Awakening city to celebration of culture and togetherness,Yorkshire Evening Post,36512,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,13326323368242920338
+2023-06-01,BBC London News,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,National,Leeds 2023,4706169880806808502
+2023-06-01,BBC London News,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,National,Leeds 2023; The Awakening,4706169880806808502
+2023-06-01,Breakfast,BBC One Yorks & Lincs,870001,,NEU,Broadcast,Television station,,Leeds 2023; Leeds Year Of Culture,15415563267252084718
+2023-06-01,Breakfast,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,National,Leeds 2023; Leeds Year Of Culture,6559091523250958844
+2023-06-01,Breakfast,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,National,Leeds 2023; Leeds Year Of Culture,6559091523250958844
+2023-06-01,Census data reveals LGBT+ populations for first time,AutoTrade News,0,500,NEU,Online,"Online, trade/industry",National,Leeds 2023,1231746165406035724
+2023-06-01,China Covid: Young people self-infect as fears for elderly grow,AutoTrade News,0,500,NEU,Online,"Online, trade/industry",National,Leeds 2023,1655743450552816807
+2023-06-01,City's year of culture to bring 'lasting legacy',BBC News Online,0,24207801,NEU,Online,"Online, consumer",National,Leeds 2023; The Awakening,9793479513850300501
+2023-06-01,City's year of culture to bring 'lasting legacy',CRWE World,0,24972,POS,Online,"Online, consumer",International,Leeds 2023,6162282123394343098
+2023-06-01,City's year of culture to bring 'lasting legacy',One News Page,0,767422,POS,Online,"Online, consumer",,Leeds 2023,2524417926640674692
+2023-06-01,"Come to Leeds, home of artistic brilliance (honest!)","Times - thetimes.co.uk, The",0,3210000,NEU,Online,"Online, consumer",National,Leeds 2023; The Awakening,7694985737360655786

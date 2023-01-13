@@ -4,8 +4,8 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/combine_cision.py
     deps:
     - path: scripts/metrics/media_coverage/combine_cision.py
-      md5: fecd436d6c8eb73d96d32b1a314eda93
-      size: 3520
+      md5: 978858e4fcca9b70e293abcd74588c61
+      size: 3748
     - path: working/manual/media/
       md5: bcfe651570af61766f50c2da186a32c1.dir
       size: 840133

@@ -8,6 +8,8 @@ OUTPUT_FILE_PATH = os.path.join(
     'data', 'metrics', 'media_coverage', 'combined_cision.csv')
 HASH_KEY = "2023202320232023"
 
+LOG_DIR = os.path.join('working', 'log')
+os.makedirs(LOG_DIR, exist_ok=True)
 
 def load_new_file(filepath):
     data = pd.read_csv(filepath)
@@ -111,6 +113,10 @@ def transform():
 
     # Save to file
     save_combined(combined_data)
+
+    # Write out some summary stats
+    weekly = combined_data.groupby('news_date').news_headline.count().resample('W-FRI').sum()
+    weekly.to_csv(os.path.join(LOG_DIR, 'cision.csv'))
 
 
 if __name__ == '__main__':

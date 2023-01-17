@@ -14,8 +14,12 @@ stages:
     deps:
       - scripts/metrics/volunteers/transform.py
       - working/metrics/rosterfy/current-checkpoint.csv
+      - working/manual/volunteers/volunteering-hours.csv
     outs:
       - data/metrics/volunteers/volunteers.csv:
+          persist: true
+          cache: false
+      - data/metrics/volunteers/shifts.csv:
           persist: true
           cache: false
   prepare:

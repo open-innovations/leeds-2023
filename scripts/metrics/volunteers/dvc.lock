@@ -6,12 +6,18 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform.py
     deps:
     - path: scripts/metrics/volunteers/transform.py
-      md5: aa92b5556c77e0cf17ff9b673b714a2c
-      size: 87
+      md5: 946a5aabd5f195918bcafefbadda882f
+      size: 1405
+    - path: working/manual/volunteers/volunteering-hours.csv
+      md5: 125c11302f34cf1d444be6d2a31ca667
+      size: 13812
     - path: working/metrics/rosterfy/current-checkpoint.csv
       md5: a055be6e41f3157021086539e8b340b7
       size: 110327
     outs:
+    - path: data/metrics/volunteers/shifts.csv
+      md5: 412b816f0f945c552b429fa8fc8d99b1
+      size: 7150
     - path: data/metrics/volunteers/volunteers.csv
       md5: cd0e338427281a5cce70674f903d93bb
       size: 111479

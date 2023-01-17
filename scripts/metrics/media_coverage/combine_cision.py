@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 import glob
+from datetime import datetime
 
 
 WORKING_DIR = os.path.join('working', 'manual', 'media')
@@ -10,6 +11,9 @@ HASH_KEY = "2023202320232023"
 
 LOG_DIR = os.path.join('working', 'log')
 os.makedirs(LOG_DIR, exist_ok=True)
+
+LATEST_DATE = datetime.now()
+
 
 def load_new_file(filepath):
     data = pd.read_csv(filepath)
@@ -23,10 +27,14 @@ def load_new_file(filepath):
 
     # Convert news date into datetime format
     try:
-        data['news_date'] = pd.to_datetime(
+        dates = pd.to_datetime(
             data['news_date'], format="%d/%m/%Y")
-        # If date before 2022-09-17 or after today, something is fishy
+        # If date after today, something is fishy
         # TODO implement this
+        unexpected = data[dates > LATEST_DATE]
+        if len(unexpected) > 0:
+            raise ValueError('Future date')
+        data['news_date'] = dates
     except:
         # Sometimes it's in MM/DD/YYYY format!
         data['news_date'] = pd.to_datetime(

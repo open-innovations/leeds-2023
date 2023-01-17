@@ -287,8 +287,8 @@ news_date,news_headline,outlet_name,audience_reach,uv,tone,medium,outlet_type,cu
 2022-12-02,New Images Unveiled Of City Square In Leeds,Timber in Construction - Online,0,40983,POS,Online,,National; Trade,Leeds 2023,3199774719071181204
 2022-12-02,Radio clip from Times Radio at 2022-12-02 15:50:04.000,Times Radio,0,,NEU,Broadcast,,National,Leeds 2023,9280612201450178786
 2022-12-02,Radio clip from Times Radio at 2022-12-02 15:55:04.000,Times Radio,0,,NEU,Broadcast,,National,Leeds 2023,7924755775049527384
-2022-12-02,The Rough Guide to the best travel destinations in 2023,Rough Guides,0,212587,POS,Online,,International,Leeds 2023,6267836001471373383
 2022-12-02,The Rough Guide to the best travel destinations in 2023,Rough Guides,0,212587,POS,Online,,International; National,Leeds 2023,6267836001471373383
+2022-12-02,The Rough Guide to the best travel destinations in 2023,Rough Guides,0,212587,POS,Online,,International,Leeds 2023,6267836001471373383
 2022-12-03,Singers recording Ntantu's track Tomorrow which will be part of The Awakening at the launch of Leeds 2023,MSN UK,0,63510000,NEU,Online,,National,Leeds 2023; The Awakening,14139902669855010072
 2022-12-05,"2023. Leeds Beckett University, a Principal Education Partner of LEEDS 2023, will host the event on Friday, 24th February",Record of the Day,0,3702,POS,Online,,,Leeds 2023,9401077196314921676
 2022-12-05,In the studio with rapper Ntantu as Leeds 2023 announces its ticket ballot results,Yorkshire Evening Post - Yorkshireeveningpost.co.uk,0,237450,POS,Online,,Local,Leeds 2023; The Awakening,761583655408137961
@@ -354,6 +354,27 @@ news_date,news_headline,outlet_name,audience_reach,uv,tone,medium,outlet_type,cu
 2023-01-01,"101 Things to look forward to in 2023…[CR-LF][CR-LF] By Moneymagpie Team[CR-LF] Posted on January 1, 2023 [CR-LF][CR-LF][CR-LF]No Comments",Moneymagpie.com,0,40976,POS,Online,"Online, consumer",,Leeds 2023; The Awakening,3499552747708372774
 2023-01-01,LEEDING LIGHT,Hospitality & Events North,15000,,,,"Magazine, consumer",,Leeds 2023; The Awakening,16291960301476981027
 2023-01-01,LOOK Ahead,Hospitality & Events North,15000,,,,"Magazine, consumer",,Leeds Year Of Culture,8280132973128377251
+2023-01-02,10 things you need to know about LEEDS 2023,Oracle,0,14729,POS,Online,"Online, trade/industry",,Leeds 2023; The Awakening,10717332209284324159
+2023-01-03,10 things you need to know about LEEDS 2023,Head Topics (UK),0,,NEU,Online,"Online, consumer",,Leeds 2023,9108508733128673413
+2023-01-03,23 Reiseziele für 2023,SeeSicht Magazin,0,737,NEU,Online,"Online, consumer",International,,12149874868287552540
+2023-01-03,Business review of 2022: Chaos at heart of Government hit business hard,"Yorkshire Post - yorkshirepost.co.uk, The",0,256221,NEU,Online,"Online, consumer",,Leeds 2023,7111074981535319322
+2023-01-04,1ST EVER LEEDS AFRICAN INTERNATIONAL FESTIVAL TAKES PLACE THIS YEAR – DO NOT MISS IT,My Fernandez,0,,POS,None,,,Leeds 2023,8455023200758608602
+2023-01-04,"Best seats in West, from Bard to The Bodyguard","Yorkshire Post, The",21817,,POS,Newspaper,"Newspaper, community",,Leeds 2023,691112611829071632
+2023-01-04,Burberry links with Leeds 2023 to celebrate culture in West Yorkshire,Fashionnetwork (NL),0,5000,POS,Online,"Online, consumer",International,Leeds 2023,17782671225323689844
+2023-01-04,_ Ești A-OK în Marea Britanie! Cele mai bune evenimente și cazare pentru cazare pentru a rezerva în 2023 - crimes,Fluierul,0,,,Online,"Online, consumer",International,Leeds 2023,2366001571680972563
+2023-01-05,A look ahead to some of the highlights coming up in West Yorkshire's theatres this year,"Yorkshire Post - yorkshirepost.co.uk, The",0,256221,POS,Online,"Online, consumer",,Leeds 2023,10980887050042164591
+2023-01-06,Awakening city to celebration of culture and togetherness,Yorkshire Evening Post,36512,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,161550954947733744
+2023-01-06,BBC London News,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,National,Leeds 2023,5629727349315501492
+2023-01-06,BBC London News,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,National,Leeds 2023; The Awakening,5629727349315501492
+2023-01-06,Breakfast,BBC One Yorks & Lincs,870001,,NEU,Broadcast,Television station,,Leeds 2023; Leeds Year Of Culture,18248275912581225596
+2023-01-06,Breakfast,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,National,Leeds 2023; Leeds Year Of Culture,14143448025113185646
+2023-01-06,Breakfast,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,National,Leeds 2023; Leeds Year Of Culture,14143448025113185646
+2023-01-06,Census data reveals LGBT+ populations for first time,AutoTrade News,0,500,NEU,Online,"Online, trade/industry",National,Leeds 2023,18182880893703984286
+2023-01-06,China Covid: Young people self-infect as fears for elderly grow,AutoTrade News,0,500,NEU,Online,"Online, trade/industry",National,Leeds 2023,14590216873791077705
+2023-01-06,City's year of culture to bring 'lasting legacy',BBC News Online,0,24207801,NEU,Online,"Online, consumer",National,Leeds 2023; The Awakening,14118403668656761779
+2023-01-06,City's year of culture to bring 'lasting legacy',CRWE World,0,24972,POS,Online,"Online, consumer",International,Leeds 2023,11133793054110708040
+2023-01-06,City's year of culture to bring 'lasting legacy',One News Page,0,767422,POS,Online,"Online, consumer",,Leeds 2023,4403764960322550374
+2023-01-06,"Come to Leeds, home of artistic brilliance (honest!)","Times - thetimes.co.uk, The",0,3210000,NEU,Online,"Online, consumer",National,Leeds 2023; The Awakening,1766068683148998552
 2023-01-07,33 incredible things to look forward to in Leeds in 2023,Leeds Live,,216161,POS,Online,,,Leeds 2023,12139655120992234126
 2023-01-07,BBC London News,BBC One Yorkshire,824001,,NEU,Broadcast,,National,Leeds 2023; The Awakening,4122819363422865309
 2023-01-07,Brexit Boost Propels Leeds To Become UK Tourism Hotspot,World News Era,,20920,NEU,Online,,International,Leeds 2023; The Awakening,838250525485786503
@@ -954,24 +975,3 @@ news_date,news_headline,outlet_name,audience_reach,uv,tone,medium,outlet_type,cu
 2023-01-13,Executive Artistic Director – The New Harmony Project,Arts Journal,0,25113,POS,Online,"Online, trade/industry",,Leeds 2023,6250560316551292819
 2023-01-13,ITB - Travel Industry News,ITB Berlin News,0,249,POS,Online,"Online, consumer",,Leeds 2023; Leeds Year Of Culture,17351195883152323933
 2023-01-13,KPMG Yorkshire senior partner optimistic of continued strong deals market,Insider Media,0,91697,POS,Online,"Online, trade/industry",,Leeds 2023,2181716275389451862
-2023-02-01,10 things you need to know about LEEDS 2023,Oracle,0,14729,POS,Online,"Online, trade/industry",,Leeds 2023; The Awakening,18243812412584553222
-2023-03-01,10 things you need to know about LEEDS 2023,Head Topics (UK),0,,NEU,Online,"Online, consumer",,Leeds 2023,17466236310403907635
-2023-03-01,23 Reiseziele für 2023,SeeSicht Magazin,0,737,NEU,Online,"Online, consumer",International,,13128351402622735806
-2023-03-01,Business review of 2022: Chaos at heart of Government hit business hard,"Yorkshire Post - yorkshirepost.co.uk, The",0,256221,NEU,Online,"Online, consumer",,Leeds 2023,3731383208349108344
-2023-04-01,1ST EVER LEEDS AFRICAN INTERNATIONAL FESTIVAL TAKES PLACE THIS YEAR – DO NOT MISS IT,My Fernandez,0,,POS,None,,,Leeds 2023,16256023547019640400
-2023-04-01,"Best seats in West, from Bard to The Bodyguard","Yorkshire Post, The",21817,,POS,Newspaper,"Newspaper, community",,Leeds 2023,13081001255145564250
-2023-04-01,Burberry links with Leeds 2023 to celebrate culture in West Yorkshire,Fashionnetwork (NL),0,5000,POS,Online,"Online, consumer",International,Leeds 2023,13676154424511974110
-2023-04-01,_ Ești A-OK în Marea Britanie! Cele mai bune evenimente și cazare pentru cazare pentru a rezerva în 2023 - crimes,Fluierul,0,,,Online,"Online, consumer",International,Leeds 2023,5194421077508650909
-2023-05-01,A look ahead to some of the highlights coming up in West Yorkshire's theatres this year,"Yorkshire Post - yorkshirepost.co.uk, The",0,256221,POS,Online,"Online, consumer",,Leeds 2023,2486557794242419152
-2023-06-01,Awakening city to celebration of culture and togetherness,Yorkshire Evening Post,36512,,POS,Newspaper,"Newspaper, community",,Leeds 2023; The Awakening,13326323368242920338
-2023-06-01,BBC London News,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,National,Leeds 2023,4706169880806808502
-2023-06-01,BBC London News,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,National,Leeds 2023; The Awakening,4706169880806808502
-2023-06-01,Breakfast,BBC One Yorks & Lincs,870001,,NEU,Broadcast,Television station,,Leeds 2023; Leeds Year Of Culture,15415563267252084718
-2023-06-01,Breakfast,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,National,Leeds 2023; Leeds Year Of Culture,6559091523250958844
-2023-06-01,Breakfast,BBC One Yorkshire,824001,,NEU,Broadcast,Television station,National,Leeds 2023; Leeds Year Of Culture,6559091523250958844
-2023-06-01,Census data reveals LGBT+ populations for first time,AutoTrade News,0,500,NEU,Online,"Online, trade/industry",National,Leeds 2023,1231746165406035724
-2023-06-01,China Covid: Young people self-infect as fears for elderly grow,AutoTrade News,0,500,NEU,Online,"Online, trade/industry",National,Leeds 2023,1655743450552816807
-2023-06-01,City's year of culture to bring 'lasting legacy',BBC News Online,0,24207801,NEU,Online,"Online, consumer",National,Leeds 2023; The Awakening,9793479513850300501
-2023-06-01,City's year of culture to bring 'lasting legacy',CRWE World,0,24972,POS,Online,"Online, consumer",International,Leeds 2023,6162282123394343098
-2023-06-01,City's year of culture to bring 'lasting legacy',One News Page,0,767422,POS,Online,"Online, consumer",,Leeds 2023,2524417926640674692
-2023-06-01,"Come to Leeds, home of artistic brilliance (honest!)","Times - thetimes.co.uk, The",0,3210000,NEU,Online,"Online, consumer",National,Leeds 2023; The Awakening,7694985737360655786

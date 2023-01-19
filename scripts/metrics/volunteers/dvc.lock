@@ -12,26 +12,26 @@ stages:
       md5: 125c11302f34cf1d444be6d2a31ca667
       size: 13812
     - path: working/metrics/rosterfy/current-checkpoint.csv
-      md5: 21b56008f3a09e60b4a2e0fda23f7336
-      size: 112400
+      md5: fe3f764af250fe0541600ff3ea238e0d
+      size: 113152
     outs:
     - path: data/metrics/volunteers/shifts.csv
       md5: 412b816f0f945c552b429fa8fc8d99b1
       size: 7150
     - path: data/metrics/volunteers/volunteers.csv
-      md5: de0fab890ef866d65ed646988ed19b03
-      size: 113220
+      md5: 94ec2748ee2c5c900db93eaca727cdc4
+      size: 113828
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/prepare.py
     deps:
     - path: data/metrics/volunteers/volunteers.csv
-      md5: de0fab890ef866d65ed646988ed19b03
-      size: 113220
+      md5: 94ec2748ee2c5c900db93eaca727cdc4
+      size: 113828
     - path: scripts/metrics/volunteers/prepare.py
       md5: 006fcb67b9da699e6684f5240df14bf4
       size: 93
     outs:
     - path: docs/metrics/volunteers/_data
-      md5: 7b7ea08eca884e49f5d05327c027d7ed.dir
-      size: 6927
+      md5: 2b2ddedf0424fcd184274ae5bee2d138.dir
+      size: 6928
       nfiles: 5

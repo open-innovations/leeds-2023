@@ -16,10 +16,12 @@ os.makedirs(LOG_DIR, exist_ok=True)
 LATEST_DATE = datetime.now()
 
 logging.basicConfig(
-  level=logging.WARNING
+    level=logging.INFO
 )
 
+
 def load_new_file(filepath):
+    logging.info('Loading %s', filepath)
     data = pd.read_csv(filepath)
 
     # Normalise names of columns
@@ -49,26 +51,55 @@ def load_new_file(filepath):
     try:
         data['uv'] = data['uv'].astype('Int64')
     except:
-        data['uv'] = pd.to_numeric(data['uv'].str.strip().str.replace(',', ''), errors="coerce").astype('Int64')
+        data['uv'] = pd.to_numeric(data['uv'].str.strip().str.replace(
+            ',', ''), errors="coerce").astype('Int64')
 
     # Convert reach to int
     try:
         data['audience_reach'] = data['audience_reach'].astype('Int64')
     except:
-        data.audience_reach = pd.to_numeric(data.audience_reach.str.strip().str.replace(',', ''), errors="coerce").astype('Int64')
+        data.audience_reach = pd.to_numeric(data.audience_reach.str.strip(
+        ).str.replace(',', ''), errors="coerce").astype('Int64')
 
     # Add identifier
     data['hash'] = pd.util.hash_pandas_object(
         data[['news_date', 'news_headline', 'outlet_name']], hash_key=HASH_KEY, index=False)
 
-    return data
+    return {
+        'filename': os.path.basename(filepath),
+        'data': data,
+        'latest': data.news_date.max(),
+        'earliest': data.news_date.min(),
+    }
 
 
 def combine_new_data(dfs):
     # Concatenate all data
-    data = (pd.concat(dfs)
-            .drop(columns=['news_text', 'contact_name', 'news_attachment_name'], errors='ignore')
-            .sort_values(by=['news_date', 'news_headline', 'medium']))
+    # Get the first data frame
+    current = dfs.pop()
+    data = current['data']
+    logging.info('Processing data loaded from %s (%d records)', current['filename'], len(current['data']))
+
+    # Iterate through the rest
+    while len(dfs):
+        # Find out what the current earliest one is
+        earliest = data.news_date.min()
+        # Get the next one
+        current = dfs.pop()
+        # Filter the data frame so it excludes dates already processed
+        current['data'] = current['data'][current['data'].news_date < earliest]
+
+        logging.info('Processing data loaded from %s (%d records)', current['filename'], len(current['data']))
+
+        # Concatenate the current and next data
+        data = pd.concat([data, current['data']])
+
+    # Clean up the data frame
+    data = data.drop(
+        columns=['news_text', 'contact_name', 'news_attachment_name'], errors='ignore'
+    ).sort_values(
+        by=['news_date', 'news_headline', 'medium']
+    )
 
     return data
 
@@ -114,8 +145,9 @@ def transform():
     if len(files) == 0:
         return
 
-    # Load each file into a list of data frames
-    dfs = [load_new_file(file) for file in files]
+    # Load each file into a list of data frames - oldest first
+    dfs = sorted([load_new_file(file)
+                 for file in files], key=lambda i: (i['latest'], i['earliest']))
 
     # Concatenate all data
     combined_data = combine_new_data(dfs)
@@ -128,7 +160,8 @@ def transform():
     save_combined(combined_data)
 
     # Write out some summary stats
-    weekly = combined_data.groupby('news_date').news_headline.count().resample('W-FRI').sum()
+    weekly = combined_data.groupby(
+        'news_date').news_headline.count().resample('W-FRI').sum()
     weekly.to_csv(os.path.join(LOG_DIR, 'cision.csv'))
 
 

@@ -4,16 +4,16 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/combine_cision.py
     deps:
     - path: scripts/metrics/media_coverage/combine_cision.py
-      md5: 382e142c2f17f739219426aaf26757ee
-      size: 4098
+      md5: 57fc21230105eca7808a2986942fc516
+      size: 5180
     - path: working/manual/media/
       md5: d9e1d91e8f1d08ea35f1e25c8fa6993c.dir
       size: 899951
       nfiles: 11
     outs:
     - path: data/metrics/media_coverage/combined_cision.csv
-      md5: 76a99c9b7f1a79173454edfc105c2b34
-      size: 163047
+      md5: 128d57eb36b7c50e2ec231dcae4d5664
+      size: 147466
   transform_historic:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/combine_historic.py
     deps:
@@ -32,8 +32,8 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/process.py
     deps:
     - path: data/metrics/media_coverage/combined_cision.csv
-      md5: 76a99c9b7f1a79173454edfc105c2b34
-      size: 163047
+      md5: 128d57eb36b7c50e2ec231dcae4d5664
+      size: 147466
     - path: data/metrics/media_coverage/combined_historic.csv
       md5: 2075d0be6cc9d6325fb589b3cdab43c8
       size: 66475
@@ -42,6 +42,6 @@ stages:
       size: 3087
     outs:
     - path: docs/metrics/media_coverage/_data
-      md5: 09f8f9f46839c5df0ccb2e766b0c6f1f.dir
+      md5: d60d07f3e0a52e8b38d0151ba955e1c6.dir
       size: 826
       nfiles: 5

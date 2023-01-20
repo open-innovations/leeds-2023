@@ -42,7 +42,7 @@ def transform_shift_hours():
       'event_name',
     ]].sort_values(['date'])
 
-    data.to_csv(SHIFT_DATA)
+    data.to_csv(SHIFT_DATA, index=False)
 
 
 if __name__ == "__main__":

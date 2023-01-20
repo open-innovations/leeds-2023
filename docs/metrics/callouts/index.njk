@@ -7,12 +7,12 @@ metas:
   description: |
     Visualisations of key metrics related to the LEEDS 2023 callouts.
 order: 20
-work_in_progress: true
 ---
 
 <p>
   A <a href="https://leeds2023.co.uk/call-outs/overview">callout</a> is an announcement LEEDS 2023 places on their website, inviting the residents of the
   city and surrounding areas to get involved in an upcoming opportunity.
+  Data about callouts is updated each night directly from the callout submission system.
 </p>
 
 <h2>Headlines</h2>
@@ -36,7 +36,47 @@ work_in_progress: true
 
 {% comp "grid.autogrid", { min_width: '32rem' } %}
 
-{% comp 'layout.block' %}
+{% comp 'layout.figure' %}
+  <h3>Callout responses by ward</h3>
+  {{ comp.charts.hexmap({
+    hexjson: hex.wards_leeds,
+    data: responses_by_ward.rows,
+    matchKey: 'ward_code',
+    valueProp: 'responses',
+    bgColour: '#ddd',
+      colourScale: colours.scales.cyan
+  }) | safe }}
+{% endcomp %}
+
+{% comp 'layout.figure' %}
+  <h3>Callout responses by week</h3>
+  {{ comp.oi.charts.chart.bar({ config: {
+    data: responses_by_week.rows,
+    stacked: true,
+    category: "date_submitted",
+    series: series,
+    legend: {
+      show: true
+    },
+    axis: {
+      x: {
+        title: { label: "Number of callout responses" },
+        tickSize: 10,
+        "font-weight": oi_viz.bar.axis.x['font-weight'],
+        grid: oi_viz.bar.axis.x.grid
+      },
+      y: {
+        title: { label: "Week Ending" },
+        "font-weight": oi_viz.bar.axis.y['font-weight'],
+        grid: oi_viz.bar.axis.y.grid
+      }
+    }
+  } }) | safe }}
+{% endcomp %}
+
+
+{% endcomp %}
+
 <table class="scroll-table">
   <thead>
     <tr>
@@ -51,17 +91,3 @@ work_in_progress: true
   </tr>
 {% endfor %}
 </table>
-{% endcomp %}
-
-{% comp 'layout.figure' %}
-{{ comp.charts.hexmap({
-  hexjson: hex.wards_leeds,
-  data: responses_by_ward.rows,
-  matchKey: 'ward_code',
-  valueProp: 'responses',
-  bgColour: '#ddd',
-    colourScale: colours.scales.cyan
-}) | safe }}
-{% endcomp %}
-
-{% endcomp %}

@@ -1,0 +1,21 @@
+- value: authors_abroad
+  title: Authors Abroad
+  colour: red
+- value: become_a_wowser
+  title: Become a WOWser
+  colour: orange
+- value: dancers_of_leeds
+  title: Dancers of Leeds
+  colour: yellow
+- value: early_career_music_promoters
+  title: Early Career Music Promoter
+  colour: green
+- value: leeds_on_wheels
+  title: Leeds on Wheels
+  colour: blue
+- value: leeds_young_film
+  title: Leeds Young Film
+  colour: indigo
+- value: off_the_curriculum
+  title: Off the Curriculum
+  colour: violet

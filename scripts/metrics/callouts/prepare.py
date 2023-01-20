@@ -7,7 +7,7 @@ SITE_DIR = os.path.join('docs', 'metrics', 'callouts', '_data')
 os.makedirs(SITE_DIR, exist_ok=True)
 
 if __name__ == '__main__':
-    responses = pd.read_csv(RESPONSE_CSV)
+    responses = pd.read_csv(RESPONSE_CSV, parse_dates=['date_submitted'])
 
     responses_by_callout = pd.DataFrame({
         'responses': responses.groupby(['callout']).date_submitted.count()
@@ -26,6 +26,13 @@ if __name__ == '__main__':
     })
     responses_by_ward.sort_values(by=['ward_code']).to_csv(os.path.join(
         SITE_DIR, 'responses_by_ward.csv'))
+
+    responses_by_week = pd.DataFrame({
+        'responses': responses.groupby(['date_submitted', 'callout']).ward_code.count(),
+    }).reset_index().pivot(
+        index='date_submitted', columns='callout', values='responses'
+    ).fillna(0).resample('W-FRI').sum().astype(int)
+    responses_by_week.to_csv(os.path.join(SITE_DIR, 'responses_by_week.csv'))
 
     summary = responses_by_callout.sum()
     summary.to_json(os.path.join(SITE_DIR, 'headline.json'))

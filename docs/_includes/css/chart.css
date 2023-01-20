@@ -34,3 +34,14 @@
 div.chart {
   padding: 1rem;
 }
+
+.legend * + * {
+  margin-top: unset;
+}
+.chart {
+  & .legend {
+    --auto-grid-min-size: 16rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--auto-grid-min-size)), 1fr))
+  }
+}

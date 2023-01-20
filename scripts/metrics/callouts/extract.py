@@ -27,7 +27,6 @@ if __name__ == '__main__':
         u'dancersOfLeeds',
         u'leedsOnWheels',
         u'authorsAbroad',
-        u'awakeningHospitality',
         u'becomeAWowser',
         u'earlyCareerMusicPromoters',
         u'leedsYoungFilm',

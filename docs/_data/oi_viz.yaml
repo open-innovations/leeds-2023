@@ -1,0 +1,11 @@
+bar:
+  axis:
+    x:
+      font-weight: normal
+      grid:
+        stroke-dasharray: 2 4
+        stroke-width: 1
+    y:
+      font-weight: normal
+      grid:
+        stroke-width: 0.5

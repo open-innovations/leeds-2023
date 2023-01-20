@@ -179,20 +179,15 @@ limitations:
           label: "Count of articles"
         },
         tickSize: 100,
-        "font-weight": "normal",
-        grid: {
-          "stroke-dasharray": "2 4",
-          "stroke-width": 1
-        }
+        "font-weight": oi_viz.bar.axis.x['font-weight'],
+        grid: oi_viz.bar.axis.x.grid
       },
       y: {
         title: {
           label: "Month"
         },
-        "font-weight": "normal",
-        grid: {
-          "stroke-width": 0.5
-        }
+        "font-weight": oi_viz.bar.axis.y['font-weight'],
+        grid: oi_viz.bar.axis.y.grid
       }
     }
   } }) | safe }}

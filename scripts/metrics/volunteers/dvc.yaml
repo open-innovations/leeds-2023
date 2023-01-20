@@ -28,6 +28,7 @@ stages:
     deps:
       - scripts/metrics/volunteers/prepare.py
       - data/metrics/volunteers/volunteers.csv
+      - data/metrics/volunteers/shifts.csv
     outs:
       - docs/metrics/volunteers/_data:
           persist: true

@@ -24,14 +24,17 @@ stages:
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/prepare.py
     deps:
+    - path: data/metrics/volunteers/shifts.csv
+      md5: 818bb51b510c2a76fa9edd6336525ccf
+      size: 6844
     - path: data/metrics/volunteers/volunteers.csv
       md5: 94ec2748ee2c5c900db93eaca727cdc4
       size: 113828
     - path: scripts/metrics/volunteers/prepare.py
-      md5: 006fcb67b9da699e6684f5240df14bf4
-      size: 93
+      md5: e0a4606e9d024f74da862387a83190f4
+      size: 601
     outs:
     - path: docs/metrics/volunteers/_data
-      md5: 2b2ddedf0424fcd184274ae5bee2d138.dir
-      size: 6928
-      nfiles: 5
+      md5: 84847bf3f813727a7ea554f63da2dd35.dir
+      size: 7188
+      nfiles: 6

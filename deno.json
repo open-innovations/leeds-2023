@@ -5,5 +5,8 @@
     "build": "deno task lume",
     "serve": "deno task lume -s",
     "get-fonts": "deno task lume run get-fonts"
+  },
+  "compilerOptions": {
+    "lib": ["deno.ns", "dom"]
   }
 }

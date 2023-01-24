@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python3 scripts/headlines/prepare.py
+    deps:
+    - path: data/metrics/volunteers/shifts.csv
+      md5: 818bb51b510c2a76fa9edd6336525ccf
+      size: 6844
+    - path: scripts/headlines/prepare.py
+      md5: 465e00871ccb0e1e9ec390cac8cdd003
+      size: 596
+    outs:
+    - path: docs/_data/headlines/values.js
+      md5: 4f2c0f149018739e019d8a106ea0580d
+      size: 62

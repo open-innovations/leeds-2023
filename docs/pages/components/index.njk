@@ -1,0 +1,24 @@
+---
+url: /components/
+---
+
+<script src="/assets/js/headline-metric.js"></script>
+
+<h2>Headline metric</h2>
+
+{% comp 'grid.autogrid' %}
+<metric-headline
+  data-topic="volunteers"
+  data-metric="shifts"
+  data-impact-font="var(--title-fontstack)"
+  data-header-text="Volunteer Shifts"
+  data-colour="var(--l23-cyan)"
+></metric-headline>
+<metric-headline
+  data-topic="volunteers"
+  data-metric="hours"
+  data-impact-font="var(--title-fontstack)"
+  data-header-text="Volunteer Hours"
+  data-colour="var(--l23-magenta)"
+></metric-headline>
+{% endcomp %}

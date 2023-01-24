@@ -1,0 +1,10 @@
+stages:
+  prepare:
+    cmd: python3 scripts/headlines/prepare.py
+    wdir: ../..
+    deps:
+      - scripts/headlines/prepare.py
+      - data/metrics/volunteers/shifts.csv
+    outs:
+      - docs/_data/headlines/values.js:
+          cache: false

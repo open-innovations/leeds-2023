@@ -9,4 +9,26 @@ toggle_override: false
 # Set individual toggle names in this list below
 feature_toggle:
   - YOU NEED AT LEAST ONE ENTRY!
-  # - Events Held
+  - Events Held
+  - Total attendances
+  #- Number of partners
+  - Community Engagement
+  #- Total funds raised
+  #- Funding breakdown by sector
+  - Funding prospects
+  - Secured funders
+  #- Directly employed
+  #- Freelancers employed
+  #- Contracted organisations
+  #- Preferred suppliers
+  - Volunteer applications
+  - Volunteer Offers
+  #- Website views
+  - Total online audience
+  - Total engagements
+  #- Unique website users
+  - Schools percentage
+  - Number of pupils
+  #- Featured articles
+  - Media coverage
+  - International online mentions

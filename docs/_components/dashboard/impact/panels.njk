@@ -23,7 +23,7 @@ css: |
   }
   @media only screen and (min-width: 50rem) {
     .panels {
-      grid-template-columns: repeat(5, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       font-size: 1.4vw;
     }
   }
@@ -79,6 +79,7 @@ css: |
     {%- if fg %}--foreground: {{ fg }};{% endif -%}
     {%- if bg %}--background: {{ bg }};{% endif -%}
     {%- if align %}--align: {{ align }};{% endif -%}
+    {% if columns %}grid-template-columns: repeat( {{ columns }}, minmax(0, 1fr));{% endif %}
     ">  
   {{ content | safe }}
 </ul>

@@ -11,7 +11,7 @@ stages:
       size: 2937
     outs:
     - path: working/ballot/
-      md5: 8d844d6f3746d0f165028d361b1a0254.dir
+      md5: 6ec564702d802708142a36bad8c5c34e.dir
       size: 184272
       nfiles: 2
   transform:
@@ -24,7 +24,7 @@ stages:
       md5: 3d129afbd5414fb3390205597ef14881
       size: 2937
     - path: working/ballot/
-      md5: 8d844d6f3746d0f165028d361b1a0254.dir
+      md5: 6ec564702d802708142a36bad8c5c34e.dir
       size: 184272
       nfiles: 2
     outs:

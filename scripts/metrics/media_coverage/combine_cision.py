@@ -15,13 +15,17 @@ os.makedirs(LOG_DIR, exist_ok=True)
 
 LATEST_DATE = datetime.now()
 
-logging.basicConfig(
-    level=logging.INFO
-)
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+log_fh = logging.FileHandler(filename=os.path.join(
+    LOG_DIR, "media_cision.log"), mode="w")
+log_formatter = logging.Formatter('%(levelname)s:%(funcName)s:%(message)s')
+log_fh.setFormatter(log_formatter)
+logger.addHandler(log_fh)
 
 
 def load_new_file(filepath):
-    logging.info('Loading %s', filepath)
+    logger.info('Loading %s', filepath)
     data = pd.read_csv(filepath)
 
     # Normalise names of columns
@@ -31,21 +35,32 @@ def load_new_file(filepath):
     # Drop rows with empty news headline (Cision has started adding a footer)
     data = data[~data['news_headline'].isna()]
 
+    known_formats = [
+        "%d/%m/%Y",
+        "%m/%d/%Y",
+        "%d.%m.%y",
+    ]
     # Convert news date into datetime format
+    for format in known_formats:
+        try:
+            logger.info('Attemping to parse dates as %s', format)
+            dates = pd.to_datetime(
+                data['news_date'], errors='raise', format=format)
+            unexpected = data[dates > LATEST_DATE]
+            if len(unexpected) > 0:
+                raise ValueError('Future date')
+            logger.info('Looks like that worked!')
+            break
+        except:
+            logger.warning('File %s is not in in %s format', filepath, format)
+
     try:
-        dates = pd.to_datetime(
-            data['news_date'], format="%d/%m/%Y")
-        # If date after today, something is fishy
-        # TODO implement this
-        unexpected = data[dates > LATEST_DATE]
-        if len(unexpected) > 0:
-            raise ValueError('Future date')
         data['news_date'] = dates
-    except:
-        logging.warning('File %s is in MM/DD/YYYY format', filepath)
-        # Sometimes it's in MM/DD/YYYY format!
-        data['news_date'] = pd.to_datetime(
-            data['news_date'], format="%m/%d/%Y")
+    except UnboundLocalError:
+        logger.error(
+            'File %s not processed, no compatible date formats found', filepath)
+        # Dropping all data!
+        return None
 
     # Convert viewship to int
     try:
@@ -78,7 +93,8 @@ def combine_new_data(dfs):
     # Get the first data frame
     current = dfs.pop()
     data = current['data']
-    logging.info('Processing data loaded from %s (%d records)', current['filename'], len(current['data']))
+    logger.info('Processing data loaded from %s (%d records)',
+                current['filename'], len(current['data']))
 
     # Iterate through the rest
     while len(dfs):
@@ -89,7 +105,8 @@ def combine_new_data(dfs):
         # Filter the data frame so it excludes dates already processed
         current['data'] = current['data'][current['data'].news_date < earliest]
 
-        logging.info('Processing data loaded from %s (%d records)', current['filename'], len(current['data']))
+        logger.info('Processing data loaded from %s (%d records)',
+                    current['filename'], len(current['data']))
 
         # Concatenate the current and next data
         data = pd.concat([data, current['data']])
@@ -146,8 +163,8 @@ def transform():
         return
 
     # Load each file into a list of data frames - oldest first
-    dfs = sorted([load_new_file(file)
-                 for file in files], key=lambda i: (i['latest'], i['earliest']))
+    dfs = [df for df in (load_new_file(file) for file in files) if df != None]
+    dfs = sorted(dfs, key=lambda i: (i['latest'], i['earliest']))
 
     # Concatenate all data
     combined_data = combine_new_data(dfs)

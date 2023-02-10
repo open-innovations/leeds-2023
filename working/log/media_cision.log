@@ -26,6 +26,14 @@ INFO:load_new_file:Attemping to parse dates as %d/%m/%Y
 WARNING:load_new_file:File working/manual/media/Leeds 2023 weekly media coverage 1-6.01.23.csv is not in in %d/%m/%Y format
 INFO:load_new_file:Attemping to parse dates as %m/%d/%Y
 INFO:load_new_file:Looks like that worked!
+INFO:load_new_file:Loading working/manual/media/LEEDS 2023 weekly media coverage W.e 10.02.23.csv
+INFO:load_new_file:Attemping to parse dates as %d/%m/%Y
+WARNING:load_new_file:File working/manual/media/LEEDS 2023 weekly media coverage W.e 10.02.23.csv is not in in %d/%m/%Y format
+INFO:load_new_file:Attemping to parse dates as %m/%d/%Y
+WARNING:load_new_file:File working/manual/media/LEEDS 2023 weekly media coverage W.e 10.02.23.csv is not in in %m/%d/%Y format
+INFO:load_new_file:Attemping to parse dates as %d.%m.%y
+WARNING:load_new_file:File working/manual/media/LEEDS 2023 weekly media coverage W.e 10.02.23.csv is not in in %d.%m.%y format
+ERROR:load_new_file:File working/manual/media/LEEDS 2023 weekly media coverage W.e 10.02.23.csv not processed, no compatible date formats found
 INFO:load_new_file:Loading working/manual/media/Leeds 2023 weekly media coverage w.e. 13.01.23.csv
 INFO:load_new_file:Attemping to parse dates as %d/%m/%Y
 WARNING:load_new_file:File working/manual/media/Leeds 2023 weekly media coverage w.e. 13.01.23.csv is not in in %d/%m/%Y format

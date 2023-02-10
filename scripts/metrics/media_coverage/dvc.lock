@@ -7,9 +7,9 @@ stages:
       md5: 3873ef413af386ddc092e3f5dae6c90f
       size: 5762
     - path: working/manual/media/
-      md5: 8715ab1bfc53415d10dbf5f1b13deffb.dir
-      size: 955772
-      nfiles: 13
+      md5: bc0234865b7799588daf362833787782.dir
+      size: 979769
+      nfiles: 14
     outs:
     - path: data/metrics/media_coverage/combined_cision.csv
       md5: dd6d9d9f608a0e4e699cf74baeb4680a
@@ -21,9 +21,9 @@ stages:
       md5: ff6c2ea8554040f3f2fc10f23b109b91
       size: 2586
     - path: working/manual/media/
-      md5: 8715ab1bfc53415d10dbf5f1b13deffb.dir
-      size: 955772
-      nfiles: 13
+      md5: bc0234865b7799588daf362833787782.dir
+      size: 979769
+      nfiles: 14
     outs:
     - path: data/metrics/media_coverage/combined_historic.csv
       md5: 2075d0be6cc9d6325fb589b3cdab43c8

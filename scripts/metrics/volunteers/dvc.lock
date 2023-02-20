@@ -28,16 +28,16 @@ stages:
       md5: 56d65273396ab2f0cc336b15c3f7ef2c
       size: 9246
     - path: data/metrics/volunteers/volunteers.csv
-      md5: 6283830bfc318d382a70b031c88ab3f7
-      size: 135162
+      md5: 7b5ab18dd2526df9b094af38dfc2d66b
+      size: 130430
     - path: scripts/metrics/volunteers/prepare.py
-      md5: 8208e6a38aeb7c6a6cd3f898d4f0bee4
-      size: 608
+      md5: 0fa4fd8ef0b361a02edbbadf6702f82f
+      size: 1164
     outs:
     - path: docs/metrics/volunteers/_data
-      md5: 756967a62f4477ec8c406f37cbcebe78.dir
-      size: 7742
-      nfiles: 6
+      md5: 78e20541f8f1fa8cc5d28bb87f78bd8a.dir
+      size: 15325
+      nfiles: 7
   transform-shifts:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform_shifts.py
     deps:
@@ -52,15 +52,27 @@ stages:
       md5: 56d65273396ab2f0cc336b15c3f7ef2c
       size: 9246
   transform-signups:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform_signups.py
     deps:
-    - path: scripts/metrics/volunteers/transform.py
-      md5: 59ca371007eb2e27d97b46a38b21c859
-      size: 118
-    - path: working/metrics/rosterfy/current-checkpoint.csv
-      md5: fe3f764af250fe0541600ff3ea238e0d
-      size: 113152
+    - path: scripts/metrics/volunteers/data.py
+      md5: 7238d2b4c174523a4382eb42c8c0aa45
+      size: 3120
+    - path: scripts/metrics/volunteers/metadata.py
+      md5: 4d091fa0191725b56adeb501346099f0
+      size: 5325
+    - path: scripts/metrics/volunteers/setup.py
+      md5: 944810681ad60f77dab62b136c7b3318
+      size: 418
+    - path: scripts/metrics/volunteers/states.py
+      md5: 36ce11658f400403c6a28b140a8375a4
+      size: 3197
+    - path: scripts/metrics/volunteers/transform_signups.py
+      md5: f3a575c359d7c4715536f5eab0d6ace7
+      size: 2013
+    - path: working/manual/volunteers/current-checkpoint.csv
+      md5: 6ff57bf3a20a6a883fa4e13bc681485e
+      size: 89630
     outs:
     - path: data/metrics/volunteers/volunteers.csv
-      md5: 6283830bfc318d382a70b031c88ab3f7
-      size: 135162
+      md5: 7b5ab18dd2526df9b094af38dfc2d66b
+      size: 130430

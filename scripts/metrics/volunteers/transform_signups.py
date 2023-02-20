@@ -2,9 +2,9 @@ import logging
 import os
 
 from metrics.volunteers.data import load_new_data, load_raw_data, save_raw_data
-from metrics.volunteers.setup import VIEW_DIR
+from metrics.volunteers.metadata import MetadataReader
+from metrics.volunteers.setup import DATA_DIR, META_DIR
 from metrics.volunteers.states import update_states
-from metrics.volunteers.summarise import summarise_by_ward, summarise_by_week,summarise_by_local_authority
 
 
 def update():
@@ -37,11 +37,12 @@ def update():
     data.local_authority_code = data.new_local_authority_code.fillna('UNKNOWN')
 
     # Remove the new_* columns
-    data.drop(columns=['new_status', 'new_ward_code', 'new_local_authority_code'], inplace=True)
+    data.drop(columns=['new_status', 'new_ward_code',
+              'new_local_authority_code'], inplace=True)
 
     logging.info('Adding {new} and updating status for {changes} volunteers'.format(
-      new=new_rowcount - old_rowcount,
-      changes=changed_rowcount
+        new=new_rowcount - old_rowcount,
+        changes=changed_rowcount
     ))
 
     logging.info('Updating dates for the states')
@@ -50,12 +51,12 @@ def update():
     save_raw_data(data)
 
 
-def summarise():
-    data = load_raw_data()
-    summarise_by_ward(data, os.path.join(VIEW_DIR, 'by_ward.csv'))
-    summarise_by_week(data, os.path.join(VIEW_DIR, 'by_week.csv'))
-    summarise_by_local_authority(data, os.path.join(VIEW_DIR, 'by_local_authority.csv'),os.path.join(VIEW_DIR, 'la_stats.json'),os.path.join(VIEW_DIR, 'west_yorkshire.csv'))
-
-
-def patch():
-    save_raw_data(load_raw_data())
+if __name__ == "__main__":
+    update()
+    volunteer_metadata = MetadataReader(
+        os.path.join(DATA_DIR, 'volunteers.csv'),
+        base=DATA_DIR,
+        dimensions=[],
+        facts=['hash', 'created', 'applied', 'applied',
+               'offered', 'confirmed', 'rejected']
+    ).save_metadata(META_DIR)

@@ -25,16 +25,42 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/prepare.py
     deps:
     - path: data/metrics/volunteers/shifts.csv
-      md5: 57ecf261ef6497271a327dccd414bae1
-      size: 7709
+      md5: 56d65273396ab2f0cc336b15c3f7ef2c
+      size: 9246
     - path: data/metrics/volunteers/volunteers.csv
       md5: 6283830bfc318d382a70b031c88ab3f7
       size: 135162
     - path: scripts/metrics/volunteers/prepare.py
-      md5: e0a4606e9d024f74da862387a83190f4
-      size: 601
+      md5: 8208e6a38aeb7c6a6cd3f898d4f0bee4
+      size: 608
     outs:
     - path: docs/metrics/volunteers/_data
-      md5: def90cc1f444458e29e49bbb3a819191.dir
-      size: 7709
+      md5: 756967a62f4477ec8c406f37cbcebe78.dir
+      size: 7742
       nfiles: 6
+  transform-shifts:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform_shifts.py
+    deps:
+    - path: scripts/metrics/volunteers/transform_shifts.py
+      md5: 2ee7ade34d87309d8fb7185d6a1fb106
+      size: 1423
+    - path: working/manual/volunteers/volunteering-hours.csv
+      md5: 7d5a402b6f9f487fdd317928a9709414
+      size: 27534
+    outs:
+    - path: data/metrics/volunteers/shifts.csv
+      md5: 56d65273396ab2f0cc336b15c3f7ef2c
+      size: 9246
+  transform-signups:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform.py
+    deps:
+    - path: scripts/metrics/volunteers/transform.py
+      md5: 59ca371007eb2e27d97b46a38b21c859
+      size: 118
+    - path: working/metrics/rosterfy/current-checkpoint.csv
+      md5: fe3f764af250fe0541600ff3ea238e0d
+      size: 113152
+    outs:
+    - path: data/metrics/volunteers/volunteers.csv
+      md5: 6283830bfc318d382a70b031c88ab3f7
+      size: 135162

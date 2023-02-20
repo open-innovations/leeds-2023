@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from metrics.volunteers.process import summarise
 
-from transform import SHIFT_DATA
+from transform_shifts import SHIFT_DATA
 from setup import VIEW_DIR
 
 

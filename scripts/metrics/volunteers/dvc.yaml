@@ -8,21 +8,27 @@ stages:
   #     - working/metrics/rosterfy/:
   #         persist: true
   #         cache: false
-  transform:
+  transform-signups:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform.py
     wdir: ../../..
     deps:
     - scripts/metrics/volunteers/transform.py
-    - working/manual/volunteers/volunteering-hours.csv
     - working/metrics/rosterfy/current-checkpoint.csv
     outs:
-    - data/metrics/volunteers/shifts.csv:
-        cache: false
-        persist: true
     - data/metrics/volunteers/volunteers.csv:
         cache: false
         persist: true
     frozen: true
+  transform-shifts:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform_shifts.py
+    wdir: ../../..
+    deps:
+    - scripts/metrics/volunteers/transform_shifts.py
+    - working/manual/volunteers/volunteering-hours.csv
+    outs:
+    - data/metrics/volunteers/shifts.csv:
+        cache: false
+        persist: true
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/prepare.py
     wdir: ../../..

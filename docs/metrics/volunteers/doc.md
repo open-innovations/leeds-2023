@@ -21,6 +21,7 @@ The volunteers extract contains the following fields:
 
 The shifts extract contains the following fields:
 
+* `Event - ID`
 * `Event - Name`
 * `Event - Type`
 * `Event Shift - ID`

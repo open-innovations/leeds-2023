@@ -12,24 +12,25 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform.py
     wdir: ../../..
     deps:
-      - scripts/metrics/volunteers/transform.py
-      - working/metrics/rosterfy/current-checkpoint.csv
-      - working/manual/volunteers/volunteering-hours.csv
+    - scripts/metrics/volunteers/transform.py
+    - working/manual/volunteers/volunteering-hours.csv
+    - working/metrics/rosterfy/current-checkpoint.csv
     outs:
-      - data/metrics/volunteers/volunteers.csv:
-          persist: true
-          cache: false
-      - data/metrics/volunteers/shifts.csv:
-          persist: true
-          cache: false
+    - data/metrics/volunteers/shifts.csv:
+        cache: false
+        persist: true
+    - data/metrics/volunteers/volunteers.csv:
+        cache: false
+        persist: true
+    frozen: true
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/prepare.py
     wdir: ../../..
     deps:
-      - scripts/metrics/volunteers/prepare.py
-      - data/metrics/volunteers/volunteers.csv
-      - data/metrics/volunteers/shifts.csv
+    - scripts/metrics/volunteers/prepare.py
+    - data/metrics/volunteers/volunteers.csv
+    - data/metrics/volunteers/shifts.csv
     outs:
-      - docs/metrics/volunteers/_data:
-          persist: true
-          cache: false
+    - docs/metrics/volunteers/_data:
+        persist: true
+        cache: false

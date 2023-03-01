@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    {{ comp.a11y.skip_to_content_link() | safe }}
     <div class="site-header-container no-top-margin">
       {% comp "layout.block", { background_colour: 'var(--l23-dark-blue-grey)' } %}
       <header class="site-header" role="banner">

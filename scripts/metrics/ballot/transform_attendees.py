@@ -1,7 +1,3 @@
-import sys
-
-print(sys.path)
-
 import os
 import pandas as pd
 from util.geography import match_ward, match_la

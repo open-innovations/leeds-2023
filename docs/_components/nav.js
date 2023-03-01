@@ -8,54 +8,57 @@ export default function ({ search, url }) {
         }">${page.data.title}</a></li>`
     )
     .join('');
-
+  
   return `<nav>
-    <input hidden id="menu-state" class="menu-state" type="checkbox">
-    <label class="menu-toggle" for="menu-state">
-      <div class="menu-burger"><i></i><i></i><i></i></div>
-    </label>
-    <ul class="menu-items">${links}</ul>
+    <button aria-expanded="false" class="menu-toggle"><span>Menu</span></button>
+    <ul class="menu-items" hidden>${links}</ul>
   </nav>`;
 }
 
+export const js = `
+  addEventListener('DOMContentLoaded', () => {
+    var navButton = document.querySelector('nav button.menu-toggle');
+    console.log(navButton);
+    navButton.addEventListener('click', function() {
+      let expanded = this.getAttribute('aria-expanded') === 'true' || false;
+      this.setAttribute('aria-expanded', !expanded);
+      let menu = this.nextElementSibling;
+      menu.hidden = !menu.hidden;
+    });
+  });
+`
+
 export const css = `
-.menu-state {
+[hidden] {
   display: none;
 }
 
-.menu-toggle {
-  @media screen and (min-width: 800px) {
-    display: none;
-  }
-
-  @nest .menu-state:checked ~ & {
-    /* transform: translateY(var(--header-height)); */
-    & .menu-burger {
-      & i:nth-of-type(1) {
-        transform: translateY(0.7rem) scaleX(0);
-      }
-      & i:nth-of-type(2) {
-        transform: rotate(225deg) scale(1.41);
-      }
-      & i:nth-of-type(3) {
-        transform: translateY(-0.7rem) rotate(135deg) scale(1.41);
-      }
-    }
-  }
+nav {
+  --transition-timing: 250ms linear;
 }
 
-.menu-burger {
-  width: 1.8rem;
+.menu-toggle {
+  color: inherit;
+  background: unset;
+  border: none;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.4rem;
-
-  & i {
-    height: 0.3rem;
-    background-color: black;
-    transition: ease transform 250ms;
-    border-radius: 0.8rem;
+  align-items: center;
+  gap: 0.5rem;
+  &:hover span {
+    text-decoration: underline;
+  }
+  &:after {
+    content: "\u25C0";
+    display: block;
+    transition: var(--transition-timing);
+    transition-property: transform;
+    font-size: 0.5em;
+  }
+  &[aria-expanded=true]:after {
+    transform: rotate(-180deg);
+  }
+  @media screen and (min-width: 800px) {
+    display: none;
   }
 }
 
@@ -68,19 +71,18 @@ export const css = `
   display: flex;
   flex-direction: column;
   padding: 1em;
-  transition: 250ms ease;
+  transition: var(--transition-timing);
   transition-property: left, right;
-
+  @nest .menu-toggle[aria-expanded=true] ~ & {
+    left: 0;
+    right: 0;
+  }
   @media screen and (min-width: 800px) {
     flex-direction: row;
     gap: 1em;
     position: unset;
     padding: unset;
     border: unset;
-  }
-  @nest .menu-state:checked ~ & {
-    left: 0;
-    right: 0;
   }
 }
 `;

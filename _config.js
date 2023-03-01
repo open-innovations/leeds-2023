@@ -25,8 +25,9 @@ const site = lume({
   location: new URL("https://data.leeds2023.co.uk/"),
   src: "./docs",
   components: {
-    cssFile: '/style/components.css'
-  }
+    cssFile: '/style/components.css',
+    jsFile: '/assets/js/components.js',
+  },
 }, {
   nunjucks,
 });

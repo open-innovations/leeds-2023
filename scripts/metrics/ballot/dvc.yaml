@@ -19,7 +19,19 @@ stages:
     - data/reference/postcodes.csv
     - working/ballot/
     outs:
-    - data/metrics/ballot/:
+    - data/metrics/ballot/ballot_entries.csv:
+        persist: true
+        cache: false
+    - data/metrics/ballot/ballot_group_entries.csv:
+        persist: true
+        cache: false
+  transform_attendees:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/transform_attendees.py
+    wdir: ../../..
+    deps:
+      - working/manual/events/Awakening/
+    outs:
+    - data/metrics/events/awakening/attendees.csv:
         persist: true
         cache: false
   prepare:

@@ -1,29 +1,18 @@
 ---
 css: |
 
-  .panels-link {
-    text-decoration: none;
-  }
-
   .dashboard-panel {
-    padding: 0.5em;
     --background: var(--l23-dark-blue-grey);
     --foreground: white;
     color: var(--foreground);
     background: var(--background);
-    height: 100%;
     text-align: center;
-    display: grid;
     align-items: center;
-    margin-bottom: 0;
     transition: color 0.3s linear, background-color 0.3s linear;
     overflow: hidden;
-     &:hover {
+    &:hover {
       color: white;
       background: black;
-    }
-    & * {
-      margin-top: 0;
     }
   }
 
@@ -32,17 +21,27 @@ css: |
     font-weight: bold;
   }
 
+  .panels-link {
+    text-decoration: none;
+    padding: 0.5em;
+    height: 100%;
+    margin-bottom: 0;
+    & * {
+      margin-top: 0;
+    }
+  }
+
 ---
 
 
-{%-if link -%}<a class="panels-link" href="{{ link | url }}">{%- endif -%}
 <li class="dashboard-panel" style="
     {% if rows %}grid-row:auto/span {{ rows }};{% endif %}
     {% if columns %}grid-column:span {{ columns }};{% endif %}
     {%- if fg %}--foreground: {{ fg }};{% endif -%}
     {%- if bg %}--background: {{ bg }};{% endif -%}
     {%- if align %}--align: {{ align }};{% endif -%}
-    " tabindex="0">
+    ">
+{%-if link -%}<a class="panels-link" href="{{ link | url }}">{%- endif -%}
   {{ content | safe }}
-</li>
 {%-if link -%}</a>{%- endif -%}
+</li>

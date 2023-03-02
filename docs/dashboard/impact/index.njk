@@ -41,20 +41,22 @@ operational systems.
   {% endif %}
 {% endmacro %}
 
+{% macro paneTitle(title) %}<h2>{{ title }}</h2>{% endmacro %}
+
 <div style="--big-number-size: 4em;">
 {% comp 'dashboard.impact.panels', { columns:4 } %}
 
       
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/dashboard/community' }%}
     {% call checkToggle('Events Held') -%}
-      <h3>Events held</h3>
+      {{ paneTitle('Events held') }}
         {{ comp.dashboard.impact.big_number({ number: search.data('dashboard/community').events.columns.total | sum | localize }) | safe }}
       {%- endcall %}
     {% endcomp %}
 
     {% call checkToggle('Total attendances') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/dashboard/community' }%}
-      <h3>Total attendances</h3>
+      {{ paneTitle('Total attendances') }}
       {{ comp.dashboard.impact.big_number({ number: search.data('dashboard/community').residents.columns.total | sum | localize }) | safe }}
       <p class="footnote">Count of activities attended by residents in each ward.</p>
     {% endcomp %}
@@ -62,7 +64,7 @@ operational systems.
 
     {% call checkToggle('Number of partners') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
-      <h3>Number of partners</h3>
+      {{ paneTitle('Number of partners') }}
       {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
     {% endcomp %}
       {%- endcall %}
@@ -70,7 +72,7 @@ operational systems.
     {% call checkToggle('Community Engagement') -%}
     {% comp 'dashboard.impact.panel', { rows: 3, columns: 2, bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
     {% comp 'dashboard.impact.embedded_figure' %}
-      <h3>Community Engagement</h3>
+      {{ paneTitle('Community Engagement') }}
       {{ comp.charts.hexmap({
           hexjson: hex.wards_leeds,
           data: search.data('dashboard/community').events.rows,
@@ -84,62 +86,62 @@ operational systems.
 
       {% call checkToggle('Total funds raised') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/fundraising'} %}
-      <h3>Total funds raised</h3>   
+      {{ paneTitle('Total funds raised') }}
     {% endcomp %}
     {%- endcall %}
 
     {% call checkToggle('Funding breakdown by sector') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/fundraising' } %}
-        <h3>Funding breakdown by sector</h3>
+        {{ paneTitle('Funding breakdown by sector') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
     {% endcomp %}
     {%- endcall %}
 
     {% call checkToggle('Funding prospects') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/fundraising' } %}
-        <h3>Funding prospects</h3>
+        {{ paneTitle('Funding prospects') }}
         {{ comp.dashboard.impact.big_number({ number: search.data('metrics/fundraising').count_by_stage.columns.count[2] | localize }) | safe }}
     {% endcomp %}
     {% endcall %}
 
       {% call checkToggle('Secured funders') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/fundraising' } %}
-        <h3>Secured funders</h3>
+        {{ paneTitle('Secured funders') }}
         {{ comp.dashboard.impact.big_number({ number: search.data('metrics/fundraising').count_by_stage.columns.count[1] | localize }) | safe }}
     {% endcomp %}
     {% endcall %}
 
       {% call checkToggle('Directly employed') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
-        <h3>People directly employed by Leeds Cultural Trust</h3>
+        {{ paneTitle('People directly employed by Leeds Cultural Trust') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
     {% endcomp %}
     {% endcall %}
 
       {% call checkToggle('Freelancers employed') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
-        <h3>Freelancers employed by Leeds Cultural Trust</h3>
+        {{ paneTitle('Freelancers employed by Leeds Cultural Trust') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
     {% endcomp %}
     {% endcall %}
 
       {% call checkToggle('Contracted organisations') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
-        <h3>Contracted organisations in Leeds</h3>
+        {{ paneTitle('Contracted organisations in Leeds') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
     {% endcomp %}
     {% endcall %}
 
       {% call checkToggle('Preferred suppliers') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
-        <h3>Preferred suppliers</h3>
+        {{ paneTitle('Preferred suppliers') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
     {% endcomp %}
     {% endcall %}
 
       {% call checkToggle('Volunteer applications') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/volunteers' } %}
-        <h3>Volunteer applications</h3>
+        {{ paneTitle('Volunteer applications') }}
         {{ comp.dashboard.impact.big_number({ number: search.data("metrics/volunteers").by_week.columns.applied | last | localize }) | safe }}
         <p class="footnote">The number of volunteering applications that have been received.</p>
     {% endcomp %}
@@ -147,7 +149,7 @@ operational systems.
 
       {% call checkToggle('Volunteer Offers') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/volunteers' } %}
-        <h3>Volunteer Offers</h3>
+        {{ paneTitle('Volunteer Offers') }}
         {{ comp.dashboard.impact.big_number({ number: search.data("metrics/volunteers").by_week.columns.offered | last or '--' | localize }) | safe }}
         <p class="footnote">The number of people who have been offered a volunteering role.</p>
     {% endcomp %}
@@ -155,7 +157,7 @@ operational systems.
 
       {% call checkToggle('Website views') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
-        <h3>Website views</h3>
+        {{ paneTitle('Website views') }}
     {% endcomp %}
     {% endcall %}
 
@@ -303,35 +305,35 @@ operational systems.
 
       {% call checkToggle('Unique website users') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
-        <h3>Unique website users</h3>
+        {{ paneTitle('Unique website users') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
     {% endcomp %}
     {% endcall %}
 
       {% call checkToggle('Schools percentage') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
-        <h3>Percentage of Leeds schools engaged with:</h3>
+        {{ paneTitle('Percentage of Leeds schools engaged with:') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC', suffix: '%' }) | safe }}
     {% endcomp %}
     {% endcall %}
 
       {% call checkToggle('Number of pupils') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
-        <h3>Number of pupils engaged with:</h3>
+        {{ paneTitle('Number of pupils engaged with:') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
     {% endcomp %}
     {% endcall %}
 
       {% call checkToggle('Featured articles') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/media_coverage/' } %}
-        <h3>Total featured articles</h3>
+        {{ paneTitle('Total featured articles') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
     {% endcomp %}
     {% endcall %}
 
     {% call checkToggle('Media coverage') -%}
     {% comp 'dashboard.impact.panel', { columns: 2, bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/media_coverage/' } %}
-        <h3>Media coverage</h3>
+        {{ paneTitle('Media coverage') }}
         <span class="subtext">Local: {{  search.data("metrics/media_coverage").stats.total_media_local | localize  }}</span>
         <span class="subtext">Regional: {{ search.data("metrics/media_coverage").stats.total_media_regional | localize }}</span>
         <span class="subtext">National: {{ search.data("metrics/media_coverage").stats.total_media_national | localize }}</span>
@@ -340,7 +342,7 @@ operational systems.
 
       {% call checkToggle('International online mentions') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/media_coverage/' } %}
-        <h3>International online mentions</h3>
+        {{ paneTitle('International online mentions') }}
         {{ comp.dashboard.impact.big_number({ number: search.data("metrics/media_coverage").stats.total_media_international | localize }) | safe }}
     {% endcomp %}
     {% endcall %}

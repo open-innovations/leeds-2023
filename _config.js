@@ -7,6 +7,7 @@ import inline from "lume/plugins/inline.ts";
 import jsx from "lume/plugins/jsx.ts";
 import metas from "lume/plugins/metas.ts";
 import postcss from "lume/plugins/postcss.ts";
+import colorFunction from "npm:postcss-color-function";
 
 import oiCharts from 'oi-lume-charts/mod.ts';
 import csvLoader from 'oi-lume-utils/loaders/csv-loader.ts';
@@ -45,7 +46,10 @@ site.use(imagick());
 site.use(inline());
 site.use(jsx());
 site.use(metas());
-site.use(postcss());
+site.use(postcss({
+  plugins: [colorFunction({ preserveCustomProps: true })],
+  keepDefaultPlugins: true,
+}));
 site.use(esbuild({
   extensions: [".ts", ".js"],
   options: {

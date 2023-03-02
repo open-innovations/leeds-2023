@@ -22,11 +22,14 @@
   --header-height: 80px;
   --background-colour: initial;
   --big-number-size: 5vw;
+
   --l23-cyan: hsl(173, 65%, 61%);
   --l23-dark-cyan: hsl(191, 57%, 15%);
   --l23-yellow: hsl(52, 100%, 50%);
   --l23-magenta: hsl(321, 100%, 50%);
   --l23-mint: hsl(87, 57%, 86%);
+  --l23-yellow-contrast: color(hsl(52, 100%, 50%) contrast(100%));
+  --l23-magenta-contrast: black;
 
   /* Actual styles, but not proper names */
   --l23-dark-blue-grey: hsl(188, 100%, 12%);

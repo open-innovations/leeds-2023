@@ -43,36 +43,17 @@ layout: layouts/default.njk
     value: search.data("metrics/volunteers").by_week.columns.confirmed | last or '--' | localize,
     description: "The number of volunteers who have been confirmed.",
     link: "~/metrics/volunteers/index.njk",
-    colour: "var(--l23-dark-blue-grey)",
-    background: "var(--l23-magenta)"
-  }) | safe }}
-  {{ comp.metric.headline({
-    title: "Volunteer applications",
-    value: search.data("metrics/volunteers").by_week.columns.applied | last | localize,
-    description: "The number of people who have applied to be volunteers.",
-    link: "~/metrics/volunteers/index.njk",
-    colour: "var(--l23-dark-blue-grey)",
+    colour: "var(--l23-yellow-contrast)",
     background: "var(--l23-yellow)"
   }) | safe }}
+
   {{ comp.metric.headline({
     title: "The Awakening Ballot entries",
     value: search.data("metrics/ballot").by_date.columns.cumulative_submissions | last | localize,
     description: "The number of ballot entries recorded.",
     link: "~/metrics/ballot/index.njk",
-    colour: "var(--l23-dark-blue-grey)",
-    background: "var(--l23-magenta)"
-  }) | safe }}
-
-  {{ comp.metric.headline({
-    title: "Roadshow Attendees",
-    value: search.data('metrics/roadshow-attendees').by_date.columns.cumulative_attendance | last | localize,
-    description: "Between " +
-      ( search.data('metrics/roadshow-attendees').by_date.columns.week_ending | first | date('MMMM') ) + " and " +
-      ( search.data('metrics/roadshow-attendees').by_date.columns.week_ending | last | date('MMMM') ) + " " +
-      ( search.data('metrics/roadshow-attendees').by_date.columns.week_ending | last | date('YYY') ),
-    link: "~/metrics/roadshow-attendees/index.njk",
-    colour: "var(--l23-dark-blue-grey)",
-    background: "var(--l23-cyan)"
+    colour: "var(--l23-magenta-contrast)",
+    background: "var(--l23-magenta) "
   }) | safe }}
 
 

@@ -10,7 +10,10 @@ export default function ({ search, url }) {
     .join('');
   
   return `<nav>
-    <button aria-expanded="false" class="menu-toggle"><span>Menu</span></button>
+    <button aria-expanded="false" class="menu-toggle">
+      <span>Menu</span>
+      <svg class="indicator" viewBox="0 0 30 40"><path d="M0 20 l30 -20 v40 Z"/></svg>
+    </button>
     <ul class="menu-items" hidden>${links}</ul>
   </nav>`;
 }
@@ -47,14 +50,13 @@ nav {
   &:hover span {
     text-decoration: underline;
   }
-  &:after {
-    content: "\u25C0";
-    display: block;
+  & .indicator {
+    height: 0.7rem;
+    fill: white;
     transition: var(--transition-timing);
     transition-property: transform;
-    font-size: 0.5em;
   }
-  &[aria-expanded=true]:after {
+  &[aria-expanded=true] .indicator {
     transform: rotate(-180deg);
   }
   @media screen and (min-width: 800px) {

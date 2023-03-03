@@ -85,6 +85,9 @@ addEventListener('DOMContentLoaded', () => {
 
   // Attach listeners
   addEventListener('scroll', hidePopup(0));
+  addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') hidePopup(0)();
+  })
   // Get all the hoverable elements
   const hoverables = document.querySelectorAll('[data-auto-popup]');
   for (const hoverable of hoverables) {

@@ -11,7 +11,7 @@ stages:
       size: 2937
     outs:
     - path: working/ballot/
-      md5: dc5932bdcbaf8360398e988b8a9f8869.dir
+      md5: 0b822430abdcf4a0cb53a6dd157cbda7.dir
       size: 184272
       nfiles: 2
   transform:
@@ -24,14 +24,16 @@ stages:
       md5: 3d129afbd5414fb3390205597ef14881
       size: 2937
     - path: working/ballot/
-      md5: dc5932bdcbaf8360398e988b8a9f8869.dir
+      md5: 0b822430abdcf4a0cb53a6dd157cbda7.dir
       size: 184272
       nfiles: 2
     outs:
-    - path: data/metrics/ballot/
-      md5: 530aa1292bb1d99472790ab76152c573.dir
-      size: 148284
-      nfiles: 2
+    - path: data/metrics/ballot/ballot_entries.csv
+      md5: 147095349ae8c64739c89bcd81730d87
+      size: 146654
+    - path: data/metrics/ballot/ballot_group_entries.csv
+      md5: fa9f1301b57033c680cd8f2e3935055c
+      size: 1630
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/summarize.py
     deps:
@@ -47,3 +49,14 @@ stages:
       md5: 33b7f041d9a8305c4551eda1923d3611.dir
       size: 8733
       nfiles: 7
+  transform_attendees:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/transform_attendees.py
+    deps:
+    - path: working/manual/events/Awakening/
+      md5: 405dbfed08139b7161c4f8dabe2103ae.dir
+      size: 86002
+      nfiles: 1
+    outs:
+    - path: data/metrics/events/awakening/attendees.csv
+      md5: 5c01f5e00fd791cc1b3e2540e4147381
+      size: 52939

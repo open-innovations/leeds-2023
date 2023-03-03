@@ -1,36 +1,38 @@
 let currentChart = 0;
 
 function hexes() {
-  const hexmaps = document.querySelectorAll('svg.hexmap');
+  const hexmaps = document.querySelectorAll("svg.hexmap");
   hexmaps.forEach((hexmap) => {
     addSkipLinks(hexmap);
-    const targets = hexmap.querySelectorAll('g.hex');
+    const targets = hexmap.querySelectorAll("g.hex");
     targets.forEach(makeTabbable);
   });
 }
 
 function makeTabbable(target: Element) {
-  target.setAttribute('tabindex', '0');
+  target.setAttribute("tabindex", "0");
 }
 function addSkipLinks(target: Element) {
   const container = target.parentElement;
   if (container === null) return;
 
-  const skipDown = document.createElement('a');
-  skipDown.id = 'chart-top-' + currentChart;
-  skipDown.href = '#chart-bottom-' + currentChart;
-  skipDown.text = 'Skip to bottom of chart';
+  const skipDown = document.createElement("a");
+  skipDown.id = "chart-top-" + currentChart;
+  skipDown.href = "#chart-bottom-" + currentChart;
+  skipDown.text = "Skip to bottom of chart";
+  skipDown.classList.add('skip-link');
   target.before(skipDown);
 
-  const skipUp = document.createElement('a');
-  skipUp.id = 'chart-bottom-' + currentChart;
-  skipUp.href = '#chart-top-' + currentChart;
-  skipUp.text = 'Skip to top of chart';
+  const skipUp = document.createElement("a");
+  skipUp.id = "chart-bottom-" + currentChart;
+  skipUp.href = "#chart-top-" + currentChart;
+  skipUp.text = "Skip to top of chart";
+  skipUp.classList.add('skip-link');
   target.after(skipUp);
 
   currentChart++;
 }
 
-addEventListener('DOMContentLoaded', () => {
+addEventListener("DOMContentLoaded", () => {
   hexes();
 });

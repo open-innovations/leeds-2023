@@ -1,0 +1,5 @@
+/* Principles applied everywhere */
+
+:focus {
+  outline: 4px solid var(--l23-magenta);
+}

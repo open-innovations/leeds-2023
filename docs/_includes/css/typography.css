@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2em;
 }
-body * + *, .forced-top-margin {
+main * + *, .forced-top-margin {
   margin-top: 1.5em;
 }
 .no-top-margin {

@@ -8,5 +8,10 @@
   },
   "compilerOptions": {
     "lib": ["deno.ns", "dom"]
+  },
+  "lint": {
+    "files": {
+      "exclude": ["_site"]
+    }
   }
 }

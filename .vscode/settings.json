@@ -13,5 +13,6 @@
   "python.autoComplete.extraPaths": [
   
   ],
-  "python.analysis.extraPaths": []
+  "python.analysis.extraPaths": [],
+  "deno.config": "deno.json"
 }

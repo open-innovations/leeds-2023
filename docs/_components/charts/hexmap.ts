@@ -41,6 +41,12 @@ export const css = `
         transform: scale(0.95);
         transition: transform 0.1s linear;
       }
+      &:focus path {
+        /*
+        stroke: black;
+        stroke-width: 4px
+        */
+      }
       &:hover path {
         transform: scale(0.90);
       }
@@ -327,7 +333,7 @@ export default function ({
       style="${bgColour ? `--hex-bg: ${bgColour}` : ''}"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
-      data-dependencies="/assets/js/auto-popup.js"
+      data-dependencies="/assets/js/auto-popup.js,/assets/js/chart-a11y.js"
       role="list"
       aria-labelledby="title-${uuid}"
     >

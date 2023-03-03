@@ -92,6 +92,7 @@ addEventListener('DOMContentLoaded', () => {
   const hoverables = document.querySelectorAll('[data-auto-popup]');
   for (const hoverable of hoverables) {
     hoverable.addEventListener('mouseover', showPopup);
+    hoverable.addEventListener('focus', showPopup);
     hoverable.addEventListener('mouseout', hidePopup());
   }
 });

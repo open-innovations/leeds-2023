@@ -12,8 +12,14 @@ stages:
     - path: docs/_data/metrics/mwmcmn/celeb_event_by_ward.csv
       md5: db4113d3ce3ebaba57437389ce5285e6
       size: 950
+    - path: scripts/dashboard/community/events.py
+      md5: 28dd520d2db2804e68fe5250ab15daea
+      size: 2036
     outs:
     - path: docs/dashboard/community/_data/events.csv
+      md5: 965ccf0b28ea02cac79d227f852195df
+      size: 1293
+    - path: docs/dashboard/community/_data/events_with_schools.csv
       md5: ce8248166567fb8011efd1578a3065d5
       size: 1378
   prepare_residents:
@@ -34,7 +40,13 @@ stages:
     - path: docs/metrics/roadshow-attendees/_data/by_ward.csv
       md5: a6c1eabb3c8da4db2c07cc46d07eb70f
       size: 1517
+    - path: scripts/dashboard/community/residents.py
+      md5: a64283ba9a495ba06cc81442a170c458
+      size: 2392
     outs:
     - path: docs/dashboard/community/_data/residents.csv
+      md5: 3105c9fb5d4d12a0cd71a11be5c4f5f6
+      size: 1327
+    - path: docs/dashboard/community/_data/residents_with_schools.csv
       md5: feecbfb95df99e41fcfbb9d9cee776fd
       size: 1429

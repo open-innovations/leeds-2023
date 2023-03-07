@@ -40,6 +40,11 @@ def summarise_events():
         columns={'WD21NM': 'ward_name'}).sort_values(by=['ward_name'])
     report.index.names = ['ward_code']
 
+    report.to_csv('docs/dashboard/community/_data/events_with_schools.csv')
+
+    # Remove schools data
+    report.drop(columns=['schools_engagement', 'total'], inplace=True)
+    report['total'] = report.sum(1)
     report.to_csv('docs/dashboard/community/_data/events.csv')
 
 

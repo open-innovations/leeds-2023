@@ -47,6 +47,11 @@ def summarise_activity():
     report.index.names = ['ward_code']
 
     # Save to CSV
+    report.to_csv('docs/dashboard/community/_data/residents_with_schools.csv')
+
+    # Create version without schools data
+    report.drop(columns=['schools_learners', 'total'], inplace=True)
+    report['total'] = report.sum(1, numeric_only=True)
     report.to_csv('docs/dashboard/community/_data/residents.csv')
 
 if __name__ == '__main__':

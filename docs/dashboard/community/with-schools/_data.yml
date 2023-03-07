@@ -1,6 +1,3 @@
-layout: layouts/project.njk
-summary: A dashboard showing Leeds 2023 engagement across the wards of Leeds
-
 table_columns:
   residents:
     - key: ward_name
@@ -13,6 +10,8 @@ table_columns:
       name: Volunteers
     - key: roadshow_contact
       name: Roadshow Contact
+    - key: schools_learners
+      name: School Learners
   events:
     - key: ward_name
       name: Ward Name
@@ -24,5 +23,7 @@ table_columns:
       name: Celebrations
     - key: roadshow
       name: Roadshows
+    - key: schools_engagement
+      name: Schools Event
     - key: hidden_stories
       name: Hidden Stories

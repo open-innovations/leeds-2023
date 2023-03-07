@@ -1,6 +1,7 @@
 ---
-title: Community Engagement
+title: Community Engagement (including schools)
 ---
+
 <style>
   tr { vertical-align: bottom; }
   th:not(:first-child) { writing-mode: vertical-rl; }
@@ -14,9 +15,10 @@ title: Community Engagement
 </p>
 
 <p>
-  This dashboard excludes schools data, as this is likely to skew the results.
-  You can also review <a href="/dashboard/community/with-schools/">a version of the dashboard including schools data</a>.
+  This version of the dashboard includes schools data. Be aware that this might skew data presented.
+  You can also review <a href="/dashboard/community/">a version of the dashboard without schools data</a>.
 </p>
+
 
 <h2>Resident engagement</h2>
 
@@ -31,7 +33,7 @@ title: Community Engagement
 
   {{ comp.charts.hexmap({
     hexjson: hex.wards_leeds,
-    data: residents.rows,
+    data: residents_with_schools.rows,
     matchKey: 'ward_code',
     valueProp: 'total',
     bgColour: '#BBB'
@@ -66,13 +68,18 @@ title: Community Engagement
       <dd>
         Number of contact consent forms that were submitted following the roadshows.
       </dd>
+
+      <dt>School learners</dt>
+      <dd>
+        Number of learners attending events held in school.
+      </dd>
     </dl>
   </div>
 {% endcomp %}
 
 {{ comp.charts.table({
   columns: table_columns.residents,
-  rows: residents.rows
+  rows: residents_with_schools.rows
 }) | safe }}
 
 <h2>Ward-focussed initiatives</h2>
@@ -89,7 +96,7 @@ title: Community Engagement
 
   {{ comp.charts.hexmap({
     hexjson: hex.wards_leeds,
-    data: events.rows,
+    data: events_with_schools.rows,
     matchKey: 'ward_code',
     valueProp: 'total',
     bgColour: '#BBB'
@@ -124,6 +131,11 @@ title: Community Engagement
         Number of roadshow events hosted.
       </dd>
 
+      <dt>Schools events</dt>
+      <dd>
+        Number of schools events held.
+      </dd>
+
       <dt>Hidden Stories</dt>
       <dd>Number of events hosted as part of the <a href="https://leeds2023.co.uk/news/leeds-2023-uncovers-hidden-stories-of-the-city-through-new-community-led-creative-projects-putting-local-people-at-the-heart-of-the-year-of-culture">Hidden Stories</a> initiative.</dd>
     </dl>
@@ -133,5 +145,5 @@ title: Community Engagement
 
 {{ comp.charts.table({
   columns: table_columns.events,
-  rows: events.rows
+  rows: events_with_schools.rows
 }) | safe }}

@@ -1,34 +1,34 @@
-ward_code,ballot,roadshow_contact,schools_learners,volunteering,total,ward_name
-E05012841,50,11,28,25,114,Adel and Wharfdale
-E05012842,57,9,0,23,89,Alwoodley
-E05011384,24,11,0,19,54,Ardsley and Robin Hood
-E05011385,42,8,0,17,67,Armley
-E05012647,77,2,83,18,180,Beeston and Holbeck
-E05011387,52,12,30,13,107,Bramley and Stanningley
-E05011388,47,5,240,19,311,Burmantofts and Richmond Hill
-E05011389,43,18,0,23,84,Calverley and Farsley
-E05011390,130,20,150,47,347,Chapel Allerton
-E05011391,23,6,0,9,38,Cross Gates and Whinmoor
-E05012648,38,2,210,9,259,Farnley and Wortley
-E05013830,11,2,0,7,20,Garforth and Swillington
-E05011394,20,5,0,6,31,Gipton and Harehills
-E05011395,22,6,0,9,37,Guiseley and Rawdon
-E05011396,17,3,0,13,33,Harewood
-E05011397,107,22,0,80,209,Headingley and Hyde Park
-E05011547,100,11,0,33,144,Horsforth
-E05011399,48,6,0,34,88,Hunslet and Riverside
-E05011400,13,5,0,12,30,Killingbeck and Seacroft
-E05011401,20,19,0,7,46,Kippax and Methley
-E05011402,79,16,0,37,132,Kirkstall
-E05011403,99,12,0,159,270,Little London and Woodhouse
-E05011404,27,8,136,7,178,Middleton Park
-E05011405,81,3,57,28,169,Moortown
-E05011406,26,16,0,10,52,Morley North
-E05011407,42,13,0,14,69,Morley South
-E05011549,18,3,0,8,29,Otley and Yeadon
-E05011409,19,14,0,15,48,Pudsey
-E05011410,27,4,0,9,40,Rothwell
-E05011411,68,2,30,44,144,Roundhay
-E05013831,29,11,0,17,57,Temple Newsam
-E05011413,68,26,0,38,132,Weetwood
-E05011414,15,3,0,8,26,Wetherby
+ward_code,ballot,roadshow_contact,volunteering,ward_name,total
+E05012841,50,11,25,Adel and Wharfdale,86
+E05012842,57,9,23,Alwoodley,89
+E05011384,24,11,19,Ardsley and Robin Hood,54
+E05011385,42,8,17,Armley,67
+E05012647,77,2,18,Beeston and Holbeck,97
+E05011387,52,12,13,Bramley and Stanningley,77
+E05011388,47,5,19,Burmantofts and Richmond Hill,71
+E05011389,43,18,23,Calverley and Farsley,84
+E05011390,130,20,47,Chapel Allerton,197
+E05011391,23,6,9,Cross Gates and Whinmoor,38
+E05012648,38,2,9,Farnley and Wortley,49
+E05013830,11,2,7,Garforth and Swillington,20
+E05011394,20,5,6,Gipton and Harehills,31
+E05011395,22,6,9,Guiseley and Rawdon,37
+E05011396,17,3,13,Harewood,33
+E05011397,107,22,80,Headingley and Hyde Park,209
+E05011547,100,11,33,Horsforth,144
+E05011399,48,6,34,Hunslet and Riverside,88
+E05011400,13,5,12,Killingbeck and Seacroft,30
+E05011401,20,19,7,Kippax and Methley,46
+E05011402,79,16,37,Kirkstall,132
+E05011403,99,12,159,Little London and Woodhouse,270
+E05011404,27,8,7,Middleton Park,42
+E05011405,81,3,28,Moortown,112
+E05011406,26,16,10,Morley North,52
+E05011407,42,13,14,Morley South,69
+E05011549,18,3,8,Otley and Yeadon,29
+E05011409,19,14,15,Pudsey,48
+E05011410,27,4,9,Rothwell,40
+E05011411,68,2,44,Roundhay,114
+E05013831,29,11,17,Temple Newsam,57
+E05011413,68,26,38,Weetwood,132
+E05011414,15,3,8,Wetherby,26

@@ -3,18 +3,21 @@ stages:
     cmd: PYTHONPATH=scripts/ python3 scripts/dashboard/community/events.py
     wdir: ../../..
     deps:
+      - scripts/dashboard/community/events.py
       - data/metrics/roadshows/attendance.csv
       - data/metrics/schools/schools_engagement.csv
       # TODO check this with Taz
       - docs/_data/metrics/mwmcmn/celeb_event_by_ward.csv
     outs:
       - docs/dashboard/community/_data/events.csv:
-          persist: true
+          cache: false 
+      - docs/dashboard/community/_data/events_with_schools.csv:
           cache: false 
   prepare_residents:
     cmd: PYTHONPATH=scripts/ python3 scripts/dashboard/community/residents.py
     wdir: ../../..
     deps:
+      - scripts/dashboard/community/residents.py
       - data/reference/leeds_wards.csv
       - data/metrics/ballot/ballot_entries.csv
       - data/metrics/volunteers/volunteers.csv
@@ -22,5 +25,6 @@ stages:
       - docs/metrics/roadshow-attendees/_data/by_ward.csv
     outs:
       - docs/dashboard/community/_data/residents.csv:
-          persist: true
+          cache: false
+      - docs/dashboard/community/_data/residents_with_schools.csv:
           cache: false

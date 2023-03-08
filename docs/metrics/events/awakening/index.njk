@@ -19,23 +19,26 @@ limitations:
   {{ params.label }}</br>
   {{ params.value }} submissions
 {%- endmacro -%}
+{%- macro popupAttendees(params) -%}
+  {{ params.label }}</br>
+  {{ params.value }} attendees
+{%- endmacro -%}
 {% from 'macros.njk' import dateFormatterNoYear %}
 
 <h2>Headlines</h2>
 
 {% comp 'grid.autogrid', { min_width: '24rem' } %}
+
 {{ comp.metric.headline({
-  title: "Individual ballot entries", headingLevel: 3,
-  value: current.submissions | localize,
-  description: "Total number of ballot entries received.",
-  background: "var(--l23-magenta)"
+  title: "Awakening attendees", headingLevel: 3,
+  value: attendees.attended | localize,
+  description: "Total number of attendees based on ticket usage."
 }) | safe }}
 
 {{ comp.metric.headline({
-  title: "Group ballot entries", headingLevel: 3,
-  value: current.group_submissions | localize,
-  description: "Total number of group ballot entries received.",
-  background: "var(--l23-cyan)"
+  title: "Awakening tickets claimed", headingLevel: 3,
+  value: attendees.booked | localize,
+  description: "Total number of tickets booked."
 }) | safe }}
 
 {{ comp.metric.headline({
@@ -44,9 +47,55 @@ limitations:
   description: "Total number of seats allocated based on individual and group entries received.",
   background: "var(--l23-yellow)"
 }) | safe }}
+
+{{ comp.metric.headline({
+  title: "Ballot entries", headingLevel: 3,
+  value: (current.submissions + current.group_submissions) | localize,
+  description: "Total number of ballot entries individual and group received.",
+  background: "var(--l23-magenta)"
+}) | safe }}
 {% endcomp %}
 
 <p>Page updated: {{ date | date('HUMAN_DATE') }}</p>
+
+<h2>Attendees at the The Awakening</h2>
+
+{% comp 'layout.figure', {
+  title: 'Count of The Awakening attendees by ward of residence',
+  max_width: '40rem'
+} %}
+  {{ comp.charts.hexmap({
+    hexjson: hex.wards_leeds,
+    data: attendees_by_ward.rows,
+    matchKey: 'ward_code',
+    valueProp: 'attended',
+    popup: popupAttendees,
+    labelKey: 'label',
+    title: 'Count of attendees at The Awakening by ward of residence',
+    bgColour: '#ddd',
+    colourScale: colours.scales.magenta
+  }) | safe }}
+{% endcomp %}
+
+
+{% comp 'layout.figure', {
+  title: 'Count of The Awakening attendees by local authority',
+  max_width: '40rem'
+} %}
+  {{ comp.charts.hexmap({
+    hexjson: hex.leeds_city_region,
+    data: attendees_by_la.rows,
+    matchKey: 'la_code',
+    valueProp: 'attended',
+    popup: popupAttendees,
+    labelKey: 'label',
+    title: 'Count of attendees at The Awakening by ward of residence',
+    bgColour: '#ddd',
+    colourScale: colours.scales.magenta
+  }) | safe }}
+{% endcomp %}
+
+
 <h2>Where ballot entries came from</h2>
 <p>A <a href="https://leeds2023.co.uk/whats-on/the-awakening/enter-the-ballot">ballot process</a> was used to allocate tickets to attend 
 <a href="https://leeds2023.co.uk/whats-on/the-awakening/">The Awakening</a>, the opening event of the LEEDS 2023. 

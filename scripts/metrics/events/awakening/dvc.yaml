@@ -30,6 +30,7 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/events/awakening/transform_attendees.py
     wdir: ../../../..
     deps:
+      - scripts/metrics/events/awakening/transform_attendees.py
       - working/manual/events/Awakening/
     outs:
     - data/metrics/events/awakening/attendees.csv:
@@ -56,3 +57,16 @@ stages:
         cache: false
     - docs/metrics/events/awakening/_data/local_autority_stats.json:
         cache: false
+  prepare_attendees:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/events/awakening/prepare_attendees.py
+    wdir: ../../../..
+    deps:
+      - scripts/metrics/events/awakening/prepare_attendees.py
+      - data/metrics/events/awakening/attendees.csv
+    outs:
+      - docs/metrics/events/awakening/_data/attendees.json:
+          cache: false
+      - docs/metrics/events/awakening/_data/attendees_by_ward.csv:
+          cache: false
+      - docs/metrics/events/awakening/_data/attendees_by_la.csv:
+          cache: false

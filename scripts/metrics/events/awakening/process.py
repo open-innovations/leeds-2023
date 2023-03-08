@@ -6,7 +6,7 @@ import pandas as pd
 from util.firebase import pull_collection
 from util.geography import match_ward, match_la
 
-from metrics.ballot.extract import load_individual, load_group
+from extract import load_individual, load_group
 
 DATA_DIR = os.path.join('data', 'metrics', 'ballot')
 RAW_DATA = os.path.join(DATA_DIR, 'ballot_entries.csv')

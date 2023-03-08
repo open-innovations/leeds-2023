@@ -3,7 +3,7 @@ import os
 
 import pandas as pd
 import numpy as np
-from metrics.ballot.process import load_raw_data, load_group_data
+from process import load_raw_data, load_group_data
 from util.geography import local_authority_stats
 
 VIEW_DIR = os.path.join('docs', 'metrics', 'events', 'awakening', '_data')

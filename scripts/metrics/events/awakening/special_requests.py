@@ -2,7 +2,7 @@ import os
 import logging
 
 import pandas as pd
-from metrics.ballot.firebase import get_db
+from util.firebase import get_db
 
 TEMP_DIR = 'working/metrics/ballot'
 def fiona_2022_10_18():

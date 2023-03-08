@@ -2,21 +2,21 @@
 stages:
   extract:
     frozen: false
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/extract.py
-    wdir: ../../..
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/events/awakening/extract.py
+    wdir: ../../../..
     always_changed: true
     deps:
-    - scripts/metrics/ballot/process.py
+    - scripts/metrics/events/awakening/process.py
     - data/reference/postcodes.csv
     outs:
     - working/ballot/:
         persist: true
         cache: false
   transform:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/process.py
-    wdir: ../../..
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/events/awakening/process.py
+    wdir: ../../../..
     deps:
-    - scripts/metrics/ballot/process.py
+    - scripts/metrics/events/awakening/process.py
     - data/reference/postcodes.csv
     - working/ballot/
     outs:
@@ -27,8 +27,8 @@ stages:
         persist: true
         cache: false
   transform_attendees:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/transform_attendees.py
-    wdir: ../../..
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/events/awakening/transform_attendees.py
+    wdir: ../../../..
     deps:
       - working/manual/events/Awakening/
     outs:
@@ -36,10 +36,10 @@ stages:
         persist: true
         cache: false
   prepare:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/summarize.py
-    wdir: ../../..
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/events/awakening/summarize.py
+    wdir: ../../../..
     deps:
-    - scripts/metrics/ballot/summarize.py
+    - scripts/metrics/events/awakening/summarize.py
     - data/metrics/ballot/
     outs:
     - docs/metrics/events/awakening/_data/by_age.csv:

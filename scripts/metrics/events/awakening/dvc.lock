@@ -1,30 +1,30 @@
 schema: '2.0'
 stages:
   extract:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/extract.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/events/awakening/extract.py
     deps:
     - path: data/reference/postcodes.csv
       md5: 3c332ace66b28524c0a710fca1a4b1c0
       size: 76072682
-    - path: scripts/metrics/ballot/process.py
-      md5: 3d129afbd5414fb3390205597ef14881
-      size: 2937
+    - path: scripts/metrics/events/awakening/process.py
+      md5: d6122c13f010b6f8f251edce90ac6ec5
+      size: 2922
     outs:
     - path: working/ballot/
-      md5: 0b822430abdcf4a0cb53a6dd157cbda7.dir
+      md5: e8b2d804187f137d4a2daa8551729b98.dir
       size: 184272
       nfiles: 2
   transform:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/process.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/events/awakening/process.py
     deps:
     - path: data/reference/postcodes.csv
       md5: 3c332ace66b28524c0a710fca1a4b1c0
       size: 76072682
-    - path: scripts/metrics/ballot/process.py
-      md5: 3d129afbd5414fb3390205597ef14881
-      size: 2937
+    - path: scripts/metrics/events/awakening/process.py
+      md5: d6122c13f010b6f8f251edce90ac6ec5
+      size: 2922
     - path: working/ballot/
-      md5: 0b822430abdcf4a0cb53a6dd157cbda7.dir
+      md5: e8b2d804187f137d4a2daa8551729b98.dir
       size: 184272
       nfiles: 2
     outs:
@@ -35,15 +35,15 @@ stages:
       md5: fa9f1301b57033c680cd8f2e3935055c
       size: 1630
   prepare:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/summarize.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/events/awakening/summarize.py
     deps:
     - path: data/metrics/ballot/
       md5: 530aa1292bb1d99472790ab76152c573.dir
       size: 148284
       nfiles: 2
-    - path: scripts/metrics/ballot/summarize.py
-      md5: 5e7ccae0e0772c89ee8e25574c3bb98c
-      size: 3677
+    - path: scripts/metrics/events/awakening/summarize.py
+      md5: 2bdd79316db69d7f341fdb1a550bf678
+      size: 3662
     outs:
     - path: docs/metrics/events/awakening/_data/by_age.csv
       md5: 5afacb01bd55f3013702110fde2e75ee
@@ -67,7 +67,7 @@ stages:
       md5: 98364abe1fed6c930880724f01e743db
       size: 66
   transform_attendees:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/transform_attendees.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/events/awakening/transform_attendees.py
     deps:
     - path: working/manual/events/Awakening/
       md5: 405dbfed08139b7161c4f8dabe2103ae.dir

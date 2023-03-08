@@ -45,13 +45,6 @@ jobs:
           dvc update -R working
           dvc repro -R scripts
 
-      - name: Process data for site
-        env:
-          PYTHONPATH: scripts
-
-        run: |
-          python scripts/process_for_site.py
-
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:

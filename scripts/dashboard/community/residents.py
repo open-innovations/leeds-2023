@@ -3,6 +3,16 @@ import pandas as pd
 from util.geography import LEEDS_LA_CODE
 
 
+def get_event_awakening():
+    data = pd.read_csv('data/metrics/events/awakening/attendees.csv', usecols=[
+        'ward_code', 'la_code', 'awakening_attended'
+    ]).rename(columns={'awakening_attended': 'count'})
+    data = data[data.la_code == LEEDS_LA_CODE].drop(
+        columns='la_code').groupby('ward_code').sum().reset_index()
+    data['activity'] = 'awakening_attendance'
+    return data
+
+
 def summarise_activity():
     name_map = pd.read_csv(
         'data/reference/leeds_wards.csv', index_col='WD21CD')
@@ -30,9 +40,12 @@ def summarise_activity():
     ).rename(columns={'total_number_of_learners': 'count'})
     schools['activity'] = 'schools_learners'
 
+    awakening = get_event_awakening()
+
     # Create report
     report = pd.concat([
         ballot,
+        get_event_awakening(),
         volunteers,
         roadshow,
         schools,
@@ -53,6 +66,7 @@ def summarise_activity():
     report.drop(columns=['schools_learners', 'total'], inplace=True)
     report['total'] = report.sum(1, numeric_only=True)
     report.to_csv('docs/dashboard/community/_data/residents.csv')
+
 
 if __name__ == '__main__':
     summarise_activity()

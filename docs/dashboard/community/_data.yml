@@ -9,6 +9,8 @@ table_columns:
       name: Total
     - key: ballot
       name: Ballot
+    - key: awakening_attendance
+      name: Awakening Attendance
     - key: volunteering
       name: Volunteers
     - key: roadshow_contact

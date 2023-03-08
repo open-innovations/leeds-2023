@@ -28,6 +28,9 @@ stages:
     - path: data/metrics/ballot/ballot_entries.csv
       md5: 147095349ae8c64739c89bcd81730d87
       size: 146654
+    - path: data/metrics/events/awakening/attendees.csv
+      md5: 5c01f5e00fd791cc1b3e2540e4147381
+      size: 52939
     - path: data/metrics/schools/schools_engagement.csv
       md5: 9392a50d1849768c95f8132d29c5dd44
       size: 529
@@ -41,12 +44,12 @@ stages:
       md5: a6c1eabb3c8da4db2c07cc46d07eb70f
       size: 1517
     - path: scripts/dashboard/community/residents.py
-      md5: a64283ba9a495ba06cc81442a170c458
-      size: 2392
+      md5: 23930d26e208868eacba4da732ed06c3
+      size: 2863
     outs:
     - path: docs/dashboard/community/_data/residents.csv
-      md5: 3105c9fb5d4d12a0cd71a11be5c4f5f6
-      size: 1327
+      md5: 21a46e2bda2c6f8317e8d08bc62ea48e
+      size: 1472
     - path: docs/dashboard/community/_data/residents_with_schools.csv
-      md5: feecbfb95df99e41fcfbb9d9cee776fd
-      size: 1429
+      md5: b5dbf188a09fb1fcdbe605b38b506a18
+      size: 1569

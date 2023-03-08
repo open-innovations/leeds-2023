@@ -1,29 +1,29 @@
 stages:
   transform:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/combine_cision.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/media/combine_cision.py
     wdir: ../../..
     deps:
-    - scripts/metrics/media_coverage/combine_cision.py
+    - scripts/metrics/media/combine_cision.py
     - working/manual/media/
     outs:
     - data/metrics/media_coverage/combined_cision.csv:
         persist: true
         cache: false
   transform_historic:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/combine_historic.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/media/combine_historic.py
     wdir: ../../..
     deps:
-    - scripts/metrics/media_coverage/combine_historic.py
+    - scripts/metrics/media/combine_historic.py
     - working/manual/media/
     outs:
     - data/metrics/media_coverage/combined_historic.csv:
         persist: false
         cache: false
   prepare:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/process.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/media/process.py
     wdir: ../../..
     deps:
-    - scripts/metrics/media_coverage/process.py
+    - scripts/metrics/media/process.py
     - data/metrics/media_coverage/combined_cision.csv
     - data/metrics/media_coverage/combined_historic.csv
     outs:

@@ -1,23 +1,23 @@
 schema: '2.0'
 stages:
   transform:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/combine_cision.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/media/combine_cision.py
     deps:
-    - path: scripts/metrics/media_coverage/combine_cision.py
-      md5: 3873ef413af386ddc092e3f5dae6c90f
-      size: 5762
+    - path: scripts/metrics/media/combine_cision.py
+      md5: 6ac2f07b2d5938c9d656050b90e142d0
+      size: 5857
     - path: working/manual/media/
       md5: 8395c26082a24f46f71fe491a2ea66fb.dir
       size: 1020877
       nfiles: 17
     outs:
     - path: data/metrics/media_coverage/combined_cision.csv
-      md5: 276d9763755895afce58d954a29625a5
-      size: 68456
+      md5: 8bf1e20777426b7a7859269bb9a12f15
+      size: 194002
   transform_historic:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/combine_historic.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/media/combine_historic.py
     deps:
-    - path: scripts/metrics/media_coverage/combine_historic.py
+    - path: scripts/metrics/media/combine_historic.py
       md5: ff6c2ea8554040f3f2fc10f23b109b91
       size: 2586
     - path: working/manual/media/
@@ -29,19 +29,19 @@ stages:
       md5: 2075d0be6cc9d6325fb589b3cdab43c8
       size: 66475
   prepare:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/media_coverage/process.py
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/media/process.py
     deps:
     - path: data/metrics/media_coverage/combined_cision.csv
-      md5: 276d9763755895afce58d954a29625a5
-      size: 68456
+      md5: 8bf1e20777426b7a7859269bb9a12f15
+      size: 194002
     - path: data/metrics/media_coverage/combined_historic.csv
       md5: 2075d0be6cc9d6325fb589b3cdab43c8
       size: 66475
-    - path: scripts/metrics/media_coverage/process.py
+    - path: scripts/metrics/media/process.py
       md5: c4093c5f09332693d1940164900e2257
       size: 3087
     outs:
     - path: docs/metrics/media_coverage/_data
-      md5: d701860db7152ae862d98a0eaaae9d56.dir
-      size: 833
+      md5: 9f346b753783558384bbb7428ba7c48e.dir
+      size: 849
       nfiles: 5

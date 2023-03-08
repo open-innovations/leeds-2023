@@ -38,6 +38,7 @@ def load_new_file(filepath):
     known_formats = [
         "%d/%m/%Y",
         "%m/%d/%Y",
+        "%d/%m/%y",
         "%d.%m.%y",
     ]
     # Convert news date into datetime format
@@ -102,8 +103,11 @@ def combine_new_data(dfs):
         earliest = data.news_date.min()
         # Get the next one
         current = dfs.pop()
+
+        # TODO Remove likely duplicates
         # Filter the data frame so it excludes dates already processed
-        current['data'] = current['data'][current['data'].news_date < earliest]
+        # This does not work...
+        # current['data'] = current['data'][current['data'].news_date < earliest]
 
         logger.info('Processing data loaded from %s (%d records)',
                     current['filename'], len(current['data']))

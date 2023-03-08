@@ -17,8 +17,9 @@ nav_order: 20
     value: search.data("metrics/volunteers").by_week.columns.applied | last,
     measure: 'Number of volunteer applications received'
   },
-  ballot: {
-    value: search.data('metrics/ballot').by_date.columns.cumulative_submissions | last
+  awakening: {
+    value: search.data('metrics/events/awakening').by_date.columns.cumulative_submissions | last,
+    measure: 'Number of ballot entries'
   },
   callouts: {
     value: search.data('metrics/callouts').headline.responses,

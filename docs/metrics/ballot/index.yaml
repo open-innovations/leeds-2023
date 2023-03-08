@@ -1,0 +1,2 @@
+layout: layouts/redirect.njk
+redirectTarget: ~/metrics/events/awakening/index.njk

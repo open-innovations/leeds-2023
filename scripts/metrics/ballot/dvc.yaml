@@ -1,6 +1,7 @@
 # Callouts pipelines
 stages:
   extract:
+    frozen: false
     cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/extract.py
     wdir: ../../..
     always_changed: true
@@ -41,6 +42,17 @@ stages:
     - scripts/metrics/ballot/summarize.py
     - data/metrics/ballot/
     outs:
-    - docs/metrics/ballot/_data:
-        persist: true
+    - docs/metrics/events/awakening/_data/by_age.csv:
+        cache: false
+    - docs/metrics/events/awakening/_data/by_date.csv:
+        cache: false
+    - docs/metrics/events/awakening/_data/by_local_authority.csv:
+        cache: false
+    - docs/metrics/events/awakening/_data/by_source.csv:
+        cache: false
+    - docs/metrics/events/awakening/_data/by_ward.csv:
+        cache: false
+    - docs/metrics/events/awakening/_data/current.json:
+        cache: false
+    - docs/metrics/events/awakening/_data/local_autority_stats.json:
         cache: false

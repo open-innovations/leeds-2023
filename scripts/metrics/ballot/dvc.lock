@@ -11,7 +11,7 @@ stages:
       size: 2937
     outs:
     - path: working/ballot/
-      md5: e8b2d804187f137d4a2daa8551729b98.dir
+      md5: 0b822430abdcf4a0cb53a6dd157cbda7.dir
       size: 184272
       nfiles: 2
   transform:
@@ -24,7 +24,7 @@ stages:
       md5: 3d129afbd5414fb3390205597ef14881
       size: 2937
     - path: working/ballot/
-      md5: e8b2d804187f137d4a2daa8551729b98.dir
+      md5: 0b822430abdcf4a0cb53a6dd157cbda7.dir
       size: 184272
       nfiles: 2
     outs:
@@ -42,13 +42,30 @@ stages:
       size: 148284
       nfiles: 2
     - path: scripts/metrics/ballot/summarize.py
-      md5: 97558bf53d7e05aa6b29510a706b7d54
-      size: 3664
+      md5: 5e7ccae0e0772c89ee8e25574c3bb98c
+      size: 3677
     outs:
-    - path: docs/metrics/ballot/_data
-      md5: 33b7f041d9a8305c4551eda1923d3611.dir
-      size: 8733
-      nfiles: 7
+    - path: docs/metrics/events/awakening/_data/by_age.csv
+      md5: 5afacb01bd55f3013702110fde2e75ee
+      size: 191
+    - path: docs/metrics/events/awakening/_data/by_date.csv
+      md5: 611c470f2bf147e5f2f29beb38393db8
+      size: 2383
+    - path: docs/metrics/events/awakening/_data/by_local_authority.csv
+      md5: fdc49845936cd7b40004544510f9d44a
+      size: 2166
+    - path: docs/metrics/events/awakening/_data/by_source.csv
+      md5: 15c03a96a51510f751c35086cef7c94d
+      size: 295
+    - path: docs/metrics/events/awakening/_data/by_ward.csv
+      md5: 06e0161c93b24faf1851f20a27d373e4
+      size: 3573
+    - path: docs/metrics/events/awakening/_data/current.json
+      md5: 73becdf2ed3d5ad43179ea94b3f79169
+      size: 59
+    - path: docs/metrics/events/awakening/_data/local_autority_stats.json
+      md5: 98364abe1fed6c930880724f01e743db
+      size: 66
   transform_attendees:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/ballot/transform_attendees.py
     deps:

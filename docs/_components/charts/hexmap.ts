@@ -38,17 +38,17 @@ export const css = `
     & .hex {
       & path {
         fill: var(--hex-fill);
-        transform: scale(0.95);
+        transform: scale(0.9);
         transition: transform 0.1s linear;
       }
       &:focus path {
         /*
         stroke: black;
-        stroke-width: 4px
+        stroke-width: 4;
         */
       }
       &:hover path {
-        transform: scale(0.90);
+        transform: unset;
       }
     }
   }

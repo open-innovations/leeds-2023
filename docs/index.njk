@@ -37,6 +37,15 @@ layout: layouts/default.njk
     <p>Visit the main LEEDS 2023 Year Of Culture website</p>
   {% endcomp %}
 
+  {% comp "grid.block.impact", {
+    link: "https://data.leeds2023.co.uk/dashboard/impact/",
+    fg: "black",
+    bg: "var(--l23-cyan)"
+  } %}
+    <h2>Impact Dashboard</h3>
+    <p>View the LEEDS 2023 Impact Dashboard</p>
+  {% endcomp %}
+
   <!-- Some metrics -->
   {{ comp.metric.headline({
     title: "Volunteers confirmed",

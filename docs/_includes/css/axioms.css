@@ -3,3 +3,7 @@
 :focus {
   outline: 4px solid var(--l23-magenta);
 }
+
+html {
+  scroll-padding-top: var(--header-height);
+}

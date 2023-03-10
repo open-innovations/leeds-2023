@@ -44,7 +44,7 @@ operational systems.
 {% macro paneTitle(title) %}<h2>{{ title }}</h2>{% endmacro %}
 
 <div style="--big-number-size: 4em;">
-{% comp 'dashboard.impact.panels', { columns:4 } %}
+{% comp 'dashboard.impact.panels' %}
 
       
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/dashboard/community' }%}
@@ -324,7 +324,7 @@ operational systems.
     {% endcomp %}
     {% endcall %}
 
-      {% call checkToggle('Featured articles') -%}
+    {% call checkToggle('Featured articles') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/media_coverage/' } %}
         {{ paneTitle('Total featured articles') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
@@ -332,7 +332,7 @@ operational systems.
     {% endcall %}
 
     {% call checkToggle('Media coverage') -%}
-    {% comp 'dashboard.impact.panel', { columns: 2, bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/media_coverage/' } %}
+    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/media_coverage/' } %}
         {{ paneTitle('Media coverage') }}
         <span class="subtext">Local: {{  search.data("metrics/media_coverage").stats.total_media_local | localize  }}</span>
         <span class="subtext">Regional: {{ search.data("metrics/media_coverage").stats.total_media_regional | localize }}</span>

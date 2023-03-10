@@ -10,6 +10,12 @@ css: |
     align-items: center;
     transition: color 0.3s linear, background-color 0.3s linear;
     overflow: hidden;
+
+    & > * {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
     &:hover {
       color: white;
       background: black;
@@ -22,10 +28,19 @@ css: |
   }
 
   .panels-link {
-    text-decoration: none;
-    padding: 0.5em;
+    color: inherit;
     height: 100%;
-    margin-bottom: 0;
+    overflow: hidden;
+    text-decoration: none;
+    transition: color 0.3s linear, background-color 0.3s linear;
+    padding: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:hover {
+      text-decoration: underline;
+    }
     & * {
       margin-top: 0;
     }

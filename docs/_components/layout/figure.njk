@@ -1,8 +1,30 @@
 ---
 css: |
-  figure figcaption {
-    font-style: italic;
-    text-align: center;
+  figure {
+    position: relative;
+    overflow: hidden;
+    & figcaption {
+      font-style: italic;
+      text-align: center;
+    }
+    & .skip-link {
+      position: absolute;
+      right: 100%; 
+      display: block;
+      background: orange;
+      padding: 0.5rem 1rem;
+      margin-top: 0;
+      &:first-child {
+        top: 1rem;
+      }
+      &:last-child {
+        bottom: 1rem;
+      }
+      &:focus {
+        left: 1rem;
+        right: unset;
+      }
+    }
   }
 ---
 <figure style="{% if max_width %}--max-width:{{ max_width }};{% endif %}">

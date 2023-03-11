@@ -13,7 +13,7 @@ title: Community Engagement
   wards where further engagement is needed.
 </p>
 
-<p>
+<p class='notification'>
   This dashboard excludes schools data, as this is likely to skew the results.
   You can also review <a href="/dashboard/community/with-schools/">a version of the dashboard including schools data</a>.
 </p>
@@ -34,7 +34,7 @@ title: Community Engagement
     data: residents.rows,
     matchKey: 'ward_code',
     valueProp: 'total',
-    bgColour: '#BBB'
+    colourScale: colours.scales.yellow
   }) | safe }}
 
   {% endcomp %}
@@ -46,31 +46,16 @@ title: Community Engagement
     <p>
       The metrics included in the overall hexmap are listed below. The data for each
       can be found in the table below the hexmap. The activity has been allocated to
-      ward by mapping the postscodes associated with the activity. In the case of
-      some metrics (e.g. school learners), this is the postcode of the school, not
-      the residence postcode.
+      ward by mapping the postscodes associated with the activity.
     </p>
 
     <dl>
-      <dt><a href="/metrics/events/awakening">Awakening ballot entries</a></dt>
-      <dd>
-        Number of ballot entries received.
-      </dd>
-
-      <dt><a href="/metrics/events/awakening">Awakening attendance</a></dt>
-      <dd>
-        Number of attendees at The Awakening
-      </dd>
-
-      <dt><a href="/metrics/volunteers">Volunteers</a></dt>
-      <dd>
-        Number of volunteers who have applied.
-      </dd>
-
-      <dt><a href="/metrics/roadshow-attendees">Roadshow contact</a></dt>
-      <dd>
-        Number of contact consent forms that were submitted following the roadshows.
-      </dd>
+      {% for layer in table_columns.residents %}
+        {% if layer.description %}
+          <dt>{% if layer.link %}<a href="{{ layer.link }}">{% endif %}{{ layer.name }}{% if layer.link %}</a>{% endif %}</dt>
+          <dd>{{ layer.description | md | safe }}</dd>
+        {% endif %}
+      {% endfor %}
     </dl>
   </div>
 {% endcomp %}
@@ -97,7 +82,7 @@ title: Community Engagement
     data: events.rows,
     matchKey: 'ward_code',
     valueProp: 'total',
-    bgColour: '#BBB'
+    colourScale: colours.scales.yellow
   }) | safe }}
 
   {% endcomp %}
@@ -112,25 +97,12 @@ title: Community Engagement
     </p>
 
     <dl>
-      <dt>Ward Hosts</dt>
-      <dd>
-        Ward hosts appointed (one per ward).
-      </dd>
-
-      <dt>Celebrations</dt>
-      <dd>
-        Celebration events held in each of the wards. At the moment, this is based
-        on data from the <a href="/report/mwmcmn">My World, My City, My
-        Neighbourhood</a> project.
-      </dd>
-
-      <dt><a href="/metrics/roadshow-attendees">Roadshows</a></dt>
-      <dd>
-        Number of roadshow events hosted.
-      </dd>
-
-      <dt>Hidden Stories</dt>
-      <dd>Number of events hosted as part of the <a href="https://leeds2023.co.uk/news/leeds-2023-uncovers-hidden-stories-of-the-city-through-new-community-led-creative-projects-putting-local-people-at-the-heart-of-the-year-of-culture">Hidden Stories</a> initiative.</dd>
+      {% for layer in table_columns.events %}
+        {% if layer.description %}
+          <dt>{% if layer.link %}<a href="{{ layer.link }}">{% endif %}{{ layer.name }}{% if layer.link %}</a>{% endif %}</dt>
+          <dd>{{ layer.description | md | safe }}</dd>
+        {% endif %}
+      {% endfor %}
     </dl>
   </div>
 {% endcomp %}

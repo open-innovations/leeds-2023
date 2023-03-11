@@ -1,7 +1,6 @@
 ---
 title: Community Engagement (including schools)
 ---
-
 <style>
   tr { vertical-align: bottom; }
   th:not(:first-child) { writing-mode: vertical-rl; }
@@ -14,13 +13,13 @@ title: Community Engagement (including schools)
   wards where further engagement is needed.
 </p>
 
-<p>
+<p class='notification'>
   This version of the dashboard includes schools data. Be aware that this might skew data presented.
   You can also review <a href="/dashboard/community/">a version of the dashboard without schools data</a>.
 </p>
 
 
-<h2>Resident engagement</h2>
+<h2>Resident engagement (including school pupils)</h2>
 
 <p>
   This section shows attendances by citizens of Leeds 2023 at events and activities since May 2022.
@@ -28,7 +27,7 @@ title: Community Engagement (including schools)
 
 {% comp 'grid.autogrid', { min_width: '40rem' } %}
   {% comp 'layout.figure', {
-    title: 'Count of activities by residents in each ward'
+    title: 'Count of activities by residents in each ward, including schools pupils'
   } %}
 
   {{ comp.charts.hexmap({
@@ -36,7 +35,7 @@ title: Community Engagement (including schools)
     data: residents_with_schools.rows,
     matchKey: 'ward_code',
     valueProp: 'total',
-    bgColour: '#BBB'
+    colourScale: colours.scales.magenta
   }) | safe }}
 
   {% endcomp %}
@@ -54,30 +53,12 @@ title: Community Engagement (including schools)
     </p>
 
     <dl>
-      <dt><a href="/metrics/events/awakening">Awakening ballot entries</a></dt>
-      <dd>
-        Number of ballot entries received.
-      </dd>
-
-      <dt><a href="/metrics/events/awakening">Awakening attendance</a></dt>
-      <dd>
-        Number of attendees at The Awakening
-      </dd>
-
-      <dt><a href="/metrics/volunteers">Volunteers</a></dt>
-      <dd>
-        Number of volunteers who have applied.
-      </dd>
-
-      <dt><a href="/metrics/roadshow-attendees">Roadshow contact</a></dt>
-      <dd>
-        Number of contact consent forms that were submitted following the roadshows.
-      </dd>
-
-      <dt>School learners</dt>
-      <dd>
-        Number of learners attending events held in school.
-      </dd>
+      {% for layer in table_columns.residents %}
+        {% if layer.description %}
+          <dt>{% if layer.link %}<a href="{{ layer.link }}">{% endif %}{{ layer.name }}{% if layer.link %}</a>{% endif %}</dt>
+          <dd>{{ layer.description | md | safe }}</dd>
+        {% endif %}
+      {% endfor %}
     </dl>
   </div>
 {% endcomp %}
@@ -87,7 +68,7 @@ title: Community Engagement (including schools)
   rows: residents_with_schools.rows
 }) | safe }}
 
-<h2>Ward-focussed initiatives</h2>
+<h2>Ward-focussed initiatives (including schools events)</h2>
 
 <p>
   This section shows the number of events and other initiatives (such as appointment of ward
@@ -96,7 +77,7 @@ title: Community Engagement (including schools)
 
 {% comp 'grid.autogrid', { min_width: '40rem' } %}
   {% comp 'layout.figure', {
-    title: 'Count of events hosted in each ward'
+    title: 'Count of events hosted in each ward, including schools events'
   } %}
 
   {{ comp.charts.hexmap({
@@ -104,7 +85,7 @@ title: Community Engagement (including schools)
     data: events_with_schools.rows,
     matchKey: 'ward_code',
     valueProp: 'total',
-    bgColour: '#BBB'
+    colourScale: colours.scales.magenta
   }) | safe }}
 
   {% endcomp %}
@@ -119,30 +100,12 @@ title: Community Engagement (including schools)
     </p>
 
     <dl>
-      <dt>Ward Hosts</dt>
-      <dd>
-        Ward hosts appointed (one per ward).
-      </dd>
-
-      <dt>Celebrations</dt>
-      <dd>
-        Celebration events held in each of the wards. At the moment, this is based
-        on data from the <a href="/report/mwmcmn">My World, My City, My
-        Neighbourhood</a> project.
-      </dd>
-
-      <dt><a href="/metrics/roadshow-attendees">Roadshows</a></dt>
-      <dd>
-        Number of roadshow events hosted.
-      </dd>
-
-      <dt>Schools events</dt>
-      <dd>
-        Number of schools events held.
-      </dd>
-
-      <dt>Hidden Stories</dt>
-      <dd>Number of events hosted as part of the <a href="https://leeds2023.co.uk/news/leeds-2023-uncovers-hidden-stories-of-the-city-through-new-community-led-creative-projects-putting-local-people-at-the-heart-of-the-year-of-culture">Hidden Stories</a> initiative.</dd>
+      {% for layer in table_columns.events %}
+        {% if layer.description %}
+          <dt>{% if layer.link %}<a href="{{ layer.link }}">{% endif %}{{ layer.name }}{% if layer.link %}</a>{% endif %}</dt>
+          <dd>{{ layer.description | md | safe }}</dd>
+        {% endif %}
+      {% endfor %}
     </dl>
   </div>
 {% endcomp %}

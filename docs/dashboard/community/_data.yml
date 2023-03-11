@@ -9,12 +9,21 @@ table_columns:
       name: Total
     - key: ballot
       name: Ballot
+      link: /metrics/events/awakening
+      description: Number of ballot entries received.
     - key: awakening_attendance
       name: Awakening Attendance
+      link: /metrics/events/awakening
+      description: Number of attendees at The Awakening
     - key: volunteering
       name: Volunteers
+      link: /metrics/volunteers
+      description: Number of volunteers who have applied.
     - key: roadshow_contact
       name: Roadshow Contact
+      link: /metrics/roadshow-attendees
+      description: Number of contact consent forms that were submitted following the roadshows.
+
   events:
     - key: ward_name
       name: Ward Name
@@ -22,9 +31,20 @@ table_columns:
       name: Total
     - key: ward_hosts
       name: Ward Hosts
+      description: Ward hosts appointed (one per ward)
     - key: celebration_event
       name: Celebrations
+      description: |
+        Celebration events held in each of the wards. At the moment, this is based
+        on data from the [My World, My City, My
+        Neighbourhood](/report/mwmcmn) project.
     - key: roadshow
       name: Roadshows
+      link: /metrics/roadshow-attendees
+      description: Number of roadshow events hosted.
     - key: hidden_stories
       name: Hidden Stories
+      description: |
+        Number of events hosted as part of the
+        [Hidden Stories](https://leeds2023.co.uk/news/leeds-2023-uncovers-hidden-stories-of-the-city-through-new-community-led-creative-projects-putting-local-people-at-the-heart-of-the-year-of-culture)
+        initiative.

@@ -20,3 +20,9 @@ main * + *, .forced-top-margin {
 .no-top-margin {
   margin-top: 0;
 }
+
+.notification {
+  background: var(--l23-yellow);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}

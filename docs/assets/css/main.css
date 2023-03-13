@@ -21,6 +21,7 @@
   --title-fontstack: 'Rebond Grotesque', 'Rebond Grotesk', sans-serif;  
   --max-width: 1440px;
   --header-height: 80px;
+  --in-page-offset: 100px;
   --background-colour: initial;
   --big-number-size: clamp(1.2rem, 5vw, 4rem);
 

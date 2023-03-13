@@ -1,12 +1,12 @@
-md5: 2d1aca2ed78d66672e4bcda038072e74
+md5: 937e8737a5945686ca8446f5906503ca
 frozen: true
 deps:
-- md5: 019fa19ab3dfbc2f5e0b0c00269ec168.dir
-  size: 737947
+- md5: 78952768299a2a3be2b474a06fbba449.dir
+  size: 70079
   nfiles: 1
   path: s3://open-innovations-filestash/leeds2023/sprout/
 outs:
-- md5: 692240391d2e18bf44718e8fd8ebd7f0.dir
-  size: 737947
+- md5: f5b3bf488a9d1d09a8f2a11a681e818b.dir
+  size: 70079
   nfiles: 1
   path: sprout

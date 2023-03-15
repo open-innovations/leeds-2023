@@ -62,18 +62,17 @@ layout: layouts/default.njk
     description: "The number of ballot entries recorded.",
     link: "~/metrics/events/awakening/index.njk",
     colour: "var(--l23-magenta-contrast)",
-    background: "var(--l23-magenta) "
+    background: "var(--l23-cyan) "
   }) | safe }}
 
-    {{ comp.metric.headline({
+  {{ comp.metric.headline({
     title: "Residents Engaged",
     value: search.data("dashboard/community").residents.columns.total | sum | localize,
     description: "Leeds residents engaged with through LEEDS 2023 activities.",
     link: "~/dashboard/community/index.njk",
     colour: "black",
-    background: "var(--l23-mint) "
+    background: "var(--l23-yellow) "
   }) | safe }}
-
 
 {% endcomp %}
 {% endcomp %}

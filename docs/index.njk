@@ -65,6 +65,15 @@ layout: layouts/default.njk
     background: "var(--l23-magenta) "
   }) | safe }}
 
+    {{ comp.metric.headline({
+    title: "Residents Engaged",
+    value: search.data("dashboard/community").residents.columns.total | sum | localize,
+    description: "Leeds residents engaged with through LEEDS 2023 activities.",
+    link: "~/dashboard/community/index.njk",
+    colour: "black",
+    background: "var(--l23-mint) "
+  }) | safe }}
+
 
 {% endcomp %}
 {% endcomp %}

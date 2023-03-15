@@ -2,6 +2,23 @@
 title: Welcome
 layout: layouts/default.njk
 ---
+{# Set up a cycler for block colouring #}
+{% set fg = cycler("black", "var(--l23-yellow-contrast)", "var(--l23-magenta-contrast)") %}
+{% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)", "var(--l23-magenta)") %}
+
+{% macro get_key_metrics_for_page(path) %}
+  {% for key, m in search.data(path).key_metrics %}
+    {{ comp.metric.headline({
+        title: m.title,
+        value: search.data(path) | getDataByPath(m.ref) | localize,
+        description: m.description,
+        link: "~/" + path + "index.njk",
+        colour: fg.next(),
+        background: bg.next()
+      }) | safe }}
+    </pre>
+  {% endfor %}
+{% endmacro %}
 
 {% comp "layout.block", { background_colour: 'var(--l23-mint)', vertical_padding: '3rem', classes: 'no-spacing' } %}
   <p style="text-align: center; font-size: 3rem; font-family: var(--title-fontstack); margin-top: 0;">LEEDS 2023 Year of Culture</p>
@@ -23,9 +40,6 @@ layout: layouts/default.njk
   </p>
 {% endcomp %}
 
-{# Set up a cycler for block colouring #}
-{% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)", "var(--l23-magenta)") %}
-
 {% comp "layout.block", { vertical_padding: '2rem'} %}
 {% comp "grid.autogrid" %}
 
@@ -40,22 +54,13 @@ layout: layouts/default.njk
     <p>Visit the main LEEDS 2023 Year Of Culture website</p>
   {% endcomp %}
 
-  {% comp "grid.block.impact", {
-    link: "/dashboard/impact/",
-    fg: "black",
-    bg: bg.next()
-  } %}
-    <h2>Impact Dashboard</h3>
-    <p>View the LEEDS 2023 Impact Dashboard</p>
-  {% endcomp %}
-
   <!-- Some metrics -->
   {{ comp.metric.headline({
     title: "Volunteers confirmed",
     value: search.data("metrics/volunteers").by_week.columns.confirmed | last or '--' | localize,
     description: "The number of volunteers who have been confirmed.",
     link: "~/metrics/volunteers/index.njk",
-    colour: "var(--l23-yellow-contrast)",
+    colour: fg.next(),
     background: bg.next()
   }) | safe }}
 
@@ -64,27 +69,31 @@ layout: layouts/default.njk
     value: search.data("metrics/volunteers").shifts_by_week.columns.hours | sum | localize,
     description: "The number of hours volunteered so far.",
     link: "~/metrics/volunteers/index.njk",
-    colour: "black",
+    colour: fg.next(),
     background: bg.next()
   }) | safe }}
 
-  {{ comp.metric.headline({
-    title: "The Awakening Ballot entries",
-    value: search.data("metrics/events/awakening").by_date.columns.cumulative_submissions | last | localize,
-    description: "The number of ballot entries recorded.",
-    link: "~/metrics/events/awakening/index.njk",
-    colour: "var(--l23-magenta-contrast)",
-    background: bg.next()
-  }) | safe }}
+  {{ get_key_metrics_for_page("metrics/events/awakening/") }}
 
   {{ comp.metric.headline({
     title: "Residents Engaged",
     value: search.data("dashboard/community").residents.columns.total | sum | localize,
     description: "Leeds residents engaged with through LEEDS 2023 activities.",
     link: "~/dashboard/community/index.njk",
-    colour: "black",
+    colour: fg.next(),
     background: bg.next()
   }) | safe }}
+
+  {% comp "grid.block.impact", {
+    link: "/dashboard/impact/",
+    colour: fg.next(),
+    bg: bg.next()
+  } %}
+    <h2>Impact Dashboard</h3>
+    <p>View the LEEDS 2023 Impact Dashboard</p>
+  {% endcomp %}
+
+
 
 {% endcomp %}
 {% endcomp %}

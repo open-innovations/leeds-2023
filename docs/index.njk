@@ -57,6 +57,15 @@ layout: layouts/default.njk
   }) | safe }}
 
   {{ comp.metric.headline({
+    title: "Volunteering hours",
+    value: search.data("metrics/volunteers").shifts_by_week.columns.hours | sum | localize,
+    description: "The number of hours volunteered so far.",
+    link: "~/metrics/volunteers/index.njk",
+    colour: "black",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
     title: "The Awakening Ballot entries",
     value: search.data("metrics/events/awakening").by_date.columns.cumulative_submissions | last | localize,
     description: "The number of ballot entries recorded.",

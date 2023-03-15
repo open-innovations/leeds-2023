@@ -23,6 +23,9 @@ layout: layouts/default.njk
   </p>
 {% endcomp %}
 
+{# Set up a cycler for block colouring #}
+{% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)", "var(--l23-magenta)") %}
+
 {% comp "layout.block", { vertical_padding: '2rem'} %}
 {% comp "grid.autogrid" %}
 
@@ -40,7 +43,7 @@ layout: layouts/default.njk
   {% comp "grid.block.impact", {
     link: "/dashboard/impact/",
     fg: "black",
-    bg: "var(--l23-cyan)"
+    bg: bg.next()
   } %}
     <h2>Impact Dashboard</h3>
     <p>View the LEEDS 2023 Impact Dashboard</p>
@@ -53,7 +56,7 @@ layout: layouts/default.njk
     description: "The number of volunteers who have been confirmed.",
     link: "~/metrics/volunteers/index.njk",
     colour: "var(--l23-yellow-contrast)",
-    background: "var(--l23-yellow)"
+    background: bg.next()
   }) | safe }}
 
   {{ comp.metric.headline({
@@ -62,7 +65,7 @@ layout: layouts/default.njk
     description: "The number of hours volunteered so far.",
     link: "~/metrics/volunteers/index.njk",
     colour: "black",
-    background: "var(--l23-magenta)"
+    background: bg.next()
   }) | safe }}
 
   {{ comp.metric.headline({
@@ -71,7 +74,7 @@ layout: layouts/default.njk
     description: "The number of ballot entries recorded.",
     link: "~/metrics/events/awakening/index.njk",
     colour: "var(--l23-magenta-contrast)",
-    background: "var(--l23-cyan) "
+    background: bg.next()
   }) | safe }}
 
   {{ comp.metric.headline({
@@ -80,7 +83,7 @@ layout: layouts/default.njk
     description: "Leeds residents engaged with through LEEDS 2023 activities.",
     link: "~/dashboard/community/index.njk",
     colour: "black",
-    background: "var(--l23-yellow) "
+    background: bg.next()
   }) | safe }}
 
 {% endcomp %}

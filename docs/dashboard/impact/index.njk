@@ -147,7 +147,7 @@ operational systems.
     {% endcomp %}
     {% endcall %}
 
-      {% call checkToggle('Volunteer Offers') -%}
+      {% call checkToggle('Volunteer offers') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/volunteers' } %}
         {{ paneTitle('Volunteer Offers') }}
         {{ comp.dashboard.impact.big_number({ number: search.data("metrics/volunteers").by_week.columns.offered | last or '--' | localize }) | safe }}

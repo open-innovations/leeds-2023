@@ -147,9 +147,9 @@ operational systems.
     {% endcomp %}
     {% endcall %}
 
-      {% call checkToggle('Volunteer offers') -%}
+    {% call checkToggle('Volunteer offers') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/volunteers' } %}
-        {{ paneTitle('Volunteer Offers') }}
+        {{ paneTitle('Volunteer offers') }}
         {{ comp.dashboard.impact.big_number({ number: search.data("metrics/volunteers").by_week.columns.offered | last or '--' | localize }) | safe }}
         <p class="footnote">The number of people who have been offered a volunteering role.</p>
     {% endcomp %}

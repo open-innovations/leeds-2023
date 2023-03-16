@@ -33,13 +33,15 @@ limitations:
 {{ comp.metric.headline({
   title: "Awakening attendees", headingLevel: 3,
   value: attendees.attended | localize,
-  description: "Total number of attendees based on ticket usage."
+  description: "Total number of attendees based on ticket usage.",
+  background: "var(--l23-cyan)"
 }) | safe }}
 
 {{ comp.metric.headline({
   title: "Awakening tickets claimed", headingLevel: 3,
   value: attendees.booked | localize,
-  description: "Total number of tickets booked."
+  description: "Total number of tickets booked.",
+  background: "var(--l23-mint)"
 }) | safe }}
 
 {{ comp.metric.headline({

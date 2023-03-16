@@ -22,6 +22,8 @@ stages:
     - data/metrics/volunteers/volunteers.csv:
         cache: false
         persist: true
+    - docs/metrics/volunteers/_data/metadata/volunteers.json:
+        cache: false
   transform-shifts:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform_shifts.py
     wdir: ../../..
@@ -40,6 +42,18 @@ stages:
     - data/metrics/volunteers/volunteers.csv
     - data/metrics/volunteers/shifts.csv
     outs:
-    - docs/metrics/volunteers/_data:
-        persist: true
+    - docs/metrics/volunteers/_data/by_ward.csv:
+        cache: false
+    - docs/metrics/volunteers/_data/by_week.csv:
+        cache: false
+    - docs/metrics/volunteers/_data/by_local_authority.csv:
+        cache: false
+    - docs/metrics/volunteers/_data/la_stats.json:
+        cache: false
+    - docs/metrics/volunteers/_data/west_yorkshire.csv:
+        cache: false
+    # Shift processing
+    - docs/metrics/volunteers/_data/shifts/by_week.csv:
+        cache: false
+    - docs/metrics/volunteers/_data/shifts/summary.json:
         cache: false

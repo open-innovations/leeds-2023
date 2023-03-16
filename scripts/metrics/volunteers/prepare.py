@@ -17,14 +17,38 @@ def summarise():
 
 
 def prepare_shift_data():
-    shifts = pd.read_csv(SHIFT_DATA, parse_dates=['date'])
+    os.makedirs(os.path.join(VIEW_DIR, 'shifts'), exist_ok=True)
 
-    grouped = shifts.groupby('date')
-    by_week = pd.DataFrame({
-        'volunteers': grouped.attended.sum(),
-        'hours': grouped.volunteer_hours.sum(),
-    }).resample('W-FRI').sum().round().astype(int).reset_index()
-    by_week.to_csv(os.path.join(VIEW_DIR, 'shifts_by_week.csv'), index=False)
+    shifts = pd.read_csv(SHIFT_DATA, parse_dates=['date']).rename(columns={
+        'attended': 'volunteer_shifts',
+      })
+    shifts.event_type = shifts.event_type.fillna(
+        'volunteer_event_programme'
+      ).map(
+        lambda x: x.lower().replace(' ', '_')
+      )
+
+    grouped = shifts[~shifts.event_type.isin([
+        'volunteer_event_programme'
+    ])][[
+        'date',
+        'volunteer_shifts',
+        'volunteer_hours',
+    ]].groupby('date')
+
+    by_week = grouped.sum().resample('W-FRI').sum().round().astype(int)
+    by_week['cumulative_volunteer_shifts'] = by_week.volunteer_shifts.cumsum()
+    by_week['cumulative_volunteer_hours'] = by_week.volunteer_hours.cumsum()
+    by_week.to_csv(os.path.join(VIEW_DIR, 'shifts', 'by_week.csv'))
+
+    summary = shifts[[
+        'event_type',
+        'volunteer_shifts',
+        'volunteer_hours'
+    ]]
+    summary = summary.groupby('event_type').sum().round().astype(int)
+    summary.to_json(os.path.join(VIEW_DIR, 'shifts',
+                    'summary.json'), orient="index")
 
 
 if __name__ == "__main__":

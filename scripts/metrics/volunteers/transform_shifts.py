@@ -41,7 +41,13 @@ def transform_shift_hours():
         'demand',
         'event_id',
         'event_name',
+        'event_type',
     ]].sort_values(['date', 'shift_id'])
+
+    data.event_type = data.event_type.map({
+        "LEEDS 2023 Events": "LEEDS 2023 Events",
+        "Partner Events": "Partner Events"
+    })
 
     data.to_csv(SHIFT_DATA, index=False)
 

@@ -18,5 +18,6 @@ metas:
 
 mergedKeys:
   metas: object
+  tags: array
 
 work_in_progress: false

@@ -138,5 +138,6 @@ site.copy('CNAME');
 site.filter('localize', (num) => num.toLocaleString())
 site.filter('lookup', filters.lookup);
 site.filter('getDataByPath', filters.getKey);
+site.filter('values', (obj) => Object.values(obj));
 
 export default site;

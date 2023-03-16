@@ -53,32 +53,120 @@ limitations:
 
 {% comp 'grid.autogrid', { min_width: '20rem' } %}
   {{ comp.metric.headline({
-    title: "Volunteer sign-ups", headingLevel: 3,
-    value: by_week.columns.created | last | localize,
-    description: "The number of people who have signed up to the volunteer system (Rosterfy).",
-    background: "var(--l23-mint)"
+    title: "Volunteer Hours (Leeds 2023 events)", headingLevel: 3,
+    value: shifts.summary.leeds_2023_events.volunteer_hours | localize,
+    description: "The number of voluntering hours on Leeds 2023 events",
+    background: "var(--l23-magenta)"
   }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Volunteer Hours (Partner events)", headingLevel: 3,
+    value: shifts.summary.partner_events.volunteer_hours | localize,
+    description: "The number of voluntering hours on Partner events",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
 
   {{ comp.metric.headline({
     title: "Volunteer applications", headingLevel: 3,
     value: by_week.columns.applied | last | localize,
     description: "The number of volunteering applications that have been received.",
-    background: "var(--l23-yellow)"
-  }) | safe }}
-
-  {{ comp.metric.headline({
-    title: "Volunteer offers", headingLevel: 3,
-    value: by_week.columns.offered | last or '--' | localize,
-    description: "The number of people who have been offered a volunteering role.",
-    background: "var(--l23-cyan)"
+    background: "var(--l23-mint)"
   }) | safe }}
 
   {{ comp.metric.headline({
     title: "Volunteers confirmed", headingLevel: 3,
     value: by_week.columns.confirmed | last or '--' | localize,
     description: "The number of volunteers who have been confirmed.",
-    background: "var(--l23-magenta)"
+    background: "var(--l23-yellow)"
   }) | safe }}
+{% endcomp %}
+
+<h2>Volunteering Shifts</h2>
+
+<p>
+  The shifts and hours figures below include volunteering activity on LEEDS 2023 and Partner events.
+  There is more activity in the volunteering programme, including induction and training events.
+</p>
+
+{% comp 'grid.autogrid', { min_width: '40rem' } %}
+
+  {{ comp.oi.charts.graph.line({ config: {
+    categories: shifts.by_week.columns.date,
+    width: 25,
+    height: 12,
+    text: { colour: '#eee' },
+    xAxis: {
+      title: 'Week ending (Friday)',
+      titleOffset: 4,
+      labelRotate: 35,
+      majorTick: 1,
+      formatter: dateFormatter
+    },
+    yAxis: {
+      title: 'Volunteer Hours',
+      titleOffset: 3,
+      majorTick: 250
+    },
+    plotArea: {
+      yMax: shifts.by_week.columns.cumulative_volunteer_hours | last + 1 | round(-2, 'ceil'),
+      colour: 'var(--l23-dark-blue-grey)'
+    },
+    padding: {
+      left: 4,
+      bottom: 5
+    },
+    series: [
+      {
+        id: "offered", label: "Cumulative volunteering hours",
+        yValues: shifts.by_week.columns.cumulative_volunteer_hours,
+        colour: 'var(--l23-magenta)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    legend: {
+      width: "20em"
+    }
+  } }) | safe }}
+
+  {{ comp.oi.charts.graph.line({ config: {
+    categories: shifts.by_week.columns.date,
+    width: 25,
+    height: 12,
+    text: { colour: '#eee' },
+    xAxis: {
+      title: 'Week ending (Friday)',
+      titleOffset: 4,
+      labelRotate: 35,
+      majorTick: 1,
+      formatter: dateFormatter
+    },
+    yAxis: {
+      title: 'Volunteer Shifts',
+      titleOffset: 3,
+      majorTick: 100
+    },
+    plotArea: {
+      yMax: shifts.by_week.columns.cumulative_volunteer_shifts | last + 1 | round(-2, 'ceil'),
+      colour: 'var(--l23-dark-blue-grey)'
+    },
+    padding: {
+      left: 4,
+      bottom: 5
+    },
+    series: [
+      {
+        id: "offered", label: "Cumulative volunteer shifts",
+        yValues: shifts.by_week.columns.cumulative_volunteer_shifts,
+        colour: 'var(--l23-yellow)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    legend: {
+      width: "20em"
+    }
+  } }) | safe }}
+
 {% endcomp %}
 
 <h2>Distribution of volunteers</h2>
@@ -92,25 +180,7 @@ limitations:
   This could be due to a typing error or because it is outside of the UK. 
 </p>
   
-{% comp 'grid.autogrid', { min_width: '20rem' } %}
-  <section>
-    <h3>Signed-up</h3>
-    {{ comp.charts.hexmap({
-      hexjson: hex.wards_leeds,
-      data: by_ward.rows,
-      matchKey: 'ward_code',
-      valueProp: 'created',
-      popup: popupPreApplication,
-	    labelKey: 'label',
-      title: 'Initial sign-ups by people living in ward',
-      bgColour: '#ddd',
-      colourScale: colours.scales.mint
-    }) | safe }}
-
-   <p>Total within Leeds: <strong>{{la_stats.created.Leeds}}</strong><br>
-    Total outside Leeds: <strong>{{la_stats.created.OUTSIDE_LEEDS}}</strong><br>
-    Total unknown/invalid: <strong>{{la_stats.created.UNKNOWN + la_stats.created.NOT_PROVIDED}}</strong></p>
-  </section>
+{% comp 'grid.autogrid', { min_width: '28rem' } %}
   <section>
     <h3>Applications</h3>
     {{ comp.charts.hexmap({
@@ -122,7 +192,7 @@ limitations:
 	    labelKey: 'label',
       title: 'Volunteer applications received from people in ward',
       bgColour: '#ddd',
-      colourScale: colours.scales.yellow
+      colourScale: colours.scales.mint
     }) | safe }}
 
    <p>Total within Leeds: <strong>{{la_stats.applied.Leeds}}</strong><br>
@@ -139,7 +209,7 @@ limitations:
       popup: popupOffered,
       title: 'Volunteer posts offered to people in ward',
       bgColour: '#ddd',
-      colourScale: colours.scales.cyan
+      colourScale: colours.scales.magenta
     }) | safe }}
 
     <p>Total within Leeds: <strong>{{la_stats.offered.Leeds}}</strong><br>
@@ -156,7 +226,7 @@ limitations:
       popup: popupConfirmed,
       bgColour: '#ddd',
       title: 'Confirmed volunteers by ward',
-      colourScale: colours.scales.magenta
+      colourScale: colours.scales.yellow
     }) | safe }}
 
     <p>Total within Leeds: <strong>{{la_stats.confirmed.Leeds}}</strong><br>
@@ -168,7 +238,7 @@ limitations:
 <h3> West Yorkshire Volunteers</h3>
 {% comp 'layout.block' %}
 {{ comp.charts.table({
-  columns: [{'key' : 'Local Authority','name':'Local Authority'},{'key':'Created','name':'Created'},{'key':'Applied','name':'Applied'},{'key':'Offered','name':'Offered'},{'key':'Confirmed','name':'Confirmed'}],
+  columns: [{'key' : 'Local Authority','name':'Local Authority'},{'key':'Applied','name':'Applied'},{'key':'Offered','name':'Offered'},{'key':'Confirmed','name':'Confirmed'}],
   rows: west_yorkshire.rows
 }) | safe }}
 {% endcomp %}
@@ -205,9 +275,9 @@ limitations:
   },
   series: [
     {
-      id: "offered", label: "Volunteers appointed (cumulative)",
-      yValues: by_week.columns.confirmed,
-      colour: 'var(--l23-magenta)',
+      id: "applied", label: "Applications (cumulative)",
+      yValues: by_week.columns.applied,
+      colour: 'var(--l23-mint)',
       markerOptions: { s: 5 }
     },
     {
@@ -217,15 +287,9 @@ limitations:
       markerOptions: { s: 5 }
     },
     {
-      id: "applied", label: "Applications (cumulative)",
-      yValues: by_week.columns.applied,
-      colour: 'var(--l23-yellow)',
-      markerOptions: { s: 5 }
-    },
-    {
-      id: "created", label: "Sign-ups (cumulative)",
-      yValues: by_week.columns.created,
-      colour: 'var(--l23-mint)',
+      id: "offered", label: "Volunteers appointed (cumulative)",
+      yValues: by_week.columns.confirmed,
+      colour: 'var(--l23-magenta)',
       markerOptions: { s: 5 }
     }
   ],

@@ -54,14 +54,14 @@ limitations:
 {% comp 'grid.autogrid', { min_width: '20rem' } %}
   {{ comp.metric.headline({
     title: "Volunteer Hours (Leeds 2023 events)", headingLevel: 3,
-    value: shifts.summary.leeds_2023_events.volunteer_hours | localize,
+    value: shifts.summary.volunteer_hours.leeds_2023_events | localize,
     description: "The number of voluntering hours on Leeds 2023 events",
     background: "var(--l23-magenta)"
   }) | safe }}
 
   {{ comp.metric.headline({
     title: "Volunteer Hours (Partner events)", headingLevel: 3,
-    value: shifts.summary.partner_events.volunteer_hours | localize,
+    value: shifts.summary.volunteer_hours.partner_events | localize,
     description: "The number of voluntering hours on Partner events",
     background: "var(--l23-cyan)"
   }) | safe }}

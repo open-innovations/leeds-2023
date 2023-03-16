@@ -47,8 +47,10 @@ def prepare_shift_data():
         'volunteer_hours'
     ]]
     summary = summary.groupby('event_type').sum().round().astype(int)
-    summary.to_json(os.path.join(VIEW_DIR, 'shifts',
-                    'summary.json'), orient="index")
+    summary.loc['total'] = summary.sum()
+    summary.loc['total_events'] = summary[summary.index.isin(['leeds_2023_events', 'partner_events'])].sum()
+    summary.transpose().to_json(os.path.join(VIEW_DIR, 'shifts',
+                    'summary.json'), orient="index", indent=2)
 
 
 if __name__ == "__main__":

@@ -57,7 +57,7 @@ layout: layouts/default.njk
   <!-- Some metrics -->
   {{ comp.metric.headline({
     title: "Volunteering hours",
-    value: search.data("metrics/volunteers").shifts.by_week.columns.volunteer_hours | sum | localize,
+    value: search.data("metrics/volunteers").shifts.summary.volunteer_hours.total_events | localize,
     description: "Total hours volunteered for LEEDS 2023 and Partner events.",
     link: "~/metrics/volunteers/index.njk",
     colour: fg.next(),

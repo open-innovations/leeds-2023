@@ -31,8 +31,8 @@ stages:
       md5: 907a0e96ece1a687e5c9b84df9bac0ab
       size: 145431
     - path: scripts/metrics/volunteers/prepare.py
-      md5: fbbc6b5efe71d58e042d3a6b1a8339d5
-      size: 1913
+      md5: 346148a5db8a4dfac27377690fe56001
+      size: 2085
     outs:
     - path: docs/metrics/volunteers/_data/by_local_authority.csv
       md5: 362d6c3951eaf477d77d18bcbc1fff0a
@@ -50,8 +50,8 @@ stages:
       md5: 78568c1f5a5df6242b08326964a34ab4
       size: 342
     - path: docs/metrics/volunteers/_data/shifts/summary.json
-      md5: aebbd975cf1ef4a4bf057da0c537bf64
-      size: 208
+      md5: 76423193a22fa51f361fb59e4861c559
+      size: 325
     - path: docs/metrics/volunteers/_data/west_yorkshire.csv
       md5: d1ce6ca83b36c6c3e30f4321107c8a52
       size: 171

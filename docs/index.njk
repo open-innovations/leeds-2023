@@ -64,14 +64,14 @@ layout: layouts/default.njk
     background: bg.next()
   }) | safe }}
 
-  {{ comp.metric.headline({
+  {# {{ comp.metric.headline({
     title: "Volunteering hours",
     value: search.data("metrics/volunteers").shifts_by_week.columns.hours | sum | localize,
     description: "The number of hours volunteered so far.",
     link: "~/metrics/volunteers/index.njk",
     colour: fg.next(),
     background: bg.next()
-  }) | safe }}
+  }) | safe }} #}
 
   {{ get_key_metrics_for_page("metrics/events/awakening/") }}
 

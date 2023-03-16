@@ -85,27 +85,27 @@ operational systems.
     {%- endcall %}
 
       {% call checkToggle('Total funds raised') -%}
-    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/fundraising'} %}
+    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white"} %}
       {{ paneTitle('Total funds raised') }}
     {% endcomp %}
     {%- endcall %}
 
     {% call checkToggle('Funding breakdown by sector') -%}
-    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/fundraising' } %}
+    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
         {{ paneTitle('Funding breakdown by sector') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
     {% endcomp %}
     {%- endcall %}
 
     {% call checkToggle('Funding prospects') -%}
-    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/fundraising' } %}
+    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
         {{ paneTitle('Funding prospects') }}
         {{ comp.dashboard.impact.big_number({ number: search.data('metrics/fundraising').count_by_stage.columns.count[2] | localize }) | safe }}
     {% endcomp %}
     {% endcall %}
 
       {% call checkToggle('Secured funders') -%}
-    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: 'metrics/fundraising' } %}
+    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
         {{ paneTitle('Secured funders') }}
         {{ comp.dashboard.impact.big_number({ number: search.data('metrics/fundraising').count_by_stage.columns.count[1] | localize }) | safe }}
     {% endcomp %}

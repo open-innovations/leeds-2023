@@ -1,5 +1,133 @@
 ---
 title: Community Engagement (including schools)
+limitations:
+  - This page is a work in progress that will be extended as more data is aggregated onto this microsite. More activities have been held than are shown below, and more residents have been engaged. In addition, there have been many events organised by partners of LEEDS2023 and the wider community. We currently have no data about these.
+  - Pupils cross ward boundaries to attend schools. As such, the number of school learners attending events held in schools should not be considered indicative of the number of learners who reside in a given ward attending events held in schools.
+---
+
+<style>
+  tr { vertical-align: bottom; }
+  th:not(:first-child) { writing-mode: vertical-rl; }
+</style>
+
+<p>
+  This dashboard shows Leeds’ residents engagement with activities and events programmed by LEEDS 2023. 
+  Bringing this data together in one place will give a quick view of wards where further engagement is needed.
+</p>
+
+<p>
+  This page is a work in progress that will be extended as more data is aggregated onto this microsite. More 
+  activities have been held than are shown below, and more residents have been engaged. In addition, there have 
+  been many events organised by partners of LEEDS2023 and the wider community. We currently have no data about 
+  these.
+</p>
+
+
+<p class='notification'>
+  This dashboard excludes schools data, as this is likely to skew the results.
+  You can also review <a href="/dashboard/community/with-schools/">a version of the dashboard including schools data</a>.
+</p>
+
+<h2>Resident engagement</h2>
+
+<p>
+  This section shows attendances by residents of Leeds at events and activities since May 2022. Each hexagon represents a council ward in 
+  Leeds. The chart shows the distribution of attendees at LEEDS 2023 programmed activities
+</p>
+
+<p>
+  KEY: The hexagons that are darker in colour show areas with a higher number of attendees
+</p>
+
+
+{% comp 'grid.autogrid', { min_width: '40rem' } %}
+  {% comp 'layout.figure', {
+    title: 'Count of activities by residents in each ward'
+  } %}
+
+  {{ comp.charts.hexmap({
+    hexjson: hex.wards_leeds,
+    data: residents.rows,
+    matchKey: 'ward_code',
+    valueProp: 'total',
+    colourScale: colours.scales.yellow
+  }) | safe }}
+
+  {% endcomp %}
+
+  <div>
+    <h3>
+      Hexmap layers
+    </h3>
+    <p>
+      The metrics included in the overall hexmap are listed below. The data for each
+      can be found in the table below the hexmap. 
+    </p>
+
+    <dl>
+      {% for layer in table_columns.residents %}
+        {% if layer.description %}
+          <dt>{% if layer.link %}<a href="{{ layer.link }}">{% endif %}{{ layer.name }}{% if layer.link %}</a>{% endif %}</dt>
+          <dd>{{ layer.description | md | safe }}</dd>
+        {% endif %}
+      {% endfor %}
+    </dl>
+  </div>
+{% endcomp %}
+
+{{ comp.charts.table({
+  columns: table_columns.residents,
+  rows: residents.rows
+}) | safe }}
+
+<h2>Ward-focussed initiatives</h2>
+
+<p>
+  This section shows the number of events and other initiatives (such as appointment of ward
+  hosts) across wards, that have taken place as part since October 2021.  
+</p>
+
+{% comp 'grid.autogrid', { min_width: '40rem' } %}
+  {% comp 'layout.figure', {
+    title: 'Count of events hosted in each ward'
+  } %}
+
+  {{ comp.charts.hexmap({
+    hexjson: hex.wards_leeds,
+    data: events.rows,
+    matchKey: 'ward_code',
+    valueProp: 'total',
+    colourScale: colours.scales.yellow
+  }) | safe }}
+
+  {% endcomp %}
+
+  <div>
+    <h3>
+      Hexmap layers
+    </h3>
+    <p>
+      The metrics included in the overall hexmap are listed
+      below. The data for each can be found in the table below the hexmap.
+    </p>
+
+    <dl>
+      {% for layer in table_columns.events %}
+        {% if layer.description %}
+          <dt>{% if layer.link %}<a href="{{ layer.link }}">{% endif %}{{ layer.name }}{% if layer.link %}</a>{% endif %}</dt>
+          <dd>{{ layer.description | md | safe }}</dd>
+        {% endif %}
+      {% endfor %}
+    </dl>
+  </div>
+{% endcomp %}
+
+
+{{ comp.charts.table({
+  columns: table_columns.events,
+  rows: events.rows
+}) | safe }}
+
 ---
 <style>
   tr { vertical-align: bottom; }
@@ -7,10 +135,15 @@ title: Community Engagement (including schools)
 </style>
 
 <p>
-  This dashboard shows the engagement across all wards in Leeds. It is a work in
-  progress that will be extended as more data is aggregated onto this data
-  microsite. Bringing this data together in one place will give a quick view of
-  wards where further engagement is needed.
+This dashboard shows Leeds’ residents engagement with activities and events programmed by LEEDS 2023.
+Bringing this data together in one place will give a quick view of wards where further engagement is needed.
+</p>
+
+<p>
+This page is a work in progress that will be extended as more data is aggregated onto this microsite. More
+activities have been held than are shown below, and more residents have been engaged. In addition, there have
+been many events organised by partners of LEEDS2023 and the wider community. We currently have no data about
+these.
 </p>
 
 <p class='notification'>
@@ -22,8 +155,13 @@ title: Community Engagement (including schools)
 <h2>Resident engagement (including school pupils)</h2>
 
 <p>
-  This section shows attendances by citizens of Leeds 2023 at events and activities since May 2022.
-</p>  
+  This section shows attendances by citizens of Leeds 2023 at events and activities since May 2022. Each hexagon represents a council ward in Leeds.
+  The chart shows the distribution of attendees at LEEDS 2023 programmed activities.
+</p>
+
+<p>
+KEY: The hexagons that are darker in colour show areas with a higher number of attendees
+</p>
 
 {% comp 'grid.autogrid', { min_width: '40rem' } %}
   {% comp 'layout.figure', {

@@ -9,12 +9,16 @@ metas:
   description: |
     Visualisations of key metrics related to The Awakening LEEDS 2023 event.
 limitations:
-  - Some ballot entries do not have a postcode associated, so are impossible to map to a Leeds Ward.
-    Postcode is not a mandatory field for ballot entries.
-    This is a design choice, as this removes a barrier to ballot entry for people with no fixed address.
+  - Each individual ballot entry is allocated multiple tickets with no restrictions as to who these tickets could be shared with. As such, it is 
+    possible that the ‘Count of the Awakening Attendees’ visualisations may misallocate attendees to incorrect wards and local authorities of 
+    residence.
+  - Some ballot entries did not have a postcode associated, as postcode was not a mandatory field for ballot entries. This was a design choice as 
+    it removes a barrier to entry for those with no fixed address. As such, those entries are impossible to map to a ward or local authority. 
   - Each individual ballot entry is allocated up to four seats. Group ballot entries are submitted with a
     requested number of seats. The tickets total uses the upper figure for individual ballot entries,
     combined with the explicitly requested number of group ballot seats.
+  - Group ballot entries are not displayed in the hexmaps related to where ballot applications come from. Many of the group ballot activities 
+    were carried out in schools, and it is known that pupils often cross ward boundaries in order to attend schools.
 ---
 {%- macro popupSubmissions(params) -%}
   {{ params.label }}</br>

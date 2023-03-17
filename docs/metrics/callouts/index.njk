@@ -6,9 +6,9 @@ tags:
 order: 20
 key: callouts
 metas:
-  title: LEEDS 2023 Metrics - Callouts
+  title: LEEDS 2023 Metrics - Call outs
   description: |
-    Visualisations of key metrics related to the LEEDS 2023 callouts.
+    Visualisations of key metrics related to the LEEDS 2023 call outs.
 limitations:
   - The number of applications to each call out is likely to vary as they are targeted at different audiences. 
   - There are known instances in which more participants were involved in an activity than submitted a call out response form. This is because 
@@ -18,7 +18,7 @@ limitations:
 
 <p>
   LEEDS 2023 is offering opportunities throughout the year to enable the people of Leeds and beyond to get involved and influence our programme. 
-  Audiences are encouraged to respond to a <a href="https://leeds2023.co.uk/take-part/overview">callout</a> via a form hosted on the website. 
+  Audiences are encouraged to respond to a <a href="https://leeds2023.co.uk/take-part/overview">call out</a> via a form hosted on the website. 
 </p>
 
 <p>
@@ -28,23 +28,23 @@ limitations:
 </p>
 
 <p>
-  Data about callouts is updated each night directly from the callout submission system.
+  Data is updated each night directly from the call out submission system.
 </p>
 
 
 <h2>Headlines</h2>
 
 {{ comp.metric.headline({
-  title: "Callout responses", headingLevel: 3,
+  title: "Call out responses", headingLevel: 3,
   value: headline.responses | localize,
-  description: "Total number of callout responses.",
+  description: "Total number of call out responses.",
   background: "var(--l23-cyan)"
 }) | safe }}
 
 <h2>Callout Responses</h2>
 
 <p>
-  The map shows the wards from which responses to all callouts are coming. Each hexagon represents a council ward in Leeds.
+  The map shows the wards from which responses to all call outs are coming. Each hexagon represents a council ward in Leeds.
 </p>
 
 <p> 
@@ -54,7 +54,7 @@ limitations:
 {% comp "grid.autogrid", { min_width: '32rem' } %}
 
 {% comp 'layout.figure' %}
-  <h3>Callout responses by ward</h3>
+  <h3>Call out responses by ward</h3>
   {{ comp.charts.hexmap({
     hexjson: hex.wards_leeds,
     data: responses_by_ward.rows,
@@ -66,7 +66,7 @@ limitations:
 {% endcomp %}
 
 {% comp 'layout.figure' %}
-  <h3>Callout responses by week</h3>
+  <h3>Call out responses by week</h3>
   {{ comp.oi.charts.chart.bar({ config: {
     data: responses_by_week.rows,
     stacked: true,
@@ -77,7 +77,7 @@ limitations:
     },
     axis: {
       x: {
-        title: { label: "Number of callout responses" },
+        title: { label: "Number of call out responses" },
         tickSize: 10,
         "font-weight": oi_viz.bar.axis.x['font-weight'],
         grid: oi_viz.bar.axis.x.grid
@@ -94,13 +94,13 @@ limitations:
 {% endcomp %}
 
 <p>
-  The table below shows the number of responses received in response to each callout. These are ordered alphabetically rather than by date. 
+  The table below shows the number of responses received in response to each call out. These are ordered alphabetically rather than by date. 
 </p>
 
 <table class="scroll-table">
   <thead>
     <tr>
-      <th>Callout</th>
+      <th>Call out</th>
       <th>Responses received</th>
     </tr>
   </thead>

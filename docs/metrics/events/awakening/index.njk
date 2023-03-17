@@ -83,13 +83,11 @@ limitations:
 <h2>Attendees at the The Awakening</h2>
 
 <p>
-  In the first visualisation, each hexagon represents a council ward in Leeds, and in the second, each hexagon represents a local authority within 
-  the Leeds City Region. 
-</p>
+  In the first visualisation, each hexagon represents a council ward in Leeds. In the second, each hexagon represents a local authority within 
+  the Leeds City Region. The chart shows the distribution of attendees at the Awakening with home addresses within these wards and local 
+  authorities.
+</p> 
 
-<p>
-  The chart shows the distribution of attendees at the Awakening with home addresses within these wards and local authorities. 
-</p>
 
 <p>
   KEY: The hexagons that are darker in colour show areas with a higher number of entries.
@@ -133,10 +131,29 @@ limitations:
 
 
 <h2>Where ballot entries came from</h2>
-<p>A <a href="https://leeds2023.co.uk/whats-on/the-awakening/enter-the-ballot">ballot process</a> was used to allocate tickets to attend 
-<a href="https://leeds2023.co.uk/whats-on/the-awakening/">The Awakening</a>, the opening event of the LEEDS 2023. 
-This chart shows where individual ballot entries came from. Each hexagon represents a council ward in Leeds, and the chart shows the distribution of ballot entrants home addresses across these wards.</p>
-<p>KEY: The hexagons that are darker in colour show wards with a higher number of entries.</p>
+<p>
+  Rather than selling tickets, LEEDS 2023 invited the people of Leeds to share an artwork to enter a ballot to gain four tickets to The Awakening. 
+  Initially the ballot was only open to individuals submitting entries.
+</p>
+
+<p>
+  Following feedback from schools and community groups a Group Ballot was opened on 2 November so that a teacher or community leader could share an 
+  artwork completed by a group and this would count as one ballot entry. If successful in the ballot the entire group was awarded a requested 
+  number of tickets to The Awakening.
+</p>
+
+<p>
+  The ballot was open between 23 September and 25 November. 
+</p>
+
+<p>
+  This chart shows where individual ballot entries came from. This chart shows where individual ballot entries came from. Each hexagon represents 
+  a council ward in Leeds, and the chart shows the distribution of ballot entrants home addresses across these wards.
+</p>
+
+<p>
+  KEY: The hexagons that are darker in colour show wards with a higher number of entries.
+</p>
   
 {% comp 'layout.figure', {
   title: 'Count of individual ballot entries by ward of residence',
@@ -156,14 +173,14 @@ This chart shows where individual ballot entries came from. Each hexagon represe
 {% endcomp %}
 
 <p>
-  This hexmap shows <strong>{{ local_autority_stats.Leeds }}</strong> submissions associated with postcodes that are within Leeds City Council.
-  In addition, there were<strong>{{ local_autority_stats.OUTSIDE_LEEDS }}</strong> submissions from other local authorities.
+  The above hexmap shows <strong>{{ local_autority_stats.Leeds }}</strong> submissions associated with postcodes that are within Leeds City Council.
+  In addition, there were <strong>{{ local_autority_stats.OUTSIDE_LEEDS }}</strong> submissions from other local authorities.
   <strong>{{ local_autority_stats.UNKNOWN }}</strong> submissions were from postcodes that could not be identified. This is either because the postcode is invalid, or potentially is not a UK postcode.
   <strong>{{ local_autority_stats.NOT_PROVIDED }}</strong> ballot entries were submitted without postcodes.
 </p>
 
 <p>
-  Entries from the Leeds City Region are shown below.
+  Entries from the Leeds City Region are shown below. Each hexagon represents a local authority in the Leeds City Region.
 </p>
 
 {% comp 'layout.figure', {

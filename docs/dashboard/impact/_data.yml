@@ -9,8 +9,8 @@ toggle_override: false
 # Set individual toggle names in this list below
 feature_toggle:
   - YOU NEED AT LEAST ONE ENTRY!
-  - Residents Engaged
-  - Total attendances
+  - Events held
+  - Residents engaged
   #- Number of partners
   - Community Engagement
   #- Total funds raised

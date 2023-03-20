@@ -1,6 +1,7 @@
 import logging
 import os
 
+WORKING_DIR = os.path.join('working', 'metrics', 'rosterfy')
 DATA_DIR = os.path.join('data', 'metrics', 'volunteers')
 VIEW_DIR = os.path.join('docs', 'metrics', 'volunteers', '_data')
 META_DIR = os.path.join(VIEW_DIR, 'metadata')

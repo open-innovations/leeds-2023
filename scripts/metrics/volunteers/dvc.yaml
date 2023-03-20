@@ -17,7 +17,7 @@ stages:
     - scripts/metrics/volunteers/metadata.py
     - scripts/metrics/volunteers/setup.py
     - scripts/metrics/volunteers/states.py
-    - working/manual/volunteers/current-checkpoint.csv
+    - working/metrics/rosterfy/current-checkpoint.csv
     outs:
     - data/metrics/volunteers/volunteers.csv:
         cache: false
@@ -29,7 +29,7 @@ stages:
     wdir: ../../..
     deps:
     - scripts/metrics/volunteers/transform_shifts.py
-    - working/manual/volunteers/volunteering-hours.csv
+    - working/metrics/rosterfy/volunteering-hours.csv
     outs:
     - data/metrics/volunteers/shifts.csv:
         cache: false

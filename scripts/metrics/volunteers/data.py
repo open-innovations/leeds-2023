@@ -4,7 +4,7 @@ from glob import glob
 from hashlib import blake2s
 
 import pandas as pd
-from metrics.volunteers.setup import DATA_DIR
+from metrics.volunteers.setup import WORKING_DIR, DATA_DIR
 from metrics.volunteers.states import (STATUS_APPLY, STATUS_CONFIRMED,
                                        STATUS_DROP, STATUS_OFFER,
                                        STATUS_PRE_APPLY, add_states,
@@ -12,8 +12,6 @@ from metrics.volunteers.states import (STATUS_APPLY, STATUS_CONFIRMED,
 from util.geography import match_la, match_ward
 
 file_path = os.path.join(DATA_DIR, 'volunteers.csv')
-# WORKING_DIR = os.path.join('working', 'metrics', 'rosterfy')
-WORKING_DIR = os.path.join('working', 'manual', 'volunteers')
 RAW_DATA = os.path.join(WORKING_DIR, 'current-checkpoint.csv')
 
 

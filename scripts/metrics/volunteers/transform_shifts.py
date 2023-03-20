@@ -1,9 +1,9 @@
 import os
 import pandas as pd
-from metrics.volunteers.setup import DATA_DIR
+from metrics.volunteers.setup import WORKING_DIR, DATA_DIR
 
 SHIFT_HOURS_RAW = os.path.join(
-    'working', 'manual', 'volunteers', 'volunteering-hours.csv')
+    WORKING_DIR, 'volunteering-hours.csv')
 SHIFT_DATA = os.path.join(
     DATA_DIR, 'shifts.csv'
 )

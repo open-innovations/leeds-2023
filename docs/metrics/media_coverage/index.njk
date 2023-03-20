@@ -33,8 +33,7 @@ limitations:
       Total Articles and Appearances
     </h2>
     {{ comp.viz.bigNumber({
-      number: stats.total_media | localize,
-      background: "var(--l23-magenta)"
+      number: stats.total_media | localize
     }) | safe }}
     
   {% endcomp %}
@@ -78,7 +77,6 @@ limitations:
     </h2>
     {{ comp.viz.bigNumber({
       number: stats.total_media_international | localize,
-      background: "var(--l23-yellow)"
     }) | safe }}
     
   {% endcomp %}

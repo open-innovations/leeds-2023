@@ -4,22 +4,22 @@ stages:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/transform.py
     deps:
     - path: scripts/metrics/schools/transform.py
-      md5: 6f64775c719376c3b6bbb0205cbbb5eb
-      size: 949
+      md5: adf2238ca5bec7f0d1fe385f818079f4
+      size: 2132
     - path: working/metrics/airtable/schools_events.csv
-      md5: b6e7e7cebfc0d29af1340b5b8a3dc73f
-      size: 59117
+      md5: ea0b7578c72504059ede07511930a2bb
+      size: 59866
     outs:
     - path: data/metrics/schools/schools_events.csv
-      md5: 441ac1df730f44b63438dcf77c8d90c1
-      size: 59099
+      md5: 0a144a30def7ad156521f10f811fa010
+      size: 23779
   extract:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
     deps:
     - path: scripts/metrics/schools/extract.py
-      md5: 994d21a15c0d6c1300e86362bee07390
-      size: 1370
+      md5: 1f58c93eab530d492bf83e3bd35b1173
+      size: 1443
     outs:
     - path: working/metrics/airtable/schools_events.csv
-      md5: b6e7e7cebfc0d29af1340b5b8a3dc73f
-      size: 59117
+      md5: ea0b7578c72504059ede07511930a2bb
+      size: 59866

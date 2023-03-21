@@ -28,6 +28,7 @@ def fetch_data():
             'End date',
             'Postcode (from Venue)',
             'Ward (from Venue)',
+            'ACTUAL Audience size / number of participants - IN PERSON',
             'CLE - Setting',
             'CLE - Key Stage',
             'CLE - Subject Area',

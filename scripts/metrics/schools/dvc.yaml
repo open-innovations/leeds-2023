@@ -13,6 +13,7 @@ stages:
   transform:
     wdir: ../../..
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/transform.py
+    always_changed: true
     deps:
       - scripts/metrics/schools/transform.py
       - working/metrics/airtable/schools_events.csv

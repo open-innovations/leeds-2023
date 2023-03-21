@@ -87,12 +87,12 @@ stages:
       md5: f3a575c359d7c4715536f5eab0d6ace7
       size: 2013
     - path: working/metrics/rosterfy/current-checkpoint.csv
-      md5: 224182bd536783b83658e9590f94f17f
-      size: 103688
+      md5: 2ddf3ab04d0f5090acc7a22d26f1dd83
+      size: 103111
     outs:
     - path: data/metrics/volunteers/volunteers.csv
-      md5: 0884680af29c22981509eee77729863c
-      size: 151492
+      md5: 754fd46522300859f155562fcdd1fd48
+      size: 151399
     - path: docs/metrics/volunteers/_data/metadata/volunteers.json
-      md5: de3e512c0f20783c214885203d468fbf
-      size: 10404
+      md5: 4f8fa94b8099325348ebe7b9bd1ea91e
+      size: 10383

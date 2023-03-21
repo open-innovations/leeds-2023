@@ -17,7 +17,7 @@ stages:
       - scripts/metrics/schools/transform.py
       - working/metrics/airtable/schools_events.csv
     outs:
-      - data/metrics/schools/schools_engagement.csv:
+      - data/metrics/schools/schools_events.csv:
           persist: true
           cache: false
 

@@ -4,13 +4,13 @@ stages:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/transform.py
     deps:
     - path: scripts/metrics/schools/transform.py
-      md5: 0010137dcfd35bede41f725964824d45
-      size: 953
+      md5: 6f64775c719376c3b6bbb0205cbbb5eb
+      size: 949
     - path: working/metrics/airtable/schools_events.csv
       md5: b6e7e7cebfc0d29af1340b5b8a3dc73f
       size: 59117
     outs:
-    - path: data/metrics/schools/schools_engagement.csv
+    - path: data/metrics/schools/schools_events.csv
       md5: 441ac1df730f44b63438dcf77c8d90c1
       size: 59099
   extract:

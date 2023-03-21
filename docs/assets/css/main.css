@@ -23,7 +23,7 @@
   --header-height: 80px;
   --in-page-offset: 100px;
   --background-colour: initial;
-  --big-number-size: clamp(1.2rem, 5vw, 4rem);
+  --big-number-size: clamp(2rem, 6vw, 4rem);
 
   --l23-cyan: hsl(173, 65%, 61%);
   --l23-dark-cyan: hsl(191, 57%, 15%);

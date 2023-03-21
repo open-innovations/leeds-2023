@@ -45,4 +45,5 @@ def fetch_data():
 
 if __name__ == '__main__':
     data = fetch_data()
+    print(SCHOOLS_DATA)
     data.to_csv(SCHOOLS_DATA, index=False)

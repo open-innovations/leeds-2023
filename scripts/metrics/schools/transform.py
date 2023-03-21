@@ -8,7 +8,7 @@ from extract import SCHOOLS_DATA as RAW_SCHOOLS_DATA
 
 DATA_DIR = os.path.join("data", "metrics", "schools")
 os.makedirs(DATA_DIR, exist_ok=True)
-SCHOOLS_DATA = os.path.join('schools_engagement.csv')
+SCHOOLS_DATA = os.path.join(DATA_DIR, 'schools_engagement.csv')
 
 
 def transform(data):

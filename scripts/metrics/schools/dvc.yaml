@@ -2,6 +2,7 @@ stages:
   extract:
     wdir: ../../..
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
+    always_changed: true
     deps:
       - scripts/metrics/schools/extract.py
     outs:

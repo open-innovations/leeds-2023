@@ -1,16 +1,25 @@
 schema: '2.0'
 stages:
   transform:
-    cmd: PYTHONPATH=scripts/ python3 scripts/metrics/schools/transform.py
+    cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/transform.py
     deps:
     - path: scripts/metrics/schools/transform.py
-      md5: 6e7e6376e484442855bf760001ee624c
-      size: 1036
-    - path: working/manual/schools/
-      md5: 68c7f388830321813da144a2d07ba6df.dir
-      size: 54399
-      nfiles: 1
+      md5: 6bceb7182d7259cfdba14284b2e6f81d
+      size: 943
+    - path: working/metrics/airtable/schools_events.csv
+      md5: b6e7e7cebfc0d29af1340b5b8a3dc73f
+      size: 59117
     outs:
     - path: data/metrics/schools/schools_engagement.csv
       md5: 9392a50d1849768c95f8132d29c5dd44
       size: 529
+  extract:
+    cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
+    deps:
+    - path: scripts/metrics/schools/extract.py
+      md5: 32a9eabcc43482fd07e23745a7d984e7
+      size: 1346
+    outs:
+    - path: working/metrics/airtable/schools_events.csv
+      md5: b6e7e7cebfc0d29af1340b5b8a3dc73f
+      size: 59117

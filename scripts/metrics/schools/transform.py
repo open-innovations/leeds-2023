@@ -1,15 +1,14 @@
+import os
+import re
 import pandas as pd
 
 from util.geography import fuzzy_match_ward_name_to_code
 
+from extract import SCHOOLS_DATA as RAW_SCHOOLS_DATA
 
-def load_schools():
-    data = pd.read_excel('working/manual/schools/School Engagement Tracker.xlsx',
-                         usecols=['Ward', 'Total engagements',
-                                  'Total number of learners '],
-                         )
-    data = data[data.Ward.notna()]
-    return data
+DATA_DIR = os.path.join("data", "metrics", "schools")
+os.makedirs(DATA_DIR, exist_ok=True)
+SCHOOLS_DATA = os.path.join('schools_engagement.csv')
 
 
 def transform(data):
@@ -27,11 +26,8 @@ def transform(data):
     return data
 
 
-def save_schools_data(data):
-    data.to_csv('data/metrics/schools/schools_engagement.csv', index=False)
-
-
 if __name__ == '__main__':
-    data = load_schools()
-    data = transform(data)
-    save_schools_data(data)
+    data = pd.read_csv(RAW_SCHOOLS_DATA)
+    data.rename(columns=lambda x: re.sub(
+        r"\W+", '_', x.lower()).strip('_'), inplace=True)
+    data.to_csv(SCHOOLS_DATA, index=False)

@@ -1,10 +1,20 @@
 stages:
+  extract:
+    wdir: ../../..
+    cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
+    deps:
+      - scripts/metrics/schools/extract.py
+    outs:
+      - working/metrics/airtable/schools_events.csv:
+          persist: true
+          cache: false
+
   transform:
     wdir: ../../..
-    cmd: PYTHONPATH=scripts/ python3 scripts/metrics/schools/transform.py
+    cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/transform.py
     deps:
       - scripts/metrics/schools/transform.py
-      - working/manual/schools/
+      - working/metrics/airtable/schools_events.csv
     outs:
       - data/metrics/schools/schools_engagement.csv:
           persist: true

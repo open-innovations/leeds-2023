@@ -32,8 +32,8 @@ jobs:
         run: |
           mkdir credentials
           echo ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }} | base64 -d > ./credentials/serviceAccountKey.json
-          dvc remote modify --local oicloud user ${{ secrets.OI_SFTP_USERNAME }}
-          dvc remote modify --local oicloud password ${{ secrets.OI_SFTP_PASSWORD }}
+          pipenv run dvc remote modify --local oicloud user ${{ secrets.OI_SFTP_USERNAME }}
+          pipenv run dvc remote modify --local oicloud password ${{ secrets.OI_SFTP_PASSWORD }}
 
       - name: Run DVC pipelines
         env:
@@ -45,8 +45,8 @@ jobs:
 
         run: |
           # dvc pull
-          dvc update -R working
-          dvc repro -R scripts
+          pipenv run dvc update -R working
+          pipenv run dvc repro -R scripts
 
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v4

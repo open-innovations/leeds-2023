@@ -22,5 +22,16 @@ stages:
           persist: true
           cache: false
 
-
-      
+  prepare:
+    wdir: ../../..
+    cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
+    deps:
+      - scripts/metrics/schools/prepare.py
+      - data/metrics/schools/schools_events.csv
+    outs:
+      - docs/metrics/schools/_data/summary.json:
+          cache: false
+      - docs/metrics/schools/_data/engagements_by_week.csv:
+          cache: false
+      - docs/metrics/schools/_data/school_engagement_counts.csv:
+          cache: false

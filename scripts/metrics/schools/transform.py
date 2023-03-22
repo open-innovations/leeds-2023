@@ -50,8 +50,6 @@ def transform(data):
 if __name__ == '__main__':
     data = read_raw_data()
 
-    print(data)
-
     # Save the schools data
     data.to_csv(SCHOOLS_DATA, index=False)
 

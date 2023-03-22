@@ -46,6 +46,11 @@ if __name__ == "__main__":
 
     summary['unique_schools'] = schools_counts.count()
 
+    summary['date_built'] = pd.Timestamp.today().floor('D').strftime('%Y-%m-%d')
+    summary['earliest_date'] = data.date.min().strftime('%Y-%m-%d')
+
+    print(data.date.min())
+
     # Construct summary dataframe and output to JSON
     summary = pd.DataFrame.from_dict(
         summary, orient="index", columns=['value'])

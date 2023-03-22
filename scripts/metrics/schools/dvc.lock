@@ -30,8 +30,8 @@ stages:
       md5: db80537a4be1d508814289082f6a864f
       size: 23957
     - path: scripts/metrics/schools/prepare.py
-      md5: 0fe5b9f0adeb8f2f76c7a07c9590c2db
-      size: 1844
+      md5: 7564e77f685fa57cde5a2523bcd86da4
+      size: 2055
     outs:
     - path: docs/metrics/schools/_data/engagements_by_week.csv
       md5: 6f51cd798533770bae6b2d656277d0f2
@@ -40,5 +40,5 @@ stages:
       md5: 46949661a4ce8c66a00b2dc410c28f41
       size: 2470
     - path: docs/metrics/schools/_data/summary.json
-      md5: 4eb0afe3df687f7ac0df65efd8be92b5
-      size: 83
+      md5: ee5effd1dc5a6b42f5c637301ce3fde8
+      size: 138

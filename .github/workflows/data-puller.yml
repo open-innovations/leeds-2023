@@ -20,9 +20,7 @@ jobs:
           cache: pipenv
 
       - name: Install pipenv
-        run: |
-          apt update
-          apt install pipenv
+        run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
 
       - name: Install dependencies
         run: pipenv install

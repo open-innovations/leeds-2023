@@ -11,8 +11,8 @@ stages:
       size: 59866
     outs:
     - path: data/metrics/schools/schools_events.csv
-      md5: 0a144a30def7ad156521f10f811fa010
-      size: 23779
+      md5: db80537a4be1d508814289082f6a864f
+      size: 23957
   extract:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
     deps:

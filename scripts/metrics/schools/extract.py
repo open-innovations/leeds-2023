@@ -1,9 +1,12 @@
 import os
 from pyairtable import Table
-from pyairtable.formulas import match
+import pyairtable.formulas as f
 import pandas as pd
 
 API_KEY = os.environ['AIRTABLE_API_KEY']
+
+# FIND('CLE - Creative Learning session', {Event+type})
+filter = f.FIND(f.to_airtable_value("CLE - Creative Learning session"), "ARRAYJOIN({Event type})")
 
 WORKING_DIR = os.path.join('working', 'metrics', 'airtable')
 os.makedirs(WORKING_DIR, exist_ok=True)
@@ -39,7 +42,8 @@ def fetch_data():
             'Ward (from School)',
             'Number of booked participants',
         ],
-        formula=match({"Event type": "CLE - Creative Learning session"}),
+        # FIND('CLE - Creative Learning session', {Event+type})
+        formula=filter
     )
     return pd.json_normalize([x['fields'] for x in school_events])
 

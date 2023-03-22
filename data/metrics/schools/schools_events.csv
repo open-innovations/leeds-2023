@@ -112,52 +112,52 @@ date,event_name,workstream,project_name,venue_wards,venue_postcodes,schools,ward
 2023-02-22,Who Let The Dads Out Fulneck Moravian Church Pack,CLE,Waking the Artist,,,,,,12.0,0
 2023-02-22,Waking the Artist at Leeds City College Quarry Hill Campus (day 2),CLE,01 - The Awakening,['Little London and Woodhouse'],['LS2 7BS'],['Leeds City College'],['Little London and Woodhouse'],,,1
 2023-02-22,Leeds city college - Theatre Design and Production Department Pack,,Waking the Artist,,,,,,,0
-2023-02-23,Dolphin Manor Pack,CLE,Waking the Artist,,,,,,20.0,0
 2023-02-23,Waking the Artist at St Margaret's C of E Primary School (year 4),CLE,01 - The Awakening,['Horsforth'],['LS18 5BL'],"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],60.0,1
-2023-02-23,Waking the Artist at Westgate Primary,CLE,01 - The Awakening,['Otley and Yeadon'],['LS21 3JS'],['Westgate Primary School'],['Morley South'],,59.0,1
 2023-02-23,Waking the Artist at St Margaret's C of E Primary School (year 3),CLE,01 - The Awakening,['Horsforth'],['LS18 5BL'],"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],58.0,1
+2023-02-23,Waking the Artist at Westgate Primary,CLE,01 - The Awakening,['Otley and Yeadon'],['LS21 3JS'],['Westgate Primary School'],['Morley South'],,59.0,1
 2023-02-23,Knowle Manor Pack,CLE,Waking the Artist,,,,,,20.0,0
-2023-02-24,Whinmoor St Pauls C of E Primary School Pack,CLE,Waking the Artist,,,,,,90.0,0
+2023-02-23,Dolphin Manor Pack,CLE,Waking the Artist,,,,,,20.0,0
 2023-02-24,Waking the Artist at Rosebank Primary School,CLE,01 - The Awakening,['Little London and Woodhouse'],['LS3 1JP'],['Rosebank Primary School'],['Little London and Woodhouse'],,58.0,1
+2023-02-24,Whinmoor St Pauls C of E Primary School Pack,CLE,Waking the Artist,,,,,,90.0,0
 2023-02-25,Wetherby Town Hall Pack,CLE,Waking the Artist,,,,,,250.0,0
 2023-02-27,Waking the Artist at Stanningley Primary,CLE,01 - The Awakening,['Bramley and Stanningley'],['LS28 6PE'],['Stanningley Primary School'],['Bramley and Stanningley'],,59.0,1
-2023-02-27,Off the Curriculum ,CLE,Creative Learning S1,['Armley'],['LS12 2AY'],['Armley Park Primary School'],['Armley'],,32.0,1
 2023-02-27,Waking the Artist at East SILC John Jamieson,CLE,01 - The Awakening,['Roundhay'],['LS8 2PW'],['East SILC John Jamieson'],['Roundhay'],,11.0,1
 2023-02-27,Waking the Artist at Summerfield Primary School,CLE,01 - The Awakening,['Bramley and Stanningley'],['LS13 1DQ'],['Summerfield Primary School'],['Bramley and Stanningley'],,54.0,1
+2023-02-27,Off the Curriculum ,CLE,Creative Learning S1,['Armley'],['LS12 2AY'],['Armley Park Primary School'],['Armley'],,32.0,1
 2023-03-01,Off the Curriculum ,CLE,Creative Learning S1,['Moortown'],['LS17 6QP'],['Moor Allerton Hall Primary School'],['Moortown'],,30.0,1
 2023-03-01,The Heritage Cooking Company CIC Pack,,Waking the Artist,,,,,,,0
 2023-03-02,Off the Curriculum ,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS3 1JP'],['Rosebank Primary School'],['Little London and Woodhouse'],,27.0,1
-2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Adel St John the Baptist Church of England Primary School'],['Adel and Wharfedale'],,30.0,1
-2023-03-03,Test school activity ,CLE,Creative Learning S1,,,"[""All Saint's Richmond Hill Church of England Primary School""]",['Burmantofts and Richmond Hill'],,30.0,1
-2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Al Kauthar Girls Academy'],['Chapel Allerton'],['LS7 4JE'],30.0,1
 2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Birchfield Primary School'],['Morley North '],,30.0,1
+2023-03-03,Test school activity ,CLE,Creative Learning S1,,,"[""All Saint's Richmond Hill Church of England Primary School""]",['Burmantofts and Richmond Hill'],,30.0,1
+2023-03-03,Waking the Artist at Cookridge Primary School,CLE,01 - The Awakening,['Weetwood'],['LS16 7DH'],['Cookridge Primary School'],['Weetwood '],['LS16 7DH'],90.0,1
+2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Adel Primary School'],['Adel and Wharfedale'],,30.0,1
+2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Al Kauthar Girls Academy'],['Chapel Allerton'],['LS7 4JE'],30.0,1
+2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Alder Tree Primary Academy'],['Chapel Allerton'],,30.0,1
+2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Abbey Grange Church of England Academy'],['Kirkstall'],['LS16 5EA'],30.0,1
+2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Adel St John the Baptist Church of England Primary School'],['Adel and Wharfedale'],,30.0,1
+2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Allerton Bywater Primary School'],['Kippax and Methley'],,30.0,1
 2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Alwoodley Primary School'],['Alwoodley'],,30.0,1
 2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Abbey Grange Church of England Academy'],['Kirkstall'],['LS16 5EA'],30.0,1
-2023-03-03,Authors Abroad session,CLE,Authors Abroad,['Moortown'],['LS17 6SF'],['Allerton Grange School'],['Moortown '],['LS17 6SF'],90.0,1
 2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Aberford Church of England Voluntary Controlled Primary School'],['Harewood'],,30.0,1
+2023-03-03,Authors Abroad session,CLE,Authors Abroad,['Moortown'],['LS17 6SF'],['Allerton Grange School'],['Moortown '],['LS17 6SF'],90.0,1
 2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Abbey Grange Church of England Academy'],['Kirkstall'],['LS16 5EA'],30.0,1
 2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Abbey Grange Church of England Academy'],['Kirkstall'],['LS16 5EA'],30.0,1
-2023-03-03,Waking the Artist at Cookridge Primary School,CLE,01 - The Awakening,['Weetwood'],['LS16 7DH'],['Cookridge Primary School'],['Weetwood '],['LS16 7DH'],90.0,1
 2023-03-03,Authors Abroad session,CLE,Authors Abroad,['Horsforth'],['LS18 5RF'],['Horsforth School'],['Horsforth'],['LS18 5RF'],90.0,1
-2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Adel Primary School'],['Adel and Wharfedale'],,30.0,1
-2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Abbey Grange Church of England Academy'],['Kirkstall'],['LS16 5EA'],30.0,1
-2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Alder Tree Primary Academy'],['Chapel Allerton'],,30.0,1
 2023-03-03,Test school activity ,CLE,Creative Learning S1,,,"[""Beeston Hill St Luke's Church of England Primary School""]",['Beeston and Holbeck'],,30.0,1
-2023-03-03,Test school activity ,CLE,Creative Learning S1,,,['Allerton Bywater Primary School'],['Kippax and Methley'],,30.0,1
-2023-03-06,Authors Abroad session,CLE,Authors Abroad,['Alwoodley'],['LS17 7AG'],['Allerton High School'],['Moortown '],['LS17 7AG'],90.0,1
 2023-03-06,Waking the Artist at Carr Manor Community School,CLE,01 - The Awakening,['Moortown'],[' LS17 5DJ'],['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],12.0,1
-2023-03-06,Waking the Artist at Robin Hood Primary School,CLE,01 - The Awakening,['Ardsley and Robin Hood'],['WF3 3BG'],['Robin Hood Primary School'],['Ardsley and Robin Hood'],,57.0,1
 2023-03-06,Waking the Artist at Manor Wood Primary School,CLE,01 - The Awakening,['Moortown'],['LS17 5DJ'],['Manor Wood Primary School'],['Moortown'],,61.0,1
-2023-03-07,Authors Abroad session,CLE,Authors Abroad,['Chapel Allerton'],['LS7 4JE'],['New Horizons Community School'],['Chapel Allerton'],,,1
+2023-03-06,Waking the Artist at Robin Hood Primary School,CLE,01 - The Awakening,['Ardsley and Robin Hood'],['WF3 3BG'],['Robin Hood Primary School'],['Ardsley and Robin Hood'],,57.0,1
+2023-03-06,Authors Abroad session,CLE,Authors Abroad,['Alwoodley'],['LS17 7AG'],['Allerton High School'],['Moortown '],['LS17 7AG'],90.0,1
 2023-03-07,Authors Abroad session,CLE,Authors Abroad,['Guiseley and Rawdon'],['LS20 8DT'],['Guiseley School'],['Guiseley and Rawdon'],,,1
 2023-03-07,Authors Abroad session,CLE,Authors Abroad,['Guiseley and Rawdon'],['LS19 6LX'],['Benton Park School'],['Guiseley and Rawdon'],['LS19 6LX'],90.0,1
+2023-03-07,Authors Abroad session,CLE,Authors Abroad,['Chapel Allerton'],['LS7 4JE'],['New Horizons Community School'],['Chapel Allerton'],,,1
 2023-03-08,Authors Abroad session,CLE,Authors Abroad,['Temple Newsam'],[' LS15 0PT'],['Temple Moor High School'],['Temple Newsam '],['LS15 0PT'],,1
 2023-03-10,Waking the Artist at Chapel Allerton Primary,CLE,01 - The Awakening,['Chapel Allerton'],['LS7 3PD'],['Chapel Allerton Primary School'],['Chapel Allerton'],['LS7 3PD'],,1
 2023-03-15,Waking the Artist at New Bewerley Community School,CLE,01 - The Awakening,['Hunslet and Riverside'],['LS11 6TB'],['The New Bewerley Community Primary School'],['Beeston and Holbeck'],,,1
-2023-03-16,Authors Abroad session,CLE,Authors Abroad,['Burmantofts and Richmond Hill'],['LS9 7QL'],['Trinity Academy Leeds'],['Burmantofts and Richmond Hill '],['LS9 7QL'],,1
 2023-03-16,Waking the Artist at St Margaret's C of E Primary School (year 6),CLE,01 - The Awakening,['Horsforth'],['LS18 5BL'],"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],,1
+2023-03-16,Authors Abroad session,CLE,Authors Abroad,['Burmantofts and Richmond Hill'],['LS9 7QL'],['Trinity Academy Leeds'],['Burmantofts and Richmond Hill '],['LS9 7QL'],,1
 2023-03-17,Waking the Artist at Broadgate Primary School,CLE,01 - The Awakening,['Horsforth'],['LS18 5AF'],['Broadgate Primary School'],['Horsforth'],,,1
 2023-03-17,Authors Abroad session,CLE,Authors Abroad,['Hunslet and Riverside'],['LS10 1HW'],['The Ruth Gorse Academy'],['Hunslet and Riverside'],['LS10 1HW'],,1
-2023-03-20,Waking the Artist at Seacroft Grange Primary School,CLE,01 - The Awakening,['Killingbeck and Seacroft'],['LS14 6JR'],['Seacroft Grange Primary School'],['Killingbeck and Seacroft'],,,1
 2023-03-20,Authors Abroad session,CLE,Authors Abroad,['Beeston and Holbeck'],['LS11 5TT'],['Cockburn School'],['Beeston and Holbeck'],['LS11 5TT'],,1
+2023-03-20,Waking the Artist at Seacroft Grange Primary School,CLE,01 - The Awakening,['Killingbeck and Seacroft'],['LS14 6JR'],['Seacroft Grange Primary School'],['Killingbeck and Seacroft'],,,1
 2023-03-21,Waking the Artist at East SILC Jack Clark,CLE,01 - The Awakening,['Gipton and Harehills'],['LS8 3LF'],['East SILC Jack Clark'],['Gipton and Harehills'],['LS8 3LF'],,1

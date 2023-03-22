@@ -41,6 +41,6 @@ stages:
       size: 1467
     outs:
     - path: docs/metrics/callouts/_data
-      md5: ae88938276f0ca290f4856b25f327c3f.dir
-      size: 4013
+      md5: a6fc288f29ccc5ad7eb02f0f1f0d4cff.dir
+      size: 4690
       nfiles: 7

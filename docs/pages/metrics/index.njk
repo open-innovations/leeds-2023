@@ -13,10 +13,6 @@ nav_order: 20
     value: metrics.social_media.all_weekly.columns.audience_last | last,
     measure: 'Audience across all platforms'
   },
-  callouts: {
-    value: search.data('metrics/callouts').headline.responses,
-    measure: "Total number of callout responses."
-  },
   fundraising: {
     value: search.data('metrics/fundraising').count_by_stage.rows | lookup('stage', 'Won', 'count'),
     measure: 'Number of organisational funders'

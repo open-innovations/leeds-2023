@@ -4,13 +4,13 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/extract.py
     deps:
     - path: scripts/metrics/callouts/extract.py
-      md5: 1a59e3c4bbb18dd7034b8779a216c372
-      size: 1244
+      md5: f29275da5a96403ca8984f21d6a38b19
+      size: 1459
     outs:
     - path: working/metrics/callouts/
-      md5: 36c837466ac00e822242d36717fb8706.dir
-      size: 3553
-      nfiles: 7
+      md5: 6e3786d0b5ca8478d83acd51e362889a.dir
+      size: 19194
+      nfiles: 14
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/transform.py
     deps:
@@ -18,29 +18,29 @@ stages:
       md5: 3c332ace66b28524c0a710fca1a4b1c0
       size: 76072682
     - path: scripts/metrics/callouts/transform.py
-      md5: d13dc258ba030f9cad5e05983eaae3ab
-      size: 904
+      md5: 4f398e98b99241cca3ef69e8a979c322
+      size: 1117
     - path: working/metrics/callouts/
-      md5: 36c837466ac00e822242d36717fb8706.dir
-      size: 3553
-      nfiles: 7
+      md5: 6e3786d0b5ca8478d83acd51e362889a.dir
+      size: 19194
+      nfiles: 14
     outs:
     - path: data/metrics/callouts/
-      md5: ea469b58454bd941c09a5651d136198d.dir
-      size: 9301
+      md5: bfa11a9a79fac215d23c9f963e304ab0.dir
+      size: 50042
       nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/prepare.py
     deps:
     - path: data/metrics/callouts/
-      md5: ea469b58454bd941c09a5651d136198d.dir
-      size: 9301
+      md5: bfa11a9a79fac215d23c9f963e304ab0.dir
+      size: 50042
       nfiles: 1
     - path: scripts/metrics/callouts/prepare.py
       md5: 5e80647a69294d0ea3254437376e8002
       size: 1467
     outs:
     - path: docs/metrics/callouts/_data
-      md5: a31964a01b9fdf11c5feb55727369eb5.dir
-      size: 2205
+      md5: ae88938276f0ca290f4856b25f327c3f.dir
+      size: 4013
       nfiles: 7

@@ -68,6 +68,8 @@ layout: layouts/default.njk
 
   {{ get_key_metrics_for_page("metrics/events/awakening/") }}
 
+  {{ get_key_metrics_for_page("metrics/callouts/") }}
+
   {{ comp.metric.headline({
     title: "Residents Engaged",
     value: search.data("dashboard/community").residents.columns.total | sum | localize,
@@ -76,6 +78,8 @@ layout: layouts/default.njk
     colour: fg.next(),
     background: bg.next()
   }) | safe }}
+
+
 
   {% comp "grid.block.impact", {
     link: "/dashboard/impact/",

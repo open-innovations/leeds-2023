@@ -31,6 +31,13 @@ if __name__ == '__main__':
         u'earlyCareerMusicPromoters',
         u'leedsYoungFilm',
         u'offTheCurriculum',
+        u'becomeABarnRaiser',
+        u'liftTheLidAudio',
+        u'liftTheLidWritten',
+        u'nytPlayhouseActingCourse',
+        u'meetLeedsLab',
+        u'meetLeedsLabAudio',
+        u'gillCrawshawCommission',
     ]
 
     for callout in callouts:

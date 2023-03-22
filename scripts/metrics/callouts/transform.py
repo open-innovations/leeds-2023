@@ -9,13 +9,21 @@ os.makedirs(DATA_DIR, exist_ok=True)
 RESPONSE_CSV = os.path.join(DATA_DIR, 'responses.csv')
 
 
+def key_map(value):
+    return {
+        'meet_leeds_lab_audio': 'meet_leeds_lab',
+        'lift_the_lid_audio': 'lift_the_lid',
+        'lift_the_lid_written': 'lift_the_lid',
+    }.get(value, value);
+
+
 if __name__ == '__main__':
     callouts = os.listdir(STAGING_DIR)
     data = pd.DataFrame()
 
     # Load each file add a key and append to the big result data frame
     for filename in callouts:
-        key = filename.replace(r".csv", "")
+        key = key_map(filename.replace(r".csv", ""))
         callout = pd.read_csv(os.path.join(STAGING_DIR, filename))
         callout['callout'] = key
         data = pd.concat([data, callout])

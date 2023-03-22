@@ -1,0 +1,6 @@
+key_metrics:
+  responses: 
+    title: Total Call Out responses
+    ref: headline.responses
+    description: The number of people responding to opportunities to get involved.
+    colour: var(--l23-pink)

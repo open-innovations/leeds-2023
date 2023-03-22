@@ -1,21 +1,39 @@
 - value: authors_abroad
   title: Authors Abroad
-  colour: red
+  colour: '#70082C'
+- value: become_a_barn_raiser
+  title: Become a Barnraiser
+  colour: '#810B31'
 - value: become_a_wowser
   title: Become a WOWser
-  colour: orange
+  colour: '#930D34'
 - value: dancers_of_leeds
   title: Dancers of Leeds
-  colour: yellow
+  colour: '#A41037'
 - value: early_career_music_promoters
   title: Early Career Music Promoter
-  colour: green
+  colour: '#B51339'
+- value: gill_crawshaw_commission
+  title: Any Work That Wanted Doing / Gill Crawshaw
+  colour: '#C6163B'
+
 - value: leeds_on_wheels
   title: Leeds on Wheels
-  colour: blue
+  colour: '#DB2C50'
+
 - value: leeds_young_film
   title: Leeds Young Film
-  colour: indigo
+  colour: '#DF3E64'
+
+- value: lift_the_lid
+  title: Lift the Lid
+  colour: '#E45077'
+- value: meet_leeds_lab
+  title: Meet Leeds Lab
+  colour: '#E86289'
+- value: nyt_playhouse_acting_course
+  title: Apply for a 10 day acting course
+  colour: '#EC759B'
 - value: off_the_curriculum
   title: Off the Curriculum
-  colour: violet
+  colour: '#EF88AC'

@@ -79,7 +79,42 @@ layout: layouts/default.njk
     background: bg.next()
   }) | safe }}
 
+    {{ comp.metric.headline({
+    title: "Total media articles and appearances",
+    value: search.data("metrics/media_coverage").monthly_count.columns.count | sum | localize,
+    description: "The number of media articles mentioning LEEDS 2023.",
+    link: "~/metrics/media_coverage/index.njk",
+    colour: fg.next(),
+    background: bg.next()
+  }) | safe }}
 
+   {% comp "grid.block.impact", {
+    link: "/metrics/social-media/",
+    colour: fg.next(),
+    bg: bg.next()
+  } %}
+    <h2>Social media audience</h2>
+     {{ comp.viz.bigNumber({
+      number: metrics.social_media.all_weekly.columns.audience_last | last | localize
+    }) | safe }}
+    <p>Audience across all LEEDS 2023 social channels.</p>
+  {% endcomp %}
+
+    {% comp "grid.block.impact", {
+    link: "/metrics/social-media/",
+    colour: fg.next(),
+    bg: bg.next()
+  } %}
+    <h2>Social media engagement</h2>
+    <section style="--big-number-size: clamp(2rem, 6vw, 3.7rem);">
+    {{ comp.viz.bigNumber({
+      number: (
+        metrics.social_media.summary.service.all.metrics.engagements_total
+       ) | localize
+    }) | safe }}
+    </section>
+    <p>Total social media engagement with LEEDS 2023.</p>
+  {% endcomp %}
 
   {% comp "grid.block.impact", {
     link: "/dashboard/impact/",

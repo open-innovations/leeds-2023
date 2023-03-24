@@ -27,8 +27,12 @@ limitations:
 
 <h2>Headlines</h2>
 
+{# Set up some cyclers for block colouring #}
+{% set fg = cycler("black", "black") %}
+{% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)") %}
+
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
-  {% comp 'grid.block.impact', {bg: all_colour} %}
+  {% comp 'grid.block.impact', {bg: bg.next()} %}
     <h2>
       Total Articles and Appearances
     </h2>
@@ -71,7 +75,7 @@ limitations:
   
   #}
 
-  {% comp 'grid.block.impact', {bg: all_colour} %}
+  {% comp 'grid.block.impact', {bg: bg.next() } %}
     <h2>
       Total International Articles and Appearances
     </h2>

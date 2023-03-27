@@ -141,5 +141,25 @@ site.filter('localize', (num) => num.toLocaleString())
 site.filter('lookup', filters.lookup);
 site.filter('getDataByPath', filters.getKey);
 site.filter('values', (obj) => Object.values(obj));
+/**
+ * Converts a number into a more human-friendly number.
+ * 
+ * Pass a second argument to limit the maximum exponent (1k = 3, 1m = 6 1bn = 9)
+ */
+site.filter('humanise', (input, max_exponent = Infinity, spacer = '') => {
+  const number = parseFloat(input);
+  const exponent = Math.min(Math.round(Math.log10(number)), max_exponent);
+  console.log({ exponent, max_exponent })
+  if (exponent >= 9) {
+    return `${(number / 1e9).toLocaleString()}${spacer}bn`;
+  }
+  if (exponent >= 6) {
+    return `${(number / 1e6).toLocaleString()}${spacer}m`;
+  }
+  if (exponent >= 3) {
+    return `${(number / 1e3).toLocaleString()}${spacer}k`;
+  }
+  return number.toLocaleString();
+});
 
 export default site;

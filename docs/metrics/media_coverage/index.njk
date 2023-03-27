@@ -53,7 +53,7 @@ limitations:
       Total Estimated Circulation
     </h2>
 {{ comp.viz.bigNumber({
-      number: stats.total_estimated_circulation | localize
+      number: stats.total_estimated_circulation | humanise()
     }) | safe }}
 {% endcomp %}
 {% endcomp %}

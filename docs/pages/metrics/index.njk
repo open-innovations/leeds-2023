@@ -16,10 +16,6 @@ nav_order: 20
   fundraising: {
     value: search.data('metrics/fundraising').count_by_stage.rows | lookup('stage', 'Won', 'count'),
     measure: 'Number of organisational funders'
-  },
-  media_coverage: {
-    value: search.data("metrics/media_coverage").stats.total_media,
-    measure: "Total articles and appearances"
   }
 } -%}
 

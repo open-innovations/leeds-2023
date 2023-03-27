@@ -1,3 +1,9 @@
 # This array enables and disables parts of the page
 featureToggles: []
 
+# This defines the key matrics to display
+key_metrics:
+  articles:
+    title: Total media articles and appearances
+    ref: stats.total_media
+    description: The number of media articles mentioning LEEDS 2023.

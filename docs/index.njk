@@ -79,14 +79,7 @@ layout: layouts/default.njk
     background: bg.next()
   }) | safe }}
 
-  {{ comp.metric.headline({
-    title: "Total media articles and appearances",
-    value: search.data("metrics/media_coverage").monthly_count.columns.Total | sum | localize,
-    description: "The number of media articles mentioning LEEDS 2023.",
-    link: "~/metrics/media_coverage/index.njk",
-    colour: fg.next(),
-    background: bg.next()
-  }) | safe }}
+  {{ get_key_metrics_for_page("metrics/media_coverage/") }}
 
    {% comp "grid.block.impact", {
     link: "/metrics/social-media/",

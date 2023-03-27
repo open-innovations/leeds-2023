@@ -57,6 +57,9 @@ if __name__ == '__main__':
     # Summary Stats
     uv_max = int(data['uv'].max())
     reach_max = int(data['audience_reach'].max())
+    total_audience_reach = int(data.audience_reach.sum())
+    total_unique_views = int(data.uv.sum())
+
     stats = ({
         'total_media': int(data['news_headline'].count()),
         'uv_max': uv_max,
@@ -68,6 +71,9 @@ if __name__ == '__main__':
         'total_media_national': int(by_region.National.sum()),
         'total_media_international': int(by_region.International.sum()),
         'total_media_unknown': int(by_region.Unknown.sum()),
+        'total_audience_reach': total_audience_reach,
+        'total_unique_views': total_unique_views,
+        'total_estimated_circulation': total_audience_reach + total_unique_views
     })
 
     with open(os.path.join(VIEW_DIR, 'stats.yml'), 'w') as f:

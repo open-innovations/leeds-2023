@@ -38,8 +38,8 @@ stages:
       md5: 2075d0be6cc9d6325fb589b3cdab43c8
       size: 66475
     - path: scripts/metrics/media/process.py
-      md5: 5d92c79be6aaa9daa041da7a3c36b51d
-      size: 3247
+      md5: 9a3530d0aa820b1ffc59b760fe1461e6
+      size: 3535
     outs:
     - path: docs/metrics/media_coverage/_data/medium_count.csv
       md5: a553115e8b3a085e4a476ebe228a454d

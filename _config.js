@@ -149,7 +149,6 @@ site.filter('values', (obj) => Object.values(obj));
 site.filter('humanise', (input, max_exponent = Infinity, spacer = '') => {
   const number = parseFloat(input);
   const exponent = Math.min(Math.round(Math.log10(number)), max_exponent);
-  console.log({ exponent, max_exponent })
   if (exponent >= 9) {
     return `${(number / 1e9).toLocaleString()}${spacer}bn`;
   }

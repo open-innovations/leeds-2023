@@ -38,15 +38,15 @@ stages:
       md5: 2075d0be6cc9d6325fb589b3cdab43c8
       size: 66475
     - path: scripts/metrics/media/process.py
-      md5: 9a3530d0aa820b1ffc59b760fe1461e6
-      size: 3535
+      md5: 5dc725ce0b598f36235ed0d79eaf4579
+      size: 3573
     outs:
     - path: docs/metrics/media_coverage/_data/medium_count.csv
       md5: a553115e8b3a085e4a476ebe228a454d
       size: 56
     - path: docs/metrics/media_coverage/_data/monthly_count.csv
-      md5: 67419e2bab597f112b822ded79688a87
-      size: 693
+      md5: f8fd5eeb8200e517bfccc24ac82ef672
+      size: 689
     - path: docs/metrics/media_coverage/_data/outlet_count.csv
       md5: 7954106bde8f2ef9bfd9baedbc8f8bb4
       size: 169

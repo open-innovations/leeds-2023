@@ -17,13 +17,12 @@ limitations:
 {% from 'macros.njk' import dateFormatterNoDay %}
 {%- macro popupPreApplication(params) -%}
   {{ params.label }}</br>
-  {{ params.value }} signups
+{{ params.value }} signups
 {%- endmacro -%}
 {%- macro popupApplied(params) -%}
-  {{ params.label }}</br>
-  {{ params.value }} applications received
+{{ params.label }}</br>
+{{ params.value }} applications received
 {%- endmacro -%}
-
 
 <h2>Headlines</h2>
 
@@ -31,128 +30,42 @@ limitations:
 {% set fg = cycler("black", "black") %}
 {% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)", "var(--l23-magenta)") %}
 
-{% comp 'grid.autogrid', { min_width: '25rem' } %}
-  {% comp 'grid.block.impact', {bg: bg.next()} %}
-    <h2>
+{% comp 'grid.autogrid', {min_width: '25rem'} %}
+{% comp 'grid.block.impact', {bg: bg.next()} %}
+<h2>
       Total Articles and Appearances
     </h2>
-    {{ comp.viz.bigNumber({
+{{ comp.viz.bigNumber({
       number: stats.total_media | localize
     }) | safe }}
-  {% endcomp %}
+{% endcomp %}
 
-
-  {% comp 'grid.block.impact', {bg: bg.next() } %}
-    <h2>
+{% comp 'grid.block.impact', {bg: bg.next()} %}
+<h2>
       Total International Articles and Appearances
     </h2>
-    {{ comp.viz.bigNumber({
+{{ comp.viz.bigNumber({
       number: stats.total_media_international | localize
     }) | safe }}
-  {% endcomp %}
+{% endcomp %}
 
-  {% comp 'grid.block.impact', {bg: bg.next() } %}
-    <h2>
+{% comp 'grid.block.impact', {bg: bg.next()} %}
+<h2>
       Total Estimated Circulation
     </h2>
-    {{ comp.viz.bigNumber({
+{{ comp.viz.bigNumber({
       number: stats.total_estimated_circulation | localize
     }) | safe }}
-  {% endcomp %}
-  {% endcomp %}
-
-
-
-
-{# commented out as we believe this is unwanted
-      {% comp 'grid.block.impact', {bg: all_colour} %}
-   <h2>
-      Total Local Articles and Appearances
-    </h2>
-    {{ comp.viz.bigNumber({
-      number: stats.total_media_local | localize
-    }) | safe }}
-    
-  {% endcomp %}
-
-      {% comp 'grid.block.impact', {bg: all_colour} %}
-    <h2>
-      Total Regional Articles and Appearances
-    </h2>
-    {{ comp.viz.bigNumber({
-      number: stats.total_media_regional | localize
-    }) | safe }}
-    
-  {% endcomp %}
-
-      {% comp 'grid.block.impact', {bg: all_colour} %}
-    <h2>
-      Total National Articles and Appearances
-    </h2>
-    {{ comp.viz.bigNumber({
-      number: stats.total_media_national | localize
-    }) | safe }}
-    
-  {% endcomp %}
-  
-  #}
-
-{# Removed for initial show and tell
-  {% comp 'grid.block.impact', {bg: all_colour} %}
-    <h2>
-      Largest Online Viewership
-    </h2>
-    {{ comp.viz.bigNumber({
-      number: stats.uv_max | localize
-    }) | safe }}
-    <p>{{stats.uv_max_outlet}}</p>
-  {% endcomp %}
-  {% comp 'grid.block.impact', {bg: all_colour} %}
-    <h2>
-      Largest Audience Reached 
-    </h2>
-    {{ comp.viz.bigNumber({
-      number: stats.reach_max | localize
-    }) | safe }}
-    <p>{{stats.reach_max_outlet}}</p>
-  {% endcomp %}
-#}
+{% endcomp %}
+{% endcomp %}
 
 <h2>Detailed charts</h2>
-{% comp 'grid.autogrid', { min_width: '30rem'} %}
-
-{# <h3>Media Coverage by Scope</h3>
-{{ comp.charts.barchart({
-  series: [
-    regional_count.columns.count
-  ],
-  popupContent: popupContent,
-  categories: regional_count.columns.custom_tags,
-  colours: [
-    [ "var(--l23-cyan)" ]
-  ],
-  plot: {
-    grid: { x: true, category: true }
-  },
-  axis: {
-    x: {
-      title: 'Amount of Coverage',
-      show: false,
-      ticks: false,
-      resolution: 100
-    },
-    category: {
-      show: false,
-      height: 40
-    }
-  }
-}) | safe }}
-</div> #}
+{% comp 'grid.autogrid', {min_width: '30rem'} %}
 
 <div>
 <h3>Media Coverage by Medium</h3>
 {% comp 'layout.figure' %}
-  {{ comp.oi.charts.chart.bar({ config: {
+{{ comp.oi.charts.chart.bar({ config: {
     data: medium_count.rows,
     category: 'medium',
     series: [
@@ -184,16 +97,22 @@ limitations:
 </div>
 
 <div>
-<h3>Monthly Media Coverage</h3>
+<h3>Monthly Media Coverage by outlet area</h3>
 {% comp 'layout.figure' %}
 
-{% if 'barchart_by_month' in featureToggles %}
-  {{ comp.oi.charts.chart.bar({ config: {
+{# Scale from here https://hihayk.github.io/scale/#2/2/50/80/-0/-0/100/100/ff00a6/255/0/166/white #}
+{% set scale = ['#FFCCF5', '#FF66D5', '#ff00a6', '#BF008B', '#800066'] %}
+
+{{ comp.oi.charts.chart.bar({ config: {
     data: monthly_count.rows,
     stacked: true,
     category: 'month',
     series: [
-      { title: 'Number of articles', value: 'count', colour: "var(--l23-yellow)" }
+      { title: 'Local outlets', value: 'Local', colour: scale[0] },
+      { title: 'Regional outlets', value: 'Regional', colour: scale[1] },
+      { title: 'National outlets', value: 'National', colour: scale[2] },
+      { title: 'International outlets', value: 'International', colour: scale[3] },
+      { title: 'Unknown outlets', value: 'Unknown', colour: scale[4] }
     ],
     legend: {
       show: true,
@@ -218,47 +137,6 @@ limitations:
     }
   } }) | safe }}
 
-{% else %}
-  {{ comp.oi.charts.graph.line({ config: {
-    categories: monthly_count.columns.month,
-    width: 25,
-    height: 12,
-    text: { colour: '#eee' },
-    xAxis: {
-      title: 'Month',
-      titleOffset: 4,
-      labelRotate: 35,
-      majorTick: 2,
-      formatter: dateFormatterNoDay
-    },
-    yAxis: {
-      title: 'Media Coverage',
-      titleOffset: 3,
-      majorTick: 50
-    },
-    plotArea: {
-      yMin: 0,
-      yMax: 500,
-      colour: 'var(--l23-dark-blue-grey)'
-    },
-    padding: {
-      left: 4,
-      bottom: 5
-    },
-    series: [
-      {
-        id: "all", label: "All",
-        yValues: monthly_count.columns.count,
-        colour: 'var(--l23-yellow)',
-        markerOptions: { s: 5 }
-      }
-    ],
-    legend: {
-      width: "20em"
-    }
-  } }) | safe }}
-
-{% endif %}
 {% endcomp %}
 </div>
 

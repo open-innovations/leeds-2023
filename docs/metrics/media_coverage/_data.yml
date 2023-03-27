@@ -1,4 +1,3 @@
 # This array enables and disables parts of the page
-featureToggles: [
-  barchart_by_month
-]
+featureToggles: []
+

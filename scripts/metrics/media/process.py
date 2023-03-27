@@ -50,6 +50,7 @@ if __name__ == '__main__':
         .fillna(0) \
         .astype(int)
     by_region['Total'] = by_region.sum(axis=1)
+    by_region.index.names = ['month']
     # Check that we got the number out that we were expecting to
     assert (by_region.Total.sum() == pre_check)
     by_region.to_csv(os.path.join(VIEW_DIR, 'monthly_count.csv'))

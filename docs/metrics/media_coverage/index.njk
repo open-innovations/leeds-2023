@@ -51,15 +51,6 @@ limitations:
     }) | safe }}
   {% endcomp %}
 
-  {% comp 'grid.block.impact', { bg: bg.next() } %}
-    <h2>
-      Total International Articles and Appearances
-    </h2>
-    {{ comp.viz.bigNumber({
-      number: stats.total_media_international | localize
-    }) | safe }}
-  {% endcomp %}
-
   {% endcomp %}
 
 
@@ -150,35 +141,38 @@ limitations:
 }) | safe }}
 </div> #}
 
-
 <div>
 <h3>Media Coverage by Medium</h3>
-{{ comp.charts.barchart({
-  series: [
-    medium_count.columns.count
-  ],
-  popupContent: popupContent,
-  categories: medium_count.columns.medium,
-  colours: [
-    [ "var(--l23-cyan)" ]
-  ],
-  plot: {
-    grid: { x: true, category: true }
-  },
-  axis: {
-    x: {
-      title: 'Amount of Coverage',
-      show: false,
-      ticks: false,
-      resolution: 100
+{% comp 'layout.figure' %}
+  {{ comp.oi.charts.chart.bar({ config: {
+    data: medium_count.rows,
+    category: 'medium',
+    series: [
+      { title: 'Number of articles', value: 'count', colour: "var(--l23-yellow)" }
+    ],
+    legend: {
+      show: true,
+      position: "top right"
     },
-    category: {
-      show: false,
-      height: 40
+    axis: {
+      x: {
+        title: {
+          label: "Number of articles"
+        },
+        tickSize: 100,
+        "font-weight": oi_viz.bar.axis.x['font-weight'],
+        grid: oi_viz.bar.axis.x.grid
+      },
+      y: {
+        title: {
+          label: "Medium"
+        },
+        "font-weight": oi_viz.bar.axis.y['font-weight'],
+        grid: oi_viz.bar.axis.y.grid
+      }
     }
-  }
-}) | safe }}
-</section>
+  } }) | safe }}
+{% endcomp %}
 </div>
 
 <div>
@@ -188,9 +182,10 @@ limitations:
 {% if 'barchart_by_month' in featureToggles %}
   {{ comp.oi.charts.chart.bar({ config: {
     data: monthly_count.rows,
+    stacked: true,
     category: 'month',
     series: [
-      { title: 'Count of articles', value: 'count', colour: "var(--l23-yellow)" }
+      { title: 'Number of articles', value: 'count', colour: "var(--l23-yellow)" }
     ],
     legend: {
       show: true,
@@ -199,7 +194,7 @@ limitations:
     axis: {
       x: {
         title: {
-          label: "Count of articles"
+          label: "Number of articles"
         },
         tickSize: 100,
         "font-weight": oi_viz.bar.axis.x['font-weight'],

@@ -29,9 +29,9 @@ limitations:
 
 {# Set up some cyclers for block colouring #}
 {% set fg = cycler("black", "black") %}
-{% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)") %}
+{% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)", "var(--l23-magenta)") %}
 
-{% comp 'grid.autogrid', { min_width: '32rem' } %}
+{% comp 'grid.autogrid', { min_width: '25rem' } %}
   {% comp 'grid.block.impact', {bg: bg.next()} %}
     <h2>
       Total Articles and Appearances
@@ -39,8 +39,31 @@ limitations:
     {{ comp.viz.bigNumber({
       number: stats.total_media | localize
     }) | safe }}
-    
   {% endcomp %}
+
+
+  {% comp 'grid.block.impact', {bg: bg.next() } %}
+    <h2>
+      Total International Articles and Appearances
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: stats.total_media_international | localize
+    }) | safe }}
+  {% endcomp %}
+
+  {% comp 'grid.block.impact', { bg: bg.next() } %}
+    <h2>
+      Total International Articles and Appearances
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: stats.total_media_international | localize
+    }) | safe }}
+  {% endcomp %}
+
+  {% endcomp %}
+
+
+
 
 {# commented out as we believe this is unwanted
       {% comp 'grid.block.impact', {bg: all_colour} %}
@@ -75,16 +98,6 @@ limitations:
   
   #}
 
-  {% comp 'grid.block.impact', {bg: bg.next() } %}
-    <h2>
-      Total International Articles and Appearances
-    </h2>
-    {{ comp.viz.bigNumber({
-      number: stats.total_media_international | localize
-    }) | safe }}
-    
-  {% endcomp %}
-
 {# Removed for initial show and tell
   {% comp 'grid.block.impact', {bg: all_colour} %}
     <h2>
@@ -105,14 +118,9 @@ limitations:
     <p>{{stats.reach_max_outlet}}</p>
   {% endcomp %}
 #}
-  {% endcomp %}
 
 <h2>Detailed charts</h2>
-{% comp 'grid.autogrid', { min_width: '32rem' } %}
-
-
-<div>
-
+{% comp 'grid.autogrid', { min_width: '30rem'} %}
 
 {# <h3>Media Coverage by Scope</h3>
 {{ comp.charts.barchart({
@@ -170,6 +178,7 @@ limitations:
     }
   }
 }) | safe }}
+</section>
 </div>
 
 <div>

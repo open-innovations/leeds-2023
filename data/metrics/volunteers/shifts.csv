@@ -136,7 +136,7 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-02-22,69356,LS10 1NE,30.0,15,30,12298,EXPLORE: Waking the Artist,
 2023-02-23,71664,LS6 1AQ,2.0,1,6,12558,Volunteer Recruitment Roadshow,LEEDS 2023 Events
 2023-02-24,68412,LS1 5AT,10.0,2,2,12141,Trinity Unit (Rolling Shifts) Volunteer Ambassadors,LEEDS 2023 Events
-2023-03-01,69369,LS11 9RQ,58.0,29,200,12299,EXPLORE: The Magician Private Screening and Q&A,
+2023-03-01,69369,LS11 9RQ,60.0,30,200,12299,EXPLORE: The Magician Private Screening and Q&A,
 2023-03-02,71671,LS2 7HY,6.0,2,6,12558,Volunteer Recruitment Roadshow,LEEDS 2023 Events
 2023-03-02,71676,LS9 7BG,2.0,1,6,12558,Volunteer Recruitment Roadshow,LEEDS 2023 Events
 2023-03-03,68352,LS11,21.0,6,8,12150,The Magician Screenings,Partner Events
@@ -151,7 +151,7 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-03-11,67900,LS1 7BR,15.0,5,6,12143,Watson Dance Project - Jesús Rubio Gamo | Gran Bolero,Partner Events
 2023-03-11,68430,LS1 5AT,10.0,2,2,12141,Trinity Unit (Rolling Shifts) Volunteer Ambassadors,LEEDS 2023 Events
 2023-03-12,68431,LS1 5AT,5.0,1,2,12141,Trinity Unit (Rolling Shifts) Volunteer Ambassadors,LEEDS 2023 Events
-2023-03-14,71502,LS2 3AD,348.0,174,300,12541,Season 2: Playing - A Volunteer Update,
+2023-03-14,71502,LS2 3AD,350.0,175,300,12541,Season 2: Playing - A Volunteer Update,
 2023-03-14,71503,LS2 3AD,24.0,8,8,12542,SUPPORT - Season 2: Playing - A Volunteer Update,LEEDS 2023 Events
 2023-03-17,68434,LS1 5AT,10.0,2,2,12141,Trinity Unit (Rolling Shifts) Volunteer Ambassadors,LEEDS 2023 Events
 2023-03-18,68436,LS1 5AT,5.0,1,2,12141,Trinity Unit (Rolling Shifts) Volunteer Ambassadors,LEEDS 2023 Events
@@ -199,3 +199,4 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-03-24,72909,LS10 1LT,18.0,4,6,12625,Support: Meet the Team SPRING 2023,LEEDS 2023 Events
 2023-03-25,68444,LS1 5AT,5.0,1,2,12141,Trinity Unit (Rolling Shifts) Volunteer Ambassadors,LEEDS 2023 Events
 2023-03-26,68445,LS1 5AT,5.0,1,2,12141,Trinity Unit (Rolling Shifts) Volunteer Ambassadors,LEEDS 2023 Events
+2023-03-27,74095,LS2 7JL,6.0,3,3,12804,As You Are - Opera North Soundwalk Support,Partner Events

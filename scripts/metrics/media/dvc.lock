@@ -7,7 +7,7 @@ stages:
       md5: 6ac2f07b2d5938c9d656050b90e142d0
       size: 5857
     - path: working/manual/media/
-      md5: 905be57ac8e5f375fea28013041d200f.dir
+      md5: 24d7ff34b8914f4f1648a3f0caea88f9.dir
       size: 1041686
       nfiles: 20
     outs:
@@ -21,7 +21,7 @@ stages:
       md5: ff6c2ea8554040f3f2fc10f23b109b91
       size: 2586
     - path: working/manual/media/
-      md5: 905be57ac8e5f375fea28013041d200f.dir
+      md5: 24d7ff34b8914f4f1648a3f0caea88f9.dir
       size: 1041686
       nfiles: 20
     outs:
@@ -38,10 +38,15 @@ stages:
       md5: 2075d0be6cc9d6325fb589b3cdab43c8
       size: 66475
     - path: scripts/metrics/media/process.py
-      md5: c4093c5f09332693d1940164900e2257
-      size: 3087
+      md5: 5d92c79be6aaa9daa041da7a3c36b51d
+      size: 3247
     outs:
-    - path: docs/metrics/media_coverage/_data
-      md5: 65a5f77f0cfd76c53e66cff899f8ca3f.dir
-      size: 861
-      nfiles: 5
+    - path: docs/metrics/media_coverage/_data/medium_count.csv
+      md5: a553115e8b3a085e4a476ebe228a454d
+      size: 56
+    - path: docs/metrics/media_coverage/_data/monthly_count.csv
+      md5: 67419e2bab597f112b822ded79688a87
+      size: 693
+    - path: docs/metrics/media_coverage/_data/outlet_count.csv
+      md5: 7954106bde8f2ef9bfd9baedbc8f8bb4
+      size: 169

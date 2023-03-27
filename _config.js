@@ -130,6 +130,8 @@ site.copy('/favicon.ico');
 
 // Get some super tiny icons
 site.remoteFile('/assets/images/icons/github.svg', 'https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons@master/images/svg/github.svg');
+
+site.remoteFile('/assets/images/icons/oi.svg', "https://open-innovations.org/resources/images/logos/oi-square-black.svg");
 site.copy('/assets/images/icons');
 
 site.copy('.nojekyll');

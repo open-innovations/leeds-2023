@@ -2,10 +2,6 @@ img, svg {
   max-width: 100%;
 }
 
-.social-icon {
-  max-width: 3em;
-}
-
 .top-spacer {
   margin-top: var(--header-height);
 }

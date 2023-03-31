@@ -101,14 +101,14 @@ limitations:
     {% call checkToggle('Funding prospects') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
         {{ paneTitle('Funding prospects') }}
-        {{ comp.dashboard.impact.big_number({ number: search.data('metrics/fundraising').count_by_stage.columns.count[2] | localize }) | safe }}
+        {{ comp.dashboard.impact.big_number({ number: search.data('metrics/fundraising').count_by_stage.columns.count[1] | localize }) | safe }}
     {% endcomp %}
     {% endcall %}
 
       {% call checkToggle('Secured funders') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
         {{ paneTitle('Secured funders') }}
-        {{ comp.dashboard.impact.big_number({ number: search.data('metrics/fundraising').count_by_stage.columns.count[1] | localize }) | safe }}
+        {{ comp.dashboard.impact.big_number({ number: search.data('metrics/fundraising').count_by_stage.columns.count[4] | localize }) | safe }}
     {% endcomp %}
     {% endcall %}
 

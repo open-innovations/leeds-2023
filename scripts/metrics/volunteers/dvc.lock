@@ -31,21 +31,21 @@ stages:
       md5: f815232cc480ee56180eb0d19e19d4cc
       size: 154805
     - path: scripts/metrics/volunteers/prepare.py
-      md5: 346148a5db8a4dfac27377690fe56001
-      size: 2085
+      md5: 34b31bc510a6d2d1519213c3ee8c7bd8
+      size: 2139
     outs:
     - path: docs/metrics/volunteers/_data/by_local_authority.csv
-      md5: 0a04d7f9f35bd04f9a88684ada2630bf
-      size: 1031
+      md5: 11c1fd40a87c5b74aed6ee26a8e66912
+      size: 1029
     - path: docs/metrics/volunteers/_data/by_ward.csv
-      md5: fd6f2acf63d06af9bc5dfc2914072ac0
-      size: 3268
+      md5: 2fdd10e672cd41d42bb5d0116b1dabdf
+      size: 3266
     - path: docs/metrics/volunteers/_data/by_week.csv
-      md5: 5fd27b3af6beee46451eef82604968b1
-      size: 1044
+      md5: 0e436cf8fa04c42d38496f79a8424958
+      size: 1004
     - path: docs/metrics/volunteers/_data/la_stats.json
-      md5: 05e628f2646099b89aa1ddb902a7cc84
-      size: 371
+      md5: b4df698253c0d403534cf945420d2e44
+      size: 369
     - path: docs/metrics/volunteers/_data/shifts/by_week.csv
       md5: 3d77bbd9f6d784a43a1f2381d1f03d46
       size: 393

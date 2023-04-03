@@ -1,48 +1,48 @@
 service:
   all:
     metrics:
-      audience_gained_total: 13590
-      audience_last: 37385
-      engagements_total: 203564
-      impressions_total: 6907103
+      audience_gained_total: 14064
+      audience_last: 37831
+      engagements_total: 211093
+      impressions_total: 7133602
   facebook:
     filter_col: date
     filter_range: 2022-01-01:2023-12-31
     metrics:
-      audience_gained_total: 790
-      audience_last: 4846
+      audience_gained_total: 806
+      audience_last: 4869
       date_first: '2022-01-01'
-      date_last: '2023-03-19'
-      engagements_total: 64952
-      impressions_total: 1362531
+      date_last: '2023-04-02'
+      engagements_total: 67671
+      impressions_total: 1422404
   instagram:
     filter_col: date
     filter_range: 2022-01-01:2023-12-31
     metrics:
-      audience_gained_total: 4839
-      audience_last: 8610
+      audience_gained_total: 5062
+      audience_last: 8805
       date_first: '2022-01-01'
-      date_last: '2023-03-19'
-      engagements_total: 20645
-      impressions_total: 702845
+      date_last: '2023-04-02'
+      engagements_total: 22589
+      impressions_total: 744396
   linkedin:
     filter_col: date
     filter_range: 2022-01-01:2023-12-31
     metrics:
-      audience_gained_total: 3005
-      audience_last: 4157
+      audience_gained_total: 3122
+      audience_last: 4269
       date_first: '2022-01-01'
-      date_last: '2023-03-19'
-      engagements_total: 14205
-      impressions_total: 193058
+      date_last: '2023-04-02'
+      engagements_total: 14521
+      impressions_total: 196790
   twitter:
     filter_col: date
     filter_range: 2022-01-01:2023-12-31
     metrics:
-      audience_gained_total: 4956
-      audience_last: 19772
+      audience_gained_total: 5074
+      audience_last: 19888
       date_first: '2022-01-01'
-      date_last: '2023-03-19'
-      engagements_total: 103762
-      impressions_total: 4648669
+      date_last: '2023-04-02'
+      engagements_total: 106312
+      impressions_total: 4770012
 title: Leeds 2023 twitter Summary Statistics

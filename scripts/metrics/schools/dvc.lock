@@ -4,41 +4,41 @@ stages:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/transform.py
     deps:
     - path: scripts/metrics/schools/transform.py
-      md5: b63e041e3933b236f67837934207f56f
-      size: 2115
+      md5: e3b59c680e90d1e7a67b9923f87f6a43
+      size: 5307
     - path: working/metrics/airtable/schools_events.csv
-      md5: 1664cb076f1a0240d6c35546d31050db
-      size: 60131
+      md5: 6a32340a34caec0b862eac90349c0544
+      size: 175581
     outs:
     - path: data/metrics/schools/schools_events.csv
-      md5: cdc1d133e6403417cacf951ad1b251ee
-      size: 25622
+      md5: 83c7274c2511bfc61bb15beb13fb466d
+      size: 23566
   extract:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
     deps:
     - path: scripts/metrics/schools/extract.py
-      md5: 18c4132f2bd4250389a92a7637083e6b
-      size: 1606
+      md5: 2ef28cec6df5f79de5399e0ff37cbc3a
+      size: 692
     outs:
     - path: working/metrics/airtable/schools_events.csv
-      md5: 1664cb076f1a0240d6c35546d31050db
-      size: 60131
+      md5: 6a32340a34caec0b862eac90349c0544
+      size: 175581
   prepare:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
-      md5: cdc1d133e6403417cacf951ad1b251ee
-      size: 25622
+      md5: 83c7274c2511bfc61bb15beb13fb466d
+      size: 23566
     - path: scripts/metrics/schools/prepare.py
       md5: 7564e77f685fa57cde5a2523bcd86da4
       size: 2055
     outs:
     - path: docs/metrics/schools/_data/engagements_by_week.csv
-      md5: 7506dac786d96cceb89f63406c7b1814
-      size: 761
+      md5: fe54e2fd0d851d143463d5fd2b1b3b64
+      size: 720
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
-      md5: 43b7f2dc71967d03639ce65299a20345
-      size: 2810
+      md5: 7c1ac085b55a84b769d087a51b6d643b
+      size: 2476
     - path: docs/metrics/schools/_data/summary.json
-      md5: 8d41689403aa461f72eb0003cf564d0a
+      md5: c4d0a91e3a8325b9998907e268c5533d
       size: 138

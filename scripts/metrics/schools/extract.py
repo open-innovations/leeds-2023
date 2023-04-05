@@ -17,7 +17,29 @@ def fetch_data():
 
     table = Table(API_KEY, BASE_ID, TABLE_NAME)
 
-    school_events = table.all(view=VIEW_NAME)
+    school_events = table.all(
+        view=VIEW_NAME,
+        fields=['Event Unique Identifier',
+                'Event name',
+                'Project name',
+                'Workstream',
+                'Event type',
+                'Season',
+                'Start date',
+                'End date',
+                'Postcode (from Venue)',
+                'Ward (from Venue)',
+                'ACTUAL Audience size / number of participants - IN PERSON',
+                'CLE - Setting',
+                'CLE - Key Stage',
+                'CLE - Subject Area',
+                'CLE - Activity Type',
+                'CLE - School Timing',
+                'School Name (from School)',
+                'School Address Postcode',
+                'Ward (from School)',
+                'Number of booked participants',
+        ])
     return pd.json_normalize([x['fields'] for x in school_events])
 
 

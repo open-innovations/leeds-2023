@@ -7,11 +7,11 @@ stages:
       md5: e3b59c680e90d1e7a67b9923f87f6a43
       size: 5307
     - path: working/metrics/airtable/schools_events.csv
-      md5: a846a550d3d18d64ca18a0e87d5a20bc
-      size: 55621
+      md5: a50aed0dc1db3af5a20337ba017db1c6
+      size: 57176
     outs:
     - path: data/metrics/schools/schools_events.csv
-      md5: 83c7274c2511bfc61bb15beb13fb466d
+      md5: 88897e3639aa93e276c25a194ad97e57
       size: 23566
   extract:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
@@ -21,13 +21,13 @@ stages:
       size: 1475
     outs:
     - path: working/metrics/airtable/schools_events.csv
-      md5: a846a550d3d18d64ca18a0e87d5a20bc
-      size: 55621
+      md5: a50aed0dc1db3af5a20337ba017db1c6
+      size: 57176
   prepare:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
-      md5: 83c7274c2511bfc61bb15beb13fb466d
+      md5: 88897e3639aa93e276c25a194ad97e57
       size: 23566
     - path: scripts/metrics/schools/prepare.py
       md5: 7564e77f685fa57cde5a2523bcd86da4
@@ -37,8 +37,8 @@ stages:
       md5: fe54e2fd0d851d143463d5fd2b1b3b64
       size: 720
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
-      md5: 7c1ac085b55a84b769d087a51b6d643b
+      md5: ca1758607dc9656274fc5b2eafe8b4e2
       size: 2476
     - path: docs/metrics/schools/_data/summary.json
-      md5: c4d0a91e3a8325b9998907e268c5533d
+      md5: 1fc31c7aac786faaa6bb750ea30c5c72
       size: 138

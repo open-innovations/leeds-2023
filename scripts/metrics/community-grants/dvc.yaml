@@ -1,0 +1,42 @@
+# Community grants pipelines
+stages:
+  extract:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/extract.py
+    wdir: ../../..
+    always_changed: true
+    deps:
+      - scripts/metrics/community-grants/extract.py
+    outs:
+      - working/metrics/community-grants/:
+          persist: false
+          cache: false
+  transform:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/transform.py
+    wdir: ../../..
+    deps:
+      - scripts/metrics/community-grants/transform.py
+      - working/metrics/community-grants/
+      - data/reference/postcodes.csv
+    outs:
+      - data/metrics/community-grants/:
+          persist: false
+          cache: false
+  prepare:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/prepare.py
+    wdir: ../../..
+    deps:
+      - scripts/metrics/community-grants/prepare.py
+      - data/metrics/community-grants/
+    outs:
+      - docs/metrics/community-grants/_data/headline.json:
+          persist: false
+          cache: false
+      - docs/metrics/community-grants/_data/responses_by_la.csv:
+          persist: false
+          cache: false
+      - docs/metrics/community-grants/_data/responses_by_ward.csv:
+          persist: false
+          cache: false
+      - docs/metrics/community-grants/_data/responses_by_week.csv:
+          persist: false
+          cache: false

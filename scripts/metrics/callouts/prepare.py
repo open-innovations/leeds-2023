@@ -16,14 +16,21 @@ if __name__ == '__main__':
         SITE_DIR, 'responses_by_callout.csv'))
 
     responses_by_la = pd.DataFrame({
-        'responses': responses.groupby(['la_code']).date_submitted.count(),
-    })
+        'responses': responses.groupby(['la_code', 'callout']).date_submitted.count(),
+    }).reset_index() \
+      .pivot(index='la_code', columns='callout', values='responses') \
+      .fillna(0).astype(int)
+    responses_by_la['responses'] = responses_by_la.sum(axis=1)
+    responses_by_la['barn_plus_wow_responses'] = responses_by_la.become_a_barn_raiser + responses_by_la.become_a_wowser
     responses_by_la.sort_values(by=['la_code']).to_csv(os.path.join(
         SITE_DIR, 'responses_by_la.csv'))
 
     responses_by_ward = pd.DataFrame({
-        'responses': responses.groupby(['ward_code']).date_submitted.count(),
-    })
+        'responses': responses.groupby(['ward_code', 'callout']).date_submitted.count(),
+    }).reset_index() \
+      .pivot(index='ward_code', columns='callout', values='responses') \
+      .fillna(0).astype(int)
+    responses_by_ward['responses'] = responses_by_ward.sum(axis=1)
     responses_by_ward.sort_values(by=['ward_code']).to_csv(os.path.join(
         SITE_DIR, 'responses_by_ward.csv'))
 

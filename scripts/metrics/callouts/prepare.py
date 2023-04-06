@@ -31,6 +31,7 @@ if __name__ == '__main__':
       .pivot(index='ward_code', columns='callout', values='responses') \
       .fillna(0).astype(int)
     responses_by_ward['responses'] = responses_by_ward.sum(axis=1)
+    responses_by_ward['barn_plus_wow_responses'] = responses_by_ward.become_a_barn_raiser + responses_by_ward.become_a_wowser
     responses_by_ward.sort_values(by=['ward_code']).to_csv(os.path.join(
         SITE_DIR, 'responses_by_ward.csv'))
 

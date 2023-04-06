@@ -37,10 +37,10 @@ stages:
       size: 54456
       nfiles: 1
     - path: scripts/metrics/callouts/prepare.py
-      md5: 46c883c5e5fb278cf49c04e921771a62
-      size: 1973
+      md5: 579c0b6f1d8d947929c4241dcd465de9
+      size: 2099
     outs:
     - path: docs/metrics/callouts/_data
-      md5: 813c770592b9229fe0c73d1a8284edcc.dir
-      size: 9522
+      md5: 30a2948980e209b901c79d0680b841b5.dir
+      size: 9839
       nfiles: 7

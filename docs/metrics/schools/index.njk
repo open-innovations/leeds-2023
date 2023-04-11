@@ -1,0 +1,57 @@
+---
+title: Children and Young People
+summary: Engagement with schools, children and young people. 
+tags:
+  - main
+order: 10
+metas:
+  title: LEEDS 2023 Metrics - Schools Engagement
+  description: |
+    Visualisations of key metrics related to engagement with young people.
+limitations:
+  - TBC
+---
+
+{# Set up some cyclers for block colouring #}
+{% set fg = cycler("black", "black") %}
+{% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)", "var(--l23-magenta)") %}
+
+{% comp 'grid.autogrid', {min_width: '25rem'} %}
+{% comp 'grid.block.impact', {bg: bg.next()} %}
+    <h2>
+      Engagements with Young People
+    </h2>
+{{ comp.viz.bigNumber({
+      number: engagements_by_week.columns.pupil_engagements | sum | localize
+    }) | safe }}
+    <p>
+       Total number of young people engaged with through LEEDS 2023 activities.
+    </p> 
+{% endcomp %}
+
+{% comp 'grid.block.impact', {bg: bg.next()} %}
+    <h2>
+      School Engagements
+    </h2>
+{{ comp.viz.bigNumber({
+      number: school_engagement_counts.columns.school | length | localize
+    }) | safe }}
+    <p>
+       Number of schools engaged with.
+    </p> 
+{% endcomp %}
+
+{% comp 'grid.block.impact', {bg: bg.next()} %}
+    <h2>
+      Percentage of Schools Engaged with 
+    </h2>
+    <h2>
+        TBC
+    </h2>
+    <p>
+       Percentage of Leeds schools engaged with through LEEDS 2023 activities.
+    </p> 
+{% endcomp %}
+
+{% endcomp %}
+

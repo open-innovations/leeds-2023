@@ -48,7 +48,8 @@ limitations:
       Percentage of Schools Engaged with 
     </h2>
 {{ comp.viz.bigNumber({
-      number: schools_summary.columns.value[2] | localize
+      number: schools_summary.columns.value[2] | localize,
+      suffix: '%'
     }) | safe }}
     <p>
        Percentage of Leeds schools engaged with through LEEDS 2023 activities.

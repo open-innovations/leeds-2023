@@ -112,10 +112,12 @@ limitations:
 {% endfor %}
 </table>
 
+<h3>'Become a Barnraiser' and 'Become a WOWser' responses by Local Authority</h3>
+
 {% comp 'layout.figure', {
-max_width: '40rem'
+  title: 'Count of responses to 'Become a Barnraiser' and 'Become a WOWser' call outs by Local Authority',
+  max_width: '40rem'
 } %}
-  <h3>'Become a Barnraiser' and 'Become a WOWser' responses by Local Authority</h3>
   {{ comp.charts.hexmap({
     hexjson: hex.wards_leeds,
     data: responses_by_ward.rows,

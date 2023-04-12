@@ -111,3 +111,15 @@ limitations:
   </tr>
 {% endfor %}
 </table>
+
+{% comp 'layout.figure' %}
+  <h3>Call out responses by Local Authority</h3>
+  {{ comp.charts.hexmap({
+    hexjson: hex.wards_leeds,
+    data: responses_by_ward.rows,
+    matchKey: 'ward_code',
+    valueProp: 'responses',
+    bgColour: '#ddd',
+      colourScale: colours.scales.cyan
+  }) | safe }}
+{% endcomp %}

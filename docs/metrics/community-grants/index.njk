@@ -20,7 +20,9 @@ limitations:
 }) | safe }}
 
 
-{% comp 'layout.figure' %}
+{% comp 'layout.figure', {
+  max_width: '40rem'
+} %}
   <h3>My Leeds Summer Community Grant Applications by ward</h3>
   {{ comp.charts.hexmap({
     hexjson: hex.wards_leeds,
@@ -28,6 +30,6 @@ limitations:
     matchKey: 'ward_code',
     valueProp: 'responses',
     bgColour: '#ddd',
-      colourScale: colours.scales.cyan
+      colourScale: colours.scales.magenta
   }) | safe }}
 {% endcomp %}

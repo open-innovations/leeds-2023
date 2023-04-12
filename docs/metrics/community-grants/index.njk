@@ -13,8 +13,21 @@ limitations:
 ---
 
 {{ comp.metric.headline({
-  title: "Call out responses", headingLevel: 3,
+  title: "Community Grant Applications", headingLevel: 3,
   value: headline.responses | localize,
-  description: "Total number of call out responses.",
+  description: "Total number of Community Grant Applications.",
   background: "var(--l23-cyan)"
 }) | safe }}
+
+
+{% comp 'layout.figure' %}
+  <h3>My Leeds Summer Community Grant Applications by ward</h3>
+  {{ comp.charts.hexmap({
+    hexjson: hex.wards_leeds,
+    data: responses_by_ward.rows,
+    matchKey: 'ward_code',
+    valueProp: 'responses',
+    bgColour: '#ddd',
+      colourScale: colours.scales.cyan
+  }) | safe }}
+{% endcomp %}

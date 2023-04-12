@@ -112,8 +112,10 @@ limitations:
 {% endfor %}
 </table>
 
-{% comp 'layout.figure' %}
-  <h3>Call out responses by Local Authority</h3>
+{% comp 'layout.figure', {
+max_width: '40rem'
+} %}
+  <h3>'Become a Barnraiser' and 'Become a WOWser' responses by Local Authority</h3>
   {{ comp.charts.hexmap({
     hexjson: hex.wards_leeds,
     data: responses_by_ward.rows,

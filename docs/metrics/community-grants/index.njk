@@ -11,3 +11,10 @@ metas:
 limitations:
   - TBC
 ---
+
+{{ comp.metric.headline({
+  title: "Call out responses", headingLevel: 3,
+  value: headline.responses | localize,
+  description: "Total number of call out responses.",
+  background: "var(--l23-cyan)"
+}) | safe }}

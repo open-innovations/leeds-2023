@@ -33,3 +33,28 @@ limitations:
       colourScale: colours.scales.magenta
   }) | safe }}
 {% endcomp %}
+
+{% comp 'layout.figure' %}
+  <h3>Community Grant Applications by week</h3>
+  {{ comp.oi.charts.chart.bar({ config: {
+    data: responses_by_week.rows,
+    category: "date_submitted",
+    series: series,
+    legend: {
+      show: true
+    },
+    axis: {
+      x: {
+        title: { label: "Number of call out responses" },
+        tickSize: 10,
+        "font-weight": oi_viz.bar.axis.x['font-weight'],
+        grid: oi_viz.bar.axis.x.grid
+      },
+      y: {
+        title: { label: "Week Ending" },
+        "font-weight": oi_viz.bar.axis.y['font-weight'],
+        grid: oi_viz.bar.axis.y.grid
+      }
+    }
+  } }) | safe }}
+{% endcomp %}

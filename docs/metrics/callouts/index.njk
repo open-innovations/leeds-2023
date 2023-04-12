@@ -119,9 +119,9 @@ limitations:
   max_width: '40rem'
 } %}
   {{ comp.charts.hexmap({
-    hexjson: hex.wards_leeds,
-    data: responses_by_ward.rows,
-    matchKey: 'ward_code',
+    hexjson: hex.leeds_city_region,
+    data: responses_by_la.rows,
+    matchKey: 'la_code',
     valueProp: 'responses',
     bgColour: '#ddd',
       colourScale: colours.scales.magenta

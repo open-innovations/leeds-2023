@@ -27,7 +27,7 @@ limitations:
 
 {# Set up some cyclers for block colouring #}
 {% set fg = cycler("black", "black") %}
-{% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)", "var(--l23-magenta)") %}
+{# {% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)", "var(--l23-magenta)") %} #}
 
 {% comp 'grid.autogrid', {min_width: '25rem'} %}
 {% comp 'grid.block.impact', {bg: bg.next()} %}

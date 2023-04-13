@@ -9,6 +9,8 @@ SUMMARY_DIR = os.path.join('docs', 'metrics', 'schools', '_data', 'schools_summa
 SCHOOLS_DATA = os.path.join(WORKING_DIR, 'all_schools_list.csv')
 WARD_REFERENCE = os.path.join('data', 'reference', 'leeds_wards.csv')
 MERGED_DATA = os.path.join('docs', 'metrics', 'schools', '_data', 'engagements_by_ward.csv')
+SCHOOL_ENGAGEMENT_COUNTS = os.path.join('docs', 'metrics', 'schools', '_data', 'school_engagement_counts.csv')
+ALL_ENGAGEMENTS = os.path.join(WORKING_DIR, 'all_engagements.csv')
 
 
 def fetch_data(): 
@@ -24,9 +26,10 @@ def fetch_data():
     schools.to_csv(SCHOOLS_DATA, index=False)
 
 
-def prepare_summary():
+def summarise():
     data = pd.read_csv(SCHOOLS_DATA)
-    engagements = np.count_nonzero(data['total_engagements'], axis=0)
+    engagements = pd.read_csv(SCHOOL_ENGAGEMENT_COUNTS)
+    engagements = engagements['count_of_engagements'].sum()
     total = len(data) 
     percentage_engaged = (engagements/total)*100
     summary = pd.DataFrame([
@@ -53,7 +56,7 @@ def clean_wardnames(data):
 
 def match_ward(data, ward_data, ward_name='ward'):
     data = data.merge(
-        how='left',
+        how='outer',
         right=ward_data,
         left_on=ward_name,
         right_on='WD21NM',
@@ -65,14 +68,31 @@ def match_ward(data, ward_data, ward_name='ward'):
     return data
 
 def map_wards(): 
-    engagements = pd.read_csv(SCHOOLS_DATA, usecols = ['ward', 'total_engagements'])
+    all_schools = pd.read_csv(SCHOOLS_DATA, usecols = ['school_name', 'ward'])
+    engagements = pd.read_csv(SCHOOL_ENGAGEMENT_COUNTS)
     leeds_wards = pd.read_csv(WARD_REFERENCE)
-    merged = match_ward(engagements, leeds_wards)
-    merged.to_csv(MERGED_DATA, index=False)
+    engagements_all_schools = all_schools.merge(
+        how='outer',
+        right=engagements,
+        left_on= 'school_name',
+        right_on='school',
+        validate='many_to_one',
+    )
+    engagements_all_schools.to_csv(ALL_ENGAGEMENTS, index = False)
+    engagements_by_ward = leeds_wards.merge(
+        how='outer',
+        right=engagements_all_schools,
+        left_on= 'WD21NM',
+        right_on='ward',
+        validate='one_to_many',
+    )
+    engagements_by_ward.count_of_engagements = engagements_by_ward.count_of_engagements.fillna(0).astype(int)
+    print('Number of engagements:' + str(np.count_nonzero(engagements_by_ward['count_of_engagements'], axis=0)))
+    engagements_by_ward.to_csv(MERGED_DATA, index=False)
 
 
 if __name__ == '__main__':
     fetch_data()
-    prepare_summary()
+    summarise()
     map_wards()
     

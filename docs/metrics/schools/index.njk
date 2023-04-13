@@ -4,7 +4,6 @@ summary: Engagement with schools, children and young people.
 tags:
   - main
 order: 10
-url: false
 metas:
   title: LEEDS 2023 Metrics - Schools Engagement
   description: |
@@ -58,13 +57,13 @@ limitations:
 {% endcomp %}
 {% endcomp %}
 
-{% comp 'layout.figure', {
-  title: 'Cumulative counts of engagements with young people'
-} %}
+{% comp 'grid.autogrid', {min_width: '40rem'} %}
+{% comp 'layout.figure' %}
+  <h3>Cumulative counts of engagements with young people</h3>
 {{ comp.oi.charts.graph.line({ config: {
     categories: engagements_by_week.columns.date,
     width: 30,
-    height: 10,
+    height: 18,
     padding: { left: 4 },
     series: [
       {
@@ -92,4 +91,17 @@ limitations:
       width: '30em'
     }
   } }) | safe }}
+{% endcomp %}
+
+{% comp 'layout.figure' %}
+  <h3>School engagement by ward</h3>
+  {{ comp.charts.hexmap({
+    hexjson: hex.wards_leeds,
+    data: engagements_by_ward.rows,
+    matchKey: 'WD21CD',
+    valueProp: 'total_engagements',
+    bgColour: '#ddd',
+      colourScale: colours.scales.cyan
+  }) | safe }}
+{% endcomp %}
 {% endcomp %}

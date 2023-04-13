@@ -63,6 +63,7 @@ limitations:
     </h2>
 {{ comp.viz.bigNumber({
       number: stats.total_media_regional | localize
+      background: "var(--l23-yellow)"
     }) | safe }}
 {% endcomp %}
 
@@ -72,6 +73,7 @@ limitations:
     </h2>
 {{ comp.viz.bigNumber({
       number: stats.total_media_local | localize
+      background: "var(--l23-magenta)"
     }) | safe }}
 {% endcomp %}
 

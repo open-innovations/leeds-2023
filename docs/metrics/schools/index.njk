@@ -59,7 +59,7 @@ limitations:
 
 {% comp 'grid.autogrid', {min_width: '40rem'} %}
 {% comp 'layout.figure' %}
-  <h3>Cumulative counts of engagements with young people</h3>
+  <h3>Number of engagements with young people</h3>
 {{ comp.oi.charts.graph.line({ config: {
     categories: engagements_by_week.columns.date,
     width: 30,
@@ -94,7 +94,7 @@ limitations:
 {% endcomp %}
 
 {% comp 'layout.figure' %}
-  <h3>School engagement by ward</h3>
+  <h3>School engagements by ward</h3>
   {{ comp.charts.hexmap({
     hexjson: hex.wards_leeds,
     data: engagements_by_ward.rows,

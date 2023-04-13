@@ -62,7 +62,7 @@ limitations:
       Total Regional Articles and Appearances
     </h2>
 {{ comp.viz.bigNumber({
-      number: stats.total_media_regional | localize
+      number: stats.total_media_regional | localize,
       background: "var(--l23-yellow)"
     }) | safe }}
 {% endcomp %}
@@ -72,7 +72,7 @@ limitations:
       Total Local Articles and Appearances
     </h2>
 {{ comp.viz.bigNumber({
-      number: stats.total_media_local | localize
+      number: stats.total_media_local | localize,
       background: "var(--l23-magenta)"
     }) | safe }}
 {% endcomp %}

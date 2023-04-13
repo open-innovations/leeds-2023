@@ -57,13 +57,13 @@ limitations:
 {% endcomp %}
 {% endcomp %}
 
-{% comp 'grid.autogrid', {min_width: '40rem'} %}
+{% comp 'grid.autogrid', {min_width: '50rem'} %}
 {% comp 'layout.figure' %}
   <h3>Number of engagements with young people</h3>
 {{ comp.oi.charts.graph.line({ config: {
     categories: engagements_by_week.columns.date,
-    width: 30,
-    height: 18,
+    width: 35,
+    height: 10,
     padding: { left: 4 },
     series: [
       {

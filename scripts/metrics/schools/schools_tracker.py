@@ -45,6 +45,9 @@ def summarise():
     ]).round(0).astype(int)
     summary.to_csv(SUMMARY_DIR)
 
+def clean_schools_data(data):
+    data.school = data.school.str.replace('Pudsey Lowtown Primary School', 'Lowtown Primary School')
+    return data
 
 def clean_wardnames(data):
     data.ward = data.ward.str.replace('&', 'and')
@@ -52,31 +55,21 @@ def clean_wardnames(data):
     data.ward = data.ward.str.replace('Bramley andStanningley', 'Bramley and Stanningley')
     data.ward = data.ward.str.replace('Adel and Wharfedale', 'Adel and Wharfdale')
     data.ward = data.ward.str.replace('Crossgates and Whinmoor', 'Cross Gates and Whinmoor')
-    return data
-
-def match_ward(data, ward_data, ward_name='ward'):
-    data = data.merge(
-        how='outer',
-        right=ward_data,
-        left_on=ward_name,
-        right_on='WD21NM',
-        validate='many_to_one',
-    )
-    data = data[['WD21NM', 'WD21CD', 'total_engagements']]
-    data.WD21NM.fillna('UNKNOWN', inplace=True)
-    data.WD21CD.fillna('UNKNOWN', inplace=True)
+    data.ward = data.ward.str.replace('Middleton', 'Middleton Park')
+    data.ward = data.ward.str.replace('Middleton Park Park', 'Middleton Park')
     return data
 
 def map_wards(): 
     all_schools = pd.read_csv(SCHOOLS_DATA, usecols = ['school_name', 'ward'])
     engagements = pd.read_csv(SCHOOL_ENGAGEMENT_COUNTS)
+    clean_schools_data(engagements)
     leeds_wards = pd.read_csv(WARD_REFERENCE)
     engagements_all_schools = all_schools.merge(
         how='outer',
         right=engagements,
-        left_on= 'school_name',
+        left_on= 'school_name', 
         right_on='school',
-        validate='many_to_one',
+        validate='many_to_many',
     )
     engagements_all_schools.to_csv(ALL_ENGAGEMENTS, index = False)
     engagements_by_ward = leeds_wards.merge(
@@ -87,7 +80,10 @@ def map_wards():
         validate='one_to_many',
     )
     engagements_by_ward.count_of_engagements = engagements_by_ward.count_of_engagements.fillna(0).astype(int)
-    print('Number of engagements:' + str(np.count_nonzero(engagements_by_ward['count_of_engagements'], axis=0)))
+    engagements_by_ward.count_of_engagements = engagements_by_ward.groupby(
+        'WD21NM')[
+        'count_of_engagements'].transform('sum').fillna(0).astype(int)
+    engagements_by_ward = engagements_by_ward.drop_duplicates(subset=['WD21NM'], keep='first')
     engagements_by_ward.to_csv(MERGED_DATA, index=False)
 
 

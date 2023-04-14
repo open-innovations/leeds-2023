@@ -1,318 +1,35 @@
 WD21CD,WD21NM,school_name,ward,school,count_of_engagements
-E05011395,Guiseley and Rawdon,Benton Park School,Guiseley and Rawdon,,0
-E05011395,Guiseley and Rawdon,Green Meadows Academy,Guiseley and Rawdon,,0
-E05011395,Guiseley and Rawdon,Green Meadows Academy,Guiseley and Rawdon,,0
-E05011395,Guiseley and Rawdon,Guiseley Primary School,Guiseley and Rawdon,,0
-E05011395,Guiseley and Rawdon,Guiseley School,Guiseley and Rawdon,,0
-E05011395,Guiseley and Rawdon,Hawksworth Church of England Primary School,Guiseley and Rawdon,,0
-E05011395,Guiseley and Rawdon,Queensway Primary School,Guiseley and Rawdon,,0
-E05011395,Guiseley and Rawdon,Rawdon Littlemoor Primary School,Guiseley and Rawdon,,0
-E05011395,Guiseley and Rawdon,Rawdon St Peter's Church of England Voluntary Controlled Primary School,Guiseley and Rawdon,Rawdon St Peter's Church of England Voluntary Controlled Primary School,2
-E05011395,Guiseley and Rawdon,"Ss. Peter and Paul Catholic Primary School, a Voluntary Academy",Guiseley and Rawdon,,0
-E05011395,Guiseley and Rawdon,"St. Mary's Menston, a Catholic Voluntary Academy",Guiseley and Rawdon,,0
-E05011395,Guiseley and Rawdon,St. Oswald's CofE Primary School,Guiseley and Rawdon,St. Oswald's CofE Primary School,1
-E05011395,Guiseley and Rawdon,Tranmere Park Primary School,Guiseley and Rawdon,,0
-E05011395,Guiseley and Rawdon,Yeadon Westfield Infant School,Guiseley and Rawdon,,0
-E05011395,Guiseley and Rawdon,Yeadon Westfield Junior School,Guiseley and Rawdon,,0
-E05011549,Otley and Yeadon,Ashfield Primary School,Otley and Yeadon,,0
-E05011549,Otley and Yeadon,Otley All Saints CofE Primary School,Otley and Yeadon,,0
-E05011549,Otley and Yeadon,Otley Prince Henry's Grammar School Specialist Language College,Otley and Yeadon,,0
-E05011549,Otley and Yeadon,Otley the Whartons Primary School,Otley and Yeadon,,0
-E05011549,Otley and Yeadon,Rufford Park Primary School,Otley and Yeadon,,0
-E05011549,Otley and Yeadon,"St Joseph's Catholic Primary School, Otley",Otley and Yeadon,,0
-E05011549,Otley and Yeadon,Westgate Primary School,Otley and Yeadon,Westgate Primary School,1
-E05012841,Adel and Wharfdale,Adel Primary School,Adel and Wharfdale,Adel Primary School,1
-E05012841,Adel and Wharfdale,Adel St John the Baptist Church of England Primary School,Adel and Wharfdale,,0
-E05012841,Adel and Wharfdale,Bramhope Primary School,Adel and Wharfdale,,0
-E05012841,Adel and Wharfdale,Cookridge Holy Trinity Church of England Primary School,Adel and Wharfdale,,0
-E05012841,Adel and Wharfdale,Pool-in-Wharfedale Church of England Voluntary Controlled Primary School,Adel and Wharfdale,Pool-in-Wharfedale Church of England Voluntary Controlled Primary School,1
-E05012841,Adel and Wharfdale,Ralph Thoresby School,Adel and Wharfdale,,0
+E05011395,Guiseley and Rawdon,Benton Park School,Guiseley and Rawdon,,3
+E05011549,Otley and Yeadon,Ashfield Primary School,Otley and Yeadon,,1
+E05012841,Adel and Wharfdale,Adel Primary School,Adel and Wharfdale,Adel Primary School,2
 E05012842,Alwoodley,Allerton CofE Primary School,Alwoodley,,0
-E05012842,Alwoodley,Alwoodley Primary School,Alwoodley,,0
-E05012842,Alwoodley,Brodetsky Primary School,Alwoodley,,0
-E05012842,Alwoodley,Primley Wood Primary School,Alwoodley,,0
-E05012842,Alwoodley,"St Paul's Catholic Primary School, a Voluntary Academy",Alwoodley,,0
-E05012842,Alwoodley,The Grammar School At Leeds,Alwoodley,,0
-E05012842,Alwoodley,Wigton Moor Primary School,Alwoodley,,0
 E05011396,Harewood,Aberford Church of England Voluntary Controlled Primary School,Harewood,,0
-E05011396,Harewood,Bardsey Primary School,Harewood,,0
-E05011396,Harewood,Barwick-in-Elmet Church of England Voluntary Controlled Primary School,Harewood,,0
-E05011396,Harewood,Gateways School,Harewood,,0
-E05011396,Harewood,Harewood Church of England Voluntary Controlled Primary School,Harewood,,0
-E05011396,Harewood,Scholes (Elmet) Primary School,Harewood,,0
-E05011414,Wetherby,Boston Spa Academy,Wetherby,,0
-E05011414,Wetherby,Bramham Primary School,Wetherby,,0
-E05011414,Wetherby,Collingham Lady Elizabeth Hastings Church of England Voluntary Aided Primary School,Wetherby,,0
-E05011414,Wetherby,Crossley Street Primary School,Wetherby,,0
-E05011414,Wetherby,Deighton Gates Primary School,Wetherby,,0
-E05011414,Wetherby,"Lady Elizabeth Hastings' CofE VA Primary School, Thorp Arch",Wetherby,,0
-E05011414,Wetherby,Primrose Lane Primary School,Wetherby,Primrose Lane Primary School,1
-E05011414,Wetherby,"St Edward's Catholic Primary School, Boston Spa",Wetherby,,0
-E05011414,Wetherby,St James' Church of England Voluntary Controlled Primary School,Wetherby,,0
-E05011414,Wetherby,"St John's Catholic Specialist School, Boston Spa",Wetherby,,0
-E05011414,Wetherby,"St Joseph's Catholic Primary School, Wetherby",Wetherby,"St Joseph's Catholic Primary School, Wetherby",2
-E05011414,Wetherby,St Mary's Church of England Controlled Primary School Boston Spa,Wetherby,,0
-E05011414,Wetherby,Wetherby High School,Wetherby,,0
-E05011547,Horsforth,Broadgate Primary School,Horsforth,Broadgate Primary School,1
-E05011547,Horsforth,Horsforth Featherbank Primary School,Horsforth,,0
-E05011547,Horsforth,Horsforth Newlaithes Primary School,Horsforth,,0
-E05011547,Horsforth,Horsforth School,Horsforth,,0
-E05011547,Horsforth,St Margaret's Church of England Voluntary Controlled Primary School,Horsforth,St Margaret's Church of England Voluntary Controlled Primary School,4
-E05011547,Horsforth,"St Mary's Catholic Primary School, Horsforth",Horsforth,,0
-E05011547,Horsforth,The Froebelian School,Horsforth,,0
-E05011547,Horsforth,West End Primary School,Horsforth,,0
-E05011547,Horsforth,Westbrook Lane Primary School,Horsforth,,0
-E05011547,Horsforth,Woodhouse Grove School,Horsforth,,0
-E05011413,Weetwood,Cookridge Primary School,Weetwood,Cookridge Primary School,3
-E05011413,Weetwood,Holy Name Catholic Voluntary Academy,Weetwood,,0
-E05011413,Weetwood,Lawnswood School,Weetwood,,0
-E05011413,Weetwood,Lighthouse School Leeds,Weetwood,,0
-E05011413,Weetwood,Richmond House School,Weetwood,,0
-E05011413,Weetwood,Weetwood Primary School,Weetwood,Weetwood Primary School,1
-E05011405,Moortown,Allerton Grange School,Moortown,,0
-E05011405,Moortown,Allerton High School,Moortown,,0
-E05011405,Moortown,Cardinal Heenan Catholic High School,Moortown,,0
-E05011405,Moortown,Carr Manor Community School,Moortown,Carr Manor Community School,2
-E05011405,Moortown,Highfield Primary School,Moortown,,0
-E05011405,Moortown,"Immaculate Heart of Mary Catholic Primary School, A Voluntary Academy",Moortown,,0
-E05011405,Moortown,Leeds Jewish Free School,Moortown,,0
-E05011405,Moortown,Leeds Menorah School,Moortown,,0
-E05011405,Moortown,Manor Wood Primary School,Moortown,Manor Wood Primary School,1
-E05011405,Moortown,Meanwood Church of England Primary School,Moortown,,0
-E05011405,Moortown,Moor Allerton Hall Primary School,Moortown,Moor Allerton Hall Primary School,1
-E05011405,Moortown,Moortown Primary School,Moortown,,0
-E05011405,Moortown,North West Specialist Inclusive Learning Centre,Moortown,,0
-E05011405,Moortown,Penny Field School,Moortown,Penny Field School,1
-E05011405,Moortown,Penny Field School,Moortown,Penny Field School,1
-E05011405,Moortown,Shadwell Primary School,Moortown,,0
-E05011405,Moortown,"St Urban's Catholic Primary School, a Voluntary Academy",Moortown,,0
-E05011411,Roundhay,Co-op Academy Oakwood,Roundhay,,0
-E05011411,Roundhay,Gledhow Primary School,Roundhay,,0
-E05011411,Roundhay,John Jamieson School,Roundhay,,0
-E05011411,Roundhay,John Jamieson School,Roundhay,,0
-E05011411,Roundhay,Kerr Mackie Primary School,Roundhay,,0
-E05011411,Roundhay,Roundhay School,Roundhay,,0
-E05011411,Roundhay,Roundhay St John's Church of England Primary School,Roundhay,Roundhay St John's Church of England Primary School,2
-E05011411,Roundhay,Talbot Primary School,Roundhay,,0
+E05011414,Wetherby,Boston Spa Academy,Wetherby,,3
+E05011547,Horsforth,Broadgate Primary School,Horsforth,Broadgate Primary School,5
+E05011413,Weetwood,Cookridge Primary School,Weetwood,Cookridge Primary School,4
+E05011405,Moortown,Allerton Grange School,Moortown,,6
+E05011411,Roundhay,Co-op Academy Oakwood,Roundhay,,2
 E05011389,Calverley and Farsley,Calverley Church of England Voluntary Aided Primary School,Calverley and Farsley,,0
-E05011389,Calverley and Farsley,Calverley Parkside Primary School,Calverley and Farsley,,0
-E05011389,Calverley and Farsley,Farsley Farfield Primary School,Calverley and Farsley,,0
-E05011389,Calverley and Farsley,Farsley Springbank Primary School,Calverley and Farsley,,0
-E05011389,Calverley and Farsley,Westroyd Primary School and Nursery,Calverley and Farsley,,0
-E05011387,Bramley and Stanningley,Bramley Park Academy,Bramley and Stanningley,,0
-E05011387,Bramley and Stanningley,Bramley St Peter's Church of England Primary School,Bramley and Stanningley,,0
-E05011387,Bramley and Stanningley,"Christ The King Catholic Primary School, A Voluntary Academy",Bramley and Stanningley,,0
-E05011387,Bramley and Stanningley,Hollybush Primary,Bramley and Stanningley,,0
-E05011387,Bramley and Stanningley,Leeds West Academy,Bramley and Stanningley,,0
-E05011387,Bramley and Stanningley,Pudsey Primrose Hill Primary School,Bramley and Stanningley,Pudsey Primrose Hill Primary School,3
-E05011387,Bramley and Stanningley,Raynville Academy,Bramley and Stanningley,,0
-E05011387,Bramley and Stanningley,Stanningley Primary School,Bramley and Stanningley,Stanningley Primary School,1
-E05011387,Bramley and Stanningley,Summerfield Primary School,Bramley and Stanningley,Summerfield Primary School,1
-E05011387,Bramley and Stanningley,Valley View Community Primary School,Bramley and Stanningley,,0
-E05011387,Bramley and Stanningley,West Specialist Inclusive Learning Centre,Bramley and Stanningley,,0
-E05011387,Bramley and Stanningley,Whitecote Primary School,Bramley and Stanningley,,0
+E05011387,Bramley and Stanningley,Bramley Park Academy,Bramley and Stanningley,,5
 E05011402,Kirkstall,Abbey Grange Church of England Academy,Kirkstall,,0
-E05011402,Kirkstall,Beecroft Primary School,Kirkstall,,0
-E05011402,Kirkstall,Burley St Matthias Church of England Voluntary Controlled Primary School,Kirkstall,,0
-E05011402,Kirkstall,Hawksworth Wood Primary School,Kirkstall,,0
-E05011402,Kirkstall,Kirkstall St Stephen's Church of England (VA) Primary School,Kirkstall,,0
-E05011402,Kirkstall,Kirkstall Valley Primary School,Kirkstall,,0
-E05011402,Kirkstall,"Sacred Heart Catholic Primary School, a Voluntary Academy",Kirkstall,,0
-E05011397,Headingley and Hyde Park,Brudenell Primary School,Headingley and Hyde Park,,0
-E05011397,Headingley and Hyde Park,Leeds City Academy,Headingley and Hyde Park,,0
-E05011397,Headingley and Hyde Park,Quarry Mount Primary School,Headingley and Hyde Park,,0
-E05011397,Headingley and Hyde Park,Shire Oak VC Primary School,Headingley and Hyde Park,Shire Oak VC Primary School,1
-E05011397,Headingley and Hyde Park,Spring Bank Primary School,Headingley and Hyde Park,,0
-E05011390,Chapel Allerton,Al Kauthar Girls Academy,Chapel Allerton,,0
-E05011390,Chapel Allerton,Alder Tree Primary Academy,Chapel Allerton,,0
-E05011390,Chapel Allerton,Beechtree Steiner Initiative,Chapel Allerton,,0
-E05011390,Chapel Allerton,Bracken Edge Primary School,Chapel Allerton,Bracken Edge Primary School,2
-E05011390,Chapel Allerton,Chapel Allerton Primary School,Chapel Allerton,Chapel Allerton Primary School,2
-E05011390,Chapel Allerton,Dixons Trinity Chapeltown,Chapel Allerton,Dixons Trinity Chapeltown,1
-E05011390,Chapel Allerton,Hillcrest Academy,Chapel Allerton,,0
-E05011390,Chapel Allerton,"Holy Rosary and St Anne's Catholic Primary School, a Voluntary Academy",Chapel Allerton,"Holy Rosary and St Anne's Catholic Primary School, a Voluntary Academy",4
-E05011390,Chapel Allerton,Mill Field Primary School,Chapel Allerton,,0
-E05011390,Chapel Allerton,St Matthew's Church of England Aided Primary School,Chapel Allerton,,0
-E05011400,Killingbeck and Seacroft,Beechwood Primary School,Killingbeck and Seacroft,Beechwood Primary School,2
-E05011400,Killingbeck and Seacroft,Bishop Young Church of England Academy,Killingbeck and Seacroft,,0
-E05011400,Killingbeck and Seacroft,Grange Farm Primary School,Killingbeck and Seacroft,,0
-E05011400,Killingbeck and Seacroft,Leeds East Academy,Killingbeck and Seacroft,,0
-E05011400,Killingbeck and Seacroft,Our Lady of Good Counsel Catholic Primary School,Killingbeck and Seacroft,,0
-E05011400,Killingbeck and Seacroft,Parklands Primary School,Killingbeck and Seacroft,,0
-E05011400,Killingbeck and Seacroft,Seacroft Grange Primary School,Killingbeck and Seacroft,Seacroft Grange Primary School,1
-E05011400,Killingbeck and Seacroft,The Pivot Academy LS East,Killingbeck and Seacroft,,0
-E05011400,Killingbeck and Seacroft,Whinmoor St Paul's Church of England Primary School,Killingbeck and Seacroft,Whinmoor St Paul's Church of England Primary School,1
-E05011409,Pudsey,Co-op Academy Beckfield,Pudsey,,0
-E05011409,Pudsey,Co-op Academy Priesthorpe,Pudsey,,0
-E05011409,Pudsey,Crawshaw Academy,Pudsey,Crawshaw Academy,1
-E05011409,Pudsey,Fulneck School,Pudsey,,0
-E05011409,Pudsey,Greenside Primary School,Pudsey,,0
-E05011409,Pudsey,Lowtown Primary School,Pudsey,,0
-E05011409,Pudsey,Park Spring Primary School,Pudsey,,0
-E05011409,Pudsey,Pudsey Bolton Royd Primary School,Pudsey,,0
-E05011409,Pudsey,Pudsey Grammar School,Pudsey,,0
-E05011409,Pudsey,Pudsey Waterloo Primary,Pudsey,Pudsey Waterloo Primary,1
-E05011409,Pudsey,Southroyd Primary and Nursery School,Pudsey,,0
-E05011409,Pudsey,"St Joseph's Catholic Primary School, Pudsey",Pudsey,,0
-E05011409,Pudsey,Swinnow Primary School,Pudsey,,0
-E05011385,Armley,Armley Grange School,Armley,,0
-E05011385,Armley,Armley Grange School,Armley,,0
-E05011385,Armley,Armley Park Primary School,Armley,Armley Park Primary School,1
-E05011385,Armley,Castleton Primary School,Armley,,0
-E05011385,Armley,Christ Church Upper Armley Church of England Primary School,Armley,,0
-E05011385,Armley,Dixons Unity Academy,Armley,,0
-E05011385,Armley,Holy Family Catholic Primary School,Armley,,0
-E05011385,Armley,St Bartholomew's CofE Voluntary Controlled Primary School,Armley,,0
-E05011385,Armley,Swallow Hill Community College,Armley,,0
-E05011385,Armley,Whingate Primary School,Armley,,0
-E05011403,Little London and Woodhouse,Blenheim Primary School,Little London and Woodhouse,,0
-E05011403,Little London and Woodhouse,Leeds City College,Little London and Woodhouse,Leeds City College,2
-E05011403,Little London and Woodhouse,Leeds College of Building,Little London and Woodhouse,,0
-E05011403,Little London and Woodhouse,Little London Community Primary School,Little London and Woodhouse,,0
-E05011403,Little London and Woodhouse,Notre Dame Catholic Sixth Form College,Little London and Woodhouse,,0
-E05011403,Little London and Woodhouse,Rosebank Primary School,Little London and Woodhouse,Rosebank Primary School,2
-E05011403,Little London and Woodhouse,West Oaks School,Little London and Woodhouse,,0
+E05011397,Headingley and Hyde Park,Brudenell Primary School,Headingley and Hyde Park,,1
+E05011390,Chapel Allerton,Al Kauthar Girls Academy,Chapel Allerton,,9
+E05011400,Killingbeck and Seacroft,Beechwood Primary School,Killingbeck and Seacroft,Beechwood Primary School,4
+E05011409,Pudsey,Co-op Academy Beckfield,Pudsey,,3
+E05011385,Armley,Armley Grange School,Armley,,1
+E05011403,Little London and Woodhouse,Blenheim Primary School,Little London and Woodhouse,,4
 E05011394,Gipton and Harehills,Bankside Primary School,Gipton and Harehills,,0
-E05011394,Gipton and Harehills,Co-op Academy Nightingale,Gipton and Harehills,,0
-E05011394,Gipton and Harehills,Co-op Academy Woodlands,Gipton and Harehills,,0
-E05011394,Gipton and Harehills,Harehills Primary School,Gipton and Harehills,,0
-E05011394,Gipton and Harehills,Hovingham Primary School,Gipton and Harehills,,0
-E05011394,Gipton and Harehills,Leeds Christian School of Excellence,Gipton and Harehills,,0
-E05011394,Gipton and Harehills,"St Augustine's Catholic Primary School, A Voluntary Academy",Gipton and Harehills,,0
-E05011394,Gipton and Harehills,St Nicholas Catholic Primary School,Gipton and Harehills,,0
-E05011394,Gipton and Harehills,Wykebeck Primary School,Gipton and Harehills,,0
-E05011391,Cross Gates and Whinmoor,Cross Gates Primary School,Cross Gates and Whinmoor,Cross Gates Primary School,1
-E05011391,Cross Gates and Whinmoor,Fieldhead Carr Primary School,Cross Gates and Whinmoor,,0
-E05011391,Cross Gates and Whinmoor,Grimes Dyke Primary School,Cross Gates and Whinmoor,,0
-E05011391,Cross Gates and Whinmoor,John Smeaton Academy,Cross Gates and Whinmoor,,0
-E05011391,Cross Gates and Whinmoor,Manston Primary,Cross Gates and Whinmoor,Manston Primary,1
-E05011391,Cross Gates and Whinmoor,Manston St James Primary Academy,Cross Gates and Whinmoor,,0
-E05011391,Cross Gates and Whinmoor,St Theresa's Catholic Primary School,Cross Gates and Whinmoor,,0
-E05011391,Cross Gates and Whinmoor,Swarcliffe Primary School,Cross Gates and Whinmoor,,0
-E05011391,Cross Gates and Whinmoor,Thorner Church of England Primary School,Cross Gates and Whinmoor,,0
-E05011391,Cross Gates and Whinmoor,White Laith Primary School,Cross Gates and Whinmoor,,0
-E05012648,Farnley and Wortley,Cobden Primary School,Farnley and Wortley,Cobden Primary School,1
-E05012648,Farnley and Wortley,Core Training and Development,Farnley and Wortley,,0
-E05012648,Farnley and Wortley,Core Training and Development,Farnley and Wortley,,0
-E05012648,Farnley and Wortley,Five Lanes Primary School,Farnley and Wortley,,0
-E05012648,Farnley and Wortley,Greenhill Primary School,Farnley and Wortley,,0
-E05012648,Farnley and Wortley,Lawns Park Primary School,Farnley and Wortley,Lawns Park Primary School,3
-E05012648,Farnley and Wortley,Lower Wortley Primary School,Farnley and Wortley,,0
-E05012648,Farnley and Wortley,Ryecroft Academy,Farnley and Wortley,,0
-E05012648,Farnley and Wortley,The Farnley Academy,Farnley and Wortley,,0
-E05012647,Beeston and Holbeck,Beeston Hill St Luke's Church of England Primary School,Beeston and Holbeck,,0
-E05012647,Beeston and Holbeck,Beeston Primary School,Beeston and Holbeck,,0
-E05012647,Beeston and Holbeck,Cockburn School,Beeston and Holbeck,Cockburn School,1
-E05012647,Beeston and Holbeck,Cottingley Primary Academy,Beeston and Holbeck,Cottingley Primary Academy,2
-E05012647,Beeston and Holbeck,Eden Park Academy,Beeston and Holbeck,,0
-E05012647,Beeston and Holbeck,Greenmount Primary School,Beeston and Holbeck,Greenmount Primary School,1
-E05012647,Beeston and Holbeck,Hugh Gaitskell Primary School,Beeston and Holbeck,,0
-E05012647,Beeston and Holbeck,Ingram Road Primary School,Beeston and Holbeck,Ingram Road Primary School,3
-E05012647,Beeston and Holbeck,Lane End Primary School,Beeston and Holbeck,,0
-E05012647,Beeston and Holbeck,Park View Primary Academy,Beeston and Holbeck,,0
-E05012647,Beeston and Holbeck,"St Anthony's Catholic Primary School, Beeston",Beeston and Holbeck,,0
-E05012647,Beeston and Holbeck,"St Francis of Assisi Catholic Primary School, a Voluntary Academy",Beeston and Holbeck,,0
-E05012647,Beeston and Holbeck,The New Bewerley Community Primary School,Beeston and Holbeck,The New Bewerley Community Primary School,1
-E05011399,Hunslet and Riverside,Hunslet Carr Primary School,Hunslet and Riverside,,0
-E05011399,Hunslet and Riverside,Hunslet Moor Primary School,Hunslet and Riverside,Hunslet Moor Primary School,1
-E05011399,Hunslet and Riverside,Low Road Primary School,Hunslet and Riverside,,0
-E05011399,Hunslet and Riverside,LS-TEN,Hunslet and Riverside,,0
-E05011399,Hunslet and Riverside,"St Joseph's Catholic Primary School, Hunslet",Hunslet and Riverside,,0
-E05011399,Hunslet and Riverside,St Marys Church of England Primary Academy,Hunslet and Riverside,,0
-E05011399,Hunslet and Riverside,The Ruth Gorse Academy,Hunslet and Riverside,,0
-E05011399,Hunslet and Riverside,University Technical College Leeds,Hunslet and Riverside,,0
-E05011388,Burmantofts and Richmond Hill,All Saint's Richmond Hill Church of England Primary School,Burmantofts and Richmond Hill,,0
-E05011388,Burmantofts and Richmond Hill,Co-op Academy Brownhill,Burmantofts and Richmond Hill,,0
-E05011388,Burmantofts and Richmond Hill,Co-op Academy Leeds,Burmantofts and Richmond Hill,,0
-E05011388,Burmantofts and Richmond Hill,Ebor Gardens Primary Academy,Burmantofts and Richmond Hill,Ebor Gardens Primary Academy,2
-E05011388,Burmantofts and Richmond Hill,Mount St Mary's Catholic High School,Burmantofts and Richmond Hill,,0
-E05011388,Burmantofts and Richmond Hill,Shakespeare Primary School,Burmantofts and Richmond Hill,Shakespeare Primary School,3
-E05011388,Burmantofts and Richmond Hill,St Patrick Catholic Primary School,Burmantofts and Richmond Hill,,0
-E05011388,Burmantofts and Richmond Hill,"St Peter's Church of England Primary School, Leeds",Burmantofts and Richmond Hill,,0
-E05011388,Burmantofts and Richmond Hill,The Richmond Hill Academy,Burmantofts and Richmond Hill,,0
-E05011388,Burmantofts and Richmond Hill,Trinity Academy Leeds,Burmantofts and Richmond Hill,,0
-E05011388,Burmantofts and Richmond Hill,Victoria Primary Academy,Burmantofts and Richmond Hill,Victoria Primary Academy,1
-E05013831,Temple Newsam,Austhorpe Primary School,Temple Newsam,,0
-E05013831,Temple Newsam,Colton Primary School,Temple Newsam,,0
-E05013831,Temple Newsam,"Corpus Christi Catholic College, A Voluntary Academy",Temple Newsam,,0
-E05013831,Temple Newsam,Corpus Christi Catholic Primary School,Temple Newsam,,0
-E05013831,Temple Newsam,Meadowfield Primary School,Temple Newsam,,0
-E05013831,Temple Newsam,Temple Learning Academy,Temple Newsam,Temple Learning Academy,1
-E05013831,Temple Newsam,Temple Moor High School,Temple Newsam,,0
-E05013831,Temple Newsam,Templenewsam Halton Primary School,Temple Newsam,,0
-E05013831,Temple Newsam,Templenewsam Halton Primary School,Temple Newsam,,0
-E05013831,Temple Newsam,Whitkirk Primary School,Temple Newsam,,0
-E05011406,Morley North,Asquith Primary School,Morley North,,0
-E05011406,Morley North,Birchfield Primary School,Morley North,Birchfield Primary School,1
-E05011406,Morley North,Churwell Primary School,Morley North,,0
-E05011406,Morley North,Drighlington Primary School,Morley North,,0
-E05011406,Morley North,Elliott Hudson College,Morley North,,0
-E05011406,Morley North,Gildersome Primary School,Morley North,,0
-E05011406,Morley North,Morley Victoria Primary School,Morley North,,0
-E05011404,Middleton Park,Broomfield South SILC,Middleton Park,,0
-E05011404,Middleton Park,Broomfield South SILC,Middleton Park,,0
-E05011404,Middleton Park,Clapgate Primary School,Middleton Park,,0
-E05011404,Middleton Park,Cockburn John Charles Academy,Middleton Park,,0
-E05011404,Middleton Park,Cockburn Laurence Calvert Academy,Middleton Park,,0
-E05011404,Middleton Park,Middleton Primary School,Middleton Park,Middleton Primary School,1
-E05011404,Middleton Park,Middleton St Mary's Church of England Voluntary Controlled Primary School,Middleton Park,,0
-E05011404,Middleton Park,Sharp Lane Primary School,Middleton Park,,0
-E05011404,Middleton Park,Southway,Middleton Park,,0
-E05011404,Middleton Park,Springwell Leeds Academy,Middleton Park,Springwell Leeds Academy,1
-E05011404,Middleton Park,Westwood Primary School,Middleton Park,,0
-E05011404,Middleton Park,Windmill Primary School,Middleton Park,,0
-E05011410,Rothwell,Cockburn Haigh Road Academy,Rothwell,,0
-E05011410,Rothwell,"Holy Trinity Church of England Academy, Rothwell",Rothwell,"Holy Trinity Church of England Academy, Rothwell",1
-E05011410,Rothwell,Micklefield Church of England Voluntary Controlled Primary School,Rothwell,,0
-E05011410,Rothwell,Oulton Primary School,Rothwell,,0
-E05011410,Rothwell,Rothwell Haigh Road Infant School,Rothwell,,0
-E05011410,Rothwell,Rothwell Primary School,Rothwell,,0
-E05011410,Rothwell,Rothwell St Mary's RC Primary School,Rothwell,,0
-E05011410,Rothwell,Royds Academy,Rothwell,,0
-E05011410,Rothwell,Victoria Junior School,Rothwell,,0
-E05011410,Rothwell,Woodlesford Primary School,Rothwell,,0
+E05011391,Cross Gates and Whinmoor,Cross Gates Primary School,Cross Gates and Whinmoor,Cross Gates Primary School,2
+E05012648,Farnley and Wortley,Cobden Primary School,Farnley and Wortley,Cobden Primary School,4
+E05012647,Beeston and Holbeck,Beeston Hill St Luke's Church of England Primary School,Beeston and Holbeck,,8
+E05011399,Hunslet and Riverside,Hunslet Carr Primary School,Hunslet and Riverside,,1
+E05011388,Burmantofts and Richmond Hill,All Saint's Richmond Hill Church of England Primary School,Burmantofts and Richmond Hill,,6
+E05013831,Temple Newsam,Austhorpe Primary School,Temple Newsam,,1
+E05011406,Morley North,Asquith Primary School,Morley North,,1
+E05011404,Middleton Park,Broomfield South SILC,Middleton Park,,3
+E05011410,Rothwell,Cockburn Haigh Road Academy,Rothwell,,1
 E05013830,Garforth and Swillington,East Garforth Primary Academy,Garforth and Swillington,,0
-E05013830,Garforth and Swillington,Garforth Academy,Garforth and Swillington,,0
-E05013830,Garforth and Swillington,Green Lane Primary Academy,Garforth and Swillington,,0
-E05013830,Garforth and Swillington,Ninelands Primary School,Garforth and Swillington,,0
-E05013830,Garforth and Swillington,St Benedict's Catholic Primary School,Garforth and Swillington,,0
-E05013830,Garforth and Swillington,Strawberry Fields Primary School,Garforth and Swillington,,0
-E05013830,Garforth and Swillington,Swillington Primary School,Garforth and Swillington,,0
 E05011407,Morley South,Blackgates Primary Academy,Morley South,,0
-E05011407,Morley South,Bruntcliffe Academy,Morley South,,0
-E05011407,Morley South,Fountain Primary School,Morley South,,0
-E05011407,Morley South,Hill Top Primary Academy,Morley South,,0
-E05011407,Morley South,Morley Newlands Academy,Morley South,,0
-E05011407,Morley South,Queenswood School,Morley South,,0
-E05011407,Morley South,Rodillian Academy,Morley South,,0
-E05011407,Morley South,Seven Hills Primary School,Morley South,,0
-E05011407,Morley South,"St Francis Catholic Primary School, Morley",Morley South,,0
-E05011407,Morley South,The Morley Academy,Morley South,,0
-E05011407,Morley South,Westerton Primary Academy,Morley South,,0
-E05011407,Morley South,Woodkirk Academy,Morley South,,0
-E05011384,Ardsley and Robin Hood,Carlton Primary School,Ardsley and Robin Hood,,0
-E05011384,Ardsley and Robin Hood,East Ardsley Primary Academy,Ardsley and Robin Hood,,0
-E05011384,Ardsley and Robin Hood,Robin Hood Primary School,Ardsley and Robin Hood,Robin Hood Primary School,1
-E05011384,Ardsley and Robin Hood,Thorpe Primary School,Ardsley and Robin Hood,,0
+E05011384,Ardsley and Robin Hood,Carlton Primary School,Ardsley and Robin Hood,,1
 E05011401,Kippax and Methley,Allerton Bywater Primary School,Kippax and Methley,,0
-E05011401,Kippax and Methley,Brigshaw High School,Kippax and Methley,,0
-E05011401,Kippax and Methley,Great Preston VC CofE Primary School,Kippax and Methley,,0
-E05011401,Kippax and Methley,Kippax Ash Tree Primary School,Kippax and Methley,,0
-E05011401,Kippax and Methley,Kippax Greenfield Primary School,Kippax and Methley,,0
-E05011401,Kippax and Methley,Kippax North Primary School,Kippax and Methley,,0
-E05011401,Kippax and Methley,Lady Elizabeth Hastings CofE Primary School,Kippax and Methley,,0
-E05011401,Kippax and Methley,Methley Primary School,Kippax and Methley,,0
-E05011401,Kippax and Methley,Micklefield Church of England Primary Academy,Kippax and Methley,,0
-,,Elements Primary School,Middleton,,0
-,,St Philip's Catholic Primary  School,Middleton,St Philip's Catholic Primary  School,1
 ,,Ireland Wood Primary School,Weetwood Lane,,0
-,,Iveson Primary School,Weetwood Lane,,0
-,,Moorlands School,Weetwood Lane,,0
-,,St Chad's Church of England Primary School,Weetwood Lane,,0
-,,North West Specialist Inclusive Learning Centre,,,0
-,,0,,,0
-,,,,East SILC Jack Clark,1
-,,,,Lady Lane Park,1
-,,,,Pudsey Lowtown Primary School,1
-,,,,Co-op Beckfield,1
-,,,,East SILC John Jamieson,1

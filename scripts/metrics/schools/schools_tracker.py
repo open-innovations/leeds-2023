@@ -7,10 +7,12 @@ SCHOOLS_DIR = os.path.join(WORKING_DIR, 'tracker.csv')
 SUMMARY_DIR = os.path.join('docs', 'metrics', 'schools', '_data', 'schools_summary.csv')
 
 SCHOOLS_DATA = os.path.join(WORKING_DIR, 'all_schools_list.csv')
-WARD_REFERENCE = os.path.join('data', 'reference', 'leeds_wards.csv')
+MISSING_SCHOOLS_DATA = os.path.join(WORKING_DIR, 'schools_to_add.csv')
+
 ENGAGEMENTS_BY_WARD = os.path.join('docs', 'metrics', 'schools', '_data', 'engagements_by_ward.csv')
 SCHOOL_ENGAGEMENT_COUNTS = os.path.join('docs', 'metrics', 'schools', '_data', 'school_engagement_counts.csv')
-MISSING_SCHOOLS = os.path.join(WORKING_DIR, 'schools_to_add.csv')
+
+WARD_REFERENCE = os.path.join('data', 'reference', 'leeds_wards.csv')
 
 
 def fetch_data(): 
@@ -47,7 +49,7 @@ def summarise():
 
 def clean_schools_data(data):
     data = clean_wardnames(data)
-    data = add_missing_schools(data, pd.read_csv(MISSING_SCHOOLS))
+    data = add_missing_schools(data, pd.read_csv(MISSING_SCHOOLS_DATA))
     data = clean_schoolnames(data)
     return data
 

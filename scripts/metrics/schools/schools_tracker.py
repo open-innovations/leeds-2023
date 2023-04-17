@@ -72,12 +72,6 @@ def add_missing_schools(data, missing_schools):
     combined = pd.concat( [data, missing_schools], ignore_index=True )
     return combined
 
-def validate(data):
-    print('Total number of wards:' + str(len(data)-2))
-    print('Total number of schools:')
-    print('Total number of schools engaged with: ')
-    print('Total number of engagements:')
-
 def transform(): 
     all_schools = pd.read_csv(SCHOOLS_DATA, usecols = ['school_name', 'ward'])
     engagements = pd.read_csv(SCHOOL_ENGAGEMENT_COUNTS)

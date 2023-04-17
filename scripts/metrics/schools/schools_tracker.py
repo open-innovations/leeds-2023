@@ -27,16 +27,17 @@ def summarise():
     data = pd.read_csv(SCHOOLS_DATA)
     engagements = pd.read_csv(SCHOOL_ENGAGEMENT_COUNTS)
 
-    engagements = engagements['count_of_engagements'].sum()
+    school_engagements = len(engagements)
+
     total = len(data) 
-    percentage_engaged = (engagements/total)*100
+    percentage_engaged = (school_engagements/total)*100
     summary = pd.DataFrame([
         total, 
-        engagements, 
+        school_engagements, 
         percentage_engaged
     ], index=[
         "total_schools", 
-        "total_engagements", 
+        "school_engagements", 
         "percentage_engaged"
     ], columns=[
         "value"

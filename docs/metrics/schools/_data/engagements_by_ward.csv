@@ -1,35 +1,35 @@
-WD21CD,WD21NM,school_name,ward,school,count_of_engagements
-E05011395,Guiseley and Rawdon,Benton Park School,Guiseley and Rawdon,,3
-E05011549,Otley and Yeadon,Ashfield Primary School,Otley and Yeadon,,1
-E05012841,Adel and Wharfdale,Adel Primary School,Adel and Wharfdale,Adel Primary School,2
-E05012842,Alwoodley,Allerton CofE Primary School,Alwoodley,,0
-E05011396,Harewood,Aberford Church of England Voluntary Controlled Primary School,Harewood,,0
-E05011414,Wetherby,Boston Spa Academy,Wetherby,,3
-E05011547,Horsforth,Broadgate Primary School,Horsforth,Broadgate Primary School,5
-E05011413,Weetwood,Cookridge Primary School,Weetwood,Cookridge Primary School,4
-E05011405,Moortown,Allerton Grange School,Moortown,,6
-E05011411,Roundhay,Co-op Academy Oakwood,Roundhay,,2
-E05011389,Calverley and Farsley,Calverley Church of England Voluntary Aided Primary School,Calverley and Farsley,,0
-E05011387,Bramley and Stanningley,Bramley Park Academy,Bramley and Stanningley,,5
-E05011402,Kirkstall,Abbey Grange Church of England Academy,Kirkstall,,0
-E05011397,Headingley and Hyde Park,Brudenell Primary School,Headingley and Hyde Park,,1
-E05011390,Chapel Allerton,Al Kauthar Girls Academy,Chapel Allerton,,9
-E05011400,Killingbeck and Seacroft,Beechwood Primary School,Killingbeck and Seacroft,Beechwood Primary School,4
-E05011409,Pudsey,Co-op Academy Beckfield,Pudsey,,3
-E05011385,Armley,Armley Grange School,Armley,,1
-E05011403,Little London and Woodhouse,Blenheim Primary School,Little London and Woodhouse,,4
-E05011394,Gipton and Harehills,Bankside Primary School,Gipton and Harehills,,0
-E05011391,Cross Gates and Whinmoor,Cross Gates Primary School,Cross Gates and Whinmoor,Cross Gates Primary School,2
-E05012648,Farnley and Wortley,Cobden Primary School,Farnley and Wortley,Cobden Primary School,4
-E05012647,Beeston and Holbeck,Beeston Hill St Luke's Church of England Primary School,Beeston and Holbeck,,8
-E05011399,Hunslet and Riverside,Hunslet Carr Primary School,Hunslet and Riverside,,1
-E05011388,Burmantofts and Richmond Hill,All Saint's Richmond Hill Church of England Primary School,Burmantofts and Richmond Hill,,6
-E05013831,Temple Newsam,Austhorpe Primary School,Temple Newsam,,1
-E05011406,Morley North,Asquith Primary School,Morley North,,1
-E05011404,Middleton Park,Broomfield South SILC,Middleton Park,,3
-E05011410,Rothwell,Cockburn Haigh Road Academy,Rothwell,,1
-E05013830,Garforth and Swillington,East Garforth Primary Academy,Garforth and Swillington,,0
-E05011407,Morley South,Blackgates Primary Academy,Morley South,,0
-E05011384,Ardsley and Robin Hood,Carlton Primary School,Ardsley and Robin Hood,,1
-E05011401,Kippax and Methley,Allerton Bywater Primary School,Kippax and Methley,,0
-,,Ireland Wood Primary School,Weetwood Lane,,0
+WD21CD,WD21NM,count_of_engagements
+E05011395,Guiseley and Rawdon,6
+E05011549,Otley and Yeadon,1
+E05012841,Adel and Wharfdale,4
+E05012842,Alwoodley,0
+E05011396,Harewood,0
+E05011414,Wetherby,3
+E05011547,Horsforth,7
+E05011413,Weetwood,6
+E05011405,Moortown,10
+E05011411,Roundhay,3
+E05011389,Calverley and Farsley,0
+E05011387,Bramley and Stanningley,6
+E05011402,Kirkstall,0
+E05011397,Headingley and Hyde Park,2
+E05011390,Chapel Allerton,12
+E05011400,Killingbeck and Seacroft,4
+E05011409,Pudsey,4
+E05011385,Armley,2
+E05011403,Little London and Woodhouse,4
+E05011394,Gipton and Harehills,1
+E05011391,Cross Gates and Whinmoor,3
+E05012648,Farnley and Wortley,5
+E05012647,Beeston and Holbeck,9
+E05011399,Hunslet and Riverside,2
+E05011388,Burmantofts and Richmond Hill,8
+E05013831,Temple Newsam,2
+E05011406,Morley North,1
+E05011404,Middleton Park,6
+E05011410,Rothwell,2
+E05013830,Garforth and Swillington,0
+E05011407,Morley South,1
+E05011384,Ardsley and Robin Hood,1
+E05011401,Kippax and Methley,0
+,,0

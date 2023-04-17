@@ -8,7 +8,7 @@ SUMMARY_DIR = os.path.join('docs', 'metrics', 'schools', '_data', 'schools_summa
 
 SCHOOLS_DATA = os.path.join(WORKING_DIR, 'all_schools_list.csv')
 WARD_REFERENCE = os.path.join('data', 'reference', 'leeds_wards.csv')
-MERGED_DATA = os.path.join('docs', 'metrics', 'schools', '_data', 'engagements_by_ward.csv')
+ENGAGEMENTS_BY_WARD = os.path.join('docs', 'metrics', 'schools', '_data', 'engagements_by_ward.csv')
 SCHOOL_ENGAGEMENT_COUNTS = os.path.join('docs', 'metrics', 'schools', '_data', 'school_engagement_counts.csv')
 MISSING_SCHOOLS = os.path.join(WORKING_DIR, 'schools_to_add.csv')
 
@@ -102,7 +102,7 @@ def transform():
         'count_of_engagements'].transform('sum').fillna(0).astype(int)
     engagements_by_ward = engagements_by_ward.drop_duplicates(subset=['WD21NM'], keep='first')
 
-    engagements_by_ward.to_csv(MERGED_DATA, index=False)
+    engagements_by_ward.to_csv(ENGAGEMENTS_BY_WARD, index=False)
 
 
 if __name__ == '__main__':

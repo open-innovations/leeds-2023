@@ -10,7 +10,8 @@ os.makedirs(SITE_DATA, exist_ok=True)
 SCHOOLS_REF_DATA = os.path.join('data', 'reference', 'schools.csv')
 WARD_REFERENCE = os.path.join('data', 'reference', 'leeds_wards.csv')
 
-all_schools = pd.read_csv(SCHOOLS_REF_DATA, usecols = ['school_name', 'ward'])
+all_schools = pd.read_csv(SCHOOLS_REF_DATA, usecols=[
+                          'school_name', 'ward', 'ward_code'])
 leeds_wards = pd.read_csv(WARD_REFERENCE)
 
 
@@ -25,6 +26,8 @@ if __name__ == "__main__":
     summary = {}
 
     summary['schools_in_leeds'] = len(all_schools)
+    summary['schools_not_assigned_to_ward'] = len(
+        all_schools[all_schools.ward.isna()])
 
     # Pupils engaged over time
     pupil_engagements = data.groupby(
@@ -46,40 +49,51 @@ if __name__ == "__main__":
     summary['total_pupil_engagements'] = engagements_by_week.pupil_engagements.sum()
     summary['total_school_engagements'] = engagements_by_week.school_engagements.sum()
 
-    schools_counts = data.set_index(
-        'date').schools.explode().dropna().value_counts()
+    schools_counts = data.schools.explode().value_counts().to_frame()
     schools_counts.index.rename('school', inplace=True)
-    schools_counts.rename('count_of_engagements', inplace=True)
+    schools_counts.columns = ['count_of_engagements']
+    schools_counts = schools_counts.merge(
+        right=all_schools.set_index('school_name'),
+        left_index=True,
+        right_index=True,
+    )
+    schools_counts.index.names = ['school']
     schools_counts.to_csv(os.path.join(
         SITE_DATA, 'school_engagement_counts.csv'))
 
-    summary['unique_schools'] = schools_counts.count()
-    summary['percentage_of_leeds_schools_engaged'] = (summary['unique_schools'] / summary['schools_in_leeds'] * 100).round(1)
+    summary['unique_schools'] = schools_counts.count_of_engagements.count()
+    summary['percentage_of_leeds_schools_engaged'] = (
+        summary['unique_schools'] / summary['schools_in_leeds'] * 100).round(1)
 
-    summary['date_built'] = pd.Timestamp.today().floor('D').strftime('%Y-%m-%d')
+    summary['date_built'] = pd.Timestamp.today().floor(
+        'D').strftime('%Y-%m-%d')
     summary['earliest_date'] = data.date.min().strftime('%Y-%m-%d')
 
-    engagements_all_schools = all_schools.merge(
-        how='outer',
-        right=schools_counts,
-        left_on= 'school_name', 
-        right_on='school',
-        validate='many_to_many',
+    summary['engagements_with_schools_not_assigned_to_ward'] = schools_counts[schools_counts.ward.isna(
+    )].count_of_engagements.sum().astype(int)
+
+    ward_stats = leeds_wards.merge(
+        schools_counts.reset_index(),
+        how='left',
+        left_on='WD21CD',
+        right_on='ward_code',
     )
-    engagements_by_ward = leeds_wards.merge(
-        how='outer',
-        right=engagements_all_schools,
-        left_on= 'WD21NM',
-        right_on='ward',
-        validate='one_to_many',
-    )
-    pd.DataFrame({
-        'count': engagements_by_ward.groupby(['WD21CD', 'WD21NM']).count_of_engagements.sum().fillna(0).astype(int)
-    }).to_csv(
-        os.path.join(SITE_DATA, 'engagements_by_ward.csv')
-    )
+
+    ward_group = ward_stats.groupby(['WD21CD', 'WD21NM'])
+    engagements_by_ward = pd.DataFrame({
+        'schools_engaged': ward_group.count_of_engagements.count(),
+        'total_engagements': ward_group.count_of_engagements.sum(),
+        'count_of_schools': all_schools.groupby(['ward_code', 'ward']).school_name.count(),
+    }).astype(int)
+    engagements_by_ward.index.names = ['ward_code', 'ward']
+    engagements_by_ward['percent_of_schools_in_ward_engaged'] = (engagements_by_ward.schools_engaged / engagements_by_ward.count_of_schools * 100).round(1)
+
+    engagements_by_ward \
+        .to_csv(os.path.join(SITE_DATA, 'engagements_by_ward.csv'))
+
+    
 
     # Construct summary dataframe and output to JSON
     summary = pd.DataFrame.from_dict(
-        summary, orient="index", columns=['value'])
-    summary.value.to_json(os.path.join(SITE_DATA, 'headlines.json'))
+        summary, orient="index", columns=['value']).sort_index()
+    summary.value.to_json(os.path.join(SITE_DATA, 'headlines.json'), indent=2)

@@ -106,12 +106,31 @@ limitations:
 {% endcomp %}
 
 {% comp 'layout.figure' %}
+  <h3>Percentage of schools engaged per ward</h3>
+  {{ comp.charts.hexmap({
+    hexjson: hex.wards_leeds,
+    data: engagements_by_ward.rows,
+    matchKey: 'ward_code',
+    valueProp: 'percent_of_schools_in_ward_engaged',
+    bgColour: '#ddd',
+      colourScale: colours.scales.cyan
+  }) | safe }}
+  <p>
+    Darker coloured wards have engaged with a higher percentage of the schools within that ward.
+    There are a total of {{ headlines.schools_in_leeds }} schools in Leeds,
+    of which {{ headlines.schools_not_assigned_to_ward }} are not coded to a ward in the Airtable reference data we are using.
+    This represents {{ headlines.engagements_with_schools_not_assigned_to_ward }} engagements that are not accounted for in this hex map.
+  </p>
+{% endcomp %}
+
+
+{% comp 'layout.figure' %}
   <h3>School engagements by ward</h3>
   {{ comp.charts.hexmap({
     hexjson: hex.wards_leeds,
     data: engagements_by_ward.rows,
-    matchKey: 'WD21CD',
-    valueProp: 'count',
+    matchKey: 'ward_code',
+    valueProp: 'total_engagements',
     bgColour: '#ddd',
       colourScale: colours.scales.cyan
   }) | safe }}

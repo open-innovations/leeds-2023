@@ -34,3 +34,17 @@ limitations:
   }) | safe }}
 {% endcomp %}
 
+{% comp 'layout.figure', {
+  max_width: '40rem'
+} %}
+<h3>My Leeds Summer Community Grant Applications by Local Authority</h3>
+  {{ comp.charts.hexmap({
+    hexjson: hex.leeds_city_region,
+    data: responses_by_la.rows,
+    matchKey: 'la_code',
+    valueProp: 'responses',
+    bgColour: '#ddd',
+      colourScale: colours.scales.cyan
+  }) | safe }}
+{% endcomp %}
+

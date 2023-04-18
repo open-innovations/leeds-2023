@@ -91,3 +91,17 @@ def fuzzy_match_ward_name_to_code(data, ward_name_col="ward", ward_code_col="war
       'WD21NM': ward_name_col
     })
     return data
+
+
+def fuzzy_match_leeds_wards(data, ward_name_col="ward", ward_code_col="ward_code"):
+    wards = pd.read_csv('data/reference/leeds_wards.csv')
+    valid_wards = data[ward_name_col].notna()
+    data.loc[valid_wards, 'WD21NM'] = data.loc[valid_wards, ward_name_col].apply(
+        lambda x: process.extractOne(x, wards.WD21NM)[0])
+    data = pd.merge(left=data, right=wards, how='left', on='WD21NM')
+    data = data.drop(columns=[ward_name_col])
+    data = data.rename(columns={
+        'WD21CD': ward_code_col,
+        'WD21NM': ward_name_col
+    })
+    return data

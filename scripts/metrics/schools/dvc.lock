@@ -30,24 +30,24 @@ stages:
       md5: 3c4b5730eba22511c20a958ca64c9800
       size: 22150
     - path: data/reference/leeds_wards.csv
-      md5: def43962ef47532a30dbd40136b2d0be
-      size: 1034
+      md5: 887a42d46d34c9e966211a79f2b8a672
+      size: 1035
     - path: data/reference/schools.csv
-      md5: b4f71097e9719fff2a136d31cb38c461
-      size: 15637
+      md5: 7eac2dcf91668d80285308c2c2dfdd67
+      size: 18665
     - path: scripts/metrics/schools/prepare.py
-      md5: ab061fb4b67050062ff514e391446054
-      size: 3079
+      md5: a5d4ea3c0397614b4e53db69adc60ea1
+      size: 4242
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
-      md5: f81ff6521fab6e51f440b1112eb136da
-      size: 971
+      md5: bee07dae753c300dd1225c9e1357ed8d
+      size: 1165
     - path: docs/metrics/schools/_data/engagements_by_week.csv
       md5: 27790121aad183786e40752371009614
       size: 861
     - path: docs/metrics/schools/_data/headlines.json
-      md5: 2ea5c0007710aecddbbbd3c0e21faad5
-      size: 204
+      md5: 3d61da5bb8e86f1e1573a4195e279723
+      size: 315
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
       md5: 29bc0bf6c726f26fb8d181280cf45633
       size: 2369
@@ -55,9 +55,9 @@ stages:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/get_reference_data.py
     deps:
     - path: scripts/metrics/schools/get_reference_data.py
-      md5: acd236fac2b9028905f369453981f439
-      size: 593
+      md5: 9f71435b8679733697fd6bb909349a7a
+      size: 686
     outs:
     - path: data/reference/schools.csv
-      md5: b4f71097e9719fff2a136d31cb38c461
-      size: 15637
+      md5: 7eac2dcf91668d80285308c2c2dfdd67
+      size: 18665

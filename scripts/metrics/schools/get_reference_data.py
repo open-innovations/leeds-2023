@@ -3,6 +3,8 @@ import re
 import pandas as pd
 from pyairtable import Table
 
+from util.geography import fuzzy_match_leeds_wards
+
 API_KEY = os.environ['AIRTABLE_API_KEY']
 
 
@@ -22,4 +24,5 @@ def fetch_data():
 
 if __name__ == '__main__':
     data = fetch_data()
+    data = fuzzy_match_leeds_wards(data)
     data.to_csv('data/reference/schools.csv', index=False)

@@ -48,7 +48,7 @@ limitations:
       Percentage of Schools Engaged with 
     </h2>
 {{ comp.viz.bigNumber({
-      number: schools_summary.columns.value[2] | localize,
+      number: headlines.percentage_of_leeds_schools_engaged | localize,
       suffix: '%'
     }) | safe }}
     <p>
@@ -99,7 +99,7 @@ limitations:
     hexjson: hex.wards_leeds,
     data: engagements_by_ward.rows,
     matchKey: 'WD21CD',
-    valueProp: 'count_of_engagements',
+    valueProp: 'count',
     bgColour: '#ddd',
       colourScale: colours.scales.cyan
   }) | safe }}

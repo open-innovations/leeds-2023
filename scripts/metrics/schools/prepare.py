@@ -82,4 +82,4 @@ if __name__ == "__main__":
     # Construct summary dataframe and output to JSON
     summary = pd.DataFrame.from_dict(
         summary, orient="index", columns=['value'])
-    summary.value.to_json(os.path.join(SITE_DATA, 'summary.json'))
+    summary.value.to_json(os.path.join(SITE_DATA, 'headlines.json'))

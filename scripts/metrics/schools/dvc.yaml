@@ -43,7 +43,7 @@ stages:
       - data/reference/schools.csv
       - data/reference/leeds_wards.csv
     outs:
-      - docs/metrics/schools/_data/summary.json:
+      - docs/metrics/schools/_data/headlines.json:
           cache: false
       - docs/metrics/schools/_data/engagements_by_ward.csv:
           cache: false

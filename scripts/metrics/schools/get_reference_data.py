@@ -1,42 +1,25 @@
 import os
+import re
 import pandas as pd
+from pyairtable import Table
 
-def clean_schoolnames(data):
-    data.school_name = data.school_name.str.replace('Lowtown Primary School', 'Pudsey Lowtown Primary School')
-    return data
-
-def clean_wardnames(data):
-    data.ward = data.ward.str.replace('&', 'and')
-    data.ward = data.ward.str.strip()
-    data.ward = data.ward.str.replace('Bramley andStanningley', 'Bramley and Stanningley')
-    data.ward = data.ward.str.replace('Adel and Wharfedale', 'Adel and Wharfdale')
-    data.ward = data.ward.str.replace('Crossgates and Whinmoor', 'Cross Gates and Whinmoor')
-    data.ward = data.ward.str.replace('Middleton', 'Middleton Park')
-    data.ward = data.ward.str.replace('Middleton Park Park', 'Middleton Park')
-    data.ward = data.ward.str.replace('Weetwood Lane', 'Weetwood')
-    return data
+API_KEY = os.environ['AIRTABLE_API_KEY']
 
 
-def read_tracker():
-    data = pd.read_excel(
-        'working/manual/schools/School Engagement Tracker.xlsx',
-        sheet_name='Sheet1',
-        usecols="A:C"
-    )
-    data.columns = [
-        'school_name',
-        'ward',
-        'sector'
-    ]
-    data = data[data.school_name.notna()]
-    return data
+def fetch_data():
+    BASE_ID = 'appHAh7IYG6p2w5Yo'
+    TABLE_NAME = 'Schools'
+
+    table = Table(API_KEY, BASE_ID, TABLE_NAME)
+
+    schools = table.all(
+        fields=['School Name',
+                'Postcode',
+                'Ward',
+        ])
+    return pd.json_normalize([x['fields'] for x in schools]).rename(columns = lambda x: re.sub(r'\W+', '_', x.lower()))
 
 
 if __name__ == '__main__':
-    data = read_tracker()
-    data = clean_schoolnames(data)
-    data = clean_wardnames(data)
-    extra_schools = pd.read_csv(os.path.join(os.path.dirname(__file__), 'schools_to_add.csv'))
-    data = pd.concat([data, extra_schools], ignore_index=True)
-
+    data = fetch_data()
     data.to_csv('data/reference/schools.csv', index=False)

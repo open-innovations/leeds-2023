@@ -5,7 +5,6 @@ stages:
     always_changed: true
     deps:
       - scripts/metrics/schools/get_reference_data.py
-      - working/manual/schools/School Engagement Tracker.xlsx
     outs:
       - data/reference/schools.csv:
           persist: false

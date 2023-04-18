@@ -33,20 +33,20 @@ stages:
       md5: def43962ef47532a30dbd40136b2d0be
       size: 1034
     - path: data/reference/schools.csv
-      md5: 533f3c52ebaddaa8be226a9284bc5a3e
-      size: 18137
+      md5: b4f71097e9719fff2a136d31cb38c461
+      size: 15637
     - path: scripts/metrics/schools/prepare.py
       md5: ab061fb4b67050062ff514e391446054
       size: 3079
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
-      md5: dd459c5ea450ea8f3be9c8951d5fb2a0
-      size: 972
+      md5: f81ff6521fab6e51f440b1112eb136da
+      size: 971
     - path: docs/metrics/schools/_data/engagements_by_week.csv
       md5: 27790121aad183786e40752371009614
       size: 861
     - path: docs/metrics/schools/_data/headlines.json
-      md5: ebc86ad04672a9b6a50113937dcc022c
+      md5: 2ea5c0007710aecddbbbd3c0e21faad5
       size: 204
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
       md5: 29bc0bf6c726f26fb8d181280cf45633
@@ -55,12 +55,9 @@ stages:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/get_reference_data.py
     deps:
     - path: scripts/metrics/schools/get_reference_data.py
-      md5: 5e1fe46bcfa6e42c8a2d6c68a93b89d3
-      size: 1452
-    - path: working/manual/schools/School Engagement Tracker.xlsx
-      md5: d2d74df89b4ab9a4222614be82162df7
-      size: 54399
+      md5: acd236fac2b9028905f369453981f439
+      size: 593
     outs:
     - path: data/reference/schools.csv
-      md5: 533f3c52ebaddaa8be226a9284bc5a3e
-      size: 18137
+      md5: b4f71097e9719fff2a136d31cb38c461
+      size: 15637

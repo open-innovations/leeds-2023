@@ -24,7 +24,7 @@ limitations:
       Engagements with Young People
     </h2>
 {{ comp.viz.bigNumber({
-      number: engagements_by_week.columns.pupil_engagements | sum | localize
+      number: headlines.total_pupil_engagements | localize
     }) | safe }}
     <p>
        Total number of young people engaged with through LEEDS 2023 activities.
@@ -33,13 +33,25 @@ limitations:
 
 {% comp 'grid.block.impact', {bg: bg.next()} %}
     <h2>
-      School Engagements
+      Total engagements with schools
     </h2>
 {{ comp.viz.bigNumber({
-      number: school_engagement_counts.columns.school | length | localize
+      number: headlines.total_school_engagements | localize
     }) | safe }}
     <p>
-       Number of schools engaged with.
+       Number of schools engagemenets
+    </p> 
+{% endcomp %}
+
+{% comp 'grid.block.impact', {bg: bg.next()} %}
+    <h2>
+      Unique schools
+    </h2>
+{{ comp.viz.bigNumber({
+      number: headlines.unique_schools | localize
+    }) | safe }}
+    <p>
+       Number of unique schools engaged with.
     </p> 
 {% endcomp %}
 

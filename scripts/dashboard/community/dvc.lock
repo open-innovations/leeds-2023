@@ -38,8 +38,8 @@ stages:
       md5: f815232cc480ee56180eb0d19e19d4cc
       size: 154805
     - path: data/reference/leeds_wards.csv
-      md5: def43962ef47532a30dbd40136b2d0be
-      size: 1034
+      md5: 887a42d46d34c9e966211a79f2b8a672
+      size: 1035
     - path: docs/metrics/roadshow-attendees/_data/by_ward.csv
       md5: a6c1eabb3c8da4db2c07cc46d07eb70f
       size: 1517
@@ -48,8 +48,8 @@ stages:
       size: 2863
     outs:
     - path: docs/dashboard/community/_data/residents.csv
-      md5: 4469a13ee69de6dbb06d94320d8a2c1a
-      size: 1480
+      md5: 3539a88cf0cc1b70ec44112b15e4085e
+      size: 1481
     - path: docs/dashboard/community/_data/residents_with_schools.csv
-      md5: b44453c049f76106af62f14c6b3c7533
-      size: 1577
+      md5: bf29cffdc0b9cfac69d04635b9593d38
+      size: 1578

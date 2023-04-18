@@ -36,8 +36,8 @@ stages:
       md5: 7eac2dcf91668d80285308c2c2dfdd67
       size: 18665
     - path: scripts/metrics/schools/prepare.py
-      md5: 5ce0a4b96cb1b15d553ec2d04f5dabf2
-      size: 3812
+      md5: 67c0bd1125cf2dd48c6eee780b833784
+      size: 3799
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
       md5: fa051aa3767dcaf295e5c70e2965caa0

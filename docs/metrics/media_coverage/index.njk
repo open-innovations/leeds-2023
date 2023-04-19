@@ -8,8 +8,8 @@ url: /metrics/media-coverage/
 key: media_coverage
 limitations:
   - There is currently a gap in data between October and November. The figures for these months are lower than reality. This will be resolved soon.
-  - The headline figures for each media outlet area are currently lower than reality. This is due to a number of articles in our dataset 
-  not currently being allocated a geographic region.
+  - The headline figures for each media outlet area are currently lower than reality. This is due to a number of articles in our dataset not currently being allocated a geographic region.
+  - There are a small number of articles counted twice in January. There is some work needed to de-duplicate the original dataset.
 ---
 {%- macro popupContent({ value: value, category: category }) -%}
   {{ value }} articles and appearances in the {{ category }} category

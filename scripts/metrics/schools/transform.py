@@ -27,7 +27,7 @@ def read_raw_data():
 
     Project name
     Event name
-    Workstream
+    Project type
     Event type
     L23 Creative Team Lead
     Season
@@ -163,7 +163,7 @@ if __name__ == '__main__':
     events = pd.DataFrame({
         'date': pd.to_datetime(data.start_date),
         'event_name': data.event_name,
-        'workstream': data.workstream,
+        'project_type': data.project_type,
         'project_name': data.project_name,
         'venue_wards': data.ward_from_venue,
         'venue_postcodes': data.postcode_from_venue,

@@ -322,6 +322,7 @@ limitations:
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
         {{ paneTitle('Number of engagements with pupils:') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
+        {{ comp.dashboard.impact.big_number({ number: search.data('metrics/schools').headlines.total_pupil_engagements | localize }) | safe }}
     {% endcomp %}
     {% endcall %}
 

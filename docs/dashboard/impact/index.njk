@@ -319,14 +319,14 @@ limitations:
     {% endcall %}
 
       {% call checkToggle('Number of pupils') -%}
-    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/schools/' } %}
         {{ paneTitle('Number of engagements with pupils:') }}
         {{ comp.dashboard.impact.big_number({ number: search.data('metrics/schools').headlines.total_pupil_engagements | localize }) | safe }}
     {% endcomp %}
     {% endcall %}
 
     {% call checkToggle('Featured articles') -%}
-    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/media_coverage/' } %}
+    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/schools/' } %}
         {{ paneTitle('Total featured articles') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
     {% endcomp %}

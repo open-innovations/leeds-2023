@@ -24,13 +24,13 @@ limitations:
 {% comp 'grid.autogrid', {min_width: '25rem'} %}
 {% comp 'grid.block.impact', {bg: bg.next()} %}
     <h2>
-      Engagements with Young People
+      Engagements with Pupils
     </h2>
 {{ comp.viz.bigNumber({
       number: headlines.total_pupil_engagements | localize
     }) | safe }}
     <p>
-       Total number of young people engaged with through LEEDS 2023 activities.
+       Total number of pupils engaged with through LEEDS 2023 activities.
     </p> 
 {% endcomp %}
 
@@ -74,7 +74,7 @@ limitations:
 
 {% comp 'grid.autogrid', {min_width: '40rem'} %}
 {% comp 'layout.figure' %}
-  <h3>Number of engagements with young people</h3>
+  <h3>Number of engagements with pupils</h3>
 {{ comp.oi.charts.graph.line({ config: {
     categories: engagements_by_week.columns.date,
     width: 25,
@@ -127,7 +127,7 @@ limitations:
 {% endcomp %}
 
 
-{% comp 'layout.figure' %}
+{# {% comp 'layout.figure' %}
   <h3>School engagements by ward</h3>
   {{ comp.charts.hexmap({
     hexjson: hex.wards_leeds,
@@ -137,5 +137,5 @@ limitations:
     bgColour: '#ddd',
       colourScale: colours.scales.cyan
   }) | safe }}
-{% endcomp %}
+{% endcomp %} #}
 {% endcomp %}

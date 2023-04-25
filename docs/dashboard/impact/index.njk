@@ -55,9 +55,9 @@ limitations:
       {%- endcall %}
     {% endcomp %}
 
-    {% call checkToggle('Engagements with residents') -%}
+    {% call checkToggle('Residents engaged') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/dashboard/community' }%}
-      {{ paneTitle('Residents engaged') }}
+      {{ paneTitle('Engagements with residents') }}
       {{ comp.dashboard.impact.big_number({ number: search.data('dashboard/community').residents.columns.total | sum | localize }) | safe }}
       <p class="footnote">Count of resident engagements with LEEDS2023 activities.</p>
     {% endcomp %}
@@ -318,7 +318,7 @@ limitations:
     {% endcomp %}
     {% endcall %}
 
-      {% call checkToggle('Engagements with pupils') -%}
+      {% call checkToggle('Number of pupils') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
         {{ paneTitle('Number of engagements with pupils:') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}

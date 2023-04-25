@@ -88,6 +88,7 @@ layout: layouts/default.njk
 
   {{ get_key_metrics_for_page("metrics/callouts/") }}
 
+  {# temporary hiding of this figure
   {{ comp.metric.headline({
     title: "Residents Engaged",
     value: search.data("dashboard/community").residents.columns.total | sum | localize,
@@ -96,6 +97,8 @@ layout: layouts/default.njk
     colour: fg.next(),
     background: bg.next()
   }) | safe }}
+  
+  #}
 
   {{ get_key_metrics_for_page("metrics/media_coverage/") }}
 

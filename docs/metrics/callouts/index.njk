@@ -41,6 +41,13 @@ limitations:
   background: "var(--l23-cyan)"
 }) | safe }}
 
+{{ comp.metric.headline({
+  title: "Number of call outs", headingLevel: 3,
+  value: headline.responses | localize,
+  description: "Total number of call outs made by LEEDS 2023.",
+  background: "var(--l23-cyan)"
+}) | safe }}
+
 <h2>Call out Responses</h2>
 
 <p>

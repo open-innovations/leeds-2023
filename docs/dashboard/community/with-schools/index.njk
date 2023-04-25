@@ -129,3 +129,10 @@ limitations:
   columns: table_columns.events,
   rows: events_with_schools.rows
 }) | safe }}
+
+{% if limitations %}
+<h2>Known Limitations and Issues</h2>
+<ul>
+  {% for item in limitations %}<li>{{ item | md(true) | safe }}</li>{% endfor %}
+</ul>
+{% endif %}

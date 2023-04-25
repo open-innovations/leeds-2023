@@ -1,7 +1,7 @@
-export default function({ comp, metrics, title, value, description, link, colour, background, headingLevel = 2 }) {
+export default function({ comp, metrics, title, value, suffix, description, link, colour, background, headingLevel = 2 }) {
   const content = [
     `<h${headingLevel}>${title}</h${headingLevel}>`,
-    comp.viz.bigNumber({ number: value }),
+    comp.viz.bigNumber({ number: value, suffix: suffix }),
     `<p>${description}</p>`,
   ];
 

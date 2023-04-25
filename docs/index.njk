@@ -75,6 +75,14 @@ layout: layouts/default.njk
     background: bg.next()
   }) | safe }}
 
+  {{ comp.metric.headline({
+    title: "Percentage of Leeds schools engaged with",
+    value: search.data("metrics/schools").headlines.percentage_of_leeds_schools_engaged | localize, suffix: '%'
+    description: "Number of engagements with pupils.",
+    link: "/metrics/schools/",
+    colour: fg.next(),
+    background: bg.next()
+  }) | safe }}
 
   {{ get_key_metrics_for_page("metrics/events/awakening/") }}
 

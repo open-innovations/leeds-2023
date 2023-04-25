@@ -140,7 +140,20 @@ limitations:
   </p>
 {% endcomp %}
 
- <h2>
+{# {% comp 'layout.figure' %}
+  <h3>School engagements by ward</h3>
+  {{ comp.charts.hexmap({
+    hexjson: hex.wards_leeds,
+    data: engagements_by_ward.rows,
+    matchKey: 'ward_code',
+    valueProp: 'total_engagements',
+    bgColour: '#ddd',
+      colourScale: colours.scales.cyan
+  }) | safe }}
+{% endcomp %} #}
+{% endcomp %}
+
+<h2>
       Number of young people engaged with through youth development projects
  </h2>
  
@@ -154,17 +167,3 @@ limitations:
  <li>4 young grant makers designing a grants scheme for children and young people</li>
  
  </ul>
-
-
-{# {% comp 'layout.figure' %}
-  <h3>School engagements by ward</h3>
-  {{ comp.charts.hexmap({
-    hexjson: hex.wards_leeds,
-    data: engagements_by_ward.rows,
-    matchKey: 'ward_code',
-    valueProp: 'total_engagements',
-    bgColour: '#ddd',
-      colourScale: colours.scales.cyan
-  }) | safe }}
-{% endcomp %} #}
-{% endcomp %}

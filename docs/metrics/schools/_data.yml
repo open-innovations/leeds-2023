@@ -1,0 +1,6 @@
+key_metrics:
+  hours:
+    title: Number of Pupil Engagements
+    ref: headlines.total_pupil_engagements
+    description: Total number of young people engaged with through LEEDS 2023 activities.
+    colour: var(--l23-pink) 

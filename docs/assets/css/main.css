@@ -15,6 +15,7 @@
 @import "css/popup.css";
 @import "css/tooltip.css";
 /* @import "css/grid.css"; */
+@import "css/meta-block.css";
 
 :root {
   --body-fontstack: 'DM Sans', sans-serif;

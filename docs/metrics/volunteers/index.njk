@@ -48,7 +48,10 @@ limitations:
   At the moment, this is primarily the application process, but over time we will show data about the number of shifts that our volunteers complete. The Raw Data can be downloaded from <a href="https://datamillnorth.org/dataset/leeds-2023-volunteers">Data Mill North</a>
 </p>
 
-<p>Page updated: {{ date | date('HUMAN_DATE') }}</p>
+<aside data-type="meta-block">
+<p>Source data updated: {{ sources.volunteers.shifts.updated | date('HUMAN_DATE') }}</p>
+<p>Page template updated: {{ date | date('HUMAN_DATE') }}</p>
+</aside>
 
 <h2>Headlines</h2>
 

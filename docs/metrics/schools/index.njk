@@ -70,6 +70,18 @@ limitations:
        Percentage of Leeds schools engaged with through LEEDS 2023 activities.
     </p> 
 {% endcomp %}
+
+{% comp 'grid.block.impact', {bg: bg.next()} %}
+    <h2>
+      Total engagements with schools
+    </h2>
+{{ comp.viz.bigNumber({
+      number: headlines.total_school_engagements | localize
+    }) | safe }}
+    <p>
+       Number of schools engagements
+    </p> 
+{% endcomp %}
 {% endcomp %}
 
 {% comp 'grid.autogrid', {min_width: '40rem'} %}

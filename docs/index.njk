@@ -77,8 +77,8 @@ layout: layouts/default.njk
 
   {{ comp.metric.headline({
     title: "Percentage of Leeds schools engaged with",
-    value: search.data("metrics/schools").headlines.percentage_of_leeds_schools_engaged | localize, suffix: '%'
-    description: "Number of engagements with pupils.",
+    value: search.data("metrics/schools").headlines.percentage_of_leeds_schools_engaged | localize, 
+    description: "Percentage of schools in Leeds which have been engaged through LEEDS 2023 activities.",
     link: "/metrics/schools/",
     colour: fg.next(),
     background: bg.next()

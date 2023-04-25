@@ -4,3 +4,8 @@ key_metrics:
     ref: attendees.attended
     description: The number of people attending the event.
     colour: var(--l23-pink)
+  sumbmissions:
+    title: The Awakening ballot entries
+    ref: current.submissions
+    description: The number of individual ballot entries recorded.
+    colour: var(--123-cyan)

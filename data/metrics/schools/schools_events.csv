@@ -1,132 +1,132 @@
-date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wards,postcodes,participant_count,school_count
-2022-09-22,Leeds Cultural Heritage: Carr Manor Community School,CLE,01 - The Awakening,,,['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],57.0,1
-2022-09-22,Leeds Cultural Heritage: Chapel Allerton Primary School,CLE,01 - The Awakening,,,['Chapel Allerton Primary School'],['Chapel Allerton'],['LS7 3PD'],60.0,1
-2022-09-22,Leeds Cultural Heritage: Cobden Primary School,CLE,01 - The Awakening,,,['Cobden Primary School'],['Farnley and Wortley'],['LS12 5LA'],152.0,1
-2022-09-22,Leeds Cultural Heritage: Cookridge Primary School,CLE,01 - The Awakening,,,['Cookridge Primary School'],['Weetwood '],['LS16 7DH'],29.0,1
-2022-09-22,Leeds Cultural Heritage: Holy Trinity Church of England Academy,CLE,01 - The Awakening,,,"['Holy Trinity Church of England Academy, Rothwell']",['Rothwell'],['LS26 0NB'],133.0,1
-2022-09-22,Leeds Cultural Heritage: Ingram Road Primary School,CLE,01 - The Awakening,,,['Ingram Road Primary School'],['Beeston and Holbeck'],,23.0,1
-2022-09-22,Leeds Cultural Heritage: Manston Primary,CLE,01 - The Awakening,,,['Manston Primary'],['Cross Gates and Whinmoor'],['LS15 8SD'],29.0,1
-2022-09-22,Leeds Cultural Heritage: Middleton Primary School,CLE,01 - The Awakening,,,['Middleton Primary School'],['Middleton Park '],['LS10 4HU'],169.0,1
-2022-09-22,Leeds Cultural Heritage: Pool-in-Wharfedale Church of England Voluntary Controlled Primary School,CLE,01 - The Awakening,,,['Pool-in-Wharfedale Church of England Voluntary Controlled Primary School'],['Adel and Wharfedale'],['LS21 1LG'],56.0,1
-2022-09-22,Leeds Cultural Heritage: Springwell Leeds Academy ,CLE,01 - The Awakening,,,['Springwell Leeds Academy'],['Middleton Park '],['LS14 6XR'],9.0,1
-2022-09-22,Leeds Cultural Heritage: St Margaret's Church of England Voluntary Controlled Primary School,CLE,01 - The Awakening,,,"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],145.0,1
-2022-09-22,Leeds Cultural Heritage: St Oswald's C of E Primary School,CLE,01 - The Awakening,,,"[""St. Oswald's CofE Primary School""]",['Guiseley and Rawdon'],['LS20 9BT'],26.0,1
-2022-11-03,Leeds Artist Show Schools Teacher CPD,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS1 3AA'],,,,13.0,0
-2022-11-07,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,"[""Rawdon St Peter's Church of England Voluntary Controlled Primary School""]",['Guiseley and Rawdon'],,46.0,1
-2022-11-08,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,"[""Holy Rosary and St Anne's Catholic Primary School, a Voluntary Academy""]",['Chapel Allerton'],,31.0,1
-2022-11-08,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Burmantofts and Richmond Hill'],['LS9 7NP'],['Shakespeare Primary School'],['Burmantofts and Richmond Hill '],,81.0,1
-2022-11-08,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,['Ingram Road Primary School'],['Beeston and Holbeck'],,96.0,1
-2022-11-10,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,"[""Holy Rosary and St Anne's Catholic Primary School, a Voluntary Academy""]",['Chapel Allerton'],,31.0,1
-2022-11-10,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,"[""Roundhay St John's Church of England Primary School""]",['Roundhay '],,32.0,1
-2022-11-10,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,['Bracken Edge Primary School'],['Chapel Allerton'],,64.0,1
-2022-11-11,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,['Lawns Park Primary School'],['Farnley and Wortley'],,30.0,1
-2022-11-11,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,['Pudsey Primrose Hill Primary School'],['Bramley and Stanningley'],,28.0,1
-2022-11-11,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Burmantofts and Richmond Hill'],['LS9 7PY'],['Ebor Gardens Primary Academy'],['Burmantofts and Richmond Hill '],,49.0,1
-2022-11-14,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Guiseley and Rawdon'],['LS19 6PP'],"[""Rawdon St Peter's Church of England Voluntary Controlled Primary School""]",['Guiseley and Rawdon'],,46.0,1
-2022-11-15,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Chapel Allerton'],['LS7 4AW'],"[""Holy Rosary and St Anne's Catholic Primary School, a Voluntary Academy""]",['Chapel Allerton'],,31.0,1
-2022-11-16,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Beeston and Holbeck'],['LS11 9LA'],['Ingram Road Primary School'],['Beeston and Holbeck'],,96.0,1
-2022-11-17,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Burmantofts and Richmond Hill'],['LS9 7NP'],['Shakespeare Primary School'],['Burmantofts and Richmond Hill '],,81.0,1
-2022-11-18,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Farnley and Wortley'],['LS12 5EX'],['Lawns Park Primary School'],['Farnley and Wortley'],,30.0,1
-2022-11-21,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Bramley and Stanningley'],['LS28 6AB'],['Pudsey Primrose Hill Primary School'],['Bramley and Stanningley'],,28.0,1
-2022-11-22,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Chapel Allerton'],['LS7 4HE'],['Bracken Edge Primary School'],['Chapel Allerton'],,64.0,1
-2022-11-22,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Burmantofts and Richmond Hill'],['LS9 7NP'],['Shakespeare Primary School'],['Burmantofts and Richmond Hill '],,81.0,1
-2022-11-23,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Roundhay'],[' LS8 2QJ'],"[""Roundhay St John's Church of England Primary School""]",['Roundhay '],,32.0,1
-2022-11-25,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Burmantofts and Richmond Hill'],['LS9 7PY'],['Ebor Gardens Primary Academy'],['Burmantofts and Richmond Hill '],,49.0,1
-2023-01-03,Off the Curriculum ,CLE,Creative Learning S1,['Hunslet and Riverside'],['LS11 5EL'],['Hunslet Moor Primary School'],['Hunslet and Riverside'],,32.0,1
-2023-01-03,Off the Curriculum ,CLE,Creative Learning S1,['Temple Newsam'],['LS15 0NN'],['Temple Learning Academy'],['Temple Newsam '],,30.0,1
-2023-01-04,Authors Abroad session,CLE,Authors Abroad,['Pudsey'],['LS28 9HU'],['Crawshaw Academy'],['Pudsey'],['LS28 9HU'],90.0,1
-2023-01-06,Off the Curriculum ,CLE,Creative Learning S1,['Weetwood'],['LS16 5NW'],['Weetwood Primary School'],['Weetwood'],,30.0,1
-2023-01-13,Waking the Artist at St Joseph's Wetherby,CLE,01 - The Awakening,['Horsforth'],['LS18 5BL'],"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],120.0,1
-2023-01-16,Authors Abroad session,CLE,Authors Abroad,['Headingley and Hyde Park'],['LS6 2LG'],['Leeds City Academy'],['Headingley and Hyde Park'],['LS6 2LG'],90.0,1
-2023-01-19,St Philip's Catholic Primary & Nursery School Pack,CLE,Waking the Artist,['Middleton Park'],['LS10 3SL'],,,,94.0,0
-2023-01-19, Roundhay High School Pack,CLE,Waking the Artist,['Roundhay'],['LS8 1ND'],,,,30.0,0
-2023-01-20,School Pilot Session 1: St Joseph's Wetherby,CLE,Waking the Artist,,,"[""St Joseph's Catholic Primary School, Wetherby""]",['Wetherby'],,120.0,1
-2023-01-20,Authors Abroad session,CLE,Authors Abroad,['Morley South'],['LS27 0PD'],['The Morley Academy'],['Morley South'],['LS27 0PD'],90.0,1
-2023-01-20,Pudsey Lowtown Primary School Pack,CLE,Waking the Artist,,,,,,60.0,0
-2023-01-23,Off the Curriculum ,CLE,Creative Learning S1,['Armley'],['LS12 2AY'],['Armley Park Primary School'],['Armley'],,25.0,1
-2023-01-23,Authors Abroad session,CLE,Authors Abroad,['Armley'],['LS12 3DS'],['Dixons Unity Academy'],['Armley '],['LS12 3DS'],90.0,1
-2023-01-24,Authors Abroad session,CLE,Authors Abroad,['Adel and Wharfedale'],['LS16 7RX'],['Ralph Thoresby School'],['Adel and Wharfedale'],['LS16 7RX'],35.0,1
-2023-01-26,Off the Curriculum ,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS3 1JP'],['Rosebank Primary School'],['Little London and Woodhouse'],,29.0,1
-2023-01-27,4th Horsforth Brownie Pack,CLE,Waking the Artist,,,,,,25.0,0
-2023-01-27,Authors Abroad session,CLE,Authors Abroad,['Bramley and Stanningley'],['LS13 1DQ'],['Leeds West Academy'],['Bramley and Stanningley'],['LS13 1DQ'],90.0,1
-2023-01-27,Cookridge Primary School,CLE,Waking the Artist,,,['Cookridge Primary School'],['Weetwood '],['LS16 7DH'],220.0,1
-2023-01-28,9th Airedale Monday Cubs Pack,CLE,Waking the Artist,,,,,,22.0,0
-2023-01-28,Calverley 2nd Brownies Pack,CLE,Waking the Artist,['Calverley and Farsley'],['LS28 5NL'],,,,24.0,0
-2023-01-29,Calverley 2nd Brownies Pack,CLE,Waking the Artist,['Calverley and Farsley'],['LS28 5NL'],,,,20.0,0
-2023-01-30,Authors Abroad session,CLE,Authors Abroad,['Chapel Allerton'],['LS7 4JE'],['Al Kauthar Girls Academy'],['Chapel Allerton'],['LS7 4JE'],30.0,1
-2023-01-31,Off the Curriculum ,CLE,Creative Learning S1,['Moortown'],['LS17 6QP'],['Moor Allerton Hall Primary School'],['Moortown'],,30.0,1
-2023-01-31,Authors Abroad session,CLE,Authors Abroad,['Rothwell'],['LS26 8EX'],['Oulton Academy '],['Otley and Yeadon'],['LS26 8EX'],90.0,1
-2023-02-01,Manor Wood Primary School Pack,CLE,Waking the Artist,,,,,,65.0,0
-2023-02-02,Brudenell Primary School Pack,CLE,Waking the Artist,,,,,,112.0,0
-2023-02-02,Authors Abroad session,CLE,Authors Abroad,['Killingbeck and Seacroft'],['LS14 6HA'],['Leeds East Academy'],['Killingbeck and Seacroft'],['LS14 6HA'],90.0,1
-2023-02-02,Carr Manor Community School Pack,CLE,Waking the Artist,['Moortown'],[' LS17 5DJ'],,,,30.0,0
-2023-02-03,Authors Abroad session,CLE,Authors Abroad,['Middleton Park'],['LS10 2JU'],['Cockburn John Charles Academy'],['Middleton Park '],['LS10 2JU'],90.0,1
-2023-02-03,Authors Abroad session,CLE,Authors Abroad,['Weetwood'],['LS16 5AG'],['Lawnswood School'],['Weetwood '],['LS16 5AG'],90.0,1
-2023-02-05,Rosebank Primary School Pack,CLE,Waking the Artist,['Little London and Woodhouse'],['LS3 1JP'],,,,91.0,0
-2023-02-06,Authors Abroad session,CLE,Authors Abroad,['Moortown'],['LS6 4QE'],['Cardinal Heenan Catholic High School'],['Moortown '],['LS6 4QE'],90.0,1
-2023-02-08,Waking the Artist at Cockburn School,CLE,01 - The Awakening,['Beeston and Holbeck'],['LS11 5TT'],['Cockburn School'],['Beeston and Holbeck'],['LS11 5TT'],24.0,1
-2023-02-08,Waking the Artist at St Philip's Catholic Primary School,CLE,01 - The Awakening,['Middleton Park'],['LS10 3SL'],"[""St Philip's Catholic Primary  School""]",['Middleton Park '],,57.0,1
-2023-02-10,St Bartholomew’s CE Primary School Pack,CLE,Waking the Artist,['Armley'],['LS12 1SF'],,,,7.0,0
-2023-02-16,Seacroft Grange Primary School Pack,CLE,Waking the Artist,,,,,,200.0,0
-2023-02-19,Leeds Arts University Pack,CLE,Waking the Artist,,,,,,9.0,0
-2023-02-20,Leeds Young Film Programmers,CLE,Creative Learning S1,,,,,,,0
-2023-02-20,WOW Thrive Youth Group Pack,CLE,Waking the Artist,,,,,,13.0,0
-2023-02-21,Waking the Artist at Leeds City College Quarry Hill Campus (day 1),CLE,01 - The Awakening,['Little London and Woodhouse'],['LS2 7BS'],['Leeds City College'],['Little London and Woodhouse'],,35.0,1
-2023-02-21,Authors Abroad session,CLE,Authors Abroad,['Burmantofts and Richmond Hill'],['LS9 8LA'],"[""Mount St Mary's Catholic High School""]",['Burmantofts and Richmond Hill '],['LS9 8LA'],90.0,1
-2023-02-22,Leeds city college - Theatre Design and Production Department Pack,,Waking the Artist,,,,,,11.0,0
-2023-02-22,Waking the Artist at Leeds City College Quarry Hill Campus (day 2),CLE,01 - The Awakening,['Little London and Woodhouse'],['LS2 7BS'],['Leeds City College'],['Little London and Woodhouse'],,34.0,1
-2023-02-23,Waking the Artist at St Margaret's C of E Primary School (year 3),CLE,01 - The Awakening,['Horsforth'],['LS18 5BL'],"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],58.0,1
-2023-02-23,Waking the Artist at St Margaret's C of E Primary School (year 4),CLE,01 - The Awakening,['Horsforth'],['LS18 5BL'],"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],60.0,1
-2023-02-23,Waking the Artist at Westgate Primary,CLE,01 - The Awakening,['Otley and Yeadon'],['LS21 3JS'],['Westgate Primary School'],['Morley South'],,59.0,1
-2023-02-24,Whinmoor St Pauls C of E Primary School Pack,CLE,Waking the Artist,,,,,,90.0,0
-2023-02-24,Waking the Artist at Rosebank Primary School,CLE,01 - The Awakening,['Little London and Woodhouse'],['LS3 1JP'],['Rosebank Primary School'],['Little London and Woodhouse'],,58.0,1
-2023-02-27,Waking the Artist at East SILC John Jamieson,CLE,01 - The Awakening,['Roundhay'],['LS8 2PW'],['East SILC John Jamieson'],['Roundhay'],,11.0,1
-2023-02-27,Waking the Artist at Stanningley Primary,CLE,01 - The Awakening,['Bramley and Stanningley'],['LS28 6PE'],['Stanningley Primary School'],['Bramley and Stanningley'],,59.0,1
-2023-02-27,Waking the Artist at Summerfield Primary School,CLE,01 - The Awakening,['Bramley and Stanningley'],['LS13 1DQ'],['Summerfield Primary School'],['Bramley and Stanningley'],,54.0,1
-2023-03-03,Authors Abroad session,CLE,Authors Abroad,['Moortown'],['LS17 6SF'],['Allerton Grange School'],['Moortown '],['LS17 6SF'],90.0,1
-2023-03-03,Authors Abroad session,CLE,Authors Abroad,['Horsforth'],['LS18 5RF'],['Horsforth School'],['Horsforth'],['LS18 5RF'],90.0,1
-2023-03-03,Waking the Artist at Cookridge Primary School,CLE,01 - The Awakening,['Weetwood'],['LS16 7DH'],['Cookridge Primary School'],['Weetwood '],['LS16 7DH'],90.0,1
-2023-03-06,Authors Abroad session,CLE,Authors Abroad,['Alwoodley'],['LS17 7AG'],['Allerton High School'],['Moortown '],['LS17 7AG'],90.0,1
-2023-03-06,Waking the Artist at Robin Hood Primary School,CLE,01 - The Awakening,['Ardsley and Robin Hood'],['WF3 3BG'],['Robin Hood Primary School'],['Ardsley and Robin Hood'],,57.0,1
-2023-03-06,Waking the Artist at Carr Manor Community School,CLE,01 - The Awakening,['Moortown'],[' LS17 5DJ'],['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],12.0,1
-2023-03-06,Waking the Artist at Manor Wood Primary School,CLE,01 - The Awakening,['Moortown'],['LS17 5DJ'],['Manor Wood Primary School'],['Moortown'],,61.0,1
-2023-03-07,Waking the Artist at Aberford C of E Primary School,CLE,01 - The Awakening,['Harewood'],['LS25 3BU'],,,,61.0,0
-2023-03-07,Authors Abroad session,CLE,Authors Abroad,['Guiseley and Rawdon'],['LS19 6LX'],['Benton Park School'],['Guiseley and Rawdon'],['LS19 6LX'],90.0,1
-2023-03-07,Penny Field School,CLE,Waking the Artist,,,['Penny Field School'],['Moortown'],,57.0,1
-2023-03-07,Authors Abroad session,CLE,Authors Abroad,['Chapel Allerton'],['LS7 4JE'],['New Horizons Community School'],['Chapel Allerton'],,,1
-2023-03-07,Authors Abroad session,CLE,Authors Abroad,['Guiseley and Rawdon'],['LS20 8DT'],['Guiseley School'],['Guiseley and Rawdon'],,,1
-2023-03-08,Authors Abroad session,CLE,Authors Abroad,['Temple Newsam'],[' LS15 0PT'],['Temple Moor High School'],['Temple Newsam '],['LS15 0PT'],,1
-2023-03-09,Waking the Artist at Cookridge Primary School,CLE,01 - The Awakening,['Headingley and Hyde Park'],['LS6 2LG'],['Cookridge Primary School'],['Weetwood '],['LS16 7DH'],94.0,1
-2023-03-09,Victoria Primary Academy ,CLE,Waking the Artist,,,['Victoria Primary Academy'],['Burmantofts and Richmond Hill '],,53.0,1
-2023-03-13,Waking the Artist at Green Meadow Academy,CLE,01 - The Awakening,,,['East SILC John Jamieson'],['Roundhay'],,21.0,1
-2023-03-16,Authors Abroad session,CLE,Authors Abroad,['Burmantofts and Richmond Hill'],['LS9 7QL'],['Trinity Academy Leeds'],['Burmantofts and Richmond Hill '],['LS9 7QL'],,1
-2023-03-16,Waking the Artist at St Margaret's C of E Primary School (year 6),CLE,01 - The Awakening,['Horsforth'],['LS18 5BL'],"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],62.0,1
-2023-03-17,Waking the Artist at Broadgate Primary School,CLE,01 - The Awakening,['Horsforth'],['LS18 5AF'],['Broadgate Primary School'],['Horsforth'],,52.0,1
-2023-03-17,Authors Abroad session,CLE,Authors Abroad,['Hunslet and Riverside'],['LS10 1HW'],['The Ruth Gorse Academy'],['Hunslet and Riverside'],['LS10 1HW'],,1
-2023-03-20,Waking the Artist at Seacroft Grange Primary School,CLE,01 - The Awakening,['Killingbeck and Seacroft'],['LS14 6JR'],['Seacroft Grange Primary School'],['Killingbeck and Seacroft'],,61.0,1
-2023-03-20,Authors Abroad session,CLE,Authors Abroad,['Beeston and Holbeck'],['LS11 5TT'],['Cockburn School'],['Beeston and Holbeck'],['LS11 5TT'],,1
-2023-03-21,Waking the Artist at East SILC Jack Clark,CLE,01 - The Awakening,['Gipton and Harehills'],['LS8 3LF'],['East SILC Jack Clark'],['Gipton and Harehills'],['LS8 3LF'],60.0,1
-2023-03-23,Waking the Artist at Dixon’s Trinity Chapeltown,CLE,01 - The Awakening,['Chapel Allerton'],['LS7 4AW'],['Dixons Trinity Chapeltown'],['Chapel Allerton'],,53.0,1
-2023-03-27,Waking the Artist at Beechwood Primary School,CLE,01 - The Awakening,['Killingbeck and Seacroft'],['LS14 6QB'],['Beechwood Primary School'],['Killingbeck and Seacroft'],,60.0,1
-2023-03-27,Waking the Artist at Beechwood Primary School,CLE,01 - The Awakening,['Killingbeck and Seacroft'],['LS14 6QB'],['Beechwood Primary School'],['Killingbeck and Seacroft'],,54.0,1
-2023-03-27,Waking the Artist at Birchfield Primary School,CLE,01 - The Awakening,['Morley North'],['LS27 7HU'],['Birchfield Primary School'],['Morley North '],,60.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: Shire Oak,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Shire Oak VC Primary School'],['Headingley and Hyde Park'],,30.0,1
-2023-03-29,Waking the Artist at Whinmoor St Pauls C of E Primary School,CLE,01 - The Awakening,['Cross Gates and Whinmoor'],['LS14 1EG'],"[""Whinmoor St Paul's Church of England Primary School""]",['Armley'],,60.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: Adel Primary,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Adel Primary School'],['Adel and Wharfedale'],,30.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: Beckfield Primary,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Co-op Beckfield'],,,55.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: Cottingley,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Cottingley Primary Academy'],['Beeston and Holbeck'],,32.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: Cottingley,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Cottingley Primary Academy'],['Beeston and Holbeck'],,35.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: Crossgates,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Cross Gates Primary School'],['Cross Gates and Whinmoor'],,60.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: Greenmount,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Greenmount Primary School'],['Beeston and Holbeck'],,14.0,1
-2023-03-29,Waking the Artist at Crossley Street Primary School,CLE,01 - The Awakening,,,['Cookridge Primary School'],['Weetwood '],['LS16 7DH'],58.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: Holy Rosary,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],"[""Holy Rosary and St Anne's Catholic Primary School, a Voluntary Academy""]",['Chapel Allerton'],,60.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: Lady Lane Park,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Lady Lane Park'],,['BD16 4AP'],17.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: Lawns Park,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Lawns Park Primary School'],['Farnley and Wortley'],,30.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: Primrose Lane,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Primrose Lane Primary School'],['Wetherby'],,30.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: Pudsey Lowtown,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Pudsey Lowtown Primary School'],['Pudsey'],,30.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: Pudsey Primrose Hill,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Pudsey Primrose Hill Primary School'],['Bramley and Stanningley'],,30.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: St Joseph's Wetherby,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],"[""St Joseph's Catholic Primary School, Wetherby""]",['Wetherby'],,118.0,1
-2023-03-29,Leeds International Piano Competition Concerts for KS2: Pudsey Waterloo,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Pudsey Waterloo Primary'],['Pudsey'],,115.0,1
-2023-03-31,Waking the Artist at Chapel Allerton Primary,CLE,01 - The Awakening,['Chapel Allerton'],['LS7 3PD'],['Chapel Allerton Primary School'],['Chapel Allerton'],['LS7 3PD'],60.0,1
-2023-04-16,Waking the Artist at Beechwood Primary School,CLE,01 - The Awakening,['Killingbeck and Seacroft'],['LS14 6QB'],['Beechwood Primary School'],['Killingbeck and Seacroft'],,56.0,1
-2023-04-20,Waking the Artist at Home School,CLE,01 - The Awakening,,,['East SILC John Jamieson'],['Roundhay'],,15.0,1
+date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wards,postcodes,participant_count,pupil_count,teacher_count,school_count
+2022-09-22,Leeds Cultural Heritage: Carr Manor Community School,CLE,01 - The Awakening,,,['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],57.0,57.0,0.0,1
+2022-09-22,Leeds Cultural Heritage: Chapel Allerton Primary School,CLE,01 - The Awakening,,,['Chapel Allerton Primary School'],['Chapel Allerton'],['LS7 3PD'],60.0,60.0,0.0,1
+2022-09-22,Leeds Cultural Heritage: Cobden Primary School,CLE,01 - The Awakening,,,['Cobden Primary School'],['Farnley and Wortley'],['LS12 5LA'],152.0,152.0,0.0,1
+2022-09-22,Leeds Cultural Heritage: Cookridge Primary School,CLE,01 - The Awakening,,,['Cookridge Primary School'],['Weetwood '],['LS16 7DH'],29.0,29.0,0.0,1
+2022-09-22,Leeds Cultural Heritage: Holy Trinity Church of England Academy,CLE,01 - The Awakening,,,"['Holy Trinity Church of England Academy, Rothwell']",['Rothwell'],['LS26 0NB'],133.0,133.0,0.0,1
+2022-09-22,Leeds Cultural Heritage: Ingram Road Primary School,CLE,01 - The Awakening,,,['Ingram Road Primary School'],['Beeston and Holbeck'],,23.0,23.0,0.0,1
+2022-09-22,Leeds Cultural Heritage: Manston Primary,CLE,01 - The Awakening,,,['Manston Primary'],['Cross Gates and Whinmoor'],['LS15 8SD'],29.0,29.0,0.0,1
+2022-09-22,Leeds Cultural Heritage: Middleton Primary School,CLE,01 - The Awakening,,,['Middleton Primary School'],['Middleton Park '],['LS10 4HU'],169.0,169.0,0.0,1
+2022-09-22,Leeds Cultural Heritage: Pool-in-Wharfedale Church of England Voluntary Controlled Primary School,CLE,01 - The Awakening,,,['Pool-in-Wharfedale Church of England Voluntary Controlled Primary School'],['Adel and Wharfedale'],['LS21 1LG'],56.0,56.0,0.0,1
+2022-09-22,Leeds Cultural Heritage: Springwell Leeds Academy ,CLE,01 - The Awakening,,,['Springwell Leeds Academy'],['Middleton Park '],['LS14 6XR'],9.0,9.0,0.0,1
+2022-09-22,Leeds Cultural Heritage: St Margaret's Church of England Voluntary Controlled Primary School,CLE,01 - The Awakening,,,"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],145.0,145.0,0.0,1
+2022-09-22,Leeds Cultural Heritage: St Oswald's C of E Primary School,CLE,01 - The Awakening,,,"[""St. Oswald's CofE Primary School""]",['Guiseley and Rawdon'],['LS20 9BT'],26.0,26.0,0.0,1
+2022-11-03,Leeds Artist Show Schools Teacher CPD,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS1 3AA'],,,,13.0,0.0,13.0,0
+2022-11-07,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,"[""Rawdon St Peter's Church of England Voluntary Controlled Primary School""]",['Guiseley and Rawdon'],,46.0,46.0,0.0,1
+2022-11-08,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,"[""Holy Rosary and St Anne's Catholic Primary School, a Voluntary Academy""]",['Chapel Allerton'],,31.0,31.0,0.0,1
+2022-11-08,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Burmantofts and Richmond Hill'],['LS9 7NP'],['Shakespeare Primary School'],['Burmantofts and Richmond Hill '],,81.0,81.0,0.0,1
+2022-11-08,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,['Ingram Road Primary School'],['Beeston and Holbeck'],,96.0,96.0,0.0,1
+2022-11-10,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,"[""Holy Rosary and St Anne's Catholic Primary School, a Voluntary Academy""]",['Chapel Allerton'],,31.0,31.0,0.0,1
+2022-11-10,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,"[""Roundhay St John's Church of England Primary School""]",['Roundhay '],,32.0,32.0,0.0,1
+2022-11-10,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,['Bracken Edge Primary School'],['Chapel Allerton'],,64.0,64.0,0.0,1
+2022-11-11,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,['Lawns Park Primary School'],['Farnley and Wortley'],,30.0,30.0,0.0,1
+2022-11-11,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,,,['Pudsey Primrose Hill Primary School'],['Bramley and Stanningley'],,28.0,28.0,0.0,1
+2022-11-11,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Burmantofts and Richmond Hill'],['LS9 7PY'],['Ebor Gardens Primary Academy'],['Burmantofts and Richmond Hill '],,49.0,49.0,0.0,1
+2022-11-14,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Guiseley and Rawdon'],['LS19 6PP'],"[""Rawdon St Peter's Church of England Voluntary Controlled Primary School""]",['Guiseley and Rawdon'],,46.0,46.0,0.0,1
+2022-11-15,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Chapel Allerton'],['LS7 4AW'],"[""Holy Rosary and St Anne's Catholic Primary School, a Voluntary Academy""]",['Chapel Allerton'],,31.0,31.0,0.0,1
+2022-11-16,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Beeston and Holbeck'],['LS11 9LA'],['Ingram Road Primary School'],['Beeston and Holbeck'],,96.0,96.0,0.0,1
+2022-11-17,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Burmantofts and Richmond Hill'],['LS9 7NP'],['Shakespeare Primary School'],['Burmantofts and Richmond Hill '],,81.0,81.0,0.0,1
+2022-11-18,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Farnley and Wortley'],['LS12 5EX'],['Lawns Park Primary School'],['Farnley and Wortley'],,30.0,30.0,0.0,1
+2022-11-21,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Bramley and Stanningley'],['LS28 6AB'],['Pudsey Primrose Hill Primary School'],['Bramley and Stanningley'],,28.0,28.0,0.0,1
+2022-11-22,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Chapel Allerton'],['LS7 4HE'],['Bracken Edge Primary School'],['Chapel Allerton'],,64.0,64.0,0.0,1
+2022-11-22,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Burmantofts and Richmond Hill'],['LS9 7NP'],['Shakespeare Primary School'],['Burmantofts and Richmond Hill '],,81.0,81.0,0.0,1
+2022-11-23,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Roundhay'],[' LS8 2QJ'],"[""Roundhay St John's Church of England Primary School""]",['Roundhay '],,32.0,32.0,0.0,1
+2022-11-25,Leeds Artist Show Schools Workshop,CLE,Creative Learning S1,['Burmantofts and Richmond Hill'],['LS9 7PY'],['Ebor Gardens Primary Academy'],['Burmantofts and Richmond Hill '],,49.0,49.0,0.0,1
+2023-01-03,Off the Curriculum ,CLE,Creative Learning S1,['Hunslet and Riverside'],['LS11 5EL'],['Hunslet Moor Primary School'],['Hunslet and Riverside'],,32.0,32.0,0.0,1
+2023-01-03,Off the Curriculum ,CLE,Creative Learning S1,['Temple Newsam'],['LS15 0NN'],['Temple Learning Academy'],['Temple Newsam '],,30.0,30.0,0.0,1
+2023-01-04,Authors Abroad session,CLE,Authors Abroad,['Pudsey'],['LS28 9HU'],['Crawshaw Academy'],['Pudsey'],['LS28 9HU'],90.0,90.0,0.0,1
+2023-01-06,Off the Curriculum ,CLE,Creative Learning S1,['Weetwood'],['LS16 5NW'],['Weetwood Primary School'],['Weetwood'],,30.0,30.0,0.0,1
+2023-01-13,Waking the Artist at St Joseph's Wetherby,CLE,01 - The Awakening,['Horsforth'],['LS18 5BL'],"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],120.0,120.0,0.0,1
+2023-01-16,Authors Abroad session,CLE,Authors Abroad,['Headingley and Hyde Park'],['LS6 2LG'],['Leeds City Academy'],['Headingley and Hyde Park'],['LS6 2LG'],90.0,90.0,0.0,1
+2023-01-19,St Philip's Catholic Primary & Nursery School Pack,CLE,Waking the Artist,['Middleton Park'],['LS10 3SL'],,,,94.0,94.0,0.0,0
+2023-01-19, Roundhay High School Pack,CLE,Waking the Artist,['Roundhay'],['LS8 1ND'],,,,30.0,30.0,0.0,0
+2023-01-20,School Pilot Session 1: St Joseph's Wetherby,CLE,Waking the Artist,,,"[""St Joseph's Catholic Primary School, Wetherby""]",['Wetherby'],,120.0,120.0,0.0,1
+2023-01-20,Authors Abroad session,CLE,Authors Abroad,['Morley South'],['LS27 0PD'],['The Morley Academy'],['Morley South'],['LS27 0PD'],90.0,90.0,0.0,1
+2023-01-20,Pudsey Lowtown Primary School Pack,CLE,Waking the Artist,,,,,,60.0,60.0,0.0,0
+2023-01-23,Off the Curriculum ,CLE,Creative Learning S1,['Armley'],['LS12 2AY'],['Armley Park Primary School'],['Armley'],,25.0,25.0,0.0,1
+2023-01-23,Authors Abroad session,CLE,Authors Abroad,['Armley'],['LS12 3DS'],['Dixons Unity Academy'],['Armley '],['LS12 3DS'],90.0,90.0,0.0,1
+2023-01-24,Authors Abroad session,CLE,Authors Abroad,['Adel and Wharfedale'],['LS16 7RX'],['Ralph Thoresby School'],['Adel and Wharfedale'],['LS16 7RX'],35.0,35.0,0.0,1
+2023-01-26,Off the Curriculum ,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS3 1JP'],['Rosebank Primary School'],['Little London and Woodhouse'],,29.0,29.0,0.0,1
+2023-01-27,4th Horsforth Brownie Pack,CLE,Waking the Artist,,,,,,25.0,25.0,0.0,0
+2023-01-27,Authors Abroad session,CLE,Authors Abroad,['Bramley and Stanningley'],['LS13 1DQ'],['Leeds West Academy'],['Bramley and Stanningley'],['LS13 1DQ'],90.0,90.0,0.0,1
+2023-01-27,Cookridge Primary School,CLE,Waking the Artist,,,['Cookridge Primary School'],['Weetwood '],['LS16 7DH'],220.0,220.0,0.0,1
+2023-01-28,9th Airedale Monday Cubs Pack,CLE,Waking the Artist,,,,,,22.0,22.0,0.0,0
+2023-01-28,Calverley 2nd Brownies Pack,CLE,Waking the Artist,['Calverley and Farsley'],['LS28 5NL'],,,,24.0,24.0,0.0,0
+2023-01-29,Calverley 2nd Brownies Pack,CLE,Waking the Artist,['Calverley and Farsley'],['LS28 5NL'],,,,20.0,20.0,0.0,0
+2023-01-30,Authors Abroad session,CLE,Authors Abroad,['Chapel Allerton'],['LS7 4JE'],['Al Kauthar Girls Academy'],['Chapel Allerton'],['LS7 4JE'],30.0,30.0,0.0,1
+2023-01-31,Off the Curriculum ,CLE,Creative Learning S1,['Moortown'],['LS17 6QP'],['Moor Allerton Hall Primary School'],['Moortown'],,30.0,30.0,0.0,1
+2023-01-31,Authors Abroad session,CLE,Authors Abroad,['Rothwell'],['LS26 8EX'],['Oulton Academy '],['Otley and Yeadon'],['LS26 8EX'],90.0,90.0,0.0,1
+2023-02-01,Manor Wood Primary School Pack,CLE,Waking the Artist,,,,,,65.0,65.0,0.0,0
+2023-02-02,Brudenell Primary School Pack,CLE,Waking the Artist,,,,,,112.0,112.0,0.0,0
+2023-02-02,Authors Abroad session,CLE,Authors Abroad,['Killingbeck and Seacroft'],['LS14 6HA'],['Leeds East Academy'],['Killingbeck and Seacroft'],['LS14 6HA'],90.0,90.0,0.0,1
+2023-02-02,Carr Manor Community School Pack,CLE,Waking the Artist,['Moortown'],[' LS17 5DJ'],,,,30.0,30.0,0.0,0
+2023-02-03,Authors Abroad session,CLE,Authors Abroad,['Middleton Park'],['LS10 2JU'],['Cockburn John Charles Academy'],['Middleton Park '],['LS10 2JU'],90.0,90.0,0.0,1
+2023-02-03,Authors Abroad session,CLE,Authors Abroad,['Weetwood'],['LS16 5AG'],['Lawnswood School'],['Weetwood '],['LS16 5AG'],90.0,90.0,0.0,1
+2023-02-05,Rosebank Primary School Pack,CLE,Waking the Artist,['Little London and Woodhouse'],['LS3 1JP'],,,,91.0,91.0,0.0,0
+2023-02-06,Authors Abroad session,CLE,Authors Abroad,['Moortown'],['LS6 4QE'],['Cardinal Heenan Catholic High School'],['Moortown '],['LS6 4QE'],90.0,90.0,0.0,1
+2023-02-08,Waking the Artist at Cockburn School,CLE,01 - The Awakening,['Beeston and Holbeck'],['LS11 5TT'],['Cockburn School'],['Beeston and Holbeck'],['LS11 5TT'],24.0,24.0,0.0,1
+2023-02-08,Waking the Artist at St Philip's Catholic Primary School,CLE,01 - The Awakening,['Middleton Park'],['LS10 3SL'],"[""St Philip's Catholic Primary  School""]",['Middleton Park '],,57.0,57.0,0.0,1
+2023-02-10,St Bartholomew’s CE Primary School Pack,CLE,Waking the Artist,['Armley'],['LS12 1SF'],,,,7.0,7.0,0.0,0
+2023-02-16,Seacroft Grange Primary School Pack,CLE,Waking the Artist,,,,,,200.0,200.0,0.0,0
+2023-02-19,Leeds Arts University Pack,CLE,Waking the Artist,,,,,,9.0,9.0,0.0,0
+2023-02-20,Leeds Young Film Programmers,CLE,Creative Learning S1,,,,,,0.0,0.0,0.0,0
+2023-02-20,WOW Thrive Youth Group Pack,CLE,Waking the Artist,,,,,,13.0,13.0,0.0,0
+2023-02-21,Waking the Artist at Leeds City College Quarry Hill Campus (day 1),CLE,01 - The Awakening,['Little London and Woodhouse'],['LS2 7BS'],['Leeds City College'],['Little London and Woodhouse'],,35.0,35.0,0.0,1
+2023-02-21,Authors Abroad session,CLE,Authors Abroad,['Burmantofts and Richmond Hill'],['LS9 8LA'],"[""Mount St Mary's Catholic High School""]",['Burmantofts and Richmond Hill '],['LS9 8LA'],90.0,90.0,0.0,1
+2023-02-22,Leeds city college - Theatre Design and Production Department Pack,,Waking the Artist,,,,,,11.0,11.0,0.0,0
+2023-02-22,Waking the Artist at Leeds City College Quarry Hill Campus (day 2),CLE,01 - The Awakening,['Little London and Woodhouse'],['LS2 7BS'],['Leeds City College'],['Little London and Woodhouse'],,34.0,34.0,0.0,1
+2023-02-23,Waking the Artist at St Margaret's C of E Primary School (year 3),CLE,01 - The Awakening,['Horsforth'],['LS18 5BL'],"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],58.0,58.0,0.0,1
+2023-02-23,Waking the Artist at St Margaret's C of E Primary School (year 4),CLE,01 - The Awakening,['Horsforth'],['LS18 5BL'],"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],60.0,60.0,0.0,1
+2023-02-23,Waking the Artist at Westgate Primary,CLE,01 - The Awakening,['Otley and Yeadon'],['LS21 3JS'],['Westgate Primary School'],['Morley South'],,59.0,59.0,0.0,1
+2023-02-24,Whinmoor St Pauls C of E Primary School Pack,CLE,Waking the Artist,,,,,,90.0,90.0,0.0,0
+2023-02-24,Waking the Artist at Rosebank Primary School,CLE,01 - The Awakening,['Little London and Woodhouse'],['LS3 1JP'],['Rosebank Primary School'],['Little London and Woodhouse'],,58.0,58.0,0.0,1
+2023-02-27,Waking the Artist at East SILC John Jamieson,CLE,01 - The Awakening,['Roundhay'],['LS8 2PW'],['East SILC John Jamieson'],['Roundhay'],,11.0,11.0,0.0,1
+2023-02-27,Waking the Artist at Stanningley Primary,CLE,01 - The Awakening,['Bramley and Stanningley'],['LS28 6PE'],['Stanningley Primary School'],['Bramley and Stanningley'],,59.0,59.0,0.0,1
+2023-02-27,Waking the Artist at Summerfield Primary School,CLE,01 - The Awakening,['Bramley and Stanningley'],['LS13 1DQ'],['Summerfield Primary School'],['Bramley and Stanningley'],,54.0,54.0,0.0,1
+2023-03-03,Authors Abroad session,CLE,Authors Abroad,['Moortown'],['LS17 6SF'],['Allerton Grange School'],['Moortown '],['LS17 6SF'],90.0,90.0,0.0,1
+2023-03-03,Authors Abroad session,CLE,Authors Abroad,['Horsforth'],['LS18 5RF'],['Horsforth School'],['Horsforth'],['LS18 5RF'],90.0,90.0,0.0,1
+2023-03-03,Waking the Artist at Cookridge Primary School,CLE,01 - The Awakening,['Weetwood'],['LS16 7DH'],['Cookridge Primary School'],['Weetwood '],['LS16 7DH'],90.0,90.0,0.0,1
+2023-03-06,Authors Abroad session,CLE,Authors Abroad,['Alwoodley'],['LS17 7AG'],['Allerton High School'],['Moortown '],['LS17 7AG'],90.0,90.0,0.0,1
+2023-03-06,Waking the Artist at Robin Hood Primary School,CLE,01 - The Awakening,['Ardsley and Robin Hood'],['WF3 3BG'],['Robin Hood Primary School'],['Ardsley and Robin Hood'],,57.0,57.0,0.0,1
+2023-03-06,Waking the Artist at Carr Manor Community School,CLE,01 - The Awakening,['Moortown'],[' LS17 5DJ'],['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],12.0,12.0,0.0,1
+2023-03-06,Waking the Artist at Manor Wood Primary School,CLE,01 - The Awakening,['Moortown'],['LS17 5DJ'],['Manor Wood Primary School'],['Moortown'],,61.0,61.0,0.0,1
+2023-03-07,Waking the Artist at Aberford C of E Primary School,CLE,01 - The Awakening,['Harewood'],['LS25 3BU'],,,,61.0,61.0,0.0,0
+2023-03-07,Authors Abroad session,CLE,Authors Abroad,['Guiseley and Rawdon'],['LS19 6LX'],['Benton Park School'],['Guiseley and Rawdon'],['LS19 6LX'],90.0,90.0,0.0,1
+2023-03-07,Penny Field School,CLE,Waking the Artist,,,['Penny Field School'],['Moortown'],,57.0,57.0,0.0,1
+2023-03-07,Authors Abroad session,CLE,Authors Abroad,['Chapel Allerton'],['LS7 4JE'],['New Horizons Community School'],['Chapel Allerton'],,0.0,0.0,0.0,1
+2023-03-07,Authors Abroad session,CLE,Authors Abroad,['Guiseley and Rawdon'],['LS20 8DT'],['Guiseley School'],['Guiseley and Rawdon'],,0.0,0.0,0.0,1
+2023-03-08,Authors Abroad session,CLE,Authors Abroad,['Temple Newsam'],[' LS15 0PT'],['Temple Moor High School'],['Temple Newsam '],['LS15 0PT'],0.0,0.0,0.0,1
+2023-03-09,Waking the Artist at Cookridge Primary School,CLE,01 - The Awakening,['Headingley and Hyde Park'],['LS6 2LG'],['Cookridge Primary School'],['Weetwood '],['LS16 7DH'],94.0,94.0,0.0,1
+2023-03-09,Victoria Primary Academy ,CLE,Waking the Artist,,,['Victoria Primary Academy'],['Burmantofts and Richmond Hill '],,53.0,53.0,0.0,1
+2023-03-13,Waking the Artist at Green Meadow Academy,CLE,01 - The Awakening,,,['East SILC John Jamieson'],['Roundhay'],,21.0,21.0,0.0,1
+2023-03-16,Authors Abroad session,CLE,Authors Abroad,['Burmantofts and Richmond Hill'],['LS9 7QL'],['Trinity Academy Leeds'],['Burmantofts and Richmond Hill '],['LS9 7QL'],0.0,0.0,0.0,1
+2023-03-16,Waking the Artist at St Margaret's C of E Primary School (year 6),CLE,01 - The Awakening,['Horsforth'],['LS18 5BL'],"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],62.0,62.0,0.0,1
+2023-03-17,Waking the Artist at Broadgate Primary School,CLE,01 - The Awakening,['Horsforth'],['LS18 5AF'],['Broadgate Primary School'],['Horsforth'],,52.0,52.0,0.0,1
+2023-03-17,Authors Abroad session,CLE,Authors Abroad,['Hunslet and Riverside'],['LS10 1HW'],['The Ruth Gorse Academy'],['Hunslet and Riverside'],['LS10 1HW'],0.0,0.0,0.0,1
+2023-03-20,Waking the Artist at Seacroft Grange Primary School,CLE,01 - The Awakening,['Killingbeck and Seacroft'],['LS14 6JR'],['Seacroft Grange Primary School'],['Killingbeck and Seacroft'],,61.0,61.0,0.0,1
+2023-03-20,Authors Abroad session,CLE,Authors Abroad,['Beeston and Holbeck'],['LS11 5TT'],['Cockburn School'],['Beeston and Holbeck'],['LS11 5TT'],0.0,0.0,0.0,1
+2023-03-21,Waking the Artist at East SILC Jack Clark,CLE,01 - The Awakening,['Gipton and Harehills'],['LS8 3LF'],['East SILC Jack Clark'],['Gipton and Harehills'],['LS8 3LF'],60.0,60.0,0.0,1
+2023-03-23,Waking the Artist at Dixon’s Trinity Chapeltown,CLE,01 - The Awakening,['Chapel Allerton'],['LS7 4AW'],['Dixons Trinity Chapeltown'],['Chapel Allerton'],,53.0,53.0,0.0,1
+2023-03-27,Waking the Artist at Beechwood Primary School,CLE,01 - The Awakening,['Killingbeck and Seacroft'],['LS14 6QB'],['Beechwood Primary School'],['Killingbeck and Seacroft'],,60.0,60.0,0.0,1
+2023-03-27,Waking the Artist at Beechwood Primary School,CLE,01 - The Awakening,['Killingbeck and Seacroft'],['LS14 6QB'],['Beechwood Primary School'],['Killingbeck and Seacroft'],,54.0,54.0,0.0,1
+2023-03-27,Waking the Artist at Birchfield Primary School,CLE,01 - The Awakening,['Morley North'],['LS27 7HU'],['Birchfield Primary School'],['Morley North '],,60.0,60.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: Shire Oak,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Shire Oak VC Primary School'],['Headingley and Hyde Park'],,30.0,30.0,0.0,1
+2023-03-29,Waking the Artist at Whinmoor St Pauls C of E Primary School,CLE,01 - The Awakening,['Cross Gates and Whinmoor'],['LS14 1EG'],"[""Whinmoor St Paul's Church of England Primary School""]",['Armley'],,60.0,60.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: Adel Primary,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Adel Primary School'],['Adel and Wharfedale'],,30.0,30.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: Beckfield Primary,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Co-op Beckfield'],,,55.0,55.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: Cottingley,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Cottingley Primary Academy'],['Beeston and Holbeck'],,32.0,32.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: Cottingley,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Cottingley Primary Academy'],['Beeston and Holbeck'],,35.0,35.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: Crossgates,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Cross Gates Primary School'],['Cross Gates and Whinmoor'],,60.0,60.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: Greenmount,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Greenmount Primary School'],['Beeston and Holbeck'],,14.0,14.0,0.0,1
+2023-03-29,Waking the Artist at Crossley Street Primary School,CLE,01 - The Awakening,,,['Cookridge Primary School'],['Weetwood '],['LS16 7DH'],58.0,58.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: Holy Rosary,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],"[""Holy Rosary and St Anne's Catholic Primary School, a Voluntary Academy""]",['Chapel Allerton'],,60.0,60.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: Lady Lane Park,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Lady Lane Park'],,['BD16 4AP'],17.0,17.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: Lawns Park,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Lawns Park Primary School'],['Farnley and Wortley'],,30.0,30.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: Primrose Lane,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Primrose Lane Primary School'],['Wetherby'],,30.0,30.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: Pudsey Lowtown,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Pudsey Lowtown Primary School'],['Pudsey'],,30.0,30.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: Pudsey Primrose Hill,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Pudsey Primrose Hill Primary School'],['Bramley and Stanningley'],,30.0,30.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: St Joseph's Wetherby,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],"[""St Joseph's Catholic Primary School, Wetherby""]",['Wetherby'],,118.0,118.0,0.0,1
+2023-03-29,Leeds International Piano Competition Concerts for KS2: Pudsey Waterloo,CLE,Creative Learning S1,['Little London and Woodhouse'],['LS2 3AD'],['Pudsey Waterloo Primary'],['Pudsey'],,115.0,115.0,0.0,1
+2023-03-31,Waking the Artist at Chapel Allerton Primary,CLE,01 - The Awakening,['Chapel Allerton'],['LS7 3PD'],['Chapel Allerton Primary School'],['Chapel Allerton'],['LS7 3PD'],60.0,60.0,0.0,1
+2023-04-16,Waking the Artist at Beechwood Primary School,CLE,01 - The Awakening,['Killingbeck and Seacroft'],['LS14 6QB'],['Beechwood Primary School'],['Killingbeck and Seacroft'],,56.0,56.0,0.0,1
+2023-04-20,Waking the Artist at Home School,CLE,01 - The Awakening,,,['East SILC John Jamieson'],['Roundhay'],,15.0,15.0,0.0,1

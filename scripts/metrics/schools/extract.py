@@ -34,6 +34,8 @@ def fetch_data():
                 'Postcode (from Venue)',
                 'Ward (from Venue)',
                 'ACTUAL Audience size / number of participants - IN PERSON',
+                'ACTUAL Audience size / number of participants - ONLINE',
+                'How many audience were teachers?',
                 'CLE - Setting',
                 'CLE - Key Stage',
                 'CLE - Subject Area',

@@ -31,7 +31,7 @@ if __name__ == "__main__":
 
     # Pupils engaged over time
     pupil_engagements = data.groupby(
-        'date').participant_count.sum().resample('W-FRI').sum().astype(int)
+        'date').pupil_count.sum().resample('W-FRI').sum().astype(int)
     school_engagements = data.groupby(
         'date').school_count.sum().resample('W-FRI').sum()
     cumulative_pupil_engagements = pupil_engagements.cumsum()

@@ -314,7 +314,7 @@ limitations:
       {% call checkToggle('Schools percentage') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/schools/' } %}
         {{ paneTitle('Percentage of Leeds schools engaged with:') }}
-        {{ comp.dashboard.impact.big_number({ number: search.data('metrics/schools').headlines.percentage_of_leeds_schools_engaged | localize }) | safe }}
+        {{ comp.dashboard.impact.big_number({ number: search.data('metrics/schools').headlines.percentage_of_leeds_schools_engaged | localize, suffix: '%' }) | safe }}
     {% endcomp %}
     {% endcall %}
 

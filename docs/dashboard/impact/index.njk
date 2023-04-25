@@ -312,7 +312,7 @@ limitations:
     {% endcall %}
 
       {% call checkToggle('Schools percentage') -%}
-    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
+    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/schools/' } %}
         {{ paneTitle('Percentage of Leeds schools engaged with:') }}
         {{ comp.dashboard.impact.big_number({ number: search.data('metrics/schools').headlines.percentage_of_leeds_schools_engaged | localize }) | safe }}
     {% endcomp %}
@@ -326,7 +326,7 @@ limitations:
     {% endcall %}
 
     {% call checkToggle('Featured articles') -%}
-    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/schools/' } %}
+    {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
         {{ paneTitle('Total featured articles') }}
         {{ comp.dashboard.impact.big_number({ number: 'TBC' }) | safe }}
     {% endcomp %}

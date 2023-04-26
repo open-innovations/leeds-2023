@@ -2,6 +2,7 @@ import os
 import pandas as pd
 
 from transform import SCHOOLS_DATA, literal_converter
+from util.geography import fuzzy_match_leeds_wards
 
 SITE_DATA = os.path.join('docs', 'metrics', 'schools', '_data')
 os.makedirs(SITE_DATA, exist_ok=True)
@@ -79,19 +80,30 @@ if __name__ == "__main__":
         right_on='ward_code',
     )
 
+    pupils_per_ward = data[['pupil_count', 'wards']].explode('wards').rename(
+        columns={
+            'wards': 'ward_name',
+        }
+    )
+    assert len(pupils_per_ward.index) == len(data.index), 'Multiple schools per line in source data when exploding for pupil counts'
+    pupils_per_ward = fuzzy_match_leeds_wards(pupils_per_ward, ward_name_col='ward_name')
+
     ward_group = ward_stats.groupby(['WD21CD', 'WD21NM'])
     engagements_by_ward = pd.DataFrame({
         'schools_engaged': ward_group.count_of_engagements.count(),
         'total_engagements': ward_group.count_of_engagements.sum(),
         'count_of_schools': all_schools.groupby(['ward_code', 'ward']).school_name.count(),
-    }).astype(int)
+        'pupil_engagements': pupils_per_ward.groupby(['ward_code', 'ward_name']).pupil_count.sum(),
+    }).fillna(0).astype(int)
+    assert engagements_by_ward.pupil_engagements.sum() == data[data.wards.notna()].pupil_count.sum()
+
+    summary['engagements_with_pupils_not_assigned_to_ward'] = (data.pupil_count.sum() - engagements_by_ward.pupil_engagements.sum()).astype(int)
+
     engagements_by_ward.index.names = ['ward_code', 'ward']
     engagements_by_ward['percent_of_schools_in_ward_engaged'] = (engagements_by_ward.schools_engaged / engagements_by_ward.count_of_schools * 100).round(1)
 
     engagements_by_ward \
         .to_csv(os.path.join(SITE_DATA, 'engagements_by_ward.csv'))
-
-    
 
     # Construct summary dataframe and output to JSON
     summary = pd.DataFrame.from_dict(

@@ -130,3 +130,4 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-03-31,Waking the Artist at Chapel Allerton Primary,CLE,01 - The Awakening,['Chapel Allerton'],['LS7 3PD'],['Chapel Allerton Primary School'],['Chapel Allerton'],['LS7 3PD'],60.0,60.0,0.0,1
 2023-04-16,Waking the Artist at Beechwood Primary School,CLE,01 - The Awakening,['Killingbeck and Seacroft'],['LS14 6QB'],['Beechwood Primary School'],['Killingbeck and Seacroft'],,56.0,56.0,0.0,1
 2023-04-20,Waking the Artist at Home School,CLE,01 - The Awakening,,,['East SILC John Jamieson'],['Roundhay'],,15.0,15.0,0.0,1
+2023-04-25,Waking the Artist at Victoria Primary Academy,CLE,01 - The Awakening,['Cross Gates and Whinmoor'],['LS14 1EG'],"[""Whinmoor St Paul's Church of England Primary School""]",['Armley'],,60.0,60.0,0.0,1

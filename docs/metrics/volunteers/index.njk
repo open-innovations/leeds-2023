@@ -14,6 +14,8 @@ limitations:
       date of the user record. This is very likely to incorrectly estimate the date that the application
       was received. Overall numbers should still work.
   - The hexmaps do not show volunteers from outside the Leeds wards.
+sources:
+  - data/metrics/volunteers/
 ---
 {% from 'macros.njk' import dateFormatter %}
 {%- macro popupPreApplication(params) -%}
@@ -47,11 +49,6 @@ limitations:
   The data shown below was extracted from the Rosterfy volunteer management system which tracks all activity related to volunteering.
   At the moment, this is primarily the application process, but over time we will show data about the number of shifts that our volunteers complete. The Raw Data can be downloaded from <a href="https://datamillnorth.org/dataset/leeds-2023-volunteers">Data Mill North</a>
 </p>
-
-<aside data-type="meta-block">
-<p>Source data updated: {{ sources.volunteers.shifts.updated | date('HUMAN_DATE') }}</p>
-<p>Page template updated: {{ date | date('HUMAN_DATE') }}</p>
-</aside>
 
 <h2>Headlines</h2>
 

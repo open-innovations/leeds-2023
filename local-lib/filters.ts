@@ -12,3 +12,8 @@ export function getKey(context: Record<string, unknown>, path: string) {
       context
     );
 }
+
+export async function gitPathUpdated(path: string) {
+  const p = await Deno.run({ cmd: ["git", "log", "-1", '--pretty="%cI"', "--", path], stdout: 'piped' })
+  return new TextDecoder().decode(await p.output()).trim().replace(/"/g, '');
+}

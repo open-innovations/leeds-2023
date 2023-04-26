@@ -1,9 +1,12 @@
 [data-type=meta-block] {
-  display: flex;
   background: #bababa;
   padding: 0.5rem 1rem;
-  gap: 1rem;
   & * {
     margin-top: 0;
+  }
+  & .row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 }

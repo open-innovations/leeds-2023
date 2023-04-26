@@ -1,0 +1,9 @@
+<aside data-type="meta-block">
+  <h2>About this page</h2>
+  {{ summary | md | safe }}
+  <div class='row'>
+    <p>Updated:</p>
+    {% if sources %}<p>Source data {{ sources | first | pathUpdated | date('HUMAN_DATE') }}</p>{% endif %}
+    <p>Page layout and text {{ date | date('HUMAN_DATE') }}</p>
+  </div>
+</aside>

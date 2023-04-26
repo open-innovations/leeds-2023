@@ -162,4 +162,6 @@ site.filter('humanise', (input, max_exponent = Infinity, spacer = '') => {
   return number.toLocaleString();
 });
 
+site.filter('pathUpdated', filters.gitPathUpdated, true);
+
 export default site;

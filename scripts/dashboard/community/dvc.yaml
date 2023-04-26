@@ -5,7 +5,7 @@ stages:
     deps:
       - scripts/dashboard/community/events.py
       - data/metrics/roadshows/attendance.csv
-      - data/metrics/schools/schools_engagement.csv
+      - docs/metrics/schools/_data/engagements_by_ward.csv
       # TODO check this with Taz
       - docs/_data/metrics/mwmcmn/celeb_event_by_ward.csv
     outs:
@@ -22,7 +22,7 @@ stages:
       - data/metrics/ballot/ballot_entries.csv
       - data/metrics/events/awakening/attendees.csv
       - data/metrics/volunteers/volunteers.csv
-      - data/metrics/schools/schools_engagement.csv
+      - docs/metrics/schools/_data/engagements_by_ward.csv
       - docs/metrics/roadshow-attendees/_data/by_ward.csv
     outs:
       - docs/dashboard/community/_data/residents.csv:

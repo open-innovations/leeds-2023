@@ -13,9 +13,8 @@ def summarise_events():
     celebration_event['event_type'] = 'celebration_event'
 
     # Load Schools
-    schools = pd.read_csv('data/metrics/schools/schools_engagement.csv').drop(
-        columns=['total_number_of_learners']
-    ).rename(columns={'total_engagements': 'events'})
+    schools = pd.read_csv('docs/metrics/schools/_data/engagements_by_ward.csv')[
+        ['ward_code', 'total_engagements']].rename(columns={'total_engagements': 'events'})
     schools['event_type'] = 'schools_engagement'
 
     # Load Hidden Stories
@@ -36,6 +35,7 @@ def summarise_events():
 
     name_map = pd.read_csv(
         'data/reference/leeds_wards.csv', index_col='WD21CD')
+
     report = report.merge(name_map, left_index=True, right_index=True).rename(
         columns={'WD21NM': 'ward_name'}).sort_values(by=['ward_name'])
     report.index.names = ['ward_code']
@@ -44,7 +44,7 @@ def summarise_events():
 
     # Remove schools data
     report.drop(columns=['schools_engagement', 'total'], inplace=True)
-    report['total'] = report.sum(1)
+    report['total'] = report.sum(1, numeric_only=True)
     report.to_csv('docs/dashboard/community/_data/events.csv')
 
 

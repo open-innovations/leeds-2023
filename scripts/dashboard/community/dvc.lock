@@ -6,22 +6,22 @@ stages:
     - path: data/metrics/roadshows/attendance.csv
       md5: 79c0a79fcc6634d13321b4fa4db9ce20
       size: 1353
-    - path: data/metrics/schools/schools_engagement.csv
-      md5: 9392a50d1849768c95f8132d29c5dd44
-      size: 529
     - path: docs/_data/metrics/mwmcmn/celeb_event_by_ward.csv
       md5: db4113d3ce3ebaba57437389ce5285e6
       size: 950
+    - path: docs/metrics/schools/_data/engagements_by_ward.csv
+      md5: 427648714157b01f7ac33d143ad649f3
+      size: 1489
     - path: scripts/dashboard/community/events.py
-      md5: 28dd520d2db2804e68fe5250ab15daea
-      size: 2036
+      md5: e167c98657d83f1a0b33964b201ffb2d
+      size: 2051
     outs:
     - path: docs/dashboard/community/_data/events.csv
-      md5: 965ccf0b28ea02cac79d227f852195df
-      size: 1293
+      md5: 2a959c9b6fe9d366c507d062c8ae1f72
+      size: 1294
     - path: docs/dashboard/community/_data/events_with_schools.csv
-      md5: ce8248166567fb8011efd1578a3065d5
-      size: 1378
+      md5: a21adbd31fb8f9023480afcd684d690f
+      size: 1385
   prepare_residents:
     cmd: PYTHONPATH=scripts/ python3 scripts/dashboard/community/residents.py
     deps:
@@ -31,9 +31,6 @@ stages:
     - path: data/metrics/events/awakening/attendees.csv
       md5: 5c01f5e00fd791cc1b3e2540e4147381
       size: 52939
-    - path: data/metrics/schools/schools_engagement.csv
-      md5: 9392a50d1849768c95f8132d29c5dd44
-      size: 529
     - path: data/metrics/volunteers/volunteers.csv
       md5: da4c9938817aacfc6431152b5236fbb2
       size: 171234
@@ -43,13 +40,16 @@ stages:
     - path: docs/metrics/roadshow-attendees/_data/by_ward.csv
       md5: a6c1eabb3c8da4db2c07cc46d07eb70f
       size: 1517
+    - path: docs/metrics/schools/_data/engagements_by_ward.csv
+      md5: 427648714157b01f7ac33d143ad649f3
+      size: 1489
     - path: scripts/dashboard/community/residents.py
-      md5: 23930d26e208868eacba4da732ed06c3
-      size: 2863
+      md5: dc3bed71f6ef664f829b1727991e5377
+      size: 2849
     outs:
     - path: docs/dashboard/community/_data/residents.csv
       md5: 6f66b58ef3ae04681fb404205fda8099
       size: 1481
     - path: docs/dashboard/community/_data/residents_with_schools.csv
-      md5: a0053db592d6ad3b9357490e2aff284f
-      size: 1578
+      md5: ffe573779cccd3fb8160b0a26d524e2a
+      size: 1623

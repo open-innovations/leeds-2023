@@ -35,9 +35,7 @@ def summarise_activity():
     roadshow = roadshow[roadshow.ward_code.isin(name_map.index.values)]
     roadshow['activity'] = 'roadshow_contact'
 
-    schools = pd.read_csv('data/metrics/schools/schools_engagement.csv').drop(
-        columns=['total_engagements']
-    ).rename(columns={'total_number_of_learners': 'count'})
+    schools = pd.read_csv('docs/metrics/schools/_data/engagements_by_ward.csv')[['ward_code', 'pupil_engagements']].rename(columns={'pupil_engagements': 'count'})
     schools['activity'] = 'schools_learners'
 
     awakening = get_event_awakening()

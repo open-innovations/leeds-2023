@@ -116,7 +116,7 @@ layout: layouts/default.njk
   } %}
     <h2>Social media audience</h2>
      {{ comp.viz.bigNumber({
-      number: metrics.social_media.all_weekly.columns.audience_last | last | localize
+      number: search.data('metrics/social-media').all_weekly.columns.audience_last | last | localize
     }) | safe }}
     <p>Audience across all LEEDS 2023 social channels.</p>
   {% endcomp %}
@@ -130,7 +130,7 @@ layout: layouts/default.njk
     <section style="--big-number-size: clamp(2rem, 6vw, 3.7rem);">
     {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.all.metrics.engagements_total
+        search.data('metrics/social-media').headlines.service.all.metrics.engagements_total
        ) | localize
     }) | safe }}
     </section>

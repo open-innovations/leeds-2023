@@ -29,13 +29,13 @@ stages:
       md5: 0972b922d32eb2598695c47a51e89678
       size: 4796
     - path: scripts/metrics/social/prepare.py
-      md5: 888ed934810147a49a138493e1295a2b
-      size: 572
+      md5: 147d5090fbbd3930bb4dbad91a916b93
+      size: 574
     - path: scripts/metrics/social/total.py
-      md5: da76249c58618c833c3b436679ff942e
-      size: 1031
+      md5: 5d9bd39bcb4bf5c328557b971f3e26bf
+      size: 1008
     outs:
-    - path: docs/_data/metrics/social_media/
-      md5: f1575669ed933eb6ae0edf7ef8872d1f.dir
+    - path: docs/metrics/social-media/_data/
+      md5: d42b3fb98518024d5409d2f1fea4b12a.dir
       size: 9343
       nfiles: 6

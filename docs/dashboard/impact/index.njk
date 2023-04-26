@@ -168,7 +168,7 @@ limitations:
     {% comp 'dashboard.impact.panel', { columns: 2, bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
     {{ comp.oi.charts.graph.line({ config: {
       title: 'Total online audience',
-      categories: metrics.social_media.all_weekly.columns.week_ending,
+      categories: search.data('metrics/social-media').all_weekly.columns.week_ending,
       width: 25,
       height: 8,
       text: { colour: 'white' },
@@ -196,31 +196,31 @@ limitations:
       series: [
           {
           id: "all", label: "All",
-          yValues: metrics.social_media.all_weekly.columns.audience_last,
+          yValues: search.data('metrics/social-media').all_weekly.columns.audience_last,
           colour: all_colour,
           markerOptions: { s: 5 }
           },
           {
           id: "twitter", label: "Twitter",
-          yValues: metrics.social_media.service.twitter_weekly.columns.audience_last,
+          yValues: search.data('metrics/social-media').service.twitter_weekly.columns.audience_last,
           colour: twitter_colour,
           markerOptions: { s: 5 }
           },
           {
           id: "instagram", label: "Instagram",
-          yValues: metrics.social_media.service.instagram_weekly.columns.audience_last,
+          yValues: search.data('metrics/social-media').service.instagram_weekly.columns.audience_last,
           colour: instagram_colour,
           markerOptions: { s: 5 }
           },
           {
           id: "facebook", label: "Facebook",
-          yValues: metrics.social_media.service.facebook_weekly.columns.audience_last,
+          yValues: search.data('metrics/social-media').service.facebook_weekly.columns.audience_last,
           colour: facebook_colour,
           markerOptions: { s: 5 }
           },
           {
           id: "linkedin", label: "Linkedin",
-          yValues: metrics.social_media.service.linkedin_weekly.columns.audience_last,
+          yValues: search.data('metrics/social-media').service.linkedin_weekly.columns.audience_last,
           colour: linkedin_colour,
           markerOptions: { s: 5 }
           }
@@ -239,7 +239,7 @@ limitations:
     {% comp 'dashboard.impact.panel', { columns: 2, bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
     {{ comp.oi.charts.graph.line({ config: {
       title: 'Total engagements',
-      categories: metrics.social_media.all_weekly.columns.week_ending,
+      categories: search.data('metrics/social-media').all_weekly.columns.week_ending,
       width: 25,
       height: 8,
       text: { colour: 'white' },
@@ -267,31 +267,31 @@ limitations:
       series: [
         {
           id: "all", label: "All",
-          yValues: metrics.social_media.all_weekly.columns.engagements_total,
+          yValues: search.data('metrics/social-media').all_weekly.columns.engagements_total,
           colour: all_colour,
           markerOptions: { s: 5 }
         },
         {
           id: "twitter", label: "Twitter",
-          yValues: metrics.social_media.service.twitter_weekly.columns.engagements_total,
+          yValues: search.data('metrics/social-media').service.twitter_weekly.columns.engagements_total,
           colour: twitter_colour,
           markerOptions: { s: 5 }
         },
         {
           id: "instagram", label: "Instagram",
-          yValues: metrics.social_media.service.instagram_weekly.columns.engagements_total,
+          yValues: search.data('metrics/social-media').service.instagram_weekly.columns.engagements_total,
           colour: instagram_colour,
           markerOptions: { s: 5 }
         },
         {
           id: "facebook", label: "Facebook",
-          yValues: metrics.social_media.service.facebook_weekly.columns.engagements_total,
+          yValues: search.data('metrics/social-media').service.facebook_weekly.columns.engagements_total,
           colour: facebook_colour,
           markerOptions: { s: 5 }
         },
         {
           id: "linkedin", label: "Linkedin",
-          yValues: metrics.social_media.service.linkedin_weekly.columns.engagements_total,
+          yValues: search.data('metrics/social-media').service.linkedin_weekly.columns.engagements_total,
           colour: linkedin_colour,
           markerOptions: { s: 5 }
         }

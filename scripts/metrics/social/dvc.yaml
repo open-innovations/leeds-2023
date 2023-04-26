@@ -22,6 +22,6 @@ stages:
       - scripts/metrics/social/get_stats.py
       - data/metrics/social/
     outs:
-      - docs/_data/metrics/social_media/:
+      - docs/metrics/social-media/_data/:
           persist: true
           cache: false

@@ -3,7 +3,7 @@ data_files_label: service
 data_file:
   twitter:  
     path: data,metrics,social,twitter.csv
-    out_csv: docs,_data,metrics,social_media,service,twitter_weekly.csv
+    out_csv: docs,metrics,social-media,_data,service,twitter_weekly.csv
     group_by_date: &period date_W-SUN
     group_by_date_col: &col_name week_ending
     filter_range: &filter 2022-04-04:2023-12-31
@@ -15,7 +15,7 @@ data_file:
     - impressions_total
   facebook:  
     path: data,metrics,social,facebook.csv
-    out_csv: docs,_data,metrics,social_media,service,facebook_weekly.csv
+    out_csv: docs,metrics,social-media,_data,service,facebook_weekly.csv
     group_by_date: *period
     group_by_date_col: *col_name
     filter_range: *filter
@@ -23,7 +23,7 @@ data_file:
     metrics: *metrics  
   instagram:  
     path: data,metrics,social,instagram.csv
-    out_csv: docs,_data,metrics,social_media,service,instagram_weekly.csv
+    out_csv: docs,metrics,social-media,_data,service,instagram_weekly.csv
     group_by_date: *period
     group_by_date_col: *col_name
     filter_range: *filter
@@ -31,7 +31,7 @@ data_file:
     metrics: *metrics
   linkedin:  
     path: data,metrics,social,linkedin.csv
-    out_csv: docs,_data,metrics,social_media,service,linkedin_weekly.csv
+    out_csv: docs,metrics,social-media,_data,service,linkedin_weekly.csv
     group_by_date: *period
     group_by_date_col: *col_name
     filter_range: *filter

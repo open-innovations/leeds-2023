@@ -31,8 +31,8 @@ limitations:
   Definitions for the metrics measured are explained below, and more information can be found in this 
   <a href="https://support.sproutsocial.com/hc/en-us/articles/213223226-Profile-Performance-Report">article</a>. 
  </p>
- 
- <p>
+
+<p>
   The data can be downloaded from <a href="https://datamillnorth.org/dataset/leeds-2023-social-media"> Data Mill North</a>.
 </p>
 
@@ -46,305 +46,338 @@ limitations:
   <button class="tablinks" onclick="openCity(event, 'linkedin')">LinkedIn</button>
 </div>
 <style>
-.tab button {
-  border-radius: 3em;
-  border-style: none;
-  padding: 0.3em 1em;
-}
-.tab button.active {
-  color: white;
-  background-color: var(--l23-magenta);
-}
+  .tab button {
+    border-radius: 3em;
+    border-style: none;
+    padding: 0.3em 1em;
+  }
+  .tab button.active {
+    color: white;
+    background-color: var(--l23-magenta);
+  }
 
-.show {
-  border-radius: 3em;
-  border-style: none;
-  padding: 0.3em 1em;
-}
+  .show {
+    border-radius: 3em;
+    border-style: none;
+    padding: 0.3em 1em;
+  }
 </style>
 
-
 <div id="all" class="tabcontent">
-{% comp 'grid.autogrid', { min_width: '32rem' } %}
+  {% comp 'grid.autogrid', {min_width: '32rem'} %}
   {% comp 'grid.block.impact', {bg: all_colour} %}
-    <h2>
+  <h2>
       Total Audience
     </h2>
-    {{ comp.viz.bigNumber({
-      number: metrics.social_media.summary.service.all.metrics.audience_last | localize
+  {{ comp.viz.bigNumber({
+      number: headlines.service.all.metrics.audience_last | localize
     }) | safe }}
-    <p>
-      As at {{ metrics.social_media.summary.service.twitter.metrics.date_last | date('HUMAN_DATE') }}
-    </p>
+  <p>
+      As at {{ headlines.service.twitter.metrics.date_last | date('HUMAN_DATE') }}
+  </p>
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: all_colour} %}
-    <h2>
+  <h2>
       Total Engagement
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.all.metrics.engagements_total
+        headlines.service.all.metrics.engagements_total
        ) | localize
     }) | safe }}
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: all_colour} %}
-    <h2>
+  <h2>
       Total Audience Gained
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.all.metrics.audience_gained_total
+        headlines.service.all.metrics.audience_gained_total
       ) | localize
     }) | safe }}
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: all_colour} %}
-    <h2>
+  <h2>
       Total Impressions
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.all.metrics.impressions_total
+        headlines.service.all.metrics.impressions_total
       ) | localize
     }) | safe }}
   {% endcomp %}
-{% endcomp %}
-<button class="show" onclick="myFunction('alldef')">Show/Hide Definitions</button>
+  {% endcomp %}
+  <button class="show" onclick="myFunction('alldef')">Show/Hide Definitions</button>
   <div id="alldef">
-  <ul>
-    <li><dfn>Total Audience</dfn> - The sum of Total Audience for Twitter, Instagram, Facebook and LinkedIn</li>
-    <li><dfn>Total Engagement</dfn> - The sum of Total Engagement for Twitter, Instagram, Facebook and LinkedIn</li>
-    <li><dfn>Total Impressions</dfn> - The sum of Total Impressions for Twitter, Instagram, Facebook and LinkedIn</li>
-    <li><dfn>Total Audience Gained</dfn> - The sum of Total Audience Gained for Twitter, Instagram, Facebook and LinkedIn</li>
-  </ul>
+    <ul>
+      <li>
+        <dfn>Total Audience</dfn> - The sum of Total Audience for Twitter, Instagram, Facebook and LinkedIn</li>
+      <li>
+        <dfn>Total Engagement</dfn> - The sum of Total Engagement for Twitter, Instagram, Facebook and LinkedIn</li>
+      <li>
+        <dfn>Total Impressions</dfn> - The sum of Total Impressions for Twitter, Instagram, Facebook and LinkedIn</li>
+      <li>
+        <dfn>Total Audience Gained</dfn> - The sum of Total Audience Gained for Twitter, Instagram, Facebook and LinkedIn</li>
+    </ul>
   </div>
 </div>
 
 <div id="twitter" class="tabcontent">
-{% comp 'grid.autogrid', { min_width: '32rem' } %}
+  {% comp 'grid.autogrid', {min_width: '32rem'} %}
   {% comp 'grid.block.impact', {bg: twitter_colour} %}
-    <h2>
+  <h2>
       Total Audience
     </h2>
-    {{ comp.viz.bigNumber({
-      number: metrics.social_media.summary.service.twitter.metrics.audience_last | localize
+  {{ comp.viz.bigNumber({
+      number: headlines.service.twitter.metrics.audience_last | localize
     }) | safe }}
-    <p>
-      As at {{ metrics.social_media.summary.service.twitter.metrics.date_last | date('HUMAN_DATE') }}
-    </p>
+  <p>
+      As at {{ headlines.service.twitter.metrics.date_last | date('HUMAN_DATE') }}
+  </p>
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: twitter_colour} %}
-    <h2>
+  <h2>
       Total Engagement
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.twitter.metrics.engagements_total
+        headlines.service.twitter.metrics.engagements_total
        ) | localize
     }) | safe }}
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: twitter_colour} %}
-    <h2>
+  <h2>
       Total Audience Gained
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.twitter.metrics.audience_gained_total
+        headlines.service.twitter.metrics.audience_gained_total
       ) | localize
     }) | safe }}
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: twitter_colour} %}
-    <h2>
+  <h2>
       Total Impressions
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.twitter.metrics.impressions_total
+        headlines.service.twitter.metrics.impressions_total
       ) | localize
     }) | safe }}
   {% endcomp %}
-{% endcomp %}
-<button class="show" onclick="myFunction('twitterdef')">Show/Hide Defenitions</button>
+  {% endcomp %}
+  <button class="show" onclick="myFunction('twitterdef')">Show/Hide Defenitions</button>
   <div id="twitterdef">
-<ul>
-<li><dfn>Total Audience</dfn> - Twitter Followers</li>
-<li><dfn>Total Engagement</dfn> - "The number of times that users engaged with your posts, including when they liked, @replied, retweeted, or clicked on your posts. This does not include quote tweets of your posts."</li>
-<li><dfn>Total Impressions</dfn> - "The number of times your posts were displayed to users. This includes impressions when your posts are retweeted by other users."</li>
-<li><dfn>Total Audience Gained</dfn> - The sum of Total Audience Gained for Twitter, Instagram, Facebook and LinkedIn</li>
-</ul>
+    <ul>
+      <li>
+        <dfn>Total Audience</dfn> - Twitter Followers</li>
+      <li>
+        <dfn>Total Engagement</dfn> - "The number of times that users engaged with your posts, including when they liked, @replied, retweeted, or clicked on your posts. This does not include quote tweets of your posts."</li>
+      <li>
+        <dfn>Total Impressions</dfn> - "The number of times your posts were displayed to users. This includes impressions when your posts are retweeted by other users."</li>
+      <li>
+        <dfn>Total Audience Gained</dfn> - The sum of Total Audience Gained for Twitter, Instagram, Facebook and LinkedIn</li>
+    </ul>
   </div>
 </div>
 
 <div id="instagram" class="tabcontent">
-{% comp 'grid.autogrid', { min_width: '32rem' } %}
-  {% comp 'grid.block.impact', {bg: instagram_colour, fg:'#FFFFFF'} %}
-    <h2>
+  {% comp 'grid.autogrid', {min_width: '32rem'} %}
+  {% comp 'grid.block.impact', {
+    bg: instagram_colour,
+    fg: '#FFFFFF'
+  } %}
+  <h2>
       Total Audience
     </h2>
-    {{ comp.viz.bigNumber({
-      number: metrics.social_media.summary.service.instagram.metrics.audience_last | localize
+  {{ comp.viz.bigNumber({
+      number: headlines.service.instagram.metrics.audience_last | localize
     }) | safe }}
-    <p>
-      As at {{ metrics.social_media.summary.service.instagram.metrics.date_last | date('HUMAN_DATE') }}
-    </p>
+  <p>
+      As at {{ headlines.service.instagram.metrics.date_last | date('HUMAN_DATE') }}
+  </p>
   {% endcomp %}
-  {% comp 'grid.block.impact', {bg: instagram_colour,fg:'#FFFFFF'} %}
-    <h2>
+  {% comp 'grid.block.impact', {
+    bg: instagram_colour,
+    fg: '#FFFFFF'
+  } %}
+  <h2>
       Total Engagement
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.instagram.metrics.engagements_total
+        headlines.service.instagram.metrics.engagements_total
        ) | localize
     }) | safe }}
   {% endcomp %}
-  {% comp 'grid.block.impact', {bg: instagram_colour,fg:'#FFFFFF'} %}
-    <h2>
+  {% comp 'grid.block.impact', {
+    bg: instagram_colour,
+    fg: '#FFFFFF'
+  } %}
+  <h2>
       Total Audience Gained
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.instagram.metrics.audience_gained_total
+        headlines.service.instagram.metrics.audience_gained_total
       ) | localize
     }) | safe }}
   {% endcomp %}
-  {% comp 'grid.block.impact', {bg: instagram_colour,fg:'#FFFFFF'} %}
-    <h2>
+  {% comp 'grid.block.impact', {
+    bg: instagram_colour,
+    fg: '#FFFFFF'
+  } %}
+  <h2>
       Total Impressions
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.instagram.metrics.impressions_total
+        headlines.service.instagram.metrics.impressions_total
       ) | localize
     }) | safe }}
   {% endcomp %}
-{% endcomp %}
+  {% endcomp %}
 
-<button class="show" onclick="myFunction('instagramdef')">Show/Hide Defenitions</button>
+  <button class="show" onclick="myFunction('instagramdef')">Show/Hide Defenitions</button>
   <div id="instagramdef">
-<ul>
-<li><dfn>Total Audience</dfn> - Instagram Followers</li>
-<li><dfn>Total Engagement</dfn> - "The number of times users liked, commented, and saved your posts, replied to your stories, and shared your Reels."</li>
-<li><dfn>Total Impressions</dfn> - "The number of times your content was displayed to users. This does not include profile visitors. For Reels post-level metrics, impressions are mapped to plays on native as Instagram does not provide post-level impressions on Reels."</li>
-<li><dfn>Total Audience Gained</dfn> - Gross number of Followers acquired</li>
-</ul>
-</div>
+    <ul>
+      <li>
+        <dfn>Total Audience</dfn> - Instagram Followers</li>
+      <li>
+        <dfn>Total Engagement</dfn> - "The number of times users liked, commented, and saved your posts, replied to your stories, and shared your Reels."</li>
+      <li>
+        <dfn>Total Impressions</dfn> - "The number of times your content was displayed to users. This does not include profile visitors. For Reels post-level metrics, impressions are mapped to plays on native as Instagram does not provide post-level impressions on Reels."</li>
+      <li>
+        <dfn>Total Audience Gained</dfn> - Gross number of Followers acquired</li>
+    </ul>
+  </div>
 </div>
 
 <div id="facebook" class="tabcontent">
-{% comp 'grid.autogrid', { min_width: '32rem' } %}
+  {% comp 'grid.autogrid', {min_width: '32rem'} %}
   {% comp 'grid.block.impact', {bg: facebook_colour} %}
-    <h2>
+  <h2>
       Total Audience
     </h2>
-    {{ comp.viz.bigNumber({
-      number: metrics.social_media.summary.service.facebook.metrics.audience_last | localize
+  {{ comp.viz.bigNumber({
+      number: headlines.service.facebook.metrics.audience_last | localize
     }) | safe }}
-    <p>
-      As at {{ metrics.social_media.summary.service.facebook.metrics.date_last | date('HUMAN_DATE') }}
-    </p>
+  <p>
+      As at {{ headlines.service.facebook.metrics.date_last | date('HUMAN_DATE') }}
+  </p>
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: facebook_colour} %}
-    <h2>
+  <h2>
       Total Engagement
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.facebook.metrics.engagements_total
+        headlines.service.facebook.metrics.engagements_total
        ) | localize
     }) | safe }}
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: facebook_colour} %}
-    <h2>
+  <h2>
       Total Audience Gained
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.facebook.metrics.audience_gained_total
+        headlines.service.facebook.metrics.audience_gained_total
       ) | localize
     }) | safe }}
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: facebook_colour} %}
-    <h2>
+  <h2>
       Total Impressions
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.facebook.metrics.impressions_total
+        headlines.service.facebook.metrics.impressions_total
       ) | localize
     }) | safe }}
   {% endcomp %}
-{% endcomp %}
+  {% endcomp %}
 
-<button class="show" onclick="myFunction('facebookdef')">Show/Hide Defenitions</button>
+  <button class="show" onclick="myFunction('facebookdef')">Show/Hide Defenitions</button>
   <div id="facebookdef">
-<ul>
-<li><dfn>Total Audience</dfn> - Facebook Page Likes</li>
-<li><dfn>Total Engagement</dfn> - "The number of times that users reacted to, commented on, shared, or clicked on your posts."</li>
-<li><dfn>Total Impressions</dfn> - "The number of times content associated with your page was displayed to users."</li>
-<li><dfn>Total Audience Gained</dfn> - Gross number of Page Likes acquired</li>
-</ul>
-</div>
+    <ul>
+      <li>
+        <dfn>Total Audience</dfn> - Facebook Page Likes</li>
+      <li>
+        <dfn>Total Engagement</dfn> - "The number of times that users reacted to, commented on, shared, or clicked on your posts."</li>
+      <li>
+        <dfn>Total Impressions</dfn> - "The number of times content associated with your page was displayed to users."</li>
+      <li>
+        <dfn>Total Audience Gained</dfn> - Gross number of Page Likes acquired</li>
+    </ul>
+  </div>
 </div>
 
 <div id="linkedin" class="tabcontent">
-{% comp 'grid.autogrid', { min_width: '32rem' } %}
+  {% comp 'grid.autogrid', {min_width: '32rem'} %}
   {% comp 'grid.block.impact', {bg: linkedin_colour} %}
-    <h2>
+  <h2>
       Total Audience
     </h2>
-    {{ comp.viz.bigNumber({
-      number: metrics.social_media.summary.service.linkedin.metrics.audience_last | localize
+  {{ comp.viz.bigNumber({
+      number: headlines.service.linkedin.metrics.audience_last | localize
     }) | safe }}
-    <p>
-      As at {{ metrics.social_media.summary.service.linkedin.metrics.date_last | date('HUMAN_DATE') }}
-    </p>
+  <p>
+      As at {{ headlines.service.linkedin.metrics.date_last | date('HUMAN_DATE') }}
+  </p>
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: linkedin_colour} %}
-    <h2>
+  <h2>
       Total Engagement
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.linkedin.metrics.engagements_total
+        headlines.service.linkedin.metrics.engagements_total
        ) | localize
     }) | safe }}
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: linkedin_colour} %}
-    <h2>
+  <h2>
       Total Audience Gained
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.linkedin.metrics.audience_gained_total
+        headlines.service.linkedin.metrics.audience_gained_total
       ) | localize
     }) | safe }}
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: linkedin_colour} %}
-    <h2>
+  <h2>
       Total Impressions
     </h2>
-    {{ comp.viz.bigNumber({
+  {{ comp.viz.bigNumber({
       number: (
-        metrics.social_media.summary.service.linkedin.metrics.impressions_total
+        headlines.service.linkedin.metrics.impressions_total
       ) | localize
     }) | safe }}
   {% endcomp %}
-{% endcomp %}
-<button class="show" onclick="myFunction('linkedindef')">Show/Hide Defenitions</button>
+  {% endcomp %}
+  <button class="show" onclick="myFunction('linkedindef')">Show/Hide Defenitions</button>
   <div id="linkedindef">
-<ul>
-<li><dfn>Total Audience</dfn> - LinkedIn Followers</li>
-<li><dfn>Total Engagement</dfn> - "The number of times that users engaged with your posts, including when they reacted to, commented on, shared, or clicked on your post."</li>
-<li><dfn>Total Impressions</dfn> - "The number of times your posts were displayed to users. This does not include impressions when your posts are shared by other users."</li>
-<li><dfn>Total Audience Gained</dfn> - Gross number of Followers acquired</li>
-</ul>
-</div>
+    <ul>
+      <li>
+        <dfn>Total Audience</dfn> - LinkedIn Followers</li>
+      <li>
+        <dfn>Total Engagement</dfn> - "The number of times that users engaged with your posts, including when they reacted to, commented on, shared, or clicked on your post."</li>
+      <li>
+        <dfn>Total Impressions</dfn> - "The number of times your posts were displayed to users. This does not include impressions when your posts are shared by other users."</li>
+      <li>
+        <dfn>Total Audience Gained</dfn> - Gross number of Followers acquired</li>
+    </ul>
+  </div>
 </div>
 
 <script type="text/javascript">
-    function openCity(evt, cityName) {
+  function openCity(evt, cityName) {
     // Declare all variables
-    var i, tabcontent, tablinks;
+    var i,
+      tabcontent,
+      tablinks;
 
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -355,16 +388,21 @@ limitations:
     // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+      tablinks[i].className = tablinks[i]
+        .className
+        .replace(" active", "");
     }
 
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
+    document
+      .getElementById(cityName)
+      .style
+      .display = "block";
     evt.currentTarget.className += " active";
-    document.getElementById("headlinetitle").innerHTML = "Headlines - " + evt.currentTarget.innerHTML
+    document
+      .getElementById("headlinetitle")
+      .innerHTML = "Headlines - " + evt.currentTarget.innerHTML
   }
-  
-
 
   function myFunction(id) {
     var x = document.getElementById(id);
@@ -372,36 +410,33 @@ limitations:
       x.style.display = "block";
     } else {
       x.style.display = "none";
+    }
   }
-  }
-  
 
   // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+  document
+    .getElementById("defaultOpen")
+    .click();
 </script>
-
 
 {% from 'macros.njk' import dateFormatter %}
 {%- macro popupPreApplication(params) -%}
   {{ params.label }}</br>
-  {{ params.value }} signups
+{{ params.value }} signups
 {%- endmacro -%}
 {%- macro popupApplied(params) -%}
-  {{ params.label }}</br>
-  {{ params.value }} applications received
+{{ params.label }}</br>
+{{ params.value }} applications received
 {%- endmacro -%}
 
-
 <h2>Performance Over Time </h2>
-{% comp 'grid.autogrid', { min_width: '32rem' } %}
+{% comp 'grid.autogrid', {min_width: '32rem'} %}
 
 <div>
-{% comp 'layout.figure', {
-  title: 'Total Audience'
-} %}
+{% comp 'layout.figure', {title: 'Total Audience'} %}
 
 {{ comp.oi.charts.graph.line({ config: {
-  categories: metrics.social_media.all_weekly.columns.week_ending,
+  categories: all_weekly.columns.week_ending,
   width: 25,
   height: 12,
   text: { colour: '#eee' },
@@ -429,31 +464,31 @@ limitations:
   series: [
     {
       id: "all", label: "All",
-      yValues: metrics.social_media.all_weekly.columns.audience_last,
+      yValues: all_weekly.columns.audience_last,
       colour: all_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "twitter", label: "Twitter",
-      yValues: metrics.social_media.service.twitter_weekly.columns.audience_last,
+      yValues: service.twitter_weekly.columns.audience_last,
       colour: twitter_colour,
       markerOptions: { s: 5 }
     },
      {
       id: "instagram", label: "Instagram",
-      yValues: metrics.social_media.service.instagram_weekly.columns.audience_last,
+      yValues: service.instagram_weekly.columns.audience_last,
       colour: instagram_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "facebook", label: "Facebook",
-      yValues: metrics.social_media.service.facebook_weekly.columns.audience_last,
+      yValues: service.facebook_weekly.columns.audience_last,
       colour: facebook_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "linkedin", label: "Linkedin",
-      yValues: metrics.social_media.service.linkedin_weekly.columns.audience_last,
+      yValues: service.linkedin_weekly.columns.audience_last,
       colour: linkedin_colour,
       markerOptions: { s: 5 }
     }
@@ -466,12 +501,10 @@ limitations:
 </div>
 <div>
 
-{% comp 'layout.figure', {
-  title: 'Audience Gained'
-} %}
+{% comp 'layout.figure', {title: 'Audience Gained'} %}
 
 {{ comp.oi.charts.graph.line({ config: {
-  categories: metrics.social_media.all_weekly.columns.week_ending,
+  categories: all_weekly.columns.week_ending,
   width: 25,
   height: 12,
   text: { colour: '#eee' },
@@ -499,31 +532,31 @@ limitations:
   series: [
     {
       id: "all", label: "All",
-      yValues: metrics.social_media.all_weekly.columns.audience_gained_total,
+      yValues: all_weekly.columns.audience_gained_total,
       colour: all_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "twitter", label: "Twitter",
-      yValues: metrics.social_media.service.twitter_weekly.columns.audience_gained_total,
+      yValues: service.twitter_weekly.columns.audience_gained_total,
       colour: twitter_colour,
       markerOptions: { s: 5 }
     },
      {
       id: "instagram", label: "Instagram",
-      yValues: metrics.social_media.service.instagram_weekly.columns.audience_gained_total,
+      yValues: service.instagram_weekly.columns.audience_gained_total,
       colour: instagram_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "facebook", label: "Facebook",
-      yValues: metrics.social_media.service.facebook_weekly.columns.audience_gained_total,
+      yValues: service.facebook_weekly.columns.audience_gained_total,
       colour: facebook_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "linkedin", label: "Linkedin",
-      yValues: metrics.social_media.service.linkedin_weekly.columns.audience_gained_total,
+      yValues: service.linkedin_weekly.columns.audience_gained_total,
       colour: linkedin_colour,
       markerOptions: { s: 5 }
     }
@@ -536,12 +569,10 @@ limitations:
 </div>
 <div>
 
-{% comp 'layout.figure', {
-  title: 'Engagements'
-} %}
+{% comp 'layout.figure', {title: 'Engagements'} %}
 
 {{ comp.oi.charts.graph.line({ config: {
-  categories: metrics.social_media.all_weekly.columns.week_ending,
+  categories: all_weekly.columns.week_ending,
   width: 25,
   height: 12,
   text: { colour: '#eee' },
@@ -569,31 +600,31 @@ limitations:
   series: [
     {
       id: "all", label: "All",
-      yValues: metrics.social_media.all_weekly.columns.engagements_total,
+      yValues: all_weekly.columns.engagements_total,
       colour: all_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "twitter", label: "Twitter",
-      yValues: metrics.social_media.service.twitter_weekly.columns.engagements_total,
+      yValues: service.twitter_weekly.columns.engagements_total,
       colour: twitter_colour,
       markerOptions: { s: 5 }
     },
      {
       id: "instagram", label: "Instagram",
-      yValues: metrics.social_media.service.instagram_weekly.columns.engagements_total,
+      yValues: service.instagram_weekly.columns.engagements_total,
       colour: instagram_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "facebook", label: "Facebook",
-      yValues: metrics.social_media.service.facebook_weekly.columns.engagements_total,
+      yValues: service.facebook_weekly.columns.engagements_total,
       colour: facebook_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "linkedin", label: "Linkedin",
-      yValues: metrics.social_media.service.linkedin_weekly.columns.engagements_total,
+      yValues: service.linkedin_weekly.columns.engagements_total,
       colour: linkedin_colour,
       markerOptions: { s: 5 }
     }
@@ -605,12 +636,10 @@ limitations:
 {% endcomp %}
 </div>
 <div>
-{% comp 'layout.figure', {
-  title: 'Impressions'
-} %}
+{% comp 'layout.figure', {title: 'Impressions'} %}
 
 {{ comp.oi.charts.graph.line({ config: {
-  categories: metrics.social_media.all_weekly.columns.week_ending,
+  categories: all_weekly.columns.week_ending,
   width: 25,
   height: 12,
   text: { colour: '#eee' },
@@ -638,31 +667,31 @@ limitations:
   series: [
     {
       id: "all", label: "All",
-      yValues: metrics.social_media.all_weekly.columns.impressions_total,
+      yValues: all_weekly.columns.impressions_total,
       colour: all_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "twitter", label: "Twitter",
-      yValues: metrics.social_media.service.twitter_weekly.columns.impressions_total,
+      yValues: service.twitter_weekly.columns.impressions_total,
       colour: twitter_colour,
       markerOptions: { s: 5 }
     },
      {
       id: "instagram", label: "Instagram",
-      yValues: metrics.social_media.service.instagram_weekly.columns.impressions_total,
+      yValues: service.instagram_weekly.columns.impressions_total,
       colour: instagram_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "facebook", label: "Facebook",
-      yValues: metrics.social_media.service.facebook_weekly.columns.impressions_total,
+      yValues: service.facebook_weekly.columns.impressions_total,
       colour: facebook_colour,
       markerOptions: { s: 5 }
     },
     {
       id: "linkedin", label: "Linkedin",
-      yValues: metrics.social_media.service.linkedin_weekly.columns.impressions_total,
+      yValues: service.linkedin_weekly.columns.impressions_total,
       colour: linkedin_colour,
       markerOptions: { s: 5 }
     }
@@ -674,4 +703,3 @@ limitations:
 {% endcomp %}
 </div>
 {% endcomp %}
-

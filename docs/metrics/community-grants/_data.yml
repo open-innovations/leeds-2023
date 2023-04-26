@@ -1,6 +1,6 @@
 key_metrics:
   hours:
     title: Number of Applications Made
-    ref: headline.responses
+    ref: headline.total_responses
     description: Total number of Community Grant Applications.
     colour: var(--l23-pink) 

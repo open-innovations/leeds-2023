@@ -11,9 +11,7 @@ RESPONSE_CSV = os.path.join(DATA_DIR, 'responses.csv')
 
 def key_map(value):
     return {
-        'meet_leeds_lab_audio': 'meet_leeds_lab',
-        'lift_the_lid_audio': 'lift_the_lid',
-        'lift_the_lid_written': 'lift_the_lid',
+        'my_leeds_grant_app_audiovisual': 'my_leeds_grant_app',
     }.get(value, value);
 
 
@@ -25,6 +23,7 @@ if __name__ == '__main__':
     for filename in grants:
         key = key_map(filename.replace(r".csv", ""))
         grant_data = pd.read_csv(os.path.join(STAGING_DIR, filename))
+        grant_data['grant'] = key
         data = pd.concat([data, grant_data])
 
     # Do the ward match

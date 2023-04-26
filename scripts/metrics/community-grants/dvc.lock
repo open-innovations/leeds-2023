@@ -4,13 +4,13 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/extract.py
     deps:
     - path: scripts/metrics/community-grants/extract.py
-      md5: 8e6612ceb1d7705bb27fcdf0bab1d3bf
-      size: 1105
+      md5: 191ffaf3e662f9c34b924995dca1a61d
+      size: 1148
     outs:
     - path: working/metrics/community-grants/
-      md5: 8c8adbf65e608f6e26a846028d80d164.dir
-      size: 9329
-      nfiles: 2
+      md5: 4e96ee8d5757fb328dd61067b4accd74.dir
+      size: 9399
+      nfiles: 3
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/transform.py
     deps:
@@ -18,37 +18,37 @@ stages:
       md5: 3c332ace66b28524c0a710fca1a4b1c0
       size: 76072682
     - path: scripts/metrics/community-grants/transform.py
-      md5: 8180b258267145dbbcb0cf40189bf024
-      size: 1075
+      md5: 429b94a5b598c3937aefda538f603472
+      size: 1029
     - path: working/metrics/community-grants/
-      md5: 8c8adbf65e608f6e26a846028d80d164.dir
-      size: 9329
-      nfiles: 2
+      md5: 4e96ee8d5757fb328dd61067b4accd74.dir
+      size: 9399
+      nfiles: 3
     outs:
     - path: data/metrics/community-grants/
-      md5: ce26937421e1e5053d5027bbbe2c7a29.dir
-      size: 14763
+      md5: 33bcfa36576dde1baebca90f1d9a7b17.dir
+      size: 24166
       nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/prepare.py
     deps:
     - path: data/metrics/community-grants/
-      md5: ce26937421e1e5053d5027bbbe2c7a29.dir
-      size: 14763
+      md5: 33bcfa36576dde1baebca90f1d9a7b17.dir
+      size: 24166
       nfiles: 1
     - path: scripts/metrics/community-grants/prepare.py
-      md5: 532807b43155f33d90810a0a8d527f76
-      size: 1145
+      md5: c1ce1444545fb5e0a515515c3087a668
+      size: 1603
     outs:
     - path: docs/metrics/community-grants/_data/headline.json
-      md5: 2126ee39c5908d694b1e93cd9ebb6d80
-      size: 17
+      md5: 98bceec83559c7c08fb74a9aba2dc308
+      size: 88
     - path: docs/metrics/community-grants/_data/responses_by_la.csv
-      md5: ae604e80a64bea3e7fc33716e1a85c38
-      size: 140
+      md5: 56d4d2fc4b5f8f241952e75af8133e9e
+      size: 245
     - path: docs/metrics/community-grants/_data/responses_by_ward.csv
-      md5: 528d8bef0463e8768aedf7d8e510a29b
-      size: 677
+      md5: 84db8da52e7df8ee1d9cc1c7710e67d4
+      size: 973
     - path: docs/metrics/community-grants/_data/responses_by_week.csv
-      md5: ccbf18fd0de4e4ff48d94914b5724e27
-      size: 203
+      md5: f7ae367b41ab4c598a63735782e69b7a
+      size: 325

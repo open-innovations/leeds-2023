@@ -26,6 +26,7 @@ if __name__ == '__main__':
     forms = [
         u'myLeedsGrantApp',
         u'myLeedsGrantAppAudiovisual',
+        u'myLeedsSchoolsGrantsApplication'
     ]
 
     for form in forms:

@@ -1,5 +1,5 @@
 ---
-title: My LEEDS Summer Community Grants
+title: Community Grants
 summary: Community grant applications
 tags:
   - main
@@ -14,39 +14,44 @@ sources:
   - data/metrics/community-grants/
 ---
 
+{% comp 'grid.autogrid', {min_width: '25rem'} %}
 {{ comp.metric.headline({
-  title: "Community Grant Applications", headingLevel: 3,
-  value: headline.responses | localize,
+  title: "My Leeds Summer Community Grant Applications", headingLevel: 3,
+  value: headline.my_leeds_grant_app | localize,
   description: "Total number of Community Grant Applications.",
   background: "var(--l23-cyan)"
 }) | safe }}
+{{ comp.metric.headline({
+  title: "My Leeds Schools Grant Applications", headingLevel: 3,
+  value: headline.my_leeds_schools_grants_application | localize,
+  description: "Total number of Schools Grant Applications.",
+  background: "var(--l23-cyan)"
+}) | safe }}
+{% endcomp %}
 
-
-{% comp 'layout.figure', {
-  max_width: '40rem'
-} %}
-  <h3>My Leeds Summer Community Grant Applications by ward</h3>
-  {{ comp.charts.hexmap({
+<h2>My Leeds Summer Community Grant</h2>
+{% comp 'grid.autogrid', {min_width: '30rem'} %}
+{% comp 'layout.figure', {max_width: '40rem'} %}
+<h3>Applications by ward</h3>
+{{ comp.charts.hexmap({
     hexjson: hex.wards_leeds,
     data: responses_by_ward.rows,
     matchKey: 'ward_code',
-    valueProp: 'responses',
+    valueProp: 'my_leeds_grant_app',
     bgColour: '#ddd',
       colourScale: colours.scales.magenta
   }) | safe }}
 {% endcomp %}
 
-{% comp 'layout.figure', {
-  max_width: '40rem'
-} %}
-<h3>My Leeds Summer Community Grant Applications by Local Authority</h3>
-  {{ comp.charts.hexmap({
+{% comp 'layout.figure', {max_width: '40rem'} %}
+<h3>Applications by local authority</h3>
+{{ comp.charts.hexmap({
     hexjson: hex.leeds_city_region,
     data: responses_by_la.rows,
     matchKey: 'la_code',
-    valueProp: 'responses',
+    valueProp: 'my_leeds_grant_app',
     bgColour: '#ddd',
       colourScale: colours.scales.cyan
   }) | safe }}
 {% endcomp %}
-
+{% endcomp %}

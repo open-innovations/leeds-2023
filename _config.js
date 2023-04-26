@@ -94,6 +94,7 @@ site.loadData([".csv"], csvLoader);
 site.script("get-fonts", getFonts);
 
 site.remoteFile('/js/oi.linechart.min.js', 'https://raw.githubusercontent.com/open-innovations/oi.linechart.js/main/oi.linechart.min.js');
+site.remoteFile('/js/oi.log.js', 'https://open-innovations.org/resources/oi.log.js');
 site.remoteFile('/assets/js/vendors/mermaid.js', 'https://unpkg.com/mermaid@8.8.0/dist/mermaid.js');
 
 site.copy('/js');

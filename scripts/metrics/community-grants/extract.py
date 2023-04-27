@@ -3,6 +3,9 @@ from functools import reduce
 
 import pandas as pd
 from util.firebase import pull_collection
+from util.logger import logging
+
+logger = logging.getLogger(__name__)
 
 STAGING_DIR = 'working/metrics/community-grants/'
 
@@ -12,9 +15,22 @@ os.makedirs(STAGING_DIR, exist_ok=True)
 def clean_callout(data):
     data = data.rename(columns={
         'dateSubmitted': 'date_submitted',
+        'schoolPostcode': 'postcode',
     })
+    
+    # Remove test data
+    # TODO actually get there removed at source
+    pre_count = len(data.index)
+    data = data[
+        data.postcode != 'test'
+    ]
+    diff = pre_count - len(data.index)
+    if diff > 0:
+        logger.warning('Removing %d test entries', diff)
+
     data.date_submitted = pd.DatetimeIndex(
         data.date_submitted).tz_localize(None).floor('D')
+    
     return data
 
 
@@ -30,6 +46,7 @@ if __name__ == '__main__':
     ]
 
     for form in forms:
+        logger.info('Processing %s', form)
         collection_name = u'form-builder-submissions/{}/responses'.format(
             form)
         key = camel_to_snake_case(form)
@@ -38,6 +55,7 @@ if __name__ == '__main__':
             fields=[
                 'dateSubmitted',
                 'postcode',
+                'schoolPostcode'
             ])
         data = clean_callout(data)
         data.to_csv(os.path.join(

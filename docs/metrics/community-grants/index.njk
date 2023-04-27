@@ -55,3 +55,30 @@ sources:
   }) | safe }}
 {% endcomp %}
 {% endcomp %}
+
+<h2>My Leeds Schools Grant Applications</h2>
+{% comp 'grid.autogrid', {min_width: '30rem'} %}
+{% comp 'layout.figure', {max_width: '40rem'} %}
+<h3>Applications by ward</h3>
+{{ comp.charts.hexmap({
+    hexjson: hex.wards_leeds,
+    data: responses_by_ward.rows,
+    matchKey: 'ward_code',
+    valueProp: 'my_leeds_schools_grants_application',
+    bgColour: '#ddd',
+      colourScale: colours.scales.magenta
+  }) | safe }}
+{% endcomp %}
+
+{% comp 'layout.figure', {max_width: '40rem'} %}
+<h3>Applications by local authority</h3>
+{{ comp.charts.hexmap({
+    hexjson: hex.leeds_city_region,
+    data: responses_by_la.rows,
+    matchKey: 'la_code',
+    valueProp: 'my_leeds_schools_grants_application',
+    bgColour: '#ddd',
+      colourScale: colours.scales.cyan
+  }) | safe }}
+{% endcomp %}
+{% endcomp %}

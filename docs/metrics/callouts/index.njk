@@ -35,12 +35,24 @@ sources:
 
 <h2>Headlines</h2>
 
+{% comp 'grid.autogrid', {min_width: '33rem'} %}
+
 {{ comp.metric.headline({
   title: "Call out responses", headingLevel: 3,
   value: headline.responses | localize,
   description: "Total number of call out responses.",
   background: "var(--l23-cyan)"
 }) | safe }}
+
+
+{{ comp.metric.headline({
+  title: "Number of callouts", headingLevel: 3,
+  value: responses_by_callout.rows | length,
+  description: "Total number of call out responses.",
+  background: "var(--l23-magenta)"
+}) | safe }}
+
+{% endcomp %}
 
 
 <h2>Call out Responses</h2>

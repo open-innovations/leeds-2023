@@ -15,7 +15,7 @@ os.makedirs(LOG_DIR, exist_ok=True)
 
 LATEST_DATE = datetime.now()
 
-logger = logging.getLogger()
+logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 log_fh = logging.FileHandler(filename=os.path.join(
     LOG_DIR, "media_cision.log"), mode="w")

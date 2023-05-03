@@ -1,4 +1,5 @@
 school,count_of_engagements,ward,ward_code
+Aberford Church of England Voluntary Controlled Primary School,1,Harewood,E05011396
 Adel Primary School,1,Adel and Wharfedale,E05012841
 Al Kauthar Girls Academy,1,Chapel Allerton,E05011390
 Allerton Grange School,1,Moortown,E05011405
@@ -7,11 +8,13 @@ Armley Park Primary School,1,Armley,E05011385
 Beechwood Primary School,3,Killingbeck and Seacroft,E05011400
 Benton Park School,1,Guiseley and Rawdon,E05011395
 Birchfield Primary School,1,Morley North,E05011406
+Boston Spa Academy,1,Wetherby,E05011414
 Bracken Edge Primary School,2,Chapel Allerton,E05011390
 Broadgate Primary School,1,Horsforth,E05011547
 Cardinal Heenan Catholic High School,1,Moortown,E05011405
-Carr Manor Community School,2,Moortown,E05011405
-Chapel Allerton Primary School,2,Chapel Allerton,E05011390
+Carr Manor Community School,3,Moortown,E05011405
+Chapel Allerton Primary School,3,Chapel Allerton,E05011390
+Co-op Academy Woodlands,1,Gipton and Harehills,E05011394
 Co-op Beckfield,1,,
 Cobden Primary School,1,Farnley and Wortley,E05012648
 Cockburn John Charles Academy,1,Middleton Park,E05011404
@@ -23,23 +26,26 @@ Cross Gates Primary School,1,Cross Gates and Whinmoor,E05011391
 Dixons Trinity Chapeltown,1,Chapel Allerton,E05011390
 Dixons Unity Academy,1,Armley,E05011385
 East SILC Jack Clark,1,Gipton and Harehills,E05011394
-East SILC John Jamieson,3,Roundhay,E05011411
+East SILC John Jamieson,4,Roundhay,E05011411
 Ebor Gardens Primary Academy,2,Burmantofts and Richmond Hill,E05011388
 Greenmount Primary School,1,Beeston and Holbeck,E05012647
 Guiseley School,1,Guiseley and Rawdon,E05011395
+Holy Name Catholic Voluntary Academy,1,Weetwood,E05011413
 "Holy Rosary and St Anne's Catholic Primary School, a Voluntary Academy",4,Chapel Allerton,E05011390
 "Holy Trinity Church of England Academy, Rothwell",1,Rothwell,E05011410
 Horsforth School,1,Horsforth,E05011547
+Hunslet Carr Primary School,1,Hunslet and Riverside,E05011399
 Hunslet Moor Primary School,1,Hunslet and Riverside,E05011399
 Ingram Road Primary School,3,Beeston and Holbeck,E05012647
+Jack Clark School,1,Gipton and Harehills,E05011394
 Lady Lane Park,1,,
-Lawns Park Primary School,3,Farnley and Wortley,E05012648
+Lawns Park Primary School,4,Farnley and Wortley,E05012648
 Lawnswood School,1,Weetwood,E05011413
 Leeds City Academy,1,Headingley and Hyde Park,E05011397
 Leeds City College,2,Little London and Woodhouse,E05011403
 Leeds East Academy,1,Killingbeck and Seacroft,E05011400
 Leeds West Academy,1,Bramley and Stanningley,E05011387
-Manor Wood Primary School,1,Moortown,E05011405
+Manor Wood Primary School,2,Moortown,E05011405
 Manston Primary,1,Cross Gates and Whinmoor,E05011391
 Middleton Primary School,1,Middleton Park,E05011404
 Moor Allerton Hall Primary School,1,Moortown,E05011405
@@ -48,14 +54,16 @@ New Horizons Community School,1,Chapel Allerton,E05011390
 Oulton Academy ,1,Otley and Yeadon,E05011549
 Penny Field School,1,Moortown,E05011405
 Pool-in-Wharfedale Church of England Voluntary Controlled Primary School,1,Adel and Wharfedale,E05012841
+Primley Wood Primary School,1,Alwoodley,E05012842
 Primrose Lane Primary School,1,Wetherby,E05011414
 Pudsey Lowtown Primary School,1,Pudsey,E05011409
-Pudsey Primrose Hill Primary School,3,Bramley and Stanningley,E05011387
+Pudsey Primrose Hill Primary School,4,Bramley and Stanningley,E05011387
 Pudsey Waterloo Primary,1,Pudsey,E05011409
 Ralph Thoresby School,1,Adel and Wharfedale,E05012841
 Rawdon St Peter's Church of England Voluntary Controlled Primary School,2,Guiseley and Rawdon,E05011395
 Robin Hood Primary School,1,Ardsley and Robin Hood,E05011384
 Rosebank Primary School,2,Little London and Woodhouse,E05011403
+Roundhay School,1,Roundhay,E05011411
 Roundhay St John's Church of England Primary School,2,Roundhay,E05011411
 Seacroft Grange Primary School,1,Killingbeck and Seacroft,E05011400
 Shakespeare Primary School,3,Burmantofts and Richmond Hill,E05011388
@@ -63,6 +71,7 @@ Shire Oak VC Primary School,1,Headingley and Hyde Park,E05011397
 Springwell Leeds Academy,1,Middleton Park,E05011404
 "St Joseph's Catholic Primary School, Wetherby",2,Wetherby,E05011414
 St Margaret's Church of England Voluntary Controlled Primary School,5,Horsforth,E05011547
+St Patrick Catholic Primary School,1,Burmantofts and Richmond Hill,E05011388
 St Philip's Catholic Primary  School,1,Middleton Park,E05011404
 St. Oswald's CofE Primary School,1,Guiseley and Rawdon,E05011395
 Stanningley Primary School,1,Bramley and Stanningley,E05011387

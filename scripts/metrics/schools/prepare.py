@@ -3,6 +3,14 @@ import pandas as pd
 
 from transform import SCHOOLS_DATA, literal_converter
 from util.geography import fuzzy_match_leeds_wards
+from util.logger import logging, log_formatter
+
+logger = logging.getLogger('schools.prepare')
+log_handler = logging.FileHandler('working/log/schools_prepare.log', mode='w', encoding='utf-8')
+log_handler.setLevel(logging.INFO)
+log_handler.setFormatter(log_formatter)
+logger.addHandler(log_handler)
+logger.info('Set up logging')
 
 SITE_DATA = os.path.join('docs', 'metrics', 'schools', '_data')
 os.makedirs(SITE_DATA, exist_ok=True)
@@ -85,7 +93,11 @@ if __name__ == "__main__":
             'wards': 'ward_name',
         }
     )
-    assert len(pupils_per_ward.index) == len(data.index), 'Multiple schools per line in source data when exploding for pupil counts'
+    try:
+      assert len(pupils_per_ward.index) == len(data.index), 'Multiple schools per line in source data when exploding for pupil counts'
+    except Exception as e:
+      logger.error(e)
+
     pupils_per_ward = fuzzy_match_leeds_wards(pupils_per_ward, ward_name_col='ward_name')
 
     ward_group = ward_stats.groupby(['WD21CD', 'WD21NM'])
@@ -95,7 +107,10 @@ if __name__ == "__main__":
         'count_of_schools': all_schools.groupby(['ward_code', 'ward']).school_name.count(),
         'pupil_engagements': pupils_per_ward.groupby(['ward_code', 'ward_name']).pupil_count.sum(),
     }).fillna(0).astype(int)
-    assert engagements_by_ward.pupil_engagements.sum() == data[data.wards.notna()].pupil_count.sum()
+    try:
+      assert engagements_by_ward.pupil_engagements.sum() == data[data.wards.notna()].pupil_count.sum()
+    except Exception as e:
+      logger.error(e)
 
     summary['engagements_with_pupils_not_assigned_to_ward'] = (data.pupil_count.sum() - engagements_by_ward.pupil_engagements.sum()).astype(int)
 

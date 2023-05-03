@@ -2,9 +2,14 @@ import os
 from pyairtable import Table
 import pyairtable.formulas as f
 import pandas as pd
-from util.logger import logging
+from util.logger import logging, log_formatter
 
-logger = logging.getLogger()
+logger = logging.getLogger('schools.extract')
+log_handler = logging.FileHandler('working/log/schools_extract.log', mode='w', encoding='utf-8')
+log_handler.setLevel(logging.INFO)
+log_handler.setFormatter(log_formatter)
+logger.addHandler(log_handler)
+logger.info('Set up logging')
 
 API_KEY = os.environ['AIRTABLE_API_KEY']
 

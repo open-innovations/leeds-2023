@@ -30,4 +30,5 @@ if __name__ == '__main__':
     responses_by_week.to_csv(os.path.join(SITE_DIR, 'responses_by_week.csv'))
 
     summary = responses_by_week.sum()
+    summary['unknown_ward'] = responses[responses.ward_code == 'UNKNOWN'].date_submitted.count()
     summary.to_json(os.path.join(SITE_DIR, 'headline.json'))

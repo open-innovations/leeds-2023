@@ -43,6 +43,16 @@ sources:
   }) | safe }}
 {% endcomp %}
 
+<div>
+  <p>
+    The hexmap presents the ward associated with the grant application.
+    There are consequently no data related to local authorities outside the Leeds City Council area.
+  </p>
+  <p>
+    There are {{ headline.unknown_ward }} applications which are not mapped to a ward.
+  </p>
+</div>
+{#
 {% comp 'layout.figure', {max_width: '40rem'} %}
 <h3>Applications by local authority</h3>
 {{ comp.charts.hexmap({
@@ -54,6 +64,7 @@ sources:
       colourScale: colours.scales.cyan
   }) | safe }}
 {% endcomp %}
+#}
 {% endcomp %}
 
 <h2>My Leeds Schools Grant Applications</h2>

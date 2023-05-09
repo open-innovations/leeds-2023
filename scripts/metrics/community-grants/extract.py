@@ -16,6 +16,8 @@ def clean_callout(data):
     data = data.rename(columns={
         'dateSubmitted': 'date_submitted',
         'schoolPostcode': 'postcode',
+        'grantApplicantWard': 'ward',
+        'grantApplicantInfo': 'type',
     })
     
     # Remove test data
@@ -53,9 +55,12 @@ if __name__ == '__main__':
         data = pull_collection(
             collection_name=collection_name,
             fields=[
+                'id',
                 'dateSubmitted',
                 'postcode',
-                'schoolPostcode'
+                'schoolPostcode',
+                'grantApplicantWard',
+                'grantApplicantInfo',  
             ])
         data = clean_callout(data)
         data.to_csv(os.path.join(

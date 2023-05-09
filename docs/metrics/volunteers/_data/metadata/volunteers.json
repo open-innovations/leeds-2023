@@ -34,6 +34,7 @@
         "E05001374",
         "E05001377",
         "E05001381",
+        "E05001382",
         "E05001384",
         "E05001385",
         "E05001386",
@@ -81,6 +82,7 @@
         "E05009003",
         "E05009319",
         "E05009665",
+        "E05009666",
         "E05009668",
         "E05009938",
         "E05010044",
@@ -227,7 +229,7 @@
     {
       "name": "status",
       "categories": [
-        "2e  (HOLDING) Postponed to next wave",
+        "5b ATTENDED INDUCTION",
         "5c Didn't Attend Induction",
         "Deactivated",
         "FROZEN ACCOUNTS CP3",
@@ -238,8 +240,7 @@
         "applied",
         "confirmed",
         "created",
-        "offered",
-        "rejected"
+        "offered"
       ]
     }
   ],
@@ -250,43 +251,43 @@
       "value_distribution": [
         {
           "value": "15ca6dfb76dff8a70bb2",
-          "count": 0.000481
+          "count": 0.000473
         },
         {
-          "value": "186c870df96dc23c2651",
-          "count": 0.000481
+          "value": "92bdcb87bf11ef7130bd",
+          "count": 0.000473
         },
         {
-          "value": "ea26952999602583e264",
-          "count": 0.000481
+          "value": "687974571fbbcbbb1ccf",
+          "count": 0.000473
         },
         {
-          "value": "c97ca6837d51d8660d6a",
-          "count": 0.000481
+          "value": "1b0d197335b6a853f068",
+          "count": 0.000473
         },
         {
-          "value": "c87c737d35d201ea3c2f",
-          "count": 0.000481
+          "value": "04d54e27482940d31d80",
+          "count": 0.000473
         },
         {
-          "value": "c1e6e365630d41a0c71d",
-          "count": 0.000481
+          "value": "f00d9508cc6e7dcda8bd",
+          "count": 0.000473
         },
         {
-          "value": "bd18ff9cfc5d8e55b5ea",
-          "count": 0.000481
+          "value": "a3cf42785c7a5d3bd027",
+          "count": 0.000473
         },
         {
-          "value": "b40a8c0eddd8d70ad7dd",
-          "count": 0.000481
+          "value": "88e24aa2825699dc6b6e",
+          "count": 0.000473
         },
         {
-          "value": "9a15b009fda8a501eb94",
-          "count": 0.000481
+          "value": "60f42bdd42920ef0c638",
+          "count": 0.000473
         },
         {
-          "value": "91f844ba2451d8e66b8b",
-          "count": 0.000481
+          "value": "59f5424c007ef84f00b8",
+          "count": 0.000473
         }
       ]
     },
@@ -296,7 +297,7 @@
       "value_distribution": [
         {
           "value": "-0.0 to 0.1",
-          "count": 0.343585
+          "count": 0.340909
         },
         {
           "value": "0.1 to 0.2",
@@ -332,7 +333,7 @@
         },
         {
           "value": "0.9 to 1.0",
-          "count": 0.656415
+          "count": 0.659091
         }
       ]
     },
@@ -342,43 +343,43 @@
       "value_distribution": [
         {
           "value": "2022-09-09",
-          "count": 0.024027
+          "count": 0.023674
         },
         {
           "value": "2023-01-08",
-          "count": 0.014897
-        },
-        {
-          "value": "2022-10-19",
-          "count": 0.013455
+          "count": 0.014678
         },
         {
           "value": "2023-02-10",
-          "count": 0.013455
+          "count": 0.013258
+        },
+        {
+          "value": "2022-10-19",
+          "count": 0.013258
         },
         {
           "value": "2022-08-08",
-          "count": 0.013455
+          "count": 0.013258
         },
         {
           "value": "2023-03-09",
-          "count": 0.012494
+          "count": 0.012311
         },
         {
           "value": "2023-01-09",
-          "count": 0.012494
+          "count": 0.012311
         },
         {
           "value": "2022-09-23",
-          "count": 0.010572
+          "count": 0.010417
         },
         {
           "value": "2022-08-17",
-          "count": 0.010091
+          "count": 0.009943
         },
         {
           "value": "2023-03-13",
-          "count": 0.009611
+          "count": 0.00947
         }
       ]
     },
@@ -388,43 +389,43 @@
       "value_distribution": [
         {
           "value": "2023-03-16",
-          "count": 0.124123
+          "count": 0.121316
         },
         {
           "value": "2023-04-25",
-          "count": 0.079243
+          "count": 0.07745
         },
         {
           "value": "2022-09-09",
-          "count": 0.068724
+          "count": 0.067169
         },
         {
           "value": "2023-01-09",
-          "count": 0.043478
+          "count": 0.042495
         },
         {
           "value": "2022-09-16",
-          "count": 0.034362
+          "count": 0.033585
         },
         {
           "value": "2023-02-20",
-          "count": 0.032959
+          "count": 0.032214
         },
         {
           "value": "2023-03-20",
-          "count": 0.029453
+          "count": 0.028787
         },
         {
           "value": "2022-09-27",
-          "count": 0.023142
+          "count": 0.022618
+        },
+        {
+          "value": "2023-05-09",
+          "count": 0.022618
         },
         {
           "value": "2022-09-26",
-          "count": 0.021739
-        },
-        {
-          "value": "2022-12-07",
-          "count": 0.019635
+          "count": 0.021247
         }
       ]
     },
@@ -434,43 +435,43 @@
       "value_distribution": [
         {
           "value": "2022-11-26",
-          "count": 0.324873
+          "count": 0.323559
         },
         {
           "value": "2023-03-20",
-          "count": 0.28934
+          "count": 0.28817
         },
         {
           "value": "2023-04-25",
-          "count": 0.103553
+          "count": 0.103134
         },
         {
           "value": "2023-03-22",
-          "count": 0.047716
+          "count": 0.047523
         },
         {
           "value": "2022-10-15",
-          "count": 0.045685
+          "count": 0.045501
         },
         {
           "value": "2023-01-11",
-          "count": 0.034518
+          "count": 0.034378
         },
         {
           "value": "2023-01-10",
-          "count": 0.033503
+          "count": 0.033367
         },
         {
           "value": "2023-03-24",
-          "count": 0.031472
+          "count": 0.031345
         },
         {
           "value": "2022-12-07",
-          "count": 0.025381
+          "count": 0.025278
         },
         {
           "value": "2023-01-02",
-          "count": 0.019289
+          "count": 0.019211
         }
       ]
     },
@@ -480,35 +481,39 @@
       "value_distribution": [
         {
           "value": "2023-04-25",
-          "count": 0.45303
+          "count": 0.446269
         },
         {
           "value": "2022-12-17",
-          "count": 0.339394
+          "count": 0.334328
         },
         {
           "value": "2023-02-06",
-          "count": 0.143939
+          "count": 0.141791
         },
         {
           "value": "2022-11-05",
-          "count": 0.05303
+          "count": 0.052239
+        },
+        {
+          "value": "2023-05-09",
+          "count": 0.014925
         },
         {
           "value": "2022-12-19",
-          "count": 0.00303
+          "count": 0.002985
         },
         {
           "value": "2023-02-07",
-          "count": 0.00303
+          "count": 0.002985
         },
         {
           "value": "2022-12-27",
-          "count": 0.00303
+          "count": 0.002985
         },
         {
           "value": "2023-02-08",
-          "count": 0.001515
+          "count": 0.001493
         }
       ]
     },

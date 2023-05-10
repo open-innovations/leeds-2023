@@ -214,10 +214,10 @@ date_submitted,grant,type,la_code,ward_code
 2023-03-03,my_leeds_grant_app,organisation,E08000035,E05011403
 2023-03-03,my_leeds_grant_app,organisation,E08000035,E05011404
 2023-03-03,my_leeds_grant_app,community_group,E08000035,E05011404
-2023-03-03,my_leeds_grant_app,,E08000035,E05011406
 2023-03-03,my_leeds_grant_app,individual,E08000035,E05011406
 2023-03-03,my_leeds_grant_app,individual,E08000035,E05011406
 2023-03-03,my_leeds_grant_app,organisation,E08000035,E05011406
+2023-03-03,my_leeds_grant_app,,E08000035,E05011406
 2023-03-03,my_leeds_grant_app,individual,E08000035,E05011407
 2023-03-03,my_leeds_grant_app,individual,E08000035,E05011409
 2023-03-03,my_leeds_grant_app,individual,E08000035,E05011411
@@ -515,3 +515,5 @@ date_submitted,grant,type,la_code,ward_code
 2023-05-04,my_leeds_schools_grants_application,,E08000035,E05011547
 2023-05-04,my_leeds_schools_grants_application,,E08000035,E05011549
 2023-05-09,my_leeds_schools_grants_application,,E08000035,E05011400
+2023-05-10,my_leeds_schools_grants_application,,E08000035,E05012841
+2023-05-10,my_leeds_schools_grants_application,,E08000035,E05013831

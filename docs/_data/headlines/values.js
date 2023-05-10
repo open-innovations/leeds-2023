@@ -1,1 +1,1 @@
-export default {"volunteers": {"shifts": 2236, "hours": 5752}};
+export default {"volunteers": {"shifts": 2274, "hours": 5862}};

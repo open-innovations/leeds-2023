@@ -7,7 +7,7 @@ css: |
     --background: lightgrey;
     --foreground: black;
     --align: center;
-    --min-height: 250px;
+    --min-height: unset;
     color: var(--foreground);
     background: var(--background);
     min-height: var(--min-height);
@@ -36,6 +36,7 @@ css: |
     {%- if fg %}--foreground: {{ fg }};{% endif -%}
     {%- if bg %}--background: {{ bg }};{% endif -%}
     {%- if align %}--align: {{ align }};{% endif -%}
+    {%- if min-height %}--min-height: {{ min-height }};{% endif -%}
   ">
   {{ content | safe }}
 </div>

@@ -68,7 +68,10 @@ sources:
 </style>
 
 <div id="all" class="tabcontent">
-  {% comp 'grid.autogrid', {min_width: '32rem'} %}
+  <p>
+      As at {{ headlines.service.twitter.metrics.date_last | date('HUMAN_DATE') }}
+  </p>
+  {% comp 'grid[headline_grid_style]', {min_width: '32rem'} %}
   {% comp 'grid.block.impact', {bg: all_colour} %}
   <h2>
       Total Audience
@@ -76,9 +79,6 @@ sources:
   {{ comp.viz.bigNumber({
       number: headlines.service.all.metrics.audience_last | localize
     }) | safe }}
-  <p>
-      As at {{ headlines.service.twitter.metrics.date_last | date('HUMAN_DATE') }}
-  </p>
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: all_colour} %}
   <h2>
@@ -127,7 +127,10 @@ sources:
 </div>
 
 <div id="twitter" class="tabcontent">
-  {% comp 'grid.autogrid', {min_width: '32rem'} %}
+  <p>
+      As at {{ headlines.service.twitter.metrics.date_last | date('HUMAN_DATE') }}
+  </p>
+  {% comp 'grid[headline_grid_style]', {min_width: '32rem'} %}
   {% comp 'grid.block.impact', {bg: twitter_colour} %}
   <h2>
       Total Audience
@@ -135,9 +138,6 @@ sources:
   {{ comp.viz.bigNumber({
       number: headlines.service.twitter.metrics.audience_last | localize
     }) | safe }}
-  <p>
-      As at {{ headlines.service.twitter.metrics.date_last | date('HUMAN_DATE') }}
-  </p>
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: twitter_colour} %}
   <h2>
@@ -186,7 +186,11 @@ sources:
 </div>
 
 <div id="instagram" class="tabcontent">
-  {% comp 'grid.autogrid', {min_width: '32rem'} %}
+  <p>
+      As at {{ headlines.service.instagram.metrics.date_last | date('HUMAN_DATE') }}
+  </p>
+
+  {% comp 'grid[headline_grid_style]', {min_width: '32rem'} %}
   {% comp 'grid.block.impact', {
     bg: instagram_colour,
     fg: '#FFFFFF'
@@ -197,9 +201,6 @@ sources:
   {{ comp.viz.bigNumber({
       number: headlines.service.instagram.metrics.audience_last | localize
     }) | safe }}
-  <p>
-      As at {{ headlines.service.instagram.metrics.date_last | date('HUMAN_DATE') }}
-  </p>
   {% endcomp %}
   {% comp 'grid.block.impact', {
     bg: instagram_colour,
@@ -258,7 +259,10 @@ sources:
 </div>
 
 <div id="facebook" class="tabcontent">
-  {% comp 'grid.autogrid', {min_width: '32rem'} %}
+  <p>
+      As at {{ headlines.service.facebook.metrics.date_last | date('HUMAN_DATE') }}
+  </p>
+  {% comp 'grid[headline_grid_style]', {min_width: '32rem'} %}
   {% comp 'grid.block.impact', {bg: facebook_colour} %}
   <h2>
       Total Audience
@@ -266,9 +270,6 @@ sources:
   {{ comp.viz.bigNumber({
       number: headlines.service.facebook.metrics.audience_last | localize
     }) | safe }}
-  <p>
-      As at {{ headlines.service.facebook.metrics.date_last | date('HUMAN_DATE') }}
-  </p>
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: facebook_colour} %}
   <h2>
@@ -318,7 +319,11 @@ sources:
 </div>
 
 <div id="linkedin" class="tabcontent">
-  {% comp 'grid.autogrid', {min_width: '32rem'} %}
+  <p>
+      As at {{ headlines.service.linkedin.metrics.date_last | date('HUMAN_DATE') }}
+  </p>
+
+  {% comp 'grid[headline_grid_style]', {min_width: '32rem'} %}
   {% comp 'grid.block.impact', {bg: linkedin_colour} %}
   <h2>
       Total Audience
@@ -326,9 +331,6 @@ sources:
   {{ comp.viz.bigNumber({
       number: headlines.service.linkedin.metrics.audience_last | localize
     }) | safe }}
-  <p>
-      As at {{ headlines.service.linkedin.metrics.date_last | date('HUMAN_DATE') }}
-  </p>
   {% endcomp %}
   {% comp 'grid.block.impact', {bg: linkedin_colour} %}
   <h2>

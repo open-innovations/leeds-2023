@@ -18,7 +18,7 @@ sources:
 {% set fg = cycler("black", "black") %}
 {% set bg = cycler("var(--l23-cyan)", "var(--l23-yellow)") %}
 
-{% comp 'grid.autogrid', { min_width: '20rem' } %}
+{% comp 'grid[headline_grid_style]', { min_width: '20rem' } %}
   {{ comp.metric.headline({
     title: "Total attendances", headingLevel: 3,
     value: by_date.columns.cumulative_attendance | last | localize,

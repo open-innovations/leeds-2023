@@ -1,7 +1,6 @@
 layout: layouts/page.njk
 
 header_title: Data
-
 metas:
   title: =title
   site: LEEDS 2023 Data
@@ -21,5 +20,6 @@ mergedKeys:
   tags: array
 
 work_in_progress: false
+headline_grid_style: masonry
 
 date: Git Last Modified

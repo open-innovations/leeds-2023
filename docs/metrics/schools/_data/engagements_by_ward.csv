@@ -1,6 +1,6 @@
 ward_code,ward,schools_engaged,total_engagements,count_of_schools,pupil_engagements,percent_of_schools_in_ward_engaged
 E05011384,Ardsley and Robin Hood,1,1,4,57,25.0
-E05011385,Armley,3,4,10,235,30.0
+E05011385,Armley,3,5,10,235,30.0
 E05011387,Bramley and Stanningley,4,7,13,289,30.8
 E05011388,Burmantofts and Richmond Hill,6,9,11,484,54.5
 E05011389,Calverley and Farsley,0,0,5,0,0.0
@@ -29,6 +29,6 @@ E05011549,Otley and Yeadon,2,2,8,90,25.0
 E05012647,Beeston and Holbeck,5,10,13,320,38.5
 E05012648,Farnley and Wortley,2,5,8,242,25.0
 E05012841,Adel and Wharfedale,3,3,6,121,50.0
-E05012842,Alwoodley,2,2,7,0,28.6
+E05012842,Alwoodley,3,3,7,0,42.9
 E05013830,Garforth and Swillington,0,0,7,0,0.0
-E05013831,Temple Newsam,2,2,10,30,20.0
+E05013831,Temple Newsam,2,3,10,30,20.0

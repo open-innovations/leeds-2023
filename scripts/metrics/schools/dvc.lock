@@ -7,12 +7,12 @@ stages:
       md5: f9d56b1dfd266dbc988aa16efb51e45b
       size: 2970
     - path: working/metrics/airtable/schools_events.csv
-      md5: 96158ed755d0eb2ff132fa4aa3e0087d
-      size: 59940
+      md5: 0a833074f0215379d0ba05796bc1d367
+      size: 62760
     outs:
     - path: data/metrics/schools/schools_events.csv
-      md5: 0104440118b4275abe0a4716d96d00a5
-      size: 25575
+      md5: 4cd95b4f5c517c3b48cd42035ffafed8
+      size: 26108
   extract:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
     deps:
@@ -21,14 +21,14 @@ stages:
       size: 2071
     outs:
     - path: working/metrics/airtable/schools_events.csv
-      md5: 96158ed755d0eb2ff132fa4aa3e0087d
-      size: 59940
+      md5: 0a833074f0215379d0ba05796bc1d367
+      size: 62760
   prepare:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
-      md5: 0104440118b4275abe0a4716d96d00a5
-      size: 25575
+      md5: 4cd95b4f5c517c3b48cd42035ffafed8
+      size: 26108
     - path: data/reference/leeds_wards.csv
       md5: 887a42d46d34c9e966211a79f2b8a672
       size: 1035
@@ -40,17 +40,17 @@ stages:
       size: 5014
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
-      md5: a86e69ef5b2c2ff8d4d1efc4f67f5235
+      md5: 72d03dad7ed65760726ad2622381e4c4
       size: 1494
     - path: docs/metrics/schools/_data/engagements_by_week.csv
-      md5: 31e8b50ce8864fe20d33f8b59ef59bfd
-      size: 925
+      md5: 88bff434cc451fa73a5ce70148a1f1af
+      size: 926
     - path: docs/metrics/schools/_data/headlines.json
-      md5: 7d4191dfd722aab979762e10a10f0a1c
+      md5: f03f1f24f42edf531a6d0c045a0d255b
       size: 371
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
-      md5: d332a25f010c8788ff49b8550a511b12
-      size: 5152
+      md5: 69d82595a7aa55f175414a8f8cd05f6d
+      size: 5203
   ref_data:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/get_reference_data.py
     deps:

@@ -71,7 +71,7 @@ sources:
   <p>
       As at {{ headlines.service.twitter.metrics.date_last | date('HUMAN_DATE') }}
   </p>
-  {% comp 'grid[headline_grid_style]', {min_width: '32rem'} %}
+  {% comp 'grid.' + headline_grid_style, {min_width: '32rem'} %}
   {% comp 'grid.block.impact', {bg: all_colour} %}
   <h2>
       Total Audience
@@ -130,7 +130,7 @@ sources:
   <p>
       As at {{ headlines.service.twitter.metrics.date_last | date('HUMAN_DATE') }}
   </p>
-  {% comp 'grid[headline_grid_style]', {min_width: '32rem'} %}
+  {% comp 'grid.' + headline_grid_style, {min_width: '32rem'} %}
   {% comp 'grid.block.impact', {bg: twitter_colour} %}
   <h2>
       Total Audience
@@ -190,7 +190,7 @@ sources:
       As at {{ headlines.service.instagram.metrics.date_last | date('HUMAN_DATE') }}
   </p>
 
-  {% comp 'grid[headline_grid_style]', {min_width: '32rem'} %}
+  {% comp 'grid.' + headline_grid_style, {min_width: '32rem'} %}
   {% comp 'grid.block.impact', {
     bg: instagram_colour,
     fg: '#FFFFFF'
@@ -262,7 +262,7 @@ sources:
   <p>
       As at {{ headlines.service.facebook.metrics.date_last | date('HUMAN_DATE') }}
   </p>
-  {% comp 'grid[headline_grid_style]', {min_width: '32rem'} %}
+  {% comp 'grid.' + headline_grid_style, {min_width: '32rem'} %}
   {% comp 'grid.block.impact', {bg: facebook_colour} %}
   <h2>
       Total Audience
@@ -323,7 +323,7 @@ sources:
       As at {{ headlines.service.linkedin.metrics.date_last | date('HUMAN_DATE') }}
   </p>
 
-  {% comp 'grid[headline_grid_style]', {min_width: '32rem'} %}
+  {% comp 'grid.' + headline_grid_style, {min_width: '32rem'} %}
   {% comp 'grid.block.impact', {bg: linkedin_colour} %}
   <h2>
       Total Audience

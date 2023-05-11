@@ -31,7 +31,7 @@ limitations:
   {{ value }} organisations
 {%- endmacro -%}
 
-{% comp 'grid[headline_grid_style]', {min_width: '32rem'} %}
+{% comp 'grid.' + headline_grid_style, {min_width: '32rem'} %}
 {% comp 'layout.block' %}
 {{ comp.charts.barchart({
   title: [

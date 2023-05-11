@@ -14,7 +14,7 @@ sources:
   - data/metrics/community-grants/
 ---
 
-{% comp 'grid[headline_grid_style]', {min_width: '25rem'} %}
+{% comp 'grid.' + headline_grid_style, {min_width: '25rem'} %}
 {{ comp.metric.headline({
   title: "My Leeds Summer Community Grant Applications", headingLevel: 3,
   value: headline.my_leeds_grant_app | localize,

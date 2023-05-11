@@ -17,7 +17,7 @@ css: |
   }
 ---
 <div class="grid-masonry" style="
-  {%- if min_width %} --auto-grid-min-size: {{ min_width }};{% endif -%}
+  {%- if min_width %}--width: {{ min_width }};{% endif -%}
   ">
   {{- content | safe -}}
 </div>

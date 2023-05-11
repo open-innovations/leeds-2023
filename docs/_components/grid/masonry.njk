@@ -1,7 +1,7 @@
 ---
 # https://css-tricks.com/a-responsive-grid-layout-with-no-media-queries/
 css: |
-  .auto-grid {
+  .grid-masonry {
     --auto-grid-gap: 1rem;
     display: flex;
     gap: var(--auto-grid-gap);
@@ -15,8 +15,8 @@ css: |
     }
   }
 ---
-<div class="auto-grid"
-  {%- if min_width %} style="--auto-grid-min-size: {{ min_width }}"{% endif -%}
-  >
+<div class="grid-masonry" style="
+  {%- if min_width %} --auto-grid-min-size: {{ min_width }};{% endif -%}
+  ">
   {{- content | safe -}}
 </div>

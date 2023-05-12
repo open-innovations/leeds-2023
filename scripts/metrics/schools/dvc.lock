@@ -7,12 +7,12 @@ stages:
       md5: f9d56b1dfd266dbc988aa16efb51e45b
       size: 2970
     - path: working/metrics/airtable/schools_events.csv
-      md5: 0a833074f0215379d0ba05796bc1d367
-      size: 62760
+      md5: f5e5a7793806121e199207ef65b17918
+      size: 61953
     outs:
     - path: data/metrics/schools/schools_events.csv
-      md5: 4cd95b4f5c517c3b48cd42035ffafed8
-      size: 26108
+      md5: 32afa65cc96dadff8458f42b51eae5ed
+      size: 26996
   extract:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
     deps:
@@ -21,14 +21,14 @@ stages:
       size: 2071
     outs:
     - path: working/metrics/airtable/schools_events.csv
-      md5: 0a833074f0215379d0ba05796bc1d367
-      size: 62760
+      md5: f5e5a7793806121e199207ef65b17918
+      size: 61953
   prepare:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
-      md5: 4cd95b4f5c517c3b48cd42035ffafed8
-      size: 26108
+      md5: 32afa65cc96dadff8458f42b51eae5ed
+      size: 26996
     - path: data/reference/leeds_wards.csv
       md5: 887a42d46d34c9e966211a79f2b8a672
       size: 1035
@@ -40,17 +40,17 @@ stages:
       size: 5014
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
-      md5: 72d03dad7ed65760726ad2622381e4c4
+      md5: ad127f253ee56c3594f964294bf53a82
       size: 1494
     - path: docs/metrics/schools/_data/engagements_by_week.csv
-      md5: 88bff434cc451fa73a5ce70148a1f1af
+      md5: 2eb266d1cba866e2994eb3e842078318
       size: 926
     - path: docs/metrics/schools/_data/headlines.json
-      md5: f03f1f24f42edf531a6d0c045a0d255b
+      md5: 1807be4a69264ab00718886f8c795277
       size: 371
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
-      md5: 69d82595a7aa55f175414a8f8cd05f6d
-      size: 5203
+      md5: c36b2bc32fa8cb03153207818090e63f
+      size: 5284
   ref_data:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/get_reference_data.py
     deps:

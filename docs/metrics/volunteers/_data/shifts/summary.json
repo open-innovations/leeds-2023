@@ -1,16 +1,16 @@
 {
   "volunteer_shifts":{
-    "leeds_2023_events":344,
+    "leeds_2023_events":352,
     "partner_events":267,
     "volunteer_event_programme":1675,
-    "total":2286,
-    "total_events":611
+    "total":2294,
+    "total_events":619
   },
   "volunteer_hours":{
-    "leeds_2023_events":1797,
+    "leeds_2023_events":1841,
     "partner_events":932,
     "volunteer_event_programme":3196,
-    "total":5925,
-    "total_events":2729
+    "total":5969,
+    "total_events":2773
   }
 }

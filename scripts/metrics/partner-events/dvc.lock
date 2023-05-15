@@ -1,0 +1,27 @@
+schema: '2.0'
+stages:
+  extract:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/partner-events/extract.py
+    deps:
+    - path: scripts/metrics/partner-events/extract.py
+      md5: 19ee85a75cca533452d4f99bb2cb7bfc
+      size: 946
+    outs:
+    - path: working/metrics/partner-events/
+      md5: 9c7beb1c653ab3a5b4dd8755116eb958.dir
+      size: 77965
+      nfiles: 1
+  transform:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/partner-events/transform.py
+    deps:
+    - path: scripts/metrics/partner-events/transform.py
+      md5: ac7e15ea586d40262a75f962dcc8b72b
+      size: 1224
+    - path: working/metrics/partner-events/
+      md5: 9c7beb1c653ab3a5b4dd8755116eb958.dir
+      size: 77965
+      nfiles: 1
+    outs:
+    - path: data/metrics/events/partner-events/events.csv
+      md5: 8cf1e8ccfa83ed84815dfc33f961f8fd
+      size: 4624

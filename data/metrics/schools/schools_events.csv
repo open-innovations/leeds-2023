@@ -141,21 +141,21 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-05-09,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Moortown'],['LS6 4LD'],['Co-op Beckfield'],,,0.0,0.0,0.0,1
 2023-05-09,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Alwoodley'],['LS17 5ES'],"[""St Paul's Catholic Primary School, a Voluntary Academy""]",['Alwoodley'],,0.0,0.0,0.0,1
 2023-05-09,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Otley and Yeadon'],['LS21 1DF'],['Otley All Saints CofE Primary School'],['Otley and Yeadon'],,0.0,0.0,0.0,1
-2023-05-09,School Day: IQRA Academy Primary,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['IQRA Academy Primary'],,['BD8 8DA'],0.0,0.0,0.0,1
-2023-05-09,School Day: Moor Allerton Hall Primary,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Moor Allerton Hall Primary School'],['Moortown'],,0.0,0.0,0.0,1
-2023-05-09,School Day: Greenmount Primary,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Greenmount Primary School'],['Beeston and Holbeck'],,0.0,0.0,0.0,1
-2023-05-09,School Day: Lane End Primary,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Lane End Primary School'],['Beeston and Holbeck'],,0.0,0.0,0.0,1
-2023-05-10,School Day: Allerton CE Primary School,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Allerton CofE Primary School'],['Alwoodley'],,0.0,0.0,0.0,1
-2023-05-10,School Day: Whinmoor St Paul's C of E,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],"[""Whinmoor St Paul's Church of England Primary School""]",['Armley'],,0.0,0.0,0.0,1
-2023-05-10,School Day: Temple Learning Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Temple Learning Academy'],['Temple Newsam '],,0.0,0.0,0.0,1
+2023-05-09,School Day: IQRA Academy Primary,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['IQRA Academy Primary'],,['BD8 8DA'],45.0,45.0,0.0,1
+2023-05-09,School Day: Moor Allerton Hall Primary,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Moor Allerton Hall Primary School'],['Moortown'],,45.0,45.0,0.0,1
+2023-05-09,School Day: Greenmount Primary,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Greenmount Primary School'],['Beeston and Holbeck'],,60.0,60.0,0.0,1
+2023-05-09,School Day: Lane End Primary,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Lane End Primary School'],['Beeston and Holbeck'],,30.0,30.0,0.0,1
+2023-05-10,School Day: Allerton CE Primary School,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Allerton CofE Primary School'],['Alwoodley'],,90.0,90.0,0.0,1
+2023-05-10,School Day: Whinmoor St Paul's C of E,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],"[""Whinmoor St Paul's Church of England Primary School""]",['Armley'],,34.0,34.0,0.0,1
+2023-05-10,School Day: Temple Learning Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Temple Learning Academy'],['Temple Newsam '],,60.0,60.0,0.0,1
 2023-05-11,School Day: Parkside School,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Parkside School'],,['BD13 5AD'],0.0,0.0,0.0,1
 2023-05-11,School Day: Beckfoot Thornton,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Beckfoot Thornton'],,['BD13 3BH'],0.0,0.0,0.0,1
-2023-05-11,School Day: Leeds City Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Leeds City Academy'],['Headingley and Hyde Park'],['LS6 2LG'],0.0,0.0,0.0,1
-2023-05-11,School Day: Royds Hall,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Royds Hall'],,['HD3 4HA'],0.0,0.0,0.0,1
-2023-05-11,School Day: The Halifax Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['The Halifax Academy'],,,0.0,0.0,0.0,1
+2023-05-11,School Day: Leeds City Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Leeds City Academy'],['Headingley and Hyde Park'],['LS6 2LG'],30.0,30.0,0.0,1
+2023-05-11,School Day: Royds Hall,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Royds Hall'],,['HD3 4HA'],30.0,30.0,0.0,1
+2023-05-11,School Day: The Halifax Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['The Halifax Academy'],,,50.0,50.0,0.0,1
 2023-05-11,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Weetwood'],['LS16 6NF'],['Co-op Beckfield'],,,0.0,0.0,0.0,1
-2023-05-12,School Day: Thornhill Community Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Thornhill Community Academy'],,['WF12 0HE'],0.0,0.0,0.0,1
-2023-05-12,School Day: Todmorden High School,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Todmorden High School'],,['OL14 7DG'],0.0,0.0,0.0,1
-2023-05-12,School Day: Tong Leadership Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Tong Leadership Academy'],,['BD4 6NR'],0.0,0.0,0.0,1
-2023-05-12,School Day: Netherhall Learning Campus,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Netherhall Learning Campus'],,['HD5 9PG'],0.0,0.0,0.0,1
-2023-05-12,School Day: Halifax Grammar School,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['North Halifax Grammar School'],,['HX2 9SU'],0.0,0.0,0.0,1
+2023-05-12,School Day: Thornhill Community Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Thornhill Community Academy'],,['WF12 0HE'],31.0,31.0,0.0,1
+2023-05-12,School Day: Todmorden High School,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Todmorden High School'],,['OL14 7DG'],60.0,60.0,0.0,1
+2023-05-12,School Day: Tong Leadership Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Tong Leadership Academy'],,['BD4 6NR'],30.0,30.0,0.0,1
+2023-05-12,School Day: Netherhall Learning Campus,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Netherhall Learning Campus'],,['HD5 9PG'],45.0,45.0,0.0,1
+2023-05-12,School Day: Halifax Grammar School,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['North Halifax Grammar School'],,['HX2 9SU'],14.0,14.0,0.0,1

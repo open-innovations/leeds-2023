@@ -7,12 +7,12 @@ stages:
       md5: f9d56b1dfd266dbc988aa16efb51e45b
       size: 2970
     - path: working/metrics/airtable/schools_events.csv
-      md5: f5e5a7793806121e199207ef65b17918
-      size: 61953
+      md5: e3e62025c5e5456b194af832e0ed8899
+      size: 62013
     outs:
     - path: data/metrics/schools/schools_events.csv
-      md5: 6a4c3f82c47ca1c7357faaf9b05c385b
-      size: 27817
+      md5: 84258102b646ea46ff25d621f56083a0
+      size: 27847
   extract:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
     deps:
@@ -21,14 +21,14 @@ stages:
       size: 2071
     outs:
     - path: working/metrics/airtable/schools_events.csv
-      md5: f5e5a7793806121e199207ef65b17918
-      size: 61953
+      md5: e3e62025c5e5456b194af832e0ed8899
+      size: 62013
   prepare:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
-      md5: 6a4c3f82c47ca1c7357faaf9b05c385b
-      size: 27817
+      md5: 84258102b646ea46ff25d621f56083a0
+      size: 27847
     - path: data/reference/leeds_wards.csv
       md5: 887a42d46d34c9e966211a79f2b8a672
       size: 1035
@@ -40,13 +40,13 @@ stages:
       size: 5014
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
-      md5: ad127f253ee56c3594f964294bf53a82
-      size: 1494
+      md5: 52ca3f13498779617a5046abb3fba6ce
+      size: 1495
     - path: docs/metrics/schools/_data/engagements_by_week.csv
-      md5: ac49a21858d998810347456898f1f829
-      size: 926
+      md5: 94c424635951c90857b3359b7c3900f7
+      size: 928
     - path: docs/metrics/schools/_data/headlines.json
-      md5: 4ceb8e51c33227d596b20051a978b0fc
+      md5: f7e68bdc08afeed96f1353b0f77abd3b
       size: 373
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
       md5: 83a64f2b5dddf498703121b8d29eea09

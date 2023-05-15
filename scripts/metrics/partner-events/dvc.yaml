@@ -20,13 +20,19 @@ stages:
       - data/metrics/events/partner-events/events.csv:
           persist: false
           cache: false
-  # prepare:
-  #   cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/prepare.py
-  #   wdir: ../../..
-  #   deps:
-  #     - scripts/metrics/callouts/prepare.py
-  #     - data/metrics/callouts/
-  #   outs:
-  #     - docs/metrics/callouts/_data:
-  #         persist: true
-  #         cache: false
+  prepare:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/partner-events/prepare.py
+    wdir: ../../..
+    deps:
+      - scripts/metrics/partner-events/prepare.py
+      - data/metrics/events/partner-events/events.csv
+    outs:
+      - docs/metrics/events/partner/_data/headline.json:
+          persist: true
+          cache: false
+      - docs/metrics/events/partner/_data/by_ward.csv:
+          persist: true
+          cache: false
+      - docs/metrics/events/partner/_data/by_month.csv:
+          persist: true
+          cache: false

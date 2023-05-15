@@ -25,3 +25,22 @@ stages:
     - path: data/metrics/events/promote-events/events.csv
       md5: a7a1c065cced019a3cf4afc4149b8db8
       size: 6318
+  prepare:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/promote-events/prepare.py
+    deps:
+    - path: data/metrics/events/promote-events/events.csv
+      md5: a7a1c065cced019a3cf4afc4149b8db8
+      size: 6318
+    - path: scripts/metrics/promote-events/prepare.py
+      md5: 6ced81010b60056a1be4029353624c1f
+      size: 641
+    outs:
+    - path: docs/metrics/events/promote/_data/by_month.csv
+      md5: a391dc0a252af5aef9585ef3870d3265
+      size: 152
+    - path: docs/metrics/events/promote/_data/by_ward.csv
+      md5: 51d612a5648e6fa9ab7dec1a7700316d
+      size: 209
+    - path: docs/metrics/events/promote/_data/headline.json
+      md5: 8ab0a0b78ec6233847a06f848305faab
+      size: 3055

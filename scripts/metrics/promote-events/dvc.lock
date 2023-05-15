@@ -1,0 +1,27 @@
+schema: '2.0'
+stages:
+  extract:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/promote-events/extract.py
+    deps:
+    - path: scripts/metrics/promote-events/extract.py
+      md5: f0e249f7904ff90158520d02c3e1b50e
+      size: 939
+    outs:
+    - path: working/metrics/promote-events/
+      md5: 1797e9d5d02ac4a89b06e048015a4b27.dir
+      size: 518051
+      nfiles: 1
+  transform:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/promote-events/transform.py
+    deps:
+    - path: scripts/metrics/promote-events/transform.py
+      md5: 51f2ff0534c8f0d34edee94a54798779
+      size: 1031
+    - path: working/metrics/promote-events/
+      md5: 1797e9d5d02ac4a89b06e048015a4b27.dir
+      size: 518051
+      nfiles: 1
+    outs:
+    - path: data/metrics/events/promote-events/events.csv
+      md5: a7a1c065cced019a3cf4afc4149b8db8
+      size: 6318

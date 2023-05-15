@@ -1,0 +1,32 @@
+# Callouts pipelines
+stages:
+  extract:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/promote-events/extract.py
+    wdir: ../../..
+    always_changed: true
+    deps:
+      - scripts/metrics/promote-events/extract.py
+    outs:
+      - working/metrics/promote-events/:
+          persist: false
+          cache: false
+  transform:
+    cmd: PYTHONPATH=scripts python3 scripts/metrics/promote-events/transform.py
+    wdir: ../../..
+    deps:
+      - scripts/metrics/promote-events/transform.py
+      - working/metrics/promote-events/
+    outs:
+      - data/metrics/events/promote-events/events.csv:
+          persist: false
+          cache: false
+  # prepare:
+  #   cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/prepare.py
+  #   wdir: ../../..
+  #   deps:
+  #     - scripts/metrics/callouts/prepare.py
+  #     - data/metrics/callouts/
+  #   outs:
+  #     - docs/metrics/callouts/_data:
+  #         persist: true
+  #         cache: false

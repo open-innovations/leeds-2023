@@ -8,7 +8,7 @@ stages:
       size: 939
     outs:
     - path: working/metrics/promote-events/
-      md5: c0d65018b58226a8dc303fa6e9c41c34.dir
+      md5: 6d75d9a75bdcc2d740f9b56bea64ad34.dir
       size: 518051
       nfiles: 1
   transform:
@@ -18,7 +18,7 @@ stages:
       md5: 51f2ff0534c8f0d34edee94a54798779
       size: 1031
     - path: working/metrics/promote-events/
-      md5: c0d65018b58226a8dc303fa6e9c41c34.dir
+      md5: 6d75d9a75bdcc2d740f9b56bea64ad34.dir
       size: 518051
       nfiles: 1
     outs:

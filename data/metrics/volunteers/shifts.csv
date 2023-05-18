@@ -79,7 +79,7 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-01-07,61344,LS6 3BR,405.0,54,100,11287,THE AWAKENING - OPENING CEREMONY,LEEDS 2023 Events
 2023-01-07,61345,LS6 3BR,434.0,62,100,11287,THE AWAKENING - OPENING CEREMONY,LEEDS 2023 Events
 2023-01-07,61371,LS6 3BR,153.529,18,17,11293,THE AWAKENING - OPENING CEREMONY SUPPORT TEAM LEADERS,LEEDS 2023 Events
-2023-01-11,60734,LS10 1NE,1.6,4,5,11190,Meet the Team Winter 2023,
+2023-01-11,60734,LS10 1NE,2.0,5,5,11190,Meet the Team Winter 2023,
 2023-01-11,60736,LS10 1NE,0.8,2,5,11190,Meet the Team Winter 2023,
 2023-01-11,60737,LS10 1NE,1.6,4,5,11190,Meet the Team Winter 2023,
 2023-01-11,60738,LS10 1NE,1.2,3,5,11190,Meet the Team Winter 2023,
@@ -106,7 +106,7 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-02-01,61944,LS10 1NE,16.0,4,5,11348,Induction Support February 2023,
 2023-02-02,60766,LS10 1NE,54.0,18,50,11194,Induction/Training Wave 2B,
 2023-02-02,61945,LS10 1NE,16.0,4,5,11348,Induction Support February 2023,
-2023-02-04,60767,LS10 1NE,129.0,43,50,11194,Induction/Training Wave 2B,
+2023-02-04,60767,LS10 1NE,132.0,44,50,11194,Induction/Training Wave 2B,
 2023-02-04,61946,LS10 1NE,16.0,4,5,11348,Induction Support February 2023,
 2023-02-04,61947,LS10 1NE,11.2,4,5,11348,Induction Support February 2023,
 2023-02-04,64353,LS10 1NE,18.5,37,50,11766,Volunteer Uniform Collection,
@@ -365,3 +365,4 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-05-16,86708,LS10 1NE,9.0,3,5,13784,Children's Day: Reimagined Banner Prep!,LEEDS 2023 Events
 2023-05-17,86709,LS10 1NE,6.0,2,5,13784,Children's Day: Reimagined Banner Prep!,LEEDS 2023 Events
 2023-05-17,86710,LS10 1NE,15.0,5,5,13784,Children's Day: Reimagined Banner Prep!,LEEDS 2023 Events
+2023-05-18,84783,LS10 1NE,28.0,14,25,13550,EXPLORE - Volunteer Celebration Decoration making!,

@@ -8,8 +8,8 @@ stages:
       size: 1791
     outs:
     - path: working/metrics/community-grants/
-      md5: cef6eab0dc94425b06d26db258f95d7f.dir
-      size: 42122
+      md5: 54001497f373bcdcef069788106a0b19.dir
+      size: 42592
       nfiles: 3
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/transform.py
@@ -21,34 +21,34 @@ stages:
       md5: 1e12e6375d4f5ca92d1e926870b5da3c
       size: 2081
     - path: working/metrics/community-grants/
-      md5: cef6eab0dc94425b06d26db258f95d7f.dir
-      size: 42122
+      md5: 54001497f373bcdcef069788106a0b19.dir
+      size: 42592
       nfiles: 3
     outs:
     - path: data/metrics/community-grants/
-      md5: 07a6fa8576552b77cde4dc885e8fd9eb.dir
-      size: 33161
+      md5: f3c621b49caeeb5a2640b9c4aebc799b.dir
+      size: 33693
       nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/prepare.py
     deps:
     - path: data/metrics/community-grants/
-      md5: 07a6fa8576552b77cde4dc885e8fd9eb.dir
-      size: 33161
+      md5: f3c621b49caeeb5a2640b9c4aebc799b.dir
+      size: 33693
       nfiles: 1
     - path: scripts/metrics/community-grants/prepare.py
       md5: df9f9a84491539048f41082652ef2c3f
       size: 1700
     outs:
     - path: docs/metrics/community-grants/_data/headline.json
-      md5: d79c5bd2d75aefdc1c30efbb66ae5159
+      md5: a4d88992eb0bc933eed457ab84bd5985
       size: 106
     - path: docs/metrics/community-grants/_data/responses_by_la.csv
-      md5: 8c95361156afc628be164395c23b06af
+      md5: 43f955235de17484d8c95e999f6e3dc8
       size: 114
     - path: docs/metrics/community-grants/_data/responses_by_ward.csv
-      md5: add302115fc97cdfc0e4e78fea57d53a
+      md5: bb42b53dc5edc2bc273d6619fb4dd85e
       size: 682
     - path: docs/metrics/community-grants/_data/responses_by_week.csv
-      md5: 9b3b84bcc801ab5e27aa9f065b70a451
+      md5: 11e7ceb3b0cf6b1af73b534290dee241
       size: 382

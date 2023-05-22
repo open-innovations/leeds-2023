@@ -78,6 +78,15 @@ INFO:load_new_file:Attemping to parse dates as %d/%m/%Y
 WARNING:load_new_file:File working/manual/media/Leeds 2023 weekly media coverage 23.12.22.csv is not in in %d/%m/%Y format
 INFO:load_new_file:Attemping to parse dates as %m/%d/%Y
 INFO:load_new_file:Looks like that worked!
+INFO:load_new_file:Loading working/manual/media/Leeds 2023 weekly media coverage w.e 19.05.23.csv
+INFO:load_new_file:Attemping to parse dates as %d/%m/%Y
+WARNING:load_new_file:File working/manual/media/Leeds 2023 weekly media coverage w.e 19.05.23.csv is not in in %d/%m/%Y format
+INFO:load_new_file:Attemping to parse dates as %m/%d/%Y
+WARNING:load_new_file:File working/manual/media/Leeds 2023 weekly media coverage w.e 19.05.23.csv is not in in %m/%d/%Y format
+INFO:load_new_file:Attemping to parse dates as %d/%m/%y
+WARNING:load_new_file:File working/manual/media/Leeds 2023 weekly media coverage w.e 19.05.23.csv is not in in %d/%m/%y format
+INFO:load_new_file:Attemping to parse dates as %d.%m.%y
+INFO:load_new_file:Looks like that worked!
 INFO:load_new_file:Loading working/manual/media/LEEDS 2023 weekly media coverage w.e. 05.05.23.csv
 INFO:load_new_file:Attemping to parse dates as %d/%m/%Y
 WARNING:load_new_file:File working/manual/media/LEEDS 2023 weekly media coverage w.e. 05.05.23.csv is not in in %d/%m/%Y format
@@ -126,6 +135,7 @@ INFO:load_new_file:Looks like that worked!
 INFO:load_new_file:Loading working/manual/media/7-9 January 2023 - The Awakening.csv
 INFO:load_new_file:Attemping to parse dates as %d/%m/%Y
 INFO:load_new_file:Looks like that worked!
+INFO:combine_new_data:Processing data loaded from Leeds 2023 weekly media coverage w.e 19.05.23.csv (26 records)
 INFO:combine_new_data:Processing data loaded from LEEDS 2023 Weekly media coverage w.e 12.05.23.csv (30 records)
 INFO:combine_new_data:Processing data loaded from Leeds 2023 weekly media coverage w.e. 6.04.23.csv (34 records)
 INFO:combine_new_data:Processing data loaded from Leeds 2023 weekly media coverage 2023-03-24.csv (35 records)

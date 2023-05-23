@@ -4,12 +4,12 @@ stages:
     cmd: python3 scripts/headlines/prepare.py
     deps:
     - path: data/metrics/volunteers/shifts.csv
-      md5: fd7d6f348fcfaf497e526f397221a720
-      size: 31003
+      md5: 517eb6d349b2b77c044c63094b0a8663
+      size: 31187
     - path: scripts/headlines/prepare.py
       md5: 465e00871ccb0e1e9ec390cac8cdd003
       size: 596
     outs:
     - path: docs/_data/headlines/values.js
-      md5: 1ffc8823bb619b116f85cce379f4e531
+      md5: ff2b0571d9f1069d41c3c8d7664a2998
       size: 63

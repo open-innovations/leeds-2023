@@ -8,7 +8,7 @@ stages:
       size: 946
     outs:
     - path: working/metrics/partner-events/
-      md5: 63fce805cf6247cb4764a2cd3a079e13.dir
+      md5: b0d2ef87005eb2478ad574568ed877f1.dir
       size: 38197
       nfiles: 1
   transform:
@@ -18,7 +18,7 @@ stages:
       md5: ac7e15ea586d40262a75f962dcc8b72b
       size: 1224
     - path: working/metrics/partner-events/
-      md5: 63fce805cf6247cb4764a2cd3a079e13.dir
+      md5: b0d2ef87005eb2478ad574568ed877f1.dir
       size: 38197
       nfiles: 1
     outs:

@@ -8,8 +8,8 @@ stages:
       size: 939
     outs:
     - path: working/metrics/promote-events/
-      md5: 28fbeb1b71fa4cadc21ae5c41a772772.dir
-      size: 575564
+      md5: fc1f94114f4acb932a88011f38c9a665.dir
+      size: 575556
       nfiles: 1
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/promote-events/transform.py
@@ -18,8 +18,8 @@ stages:
       md5: 51f2ff0534c8f0d34edee94a54798779
       size: 1031
     - path: working/metrics/promote-events/
-      md5: 28fbeb1b71fa4cadc21ae5c41a772772.dir
-      size: 575564
+      md5: fc1f94114f4acb932a88011f38c9a665.dir
+      size: 575556
       nfiles: 1
     outs:
     - path: data/metrics/events/promote-events/events.csv

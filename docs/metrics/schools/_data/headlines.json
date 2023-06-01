@@ -1,12 +1,12 @@
 {
-  "date_built":"2023-05-19",
+  "date_built":"2023-06-01",
   "earliest_date":"2022-09-22",
-  "engagements_with_pupils_not_assigned_to_ward":1341,
+  "engagements_with_pupils_not_assigned_to_ward":1407,
   "engagements_with_schools_not_assigned_to_ward":16,
-  "percentage_of_leeds_schools_engaged":31.8,
+  "percentage_of_leeds_schools_engaged":31.5,
   "schools_in_leeds":324,
   "schools_not_assigned_to_ward":13,
-  "total_pupil_engagements":7994,
+  "total_pupil_engagements":8060,
   "total_school_engagements":153,
-  "unique_schools":103
+  "unique_schools":102
 }

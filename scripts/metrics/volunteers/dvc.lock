@@ -28,23 +28,23 @@ stages:
       md5: d140091f15634ec4d81b248de9bd005d
       size: 33906
     - path: data/metrics/volunteers/volunteers.csv
-      md5: cd63c5d1172a2f19a6e73ba97b551109
-      size: 194217
+      md5: 61df0ee2cbd20612c2f1e5f5d97f04b6
+      size: 195402
     - path: scripts/metrics/volunteers/prepare.py
       md5: 34b31bc510a6d2d1519213c3ee8c7bd8
       size: 2139
     outs:
     - path: docs/metrics/volunteers/_data/by_local_authority.csv
-      md5: b4d2a749cf4b4eb760523bd78d95abfe
+      md5: f8b8afe28f42ad32dcd9cbdd73714d92
       size: 1093
     - path: docs/metrics/volunteers/_data/by_ward.csv
-      md5: 235a25e2efd1a321c39e7b820584c5b8
+      md5: 88df89f5cf4183d3291341c514d22f96
       size: 3707
     - path: docs/metrics/volunteers/_data/by_week.csv
-      md5: 0b55f0e1184535dd103e023a3306a66c
+      md5: e24f182daac64ac924109e5b504d5e66
       size: 1327
     - path: docs/metrics/volunteers/_data/la_stats.json
-      md5: 497392c074385a6926cd0c8628d5861b
+      md5: 13ff7850b0fb45badeb39d692514f77e
       size: 371
     - path: docs/metrics/volunteers/_data/shifts/by_week.csv
       md5: 0e408a1f223e3e20e222a2bf5ebb6fe7
@@ -53,7 +53,7 @@ stages:
       md5: 7c30a88c93298db820d13dee1d8334ca
       size: 328
     - path: docs/metrics/volunteers/_data/west_yorkshire.csv
-      md5: 2f3750f5e32d528bdd9369c91cb79fda
+      md5: 59f7142fd8a7cf17b0476208dbad7fb9
       size: 179
   transform-shifts:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform_shifts.py
@@ -87,12 +87,12 @@ stages:
       md5: f3a575c359d7c4715536f5eab0d6ace7
       size: 2013
     - path: working/metrics/rosterfy/current-checkpoint.csv
-      md5: 64fa74da8b5921674af0002562efb13f
-      size: 142460
+      md5: e62b408a9a961a05b77294bf1a97c751
+      size: 143947
     outs:
     - path: data/metrics/volunteers/volunteers.csv
-      md5: cd63c5d1172a2f19a6e73ba97b551109
-      size: 194217
+      md5: 61df0ee2cbd20612c2f1e5f5d97f04b6
+      size: 195402
     - path: docs/metrics/volunteers/_data/metadata/volunteers.json
-      md5: 523d5128a6abafaa7ce8cac7ec541d56
-      size: 11365
+      md5: fc7dbd3040ecdeb1fafc702709feb980
+      size: 11366

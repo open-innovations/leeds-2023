@@ -7,12 +7,12 @@ stages:
       md5: f9d56b1dfd266dbc988aa16efb51e45b
       size: 2970
     - path: working/metrics/airtable/schools_events.csv
-      md5: 701524c94a401532af3e29d76106ee37
-      size: 73377
+      md5: 0c18ebec4744469076745bf76f481cba
+      size: 73385
     outs:
     - path: data/metrics/schools/schools_events.csv
-      md5: 8ce5218103009be84040a928c54fea7a
-      size: 30269
+      md5: 0ae60afb329a734be427654a00a1f7f9
+      size: 30273
   extract:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
     deps:
@@ -21,36 +21,36 @@ stages:
       size: 2071
     outs:
     - path: working/metrics/airtable/schools_events.csv
-      md5: 701524c94a401532af3e29d76106ee37
-      size: 73377
+      md5: 0c18ebec4744469076745bf76f481cba
+      size: 73385
   prepare:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
-      md5: 8ce5218103009be84040a928c54fea7a
-      size: 30269
+      md5: 0ae60afb329a734be427654a00a1f7f9
+      size: 30273
     - path: data/reference/leeds_wards.csv
       md5: 887a42d46d34c9e966211a79f2b8a672
       size: 1035
     - path: data/reference/schools.csv
-      md5: a4f46f4a070d1d8e70a737e93728b89e
-      size: 19058
+      md5: 3e01c73d4cfa9fdf7541f674810d4204
+      size: 19062
     - path: scripts/metrics/schools/prepare.py
       md5: 359f1c098e76fecfe474202e30e19175
       size: 5014
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
-      md5: 226af1cc7fb64d0ba970a0a606b5a42f
-      size: 1495
+      md5: 181bcdd9b6e4823e2e0d0bd618fa8e46
+      size: 1494
     - path: docs/metrics/schools/_data/engagements_by_week.csv
       md5: 80b6d4848028ed37e1309ec5ee3ce761
       size: 953
     - path: docs/metrics/schools/_data/headlines.json
-      md5: 46c969668d357b0017c7a6117afef96b
+      md5: e41e907a7b91f611acf37803b4f7eb8a
       size: 373
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
-      md5: 3bc1b39fc18dae56267698c27e1f7fe1
-      size: 5553
+      md5: bf1e73db93716f606d8e4b1bb87dc46a
+      size: 5557
   ref_data:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/get_reference_data.py
     deps:
@@ -59,5 +59,5 @@ stages:
       size: 686
     outs:
     - path: data/reference/schools.csv
-      md5: a4f46f4a070d1d8e70a737e93728b89e
-      size: 19058
+      md5: 3e01c73d4cfa9fdf7541f674810d4204
+      size: 19062

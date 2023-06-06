@@ -15,6 +15,15 @@ def clean_callout(data):
     })
     data.date_submitted = pd.DatetimeIndex(
         data.date_submitted).tz_localize(None).floor('D')
+    
+    # TODO get this data removed at source
+    try:
+        data = data[
+            data.postcode != 'xxxxxxx'
+        ]
+    except:
+        print('No postcode column in data')
+
     return data
 
 
@@ -38,6 +47,8 @@ if __name__ == '__main__':
         u'meetLeedsLab',
         u'meetLeedsLabAudio',
         u'gillCrawshawCommission',
+        u'youthFundWrittenForm',
+        u'youthFundAudioVisual',
     ]
 
     for callout in callouts:

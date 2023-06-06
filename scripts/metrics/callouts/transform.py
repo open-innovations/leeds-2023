@@ -14,6 +14,8 @@ def key_map(value):
         'meet_leeds_lab_audio': 'meet_leeds_lab',
         'lift_the_lid_audio': 'lift_the_lid',
         'lift_the_lid_written': 'lift_the_lid',
+        'youth_fund_audio_visual': 'youth_fund',
+        'youth_fund_written_form': 'youth_fund',
     }.get(value, value);
 
 

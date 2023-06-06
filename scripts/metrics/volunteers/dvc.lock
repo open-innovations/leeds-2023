@@ -28,23 +28,23 @@ stages:
       md5: 423d4536ea31ccbd4c7cb808f18dc96a
       size: 34004
     - path: data/metrics/volunteers/volunteers.csv
-      md5: 566044f1efab097d10f70eeed250394a
-      size: 196520
+      md5: 64e10be2326d29f2618ae1501e5015e1
+      size: 196836
     - path: scripts/metrics/volunteers/prepare.py
       md5: 34b31bc510a6d2d1519213c3ee8c7bd8
       size: 2139
     outs:
     - path: docs/metrics/volunteers/_data/by_local_authority.csv
-      md5: 04763388e56dafa638e808fda81899c6
+      md5: 142b60685b07e7e4d06297ce2a7031e7
       size: 1093
     - path: docs/metrics/volunteers/_data/by_ward.csv
-      md5: 409ef15ff6eaeb89dc8f2de03338562c
+      md5: f66a5ad9d188798088fc423592488a61
       size: 3707
     - path: docs/metrics/volunteers/_data/by_week.csv
-      md5: 32d01c2a9a7ff3ee185940e71818da15
+      md5: 4d008bc6465fc90fa6676ed27238417e
       size: 1327
     - path: docs/metrics/volunteers/_data/la_stats.json
-      md5: c85964dc6d9b3a137766e04be029a637
+      md5: 69f90253be5205722625719a2e5fdb3c
       size: 371
     - path: docs/metrics/volunteers/_data/shifts/by_week.csv
       md5: 0638e4076ab26cd74503989170c9013d
@@ -53,7 +53,7 @@ stages:
       md5: 860caeb23b74d63a5acab3e8bf825be5
       size: 328
     - path: docs/metrics/volunteers/_data/west_yorkshire.csv
-      md5: 273cb4baa80ad42427ee266d17b2601f
+      md5: 19b9b0885fc39b45e4aba8b008405085
       size: 179
   transform-shifts:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform_shifts.py
@@ -62,8 +62,8 @@ stages:
       md5: 38d8943ecbdaf152df1edaf56eb62466
       size: 1581
     - path: working/metrics/rosterfy/volunteering-hours.csv
-      md5: aed5e02a1ba93faa5584df44bcf1451a
-      size: 96977
+      md5: be68f3f1b15d0b7af7cff05ffc101943
+      size: 97210
     outs:
     - path: data/metrics/volunteers/shifts.csv
       md5: 423d4536ea31ccbd4c7cb808f18dc96a
@@ -87,12 +87,12 @@ stages:
       md5: f3a575c359d7c4715536f5eab0d6ace7
       size: 2013
     - path: working/metrics/rosterfy/current-checkpoint.csv
-      md5: 89a251cd3fc7e87402172d6af9ceb127
-      size: 144490
+      md5: 36dbdb079169774a4c65c0cc1982dd6c
+      size: 144843
     outs:
     - path: data/metrics/volunteers/volunteers.csv
-      md5: 566044f1efab097d10f70eeed250394a
-      size: 196520
+      md5: 64e10be2326d29f2618ae1501e5015e1
+      size: 196836
     - path: docs/metrics/volunteers/_data/metadata/volunteers.json
-      md5: c649149cf61fb1ad4fc1c313054dac45
-      size: 11362
+      md5: c35e455c8049c4c86216673efeccc018
+      size: 11364

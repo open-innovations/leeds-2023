@@ -7,12 +7,12 @@ stages:
       md5: f9d56b1dfd266dbc988aa16efb51e45b
       size: 2970
     - path: working/metrics/airtable/schools_events.csv
-      md5: 0c18ebec4744469076745bf76f481cba
-      size: 73385
+      md5: 64ca592cf1359a8581ef265246e614e1
+      size: 73173
     outs:
     - path: data/metrics/schools/schools_events.csv
-      md5: 0ae60afb329a734be427654a00a1f7f9
-      size: 30273
+      md5: 92527fa1e9c393528c742a5897bf3bfc
+      size: 30608
   extract:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
     deps:
@@ -21,14 +21,14 @@ stages:
       size: 2071
     outs:
     - path: working/metrics/airtable/schools_events.csv
-      md5: 0c18ebec4744469076745bf76f481cba
-      size: 73385
+      md5: 64ca592cf1359a8581ef265246e614e1
+      size: 73173
   prepare:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
-      md5: 0ae60afb329a734be427654a00a1f7f9
-      size: 30273
+      md5: 92527fa1e9c393528c742a5897bf3bfc
+      size: 30608
     - path: data/reference/leeds_wards.csv
       md5: 887a42d46d34c9e966211a79f2b8a672
       size: 1035
@@ -40,17 +40,17 @@ stages:
       size: 5014
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
-      md5: 181bcdd9b6e4823e2e0d0bd618fa8e46
-      size: 1494
+      md5: 1b45aa8ccb1d30fda328d17863a07167
+      size: 1495
     - path: docs/metrics/schools/_data/engagements_by_week.csv
-      md5: 80b6d4848028ed37e1309ec5ee3ce761
-      size: 953
+      md5: 5a72f19a62d960f0d733f4daa9e66e58
+      size: 1025
     - path: docs/metrics/schools/_data/headlines.json
-      md5: e41e907a7b91f611acf37803b4f7eb8a
+      md5: 745d32e929322a24ccf6f1af7bfcaa34
       size: 373
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
-      md5: bf1e73db93716f606d8e4b1bb87dc46a
-      size: 5557
+      md5: 53f7ec0a200303492dd7bcae925cec18
+      size: 5659
   ref_data:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/get_reference_data.py
     deps:

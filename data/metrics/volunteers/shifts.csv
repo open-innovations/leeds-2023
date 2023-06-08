@@ -336,6 +336,7 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-05-01,79288,LS6 2UZ,12.0,3,4,13222,The WOW Barn: Volunteer Support,LEEDS 2023 Events
 2023-05-01,79289,LS6 2UZ,16.0,4,4,13222,The WOW Barn: Volunteer Support,LEEDS 2023 Events
 2023-05-02,82886,LS2 7UP,12.0,3,7,13367,1001 Stories Take-Over Leeds Playhouse,Partner Events
+2023-05-02,82887,LS2 7UP,4.0,1,7,13367,1001 Stories Take-Over Leeds Playhouse,Partner Events
 2023-05-03,82888,LS2 7UP,16.0,4,7,13367,1001 Stories Take-Over Leeds Playhouse,Partner Events
 2023-05-05,82892,LS2 7UP,16.0,4,9,13367,1001 Stories Take-Over Leeds Playhouse,Partner Events
 2023-05-05,82893,LS2 7UP,20.0,5,7,13367,1001 Stories Take-Over Leeds Playhouse,Partner Events
@@ -410,4 +411,14 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-06-02,88409,LS10 1NE,15.0,5,5,13784,Children's Day: Reimagined Banner Prep!,LEEDS 2023 Events
 2023-06-05,88411,LS10 1NE,9.0,3,5,13784,Children's Day: Reimagined Banner Prep!,LEEDS 2023 Events
 2023-06-07,88422,LS10 1NE,15.0,5,5,13784,Children's Day: Reimagined Banner Prep!,LEEDS 2023 Events
+2023-06-08,85398,LS10 1NE,3.2,8,5,13616,Meet the Team - Summer,
+2023-06-08,85399,LS10 1NE,2.4,6,5,13616,Meet the Team - Summer,
+2023-06-08,85400,LS10 1NE,2.0,5,5,13616,Meet the Team - Summer,
+2023-06-08,85401,LS10 1NE,1.6,4,5,13616,Meet the Team - Summer,
+2023-06-08,85402,LS10 1NE,1.6,4,5,13616,Meet the Team - Summer,
+2023-06-08,85403,LS10 1NE,1.6,4,5,13616,Meet the Team - Summer,
+2023-06-08,85447,LS10 1NE,12.5,5,6,13618,Meet the Team - Summer Support,
+2023-06-08,85717,LS18 4AH,18.0,9,10,13645,EXPLORE: Pottery Painting,
+2023-06-08,86004,,600.0,3,200,13616,Meet the Team - Summer,
+2023-06-08,88428,LS10 1NE,9.0,3,5,13784,Children's Day: Reimagined Banner Prep!,LEEDS 2023 Events
 2023-06-29,86749,LS10 1NE,3.0,1,50,13785,Induction/Training Summer,

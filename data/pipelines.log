@@ -1,0 +1,20 @@
+2023-05-03 13:04:33,933|INFO|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Processing myLeedsGrantApp
+2023-05-03 13:04:34,330|INFO|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Processing myLeedsGrantAppAudiovisual
+2023-05-03 13:04:34,399|INFO|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Processing myLeedsSchoolsGrantsApplication
+2023-05-03 13:04:34,470|WARNING|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Removing 3 test entries
+2023-05-03 13:05:20,582|ERROR|/media/data/code/oi/leeds-2023/scripts/metrics/schools/prepare.py|Multiple schools per line in source data when exploding for pupil counts
+2023-05-03 13:05:46,340|INFO|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Processing myLeedsGrantApp
+2023-05-03 13:05:46,706|INFO|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Processing myLeedsGrantAppAudiovisual
+2023-05-03 13:05:46,795|INFO|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Processing myLeedsSchoolsGrantsApplication
+2023-05-03 13:05:46,875|WARNING|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Removing 3 test entries
+2023-05-03 13:07:39,809|ERROR|/media/data/code/oi/leeds-2023/scripts/metrics/schools/prepare.py|Multiple schools per line in source data when exploding for pupil counts
+2023-05-03 13:09:34,057|INFO|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Processing myLeedsGrantApp
+2023-05-03 13:09:34,440|INFO|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Processing myLeedsGrantAppAudiovisual
+2023-05-03 13:09:34,524|INFO|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Processing myLeedsSchoolsGrantsApplication
+2023-05-03 13:09:34,589|WARNING|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Removing 3 test entries
+2023-05-03 13:10:00,093|ERROR|/media/data/code/oi/leeds-2023/scripts/metrics/schools/prepare.py|Multiple schools per line in source data when exploding for pupil counts
+2023-05-03 13:12:15,422|INFO|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Processing myLeedsGrantApp
+2023-05-03 13:12:15,844|INFO|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Processing myLeedsGrantAppAudiovisual
+2023-05-03 13:12:15,913|INFO|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Processing myLeedsSchoolsGrantsApplication
+2023-05-03 13:12:15,976|WARNING|/media/data/code/oi/leeds-2023/scripts/metrics/community-grants/extract.py|Removing 3 test entries
+2023-05-03 13:13:25,116|ERROR|/media/data/code/oi/leeds-2023/scripts/metrics/schools/prepare.py|Multiple schools per line in source data when exploding for pupil counts

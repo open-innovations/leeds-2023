@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  extract:
+    cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/extract.py
+    deps:
+    - path: lib/sources/airtable.py
+      md5: 383eecd533911b24acc042edd846121a
+      size: 328
+    - path: scripts/metrics/events/scheduled/extract.py
+      md5: 47297c378535e5026c13cdb0faf8902c
+      size: 806
+    outs:
+    - path: working/metrics/events/all.csv
+      md5: d841cc9aa3318dcb4261dbcb9c08823f
+      size: 265028

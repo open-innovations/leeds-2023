@@ -1,0 +1,10 @@
+stages:
+  extract:
+    cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/extract.py
+    wdir: ../../../..
+    deps:
+      - scripts/metrics/events/scheduled/extract.py
+      - lib/sources/airtable.py
+    outs:
+      - working/metrics/events/all.csv:
+          cache: false

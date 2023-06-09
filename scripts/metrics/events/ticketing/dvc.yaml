@@ -1,0 +1,10 @@
+stages:
+  extract:
+    cmd: PYTHONPATH=. python3 scripts/metrics/events/ticketing/extract.py
+    wdir: ../../../..
+    deps:
+      - scripts/metrics/events/ticketing/extract.py
+      - lib/sources/ticket_tailor.py
+    outs:
+      - working/metrics/ticketing/orders.csv:
+          cache: false

@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  extract:
+    cmd: PYTHONPATH=. python3 scripts/metrics/events/ticketing/extract.py
+    deps:
+    - path: lib/sources/ticket_tailor.py
+      md5: 3a8246b9047d9c84761f0b22168c6c26
+      size: 1808
+    - path: scripts/metrics/events/ticketing/extract.py
+      md5: 63383e3b6b51a79cbcf197e9d30aff26
+      size: 601
+    outs:
+    - path: working/metrics/ticketing/orders.csv
+      md5: cc4946a1cbdae34434f01c80d65d167e
+      size: 147279

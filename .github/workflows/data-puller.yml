@@ -43,6 +43,7 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           TYPEFORM_PRIVATE_TOKEN: ${{ secrets.TYPEFORM_PRIVATE_TOKEN }}
+          TICKET_TAILOR_API_KEY: ${{ secrets.TICKET_TAILOR_API_KEY }}
 
         run: |
           # dvc pull

@@ -31,3 +31,4 @@ build/
 develop-eggs/
 dist/
 downloads/
+.ipynb_checkpoints/

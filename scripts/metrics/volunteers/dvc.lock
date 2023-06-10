@@ -25,36 +25,36 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/prepare.py
     deps:
     - path: data/metrics/volunteers/shifts.csv
-      md5: 7adf4d24b7bc03c82d92f65137858450
-      size: 34978
+      md5: 4ba7b29d28f362bfe11bdffdc183334e
+      size: 35970
     - path: data/metrics/volunteers/volunteers.csv
-      md5: 1c790c89fbe0e6da02e7db89f8ef0fc9
-      size: 199515
+      md5: 59989a711f3fb5bb20108283cb301670
+      size: 200670
     - path: scripts/metrics/volunteers/prepare.py
       md5: 34b31bc510a6d2d1519213c3ee8c7bd8
       size: 2139
     outs:
     - path: docs/metrics/volunteers/_data/by_local_authority.csv
-      md5: cdc3a31c0acab7b91d5f5a8e1a989c24
-      size: 1092
+      md5: b5ed1f07b199f0bf5cf01665a31f8882
+      size: 1093
     - path: docs/metrics/volunteers/_data/by_ward.csv
-      md5: 5dbe1471d7556c272fb498a639bbf7b4
-      size: 3727
+      md5: 1ea66d81ece582d56b7fcfe2119a44b1
+      size: 3749
     - path: docs/metrics/volunteers/_data/by_week.csv
-      md5: 6251c668f5b80bf38baee5b24ae59b8c
-      size: 1327
+      md5: 43ea73b2cef0a05eede653b6c1ec872f
+      size: 1360
     - path: docs/metrics/volunteers/_data/la_stats.json
-      md5: 4faa56ce73d5a4782e9abc9108470662
-      size: 370
+      md5: 2adecd9fc95adef9c227dc5690ff6199
+      size: 371
     - path: docs/metrics/volunteers/_data/shifts/by_week.csv
       md5: f92d67c136a9a4cf81c5d9959223c9f9
       size: 665
     - path: docs/metrics/volunteers/_data/shifts/summary.json
-      md5: e28d13d4a82165f4bc5922668f6080a8
+      md5: d12e42088276730b5959eb2c913f2b1d
       size: 328
     - path: docs/metrics/volunteers/_data/west_yorkshire.csv
-      md5: da7715af90e41148bd214120e970b96b
-      size: 179
+      md5: 55802ce335d5ddc8d908f8747354f993
+      size: 180
   transform-shifts:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform_shifts.py
     deps:
@@ -62,12 +62,12 @@ stages:
       md5: 38d8943ecbdaf152df1edaf56eb62466
       size: 1581
     - path: working/metrics/rosterfy/volunteering-hours.csv
-      md5: b9dce7ad72138c1836e814197b9b97ad
-      size: 98683
+      md5: 9930551b221f04ed6add2d147b9add25
+      size: 98682
     outs:
     - path: data/metrics/volunteers/shifts.csv
-      md5: 7adf4d24b7bc03c82d92f65137858450
-      size: 34978
+      md5: 4ba7b29d28f362bfe11bdffdc183334e
+      size: 35970
   transform-signups:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform_signups.py
     deps:
@@ -87,12 +87,12 @@ stages:
       md5: f3a575c359d7c4715536f5eab0d6ace7
       size: 2013
     - path: working/metrics/rosterfy/current-checkpoint.csv
-      md5: 29a5fb2cb0d89df0bc3be98f58e016ea
-      size: 146920
+      md5: f5b5ee32659ea2d86aef213ea9400115
+      size: 147275
     outs:
     - path: data/metrics/volunteers/volunteers.csv
-      md5: 1c790c89fbe0e6da02e7db89f8ef0fc9
-      size: 199515
+      md5: 59989a711f3fb5bb20108283cb301670
+      size: 200670
     - path: docs/metrics/volunteers/_data/metadata/volunteers.json
-      md5: 67a3b6a53ba0c1d7df1b8525f7df4c49
-      size: 11385
+      md5: a8d50ffeae5148e1fc1588492ae9f352
+      size: 11494

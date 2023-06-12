@@ -11,5 +11,5 @@ stages:
       size: 806
     outs:
     - path: working/metrics/events/all.csv
-      md5: 3ff26d89a9e0611468ee4f32d722ff19
-      size: 265203
+      md5: 866736583e35f509391ebcfff8e28ec1
+      size: 273186

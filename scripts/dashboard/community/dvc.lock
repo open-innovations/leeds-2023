@@ -10,8 +10,8 @@ stages:
       md5: db4113d3ce3ebaba57437389ce5285e6
       size: 950
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
-      md5: 8d0a8a7808520581ebc32404c5125ffa
-      size: 1495
+      md5: b0aa2232f121f751ecb1f819e55bc86e
+      size: 1496
     - path: scripts/dashboard/community/events.py
       md5: e167c98657d83f1a0b33964b201ffb2d
       size: 2051
@@ -32,8 +32,8 @@ stages:
       md5: 5c01f5e00fd791cc1b3e2540e4147381
       size: 52939
     - path: data/metrics/volunteers/volunteers.csv
-      md5: 37b92c818d9714c24e6c01a29e49f480
-      size: 201065
+      md5: 1f40e77cae25895f407aa02d13a82a6d
+      size: 201489
     - path: data/reference/leeds_wards.csv
       md5: 887a42d46d34c9e966211a79f2b8a672
       size: 1035
@@ -41,15 +41,15 @@ stages:
       md5: a6c1eabb3c8da4db2c07cc46d07eb70f
       size: 1517
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
-      md5: 8d0a8a7808520581ebc32404c5125ffa
-      size: 1495
+      md5: b0aa2232f121f751ecb1f819e55bc86e
+      size: 1496
     - path: scripts/dashboard/community/residents.py
       md5: dc3bed71f6ef664f829b1727991e5377
       size: 2849
     outs:
     - path: docs/dashboard/community/_data/residents.csv
-      md5: 950044855f7fb089921d33a418a516c1
+      md5: b84b77c7676f5cb4c4abc439a93d9c36
       size: 1484
     - path: docs/dashboard/community/_data/residents_with_schools.csv
-      md5: f7fd995961a8518b2f2b9c7bf4cb4238
+      md5: 2e62c536bb91eb9ec367fc26f2b48080
       size: 1627

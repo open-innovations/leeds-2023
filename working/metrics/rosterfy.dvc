@@ -1,12 +1,12 @@
-md5: 294d92ac47b8c21673ed20883a02edd3
+md5: fb25531d97796ff44ea30ea743b7d26e
 frozen: true
 deps:
-- md5: fa659962498582792733f42182a7b7ff.dir
-  size: 246448
+- md5: 8419e5c16f3346b32c9b84b1c62b1580.dir
+  size: 246728
   nfiles: 2
   path: remote://oicloud/home/leeds2023/rosterfy/rosterfy/
 outs:
-- md5: fa659962498582792733f42182a7b7ff.dir
-  size: 246448
+- md5: 8419e5c16f3346b32c9b84b1c62b1580.dir
+  size: 246728
   nfiles: 2
   path: rosterfy

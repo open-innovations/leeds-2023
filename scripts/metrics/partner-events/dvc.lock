@@ -1,46 +1,46 @@
 schema: '2.0'
 stages:
   extract:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/partner-events/extract.py
+    cmd: PYTHONPATH=. python3 scripts/metrics/partner-events/extract.py
     deps:
     - path: scripts/metrics/partner-events/extract.py
-      md5: 19ee85a75cca533452d4f99bb2cb7bfc
-      size: 946
+      md5: c01bed454cfe108515c55281f14a03dc
+      size: 1175
     outs:
     - path: working/metrics/partner-events/
-      md5: e493590276c98ac0e55a0340d55b8ddd.dir
-      size: 39774
+      md5: 1c2472b06e3076a2d3cae8674e02b7b6.dir
+      size: 2600
       nfiles: 1
   transform:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/partner-events/transform.py
+    cmd: PYTHONPATH=. python3 scripts/metrics/partner-events/transform.py
     deps:
     - path: scripts/metrics/partner-events/transform.py
-      md5: ac7e15ea586d40262a75f962dcc8b72b
-      size: 1224
+      md5: 798dc5b982305c7eaf83f04186d2b3ad
+      size: 1455
     - path: working/metrics/partner-events/
-      md5: e493590276c98ac0e55a0340d55b8ddd.dir
-      size: 39774
+      md5: 1c2472b06e3076a2d3cae8674e02b7b6.dir
+      size: 2600
       nfiles: 1
     outs:
     - path: data/metrics/events/partner-events/events.csv
-      md5: 6df5057c58c3a30707fcffa9d81cc144
-      size: 2302
+      md5: 7af31420cadcb57b53412359db0ae2f0
+      size: 2392
   prepare:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/partner-events/prepare.py
+    cmd: PYTHONPATH=. python3 scripts/metrics/partner-events/prepare.py
     deps:
     - path: data/metrics/events/partner-events/events.csv
-      md5: 6df5057c58c3a30707fcffa9d81cc144
-      size: 2302
+      md5: 7af31420cadcb57b53412359db0ae2f0
+      size: 2392
     - path: scripts/metrics/partner-events/prepare.py
       md5: 01650126007cf0dee0add624eeb20039
       size: 641
     outs:
     - path: docs/metrics/events/partner/_data/by_month.csv
-      md5: 8e1787a2d41404c0df8da7ab0b2adaf8
+      md5: afb4be79dcf463ff885e9d488f87ab90
       size: 148
     - path: docs/metrics/events/partner/_data/by_ward.csv
-      md5: 2618854df60054e691dddbecd24ebe90
+      md5: 454c0d1de3c9bd11ef4079eaaf233d6e
       size: 88
     - path: docs/metrics/events/partner/_data/headline.json
-      md5: 0422f783fe13643f4990f2e7b35d01a9
-      size: 979
+      md5: 4845285f06238156bdb5e7e4cf90d39e
+      size: 1034

@@ -1,25 +1,26 @@
-name,project,start_date,end_date,ward_code
-The Space - Sky Arts/Leeds 23' short films commission,,2023-11-13,2023-11-20,
-Light Night 2023,02 - Making A Stand,2023-10-12,2023-10-13,E05011403
-Light Night 2023 Installation,02 - Making A Stand,2023-10-09,2023-10-11,E05011403
-Moon Palace Durational,02 - Making A Stand,2023-11-15,2023-11-15,E05011403
-High Times & Dirty Monsters,"20 Stories High, High Times & Dirty Monsters",2023-11-06,2023-11-12,E05011403
-"AgeOfThe, Visions in the Map","AgeOfThe, Visions in the Map",2023-09-23,2023-09-23,E05011399
-"ArtAngel, The Fourth Dimensional Eye","ArtAngel, The Fourth Dimensional Eye",2023-02-04,,
-"Verity Watts, The Chronicles of Rothwell Temperance Band - Performance 1","BetterSongs/Verity Watts, The Chronicles of Rothwell Temperance Band",2023-09-02,2023-09-02,E05013830
-"Verity Watts, The Chronicles of Rothwell Temperance Band - Performance 2","BetterSongs/Verity Watts, The Chronicles of Rothwell Temperance Band",2023-09-22,2023-09-22,E05011397
-"Bobby Baker, EPIC DOMESTIC - Celebration Event","Bobby Baker / Daily Life Ltd, EPIC DOMESTIC",2023-07-01,2023-12-16,
-International Residency ,British Council Romania & Leeds Institute of Textiles and Colour (LITAC) ,,,
-"British Council, International Exchange","British Council, International Exchange",,,
-East Street Arts: R,"East Street Arts, A City Less Grey 2023 - Add Fuel",2023-10-01,2023-10-31,
-Museum of Austerity,English Touring Theatre,,,
-The Weight of Words,Henry Moore Institute,2023-07-07,2023-11-26,E05011403
-"Knaive Theatre, Restaurateur of Leeds","Knaive Theatre, The Restaurateur of Leeds (Working Title)",2023-03-17,2023-03-17,
-Light Night 2023,Light Night 2023,2023-10-13,2023-10-16,
-"Lydia Cotterell, Brightside","Lydia Cotterell, Brightside",2023-09-25,2023-10-27,
-"Leeds Playhouse/ Fuel / Pauline Mayers, The Stately Homes Project ","Pauline Meyers, Stately Homes Take Over Project",2023-09-12,2023-09-24,E05011396
-"Peter Spafford, Unsung Sports","Peter Spafford & Space2, Unsung Sports",2023-10-25,2023-10-26,
-Cherish Menzo,Transform 2023,2023-10-12,2023-10-20,
-MEXA,Transform 2023,2023-10-12,2023-10-21,
-Nastaran Razawi Khorasani ,Transform 2023,2023-10-12,2023-10-20,
-"Unlimited Theatre/Upswing, Ancient Futures","Unlimited Theatre/Upswing, Ancient Futures",2023-09-02,2023-09-03,
+name,start_date,end_date,project,ward_code
+The Space - Sky Arts/Leeds 23' short films commission,2023-11-13,2023-11-20,,
+Light Night 2023,2023-10-12,2023-10-13,02 - Making A Stand,E05011403
+Light Night 2023 Installation,2023-10-09,2023-10-11,02 - Making A Stand,E05011403
+Moon Palace Durational,2023-11-15,2023-11-15,02 - Making A Stand,E05011403
+High Times & Dirty Monsters,2023-11-06,2023-11-12,"20 Stories High, High Times & Dirty Monsters",E05011403
+"AgeOfThe, Visions in the Map",2023-09-23,2023-09-23,"AgeOfThe, Visions in the Map",E05011399
+"ArtAngel, The Fourth Dimensional Eye",2023-02-04,,"ArtAngel, The Fourth Dimensional Eye",
+"Verity Watts, The Chronicles of Rothwell Temperance Band - Performance 1",2023-09-02,2023-09-02,"BetterSongs/Verity Watts, The Chronicles of Rothwell Temperance Band",E05013830
+"Verity Watts, The Chronicles of Rothwell Temperance Band - Performance 2",2023-09-22,2023-09-22,"BetterSongs/Verity Watts, The Chronicles of Rothwell Temperance Band",E05011397
+"Bobby Baker, EPIC DOMESTIC - Celebration Event",2023-07-01,2023-12-16,"Bobby Baker / Daily Life Ltd, EPIC DOMESTIC",
+International Residency ,,,British Council Romania & Leeds Institute of Textiles and Colour (LITAC) ,
+"British Council, International Exchange",,,"British Council, International Exchange",
+East Street Arts: R,2023-10-01,2023-10-31,"East Street Arts, A City Less Grey 2023 - Add Fuel",
+Museum of Austerity,,,English Touring Theatre,
+The Weight of Words,2023-07-07,2023-11-26,Henry Moore Institute,E05011403
+"Knaive Theatre, Restaurateur of Leeds",2023-03-17,2023-03-17,"Knaive Theatre, The Restaurateur of Leeds (Working Title)",
+Light Night 2023,2023-10-13,2023-10-16,Light Night 2023,
+"Lydia Cotterell, Brightside",2023-09-25,2023-10-27,"Lydia Cotterell, Brightside",
+"Leeds Playhouse/ Fuel / Pauline Mayers, The Stately Homes Project ",2023-09-12,2023-09-24,"Pauline Meyers, Stately Homes Take Over Project",E05011396
+"Peter Spafford, Unsung Sports",2023-10-25,2023-10-26,"Peter Spafford & Space2, Unsung Sports",
+The Magician and The Good Book double-screening,2023-09-27,2023-09-27,Slung Low,E05011403
+Cherish Menzo,2023-10-12,2023-10-20,Transform 2023,
+MEXA,2023-10-12,2023-10-21,Transform 2023,
+Nastaran Razawi Khorasani ,2023-10-12,2023-10-20,Transform 2023,
+"Unlimited Theatre/Upswing, Ancient Futures",2023-09-02,2023-09-03,"Unlimited Theatre/Upswing, Ancient Futures",

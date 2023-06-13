@@ -1,7 +1,7 @@
 # Callouts pipelines
 stages:
   extract:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/partner-events/extract.py
+    cmd: PYTHONPATH=. python3 scripts/metrics/partner-events/extract.py
     wdir: ../../..
     always_changed: true
     deps:
@@ -11,7 +11,7 @@ stages:
           persist: false
           cache: false
   transform:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/partner-events/transform.py
+    cmd: PYTHONPATH=. python3 scripts/metrics/partner-events/transform.py
     wdir: ../../..
     deps:
       - scripts/metrics/partner-events/transform.py
@@ -21,7 +21,7 @@ stages:
           persist: false
           cache: false
   prepare:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/partner-events/prepare.py
+    cmd: PYTHONPATH=. python3 scripts/metrics/partner-events/prepare.py
     wdir: ../../..
     deps:
       - scripts/metrics/partner-events/prepare.py

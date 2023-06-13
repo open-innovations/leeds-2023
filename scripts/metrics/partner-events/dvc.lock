@@ -15,8 +15,8 @@ stages:
     cmd: PYTHONPATH=. python3 scripts/metrics/partner-events/transform.py
     deps:
     - path: scripts/metrics/partner-events/transform.py
-      md5: 798dc5b982305c7eaf83f04186d2b3ad
-      size: 1455
+      md5: 3d0d74551849953a93467423c92c3523
+      size: 1763
     - path: working/metrics/partner-events/
       md5: 1c2472b06e3076a2d3cae8674e02b7b6.dir
       size: 2600

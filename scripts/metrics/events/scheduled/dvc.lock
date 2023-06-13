@@ -21,8 +21,8 @@ stages:
       size: 223
       nfiles: 1
     - path: scripts/metrics/events/scheduled/transform.py
-      md5: bff80f193f37a02952785ede5567ec82
-      size: 503
+      md5: 74357c34f432c3bdb88bc3a0e293f144
+      size: 507
     - path: working/metrics/events/all.csv
       md5: 8ca577231b2a36b127f44df69214bc30
       size: 273499

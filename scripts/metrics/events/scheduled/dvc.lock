@@ -4,12 +4,29 @@ stages:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/extract.py
     deps:
     - path: lib/sources/airtable.py
-      md5: 383eecd533911b24acc042edd846121a
-      size: 328
+      md5: ff093ff7ef56afc78111b6800a04b979
+      size: 504
     - path: scripts/metrics/events/scheduled/extract.py
-      md5: 47297c378535e5026c13cdb0faf8902c
-      size: 806
+      md5: 9e37a23d890560f581f25bf5ff4800e2
+      size: 856
     outs:
     - path: working/metrics/events/all.csv
-      md5: 866736583e35f509391ebcfff8e28ec1
-      size: 273186
+      md5: 8ca577231b2a36b127f44df69214bc30
+      size: 273499
+  transform:
+    cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/transform.py
+    deps:
+    - path: lib/util/
+      md5: 9e35488ee9d3a66da6d18d3b67aa4dba.dir
+      size: 223
+      nfiles: 1
+    - path: scripts/metrics/events/scheduled/transform.py
+      md5: bff80f193f37a02952785ede5567ec82
+      size: 503
+    - path: working/metrics/events/all.csv
+      md5: 8ca577231b2a36b127f44df69214bc30
+      size: 273499
+    outs:
+    - path: data/metrics/events/master/all.csv
+      md5: 433bbac4d4b95654e228542263a469a5
+      size: 273491

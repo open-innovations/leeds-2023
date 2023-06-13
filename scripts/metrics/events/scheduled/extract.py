@@ -3,6 +3,7 @@ import lib.sources.airtable as airtable
 
 WORKING_DIR = os.path.join('working', 'metrics', 'events')
 os.makedirs(WORKING_DIR, exist_ok=True)
+ALL_EVENTS = os.path.join(WORKING_DIR, 'all.csv')
 
 if __name__ == "__main__":
     data = airtable.events(

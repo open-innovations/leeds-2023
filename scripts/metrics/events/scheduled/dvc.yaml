@@ -8,3 +8,13 @@ stages:
     outs:
       - working/metrics/events/all.csv:
           cache: false
+  transform:
+    cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/transform.py
+    wdir: ../../../..
+    deps:
+      - scripts/metrics/events/scheduled/transform.py
+      - working/metrics/events/all.csv
+      - lib/util/
+    outs:
+      - data/metrics/events/master/all.csv:
+          cache: false

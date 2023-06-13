@@ -1,7 +1,7 @@
 import os
-import pandas as pd
-from util.airtable import fetch_data
-from util.logger import logging, log_formatter
+from scripts.util.logger import logging, log_formatter
+from lib.sources.airtable import promote
+
 
 logger = logging.getLogger('promote-events.extract')
 log_handler = logging.FileHandler(
@@ -18,12 +18,18 @@ EVENTS_SOURCE_DATA = os.path.join(WORKING_DIR, 'events.csv')
 if __name__ == "__main__":
     os.makedirs(WORKING_DIR, exist_ok=True)
     try:
-        data = fetch_data(
-            base_id='appHAh7IYG6p2w5Yo',
-            table_name='Promote',
-            view_name='Grid view'
-        )
+        data = promote(
+            view='Grid view',
+            fields=[
+              'Event Name',
+              'Event Start Date',
+              'Event End Date',
+              'Venue - including address',
+              'Stage',
+              'Live date',
+            ])
+
         data.to_csv(EVENTS_SOURCE_DATA, index=False)
     except Exception as e:
         logger.error(repr(e))
-        raise RuntimeError('Cannot extract schools data')
+        raise RuntimeError('Cannot extract promote events data')

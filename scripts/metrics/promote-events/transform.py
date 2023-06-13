@@ -2,7 +2,7 @@ import os
 import re
 import pandas as pd
 from extract import EVENTS_SOURCE_DATA
-import util.geography as geo
+import scripts.util.geography as geo
 
 DATA_DIR = 'data/metrics/events/promote-events/'
 EVENTS_DATA = os.path.join(DATA_DIR, 'events.csv')
@@ -23,7 +23,9 @@ if __name__ == '__main__':
     data = pd.read_csv(EVENTS_SOURCE_DATA)
 
     # Reshape data
-    data = data[columns.keys()].rename(columns=columns)
+    data = data[
+        data.columns.intersection(columns.keys(), sort=False)
+    ].rename(columns=columns)
     data.start_date = pd.to_datetime(data.start_date)
     data.end_date = pd.to_datetime(data.end_date)
     

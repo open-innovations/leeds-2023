@@ -1,36 +1,36 @@
 schema: '2.0'
 stages:
   extract:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/promote-events/extract.py
+    cmd: PYTHONPATH=. python3 scripts/metrics/promote-events/extract.py
     deps:
     - path: scripts/metrics/promote-events/extract.py
-      md5: f0e249f7904ff90158520d02c3e1b50e
-      size: 939
+      md5: a139eefcbe466bc6587cd12dda474112
+      size: 1071
     outs:
     - path: working/metrics/promote-events/
-      md5: cac220f20bbb3c1cee4f0ca2d2c2d9c3.dir
-      size: 471437
+      md5: 37f907b983c77a602ddcef4d4deaf395.dir
+      size: 10064
       nfiles: 1
   transform:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/promote-events/transform.py
+    cmd: PYTHONPATH=. python3 scripts/metrics/promote-events/transform.py
     deps:
     - path: scripts/metrics/promote-events/transform.py
-      md5: 51f2ff0534c8f0d34edee94a54798779
-      size: 1031
+      md5: 68882fbb1acb17ccb7623de5184427bf
+      size: 1092
     - path: working/metrics/promote-events/
-      md5: cac220f20bbb3c1cee4f0ca2d2c2d9c3.dir
-      size: 471437
+      md5: 37f907b983c77a602ddcef4d4deaf395.dir
+      size: 10064
       nfiles: 1
     outs:
     - path: data/metrics/events/promote-events/events.csv
-      md5: 60ccbb65798992c5b7ac451b5a707cd1
-      size: 6137
+      md5: bcc6533cb3f9c6bd25500c348eeee6bb
+      size: 6176
   prepare:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/promote-events/prepare.py
+    cmd: PYTHONPATH=. python3 scripts/metrics/promote-events/prepare.py
     deps:
     - path: data/metrics/events/promote-events/events.csv
-      md5: 60ccbb65798992c5b7ac451b5a707cd1
-      size: 6137
+      md5: bcc6533cb3f9c6bd25500c348eeee6bb
+      size: 6176
     - path: scripts/metrics/promote-events/prepare.py
       md5: 6ced81010b60056a1be4029353624c1f
       size: 641

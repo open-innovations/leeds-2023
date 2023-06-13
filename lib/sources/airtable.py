@@ -11,3 +11,8 @@ events_table = Table(API_KEY, BASE_ID, EVENTS_TABLE)
 def events(**kwargs):
     data = events_table.all(**kwargs)
     return pd.json_normalize([x['fields'] for x in data])
+
+def promote(**kwargs):
+    promote_table = Table(API_KEY, BASE_ID, 'Promote')
+    data = promote_table.all(**kwargs)
+    return pd.json_normalize([x['fields'] for x in data])

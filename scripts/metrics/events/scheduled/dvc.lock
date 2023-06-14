@@ -11,8 +11,8 @@ stages:
       size: 856
     outs:
     - path: working/metrics/events/all.csv
-      md5: 1afd052d9e5c2bc51af27a1b26d955b3
-      size: 273415
+      md5: 9d7d79e72952c6b454346b3909ab9c9f
+      size: 273751
   transform:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/transform.py
     deps:
@@ -24,9 +24,32 @@ stages:
       md5: 74357c34f432c3bdb88bc3a0e293f144
       size: 507
     - path: working/metrics/events/all.csv
-      md5: 1afd052d9e5c2bc51af27a1b26d955b3
-      size: 273415
+      md5: 9d7d79e72952c6b454346b3909ab9c9f
+      size: 273751
     outs:
     - path: data/metrics/events/master/all.csv
-      md5: 8664e6221955dbf51784db3aed7b323a
-      size: 273407
+      md5: a2128b7c499950908b0bbe7a51e47df3
+      size: 273743
+  prepare:
+    cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/prepare.py
+    deps:
+    - path: data/metrics/events/master/all.csv
+      md5: a2128b7c499950908b0bbe7a51e47df3
+      size: 273743
+    - path: scripts/metrics/events/scheduled/prepare.py
+      md5: 0f712c00082db6cf5ddc6177f94bbe80
+      size: 2459
+    - path: scripts/util/
+      md5: d94efccf140d197810fafaa067993507.dir
+      size: 11863
+      nfiles: 10
+    outs:
+    - path: docs/metrics/events/the_barn/_data/by_date.csv
+      md5: 0f9442cc0fb86758fc400ba6707199bc
+      size: 935
+    - path: docs/metrics/events/the_barn/_data/by_ward.csv
+      md5: 49e2382661b949448de4fc8d2ea4428a
+      size: 240
+    - path: docs/metrics/events/the_barn/_data/headlines.json
+      md5: 670553ebd2f0aea24aed0513d3881537
+      size: 413

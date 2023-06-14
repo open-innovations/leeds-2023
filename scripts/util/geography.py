@@ -27,9 +27,12 @@ def postcode_formatter(postcode):
 
 
 ward_data = load_postcodes(columns=['pcds', 'osward', 'oslaua'])
-postcode_to_ward_code = ward_data[['pcds', 'osward']].drop_duplicates().set_index('pcds').osward.to_dict()
-postcode_to_la_code = ward_data[['pcds', 'oslaua']].drop_duplicates().set_index('pcds').oslaua.to_dict()
-ward_code_to_la_code = ward_data[['osward', 'oslaua']].drop_duplicates().set_index('osward').oslaua.to_dict()
+postcode_to_ward_code = ward_data[['pcds', 'osward']].drop_duplicates(
+).set_index('pcds').osward.to_dict()
+postcode_to_la_code = ward_data[['pcds', 'oslaua']].drop_duplicates(
+).set_index('pcds').oslaua.to_dict()
+ward_code_to_la_code = ward_data[['osward', 'oslaua']].drop_duplicates(
+).set_index('osward').oslaua.to_dict()
 
 leeds_wards = pd.read_csv('data/reference/leeds_wards.csv')
 leeds_ward_name_to_code = leeds_wards.set_index('WD21NM').WD21CD.to_dict()
@@ -124,10 +127,19 @@ def normalise_leeds_wards(input):
     )
     return result
 
+
+def ward_name_to_code(input):
+    input.name = 'ward_name'
+    result = leeds_wards.merge(
+        right=input, how='right', left_on='WD21NM', right_on='ward_name').WD21CD
+    return result
+
+
 def normalise_leeds_ward(ward):
     if pd.notna(ward):
         return process.extractOne(ward, leeds_wards.WD21NM)[0]
     return pd.NA
+
 
 def normalise_postcode(postcode):
     if pd.notna(postcode):

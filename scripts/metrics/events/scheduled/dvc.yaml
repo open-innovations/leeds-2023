@@ -1,6 +1,7 @@
 stages:
   extract:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/extract.py
+    always_changed: true
     wdir: ../../../..
     deps:
       - scripts/metrics/events/scheduled/extract.py
@@ -17,4 +18,22 @@ stages:
       - lib/util/
     outs:
       - data/metrics/events/master/all.csv:
+          cache: false
+
+  prepare:
+    cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/prepare.py
+    wdir: ../../../..
+    deps:
+      - scripts/metrics/events/scheduled/prepare.py
+      - scripts/util/
+      - data/metrics/events/master/all.csv
+    outs:
+      - docs/metrics/events/the_barn/_data/headlines.json:
+          persist: false
+          cache: false
+      - docs/metrics/events/the_barn/_data/by_date.csv:
+          persist: false
+          cache: false
+      - docs/metrics/events/the_barn/_data/by_ward.csv:
+          persist: false
           cache: false

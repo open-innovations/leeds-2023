@@ -7,12 +7,12 @@ stages:
       md5: f9d56b1dfd266dbc988aa16efb51e45b
       size: 2970
     - path: working/metrics/airtable/schools_events.csv
-      md5: e61681b5c5d63e7d34cf3ffcf18ac872
-      size: 71294
+      md5: d9e959c2be383419c4a26103cf8a3f04
+      size: 71911
     outs:
     - path: data/metrics/schools/schools_events.csv
-      md5: 6eb4c7522d8c7cf87a1967a3b49699d3
-      size: 31254
+      md5: 76e27a1c5b6c789fa704c90993a47633
+      size: 31687
   extract:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
     deps:
@@ -21,14 +21,14 @@ stages:
       size: 2071
     outs:
     - path: working/metrics/airtable/schools_events.csv
-      md5: e61681b5c5d63e7d34cf3ffcf18ac872
-      size: 71294
+      md5: d9e959c2be383419c4a26103cf8a3f04
+      size: 71911
   prepare:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
-      md5: 6eb4c7522d8c7cf87a1967a3b49699d3
-      size: 31254
+      md5: 76e27a1c5b6c789fa704c90993a47633
+      size: 31687
     - path: data/reference/leeds_wards.csv
       md5: 887a42d46d34c9e966211a79f2b8a672
       size: 1035
@@ -40,16 +40,16 @@ stages:
       size: 5014
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
-      md5: b0aa2232f121f751ecb1f819e55bc86e
-      size: 1496
+      md5: 5beed419476d3c13bb9c671c0a626034
+      size: 1499
     - path: docs/metrics/schools/_data/engagements_by_week.csv
-      md5: 9f96287f5a50c0104e488072f1a8bf8d
-      size: 1025
+      md5: 5ea59de6d82423d84bdbdfa32382209b
+      size: 1049
     - path: docs/metrics/schools/_data/headlines.json
-      md5: d993584b19a9a3d79a8cfbaa1a8793a4
+      md5: fd89f2f6bf016c3234f3fab7280ad8ba
       size: 373
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
-      md5: ce563e6980bb3c483fcf07c078c58a85
+      md5: 5636b1176c099533ca06ba43fe9462b4
       size: 5659
   ref_data:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/get_reference_data.py

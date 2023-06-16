@@ -20,6 +20,8 @@ pytz = "*"
 six = "*"
 thefuzz = "*"
 pyairtable = "*"
+papermill = "*"
+ipykernel = "*"
 
 [dev-packages]
 

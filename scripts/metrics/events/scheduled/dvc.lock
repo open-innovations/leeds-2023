@@ -4,52 +4,65 @@ stages:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/extract.py
     deps:
     - path: lib/sources/airtable.py
+      hash: md5
       md5: ff093ff7ef56afc78111b6800a04b979
       size: 504
     - path: scripts/metrics/events/scheduled/extract.py
+      hash: md5
       md5: 9e37a23d890560f581f25bf5ff4800e2
       size: 856
     outs:
     - path: working/metrics/events/all.csv
-      md5: fa7cf397ea3f1befa5b1b008cad3b5b1
-      size: 274163
+      hash: md5
+      md5: b12ee33f92099667af3b6fdfb90bd9e5
+      size: 268054
   transform:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/transform.py
     deps:
     - path: lib/util/
+      hash: md5
       md5: 9e35488ee9d3a66da6d18d3b67aa4dba.dir
       size: 223
       nfiles: 1
     - path: scripts/metrics/events/scheduled/transform.py
+      hash: md5
       md5: 74357c34f432c3bdb88bc3a0e293f144
       size: 507
     - path: working/metrics/events/all.csv
-      md5: fa7cf397ea3f1befa5b1b008cad3b5b1
-      size: 274163
+      hash: md5
+      md5: b12ee33f92099667af3b6fdfb90bd9e5
+      size: 268054
     outs:
     - path: data/metrics/events/master/all.csv
-      md5: 7614df22896e5610d07770c5f09aa1de
-      size: 274155
+      hash: md5
+      md5: 9719dc6b716c3f8d6e7c1493acb01994
+      size: 268046
   prepare:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/prepare.py
     deps:
     - path: data/metrics/events/master/all.csv
-      md5: 7614df22896e5610d07770c5f09aa1de
-      size: 274155
+      hash: md5
+      md5: 9719dc6b716c3f8d6e7c1493acb01994
+      size: 268046
     - path: scripts/metrics/events/scheduled/prepare.py
+      hash: md5
       md5: 0f712c00082db6cf5ddc6177f94bbe80
       size: 2459
     - path: scripts/util/
+      hash: md5
       md5: f6834d12b390950f71ac28b7939cd92e.dir
       size: 7439
       nfiles: 7
     outs:
     - path: docs/metrics/events/the_barn/_data/by_date.csv
+      hash: md5
       md5: 0f9442cc0fb86758fc400ba6707199bc
       size: 935
     - path: docs/metrics/events/the_barn/_data/by_ward.csv
+      hash: md5
       md5: 49e2382661b949448de4fc8d2ea4428a
       size: 240
     - path: docs/metrics/events/the_barn/_data/headlines.json
+      hash: md5
       md5: 670553ebd2f0aea24aed0513d3881537
       size: 413

@@ -4,10 +4,12 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/extract.py
     deps:
     - path: scripts/metrics/callouts/extract.py
+      hash: md5
       md5: eb82c0d7ac3dadef6b2c7bf5cc5f7ecf
       size: 1709
     outs:
     - path: working/metrics/callouts/
+      hash: md5
       md5: b800c0009cd536c0b2bfaeeae0dd07bb.dir
       size: 21903
       nfiles: 16

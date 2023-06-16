@@ -1,12 +1,14 @@
-md5: c3063173f528bfaa9e16cc70ddc9f96f
+md5: c9869f19b2eea080877e5a6e8672e0ac
 frozen: true
 deps:
 - md5: 7a5957139df42301130699324c060994.dir
   size: 163866
   nfiles: 2
   path: s3://open-innovations-filestash/leeds2023/volunteers/
+  hash: md5
 outs:
 - md5: 67f5d8204c24d4058db2947704ac6896.dir
   size: 163866
   nfiles: 2
   path: volunteers
+  hash: md5

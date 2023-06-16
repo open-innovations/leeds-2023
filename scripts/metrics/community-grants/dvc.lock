@@ -4,10 +4,12 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/extract.py
     deps:
     - path: scripts/metrics/community-grants/extract.py
+      hash: md5
       md5: 729c989284fafe584ff6cc4f3702837a
       size: 1791
     outs:
     - path: working/metrics/community-grants/
+      hash: md5
       md5: a8a1467c8bc0f72e49b40f200d016a87.dir
       size: 42987
       nfiles: 3

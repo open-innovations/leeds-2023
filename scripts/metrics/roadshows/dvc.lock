@@ -4,10 +4,12 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/roadshows/extract.py
     deps:
     - path: scripts/metrics/roadshows/extract.py
+      hash: md5
       md5: d6ca8716549e5dae18b59aa1a96a6942
       size: 962
     outs:
     - path: working/roadshow/contact_consent_responses.csv
+      hash: md5
       md5: 448b9242e8ca3152853ad2947f940403
       size: 10413
   transform:

@@ -1,4 +1,4 @@
-md5: 6f07fad088c02e1a86b2afd1657ca813
+md5: 967429dd7a002b89452d1ec047735f2e
 frozen: true
 deps:
 - path: output/onspd-extract.csv
@@ -10,3 +10,4 @@ outs:
 - md5: c33cab07a62f2d02607a9d155bd968f4
   size: 129496640
   path: onspd-extract.csv
+  hash: md5

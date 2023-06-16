@@ -4,13 +4,16 @@ stages:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/events/awakening/extract.py
     deps:
     - path: data/reference/postcodes.csv
+      hash: md5
       md5: 3c332ace66b28524c0a710fca1a4b1c0
       size: 76072682
     - path: scripts/metrics/events/awakening/process.py
+      hash: md5
       md5: d6122c13f010b6f8f251edce90ac6ec5
       size: 2922
     outs:
     - path: working/ballot/
+      hash: md5
       md5: dc5932bdcbaf8360398e988b8a9f8869.dir
       size: 184272
       nfiles: 2

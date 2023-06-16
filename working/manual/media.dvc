@@ -1,12 +1,14 @@
-md5: 454e7fb8cc8853237a793994faba9900
+md5: 9bee157b89d7676988d08287cba07a07
 frozen: true
 deps:
 - md5: aa7d62d0370f070dd2ce5ab8733cf348.dir
   size: 1092475
   nfiles: 26
   path: s3://open-innovations-filestash/leeds2023/media/
+  hash: md5
 outs:
-- md5: 8abc9678579c6489581ead586df23678.dir
+- md5: 1ebdfa1f978ccb12e22ab9044d579a4b.dir
   size: 1092475
   nfiles: 26
   path: media
+  hash: md5

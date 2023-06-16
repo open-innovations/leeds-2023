@@ -4,12 +4,15 @@ stages:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/ticketing/extract.py
     deps:
     - path: lib/sources/ticket_tailor.py
+      hash: md5
       md5: 3a8246b9047d9c84761f0b22168c6c26
       size: 1808
     - path: scripts/metrics/events/ticketing/extract.py
+      hash: md5
       md5: 63383e3b6b51a79cbcf197e9d30aff26
       size: 601
     outs:
     - path: working/metrics/ticketing/orders.csv
-      md5: 785cf4d621373d16316e9af92c10a39a
-      size: 157016
+      hash: md5
+      md5: 882b99702e6da2ccebd467197d9eadb4
+      size: 158950

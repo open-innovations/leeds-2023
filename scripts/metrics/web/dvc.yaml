@@ -1,0 +1,13 @@
+stages:
+  transform:
+    cmd: papermill transform.ipynb ../../../working/papermill/web_analytics_transform_output.ipynb
+    deps:
+      - transform.ipynb
+      - ../../../working/manual/web_analytics/data-export.csv
+    outs:
+      - ../../../data/metrics/web_analytics/daily_page_views.csv:
+          persist: false
+          cache: false
+      - ../../../data/metrics/web_analytics/weekly_page_views.csv:
+          persist: false
+          cache: false

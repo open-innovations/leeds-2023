@@ -11,3 +11,15 @@ stages:
       - ../../../data/metrics/web_analytics/weekly_page_views.csv:
           persist: false
           cache: false
+  prepare:
+    cmd: papermill prepare.ipynb ../../../working/papermill/web_analytics_prepare_output.ipynb
+    deps:
+      - prepare.ipynb
+      - ../../../data/metrics/web_analytics/daily_page_views.csv
+    outs:
+      - ../../../docs/metrics/web-analytics/_data/page_views_by_week.csv:
+          persist: false
+          cache: false
+      - ../../../docs/metrics/web-analytics/_data/headlines.json:
+          persist: false
+          cache: false

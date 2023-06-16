@@ -1,0 +1,86 @@
+---
+title: Promote Events
+summary: Visualisationts of key metrics related to LEEDS 2023 Promote events.
+tags:
+  - main
+order: 10
+work_in_progress: true
+metas:
+  title: Partner Events
+  description: |
+    Visualisationts of key metrics related to LEEDS 2023 Promote events.
+limitations: 
+  - TBC
+---
+
+{% from 'macros.njk' import dateFormatter %}
+
+
+<h2>Headlines</h2>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '20rem' } %}
+  {{ comp.metric.headline({
+    title: "Number of Promote events", headingLevel: 3,
+    value: by_month.columns.events | sum | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+{% endcomp %}
+
+
+{% comp 'grid.' + headline_grid_style, { min_width: '30rem' } %}
+
+{% comp 'layout.figure', {max_width: '70rem'} %}
+<h3>Partner events by month</h3>
+  {{ comp.oi.charts.graph.line({ config: {
+    categories: by_month.columns.start_date,
+    width: 25,
+    height: 12,
+    text: { colour: '#eee' },
+    xAxis: {
+      title: 'Start date',
+      titleOffset: 4,
+      labelRotate: 35,
+      majorTick: 1,
+      formatter: dateFormatter
+    },
+    yAxis: {
+      title: 'Events',
+      titleOffset: 3,
+      majorTick: 1
+    },
+    plotArea: {
+      yMax: by_month.columns.events | length + 1 | round(0, 'ceil'),
+      colour: 'var(--l23-dark-blue-grey)'
+    },
+    padding: {
+      left: 4,
+      bottom: 5
+    },
+    series: [
+      {
+        id: "events", label: "Number of events",
+        yValues: by_month.columns.events,
+        colour: 'var(--l23-magenta)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    legend: {
+      width: "20em"
+    }
+  } }) | safe }}
+{% endcomp %}
+
+
+{% comp 'layout.figure', {max_width: '40rem'} %}
+<h3>Promote events by ward</h3>
+{{ comp.charts.hexmap({
+    hexjson: hex.wards_leeds,
+    data: by_ward.rows,
+    matchKey: 'ward_code',
+    valueProp: 'events',
+    bgColour: '#ddd',
+      colourScale: colours.scales.cyan
+  }) | safe }}
+{% endcomp %}
+{% endcomp %}

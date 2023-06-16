@@ -20,7 +20,7 @@ limitations:
 {% comp 'grid.' + headline_grid_style, { min_width: '20rem' } %}
   {{ comp.metric.headline({
     title: "Number of Partner events", headingLevel: 3,
-    value: by_month.columns.events | sum | localize,
+    value: by_ward.columns.events | sum | localize,
     description: "",
     background: "var(--l23-magenta)"
   }) | safe }}

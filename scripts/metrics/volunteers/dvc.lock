@@ -106,7 +106,7 @@ stages:
       size: 2013
     - path: working/metrics/rosterfy/current-checkpoint.csv
       hash: md5
-      md5: 63c8dd21154101c08c23633e2cf7b0c4
+      md5: 0b0eaaa99cbf071cd2b2d654aba6d62a
       size: 150187
     outs:
     - path: data/metrics/volunteers/volunteers.csv

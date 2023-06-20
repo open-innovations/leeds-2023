@@ -30,8 +30,8 @@ stages:
       size: 38344
     - path: data/metrics/volunteers/volunteers.csv
       hash: md5
-      md5: 14777ca93be44094df7274e3ed5a0bfe
-      size: 204832
+      md5: ea3c774c7f8b3494516563125dfbca24
+      size: 205245
     - path: scripts/metrics/volunteers/prepare.py
       hash: md5
       md5: 34b31bc510a6d2d1519213c3ee8c7bd8
@@ -39,19 +39,19 @@ stages:
     outs:
     - path: docs/metrics/volunteers/_data/by_local_authority.csv
       hash: md5
-      md5: c27b61e6b97a9cb9a454c2ce657e0c13
+      md5: bbd5345bc01306be85c6edff0e0ddf0e
       size: 1113
     - path: docs/metrics/volunteers/_data/by_ward.csv
       hash: md5
-      md5: c0c1ca5f29fd8cd5b48b195d58869f21
+      md5: c8ef0c04fe179862ab497d2476296eaf
       size: 3791
     - path: docs/metrics/volunteers/_data/by_week.csv
       hash: md5
-      md5: f26681fdeaf5195b5788123a812c7e5e
+      md5: f76cbcf4e5aa96eb4f659d07081508aa
       size: 1393
     - path: docs/metrics/volunteers/_data/la_stats.json
       hash: md5
-      md5: 32217882f4912d85509e8411ed804f59
+      md5: caf8397022f7a2d4d7f971ed28f1d435
       size: 371
     - path: docs/metrics/volunteers/_data/shifts/by_week.csv
       hash: md5
@@ -63,7 +63,7 @@ stages:
       size: 328
     - path: docs/metrics/volunteers/_data/west_yorkshire.csv
       hash: md5
-      md5: ea9a0a2258d965b77e7bfe9cf13be4b8
+      md5: 559ec20c41c2187457974b50c42edced
       size: 180
   transform-shifts:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform_shifts.py
@@ -74,8 +74,8 @@ stages:
       size: 1581
     - path: working/metrics/rosterfy/volunteering-hours.csv
       hash: md5
-      md5: b424b5d019858d9312bfcda8c0f8eab3
-      size: 98751
+      md5: 39b8157fced6fdb99b15e4fbabda5475
+      size: 98896
     outs:
     - path: data/metrics/volunteers/shifts.csv
       hash: md5
@@ -106,14 +106,14 @@ stages:
       size: 2013
     - path: working/metrics/rosterfy/current-checkpoint.csv
       hash: md5
-      md5: 1f7eb139aeab7ced89088205a96faad1
-      size: 150302
+      md5: bd9f01955ebd1ea576e9bdebc9456821
+      size: 150669
     outs:
     - path: data/metrics/volunteers/volunteers.csv
       hash: md5
-      md5: 14777ca93be44094df7274e3ed5a0bfe
-      size: 204832
+      md5: ea3c774c7f8b3494516563125dfbca24
+      size: 205245
     - path: docs/metrics/volunteers/_data/metadata/volunteers.json
       hash: md5
-      md5: 80beb5798a23b65ce77120db5896ba12
-      size: 11567
+      md5: aaa29f545cec61b16481fc82d0aef078
+      size: 11572

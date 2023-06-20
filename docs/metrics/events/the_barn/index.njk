@@ -1,0 +1,106 @@
+---
+title: The Barn
+summary: Visualisationts of key metrics related to The Barn - a Signature Event held by LEEDS 2023.
+tags:
+  - main
+order: 10
+work_in_progress: true
+metas:
+  title: The Barn
+  description: |
+    Visualisationts of key metrics related to The Barn - a Signature Event held by LEEDS 2023.
+limitations: 
+  - TBC
+---
+
+{% from 'macros.njk' import dateFormatter %}
+
+<h2>Headlines</h2>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+  {{ comp.metric.headline({
+    title: "Number of activities", headingLevel: 2,
+    value: by_ward.columns.count | sum | localize,
+    description: "Total activities held as part of this Signature event.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Related Callouts", headingLevel: 2,
+    value: 2,
+    description: "Total call out opportunities related to this event.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Callout responses", headingLevel: 2,
+    value: (search.data('metrics/callouts').responses_by_callout.columns.responses[1] + search.data('metrics/callouts').responses_by_callout.columns.responses[2]) | localize ,
+    description: "Total call out responses for this event.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Total attendances", headingLevel: 2,
+    value: by_date.columns.cumulative_attendances_in_person | last + by_date.columns.cumulative_attendances_online | last ,
+    description: "The number of people who attended online and in person.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+{% endcomp %}
+
+{% comp 'grid.' + headline_grid_style, { min_width: '30rem' } %}
+
+{% comp 'layout.figure', {max_width: '70rem'} %}
+<h3>Number of events and activities by month</h3>
+  {{ comp.oi.charts.graph.line({ config: {
+    categories: by_date.columns.start_date,
+    width: 25,
+    height: 12,
+    text: { colour: '#eee' },
+    xAxis: {
+      title: 'Start date',
+      titleOffset: 4,
+      labelRotate: 35,
+      majorTick: 2,
+      formatter: dateFormatter
+    },
+    yAxis: {
+      title: 'Events',
+      titleOffset: 3,
+      majorTick: 2
+    },
+    plotArea: {
+      yMax: 15,
+      colour: 'var(--l23-dark-blue-grey)'
+    },
+    padding: {
+      left: 4,
+      bottom: 5
+    },
+    series: [
+      {
+        id: "events", label: "Number of events",
+        yValues: by_date.columns.events,
+        colour: 'var(--l23-magenta)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    legend: {
+      width: "20em"
+    }
+  } }) | safe }}
+{% endcomp %}
+
+
+{% comp 'layout.figure', {max_width: '30rem'} %}
+<h3>Events by ward</h3>
+{{ comp.charts.hexmap({
+    hexjson: hex.wards_leeds,
+    data: by_ward.rows,
+    matchKey: 'ward_code',
+    valueProp: 'count',
+    bgColour: '#ddd',
+      colourScale: colours.scales.cyan
+  }) | safe }}
+{% endcomp %}
+{% endcomp %}

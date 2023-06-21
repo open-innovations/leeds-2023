@@ -67,10 +67,10 @@ limitations:
     yAxis: {
       title: 'Events',
       titleOffset: 3,
-      majorTick: 2
+      majorTick: 5
     },
     plotArea: {
-      yMax: 15,
+      yMax: 70,
       colour: 'var(--l23-dark-blue-grey)'
     },
     padding: {
@@ -80,7 +80,7 @@ limitations:
     series: [
       {
         id: "events", label: "Number of events",
-        yValues: by_date.columns.events,
+        yValues: by_date.columns.cumulative_events,
         colour: 'var(--l23-magenta)',
         markerOptions: { s: 5 }
       }

@@ -42,8 +42,22 @@ limitations:
     {{ comp.metric.headline({
     title: "Total attendances", headingLevel: 2,
     value: by_date.columns.cumulative_attendances_in_person | last + by_date.columns.cumulative_attendances_online | last ,
-    description: "The number of people who attended online and in person.",
+    description: "Total number of attendances online and in person.",
     background: "var(--l23-cyan)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Dreambuilders workshops", headingLevel: 2,
+    value: 14,
+    description: "Dreambuilders community workshops hosted as part of The Barn activities.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "School Days", headingLevel: 2,
+    value: 4,
+    description: "Number of School Days held as part of this Signature event.",
+    background: "var(--l23-yellow)"
   }) | safe }}
 
 {% endcomp %}

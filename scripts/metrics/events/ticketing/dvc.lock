@@ -14,5 +14,5 @@ stages:
     outs:
     - path: working/metrics/ticketing/orders.csv
       hash: md5
-      md5: 41cfb44226291e21abbc926cf5945b65
-      size: 164696
+      md5: 04e326ed9530f43197e7696084110913
+      size: 165884

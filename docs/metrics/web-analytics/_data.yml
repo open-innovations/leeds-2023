@@ -1,0 +1,6 @@
+key_metrics:
+  views:
+    title: Page Views
+    ref: headlines.cumulative_page_views
+    description: Unique views across all pages on the LEEDS 2023 website.
+    colour: var(--l23-pink) 

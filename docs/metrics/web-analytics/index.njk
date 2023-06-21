@@ -1,0 +1,84 @@
+---
+title: Web Analytics
+summary: Key website statistics from the LEEDS 2023 website.
+tags:
+  - main
+order: 10
+work_in_progress: true
+metas:
+  title: Web Analytics
+  description: |
+    Visualisations of key website statistics for the LEEDS 2023 website.
+limitations: 
+  - N/A
+---
+
+{% from 'macros.njk' import dateFormatter %}
+
+<h2>Headlines</h2>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+  {{ comp.metric.headline({
+    title: "Page Views", headingLevel: 2,
+    value: page_views_by_week.columns.page_views | sum | localize,
+    description: "Unique views across all pages on the LEEDS 2023 website.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Total Users", headingLevel: 2,
+    value: page_views_by_week.columns.total_users | sum | localize,
+    description: "Total users of the LEEDS 2023 website.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+{% endcomp %}
+
+
+{% comp 'grid.' + headline_grid_style, { min_width: '30rem' } %}
+
+{% comp 'layout.figure', {max_width: '70rem'} %}
+<h3>Number of events and activities by month</h3>
+  {{ comp.oi.charts.graph.line({ config: {
+    categories: page_views_by_week.columns.day,
+    width: 25,
+    height: 12,
+    text: { colour: '#eee' },
+    xAxis: {
+      title: 'Date',
+      titleOffset: 4,
+      labelRotate: 35,
+      majorTick: 1,
+      formatter: dateFormatter
+    },
+    yAxis: {
+      title: 'Page Views',
+      titleOffset: 3,
+      majorTick: 50000
+    },
+    plotArea: {
+      yMax: 700000,
+      colour: 'var(--l23-dark-blue-grey)'
+    },
+    padding: {
+      left: 4,
+      bottom: 5
+    },
+    series: [
+      {
+        id: "page_views", label: "Cumulative Page Views",
+        yValues: page_views_by_week.columns.cumulative_page_views,
+        colour: 'var(--l23-magenta)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    legend: {
+      width: "20em"
+    }
+  } }) | safe }}
+{% endcomp %}
+{% endcomp %}
+
+
+
+
+

@@ -36,7 +36,7 @@ limitations:
   {{ comp.oi.charts.graph.line({ config: {
     categories: by_month.columns.start_date,
     width: 25,
-    height: 12,
+    height: 20,
     text: { colour: '#eee' },
     xAxis: {
       title: 'Start date',
@@ -51,10 +51,10 @@ limitations:
       majorTick: 1
     },
     plotArea: {
-      yMax: by_month.columns.events | length + 1 | round(0, 'ceil'),
+      yMax: by_month.columns.events | length + 5 | round(0, 'ceil'),
       colour: 'var(--l23-dark-blue-grey)'
     },
-    padding: {
+    padding: {  
       left: 4,
       bottom: 5
     },

@@ -8,7 +8,7 @@ work_in_progress: true
 metas:
   title: Partner Events
   description: |
-    Visualisation of key metrics related to LEEDS 2023 Partner events..
+    Visualisation of key metrics related to LEEDS 2023 Partner events.
 limitations: 
   - Events and activities data are extracted from Airtable. 15 activities do not have a corresponding ward, therefore the 'Partner events by ward' visualisation does not display data for all events. 
   - The total number of events may not be up to date, as this figure was pulled from an Airtable 'view'. We are working with LEEDS 2023 to confirm the correct data source. 
@@ -26,8 +26,6 @@ limitations:
     background: "var(--l23-magenta)"
   }) | safe }}
 {% endcomp %}
-
-
 
 {% comp 'grid.' + headline_grid_style, { min_width: '30rem' } %}
 

@@ -5,8 +5,8 @@ stages:
     deps:
     - path: data/metrics/volunteers/shifts.csv
       hash: md5
-      md5: 826eb8ada294b60ac7636aa72f24720e
-      size: 38861
+      md5: 2a2a27bea0144763af1f28fe5c9ffe3b
+      size: 38955
     - path: scripts/headlines/prepare.py
       hash: md5
       md5: 465e00871ccb0e1e9ec390cac8cdd003
@@ -14,5 +14,5 @@ stages:
     outs:
     - path: docs/_data/headlines/values.js
       hash: md5
-      md5: 2300cc808cec0ec4cb0e9696821f21ba
+      md5: 9029eed408f4264269858ba2400423ed
       size: 63

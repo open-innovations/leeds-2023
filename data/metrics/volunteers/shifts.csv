@@ -271,7 +271,7 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-04-13,74121,LS2 7JL,3.667,1,3,12804,As You Are - Opera North Soundwalk Support,Partner Events
 2023-04-14,74122,LS2 7JL,7.333,2,3,12804,As You Are - Opera North Soundwalk Support,Partner Events
 2023-04-14,74123,LS2 7JL,11.0,3,3,12804,As You Are - Opera North Soundwalk Support,Partner Events
-2023-04-15,73909,LS10 1LT,180.0,60,80,12781,Induction/Training SPRING,
+2023-04-15,73909,LS10 1LT,183.0,61,80,12781,Induction/Training SPRING,
 2023-04-15,73910,LS10 1LT,150.0,50,80,12781,Induction/Training SPRING,
 2023-04-15,73915,LS10 1LT,17.5,5,6,12782,SUPPORT: Induction/Training,
 2023-04-15,73916,LS10 1LT,14.0,4,6,12782,SUPPORT: Induction/Training,
@@ -435,7 +435,7 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-06-10,85415,LS10 1NE,1.714,4,7,13616,Meet the Team - Summer,
 2023-06-10,85416,LS10 1NE,2.143,5,7,13616,Meet the Team - Summer,
 2023-06-10,85448,LS10 1NE,10.0,4,6,13618,Meet the Team - Summer Support,
-2023-06-10,85449,LS10 1NE,7.5,3,6,13618,Meet the Team - Summer Support,
+2023-06-10,85449,LS10 1NE,10.0,4,6,13618,Meet the Team - Summer Support,
 2023-06-11,91951,LS5 3LX,17.5,5,8,14208,My LEEDS Summer Festival - Wards H-K,LEEDS 2023 Events
 2023-06-11,91952,LS5 3LX,4.0,1,1,14208,My LEEDS Summer Festival - Wards H-K,LEEDS 2023 Events
 2023-06-11,91954,LS4 2DD,32.0,8,8,14208,My LEEDS Summer Festival - Wards H-K,LEEDS 2023 Events
@@ -472,4 +472,5 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-06-21,86732,LS2 8BY,32.933,13,15,13787,Leeds Youth Music Celebration Concert,Partner Events
 2023-06-21,86733,LS2 8BY,55.0,11,15,13787,Leeds Youth Music Celebration Concert,Partner Events
 2023-06-21,86734,LS2 8BY,90.0,18,25,13787,Leeds Youth Music Celebration Concert,Partner Events
+2023-06-22,91167,LS1 2AL,10.0,10,12,14184,Making a Stand - Volunteer Tours,LEEDS 2023 Events
 2023-06-29,86749,LS10 1NE,3.0,1,55,13785,Induction/Training Summer,

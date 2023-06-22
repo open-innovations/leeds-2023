@@ -29,6 +29,7 @@ limitations:
     title: "Related Callouts", headingLevel: 2,
     value: 2,
     description: "Total call out opportunities related to this event.",
+    link: "/metrics/callouts/",
     background: "var(--l23-cyan)"
   }) | safe }}
 
@@ -36,6 +37,7 @@ limitations:
     title: "Callout responses", headingLevel: 2,
     value: (search.data('metrics/callouts').responses_by_callout.columns.responses[1] + search.data('metrics/callouts').responses_by_callout.columns.responses[2]) | localize ,
     description: "Total call out responses for this event.",
+    link: "/metrics/callouts/",
     background: "var(--l23-yellow)"
   }) | safe }}
 

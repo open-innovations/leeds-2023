@@ -41,8 +41,8 @@ stages:
       size: 52939
     - path: data/metrics/volunteers/volunteers.csv
       hash: md5
-      md5: d1b29e1e1ffd82e514c3cf5d533e63ee
-      size: 207483
+      md5: 814d626c32f2498244d8596d3dc73c53
+      size: 207641
     - path: data/reference/leeds_wards.csv
       hash: md5
       md5: 887a42d46d34c9e966211a79f2b8a672
@@ -62,9 +62,9 @@ stages:
     outs:
     - path: docs/dashboard/community/_data/residents.csv
       hash: md5
-      md5: dbc56e49dcb3ccdbaab875bd3e4c4c51
+      md5: 05510d1a6b6d7b2c33e9e2a43b6130a1
       size: 1484
     - path: docs/dashboard/community/_data/residents_with_schools.csv
       hash: md5
-      md5: ded3feffc135c955485d69d851fa0133
+      md5: 7dfae01ccf3fe6cfc8066faa6e61fc78
       size: 1629

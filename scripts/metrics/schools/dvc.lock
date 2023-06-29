@@ -9,7 +9,7 @@ stages:
       size: 2970
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
-      md5: d8591fdd5db31341a56cf1d5db9f577f
+      md5: 89cbf3d3c882f5d83e2019f4ccb367b7
       size: 71529
     outs:
     - path: data/metrics/schools/schools_events.csv
@@ -26,7 +26,7 @@ stages:
     outs:
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
-      md5: d8591fdd5db31341a56cf1d5db9f577f
+      md5: 89cbf3d3c882f5d83e2019f4ccb367b7
       size: 71529
   prepare:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py

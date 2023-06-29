@@ -24,7 +24,7 @@
   stroke-width: 3px;
 }
 
-.chart {
+.chart, .oi-graph .line-chart {
   --colour:#eee;
   --plot-background:var(--l23-dark-blue-grey);
   & .line {
@@ -38,10 +38,16 @@ div.chart {
 .legend * + * {
   margin-top: unset;
 }
-.chart {
+.chart, .oi-graph .line-chart {
   & .legend {
     --auto-grid-min-size: 16rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--auto-grid-min-size)), 1fr))
+  }
+  & .legend-container {
+    --width: 20rem;
+    overflow: visible;
+    width: 1px;
+    height: 1px;
   }
 }

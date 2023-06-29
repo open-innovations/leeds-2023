@@ -103,19 +103,20 @@ sources:
 {{ comp.oi.charts.chart.bar({ config: {
     data: medium_count.rows,
     category: 'medium',
+    width: 800,
     series: [
       { title: 'Number of articles', value: 'count', colour: "var(--l23-yellow)" }
     ],
     legend: {
       show: true,
-      position: "top right"
+      position: "top"
     },
     axis: {
       x: {
         title: {
           label: "Number of articles"
         },
-        tickSize: 100,
+        tickSpacing: 100,
         "font-weight": oi_viz.bar.axis.x['font-weight'],
         grid: oi_viz.bar.axis.x.grid
       },
@@ -141,6 +142,7 @@ sources:
 {{ comp.oi.charts.chart.bar({ config: {
     data: monthly_count.rows,
     stacked: true,
+    width: 800,
     category: 'month',
     series: [
       { title: 'Local outlets', value: 'Local', colour: scale[0] },
@@ -151,14 +153,14 @@ sources:
     ],
     legend: {
       show: true,
-      position: "top right"
+      position: "top"
     },
     axis: {
       x: {
         title: {
           label: "Number of articles"
         },
-        tickSize: 100,
+        tickSpacing: 100,
         "font-weight": oi_viz.bar.axis.x['font-weight'],
         grid: oi_viz.bar.axis.x.grid
       },

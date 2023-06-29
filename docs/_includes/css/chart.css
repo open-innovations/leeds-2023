@@ -24,20 +24,45 @@
   stroke-width: 3px;
 }
 
-.chart, .oi-graph .line-chart {
+.chart, .oi-chart, .oi-graph .line-chart {
   --colour:#eee;
   --plot-background:var(--l23-dark-blue-grey);
+  background: var(--plot-background);
   & .line {
     stroke-width: 2px;
   }
 }
-div.chart {
+div.chart, div.oi-chart {
   padding: 1rem;
 }
 
-.legend * + * {
+.chart text, .oi-chart text {
+  fill: var(--colour);
+  stroke: none;
+}
+
+.legend * + *, .oi-legend * + * {
   margin-top: unset;
 }
+
+.oi-legend-inner .oi-legend-label {
+	color: var(--colour);
+}
+.oi-legend-inner i.oi-legend-icon {
+	height: 0.5em;
+	margin-top: 0.4em;
+	border-radius: 100%;
+}
+.oi-legend-inner .oi-legend-item.oi-series-lock .oi-legend-label, .oi-legend-inner .oi-legend-item:hover .oi-legend-label {
+	color: black;
+}
+.oi-chart .oi-legend-inner {
+	--auto-grid-min-size: 16rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--auto-grid-min-size)), 1fr));
+	text-align: left;
+}
+
 .chart, .oi-graph .line-chart {
   & .legend {
     --auto-grid-min-size: 16rem;

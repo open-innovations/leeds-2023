@@ -9,22 +9,22 @@ stages:
       size: 1067
     - path: working/manual/sprout/
       hash: md5
-      md5: 626c0a257fa968cce9ce7138d836510a.dir
-      size: 838883
+      md5: 9bbc3bd91618d80c0957b610c16ad2de.dir
+      size: 845662
       nfiles: 1
     outs:
     - path: data/metrics/social/
       hash: md5
-      md5: 4041c1c7e67f6a23df89ca1c607d3f21.dir
-      size: 242797
+      md5: 952dde34b09917567c12e8e8785cf98e.dir
+      size: 244857
       nfiles: 4
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/social/prepare.py
     deps:
     - path: data/metrics/social/
       hash: md5
-      md5: 4041c1c7e67f6a23df89ca1c607d3f21.dir
-      size: 242797
+      md5: 952dde34b09917567c12e8e8785cf98e.dir
+      size: 244857
       nfiles: 4
     - path: scripts/metrics/social/combine.py
       hash: md5
@@ -45,6 +45,6 @@ stages:
     outs:
     - path: docs/metrics/social-media/_data/
       hash: md5
-      md5: 4093ed475a44e8cead78b76d1d31f8ae.dir
-      size: 11000
+      md5: 9e784a22419719e64d56b8bf233650bd.dir
+      size: 11150
       nfiles: 6

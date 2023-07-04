@@ -9,7 +9,7 @@ import metas from "lume/plugins/metas.ts";
 import postcss from "lume/plugins/postcss.ts";
 import colorFunction from "npm:postcss-color-function";
 
-import oiCharts from 'oi-lume-charts/mod.ts';
+import oiViz from 'oi-lume-viz/mod.ts';
 import csvLoader from 'oi-lume-utils/loaders/csv-loader.ts';
 import autoDependency from 'oi-lume-utils/processors/auto-dependency.ts';
 
@@ -70,7 +70,7 @@ site.use(esbuild({
   },
 }));
 site.use(date());
-site.use(oiCharts({
+site.use(oiViz({
   assetPath: '/assets/oi',
   componentNamespace: 'oi.charts',
 }));

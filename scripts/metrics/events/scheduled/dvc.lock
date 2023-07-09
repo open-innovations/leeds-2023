@@ -14,7 +14,7 @@ stages:
     outs:
     - path: working/metrics/events/all.csv
       hash: md5
-      md5: d600a6ef0f5482b41abb23c2d49f37af
+      md5: ffe9abdfdff24914f79d5ef28cddf6dd
       size: 280556
   transform:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/transform.py
@@ -30,19 +30,19 @@ stages:
       size: 507
     - path: working/metrics/events/all.csv
       hash: md5
-      md5: d600a6ef0f5482b41abb23c2d49f37af
+      md5: ffe9abdfdff24914f79d5ef28cddf6dd
       size: 280556
     outs:
     - path: data/metrics/events/master/all.csv
       hash: md5
-      md5: abf331fc7a5908fa53e062a5276b1010
+      md5: b12bceaa4b2028981ab2979e66ced9eb
       size: 280548
   prepare:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/prepare.py
     deps:
     - path: data/metrics/events/master/all.csv
       hash: md5
-      md5: abf331fc7a5908fa53e062a5276b1010
+      md5: b12bceaa4b2028981ab2979e66ced9eb
       size: 280548
     - path: scripts/metrics/events/scheduled/prepare.py
       hash: md5

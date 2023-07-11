@@ -257,7 +257,7 @@
       "name": "status",
       "categories": [
         "5b ATTENDED INDUCTION",
-        "Deactivated",
+        "Deactivated before training",
         "FROZEN ACCOUNTS CP3",
         "FROZEN ACCOUNTS CP4",
         "FROZEN ACCOUNTS CP6",
@@ -277,43 +277,43 @@
       "value_distribution": [
         {
           "value": "15ca6dfb76dff8a70bb2",
-          "count": 0.000393
-        },
-        {
-          "value": "b88e8b303a322d05d044",
-          "count": 0.000393
-        },
-        {
-          "value": "da9a80b1b9f3c5d05461",
-          "count": 0.000393
-        },
-        {
-          "value": "e80ba6894373d211237a",
-          "count": 0.000393
-        },
-        {
-          "value": "14f7496a315fee6feb3c",
-          "count": 0.000393
-        },
-        {
-          "value": "25b2b15482de74a17dfd",
-          "count": 0.000393
-        },
-        {
-          "value": "812b868c940e7b525d4b",
-          "count": 0.000393
-        },
-        {
-          "value": "82872dd4f722a12f1f63",
-          "count": 0.000393
-        },
-        {
-          "value": "8d9dc34e3300f14e2e29",
-          "count": 0.000393
+          "count": 0.000392
         },
         {
           "value": "37e512858f065dfb92f1",
-          "count": 0.000393
+          "count": 0.000392
+        },
+        {
+          "value": "e80ba6894373d211237a",
+          "count": 0.000392
+        },
+        {
+          "value": "14f7496a315fee6feb3c",
+          "count": 0.000392
+        },
+        {
+          "value": "25b2b15482de74a17dfd",
+          "count": 0.000392
+        },
+        {
+          "value": "812b868c940e7b525d4b",
+          "count": 0.000392
+        },
+        {
+          "value": "82872dd4f722a12f1f63",
+          "count": 0.000392
+        },
+        {
+          "value": "8d9dc34e3300f14e2e29",
+          "count": 0.000392
+        },
+        {
+          "value": "b88e8b303a322d05d044",
+          "count": 0.000392
+        },
+        {
+          "value": "41bc1fbaeb5d7cdb6e69",
+          "count": 0.000392
         }
       ]
     },
@@ -323,7 +323,7 @@
       "value_distribution": [
         {
           "value": "-0.0 to 0.1",
-          "count": 0.285826
+          "count": 0.285714
         },
         {
           "value": "0.1 to 0.2",
@@ -359,7 +359,7 @@
         },
         {
           "value": "0.9 to 1.0",
-          "count": 0.714174
+          "count": 0.714286
         }
       ]
     },
@@ -369,43 +369,43 @@
       "value_distribution": [
         {
           "value": "2022-09-09",
-          "count": 0.019631
+          "count": 0.019623
         },
         {
           "value": "2023-01-08",
-          "count": 0.012171
+          "count": 0.012166
         },
         {
           "value": "2023-02-10",
-          "count": 0.010993
-        },
-        {
-          "value": "2023-05-26",
-          "count": 0.010993
-        },
-        {
-          "value": "2022-10-19",
-          "count": 0.010993
+          "count": 0.010989
         },
         {
           "value": "2022-08-08",
-          "count": 0.010993
+          "count": 0.010989
+        },
+        {
+          "value": "2023-05-26",
+          "count": 0.010989
+        },
+        {
+          "value": "2022-10-19",
+          "count": 0.010989
         },
         {
           "value": "2023-05-30",
-          "count": 0.010601
+          "count": 0.010597
         },
         {
           "value": "2023-01-09",
-          "count": 0.010208
+          "count": 0.010204
         },
         {
           "value": "2023-03-09",
-          "count": 0.010208
+          "count": 0.010204
         },
         {
           "value": "2023-05-31",
-          "count": 0.009423
+          "count": 0.009419
         }
       ]
     },
@@ -415,43 +415,43 @@
       "value_distribution": [
         {
           "value": "2023-03-16",
-          "count": 0.094049
+          "count": 0.093999
         },
         {
           "value": "2023-04-25",
-          "count": 0.060043
+          "count": 0.060011
         },
         {
           "value": "2022-09-09",
-          "count": 0.052072
+          "count": 0.052045
         },
         {
           "value": "2023-01-09",
-          "count": 0.032944
+          "count": 0.032926
         },
         {
           "value": "2022-09-16",
-          "count": 0.026036
+          "count": 0.026022
         },
         {
           "value": "2023-02-20",
-          "count": 0.024973
+          "count": 0.02496
         },
         {
           "value": "2023-03-20",
-          "count": 0.022317
+          "count": 0.022305
         },
         {
           "value": "2023-05-09",
-          "count": 0.01966
+          "count": 0.019649
         },
         {
           "value": "2022-09-27",
-          "count": 0.017535
+          "count": 0.017525
         },
         {
           "value": "2022-09-26",
-          "count": 0.016472
+          "count": 0.016463
         }
       ]
     },

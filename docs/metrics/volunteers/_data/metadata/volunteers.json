@@ -257,6 +257,8 @@
       "name": "status",
       "categories": [
         "5b ATTENDED INDUCTION",
+        "5c Didn't Attend Induction",
+        "Deactivated after training",
         "Deactivated before training",
         "FROZEN ACCOUNTS CP3",
         "FROZEN ACCOUNTS CP4",
@@ -461,43 +463,43 @@
       "value_distribution": [
         {
           "value": "2022-11-26",
-          "count": 0.246723
+          "count": 0.246533
         },
         {
           "value": "2023-03-20",
-          "count": 0.219738
+          "count": 0.219569
         },
         {
           "value": "2023-04-25",
-          "count": 0.078643
+          "count": 0.078582
         },
         {
           "value": "2023-06-10",
-          "count": 0.038551
+          "count": 0.038521
         },
         {
           "value": "2023-03-22",
-          "count": 0.036237
+          "count": 0.03621
         },
         {
           "value": "2022-10-15",
-          "count": 0.034695
+          "count": 0.034669
         },
         {
           "value": "2023-06-08",
-          "count": 0.028527
+          "count": 0.028505
         },
         {
           "value": "2023-05-18",
-          "count": 0.027756
+          "count": 0.027735
         },
         {
           "value": "2023-06-14",
-          "count": 0.026985
+          "count": 0.026965
         },
         {
           "value": "2023-01-11",
-          "count": 0.026214
+          "count": 0.026194
         }
       ]
     },
@@ -507,43 +509,43 @@
       "value_distribution": [
         {
           "value": "2023-04-25",
-          "count": 0.339002
+          "count": 0.337472
         },
         {
           "value": "2022-12-17",
-          "count": 0.253968
+          "count": 0.252822
         },
         {
           "value": "2023-02-06",
-          "count": 0.10771
+          "count": 0.107223
         },
         {
           "value": "2023-07-03",
-          "count": 0.099773
+          "count": 0.099323
         },
         {
           "value": "2023-06-30",
-          "count": 0.047619
+          "count": 0.047404
         },
         {
           "value": "2023-07-08",
-          "count": 0.047619
+          "count": 0.047404
         },
         {
           "value": "2022-11-05",
-          "count": 0.039683
+          "count": 0.039503
         },
         {
           "value": "2023-07-05",
-          "count": 0.03288
+          "count": 0.032731
         },
         {
           "value": "2023-05-09",
-          "count": 0.014739
+          "count": 0.014673
         },
         {
-          "value": "2023-05-18",
-          "count": 0.002268
+          "value": "2023-07-11",
+          "count": 0.004515
         }
       ]
     },

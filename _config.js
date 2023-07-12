@@ -59,7 +59,7 @@ site.use(esbuild({
     keepNames: false,
     platform: "browser",
     target: "es6",
-    incremental: true,
+    // incremental: true,
     treeShaking: true,
     logOverride: {
       // This surpresses a warning caused by mermaid. Ideally, I'd like to

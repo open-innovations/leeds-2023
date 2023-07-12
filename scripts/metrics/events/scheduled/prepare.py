@@ -61,4 +61,4 @@ if __name__ == '__main__':
     from transform import ALL_EVENTS
     events = pd.read_csv(ALL_EVENTS, parse_dates=['start_date', 'end_date'])
 
-    events.pipe(prepare_project, name='05 - The Barn', key='the_barn')
+    events.pipe(prepare_project, name='05 - The Barn', key='the-barn')

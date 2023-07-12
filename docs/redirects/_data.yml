@@ -1,3 +1,7 @@
 redirects:
   - url: /metrics/media_coverage/
     redirectTarget: ~/metrics/media_coverage/index.njk
+  - url: /metrics/community-grants/
+    redirectTarget: ~/metrics/events/my-leeds-2023/index.njk
+  - url: /metrics/the_barn/
+    redirectTarget: ~/metrics/events/the-barn/index.njk

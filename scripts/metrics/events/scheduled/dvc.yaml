@@ -12,6 +12,7 @@ stages:
   transform:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/transform.py
     wdir: ../../../..
+    always_changed: true
     deps:
       - scripts/metrics/events/scheduled/transform.py
       - working/metrics/events/all.csv

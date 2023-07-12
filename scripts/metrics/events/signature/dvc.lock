@@ -1,0 +1,39 @@
+schema: '2.0'
+stages:
+  prepare@my-leeds-2023:
+    cmd: papermill my-leeds-2023.ipynb ../../../../working/output/my-leeds-2023.ipynb
+    deps:
+    - path: ../../../../data/metrics/events/master/all.csv
+      hash: md5
+      md5: 6e4f97648c776cd1067d64bf10685b9d
+      size: 199612
+    - path: ../../../../lib/util/
+      hash: md5
+      md5: a03236064cb8236b2d0029ab0a14b9db.dir
+      size: 2267
+      nfiles: 4
+    - path: my-leeds-2023.ipynb
+      hash: md5
+      md5: 6fad985f99afa6b8df5e1a24c01114cd
+      size: 13487
+    outs:
+    - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/by_month.csv
+      hash: md5
+      md5: 27fca919e87fbafff4117f616d4dd2f5
+      size: 202
+    - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/by_ward.csv
+      hash: md5
+      md5: 8e8f977b94fb6eb188f4deb25d83d65d
+      size: 318
+    - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/by_week.csv
+      hash: md5
+      md5: 1b3f7720d6158c0f03a8759aa442808a
+      size: 532
+    - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/headlines.json
+      hash: md5
+      md5: 30771cac0aa8f4aa130b863e06f63108
+      size: 42
+    - path: ../../../../working/output/my-leeds-2023.ipynb
+      hash: md5
+      md5: 62983a6dbc65572308e4d508d480661a
+      size: 22304

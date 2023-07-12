@@ -14,5 +14,7 @@ if __name__ == '__main__':
     from extract import ALL_EVENTS as ALL_EVENTS_RAW
     data = pd.read_csv(ALL_EVENTS_RAW).apply(literal_converter)
     data = data.rename(columns=lambda x: re.sub(r'[\s\-/]+', '_', x.lower().strip()))
+    data.start_date = pd.to_datetime(data.start_date)
+    data = data[data.start_date < pd.Timestamp.now()]
 
     data.to_csv(ALL_EVENTS, index=False)

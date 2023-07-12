@@ -1,0 +1,28 @@
+vars:
+  - top: ../../../..
+stages:
+  prepare:
+    foreach:
+      - my-leeds-2023
+    do:
+      cmd: papermill ${item}.ipynb ${top}/working/output/${item}.ipynb
+      deps:
+        - ${item}.ipynb
+        - ${top}/lib/util/
+        - ${top}/data/metrics/events/master/all.csv
+      outs:
+        - ${top}/working/output/${item}.ipynb:
+            persist: false
+            cache: false
+        - ${top}/docs/metrics/events/${item}/_data/events/headlines.json:
+            persist: false
+            cache: false
+        - ${top}/docs/metrics/events/${item}/_data/events/by_month.csv:
+            persist: false
+            cache: false
+        - ${top}/docs/metrics/events/${item}/_data/events/by_ward.csv:
+            persist: false
+            cache: false
+        - ${top}/docs/metrics/events/${item}/_data/events/by_week.csv:
+            persist: false
+            cache: false

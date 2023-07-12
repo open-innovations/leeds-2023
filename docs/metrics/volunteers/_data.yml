@@ -1,6 +1,6 @@
 key_metrics:
   hours:
     title: Volunteering hours
-    ref: shifts.summary.volunteer_hours.total_events
-    description: Total hours volunteered for LEEDS 2023 and Partner events.
-    colour: var(--l23-pink)
+    ref: shifts.summary.volunteer_hours.total
+    description: Total hours volunteered for the LEEDS 2023 volunteering programme
+    colour: var(--l23-magenta)

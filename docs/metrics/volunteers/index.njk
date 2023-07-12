@@ -57,16 +57,24 @@ major_tick: 4
 {% comp 'grid.' + headline_grid_style, { min_width: '20rem' } %}
   {{ comp.metric.headline({
     title: "Volunteer Hours (Leeds 2023 events)", headingLevel: 3,
-    value: shifts.summary.volunteer_hours.leeds_2023_events | localize,
+    value: shifts.summary.volunteer_hours.total | localize,
     description: "The number of voluntering hours on Leeds 2023 events",
     background: "var(--l23-magenta)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Volunteer Hours (Leeds 2023 events)", headingLevel: 3,
+    value: shifts.summary.volunteer_hours.leeds_2023_events | localize,
+    description: "The number of voluntering hours on Leeds 2023 events",
+    background: "var(--l23-cyan)"
   }) | safe }}
 
   {{ comp.metric.headline({
     title: "Volunteer Hours (Partner events)", headingLevel: 3,
     value: shifts.summary.volunteer_hours.partner_events | localize,
     description: "The number of voluntering hours on Partner events",
-    background: "var(--l23-cyan)"
+    background: "var(--l23-dark-cyan)",
+    colour: "white"
   }) | safe }}
 
 
@@ -88,8 +96,8 @@ major_tick: 4
 <h2>Volunteering Shifts</h2>
 
 <p>
-  The shifts and hours figures below include volunteering activity on LEEDS 2023 and Partner events.
-  There is more activity in the volunteering programme, including induction and training events.
+  The shifts and hours figures below include volunteering activity on LEEDS 2023 and Partner events,
+  and for the volunteering programme itself, including induction and training events.
 </p>
 
 {% comp 'grid.autogrid', { min_width: '40rem' } %}
@@ -109,10 +117,10 @@ major_tick: 4
     yAxis: {
       title: 'Volunteer Hours',
       titleOffset: 3,
-      majorTick: 250
+      majorTick: 1000
     },
     plotArea: {
-      yMax: shifts.by_week.columns.cumulative_volunteer_hours | last + 1 | round(-2, 'ceil'),
+      yMax: shifts.summary.volunteer_hours.total | round(-3, 'ceil'),
       colour: 'var(--l23-dark-blue-grey)'
     },
     padding: {
@@ -147,10 +155,10 @@ major_tick: 4
     yAxis: {
       title: 'Volunteer Shifts',
       titleOffset: 3,
-      majorTick: 100
+      majorTick: 500
     },
     plotArea: {
-      yMax: shifts.by_week.columns.cumulative_volunteer_shifts | last + 1 | round(-2, 'ceil'),
+      yMax: shifts.summary.volunteer_shifts.total | round(-3, 'ceil'),
       colour: 'var(--l23-dark-blue-grey)'
     },
     padding: {

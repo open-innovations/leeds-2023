@@ -30,17 +30,27 @@ def prepare_shift_data():
         lambda x: x.lower().replace(' ', '_')
       )
 
-    grouped = shifts[~shifts.event_type.isin([
-        'volunteer_event_programme'
-    ])][[
-        'date',
-        'volunteer_shifts',
-        'volunteer_hours',
-    ]].groupby('date')
+    grouped = pd.concat([
+        shifts[[
+            'date',
+            'volunteer_shifts',
+            'volunteer_hours',
+        ]],
+        shifts[~shifts.event_type.isin(['volunteer_event_programme'])][[
+            'date',
+            'volunteer_shifts',
+            'volunteer_hours',
+        ]].rename(columns={
+            'volunteer_shifts': 'volunteer_event_shifts',
+            'volunteer_hours': 'volunteer_event_hours',
+        })
+    ]).groupby('date')
 
     by_week = grouped.sum().resample('W-FRI').sum().round().astype(int)
     by_week['cumulative_volunteer_shifts'] = by_week.volunteer_shifts.cumsum()
     by_week['cumulative_volunteer_hours'] = by_week.volunteer_hours.cumsum()
+    by_week['cumulative_volunteer_event_shifts'] = by_week.volunteer_event_shifts.cumsum()
+    by_week['cumulative_volunteer_event_hours'] = by_week.volunteer_event_hours.cumsum()
     by_week.to_csv(os.path.join(VIEW_DIR, 'shifts', 'by_week.csv'))
 
     summary = shifts[[

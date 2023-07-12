@@ -34,8 +34,8 @@ stages:
       size: 214285
     - path: scripts/metrics/volunteers/prepare.py
       hash: md5
-      md5: 34b31bc510a6d2d1519213c3ee8c7bd8
-      size: 2139
+      md5: 38d60ff5091c1001e9d290e96ee85e36
+      size: 2602
     outs:
     - path: docs/metrics/volunteers/_data/by_local_authority.csv
       hash: md5
@@ -55,8 +55,8 @@ stages:
       size: 372
     - path: docs/metrics/volunteers/_data/shifts/by_week.csv
       hash: md5
-      md5: fc68cf420ee20fa06c656a8790a489cd
-      size: 970
+      md5: 592cc3f6ad88c670d01d90c60a4145d2
+      size: 1806
     - path: docs/metrics/volunteers/_data/shifts/summary.json
       hash: md5
       md5: 68a7fa03ac5559e7107144414bd9a44a

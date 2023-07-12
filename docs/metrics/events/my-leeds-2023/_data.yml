@@ -1,6 +1,6 @@
 key_metrics:
-  hours:
+  grant_apps:
     title: Number of Applications Made
     ref: headline.total_responses
-    description: Total number of Community Grant Applications.
+    description: Total applciations for My LEEDS 2023 Summer community grants
     colour: var(--l23-pink) 

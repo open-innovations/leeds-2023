@@ -28,15 +28,15 @@ stages:
       - scripts/metrics/community-grants/prepare.py
       - data/metrics/community-grants/
     outs:
-      - docs/metrics/community-grants/_data/headline.json:
+      - docs/metrics/events/my-leeds-2023/_data/headline.json:
           persist: false
           cache: false
-      - docs/metrics/community-grants/_data/responses_by_la.csv:
+      - docs/metrics/events/my-leeds-2023/_data/responses_by_la.csv:
           persist: false
           cache: false
-      - docs/metrics/community-grants/_data/responses_by_ward.csv:
+      - docs/metrics/events/my-leeds-2023/_data/responses_by_ward.csv:
           persist: false
           cache: false
-      - docs/metrics/community-grants/_data/responses_by_week.csv:
+      - docs/metrics/events/my-leeds-2023/_data/responses_by_week.csv:
           persist: false
           cache: false

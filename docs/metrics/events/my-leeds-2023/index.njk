@@ -1,6 +1,6 @@
 ---
-title: Community Grants
-summary: Community grant applications
+title: My LEEDS 2023
+summary: Data about the My LEEDS 2023 events.
 tags:
   - main
 work_in_progress: true
@@ -14,20 +14,20 @@ sources:
 
 {% comp 'grid.' + headline_grid_style, {min_width: '25rem'} %}
 {{ comp.metric.headline({
-  title: "My Leeds Summer Community Grant Applications", headingLevel: 3,
+  title: "My LEEDS 2023 Summer Community Grant Applications", headingLevel: 3,
   value: headline.my_leeds_grant_app | localize,
   description: "Total number of Community Grant Applications.",
   background: "var(--l23-cyan)"
 }) | safe }}
 {{ comp.metric.headline({
-  title: "My Leeds Schools Grant Applications", headingLevel: 3,
+  title: "My LEEDS 2023 Schools Grant Applications", headingLevel: 3,
   value: headline.my_leeds_schools_grants_application | localize,
   description: "Total number of Schools Grant Applications.",
   background: "var(--l23-cyan)"
 }) | safe }}
 {% endcomp %}
 
-<h2>My Leeds Summer Community Grant</h2>
+<h2>My LEEDS 2023 Summer Community Grant</h2>
 {% comp 'grid.autogrid', {min_width: '30rem'} %}
 {% comp 'layout.figure', {max_width: '40rem'} %}
 <h3>Applications by ward</h3>
@@ -69,7 +69,7 @@ sources:
 {% endcomp %}
 
 
-<h2>My Leeds Schools Grant Applications</h2>
+<h2>My LEEDS Schools Grant Applications</h2>
 {% comp 'grid.autogrid', {min_width: '30rem'} %}
 {% comp 'layout.figure', {max_width: '40rem'} %}
 <h3>Applications by ward</h3>

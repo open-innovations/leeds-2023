@@ -32,6 +32,7 @@ limitations:
 sources:
   - data/metrics/volunteers/
 published_link: https://datamillnorth.org/dataset/leeds-2023-volunteers
+major_tick: 4
 ---
 {% from 'macros.njk' import dateFormatter %}
 {%- macro popupPreApplication(params) -%}
@@ -50,12 +51,6 @@ published_link: https://datamillnorth.org/dataset/leeds-2023-volunteers
   {{ params.label }}</br>
   {{ params.value }} volunteers confirmed
 {%- endmacro -%}
-
-<p>
-</p>
-
-<p>
-</p>
 
 <h2>Headlines</h2>
 
@@ -108,7 +103,7 @@ published_link: https://datamillnorth.org/dataset/leeds-2023-volunteers
       title: 'Week ending (Friday)',
       titleOffset: 4,
       labelRotate: 35,
-      majorTick: 1,
+      majorTick: major_tick,
       formatter: dateFormatter
     },
     yAxis: {
@@ -146,7 +141,7 @@ published_link: https://datamillnorth.org/dataset/leeds-2023-volunteers
       title: 'Week ending (Friday)',
       titleOffset: 4,
       labelRotate: 35,
-      majorTick: 1,
+      majorTick: major_tick,
       formatter: dateFormatter
     },
     yAxis: {
@@ -265,7 +260,7 @@ published_link: https://datamillnorth.org/dataset/leeds-2023-volunteers
     title: 'Week ending (Friday)',
     titleOffset: 4,
     labelRotate: 35,
-    majorTick: 2,
+    majorTick: major_tick,
     formatter: dateFormatter
   },
   yAxis: {

@@ -14,8 +14,8 @@ stages:
       nfiles: 4
     - path: my-leeds-2023.ipynb
       hash: md5
-      md5: 6fad985f99afa6b8df5e1a24c01114cd
-      size: 13487
+      md5: 1fb2486915fa3aad39f98272371b44f5
+      size: 5879
     outs:
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/by_month.csv
       hash: md5
@@ -31,12 +31,12 @@ stages:
       size: 532
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/headlines.json
       hash: md5
-      md5: 30771cac0aa8f4aa130b863e06f63108
-      size: 42
+      md5: 24474cd9f07753d2347f09fbb0305ad9
+      size: 58
     - path: ../../../../working/output/my-leeds-2023.ipynb
       hash: md5
-      md5: b6f5a66cbb5f0f27a4b62ca84192cd88
-      size: 22307
+      md5: cec2ef23d9ef9e9aa5e78fc09f5de150
+      size: 22401
   prepare@the-barn:
     cmd: papermill the-barn.ipynb ../../../../working/output/the-barn.ipynb
     deps:

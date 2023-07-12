@@ -19,8 +19,8 @@ limitations:
 
 {% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
   {{ comp.metric.headline({
-    title: "Number of activities", headingLevel: 2,
-    value: by_ward.columns.count | sum | localize,
+    title: "Number of events", headingLevel: 2,
+    value: events.headlines.total_events | localize,
     description: "Total activities held as part of this Signature event.",
     background: "var(--l23-magenta)"
   }) | safe }}
@@ -42,12 +42,13 @@ limitations:
   }) | safe }}
 
     {{ comp.metric.headline({
-    title: "Total attendances", headingLevel: 2,
-    value: by_date.columns.cumulative_attendances_in_person | last + by_date.columns.cumulative_attendances_online | last ,
+    title: "Total audience", headingLevel: 2,
+    value: events.headlines.total_audience | localize ,
     description: "Total number of attendances online and in person.",
     background: "var(--l23-cyan)"
   }) | safe }}
 
+  {# TODO store as data #}
   {{ comp.metric.headline({
     title: "Dreambuilders workshops", headingLevel: 2,
     value: 14,
@@ -55,7 +56,8 @@ limitations:
     background: "var(--l23-magenta)"
   }) | safe }}
 
-    {{ comp.metric.headline({
+  {# TODO store as data #}
+  {{ comp.metric.headline({
     title: "School Days", headingLevel: 2,
     value: 4,
     description: "Number of School Days held as part of this Signature event.",
@@ -67,17 +69,16 @@ limitations:
 {% comp 'grid.' + headline_grid_style, { min_width: '30rem' } %}
 
 {% comp 'layout.figure', {max_width: '70rem'} %}
-<h3>Number of events and activities by month</h3>
+<h3>Number of public events by week</h3>
   {{ comp.oi.charts.graph.line({ config: {
-    categories: by_date.columns.start_date,
+    categories: events.by_week.columns.week_ending,
     width: 25,
     height: 14,
     text: { colour: '#eee' },
     xAxis: {
-      title: 'Start date',
+      title: 'Week ending',
       titleOffset: 4,
       labelRotate: 35,
-      majorTick: 2,
       formatter: dateFormatter
     },
     yAxis: {
@@ -86,7 +87,7 @@ limitations:
       majorTick: 5
     },
     plotArea: {
-      yMax: 70,
+      yMax: events.headlines.total_events | round(-1, 'ceil'),
       colour: 'var(--l23-dark-blue-grey)'
     },
     padding: {
@@ -96,7 +97,7 @@ limitations:
     series: [
       {
         id: "events", label: "Number of events",
-        yValues: by_date.columns.cumulative_events,
+        yValues: events.by_week.columns.cumulative_events,
         colour: 'var(--l23-magenta)',
         markerOptions: { s: 5 }
       }
@@ -107,16 +108,17 @@ limitations:
   } }) | safe }}
 {% endcomp %}
 
-
+{# 
 {% comp 'layout.figure', {max_width: '30rem'} %}
 <h3>Events by ward</h3>
 {{ comp.charts.hexmap({
     hexjson: hex.wards_leeds,
-    data: by_ward.rows,
+    data: events.by_ward.rows,
     matchKey: 'ward_code',
-    valueProp: 'count',
+    valueProp: 'events',
     bgColour: '#ddd',
       colourScale: colours.scales.cyan
   }) | safe }}
 {% endcomp %}
+#}
 {% endcomp %}

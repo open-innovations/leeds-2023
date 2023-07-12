@@ -1,0 +1,5 @@
+events:
+  title: Number of public events
+  ref: events.headlines.total_events
+  description: Number of public events run at The Barn
+  colour: var(--l23-pink) 

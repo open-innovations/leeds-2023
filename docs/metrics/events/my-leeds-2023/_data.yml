@@ -1,6 +1,11 @@
 key_metrics:
+  events_in_series:
+    title: Events in My LEEDS 2023 series
+    ref: events.headlines.total_events
+    description: Total activities held as part of My LEEDS 2023
+    colour: --l23-magenta
   grant_apps:
-    title: Number of Applications Made
+    title: Summer community grants applications
     ref: headline.total_responses
     description: Total applciations for My LEEDS 2023 Summer community grants
-    colour: var(--l23-pink) 
+    colour: --l23-pink

@@ -61,6 +61,7 @@ layout: layouts/default.njk
   {% endcomp %}
 
   <!-- Some metrics -->
+  {{ get_key_metrics_for_page("metrics/events/my-leeds-2023/") }}
   {{ get_key_metrics_for_page("metrics/volunteers/") }}
 
   {{ comp.metric.headline({

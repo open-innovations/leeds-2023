@@ -25,7 +25,7 @@ stages:
     wdir: ../../..
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/transform.py
     always_changed: true
-    frozen: true
+    frozen: false
     deps:
       - scripts/metrics/schools/transform.py
       - working/metrics/airtable/schools_events.csv

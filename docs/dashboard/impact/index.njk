@@ -51,14 +51,14 @@ limitations:
       
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/events/partner' } %}
     {% call checkToggle('Partner events held') -%}
-      {{ paneTitle('Partner events held') }}
+      {{ paneTitle('Partner events') }}
         {{ comp.dashboard.impact.big_number({ number: search.data('metrics/events/partner').by_ward.columns.events | sum | localize }) | safe }}
       {%- endcall %}
     {% endcomp %}
 
     {% call checkToggle('Promote events held') -%}
     {% comp 'dashboard.impact.panel', {bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/events/promote' }%}
-      {{ paneTitle('Promote events held') }}
+      {{ paneTitle('Promote events') }}
       {{ comp.dashboard.impact.big_number({ number: search.data('metrics/events/promote').by_ward.columns.events | sum | localize }) | safe }}
     {% endcomp %}
       {%- endcall %}

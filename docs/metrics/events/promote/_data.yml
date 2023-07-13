@@ -1,0 +1,6 @@
+key_metrics:
+  partner_events:
+    title: Promote events
+    ref: headlines.total_event_instances
+    description: Total Promoted event instances.
+    colour: --l23-magenta

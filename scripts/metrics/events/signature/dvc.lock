@@ -5,17 +5,21 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: 6e4f97648c776cd1067d64bf10685b9d
-      size: 199612
+      md5: 05c54f3c146d5ca268f48ff943af840a
+      size: 199819
     - path: ../../../../lib/util/
       hash: md5
       md5: a03236064cb8236b2d0029ab0a14b9db.dir
       size: 2267
       nfiles: 4
+    - path: events.py
+      hash: md5
+      md5: 3e1da1e44223e0473e85b336ca823169
+      size: 4102
     - path: my-leeds-2023.ipynb
       hash: md5
-      md5: 1fb2486915fa3aad39f98272371b44f5
-      size: 5879
+      md5: a30b90f0319bb402f87a539823396e70
+      size: 14230
     outs:
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/by_month.csv
       hash: md5
@@ -35,20 +39,24 @@ stages:
       size: 58
     - path: ../../../../working/output/my-leeds-2023.ipynb
       hash: md5
-      md5: cec2ef23d9ef9e9aa5e78fc09f5de150
-      size: 22401
+      md5: 1f846593d5b4c92520db1a91a6163c90
+      size: 19012
   prepare@the-barn:
     cmd: papermill the-barn.ipynb ../../../../working/output/the-barn.ipynb
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: 6e4f97648c776cd1067d64bf10685b9d
-      size: 199612
+      md5: 05c54f3c146d5ca268f48ff943af840a
+      size: 199819
     - path: ../../../../lib/util/
       hash: md5
       md5: a03236064cb8236b2d0029ab0a14b9db.dir
       size: 2267
       nfiles: 4
+    - path: events.py
+      hash: md5
+      md5: 3e1da1e44223e0473e85b336ca823169
+      size: 4102
     - path: the-barn.ipynb
       hash: md5
       md5: dc05430a6ef3d7b8bdc279344afca1ce
@@ -72,5 +80,5 @@ stages:
       size: 41
     - path: ../../../../working/output/the-barn.ipynb
       hash: md5
-      md5: a5b1610a3662701489c70202d538e95b
-      size: 15396
+      md5: e0583b229f168c03f448ed22f4d9d4ba
+      size: 15398

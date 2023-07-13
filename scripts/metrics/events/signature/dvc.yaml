@@ -9,6 +9,7 @@ stages:
       cmd: papermill ${item}.ipynb ${top}/working/output/${item}.ipynb
       deps:
         - ${item}.ipynb
+        - events.py
         - ${top}/lib/util/
         - ${top}/data/metrics/events/master/all.csv
       outs:

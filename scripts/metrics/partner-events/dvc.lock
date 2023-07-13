@@ -5,50 +5,56 @@ stages:
     deps:
     - path: scripts/metrics/partner-events/extract.py
       hash: md5
-      md5: c01bed454cfe108515c55281f14a03dc
-      size: 1175
+      md5: 3c4aec9097ce54c6a5917f444ab4a8fd
+      size: 1417
     outs:
     - path: working/metrics/partner-events/
       hash: md5
-      md5: 86aed2db18b37516468af52996f70ed3.dir
-      size: 2503
+      md5: 33adeac3f84297b26f008fc46b3bbcde.dir
+      size: 39528
       nfiles: 1
   transform:
-    cmd: PYTHONPATH=. python3 scripts/metrics/partner-events/transform.py
+    cmd: papermill transform.ipynb ../../../working/output/promote-events-transform.ipynb
     deps:
-    - path: scripts/metrics/partner-events/transform.py
-      md5: 798dc5b982305c7eaf83f04186d2b3ad
-      size: 1455
-    - path: working/metrics/partner-events/
+    - path: ../../../lib/util/geo.py
       hash: md5
-      md5: 86aed2db18b37516468af52996f70ed3.dir
-      size: 2503
+      md5: 7903028dccc45f860ccc6eb52881bd9a
+      size: 1614
+    - path: ../../../working/metrics/partner-events/
+      hash: md5
+      md5: 33adeac3f84297b26f008fc46b3bbcde.dir
+      size: 39528
       nfiles: 1
-    outs:
-    - path: data/metrics/events/partner-events/events.csv
+    - path: transform.ipynb
       hash: md5
-      md5: ade3c65c7d6aae0e80cb409c9e587685
-      size: 2317
+      md5: b5dbf6ad7b723f34dfd706c1be48cf95
+      size: 32905
+    outs:
+    - path: ../../../data/metrics/events/partner-events/events.csv
+      hash: md5
+      md5: 3c06f600786291a95dbbcc846226230b
+      size: 6500
   prepare:
     cmd: PYTHONPATH=. python3 scripts/metrics/partner-events/prepare.py
     deps:
     - path: data/metrics/events/partner-events/events.csv
       hash: md5
-      md5: ade3c65c7d6aae0e80cb409c9e587685
-      size: 2317
+      md5: 3c06f600786291a95dbbcc846226230b
+      size: 6500
     - path: scripts/metrics/partner-events/prepare.py
-      md5: 01650126007cf0dee0add624eeb20039
-      size: 641
+      hash: md5
+      md5: a08bf989636b2661243db829be932bc1
+      size: 1039
     outs:
     - path: docs/metrics/events/partner/_data/by_month.csv
       hash: md5
-      md5: 0034c4bc0b02674df931d1eb1555f0c2
-      size: 148
+      md5: 882077622f57f488739e33a4a984f324
+      size: 211
     - path: docs/metrics/events/partner/_data/by_ward.csv
       hash: md5
-      md5: 2618854df60054e691dddbecd24ebe90
-      size: 88
+      md5: 0c94cd7f245472318c3121afb1971011
+      size: 149
     - path: docs/metrics/events/partner/_data/headline.json
       hash: md5
-      md5: 85f956a7f6c550deedb55089a099fd43
-      size: 1004
+      md5: 2458cb5d1b7cc4f3cb4542b3a9a97d9b
+      size: 68

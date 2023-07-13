@@ -5,17 +5,22 @@ import pandas as pd
 from extract import EVENTS_SOURCE_DATA
 import scripts.util.geography as geo
 
+
 DATA_DIR = 'data/metrics/events/partner-events/'
 EVENTS_DATA = os.path.join(DATA_DIR, 'events.csv')
 
 columns = {
-    'Event name': 'name',
-    'Project name': 'project',
-    'Start date': 'start_date',
-    'End date': 'end_date',
-    'Ward (from Venue)': 'ward',
-    'ACTUAL Audience size / number of participants - IN PERSON': 'attendees_in_person',
-    'ACTUAL Audience size / number of participants - ONLINE': 'attendees_online',
+    'Event Name': 'name',
+    'Event Start Date': 'start_date',
+    'Event End Date': 'end_date',
+    'Ward': 'ward',
+    'Venue - including address': 'venue',
+    'Venue postcode': 'postcode',
+    'Pricing Policy': 'pricing',
+    'Live date': 'live_date',
+    'Partner/Promote': 'partner_promote',
+    'Is this event on Leeds Inspried?': 'on_leeds_inspired',
+    'Key Event Partner': 'key_partner',
 }
 
 

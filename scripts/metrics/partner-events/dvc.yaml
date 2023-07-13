@@ -1,3 +1,6 @@
+vars:
+  - top: ../../..
+
 # Callouts pipelines
 stages:
   extract:
@@ -11,13 +14,14 @@ stages:
           persist: false
           cache: false
   transform:
-    cmd: PYTHONPATH=. python3 scripts/metrics/partner-events/transform.py
-    wdir: ../../..
+    cmd: papermill transform.ipynb ${top}/working/output/promote-events-transform.ipynb
+    always_changed: true
     deps:
-      - scripts/metrics/partner-events/transform.py
-      - working/metrics/partner-events/
+      - transform.ipynb
+      - ${top}/lib/util/geo.py
+      - ${top}/working/metrics/partner-events/
     outs:
-      - data/metrics/events/partner-events/events.csv:
+      - ${top}/data/metrics/events/partner-events/events.csv:
           persist: false
           cache: false
   prepare:

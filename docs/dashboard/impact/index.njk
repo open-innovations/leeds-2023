@@ -74,14 +74,14 @@ limitations:
     {% call checkToggle('Community Engagement') -%}
     {% comp 'dashboard.impact.panel', { rows: 3, columns: 2, bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
     {% comp 'dashboard.impact.embedded_figure' %}
-      {{ paneTitle('Community Engagement') }}
+      {{ paneTitle('School Engagement') }}
       {{ comp.charts.hexmap({
-          hexjson: hex.wards_leeds,
-          data: search.data('dashboard/community').residents.rows,
-          matchKey: 'ward_code',
-          valueProp: 'total'
-      }) | safe }}
-        <p class="footnote">Count of resident attendances of activities in each ward.</p>
+      hexjson: hex.wards_leeds,
+      data: search.data('metrics/schools').engagements_by_ward.rows,
+      matchKey: 'ward_code',
+      valueProp: 'percent_of_schools_in_ward_engaged'
+      }) | safe }}    
+      <p class="footnote">Percentage of schools engaged per ward in Leeds.</p>
     {% endcomp %}
     {% endcomp %}
     {%- endcall %}

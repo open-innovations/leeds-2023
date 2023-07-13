@@ -441,7 +441,7 @@ sources:
 <div>
 {% comp 'layout.figure', {title: 'Total Audience'} %}
 
-{{ comp.oi.charts.graph.line({ config: {
+{{ comp.oi.viz.graph.line({ config: {
   categories: all_weekly.columns.week_ending,
   width: 25,
   height: 12,
@@ -509,7 +509,7 @@ sources:
 
 {% comp 'layout.figure', {title: 'Audience Gained'} %}
 
-{{ comp.oi.charts.graph.line({ config: {
+{{ comp.oi.viz.graph.line({ config: {
   categories: all_weekly.columns.week_ending,
   width: 25,
   height: 12,
@@ -577,7 +577,7 @@ sources:
 
 {% comp 'layout.figure', {title: 'Engagements'} %}
 
-{{ comp.oi.charts.graph.line({ config: {
+{{ comp.oi.viz.graph.line({ config: {
   categories: all_weekly.columns.week_ending,
   width: 25,
   height: 12,
@@ -644,7 +644,7 @@ sources:
 <div>
 {% comp 'layout.figure', {title: 'Impressions'} %}
 
-{{ comp.oi.charts.graph.line({ config: {
+{{ comp.oi.viz.graph.line({ config: {
   categories: all_weekly.columns.week_ending,
   width: 25,
   height: 12,

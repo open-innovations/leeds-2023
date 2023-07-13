@@ -12,6 +12,7 @@ import colorFunction from "npm:postcss-color-function";
 import oiViz from 'oi-lume-viz/mod.ts';
 import csvLoader from 'oi-lume-utils/loaders/csv-loader.ts';
 import autoDependency from 'oi-lume-utils/processors/auto-dependency.ts';
+import * as colours from './docs/_data/colours.js';
 
 import * as filters from 'local/filters.ts';
 import getFonts from 'local/oi/get-fonts.ts';
@@ -71,8 +72,26 @@ site.use(esbuild({
 }));
 site.use(date());
 site.use(oiViz({
-  assetPath: '/assets/oi',
-  componentNamespace: 'oi.charts',
+	assetPath: '/assets/oi',
+	componentNamespace: 'oi.viz',
+	"colour": {
+		"names": {
+			"mint": colours.mint,
+			"darkmint": colours.darkmint,
+			"yellow": colours.yellow,
+			"darkyellow": colours.darkyellow,
+			"magenta": colours.magenta,
+			"cyan": colours.cyan,
+			"darkcyan": colours.darkcyan,
+			"darkmagenta": colours.darkmagenta
+		},
+		"scales": {
+			"mint": colours.mint+' 0%, '+colours.darkmint+' 100%',
+			"yellow": colours.yellow+' 0%, '+colours.darkyellow+' 100%',
+			"cyan": colours.cyan+' 0%, '+colours.darkcyan+' 100%',
+			"magenta": colours.magenta+' 0%, '+colours.darkmagenta+' 100%'
+		}
+	}
 }));
 
 site.loadPages([".html"]);

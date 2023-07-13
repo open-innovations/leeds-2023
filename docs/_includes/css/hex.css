@@ -1,0 +1,7 @@
+.oi-viz.oi-map-hex { line-height: 0; }
+.oi-viz.oi-map-hex > * { line-height: 1.5em; }
+.oi-viz.oi-map-hex .data-layer .hex path {
+	transform: scale(0.9);
+	transition: transform 0.1s linear;
+}
+.oi-viz.oi-map-hex .data-layer .hex:hover path, .oi-viz.oi-map-hex .data-layer .hex.outline path { transform: unset; }

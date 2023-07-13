@@ -76,3 +76,6 @@ div.chart, div.oi-chart {
     height: 1px;
   }
 }
+.oi-viz > svg { margin-top: 0; }
+.oi-viz .tooltip h3 { margin-bottom: 0.25em; }
+.oi-viz .skip-link:focus, .oi-viz .skip-link:active { margin-top: 0!important; background: white; }

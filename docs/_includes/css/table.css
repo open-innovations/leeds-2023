@@ -18,3 +18,5 @@ th {
 td, th {
   padding: 0.5rem;
 }
+.oi-viz.oi-table { overflow-x: auto; }
+.oi-viz.oi-table > table { margin: auto; }

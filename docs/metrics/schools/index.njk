@@ -91,7 +91,7 @@ sources:
 {% comp 'grid.autogrid', {min_width: '40rem'} %}
 {% comp 'layout.figure' %}
   <h3>Number of engagements with pupils</h3>
-{{ comp.oi.charts.graph.line({ config: {
+{{ comp.oi.viz.graph.line({ config: {
     categories: engagements_by_week.columns.date,
     width: 25,
     height: 15,

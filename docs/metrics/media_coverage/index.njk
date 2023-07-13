@@ -100,7 +100,7 @@ sources:
 <div>
 <h3>Media Coverage by Medium</h3>
 {% comp 'layout.figure' %}
-{{ comp.oi.charts.chart.bar({ config: {
+{{ comp.oi.viz.chart.bar({ config: {
     data: medium_count.rows,
     category: 'medium',
     width: 800,
@@ -139,7 +139,7 @@ sources:
 {# Scale from here https://hihayk.github.io/scale/#2/2/50/80/-0/-0/100/100/ff00a6/255/0/166/white #}
 {% set scale = ['#FFCCF5', '#FF66D5', '#ff00a6', '#BF008B', '#800066'] %}
 
-{{ comp.oi.charts.chart.bar({ config: {
+{{ comp.oi.viz.chart.bar({ config: {
     data: monthly_count.rows,
     stacked: true,
     width: 800,

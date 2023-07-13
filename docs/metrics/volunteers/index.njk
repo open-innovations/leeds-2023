@@ -102,7 +102,7 @@ major_tick: 4
 
 {% comp 'grid.autogrid', { min_width: '40rem' } %}
 
-  {{ comp.oi.charts.graph.line({ config: {
+  {{ comp.oi.viz.graph.line({ config: {
     categories: shifts.by_week.columns.date,
     width: 25,
     height: 12,
@@ -140,7 +140,7 @@ major_tick: 4
     }
   } }) | safe }}
 
-  {{ comp.oi.charts.graph.line({ config: {
+  {{ comp.oi.viz.graph.line({ config: {
     categories: shifts.by_week.columns.date,
     width: 25,
     height: 12,
@@ -192,65 +192,80 @@ major_tick: 4
 </p>
   
 {% comp 'grid.autogrid', { min_width: '28rem' } %}
-  <section>
-    <h3>Applications</h3>
-    {{ comp.charts.hexmap({
-      hexjson: hex.wards_leeds,
-      data: by_ward.rows,
-      matchKey: 'ward_code',
-      valueProp: 'applied',
-      popup: popupApplied,
-	    labelKey: 'label',
-      title: 'Volunteer applications received from people in ward',
-      bgColour: '#ddd',
-      colourScale: colours.scales.mint
-    }) | safe }}
+	<section>
+		<h3>Applications</h3>
+		{{ comp.oi.viz.map.hex_cartogram({
+			"config": {
+				hexjson: hex.wards_leeds,
+				data: by_ward.rows,
+				matchKey: 'ward_code',
+				value: 'applied',
+				bgColour: '#ddd',
+				tooltip: '<h4>{{ n }}</h4><p><strong>{{ applied }}</strong> applications received</p>',
+				title: 'Volunteer applications received from people in ward',
+				label: '{{ n | slice(0,3) }}',
+				scale: 'mint'
+			}
+		}) | safe }}
+		<p>Total within Leeds: <strong>{{la_stats.applied.Leeds}}</strong><br>
+		Total outside Leeds: <strong>{{la_stats.applied.OUTSIDE_LEEDS}}</strong><br>
+		Total unknown/invalid: <strong>{{la_stats.applied.UNKNOWN + la_stats.applied.NOT_PROVIDED}}</strong></p>
+	</section>
 
-   <p>Total within Leeds: <strong>{{la_stats.applied.Leeds}}</strong><br>
-    Total outside Leeds: <strong>{{la_stats.applied.OUTSIDE_LEEDS}}</strong><br>
-    Total unknown/invalid: <strong>{{la_stats.applied.UNKNOWN + la_stats.applied.NOT_PROVIDED}}</strong></p>
-  </section>
-  <section>
-    <h3>Offers</h3>
-    {{ comp.charts.hexmap({
-      hexjson: hex.wards_leeds,
-      data: by_ward.rows,
-      matchKey: 'ward_code',
-      valueProp: 'offered',
-      popup: popupOffered,
-      title: 'Volunteer posts offered to people in ward',
-      bgColour: '#ddd',
-      colourScale: colours.scales.magenta
-    }) | safe }}
+	<section>
+		<h3>Offers</h3>
+		{{ comp.oi.viz.map.hex_cartogram({
+			"config": {
+				hexjson: hex.wards_leeds,
+				data: by_ward.rows,
+				matchKey: 'ward_code',
+				value: 'offered',
+				bgColour: '#ddd',
+				tooltip: '<h4>{{ n }}</h4><p><strong>{{ offered }}</strong> offers</p>',
+				title: 'Volunteer posts offered to people in ward',
+				label: '{{ n | slice(0,3) }}',
+				scale: 'magenta'
+			}
+		}) | safe }}
 
-    <p>Total within Leeds: <strong>{{la_stats.offered.Leeds}}</strong><br>
-    Total outside Leeds: <strong>{{la_stats.offered.OUTSIDE_LEEDS}}</strong><br>
-    Total unknown/invalid: <strong>{{la_stats.offered.UNKNOWN + la_stats.offered.NOT_PROVIDED}}</strong></p>
-  </section>
-  <section>
-    <h3>Confirmed</h3>
-    {{ comp.charts.hexmap({
-      hexjson: hex.wards_leeds,
-      data: by_ward.rows,
-      matchKey: 'ward_code',
-      valueProp: 'confirmed',
-      popup: popupConfirmed,
-      bgColour: '#ddd',
-      title: 'Confirmed volunteers by ward',
-      colourScale: colours.scales.yellow
-    }) | safe }}
+		<p>Total within Leeds: <strong>{{la_stats.offered.Leeds}}</strong><br>
+		Total outside Leeds: <strong>{{la_stats.offered.OUTSIDE_LEEDS}}</strong><br>
+		Total unknown/invalid: <strong>{{la_stats.offered.UNKNOWN + la_stats.offered.NOT_PROVIDED}}</strong></p>
+	</section>
+	<section>
+		<h3>Confirmed</h3>
+		{{ comp.oi.viz.map.hex_cartogram({
+			"config": {
+				hexjson: hex.wards_leeds,
+				data: by_ward.rows,
+				matchKey: 'ward_code',
+				value: 'confirmed',
+				bgColour: '#ddd',
+				tooltip: '<h4>{{ n }}</h4><p><strong>{{ confirmed }}</strong> volunteers confirmed</p>',
+				title: 'Confirmed volunteers by ward',
+				label: '{{ n | slice(0,3) }}',
+				scale: 'yellow'
+			}
+		}) | safe }}
 
-    <p>Total within Leeds: <strong>{{la_stats.confirmed.Leeds}}</strong><br>
-    Total outside Leeds: <strong>{{la_stats.confirmed.OUTSIDE_LEEDS}}</strong><br>
-    Total unknown/invalid: <strong>{{la_stats.confirmed.UNKNOWN + la_stats.confirmed.NOT_PROVIDED}}</strong></p>
-  </section>
+		<p>Total within Leeds: <strong>{{la_stats.confirmed.Leeds}}</strong><br>
+		Total outside Leeds: <strong>{{la_stats.confirmed.OUTSIDE_LEEDS}}</strong><br>
+		Total unknown/invalid: <strong>{{la_stats.confirmed.UNKNOWN + la_stats.confirmed.NOT_PROVIDED}}</strong></p>
+	</section>
 {% endcomp %}
 
 <h3> West Yorkshire Volunteers</h3>
 {% comp 'layout.block' %}
-{{ comp.charts.table({
-  columns: [{'key' : 'Local Authority','name':'Local Authority'},{'key':'Applied','name':'Applied'},{'key':'Offered','name':'Offered'},{'key':'Confirmed','name':'Confirmed'}],
-  rows: west_yorkshire.rows
+{{ comp.oi.viz.table({
+	config: {
+		columns: [
+			{'name':'Local Authority'},
+			{'name':'Applied',align:'center'},
+			{'name':'Offered',align:'center'},
+			{'name':'Confirmed',align:'center'}
+		],
+		data: west_yorkshire.rows
+	}
 }) | safe }}
 {% endcomp %}
 <h2>Growth in volunteering</h2>
@@ -259,7 +274,7 @@ major_tick: 4
   title: 'Cumulative counts of volunteer user profiles by status'
 } %}
 
-{{ comp.oi.charts.graph.line({ config: {
+{{ comp.oi.viz.graph.line({ config: {
   categories: by_week.columns.week_ending,
   width: 25,
   height: 12,

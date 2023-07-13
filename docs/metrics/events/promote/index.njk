@@ -33,7 +33,7 @@ limitations:
 
 {% comp 'layout.figure', {max_width: '70rem'} %}
 <h3>Promote events by month</h3>
-  {{ comp.oi.charts.graph.line({ config: {
+  {{ comp.oi.viz.graph.line({ config: {
     categories: by_month.columns.start_date,
     width: 25,
     height: 14,

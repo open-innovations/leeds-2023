@@ -40,7 +40,7 @@ limitations:
 
 {% comp 'layout.figure', {max_width: '70rem'} %}
 <h3>Number of page views</h3>
-  {{ comp.oi.charts.graph.line({ config: {
+  {{ comp.oi.viz.graph.line({ config: {
     categories: page_views_by_week.columns.day,
     width: 25,
     height: 12,

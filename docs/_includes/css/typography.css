@@ -14,12 +14,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2em;
 }
-main * + *, .forced-top-margin {
-  margin-top: 1.5em;
-}
-.no-top-margin {
-  margin-top: 0;
-}
+main * + *, .forced-top-margin { margin-top: 1.5em; }
+p * + *, .no-top-margin { margin-top: 0; }
 
 .notification {
   background: var(--l23-yellow);

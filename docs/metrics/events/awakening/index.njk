@@ -210,7 +210,7 @@ sources:
 {% comp 'layout.figure', {
   title: 'Cumulative counts of individual ballot entries and allocated seats'
 } %}
-{{ comp.oi.charts.graph.line({ config: {
+{{ comp.oi.viz.graph.line({ config: {
   categories: by_date.columns.date_submitted,
   width: 25,
   height: 12,

@@ -165,7 +165,7 @@ limitations:
     {% call checkToggle('Total online audience') -%}
     {% comp 'dashboard.impact.embedded_figure', { columns: 2 } %} 
     {% comp 'dashboard.impact.panel', { columns: 2, bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
-    {{ comp.oi.charts.graph.line({ config: {
+    {{ comp.oi.viz.graph.line({ config: {
       title: 'Total online audience',
       categories: search.data('metrics/social-media').all_weekly.columns.week_ending,
       width: 25,
@@ -236,7 +236,7 @@ limitations:
     {% call checkToggle('Total engagements') -%}
     {% comp 'dashboard.impact.embedded_figure', { columns: 2 } %} 
     {% comp 'dashboard.impact.panel', { columns: 2, bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
-    {{ comp.oi.charts.graph.line({ config: {
+    {{ comp.oi.viz.graph.line({ config: {
       title: 'Total engagements',
       categories: search.data('metrics/social-media').all_weekly.columns.week_ending,
       width: 25,

@@ -41,7 +41,7 @@ def load_cision_file(filepath):
     logger.info('Loading %s', filepath)
     return (
         pd.read_csv(filepath, encoding=guess_encoding(filepath), thousands=',')
-          # .pipe(append_filename, os.path.basename(filepath))
+          .pipe(append_filename, os.path.basename(filepath))
           .pipe(normalise_column_names)
           .pipe(patch_column_names)
           .pipe(drop_empty_headlines)
@@ -170,7 +170,7 @@ def save_csv(data, output_file):
     columns_order = ['news_date', 'news_headline', 'outlet_name', 'audience_reach',
                      'uv', 'tone', 'medium', 'outlet_type', 'custom_tags', 'news_company_mentions',
                      'hash',
-                    #  'source_file'
+                     'source_file'
                      ]
     data = data.reindex(columns=columns_order)
 

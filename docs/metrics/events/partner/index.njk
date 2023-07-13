@@ -9,9 +9,10 @@ metas:
   title: Partner Events
   description: |
     Visualisation of key metrics related to LEEDS 2023 Partner events.
-limitations: 
-  - Events and activities data are extracted from Airtable. 15 activities do not have a corresponding ward, therefore the 'Partner events by ward' visualisation does not display data for all events. 
-  - The total number of events may not be up to date, as this figure was pulled from an Airtable 'view'. We are working with LEEDS 2023 to confirm the correct data source. 
+limitations:
+  - Events and activities data are extracted from Airtable. Some activities do not have a corresponding ward, therefore the 'Partner events by ward' visualisation does not display data for all events. 
+sources:
+  - data/metrics/events/partner-events/
 ---
 
 {% from 'macros.njk' import dateFormatter %}
@@ -21,7 +22,7 @@ limitations:
 {% comp 'grid.' + headline_grid_style, { min_width: '20rem' } %}
   {{ comp.metric.headline({
     title: "Number of Partner events", headingLevel: 3,
-    value: by_ward.columns.events | sum | localize,
+    value: headline.total_events | localize,
     description: "",
     background: "var(--l23-magenta)"
   }) | safe }}
@@ -46,10 +47,10 @@ limitations:
     yAxis: {
       title: 'Events',
       titleOffset: 3,
-      majorTick: 1
+      majorTick: 20
     },
     plotArea: {
-      yMax: 10,
+      yMax: headline.total_events | round(-1, 'ceil'),
       colour: 'var(--l23-dark-blue-grey)'
     },
     padding: {
@@ -59,7 +60,7 @@ limitations:
     series: [
       {
         id: "events", label: "Number of events",
-        yValues: by_month.columns.events,
+        yValues: by_month.columns.cumulative_events,
         colour: 'var(--l23-magenta)',
         markerOptions: { s: 5 }
       }

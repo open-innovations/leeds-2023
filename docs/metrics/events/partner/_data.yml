@@ -1,0 +1,6 @@
+key_metrics:
+  partner_events:
+    title: Partner events
+    ref: headline.total_events
+    description: Total Partner programme events
+    colour: --l23-magenta

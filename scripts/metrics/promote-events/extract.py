@@ -1,6 +1,11 @@
 import os
+
+import pandas as pd
+
+from pyairtable.formulas import match
 from scripts.util.logger import logging, log_formatter
-from lib.sources.airtable import promote
+from lib.sources.airtable import query
+from lib.util.convert import literal_converter
 
 
 logger = logging.getLogger('promote-events.extract')
@@ -17,19 +22,33 @@ EVENTS_SOURCE_DATA = os.path.join(WORKING_DIR, 'events.csv')
 
 if __name__ == "__main__":
     os.makedirs(WORKING_DIR, exist_ok=True)
+    formula = match({
+        "cardPartnerBarTitle": "Beyond LEEDS 2023",
+    })
     try:
-        data = promote(
-            view='Grid view',
+        data = query(
+            base_id='app40BfxSxQFxA3MC',
+            table_name='tblIfvbra1m4vjm3O',
+            formula=formula,
             fields=[
-              'Event Name',
-              'Event Start Date',
-              'Event End Date',
-              'Venue - including address',
+              'id',
+              'name',
+              'cardPrice',
+              'cardPartnerBarTitle',
+              'enableCardPartnerBar',
+              'displayOnWebsite',
+              'locationName',
+              'timeslots',
               'Stage',
-              'Live date',
-            ])
-
-        data.to_csv(EVENTS_SOURCE_DATA, index=False)
+            ]
+        )
+        data.timeslots = data.timeslots.pipe(literal_converter)
+        data = data.explode(['timeslots'])
+        data.timeslots = pd.to_datetime(data.timeslots)
+        data[
+            (data.timeslots < pd.Timestamp.now()) &
+            (data.timeslots > '2023-01-01')
+        ].sort_index(axis=1).sort_values(['timeslots', 'id']).to_csv(EVENTS_SOURCE_DATA, index=False)
     except Exception as e:
         logger.error(repr(e))
         raise RuntimeError('Cannot extract promote events data')

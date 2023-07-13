@@ -10,11 +10,11 @@ metas:
   description: |
     Visualisations of key metrics related to LEEDS 2023 Promote events.
 limitations: 
-  - Events and activities data are extracted from Airtable. 15 activities do not have a corresponding ward, therefore the 'Promote events by ward' visualisation does not display data for all events. 
-
+  - Events and activities data are extracted from Airtable.
+  - No attendance or location data is currently available in the source data.
 ---
 
-{% from 'macros.njk' import dateFormatter %}
+{% from 'macros.njk' import dateFormatterNoDay %}
 
 
 <h2>Headlines</h2>
@@ -22,10 +22,18 @@ limitations:
 {% comp 'grid.' + headline_grid_style, { min_width: '20rem' } %}
   {{ comp.metric.headline({
     title: "Number of Promote events", headingLevel: 3,
-    value: by_month.columns.events | sum | localize,
-    description: "",
+    value: headlines.total_events | localize,
+    description: "Promoted event series",
     background: "var(--l23-cyan)"
   }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Number of Promote event instances", headingLevel: 3,
+    value: headlines.total_event_instances | localize,
+    description: "Individual showings or timeslots of the events",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
 {% endcomp %}
 
 
@@ -34,24 +42,23 @@ limitations:
 {% comp 'layout.figure', {max_width: '70rem'} %}
 <h3>Promote events by month</h3>
   {{ comp.oi.viz.graph.line({ config: {
-    categories: by_month.columns.start_date,
+    categories: by_month.columns.time,
     width: 25,
     height: 14,
     text: { colour: '#eee' },
     xAxis: {
       title: 'Start date',
       titleOffset: 4,
-      labelRotate: 35,
       majorTick: 1,
-      formatter: dateFormatter
+      formatter: dateFormatterNoDay
     },
     yAxis: {
       title: 'Events',
       titleOffset: 3,
-      majorTick: 1
+      majorTick: 100
     },
     plotArea: {
-      yMax: by_month.columns.events | length + 5 | round(0, 'ceil'),
+      yMax: headlines.total_event_instances | round(-1, 'ceil'),
       colour: 'var(--l23-dark-blue-grey)'
     },
     padding: {  
@@ -61,8 +68,14 @@ limitations:
     series: [
       {
         id: "events", label: "Number of events",
-        yValues: by_month.columns.events,
+        yValues: by_month.columns.cumulative_events,
         colour: 'var(--l23-cyan)',
+        markerOptions: { s: 5 }
+      },
+      {
+        id: "events", label: "Number of event instancess",
+        yValues: by_month.columns.cumulative_event_instances,
+        colour: 'var(--l23-yellow)',
         markerOptions: { s: 5 }
       }
     ],
@@ -73,20 +86,4 @@ limitations:
 {% endcomp %}
 
 
-{% comp 'layout.figure', {max_width: '40rem'} %}
-<h3>Promote events by ward</h3>
-{{ comp.oi.viz.map.hex_cartogram({
-	"config": {
-		hexjson: hex.wards_leeds,
-		data: by_ward.rows,
-		matchKey: 'ward_code',
-		value: 'events',
-		bgColour: '#ddd',
-		label: '{{ n | slice(0,3) }}',
-		tooltip: '<h4>{{ n }}</h4><p><strong>{{ events | "0" }}</strong> event(s)</p>',
-		min: 0,
-		scale: 'cyan'
-	}
-  }) | safe }}
-{% endcomp %}
 {% endcomp %}

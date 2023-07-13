@@ -1,3 +1,5 @@
+vars:
+  - top: ../../..
 # Callouts pipelines
 stages:
   extract:
@@ -11,28 +13,26 @@ stages:
           persist: false
           cache: false
   transform:
-    cmd: PYTHONPATH=. python3 scripts/metrics/promote-events/transform.py
-    wdir: ../../..
+    cmd: papermill transform.ipynb ${top}/working/output/promote-events-transform.ipynb
     deps:
-      - scripts/metrics/promote-events/transform.py
-      - working/metrics/promote-events/
+      - transform.ipynb
+      - ${top}/working/metrics/promote-events/
     outs:
-      - data/metrics/events/promote-events/events.csv:
+      - ${top}/data/metrics/events/promote-events/events.csv:
           persist: false
           cache: false
   prepare:
-    cmd: PYTHONPATH=. python3 scripts/metrics/promote-events/prepare.py
-    wdir: ../../..
+    cmd: papermill prepare.ipynb ${top}/working/output/promote-events-prepare.ipynb
     deps:
-      - scripts/metrics/promote-events/prepare.py
-      - data/metrics/events/promote-events/events.csv
+      - prepare.ipynb
+      - ${top}/data/metrics/events/promote-events/events.csv
     outs:
-      - docs/metrics/events/promote/_data/headline.json:
+      - ${top}/docs/metrics/events/promote/_data/headlines.json:
           persist: true
           cache: false
-      - docs/metrics/events/promote/_data/by_ward.csv:
+      - ${top}/docs/metrics/events/promote/_data/by_week.csv:
           persist: true
           cache: false
-      - docs/metrics/events/promote/_data/by_month.csv:
+      - ${top}/docs/metrics/events/promote/_data/by_month.csv:
           persist: true
           cache: false

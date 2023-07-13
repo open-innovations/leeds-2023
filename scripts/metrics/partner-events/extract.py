@@ -2,6 +2,7 @@ import os
 from scripts.util.logger import logging, log_formatter
 from lib.sources.airtable import query
 
+
 logger = logging.getLogger('partner-events.extract')
 log_handler = logging.FileHandler(
     'working/log/promote_events_extract.log', mode='w', encoding='utf-8')

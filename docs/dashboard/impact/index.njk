@@ -59,7 +59,7 @@ limitations:
     {% call checkToggle('Promote events held') -%}
     {% comp 'dashboard.impact.panel', {bg: "var(--l23-dark-blue-grey)", fg: "white", link: '/metrics/events/promote' }%}
       {{ paneTitle('Promote events') }}
-      {{ comp.dashboard.impact.big_number({ number: search.data('metrics/events/promote').by_ward.columns.events | sum | localize }) | safe }}
+      {{ comp.dashboard.impact.big_number({ number: search.data('metrics/events/promote').headlines.total_events | localize }) | safe }}
     {% endcomp %}
       {%- endcall %}
 

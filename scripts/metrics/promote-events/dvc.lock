@@ -5,52 +5,52 @@ stages:
     deps:
     - path: scripts/metrics/promote-events/extract.py
       hash: md5
-      md5: a139eefcbe466bc6587cd12dda474112
-      size: 1071
+      md5: d7958b2d10f6e285b51333a4a0cd598b
+      size: 1740
     outs:
     - path: working/metrics/promote-events/
       hash: md5
-      md5: 3a5fdc559ae8f49d0cb4500896609915.dir
-      size: 15064
+      md5: eef3b5a53ba05b262a0bf20b807e20e0.dir
+      size: 89025
       nfiles: 1
   transform:
-    cmd: PYTHONPATH=. python3 scripts/metrics/promote-events/transform.py
+    cmd: papermill transform.ipynb ../../../working/output/promote-events-transform.ipynb
     deps:
-    - path: scripts/metrics/promote-events/transform.py
+    - path: ../../../working/metrics/promote-events/
       hash: md5
-      md5: 68882fbb1acb17ccb7623de5184427bf
-      size: 1092
-    - path: working/metrics/promote-events/
-      hash: md5
-      md5: 3a5fdc559ae8f49d0cb4500896609915.dir
-      size: 15064
+      md5: eef3b5a53ba05b262a0bf20b807e20e0.dir
+      size: 89025
       nfiles: 1
-    outs:
-    - path: data/metrics/events/promote-events/events.csv
+    - path: transform.ipynb
       hash: md5
-      md5: 5c8cb7b412be5763e7ddace5e87c007f
-      size: 9419
+      md5: 4079d97b5633a5a5cfe05633924cff28
+      size: 1788
+    outs:
+    - path: ../../../data/metrics/events/promote-events/events.csv
+      hash: md5
+      md5: f862c1f138aedb9a31075f72ff70f7de
+      size: 73699
   prepare:
-    cmd: PYTHONPATH=. python3 scripts/metrics/promote-events/prepare.py
+    cmd: papermill prepare.ipynb ../../../working/output/promote-events-prepare.ipynb
     deps:
-    - path: data/metrics/events/promote-events/events.csv
+    - path: ../../../data/metrics/events/promote-events/events.csv
       hash: md5
-      md5: 5c8cb7b412be5763e7ddace5e87c007f
-      size: 9419
-    - path: scripts/metrics/promote-events/prepare.py
+      md5: f862c1f138aedb9a31075f72ff70f7de
+      size: 73699
+    - path: prepare.ipynb
       hash: md5
-      md5: 6ced81010b60056a1be4029353624c1f
-      size: 641
+      md5: 9768f5f5f9ba893c74ac5b28d9cc4bf3
+      size: 2725
     outs:
-    - path: docs/metrics/events/promote/_data/by_month.csv
+    - path: ../../../docs/metrics/events/promote/_data/by_month.csv
       hash: md5
-      md5: 92126d95b49b2b19604706718da578a5
-      size: 231
-    - path: docs/metrics/events/promote/_data/by_ward.csv
+      md5: 77497e3fa9f245e8595d861abeaeab1f
+      size: 237
+    - path: ../../../docs/metrics/events/promote/_data/by_week.csv
       hash: md5
-      md5: 6805b700527b4b7608020b50d5d7dfe8
-      size: 150
-    - path: docs/metrics/events/promote/_data/headline.json
+      md5: 3bd508c4f27522b05bdb357581248b5a
+      size: 691
+    - path: ../../../docs/metrics/events/promote/_data/headlines.json
       hash: md5
-      md5: 9dfcbc05dda8af74e176b4dd7e3276da
-      size: 4597
+      md5: 2147fb81f79b52c4a5e455a1d5d79bee
+      size: 144

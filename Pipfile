@@ -22,6 +22,7 @@ thefuzz = "*"
 pyairtable = "*"
 papermill = "*"
 ipykernel = "*"
+chardet = "*"
 
 [dev-packages]
 

@@ -126,13 +126,17 @@ sources:
 
 {% comp 'layout.figure' %}
   <h3>Percentage of schools engaged per ward</h3>
-  {{ comp.charts.hexmap({
-    hexjson: hex.wards_leeds,
-    data: engagements_by_ward.rows,
-    matchKey: 'ward_code',
-    valueProp: 'percent_of_schools_in_ward_engaged',
-    bgColour: '#ddd',
-      colourScale: colours.scales.cyan
+  {{ comp.oi.viz.map.hex_cartogram({
+		config: {
+			hexjson: hex.wards_leeds,
+			data: engagements_by_ward.rows,
+			matchKey: 'ward_code',
+			value: 'percent_of_schools_in_ward_engaged',
+			bgColour: '#ddd',
+			label: '{{ n | slice(0,3) }}',
+			tooltip: '<h4>{{ n }}</h4><p><strong>{{ percent_of_schools_in_ward_engaged | "0" }}</strong>%</p>',
+			scale: 'cyan'
+		}
   }) | safe }}
   <p>
     Darker coloured wards have engaged with a higher percentage of the schools within that ward.
@@ -144,13 +148,17 @@ sources:
 
 {% comp 'layout.figure' %}
   <h3>Pupil engagements by ward of school</h3>
-  {{ comp.charts.hexmap({
-    hexjson: hex.wards_leeds,
-    data: engagements_by_ward.rows,
-    matchKey: 'ward_code',
-    valueProp: 'pupil_engagements',
-    bgColour: '#ddd',
-      colourScale: colours.scales.magenta
+  {{ comp.oi.viz.map.hex_cartogram({
+		config: {
+			hexjson: hex.wards_leeds,
+			data: engagements_by_ward.rows,
+			matchKey: 'ward_code',
+			value: 'pupil_engagements',
+			bgColour: '#ddd',
+			label: '{{ n | slice(0,3) }}',
+			tooltip: '<h4>{{ n }}</h4><p><strong>{{ pupil_engagements | "0" | toLocaleString() }}</strong></p>',
+			scale: 'magenta'
+		}
   }) | safe }}
 {% endcomp %}
 {% endcomp %}

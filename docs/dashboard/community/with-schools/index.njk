@@ -44,12 +44,16 @@ limitations:
     title: 'Count of activities by residents in each ward, including schools pupils'
   } %}
 
-  {{ comp.charts.hexmap({
-    hexjson: hex.wards_leeds,
-    data: residents_with_schools.rows,
-    matchKey: 'ward_code',
-    valueProp: 'total',
-    colourScale: colours.scales.magenta
+  {{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.wards_leeds,
+		data: residents_with_schools.rows,
+		matchKey: 'ward_code',
+		value: 'total',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '{{ n }}: <strong>{{ total }}</strong>',
+		scale: 'magenta'
+	}
   }) | safe }}
 
   {% endcomp %}
@@ -94,12 +98,16 @@ limitations:
     title: 'Count of events hosted in each ward, including schools events'
   } %}
 
-  {{ comp.charts.hexmap({
-    hexjson: hex.wards_leeds,
-    data: events_with_schools.rows,
-    matchKey: 'ward_code',
-    valueProp: 'total',
-    colourScale: colours.scales.magenta
+  {{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.wards_leeds,
+		data: events_with_schools.rows,
+		matchKey: 'ward_code',
+		value: 'total',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '{{ n }}: <strong>{{ total }}</strong>',
+		scale: 'magenta'
+	}
   }) | safe }}
 
   {% endcomp %}

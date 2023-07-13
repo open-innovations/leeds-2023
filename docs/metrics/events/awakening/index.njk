@@ -23,14 +23,6 @@ sources:
   - data/metrics/events/awakening/
 
 ---
-{%- macro popupSubmissions(params) -%}
-  {{ params.label }}</br>
-  {{ params.value }} submissions
-{%- endmacro -%}
-{%- macro popupAttendees(params) -%}
-  {{ params.label }}</br>
-  {{ params.value }} attendees
-{%- endmacro -%}
 {% from 'macros.njk' import dateFormatterNoYear %}
 
 <p>
@@ -101,16 +93,18 @@ sources:
   title: 'Count of The Awakening attendees by ward of residence',
   max_width: '40rem'
 } %}
-  {{ comp.charts.hexmap({
-    hexjson: hex.wards_leeds,
-    data: attendees_by_ward.rows,
-    matchKey: 'ward_code',
-    valueProp: 'attended',
-    popup: popupAttendees,
-    labelKey: 'label',
-    title: 'Count of attendees at The Awakening by ward of residence',
-    bgColour: '#ddd',
-    colourScale: colours.scales.magenta
+  {{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.wards_leeds,
+		data: attendees_by_ward.rows,
+		matchKey: 'ward_code',
+		value: 'attended',
+		title: 'Count of attendees at The Awakening by ward of residence',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '<h4>{{ n }}</h4><p><strong>{{ attended }}</strong> attendees</p>',
+		bgColour: '#ddd',
+		scale: 'magenta'
+	}
   }) | safe }}
 {% endcomp %}
 
@@ -119,16 +113,18 @@ sources:
   title: 'Count of The Awakening attendees by local authority',
   max_width: '40rem'
 } %}
-  {{ comp.charts.hexmap({
-    hexjson: hex.leeds_city_region,
-    data: attendees_by_la.rows,
-    matchKey: 'la_code',
-    valueProp: 'attended',
-    popup: popupAttendees,
-    labelKey: 'label',
-    title: 'Count of attendees at The Awakening by ward of residence',
-    bgColour: '#ddd',
-    colourScale: colours.scales.magenta
+  {{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.leeds_city_region,
+		data: attendees_by_la.rows,
+		matchKey: 'la_code',
+		value: 'attended',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '<h4>{{ n }}</h4><p><strong>{{ attended }}</strong> attendees</p>',
+		title: 'Count of attendees at The Awakening by ward of residence',
+		bgColour: '#ddd',
+		scale: 'magenta'
+	}
   }) | safe }}
 {% endcomp %}
 
@@ -162,16 +158,18 @@ sources:
   title: 'Count of individual ballot entries by ward of residence',
   max_width: '40rem'
 } %}
-  {{ comp.charts.hexmap({
-    hexjson: hex.wards_leeds,
-    data: by_ward.rows,
-    matchKey: 'ward_code',
-    valueProp: 'submissions',
-    popup: popupSubmissions,
-    labelKey: 'label',
-    title: 'Count of ballot submissions by ward of residence',
-    bgColour: '#ddd',
-    colourScale: colours.scales.magenta
+  {{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.wards_leeds,
+		data: by_ward.rows,
+		matchKey: 'ward_code',
+		value: 'submissions',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '<h4>{{ n }}</h4><p><strong>{{ submissions }}</strong> submissions</p>',
+		title: 'Count of ballot submissions by ward of residence',
+		bgColour: '#ddd',
+		scale: 'magenta'
+	}
   }) | safe }}
 {% endcomp %}
 
@@ -190,16 +188,18 @@ sources:
   title: 'Count of individual ballot entries by local authority of residence',
   max_width: '40rem'
 } %}
-  {{ comp.charts.hexmap({
-    hexjson: hex.leeds_city_region,
-    data: by_local_authority.rows,
-    matchKey: 'la_code',
-    valueProp: 'submissions',
-    colourValueProp: 'submissions_scaled',
-    popup: popupSubmissions,
-    title: 'Count of ballot submissions by local authority of residence',
-    bgColour: '#ddd',
-    colourScale: colours.scales.magenta
+  {{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.leeds_city_region,
+		data: by_local_authority.rows,
+		matchKey: 'la_code',
+		value: 'submissions_scaled',
+		title: 'Count of ballot submissions by local authority of residence',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '<h4>{{ n }}</h4><p><strong>{{ submissions }}</strong> submissions</p>',
+		bgColour: '#ddd',
+		scale: 'magenta'
+	}
   }) | safe }}
 {% endcomp %}
 

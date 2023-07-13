@@ -194,14 +194,19 @@ People reported improved physical health and wellbeing as a result of the projec
 {% comp 'grid.autogrid', {min_width: '40rem'} %}
   <section style="--hex-bg: var(--l23-cyan);">
    
-    {{ comp.charts.hexmap({
-      hexjson: hex.wards_leeds,
-      data: metrics.mwmcmn.celeb_event_by_ward.rows,
-      matchKey: 'ward_code',
-      valueProp: 'celeb_events',
-      popup: popupAttendees,
-      bgColour: '#BBB',
-      title: 'Number of projects taken place per ward'
+    {{ comp.oi.viz.map.hex_cartogram({
+		config: {
+			hexjson: hex.wards_leeds,
+			data: metrics.mwmcmn.celeb_event_by_ward.rows,
+			matchKey: 'ward_code',
+			value: 'celeb_events',
+			bgColour: '#BBB',
+			title: 'Number of projects taken place per ward',
+			label: '{{ n | slice(0,3) }}',
+			tooltip: '<h4>{{ n }}</h4><p><strong>{{ celeb_events | "0" | toLocaleString() }}</strong> event(s)</p>',
+			scale: 'lightcyan',
+			min: 0
+		}
     }) | safe }}
 
   </section>

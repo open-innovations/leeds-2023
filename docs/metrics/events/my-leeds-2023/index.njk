@@ -103,13 +103,18 @@ sources:
 
 {% comp 'layout.figure', {max_width: '50rem'} %}
 <h3>Events by ward</h3>
-{{ comp.charts.hexmap({
-    hexjson: hex.wards_leeds,
-    data: events.by_ward.rows,
-    matchKey: 'ward_code',
-    valueProp: 'events',
-    bgColour: '#ddd',
-      colourScale: colours.scales.cyan
+{{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.wards_leeds,
+		data: events.by_ward.rows,
+		matchKey: 'ward_code',
+		value: 'events',
+		bgColour: '#ddd',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '<h4>{{ n }}</h4><p><strong>{{ events | "0" }}</strong> event(s)</p>',
+		min: 0,
+		scale: 'cyan'
+	}
   }) | safe }}
 {% endcomp %}
 
@@ -120,13 +125,17 @@ sources:
 {% comp 'grid.autogrid', {min_width: '30rem'} %}
 {% comp 'layout.figure', {max_width: '40rem'} %}
 <h3>Applications by ward</h3>
-{{ comp.charts.hexmap({
-    hexjson: hex.wards_leeds,
-    data: responses_by_ward.rows,
-    matchKey: 'ward_code',
-    valueProp: 'my_leeds_grant_app',
-    bgColour: '#ddd',
-      colourScale: colours.scales.magenta
+{{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.wards_leeds,
+		data: responses_by_ward.rows,
+		matchKey: 'ward_code',
+		value: 'my_leeds_grant_app',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '<h4>{{ n }}</h4><p><strong>{{ my_leeds_grant_app }}</strong> applications</p>',
+		bgColour: '#ddd',
+		scale: 'magenta'
+	}
   }) | safe }}
 {% endcomp %}
 
@@ -145,13 +154,15 @@ sources:
 {#
 {% comp 'layout.figure', {max_width: '40rem'} %}
 <h3>Applications by local authority</h3>
-{{ comp.charts.hexmap({
-    hexjson: hex.leeds_city_region,
-    data: responses_by_la.rows,
-    matchKey: 'la_code',
-    valueProp: 'my_leeds_grant_app',
-    bgColour: '#ddd',
-      colourScale: colours.scales.cyan
+{{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.leeds_city_region,
+		data: responses_by_la.rows,
+		matchKey: 'la_code',
+		value: 'my_leeds_grant_app',
+		bgColour: '#ddd',
+		scale: 'cyan'
+	}
   }) | safe }}
 {% endcomp %}
 #}
@@ -162,13 +173,17 @@ sources:
 {% comp 'grid.autogrid', {min_width: '30rem'} %}
 {% comp 'layout.figure', {max_width: '40rem'} %}
 <h3>Applications by ward</h3>
-{{ comp.charts.hexmap({
-    hexjson: hex.wards_leeds,
-    data: responses_by_ward.rows,
-    matchKey: 'ward_code',
-    valueProp: 'my_leeds_schools_grants_application',
-    bgColour: '#ddd',
-      colourScale: colours.scales.magenta
+{{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.wards_leeds,
+		data: responses_by_ward.rows,
+		matchKey: 'ward_code',
+		value: 'my_leeds_schools_grants_application',
+		bgColour: '#ddd',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '<h4>{{ n }}</h4><p><strong>{{ my_leeds_schools_grants_application }}</strong> applications</p>',
+		scale: 'magenta'
+	}
   }) | safe }}
 {% endcomp %}
 <div>

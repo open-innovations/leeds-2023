@@ -69,13 +69,17 @@ sources:
 
 {% comp 'layout.figure' %}
   <h3>Call out responses by ward</h3>
-  {{ comp.charts.hexmap({
-    hexjson: hex.wards_leeds,
-    data: responses_by_ward.rows,
-    matchKey: 'ward_code',
-    valueProp: 'responses',
-    bgColour: '#ddd',
-      colourScale: colours.scales.cyan
+  {{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.wards_leeds,
+		data: responses_by_ward.rows,
+		matchKey: 'ward_code',
+		value: 'responses',
+		bgColour: '#ddd',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '{{ n }}: <strong>{{ responses }}</strong>',
+		scale: 'cyan'
+	}
   }) | safe }}
 {% endcomp %}
 
@@ -132,12 +136,16 @@ sources:
   title: 'Count of responses to Become a Barnraiser and Become a WOWser call outs by Local Authority',
   max_width: '40rem'
 } %}
-  {{ comp.charts.hexmap({
-    hexjson: hex.leeds_city_region,
-    data: responses_by_la.rows,
-    matchKey: 'la_code',
-    valueProp: 'barn_plus_wow_responses',
-    bgColour: '#ddd',
-      colourScale: colours.scales.magenta
+  {{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.leeds_city_region,
+		data: responses_by_la.rows,
+		matchKey: 'la_code',
+		value: 'barn_plus_wow_responses',
+		bgColour: '#ddd',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '{{ n }}: <strong>{{ barn_plus_wow_responses }}</strong>',
+		scale: 'magenta'
+	}
   }) | safe }}
 {% endcomp %}

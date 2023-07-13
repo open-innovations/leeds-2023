@@ -64,11 +64,6 @@ sources:
   The raw data can be downloaded from <a href="https://datamillnorth.org/dataset/leeds-2023-roadshow-attendees?q=leeds%202023">Data Mill North</a>.
 </p>
 
-{%- macro popupAttendees(params) -%}
-  {{ params.label }}</br>
-  {{ params.value }} attendees
-{%- endmacro -%}
-
 {%- macro popupResponses(params) -%}
   {{ params.label }}</br>
   {{ params.value }} responses submitted
@@ -77,16 +72,18 @@ sources:
 {% comp 'grid.autogrid', { min_width: '32rem' } %}
   <section style="--hex-bg: var(--l23-mint);" aria-labelledby='attendees-by-hosting-ward'>
     <h2 id='attendees-by-hosting-ward'>Attendance numbers by hosting ward</h2>
-    {{ comp.charts.hexmap({
-      hexjson: hex.wards_leeds,
-      data: by_ward.rows,
-      matchKey: 'ward_code',
-      valueProp: 'attendance',
-      popup: popupAttendees,
-      bgColour: '#ddd',
-  	  labelKey: 'label',
-      title: 'Attendees at roadshows hosted in ward',
-      colourScale: colours.scales.cyan
+    {{ comp.oi.viz.map.hex_cartogram({
+		config: {
+			hexjson: hex.wards_leeds,
+			data: by_ward.rows,
+			matchKey: 'ward_code',
+			value: 'attendance',
+			bgColour: '#ddd',
+			title: 'Attendees at roadshows hosted in ward',
+			label: '{{ n | slice(0,3) }}',
+			tooltip: '<h4>{{ n }}</h4><p><strong>{{ attendance | "0" }}</strong> attendee(s)</p>',
+			scale: 'cyan'
+		}
     }) | safe }}
 
     
@@ -104,15 +101,17 @@ sources:
   <section>
     <h2>Attendance numbers by ward of residence</h2>
     
-    {{ comp.charts.hexmap({
-      hexjson: hex.wards_leeds,
-      data: by_ward.rows,
-      matchKey: 'ward_code',
-      valueProp: 'contact_consents',
-      popup: popupResponses,
-      bgColour: '#ddd',
-      labelKey: 'label',
-      colourScale: colours.scales.magenta
+    {{ comp.oi.viz.map.hex_cartogram({
+		config: {
+			hexjson: hex.wards_leeds,
+			data: by_ward.rows,
+			matchKey: 'ward_code',
+			value: 'contact_consents',
+			bgColour: '#ddd',
+			label: '{{ n | slice(0,3) }}',
+			tooltip: '<h4>{{ n }}</h4><p><strong>{{ contact_consents | "0" }}</strong> attendee(s)</p>',
+			scale: 'magenta'
+		}
     }) | safe }}
 
     <p>This hexmap shows the number of attendees living in each ward who submitted a sign-up form for communication from Leeds 2023 following attendance at the roadshows.</p>

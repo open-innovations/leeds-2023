@@ -5,3 +5,10 @@
 	transition: transform 0.1s linear;
 }
 .oi-viz.oi-map-hex .data-layer .hex:hover path, .oi-viz.oi-map-hex .data-layer .hex.outline path { transform: unset; }
+
+
+/* Outline zero valued hexes in black */
+.hexmap [data-value="0"] path, .oi-viz.oi-map-hex  [data-value="0"] path {
+  stroke: var(--l23-dark-blue-grey);
+  stroke-width: 3px;
+}

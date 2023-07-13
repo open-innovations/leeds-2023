@@ -87,9 +87,13 @@ site.use(oiViz({
 		},
 		"scales": {
 			"mint": colours.mint+' 0%, '+colours.darkmint+' 100%',
+			"lightmint": 'rgb(255,255,255) 0%, '+colours.mint+' 100%',
 			"yellow": colours.yellow+' 0%, '+colours.darkyellow+' 100%',
+			"lightyellow": 'rgb(255,255,255) 0%, '+colours.yellow+' 100%',
 			"cyan": colours.cyan+' 0%, '+colours.darkcyan+' 100%',
-			"magenta": colours.magenta+' 0%, '+colours.darkmagenta+' 100%'
+			"lightcyan": 'rgb(255,255,255) 0%, hsl(173, 100%, 50%) 100%',
+			"magenta": colours.magenta+' 0%, '+colours.darkmagenta+' 100%',
+			"lightmagenta": 'rgb(255,255,255) 0%, '+colours.magenta+' 100%'
 		}
 	}
 }));

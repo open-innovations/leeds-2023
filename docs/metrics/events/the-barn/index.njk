@@ -111,13 +111,17 @@ limitations:
 {# 
 {% comp 'layout.figure', {max_width: '30rem'} %}
 <h3>Events by ward</h3>
-{{ comp.charts.hexmap({
-    hexjson: hex.wards_leeds,
-    data: events.by_ward.rows,
-    matchKey: 'ward_code',
-    valueProp: 'events',
-    bgColour: '#ddd',
-      colourScale: colours.scales.cyan
+{{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.wards_leeds,
+		data: events.by_ward.rows,
+		matchKey: 'ward_code',
+		value: 'events',
+		bgColour: '#ddd',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '<h4>{{ n }}</h4><p><strong>{{ events | "0" }}</strong> event(s)</p>',
+		scale: 'cyan'
+	}
   }) | safe }}
 {% endcomp %}
 #}

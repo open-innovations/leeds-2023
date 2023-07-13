@@ -18,12 +18,6 @@
   stroke: #aaa;
 }
 
-/* Outline zero valued hexes in black */
-.hexmap [data-value="0"] path {
-  stroke: var(--l23-dark-blue-grey);
-  stroke-width: 3px;
-}
-
 .chart, .oi-chart, .oi-graph .line-chart {
   --colour:#eee;
   --plot-background:var(--l23-dark-blue-grey);

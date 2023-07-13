@@ -23,6 +23,7 @@ pyairtable = "*"
 papermill = "*"
 ipykernel = "*"
 chardet = "*"
+matplotlib = "*"
 
 [dev-packages]
 

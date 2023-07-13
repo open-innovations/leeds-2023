@@ -13,9 +13,6 @@ stages:
         - ${top}/lib/util/
         - ${top}/data/metrics/events/master/all.csv
       outs:
-        - ${top}/working/output/${item}.ipynb:
-            persist: false
-            cache: false
         - ${top}/docs/metrics/events/${item}/_data/events/headlines.json:
             persist: false
             cache: false

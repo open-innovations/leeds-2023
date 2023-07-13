@@ -5,8 +5,8 @@ stages:
     deps:
     - path: scripts/metrics/partner-events/extract.py
       hash: md5
-      md5: 3c4aec9097ce54c6a5917f444ab4a8fd
-      size: 1417
+      md5: 704faca13fe38c17f5c36cbdf8b0bd13
+      size: 1418
     outs:
     - path: working/metrics/partner-events/
       hash: md5
@@ -14,7 +14,7 @@ stages:
       size: 39528
       nfiles: 1
   transform:
-    cmd: papermill transform.ipynb ../../../working/output/promote-events-transform.ipynb
+    cmd: papermill transform.ipynb ../../../working/output/partner-events-transform.ipynb
     deps:
     - path: ../../../lib/util/geo.py
       hash: md5

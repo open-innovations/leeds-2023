@@ -14,7 +14,7 @@ stages:
           persist: false
           cache: false
   transform:
-    cmd: papermill transform.ipynb ${top}/working/output/promote-events-transform.ipynb
+    cmd: papermill transform.ipynb ${top}/working/output/partner-events-transform.ipynb
     always_changed: true
     deps:
       - transform.ipynb

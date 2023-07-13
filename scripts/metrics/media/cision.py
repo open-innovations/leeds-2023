@@ -115,7 +115,7 @@ def guess_date(data):
     dates = dates.bfill(axis=1).iloc[:, 0]
 
     # Handle any dates far into the past
-    dates = dates.mask(dates.dt.year < 2022, dates + pd.offsets.DateOffset(year=2023))
+    dates = dates.mask(dates.dt.year < 2022, dates.apply(lambda d: d + pd.offsets.DateOffset(year=2023)))
 
     if len(dates[dates.isna()]) > 1:
         logger.error('Some incompatible date formats found')

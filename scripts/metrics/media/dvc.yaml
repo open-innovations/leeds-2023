@@ -4,6 +4,7 @@ stages:
     wdir: ../../..
     deps:
     - scripts/metrics/media/transform_cision.py
+    - scripts/metrics/media/cision.py
     - working/manual/media/
     outs:
     - data/metrics/media_coverage/combined_cision.csv:

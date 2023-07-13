@@ -3,6 +3,10 @@ stages:
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/media/transform_cision.py
     deps:
+    - path: scripts/metrics/media/cision.py
+      hash: md5
+      md5: ce739fabeb9c46ca8b1263bfe702e032
+      size: 4839
     - path: scripts/metrics/media/transform_cision.py
       hash: md5
       md5: ac73392d736465b1c695d3f8ea6f41d3

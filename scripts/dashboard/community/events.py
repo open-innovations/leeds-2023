@@ -1,5 +1,10 @@
 import pandas as pd
 
+def load_data(path, id, **kwargs):
+    data = pd.read_csv(path, **kwargs)
+    data['event_type'] = id
+    return data
+
 
 def summarise_events():
     # Load Roadshows
@@ -21,8 +26,20 @@ def summarise_events():
     hidden_stories = pd.read_csv('docs/_data/metrics/hidden_stories/wards.csv',usecols=['ward_code','count']).rename(columns={'count':'events'})
     hidden_stories['event_type'] = 'hidden_stories'
 
+    # My LEEDS events
+    my_leeds = load_data('docs/metrics/events/my-leeds-2023/_data/events/by_ward.csv', 'my_leeds_2023', usecols=['ward_code','events'])
+
+    # Barn events
+    the_barn = load_data('docs/metrics/events/the-barn/_data/events/by_ward.csv', 'the_barn', usecols=['ward_code','events'])
+    
+    # Partner events
+    partner = load_data('docs/metrics/events/partner/_data/by_ward.csv', 'partner', usecols=['ward_code','events'])
+
     #Combine
     report = pd.concat([
+        my_leeds,
+        the_barn,
+        partner,
         roadshows,
         celebration_event,
         schools,

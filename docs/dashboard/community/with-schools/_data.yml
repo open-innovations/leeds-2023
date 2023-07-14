@@ -29,6 +29,21 @@ table_columns:
       name: Ward Name
     - key: total
       name: Total
+
+    - key: my_leeds_2023
+      name: My LEEDS 2023
+      link: /metrics/events/my-leeds-2023
+      description: Events under the My LEEDS 2023
+    - key: the_barn
+      name: The Barn
+      link: /metrics/events/the-barn
+      description: Events at The Barn
+    - key: partner
+      name: Partner events
+      link: /metrics/events/partner
+      description: Events produced with our Partners
+
+
     - key: ward_hosts
       name: Ward Hosts
       description: Ward hosts appointed (one per ward)

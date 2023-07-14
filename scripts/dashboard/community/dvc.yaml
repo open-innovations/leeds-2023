@@ -8,6 +8,9 @@ stages:
       - docs/metrics/schools/_data/engagements_by_ward.csv
       # TODO check this with Taz
       - docs/_data/metrics/mwmcmn/celeb_event_by_ward.csv
+      - docs/metrics/events/my-leeds-2023/_data/events/by_ward.csv
+      - docs/metrics/events/the-barn/_data/events/by_ward.csv
+      - docs/metrics/events/partner/_data/by_ward.csv
     outs:
       - docs/dashboard/community/_data/events.csv:
           cache: false 

@@ -9,7 +9,7 @@ layout: layouts/project.njk
 </p>
 
 {% comp 'grid.autogrid' %}
-  {% for dashboard in search.pages('dashboard') | data %}
+  {% for dashboard in search.pages('dashboard', 'order=asc title=asc') | data %}
     {% comp 'grid.block.impact', {
       bg: dashboard.feature_colour or 'var(--l23-cyan)',
       link: dashboard.url,

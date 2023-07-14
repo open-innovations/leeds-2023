@@ -13,14 +13,14 @@ stages:
       size: 157
     - path: working/manual/media/
       hash: md5
-      md5: c900f5d2d602c2117ca54c443896d787.dir
-      size: 1146072
-      nfiles: 33
+      md5: 571b30879b93207202e21c6247604225.dir
+      size: 1153240
+      nfiles: 34
     outs:
     - path: data/metrics/media_coverage/combined_cision.csv
       hash: md5
-      md5: 47770a25b6fd199278c9d11ddf18cb3a
-      size: 347664
+      md5: 165ea76b1d86a0ef960d43c6767e035a
+      size: 353667
   transform_historic:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/media/combine_historic.py
     deps:
@@ -29,9 +29,9 @@ stages:
       size: 2586
     - path: working/manual/media/
       hash: md5
-      md5: c900f5d2d602c2117ca54c443896d787.dir
-      size: 1146072
-      nfiles: 33
+      md5: 571b30879b93207202e21c6247604225.dir
+      size: 1153240
+      nfiles: 34
     outs:
     - path: data/metrics/media_coverage/combined_historic.csv
       md5: 2075d0be6cc9d6325fb589b3cdab43c8
@@ -41,8 +41,8 @@ stages:
     deps:
     - path: data/metrics/media_coverage/combined_cision.csv
       hash: md5
-      md5: 47770a25b6fd199278c9d11ddf18cb3a
-      size: 347664
+      md5: 165ea76b1d86a0ef960d43c6767e035a
+      size: 353667
     - path: data/metrics/media_coverage/combined_historic.csv
       md5: 2075d0be6cc9d6325fb589b3cdab43c8
       size: 66475
@@ -52,13 +52,13 @@ stages:
     outs:
     - path: docs/metrics/media_coverage/_data/medium_count.csv
       hash: md5
-      md5: 1326972b6537f53adce96d0b7016579c
-      size: 49
+      md5: 7d4ecab677d452c2218292f69da6d9d9
+      size: 59
     - path: docs/metrics/media_coverage/_data/monthly_count.csv
       hash: md5
-      md5: 052c239b08e1d3c1a02e995a3b0ead95
+      md5: 9f3bc7901ea76ae06a3642935796401b
       size: 762
     - path: docs/metrics/media_coverage/_data/outlet_count.csv
       hash: md5
-      md5: 855257a07e363bf28087e4d7c8d59b3a
+      md5: 52adff68001c09d9565c135693601b94
       size: 170

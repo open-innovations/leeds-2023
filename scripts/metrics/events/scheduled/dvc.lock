@@ -14,7 +14,7 @@ stages:
     outs:
     - path: working/metrics/events/all.csv
       hash: md5
-      md5: 79d29713452a144422dcdd52184f1f2f
+      md5: 956821bf83566dc216c859edbab5576f
       size: 279620
   transform:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/transform.py

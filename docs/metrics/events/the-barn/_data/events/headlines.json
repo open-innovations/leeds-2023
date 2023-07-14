@@ -1,1 +1,7 @@
-{"total_events":16,"total_audience":7271,"ward_count":2}
+{
+  "total_events":16,
+  "total_audience":7271,
+  "ward_count":2,
+  "earliest_date":"2023-04-30T00:00:00.000",
+  "latest_date":"2023-04-30T00:00:00.000"
+}

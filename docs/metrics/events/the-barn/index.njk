@@ -10,10 +10,14 @@ metas:
   description: |
     Visualisations of key metrics related to The Barn - a Signature Event held by LEEDS 2023.
 limitations: 
-  - TBC
+  - This data currently doesn’t show where audiences travelled from to attend WOW Barn activity.
 ---
 
 {% from 'macros.njk' import dateFormatter %}
+
+<h3>The WOW Barn</h3>
+
+<p>In partnership with the WOW Foundation (Women of the World), The WOW Barn was a key placebased project taking place on Cinder Moor in Headingley in April-May 2023. Learn more about the project on the <a href="https://leeds2023.co.uk/the-wow-barn">LEEDS 2023 website</a>. The Barn was raised over 24 hours from 6pm Sun 30 April to 6pm on Monday 1 May, with a programme of activity culminating in the Festival on 13 May 2023.</p>
 
 <h2>Headlines</h2>
 
@@ -66,9 +70,25 @@ limitations:
 
 {% endcomp %}
 
+<h3>About this data</h3>
+
+<p>Number of events refers to the public event series. This includes: The WOW Barn Festival held on 13 May 2023, plus a series of commercial evening events which featured female performers such as comedian Bridget Christie, author and broadcaster Andi Oliver and author Suhaiymah Manzoor-Khan.</p>
+
+<p>Over 300 women and non-binary people were recruited and trained to raise the Barn. Professionals were briefed to support the build, whilst novice builders attended bootcamps at Leeds College of Building to learn new skills which they implemented in their 6 hour long shift at the Barn raising. 260 Barn raisers attended their shift (59 Professionals and 201 Novices).</p>
+
+<p>There were two key ways for people to apply to participate in The WOW Barn via callouts: <strong>Barnraising</strong> and taking part in the <strong>WOWsers programme</strong>. Callout response data relates to these opportunities:</p>
+<ul>
+  <li>WOWsers applications were open to women and non-binary people aged 16-18 in West Yorkshire.</li>
+  <li>Barnraising was open to women and non-binary people aged 18+ in West Yorkshire.</li>
+</ul>
+
+<p>Dreambuilder workshops refers to a series of workshops run by artist Emma Hardaker to create tiles which decorated The WOW Barn.</p>
+
+<p>4 school days took place where schools were invited to have lessons inside The WOW Barn.</p>
+
 {% comp 'grid.' + headline_grid_style, { min_width: '30rem' } %}
 
-{% comp 'layout.figure', {max_width: '70rem'} %}
+{% comp 'layout.figure', {max_width: '50rem'} %}
 <h3>Number of public events by week</h3>
   {{ comp.oi.viz.graph.line({ config: {
     categories: events.by_week.columns.week_ending,

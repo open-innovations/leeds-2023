@@ -9,12 +9,24 @@ metas:
   title: LEEDS 2023 Metrics - Community Grants
   description: |
     Visualisations of key data related to community grant applications.
+limitations: 
+  - Currently the hexmaps only display activity relating to the My LEEDS Summer strand of My LEEDS 2023. There are two other strands, My World, My City, My Neighbourhood for which a 2022 report was produced detailing the impact of the seed projects. In 2023 a handful of these projects are being taken forward. Data from these projects will be displayed on this page.
+  - The Gift, an artistic project with artist Keith Khan is also part of My LEEDS 2023, data is currently not being displayed relating to that.
 sources:
   - data/metrics/events/master/
   - data/metrics/community-grants/
 ---
 
 {% from 'macros.njk' import dateFormatter %}
+
+<p>My LEEDS 2023 is a celebration of all the people and stories that make up Leeds. As LEEDS 2023’s key co-creation project they have been collaborating with 33 Neighbourhood Hosts to organise events in every ward in Leeds between June and September,
+ in a series of events called My LEEDS Summer. Learn more about the project on the LEEDS 2023 website: <a href="https://leeds2023.co.uk/my-leeds-summer">My LEEDS 2023</a>.</p>
+
+<p>‘Neighbourhood Hosts’ are representatives from each ward. They are local people who are passionate about the places they live or work. They meet with the My LEEDS 2023 team every week to receive training and to organise their celebration events.</p>
+
+<p>The events data on this page shows the number of My LEEDS Summer events which have taken place so far over the summer. The full list of events is available to view on the <a href="https://leeds2023.co.uk/my-leeds-summer">LEEDS 2023 website</a>.</p>
+
+<p>As part of the organisation for My LEEDS Summer events the Neighbourhood Hosts decided to offer small Community grants and schools grants to applicants in their area to allow others to participate in the celebrations.</p>
 
 {% comp 'grid.' + headline_grid_style, { min_width: '15em' } %}
 

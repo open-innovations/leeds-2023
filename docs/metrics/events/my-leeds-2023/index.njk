@@ -1,6 +1,6 @@
 ---
-title: My LEEDS 2023
-summary: Data about the My LEEDS 2023 events.
+title: My LEEDS Summer 2023
+summary: Data about the My LEEDS 2023 Summer events.
 tags:
   - main
 work_in_progress: false
@@ -21,7 +21,7 @@ sources:
   {{ comp.metric.headline({
     title: "Number of events", headingLevel: 2,
     value: events.headlines.total_events | localize,
-    description: "Total activities held as part of this Signature event.",
+    description: "Total activities held as part of My LEEDS Summer.",
     background: "var(--l23-magenta)",
     colour: "var(--l23-magenta-contrast)"
   }) | safe }}
@@ -29,7 +29,7 @@ sources:
   {{ comp.metric.headline({
     title: "Number of wards hosting events", headingLevel: 2,
     value: events.headlines.ward_count | localize,
-    description: "Total activities held as part of this Signature event.",
+    description: "Total activities held as part of My LEEDS Summer to date.",
     background: "var(--l23-cyan)"
   }) | safe }}
 
@@ -58,7 +58,7 @@ sources:
 
 {% endcomp %}
 
-<h2>Events in the My LEEDS 2023 series</h2>
+<h2>Events in the My LEEDS Summer 2023 series</h2>
 
 {% comp 'layout.figure', {max_width: '50rem'} %}
   {{ comp.oi.viz.graph.line({ config: {

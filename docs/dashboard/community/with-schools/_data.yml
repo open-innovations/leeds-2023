@@ -33,7 +33,7 @@ table_columns:
     - key: my_leeds_2023
       name: My LEEDS 2023
       link: /metrics/events/my-leeds-2023
-      description: Events under the My LEEDS 2023
+      description: Events under My LEEDS 2023
     - key: the_barn
       name: The Barn
       link: /metrics/events/the-barn
@@ -41,7 +41,7 @@ table_columns:
     - key: partner
       name: Partner events
       link: /metrics/events/partner
-      description: Events produced with our Partners
+      description: Events produced with LEEDS 2023 Partners
 
 
     - key: ward_hosts

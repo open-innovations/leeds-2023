@@ -17,4 +17,4 @@ if __name__ == '__main__':
     data.start_date = pd.to_datetime(data.start_date)
     data = data[data.start_date < pd.Timestamp.now()]
 
-    data.to_csv(ALL_EVENTS, index=False)
+    data.sort_index(axis=1).sort_values(['start_date', 'event_name']).to_csv(ALL_EVENTS, index=False)

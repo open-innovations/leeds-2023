@@ -12,27 +12,12 @@ def summarise_events():
                             'wd21cd', 'date'], parse_dates=['date']).rename(columns={'wd21cd': 'ward_code', 'date': 'events'}).groupby('ward_code').count().reset_index()
     roadshows['event_type'] = 'roadshow'
 
-    # Load MWMCMN Celebration Events
-    celebration_event = pd.read_csv('docs/_data/metrics/mwmcmn/celeb_event_by_ward.csv',
-                                    usecols=['ward_code', 'celeb_events']).rename(columns={'celeb_events': 'events'})
-    celebration_event['event_type'] = 'celebration_event'
-
-    # Load Schools
-    schools = pd.read_csv('docs/metrics/schools/_data/engagements_by_ward.csv')[
-        ['ward_code', 'total_engagements']].rename(columns={'total_engagements': 'events'})
-    schools['event_type'] = 'schools_engagement'
-
-    # Load Hidden Stories
-    hidden_stories = pd.read_csv('docs/_data/metrics/hidden_stories/wards.csv',usecols=['ward_code','count']).rename(columns={'count':'events'})
-    hidden_stories['event_type'] = 'hidden_stories'
-
-    # My LEEDS events
+    # The rest of these are already summarised by ward, can just load and remap
+    celebration_event = load_data('docs/_data/metrics/mwmcmn/celeb_event_by_ward.csv', 'celebration_event', usecols=['ward_code', 'celeb_events']).rename(columns={'celeb_events': 'events'})
+    schools = load_data('docs/metrics/schools/_data/engagements_by_ward.csv', 'schools_engagement', usecols=['ward_code', 'total_engagements']).rename(columns={'total_engagements': 'events'})
+    hidden_stories = load_data('docs/_data/metrics/hidden_stories/wards.csv','hidden_stories', usecols=['ward_code','count']).rename(columns={'count':'events'})
     my_leeds = load_data('docs/metrics/events/my-leeds-2023/_data/events/by_ward.csv', 'my_leeds_2023', usecols=['ward_code','events'])
-
-    # Barn events
     the_barn = load_data('docs/metrics/events/the-barn/_data/events/by_ward.csv', 'the_barn', usecols=['ward_code','events'])
-    
-    # Partner events
     partner = load_data('docs/metrics/events/partner/_data/by_ward.csv', 'partner', usecols=['ward_code','events'])
 
     #Combine

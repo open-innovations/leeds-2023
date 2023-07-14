@@ -29,8 +29,8 @@ stages:
       size: 1499
     - path: scripts/dashboard/community/events.py
       hash: md5
-      md5: 66914fb24e0374c69ff0d0a2c95c34a1
-      size: 2669
+      md5: ae153e98da76e3077a17d9bf993121e5
+      size: 2456
     outs:
     - path: docs/dashboard/community/_data/events.csv
       hash: md5

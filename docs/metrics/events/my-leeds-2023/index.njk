@@ -58,7 +58,14 @@ sources:
 
 {% endcomp %}
 
+
 <h2>Events in the My LEEDS Summer 2023 series</h2>
+
+<p>
+  The events listed below took place between
+  {{ events.headlines.earliest_date | date('HUMAN_DATE') }} and
+  {{ events.headlines.latest_date | date('HUMAN_DATE') }}.
+</p>
 
 {% comp 'layout.figure', {max_width: '50rem'} %}
   {{ comp.oi.viz.graph.line({ config: {

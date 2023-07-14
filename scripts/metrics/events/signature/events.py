@@ -145,7 +145,7 @@ def save_headlines(data, output_dir):
     ).iloc[-1]
     headlines['ward_count'] = len(data.pipe(by_ward).index)
     headlines['earliest_date'] = data.start_date.min()
-    headlines['latest_date'] = data.start_date.min()
+    headlines['latest_date'] = data.start_date.max()
     headlines.to_json(os.path.join(output_dir, 'headlines.json'), indent=2, date_format='iso')
     return data
 

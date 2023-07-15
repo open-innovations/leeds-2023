@@ -5,8 +5,8 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: 43454b4bb3585b703d3e7282fa606488
-      size: 200576
+      md5: 7aacc5b4560e80627bf00661611ac439
+      size: 201929
     - path: ../../../../lib/util/
       hash: md5
       md5: c8d0ed4dc29d9b7ac15722ecfafcca33.dir
@@ -23,27 +23,27 @@ stages:
     outs:
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/by_month.csv
       hash: md5
-      md5: aecd378d1c631b94ccbaa204534365d2
+      md5: 39a4a13395090a6cfcfb4ef3225cb3ee
       size: 202
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/by_ward.csv
       hash: md5
-      md5: 522ae8fbec4a9c76b1b11922a8fd49f9
-      size: 340
+      md5: d9f70572345b8095dd63a82523ed4e98
+      size: 356
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/by_week.csv
       hash: md5
-      md5: 267cc6d481958de8f917ff02e583587e
-      size: 534
+      md5: 1f3c1035fcde48634879173788446d68
+      size: 558
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/headlines.json
       hash: md5
-      md5: 580d299bad3ee0f3ae4e26f13631a6ad
+      md5: 386dbbec13fc36fa7f151ea9389e9994
       size: 156
   prepare@the-barn:
     cmd: papermill the-barn.ipynb ../../../../working/output/the-barn.ipynb
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: 43454b4bb3585b703d3e7282fa606488
-      size: 200576
+      md5: 7aacc5b4560e80627bf00661611ac439
+      size: 201929
     - path: ../../../../lib/util/
       hash: md5
       md5: c8d0ed4dc29d9b7ac15722ecfafcca33.dir

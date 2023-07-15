@@ -32,15 +32,15 @@ stages:
     outs:
     - path: ../../../data/metrics/events/partner-events/events.csv
       hash: md5
-      md5: 3c06f600786291a95dbbcc846226230b
-      size: 6500
+      md5: 599ee2fd955501dc33f3d4146f1723b0
+      size: 6631
   prepare:
     cmd: PYTHONPATH=. python3 scripts/metrics/partner-events/prepare.py
     deps:
     - path: data/metrics/events/partner-events/events.csv
       hash: md5
-      md5: 3c06f600786291a95dbbcc846226230b
-      size: 6500
+      md5: 599ee2fd955501dc33f3d4146f1723b0
+      size: 6631
     - path: scripts/metrics/partner-events/prepare.py
       hash: md5
       md5: a08bf989636b2661243db829be932bc1
@@ -48,13 +48,13 @@ stages:
     outs:
     - path: docs/metrics/events/partner/_data/by_month.csv
       hash: md5
-      md5: 882077622f57f488739e33a4a984f324
+      md5: b84998d9470d15c927fa191839b6d28e
       size: 211
     - path: docs/metrics/events/partner/_data/by_ward.csv
       hash: md5
-      md5: 0c94cd7f245472318c3121afb1971011
+      md5: bb2cc4f318df6c61a48f7e36cf83d9e2
       size: 149
     - path: docs/metrics/events/partner/_data/headline.json
       hash: md5
-      md5: 2458cb5d1b7cc4f3cb4542b3a9a97d9b
+      md5: d1dfd82564d9e934e10473a9747ab288
       size: 68

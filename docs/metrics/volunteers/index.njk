@@ -56,9 +56,9 @@ major_tick: 4
 
 {% comp 'grid.' + headline_grid_style, { min_width: '20rem' } %}
   {{ comp.metric.headline({
-    title: "Volunteer Hours (Leeds 2023 events)", headingLevel: 3,
+    title: "Total Volunteer Hours", headingLevel: 3,
     value: shifts.summary.volunteer_hours.total | localize,
-    description: "The number of voluntering hours on Leeds 2023 events",
+    description: "The number of voluntering hours, including volunteer programme.",
     background: "var(--l23-magenta)"
   }) | safe }}
 

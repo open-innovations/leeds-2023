@@ -45,6 +45,7 @@
 .header-title {
   font-size: 1.5rem;
 }
+/* TODO remove reliance on pixel values for size setting */
 .headingHero {
 	display: flex;
 	background-color: var(--l23-beige);
@@ -81,7 +82,7 @@
     }    
   }
   & .up {
-    font-size: 20px;
+    font-size: 1.25em;
     text-underline-offset: 4px;
     display: inline-block;
     & svg {
@@ -94,12 +95,12 @@
     color: var(--l23-dark-blue-grey);
     font-family: Rebond Grotesque, sans-serif;
     font-weight: 500;
-    font-size: 64px;
+    font-size: 4em;
     line-height: 72px;
     letter-spacing: -0.02em;
   }
   & p {
-    font-size: 18px;
+    font-size: 1.1em;
     line-height: 32px;
     letter-spacing: -0.02em;
     margin-top: 1em;
@@ -108,7 +109,7 @@
     & {
       padding: 24px 0px;
       & h1 {
-        font-size: 42px;
+        font-size: 2.5em;
         line-height: 1.2;
         padding-right: 52px;
         margin-top: 0px;

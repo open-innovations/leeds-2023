@@ -7,6 +7,7 @@ import inline from "lume/plugins/inline.ts";
 import jsx from "lume/plugins/jsx.ts";
 import metas from "lume/plugins/metas.ts";
 import postcss from "lume/plugins/postcss.ts";
+import svgo from "lume/plugins/svgo.ts";
 import colorFunction from "npm:postcss-color-function";
 
 import oiViz from 'oi-lume-viz/mod.ts';
@@ -97,6 +98,7 @@ site.use(oiViz({
 		}
 	}
 }));
+site.use(svgo());
 
 site.loadPages([".html"]);
 

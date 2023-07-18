@@ -1,6 +1,9 @@
 ---
 layout: layouts/default.njk
 ---
-{% comp "layout.block", { classes: 'forced-top-margin' } %}
+
+{% include 'partials/heading.njk' %}
+
+{% comp "layout.block", { classes: 'main-margin' } %}
   {{ content | safe }}
 {% endcomp %}

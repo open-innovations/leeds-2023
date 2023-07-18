@@ -1,6 +1,5 @@
 <aside data-type="meta-block">
   <div class='row'>
-    {# <h2>About this page</h2> #}
     {% if sources %}<p>Source data updated on {{ sources | first | pathUpdated | date('HUMAN_DATE') }}</p>{% endif %}
     <p>Layout and text updated on {{ date | date('HUMAN_DATE') }}</p>
     {% if published_link %}<p>Get the published data from <a href="published_link">Data Mill North</a>.</p>{% endif %}

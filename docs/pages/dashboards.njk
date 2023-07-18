@@ -1,12 +1,13 @@
 ---
 title: Dashboards
+subtitle: "This page contains links to dashboards that have been created."
 url: /dashboards/
 nav_order: 15
 layout: layouts/project.njk
+up:
+  title: Data
+  url: /
 ---
-<p>
-  This page contains links to dashboards that have been created.
-</p>
 
 {% comp 'grid.autogrid' %}
   {% for dashboard in search.pages('dashboard', 'order=asc title=asc') | data %}

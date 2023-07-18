@@ -22,6 +22,7 @@
   --body-fontstack: 'DM Sans', sans-serif;
   --title-fontstack: 'Rebond Grotesque', 'Rebond Grotesk', sans-serif;  
   --max-width: 1440px;
+  --page-width: 1280px;
   --header-height: 80px;
   --in-page-offset: 100px;
   --background-colour: initial;
@@ -32,6 +33,7 @@
   --l23-yellow: hsl(52, 100%, 50%);
   --l23-magenta: hsl(321, 100%, 50%);
   --l23-mint: hsl(87, 57%, 86%);
+  --l23-beige: rgb(241, 235, 223);
   --l23-yellow-contrast: color(hsl(52, 100%, 50%) contrast(100%));
   --l23-magenta-contrast: black;
 

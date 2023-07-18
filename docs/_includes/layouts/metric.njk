@@ -1,8 +1,10 @@
 ---
 layout: layouts/page.njk
+up:
+  title: "Metrics"
+  url: /metric/
 ---
 
-<h1>{{ title }}</h1>
 
 {% if introduction %}{{ introduction | md | safe }}{% endif %}
 
@@ -16,3 +18,4 @@ layout: layouts/page.njk
   {% for item in limitations %}<li>{{ item | md(true) | safe }}</li>{% endfor %}
 </ul>
 {% endif %}
+

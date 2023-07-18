@@ -10,8 +10,8 @@ stages:
     outs:
     - path: working/metrics/community-grants/
       hash: md5
-      md5: a8a1467c8bc0f72e49b40f200d016a87.dir
-      size: 42987
+      md5: b4d6361c6ad923c6d497f7b4b8dbe3a1.dir
+      size: 43046
       nfiles: 3
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/transform.py
@@ -23,21 +23,23 @@ stages:
       md5: 1e12e6375d4f5ca92d1e926870b5da3c
       size: 2081
     - path: working/metrics/community-grants/
-      md5: a8a1467c8bc0f72e49b40f200d016a87.dir
-      size: 42987
+      hash: md5
+      md5: b4d6361c6ad923c6d497f7b4b8dbe3a1.dir
+      size: 43046
       nfiles: 3
     outs:
     - path: data/metrics/community-grants/
-      md5: 8ecf922ad97a43f9672db250e3bf3a71.dir
-      size: 34082
+      hash: md5
+      md5: 55ec35de478eb76359daa754bfcd0dbb.dir
+      size: 34133
       nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/prepare.py
     deps:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: 8ecf922ad97a43f9672db250e3bf3a71.dir
-      size: 34082
+      md5: 55ec35de478eb76359daa754bfcd0dbb.dir
+      size: 34133
       nfiles: 1
     - path: scripts/metrics/community-grants/prepare.py
       hash: md5
@@ -46,17 +48,17 @@ stages:
     outs:
     - path: docs/metrics/events/my-leeds-2023/_data/headline.json
       hash: md5
-      md5: 19e66dfface8184972a4f35c7582f3c2
+      md5: a7434af615c36b8ac04edcbbff406db9
       size: 106
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_la.csv
       hash: md5
-      md5: b881e54e976d9308ccc8b2d9c64d744d
+      md5: 69701e39334c73dacf82e211c789496a
       size: 114
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_ward.csv
       hash: md5
-      md5: 81a25210c745b6679288edd10a53801b
+      md5: a12cfdbb743b8acd0e313ed8e438f71c
       size: 684
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_week.csv
       hash: md5
-      md5: e4fef87ce201710e5276e25b2f72d700
-      size: 399
+      md5: a97ce4424fc6ff7fcd4bab00355a97d0
+      size: 535

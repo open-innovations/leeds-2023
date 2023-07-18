@@ -79,6 +79,7 @@
     --text-color: var(--l23-magenta);
     & svg {
       max-width: 70%;
+      height: 100%;
     }    
   }
   & .up {

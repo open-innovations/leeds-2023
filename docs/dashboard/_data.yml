@@ -1,3 +1,7 @@
 layout: layouts/project.njk
 tags:
   - dashboard
+
+up:
+  title: Dashboards
+  url: /dashboards/

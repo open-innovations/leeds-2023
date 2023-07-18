@@ -1,12 +1,13 @@
 ---
 title: Reports
+subtitle: "This page contains links to reports that have been published about LEEDS 2023 projects and other initiatives."
 url: /report/
 nav_order: 10
 layout: layouts/project.njk
+up:
+  title: Data
+  url: /
 ---
-<p>
-  This page contains links to reports that have been published about Leeds 2023 projects and other initiatives.
-</p>
 
 {% comp 'grid.autogrid' %}
   {% for report in search.pages('report work_in_progress!=true', 'publication_date=desc') %}

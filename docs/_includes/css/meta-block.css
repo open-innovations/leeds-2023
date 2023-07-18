@@ -1,5 +1,5 @@
 [data-type=meta-block] {
-  background: #bababa;
+  background: var(--l23-beige);
   padding: 0.5rem 1rem;
   & * {
     margin-top: 0;

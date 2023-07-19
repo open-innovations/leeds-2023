@@ -259,17 +259,16 @@
       "name": "status",
       "categories": [
         "5b ATTENDED INDUCTION",
-        "5c Didn't Attend Induction",
         "Deactivated after training",
         "Deactivated before training",
+        "FROZEN ACCOUNT CP5",
         "FROZEN ACCOUNTS CP3",
         "FROZEN ACCOUNTS CP4",
         "Neighbourhood hosts bus codes",
         "Volunteer Hosts",
         "applied",
         "confirmed",
-        "offered",
-        "rejected"
+        "offered"
       ]
     }
   ],
@@ -279,43 +278,43 @@
       "data_type": "string",
       "value_distribution": [
         {
-          "value": "a18a739d8f61c9869802",
+          "value": "15ca6dfb76dff8a70bb2",
           "count": 0.000391
         },
         {
-          "value": "c10221222f65352c8d10",
+          "value": "8f01f738b207af47f8fd",
           "count": 0.000391
         },
         {
-          "value": "d32c395d8d250c282962",
+          "value": "37e512858f065dfb92f1",
           "count": 0.000391
         },
         {
-          "value": "41f449d48f766dea3966",
+          "value": "41bc1fbaeb5d7cdb6e69",
           "count": 0.000391
         },
         {
-          "value": "55e9b407ebddcc66ac92",
+          "value": "44df008ee1da92d0518e",
           "count": 0.000391
         },
         {
-          "value": "6142eda4cd35e81df694",
+          "value": "44f52a56785551a3e863",
           "count": 0.000391
         },
         {
-          "value": "947562063f7cd8807ee8",
+          "value": "6bd9767b89224e6f618e",
           "count": 0.000391
         },
         {
-          "value": "cf374ac6dda5c41a256b",
+          "value": "94fa812180e5a30ec234",
           "count": 0.000391
         },
         {
-          "value": "112de6a2f053e6164ad8",
+          "value": "e3cd8dd4c7c1dc9b413e",
           "count": 0.000391
         },
         {
-          "value": "35486ea74ff6dbb64c1f",
+          "value": "0136161afe602c46092f",
           "count": 0.000391
         }
       ]
@@ -383,15 +382,15 @@
           "count": 0.010938
         },
         {
+          "value": "2022-08-08",
+          "count": 0.010938
+        },
+        {
           "value": "2022-10-19",
           "count": 0.010938
         },
         {
           "value": "2023-02-10",
-          "count": 0.010938
-        },
-        {
-          "value": "2022-08-08",
           "count": 0.010938
         },
         {

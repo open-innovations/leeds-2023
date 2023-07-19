@@ -3,12 +3,14 @@
     <img src="/assets/images/ribbon.svg" inline>
 	</div>
 	{% comp "layout.block", { classes: 'forced-top-margin' } %}
-		{% if up %}
-		<a href="{{ up.url }}" class="up"><svg width="16" height="16" fill="#00373f"><path d="M11.48 10.326a.75.75 0 00-.96-1.152l-1.77 1.475V3.75a.75.75 0 00-1.5 0v6.899L5.48 9.174a.75.75 0 00-.96 1.152l3 2.5a.75.75 0 00.96 0l3-2.5z"></path></svg>{{ up.title }}</a>
+		<div class="headingText">
+			{% if up %}
+			<a href="{{ up.url }}" class="up"><svg width="16" height="16" fill="#00373f"><path d="M11.48 10.326a.75.75 0 00-.96-1.152l-1.77 1.475V3.75a.75.75 0 00-1.5 0v6.899L5.48 9.174a.75.75 0 00-.96 1.152l3 2.5a.75.75 0 00.96 0l3-2.5z"></path></svg>{{ up.title }}</a>
+			{% endif %}
+			<h1>{{ title }}</h1>
+			{% if subtitle %}
+			<p>{{ subtitle }}</p>
 		{% endif %}
-		<h1>{{ title }}</h1>
-		{% if subtitle %}
-		<p>{{ subtitle }}</p>
-		{% endif %}
+		</div>
 	{% endcomp %}
 </div>

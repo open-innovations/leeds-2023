@@ -1,5 +1,5 @@
 <svg viewBox="0 0 940 708" fill="none"
-  xmlns="http://www.w3.org/2000/svg">
+  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid slice">
   <mask id="id-0a" style="mask-type: alpha;" maskUnits="userSpaceOnUse" x="0" y="-1" width="940" height="709">
     <path transform="matrix(0 1 1 0 0 0)" fill="#D9D9D9" d="M0 0h707.824v940H0z"></path>
   </mask>

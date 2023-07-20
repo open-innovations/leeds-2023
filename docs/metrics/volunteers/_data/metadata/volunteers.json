@@ -264,6 +264,7 @@
         "FROZEN ACCOUNT CP5",
         "FROZEN ACCOUNTS CP3",
         "FROZEN ACCOUNTS CP4",
+        "FROZEN ACCOUNTS CP6",
         "Neighbourhood hosts bus codes",
         "Volunteer Hosts",
         "applied",
@@ -278,44 +279,44 @@
       "data_type": "string",
       "value_distribution": [
         {
+          "value": "45ec50858ed558b712df",
+          "count": 0.00039
+        },
+        {
           "value": "15ca6dfb76dff8a70bb2",
-          "count": 0.000391
+          "count": 0.00039
         },
         {
           "value": "8f01f738b207af47f8fd",
-          "count": 0.000391
+          "count": 0.00039
         },
         {
-          "value": "37e512858f065dfb92f1",
-          "count": 0.000391
+          "value": "41f449d48f766dea3966",
+          "count": 0.00039
         },
         {
-          "value": "41bc1fbaeb5d7cdb6e69",
-          "count": 0.000391
+          "value": "55e9b407ebddcc66ac92",
+          "count": 0.00039
         },
         {
-          "value": "44df008ee1da92d0518e",
-          "count": 0.000391
+          "value": "6142eda4cd35e81df694",
+          "count": 0.00039
         },
         {
-          "value": "44f52a56785551a3e863",
-          "count": 0.000391
+          "value": "947562063f7cd8807ee8",
+          "count": 0.00039
         },
         {
-          "value": "6bd9767b89224e6f618e",
-          "count": 0.000391
+          "value": "cf374ac6dda5c41a256b",
+          "count": 0.00039
         },
         {
-          "value": "94fa812180e5a30ec234",
-          "count": 0.000391
+          "value": "cd60a36eea04011f6a97",
+          "count": 0.00039
         },
         {
-          "value": "e3cd8dd4c7c1dc9b413e",
-          "count": 0.000391
-        },
-        {
-          "value": "0136161afe602c46092f",
-          "count": 0.000391
+          "value": "5d768bbaed04253aefa8",
+          "count": 0.00039
         }
       ]
     },
@@ -325,7 +326,7 @@
       "value_distribution": [
         {
           "value": "-0.0 to 0.1",
-          "count": 0.284766
+          "count": 0.284432
         },
         {
           "value": "0.1 to 0.2",
@@ -361,7 +362,7 @@
         },
         {
           "value": "0.9 to 1.0",
-          "count": 0.715234
+          "count": 0.715568
         }
       ]
     },
@@ -371,43 +372,43 @@
       "value_distribution": [
         {
           "value": "2022-09-09",
-          "count": 0.019531
+          "count": 0.019508
         },
         {
           "value": "2023-01-08",
-          "count": 0.012109
+          "count": 0.012095
         },
         {
           "value": "2023-05-26",
-          "count": 0.010938
-        },
-        {
-          "value": "2022-08-08",
-          "count": 0.010938
+          "count": 0.010925
         },
         {
           "value": "2022-10-19",
-          "count": 0.010938
+          "count": 0.010925
         },
         {
           "value": "2023-02-10",
-          "count": 0.010938
+          "count": 0.010925
+        },
+        {
+          "value": "2022-08-08",
+          "count": 0.010925
         },
         {
           "value": "2023-05-30",
-          "count": 0.010547
-        },
-        {
-          "value": "2023-03-09",
-          "count": 0.010156
+          "count": 0.010535
         },
         {
           "value": "2023-01-09",
-          "count": 0.010156
+          "count": 0.010144
+        },
+        {
+          "value": "2023-03-09",
+          "count": 0.010144
         },
         {
           "value": "2023-05-31",
-          "count": 0.009375
+          "count": 0.009364
         }
       ]
     },
@@ -417,43 +418,43 @@
       "value_distribution": [
         {
           "value": "2023-03-16",
-          "count": 0.093502
+          "count": 0.093453
         },
         {
           "value": "2023-04-25",
-          "count": 0.059694
+          "count": 0.059662
         },
         {
           "value": "2022-09-09",
-          "count": 0.05177
+          "count": 0.051742
         },
         {
           "value": "2023-01-09",
-          "count": 0.032752
+          "count": 0.032735
         },
         {
           "value": "2022-09-16",
-          "count": 0.025885
+          "count": 0.025871
         },
         {
           "value": "2023-02-20",
-          "count": 0.024828
+          "count": 0.024815
         },
         {
           "value": "2023-03-20",
-          "count": 0.022187
+          "count": 0.022175
         },
         {
           "value": "2023-05-09",
-          "count": 0.019546
+          "count": 0.019535
         },
         {
           "value": "2022-09-27",
-          "count": 0.017433
+          "count": 0.017423
         },
         {
           "value": "2022-09-26",
-          "count": 0.016376
+          "count": 0.016367
         }
       ]
     },
@@ -509,43 +510,43 @@
       "value_distribution": [
         {
           "value": "2023-04-25",
-          "count": 0.337091
+          "count": 0.336712
         },
         {
           "value": "2022-12-17",
-          "count": 0.252537
+          "count": 0.252252
         },
         {
           "value": "2023-02-06",
-          "count": 0.107103
+          "count": 0.106982
         },
         {
           "value": "2023-07-03",
-          "count": 0.099211
-        },
-        {
-          "value": "2023-07-08",
-          "count": 0.047351
+          "count": 0.099099
         },
         {
           "value": "2023-06-30",
-          "count": 0.047351
+          "count": 0.047297
+        },
+        {
+          "value": "2023-07-08",
+          "count": 0.047297
         },
         {
           "value": "2022-11-05",
-          "count": 0.039459
+          "count": 0.039414
         },
         {
           "value": "2023-07-05",
-          "count": 0.032694
+          "count": 0.032658
         },
         {
           "value": "2023-05-09",
-          "count": 0.014656
+          "count": 0.01464
         },
         {
           "value": "2023-07-11",
-          "count": 0.00451
+          "count": 0.004505
         }
       ]
     },

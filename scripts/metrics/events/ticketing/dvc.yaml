@@ -1,10 +1,18 @@
+vars:
+  - top: ../../../..
 stages:
   extract:
-    cmd: PYTHONPATH=. python3 scripts/metrics/events/ticketing/extract.py
-    wdir: ../../../..
+    cmd: python3 extract.py
     deps:
-      - scripts/metrics/events/ticketing/extract.py
-      - lib/sources/ticket_tailor.py
+      - extract.py
+      - pipes.py
+      - ${top}/lib/sources/ticket_tailor.py
     outs:
-      - working/metrics/ticketing/orders.csv:
+      - ${top}/working/metrics/ticketing/orders.csv:
           cache: false
+  transform:
+    cmd: papermill tickets.ipynb ${top}/working/output/tickets.ipynb
+    deps:
+      - tickets.ipynb
+      - pipes.py
+      - ${top}/working/metrics/ticketing/orders.csv

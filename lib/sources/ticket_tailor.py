@@ -37,11 +37,6 @@ def call_api(url):
 
 def get_orders():
     orders = call_api("https://api.tickettailor.com/v1/orders?limit=100")
-    orders['postcode'] = pd.json_normalize(orders.buyer_details)[
-        'address.postal_code']
-    orders['event_id'] = pd.json_normalize(orders.event_summary)['id']
-    orders['number_of_tickets'] = orders.issued_tickets.apply(lambda x: len(x))
-    orders.created_at = pd.to_datetime(orders.created_at, unit='s')
     return orders
 
 

@@ -1,18 +1,37 @@
 schema: '2.0'
 stages:
   extract:
-    cmd: PYTHONPATH=. python3 scripts/metrics/events/ticketing/extract.py
+    cmd: python3 extract.py
     deps:
-    - path: lib/sources/ticket_tailor.py
+    - path: ../../../../lib/sources/ticket_tailor.py
       hash: md5
-      md5: 3a8246b9047d9c84761f0b22168c6c26
-      size: 1808
-    - path: scripts/metrics/events/ticketing/extract.py
+      md5: c5ee01205c7f02856512fe7d746ca042
+      size: 1492
+    - path: extract.py
       hash: md5
-      md5: 63383e3b6b51a79cbcf197e9d30aff26
-      size: 601
+      md5: 6afb5730b1c4f7cc7a0917239a49a3b7
+      size: 913
+    - path: pipes.py
+      hash: md5
+      md5: 564a48f276d11d6a64b72b71f5e50c66
+      size: 714
     outs:
-    - path: working/metrics/ticketing/orders.csv
+    - path: ../../../../working/metrics/ticketing/orders.csv
       hash: md5
-      md5: ced9b91da13ae08f60c995cb7c2d6d32
-      size: 215364
+      md5: 930ea3db419beefb40fa87a98a44ac7c
+      size: 395633
+  transform:
+    cmd: papermill tickets.ipynb ../../../../working/output/tickets.ipynb
+    deps:
+    - path: ../../../../working/metrics/ticketing/orders.csv
+      hash: md5
+      md5: 930ea3db419beefb40fa87a98a44ac7c
+      size: 395633
+    - path: pipes.py
+      hash: md5
+      md5: 564a48f276d11d6a64b72b71f5e50c66
+      size: 714
+    - path: tickets.ipynb
+      hash: md5
+      md5: 33f11587b942eed2e157b4f9a9f93952
+      size: 295962

@@ -1,8 +1,15 @@
 import os
+import sys
 
-from lib.sources.ticket_tailor import get_orders
+ROOT_DIR = os.path.abspath('../../../../')
+lib_dir = os.path.join(ROOT_DIR, 'lib')
+if lib_dir not in sys.path: sys.path.append(lib_dir)
 
-TICKET_RAW = os.path.join('working', 'metrics', 'ticketing')
+from sources.ticket_tailor import get_orders
+from pipes import process_orders
+
+
+TICKET_RAW = os.path.join(ROOT_DIR, 'working', 'metrics', 'ticketing')
 os.makedirs(TICKET_RAW, exist_ok=True)
 
 RAW_ORDER_FILE = os.path.join(TICKET_RAW, 'orders.csv')
@@ -10,14 +17,17 @@ RAW_ORDER_FILE = os.path.join(TICKET_RAW, 'orders.csv')
 
 if __name__ == '__main__':
     print('Getting orders')
-    orders = get_orders()
+    orders = get_orders().pipe(process_orders)
     orders[
         [
             'object',
             'id',
-            'postcode',
+            'postcode_from_question',
+            'postcode_from_address',
             'created_at',
             'event_id',
+            'event_name',
+            'event_date',
             'number_of_tickets',
             'referral_tag',
             'status',

@@ -35,8 +35,8 @@ stages:
     outs:
     - path: data/metrics/events/master/all.csv
       hash: md5
-      md5: a80c7c96e5f616680e32e3f2d8b8bcca
-      size: 201954
+      md5: 36066b34412e2f8949712f543474f439
+      size: 202964
   prepare:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/prepare.py
     deps:

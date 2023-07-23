@@ -9,8 +9,8 @@ E05011388,2,0,0,1,1,0,1,Burmantofts and Richmond Hill,5
 E05011389,1,1,0,0,1,0,1,Calverley and Farsley,4
 E05011390,3,1,0,1,1,0,1,Chapel Allerton,7
 E05011391,0,0,1,0,1,0,1,Cross Gates and Whinmoor,3
-E05012648,0,0,0,0,1,0,1,Farnley and Wortley,2
-E05013830,1,0,0,0,1,0,1,Garforth and Swillington,3
+E05012648,0,0,1,0,1,0,1,Farnley and Wortley,3
+E05013830,1,0,1,0,1,0,1,Garforth and Swillington,4
 E05011394,1,2,1,2,1,0,1,Gipton and Harehills,8
 E05011395,1,0,1,0,1,0,1,Guiseley and Rawdon,4
 E05011396,0,1,1,2,1,0,1,Harewood,6
@@ -24,7 +24,7 @@ E05011403,3,1,0,55,0,0,1,Little London and Woodhouse,60
 E05011404,0,0,0,0,1,0,1,Middleton Park,2
 E05011405,0,0,1,0,1,0,1,Moortown,3
 E05011406,0,0,0,0,1,0,1,Morley North,2
-E05011407,0,0,0,0,1,0,1,Morley South,2
+E05011407,0,0,1,0,1,0,1,Morley South,3
 E05011549,0,1,3,0,1,0,1,Otley and Yeadon,6
 E05011409,0,0,2,0,1,0,1,Pudsey,4
 E05011410,0,0,1,0,1,0,1,Rothwell,3

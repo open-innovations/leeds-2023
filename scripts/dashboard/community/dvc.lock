@@ -13,8 +13,8 @@ stages:
       size: 950
     - path: docs/metrics/events/my-leeds-2023/_data/events/by_ward.csv
       hash: md5
-      md5: 1061e6dc805844e351f392f52a980a1f
-      size: 441
+      md5: 232d60e44b9a9f2b6f5e5d8d93bac59d
+      size: 449
     - path: docs/metrics/events/partner/_data/by_ward.csv
       hash: md5
       md5: 6af8ea2dffa2f5f535aa230916ca6bb0
@@ -53,8 +53,8 @@ stages:
       size: 52939
     - path: data/metrics/volunteers/volunteers.csv
       hash: md5
-      md5: 7c1bcf3224ac234a6302ecc1aa24dc0d
-      size: 223279
+      md5: 75b6cd98b4b42da495e24d2437fbd2b5
+      size: 223462
     - path: data/reference/leeds_wards.csv
       hash: md5
       md5: 887a42d46d34c9e966211a79f2b8a672
@@ -74,9 +74,9 @@ stages:
     outs:
     - path: docs/dashboard/community/_data/residents.csv
       hash: md5
-      md5: 327be0187ba6b748f09ab0d469ddf816
+      md5: 22438671a9af82514dfe2ce62b378913
       size: 1484
     - path: docs/dashboard/community/_data/residents_with_schools.csv
       hash: md5
-      md5: 4a41256a246ed86938e085a525d24848
+      md5: 6554343d5ac73bfe12ee3101237c0f18
       size: 1629

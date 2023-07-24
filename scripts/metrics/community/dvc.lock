@@ -37,8 +37,8 @@ stages:
       size: 22434
     - path: prepare.ipynb
       hash: md5
-      md5: ee070e01ed81f933dc3675b53b69fc7d
-      size: 2929
+      md5: 19eb2fb7334d3e5cdb0212056c8e5729
+      size: 2979
     outs:
     - path: ../../../docs/metrics/community/_data/by_date.csv
       hash: md5
@@ -46,8 +46,8 @@ stages:
       size: 453
     - path: ../../../docs/metrics/community/_data/by_ward.csv
       hash: md5
-      md5: 846e947625c5ed88aed7e273c0c0a250
-      size: 532
+      md5: 33da9eaba3c36456bcc67e935fc65264
+      size: 472
     - path: ../../../docs/metrics/community/_data/headlines.json
       hash: md5
       md5: 6fe27c1d4c15f45118f0d5c8665bbd4b

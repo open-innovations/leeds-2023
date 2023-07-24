@@ -1,0 +1,159 @@
+---
+title: Community Engagement
+summary: Community encagement statistics
+tags:
+  - main
+order: 45
+metas:
+  title: Community engagement
+  description: |
+    Visualisations of key metrics related to engagement with community.
+limitations:
+  - Some events extracted are missing location, audience or both
+sources:
+  - data/metrics/community/
+---
+
+{% from 'macros.njk' import dateFormatterNoYear as dateFormatter %}
+
+{% comp 'grid.' + headline_grid_style, {min_width: '25rem'} %}
+{% comp 'grid.block.impact' %}
+  <h2>
+    Community event attendances
+  </h2>
+  {{ comp.viz.bigNumber({
+    number: headlines.audience | localize
+  }) | safe }}
+  <p>
+    Total attendances reported at all community events.
+  </p> 
+{% endcomp %}
+
+{% comp 'grid.block.impact' %}
+    <h2>
+      Community events held
+    </h2>
+    {{ comp.viz.bigNumber({
+      number: headlines.events
+    }) | safe }}
+    <p>
+      Number of community events held
+    </p> 
+{% endcomp %}
+
+{% endcomp %}
+
+{% comp 'grid.autogrid', {min_width: '40rem'} %}
+
+{% comp 'layout.figure' %}
+  <h3>Number of attendances at events in ward</h3>
+{{ comp.oi.viz.graph.line({ config: {
+    categories: by_date.columns.start_date,
+    width: 25,
+    height: 15,
+    padding: { left: 4 },
+    series: [
+      {
+        id: 'attendances',
+        label: 'Attendances (cumulative)',
+        yValues: by_date.columns.cumulative_audience,
+        colour: 'var(--l23-cyan)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    xAxis: {
+      title: 'Date',
+      majorTick: 4
+    },
+    plotArea: {
+      yMax: headlines.audience | round(-2, 'ceil')
+    },
+    yAxis: {
+      title: 'Number of attendances',
+      titleOffset: 3,
+      majorTick: 250, 
+      formatter: dateFormatter
+    },
+    legend: {
+      width: '30em'
+    }
+  } }) | safe }}
+{% endcomp %}
+
+{% comp 'layout.figure' %}
+  <h3>Number of events in ward</h3>
+{{ comp.oi.viz.graph.line({ config: {
+    categories: by_date.columns.start_date,
+    width: 25,
+    height: 15,
+    padding: { left: 4 },
+    series: [
+      {
+        id: 'events',
+        label: 'Events (cumulative)',
+        yValues: by_date.columns.cumulative_events,
+        colour: 'var(--l23-cyan)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    xAxis: {
+      title: 'Date',
+      majorTick: 4
+    },
+    plotArea: {
+      yMax: headlines.events | round(-2, 'ceil')
+    },
+    yAxis: {
+      title: 'Number of events',
+      titleOffset: 3,
+      majorTick: 50, 
+      formatter: dateFormatter
+    },
+    legend: {
+      width: '30em'
+    }
+  } }) | safe }}
+{% endcomp %}
+
+
+{% comp 'layout.figure' %}
+  <h3>Attendances at events held by ward</h3>
+  {{ comp.oi.viz.map.hex_cartogram({
+		config: {
+			hexjson: hex.wards_leeds,
+			data: by_ward.rows,
+			matchKey: 'ward_code',
+			value: 'audience',
+			bgColour: '#ddd',
+			label: '{{ n | slice(0,3) }}',
+			tooltip: '<h4>{{ n }}</h4><p><strong>{{ audience | "0" }}</strong> attendances</p>',
+			scale: 'cyan'
+		}
+  }) | safe }}
+{% endcomp %}
+{% comp 'layout.figure' %}
+  <h3>Events held per ward</h3>
+  {{ comp.oi.viz.map.hex_cartogram({
+		config: {
+			hexjson: hex.wards_leeds,
+			data: by_ward.rows,
+			matchKey: 'ward_code',
+			value: 'events',
+			bgColour: '#ddd',
+			label: '{{ n | slice(0,3) }}',
+			tooltip: '<h4>{{ n }}</h4><p><strong>{{ events | "0" }}</strong> events</p>',
+			scale: 'cyan'
+		}
+  }) | safe }}
+{% endcomp %}
+
+{% endcomp %}
+
+
+
+
+
+
+  {# <p>
+    Darker coloured wards have engaged with a higher percentage of the schools within that ward.
+  </p> #}

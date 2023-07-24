@@ -1,4 +1,5 @@
 import ast
+import re
 
 def literal_converter(series):
     def convert(value):
@@ -7,3 +8,7 @@ def literal_converter(series):
         except (SyntaxError, ValueError):
             return value
     return series.apply(convert)
+
+
+def standardise_columns(name):
+    return re.sub(r'[\s\-/]+', '_', name.lower().strip())

@@ -1,0 +1,14 @@
+vars:
+  - top: ../../..
+stages:
+  extract: 
+    cmd: python extract.py
+    deps:
+      - extract.py
+    outs:
+      - ${top}/working/metrics/community/events.csv:
+          persist: false
+          cache: false
+  transform:
+    cmd: papermill transform.ipynb ../../../working/output/community-transform.ipynb
+    

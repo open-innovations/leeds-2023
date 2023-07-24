@@ -1,0 +1,16 @@
+schema: '2.0'
+stages:
+  extract:
+    cmd: python extract.py
+    deps:
+    - path: extract.py
+      hash: md5
+      md5: 50454fe6910323172e3f9c89ec894d7c
+      size: 580
+    outs:
+    - path: ../../../working/metrics/community/events.csv
+      hash: md5
+      md5: b1fba80b3d4541eb0fdfe69095cefcea
+      size: 207259
+  transform:
+    cmd: papermill transform.ipynb ../../../working/output/community-transform.ipynb

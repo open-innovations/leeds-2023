@@ -12,3 +12,7 @@ def literal_converter(series):
 
 def standardise_columns(name):
     return re.sub(r'[\s\-/]+', '_', name.lower().strip())
+
+
+def named_cumulative_sum(data):
+    return data.cumsum().rename(columns=lambda c: f'cumulative_{c}')

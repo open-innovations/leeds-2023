@@ -11,4 +11,25 @@ stages:
           cache: false
   transform:
     cmd: papermill transform.ipynb ../../../working/output/community-transform.ipynb
-    
+    deps:
+      - transform.ipynb
+      - ${top}/working/metrics/community/events.csv
+    outs:
+      - ${top}/data/metrics/community/events.csv:
+          persist: false
+          cache: false
+  prepare:
+    cmd: papermill prepare.ipynb ../../../working/output/community-prepare.ipynb
+    deps:
+      - prepare.ipynb
+      - ${top}/data/metrics/community/events.csv
+    outs:
+      - ${top}/docs/metrics/community/_data/headlines.json:
+          persist: false
+          cache: false
+      - ${top}/docs/metrics/community/_data/by_date.csv:
+          persist: false
+          cache: false
+      - ${top}/docs/metrics/community/_data/by_ward.csv:
+          persist: false
+          cache: false

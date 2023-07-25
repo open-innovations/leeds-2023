@@ -3,6 +3,7 @@ vars:
 stages:
   extract: 
     cmd: python extract.py
+    always_changed: true
     deps:
       - extract.py
     outs:

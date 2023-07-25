@@ -24,6 +24,7 @@ papermill = "*"
 ipykernel = "*"
 chardet = "*"
 matplotlib = "*"
+ratelimit = "*"
 
 [dev-packages]
 

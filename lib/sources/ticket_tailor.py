@@ -3,6 +3,7 @@ from urllib.parse import urlparse
 
 import pandas as pd
 import requests
+from ratelimit import limits, sleep_and_retry
 
 API_KEY = os.environ['TICKET_TAILOR_API_KEY']
 
@@ -11,6 +12,13 @@ def replace_query(url, new_query):
     res = url.split('?')
     res[1] = new_query
     return '?'.join(res)
+
+
+@sleep_and_retry
+@limits(calls=20, period=36)
+def limited_call(*args, **kwargs):
+    response = requests.request(*args, **kwargs)
+    return response
 
 
 def call_api(url):
@@ -22,7 +30,7 @@ def call_api(url):
     }
 
     while True:
-        result = requests.request("GET", url, headers=headers).json()
+        result = limited_call("GET", url, headers=headers).json()
         try:
             data = data + result['data']
             next_page = result['links']['next']

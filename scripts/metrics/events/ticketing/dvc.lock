@@ -5,8 +5,8 @@ stages:
     deps:
     - path: ../../../../lib/sources/ticket_tailor.py
       hash: md5
-      md5: c5ee01205c7f02856512fe7d746ca042
-      size: 1492
+      md5: 16d47dc943e820fdc4102e0a1260c02c
+      size: 1686
     - path: extract.py
       hash: md5
       md5: 6afb5730b1c4f7cc7a0917239a49a3b7

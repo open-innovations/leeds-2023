@@ -4,6 +4,6 @@
     "lume/": "https://deno.land/x/lume@v1.18.1/",
     "local/": "./local-lib/",
     "oi-lume-utils/": "https://cdn.jsdelivr.net/gh/open-innovations/oi-lume-utils@0.3.0/",
-    "oi-lume-viz/": "https://deno.land/x/oi_lume_viz@v0.10.5/"
+    "oi-lume-viz/": "https://deno.land/x/oi_lume_viz@v0.10.6/"
   }
 }

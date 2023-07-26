@@ -1,0 +1,6 @@
+key_metrics:
+  events: 
+    title: Community Events Held
+    ref: headlines.events
+    description: The number of community events held.
+    colour: var(--l23-pink)

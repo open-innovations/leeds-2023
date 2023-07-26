@@ -11,8 +11,11 @@ stages:
       - ${top}/working/metrics/ticketing/orders.csv:
           cache: false
   transform:
-    cmd: papermill tickets.ipynb ${top}/working/output/tickets.ipynb
+    cmd: papermill tickets.ipynb ${top}/working/output/tickets-transform.ipynb
     deps:
       - tickets.ipynb
       - pipes.py
       - ${top}/working/metrics/ticketing/orders.csv
+    outs:
+      - ${top}/data/metrics/events/tickets/orders.csv:
+          cache: false

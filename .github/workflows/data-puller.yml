@@ -44,6 +44,9 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           TYPEFORM_PRIVATE_TOKEN: ${{ secrets.TYPEFORM_PRIVATE_TOKEN }}
           TICKET_TAILOR_API_KEY: ${{ secrets.TICKET_TAILOR_API_KEY }}
+          OI_SFTP_HOST: ${{ secrets.OI_SFTP_HOST }}
+          OI_SFTP_USERNAME: ${{ secrets.OI_SFTP_USERNAME }}
+          OI_SFTP_PASSWORD: ${{ secrets.OI_SFTP_PASSWORD }}
 
         run: |
           # dvc pull

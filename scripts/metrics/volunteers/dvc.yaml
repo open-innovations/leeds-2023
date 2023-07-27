@@ -1,3 +1,5 @@
+vars:
+  - top: ../../..
 stages:
   # extract:
   #   cmd: dvc update working/metrics/rosterfy.dvc
@@ -8,6 +10,16 @@ stages:
   #     - working/metrics/rosterfy/:
   #         persist: true
   #         cache: false
+  extract:
+    cmd: python3 extract.py
+    always_changed: true
+    deps:
+      - extract.py
+    outs:
+      - ${top}/working/metrics/rosterfy/:
+          persist: true
+          cache: false
+
   transform-signups:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform_signups.py
     wdir: ../../..

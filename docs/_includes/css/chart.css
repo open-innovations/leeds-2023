@@ -57,6 +57,11 @@ div.chart, div.oi-chart {
 	text-align: left;
 }
 
+h2 + .oi-viz { margin-top: 0; }
+.oi-viz .oi-legend { margin-top: 0; }
+.oi-legend + .oi-chart-main { margin-top: 1em; }
+.oi-legend-item { text-align: center; }
+
 .chart, .oi-graph .line-chart {
   & .legend {
     --auto-grid-min-size: 16rem;

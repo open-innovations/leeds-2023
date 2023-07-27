@@ -24,11 +24,11 @@ limitations:
 </div>
 
 {# Set up colours #}
-{% set all_colour = "var(--l23-magenta)" %}
+{% set all_colour = "magenta" %}
 {% set twitter_colour = "#1DA1F2" %}
 {% set instagram_colour = "#833AB4" %}
-{% set facebook_colour = "var(--l23-mint)" %}
-{% set linkedin_colour = "var(--l23-cyan)" %}
+{% set facebook_colour = "mint" %}
+{% set linkedin_colour = "cyan" %}
 
 {% from 'macros.njk' import dateFormatter %}
 
@@ -234,6 +234,91 @@ limitations:
           width: "20em"
       }
     } }) | safe }}
+	<h2>Total online audience</h2>
+	{{ comp.oi.viz.chart.line({
+		config: {
+			data: search.data('metrics/social-media').all_weekly,
+			width: 680,
+			height: 300,
+			"font-family": "Rebond Grotesque",
+			axis: {
+				x: {
+					title: {
+						label: 'Week ending (Sunday)'
+					},
+					tick:{
+						type: "months",
+						format: "%b %Y",
+						size: 5
+					},
+					line: {
+						show: true,
+						"stroke-width": 1
+					}
+				},
+				y: {
+					title: {
+						label: 'Total Audience'
+					},
+					tick:{
+						spacing: 5000,
+						size: 5
+					},
+					line: {
+						show: true,
+						"stroke-width": 1
+					},
+					min: 0
+				}
+			},
+			series: [{
+					title: "All",
+					x: "week_ending",
+					y: "audience_last",
+					colour: "all",
+					points: {
+						size: 6
+					}
+				},{
+					title: "Twitter",
+					x: "week_ending",
+					y: "audience_last",
+					colour: "twitter",
+					points: {
+						size: 6
+					}
+				},{
+					title: "Instagram",
+					x: "week_ending",
+					y: "audience_last",
+					colour: "instagram",
+					points: {
+						size: 6
+					}
+				},{
+					title: "Facebook",
+					x: "week_ending",
+					y: "audience_last",
+					colour: "facebook",
+					points: {
+						size: 6
+					}
+				},{
+					title: "Linkedin",
+					x: "week_ending",
+					y: "audience_last",
+					colour: "linkedin",
+					points: {
+						size: 6
+					}
+				}
+			],
+			legend: {
+				show: true,
+				itemWidth: "8rem"
+			}
+		}
+	}) | safe }}
     {% endcomp %}
     {% endcomp %}
     {% endcall %}
@@ -263,7 +348,7 @@ limitations:
       plotArea: {
         yMin: 0,
         yMax: 35000,
-        colour: "var(--l23-dark-blue-grey)"
+        colour: "darkbluegrey"
       },
       padding: {
         left: 4,
@@ -305,6 +390,90 @@ limitations:
         width: "20em"
       }
     } }) | safe }}
+
+	<h2>Total engagements</h2>
+		{{ comp.oi.viz.chart.line({ config: {
+			data: search.data('metrics/social-media').all_weekly,
+			width: 680,
+			height: 300,
+			"font-family": "Rebond Grotesque",
+			axis: {
+				x: {
+					title: {
+						label: 'Week ending (Sunday)'
+					},
+					tick:{
+						type: "months",
+						format: "%b %Y",
+						size: 5
+					},
+					line: {
+						show: true,
+						"stroke-width": 1
+					}
+				},
+				y: {
+					title: {
+						label: 'Engagements'
+					},
+					tick: {
+						spacing: 5000,
+						size: 5
+					},
+					line: {
+						show: true,
+						"stroke-width": 1
+					},
+					min: 0
+				}
+			},
+			series: [{
+					title: "All",
+					x: "week_ending",
+					y: "engagements_total",
+					colour: "all",
+					points: {
+						size: 6
+					}
+				},{
+					title: "Twitter",
+					x: "week_ending",
+					y: "engagements_total",
+					colour: "twitter",
+					points: {
+						size: 6
+					}
+				},{
+					title: "Instagram",
+					x: "week_ending",
+					y: "engagements_total",
+					colour: "instagram",
+					points: {
+						size: 6
+					}
+				},{
+					title: "Facebook",
+					x: "week_ending",
+					y: "engagements_total",
+					colour: "facebook",
+					points: {
+						size: 6
+					}
+				},{
+					title: "Linkedin",
+					x: "week_ending",
+					y: "engagements_total",
+					colour: "linkedin",
+					points: {
+						size: 6
+					}
+				}
+			],
+			legend: {
+				show: true,
+				itemWidth: "8rem"
+			}
+		} }) | safe }}
     {% endcomp %}
     {% endcomp %}
     {% endcall %}

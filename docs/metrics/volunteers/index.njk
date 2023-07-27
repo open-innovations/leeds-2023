@@ -140,6 +140,59 @@ major_tick: 4
     }
   } }) | safe }}
 
+	{{ comp.oi.viz.chart.line({
+		config: {
+			data: shifts.by_week,
+			width: 680,
+			height: 320,
+			"font-family": "Rebond Grotesque",
+			columns: [{
+				name: "tooltip",
+				template: "{{ date | strftime('%e %b %Y') }}: <strong>{{ cumulative_volunteer_hours | toLocaleString() }}</strong> hours"
+			}],
+			axis: {
+				x: {
+					title: {
+						label: 'Week ending (Friday)'
+					},
+					tick:{
+						type: "months",
+						format: "%b %Y",
+						size: 5
+					},
+					line: {
+						show: true,
+						"stroke-width": 1
+					}
+				},
+				y: {
+					title: {
+						label: 'Volunteer Hours'
+					},
+					tick:{
+						spacing: 1000,
+						size: 5
+					},
+					line: {
+						show: true,
+						"stroke-width": 1
+					}
+				}
+			},
+			series: [{
+				title: "Cumulative volunteering hours",
+				x: "date",
+				y: "cumulative_volunteer_hours",
+				tooltip: "tooltip",
+				colour: "magenta",
+				points: { size: 6 }
+			}],
+			legend: {
+				show: true
+			}
+		}
+	}) | safe }}
+
   {{ comp.oi.viz.graph.line({ config: {
     categories: shifts.by_week.columns.date,
     width: 25,
@@ -177,6 +230,62 @@ major_tick: 4
       width: "20em"
     }
   } }) | safe }}
+
+
+
+	{{ comp.oi.viz.chart.line({
+		config: {
+			data: shifts.by_week,
+			width: 680,
+			height: 320,
+			"font-family": "Rebond Grotesque",
+			columns: [{
+				name: "tooltip",
+				template: "{{ date | strftime('%e %b %Y') }}: <strong>{{ cumulative_volunteer_shifts | toLocaleString() }}</strong> shifts"
+			}],
+			axis: {
+				x: {
+					title: {
+						label: 'Week ending (Friday)'
+					},
+					tick: {
+						type: "months",
+						format: "%b %Y",
+						size: 5
+					},
+					line: {
+						show: true,
+						"stroke-width": 1
+					}
+				},
+				y: {
+					title: {
+						label: 'Volunteer Shifts'
+					},
+					tick:{
+						spacing: 1000,
+						size: 5
+					},
+					line: {
+						show: true,
+						"stroke-width": 1
+					}
+				}
+			},
+			series: [{
+				title: "Cumulative volunteering shifts",
+				x: "date",
+				y: "cumulative_volunteer_shifts",
+				tooltip: "tooltip",
+				colour: "yellow",
+				points: { size: 6 }
+			}],
+			legend: {
+				show: true
+			}
+		}
+	}) | safe }}
+
 
 {% endcomp %}
 

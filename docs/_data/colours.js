@@ -1,13 +1,14 @@
 import { ColourScale } from 'local/oi/colours.js';
 
-export const mint = 'hsl(87, 57%, 86%)';
-export const darkmint = 'hsl(87, 57%, 20%)';
-export const yellow = 'hsl(52, 100%, 50%)';
-export const darkyellow = 'hsl(52, 100%, 20%)';
-export const magenta = 'hsl(321, 100%, 50%)';
-export const cyan = 'hsl(173, 65%, 61%)';
-export const darkcyan = 'hsl(191, 57%, 15%)';
-export const darkmagenta = 'rgb(94, 14, 55)';
+export const mint = '#ddf0c7';
+export const darkmint = '#365016';
+export const yellow = '#ffdd00';
+export const darkyellow = '#665800';
+export const magenta = '#ff00a6';
+export const cyan = '#5bdccd';
+export const darkcyan = '#10343c';
+export const darkmagenta = '#5e0e37';
+export const darkbluegrey =  '#00353d';
 
 export const scales = {
 	'mint': ColourScale(mint+' 0%, '+darkmint+' 100%'),

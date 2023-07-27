@@ -13,11 +13,11 @@ stages:
       size: 950
     - path: docs/metrics/events/my-leeds-2023/_data/events/by_ward.csv
       hash: md5
-      md5: 232d60e44b9a9f2b6f5e5d8d93bac59d
-      size: 449
+      md5: 9153baa2f905a7b0ec699c6bf606cb49
+      size: 455
     - path: docs/metrics/events/partner/_data/by_ward.csv
       hash: md5
-      md5: 6af8ea2dffa2f5f535aa230916ca6bb0
+      md5: 5940657488a50f2b13d431e87e794643
       size: 149
     - path: docs/metrics/events/the-barn/_data/events/by_ward.csv
       hash: md5
@@ -25,7 +25,7 @@ stages:
       size: 63
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
       hash: md5
-      md5: 3e36763d76a3acdafadf704d872722dc
+      md5: eae9ef833470da842d14af1ed37b6c5e
       size: 1499
     - path: scripts/dashboard/community/events.py
       hash: md5
@@ -38,7 +38,7 @@ stages:
       size: 1529
     - path: docs/dashboard/community/_data/events_with_schools.csv
       hash: md5
-      md5: cf846a99f665c1ca05e2ad9d7390ccdb
+      md5: 8b0cdae6f79877cd4e155288e7c2af29
       size: 1627
   prepare_residents:
     cmd: PYTHONPATH=scripts/ python3 scripts/dashboard/community/residents.py
@@ -53,8 +53,8 @@ stages:
       size: 52939
     - path: data/metrics/volunteers/volunteers.csv
       hash: md5
-      md5: 75b6cd98b4b42da495e24d2437fbd2b5
-      size: 223462
+      md5: 343a94e38da5350bc01e4246fb125a76
+      size: 223738
     - path: data/reference/leeds_wards.csv
       hash: md5
       md5: 887a42d46d34c9e966211a79f2b8a672
@@ -65,7 +65,7 @@ stages:
       size: 1517
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
       hash: md5
-      md5: 3e36763d76a3acdafadf704d872722dc
+      md5: eae9ef833470da842d14af1ed37b6c5e
       size: 1499
     - path: scripts/dashboard/community/residents.py
       hash: md5
@@ -74,9 +74,9 @@ stages:
     outs:
     - path: docs/dashboard/community/_data/residents.csv
       hash: md5
-      md5: 22438671a9af82514dfe2ce62b378913
+      md5: c9d7b48152225b808f7ca9b16db5e021
       size: 1484
     - path: docs/dashboard/community/_data/residents_with_schools.csv
       hash: md5
-      md5: 6554343d5ac73bfe12ee3101237c0f18
+      md5: 94a729502cc3df6b5c802bc629f01225
       size: 1629

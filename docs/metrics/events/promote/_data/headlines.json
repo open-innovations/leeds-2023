@@ -1,6 +1,6 @@
 {
-  "total_events":85,
-  "total_event_instances":767,
+  "total_events":86,
+  "total_event_instances":786,
   "earliest_event":"2023-01-04T10:30:00.000",
-  "latest_event":"2023-07-24T19:10:00.000"
+  "latest_event":"2023-07-27T10:00:00.000"
 }

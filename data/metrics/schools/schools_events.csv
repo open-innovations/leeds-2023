@@ -188,7 +188,7 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-06-15,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Farnley and Wortley'],['LS12 5AW'],['Ryecroft Academy'],['Farnley and Wortley'],,0.0,0.0,0.0,1
 2023-06-15,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Horsforth'],['LS18 5AF'],['Broadgate Primary School'],['Horsforth'],,0.0,0.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Concert,CLE,Creative Learning S2,['Little London and Woodhouse'],['LS2 8BY'],,,,0.0,0.0,0.0,0
-2023-06-28,River of Hope,CLE,Creative Learning S3,,,,,,0.0,0.0,0.0,0
+2023-06-28,River of Hope,CLE,Creative Learning S3,,,"['Carr Manor Community School', 'Cardinal Heenan Catholic High School', 'Pudsey Grammar School', 'Cockburn School']","['Moortown ', 'Moortown ', 'Pudsey', 'Beeston and Holbeck']","['LS17 5DJ', 'LS6 4QE', 'LS11 5TT']",0.0,0.0,0.0,4
 2023-06-28,Feel the Music,CLE,Feel the Music,['Little London and Woodhouse'],['LS2 7BS'],,,,0.0,0.0,0.0,0
 2023-07-07,Noah's Flood: School,CLE,"Slung Low, Noah's Flood",['Beeston and Holbeck'],[' LS11 9RQ'],['Ingram Road Primary School'],['Beeston and Holbeck'],,180.0,180.0,0.0,1
 2023-07-15,Storymakers: Festival Day,CLE,Creative Learning S3,,,,,,0.0,0.0,0.0,0

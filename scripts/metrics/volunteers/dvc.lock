@@ -126,5 +126,5 @@ stages:
       size: 223738
     - path: docs/metrics/volunteers/_data/metadata/volunteers.json
       hash: md5
-      md5: d9b949a7a04aefc0371e1530a075c59a
+      md5: 333c6d4bbfa2cbc3d10abb4fba2e98c5
       size: 11917

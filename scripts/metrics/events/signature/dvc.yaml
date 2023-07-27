@@ -25,3 +25,26 @@ stages:
         - ${top}/docs/metrics/events/${item}/_data/events/by_week.csv:
             persist: false
             cache: false
+  prepare-summary:
+    cmd: papermill prepare.ipynb ${top}/working/output/signature-prepare.ipynb
+    deps:
+      - prepare.ipynb
+      - events.py
+      - ${top}/data/metrics/events/master/all.csv
+      - ${top}/data/metrics/events/tickets/orders.csv
+    outs:
+      - ${top}/docs/metrics/events/signature/_data/headlines.json:
+          persist: false
+          cache: false
+      - ${top}/docs/metrics/events/signature/_data/events_by_date.csv:
+          persist: false
+          cache: false
+      - ${top}/docs/metrics/events/signature/_data/events_by_ward.csv:
+          persist: false
+          cache: false
+      - ${top}/docs/metrics/events/signature/_data/tickets_by_event_date.csv:
+          persist: false
+          cache: false
+      - ${top}/docs/metrics/events/signature/_data/tickets_by_ward.csv:
+          persist: false
+          cache: false

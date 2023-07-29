@@ -10,16 +10,16 @@ stages:
     outs:
     - path: working/metrics/promote-events/
       hash: md5
-      md5: b305d8603fd3d2abb5820ea5fb69a68e.dir
-      size: 100432
+      md5: d81c3bd0c443389d6089e4936930d160.dir
+      size: 101157
       nfiles: 1
   transform:
     cmd: papermill transform.ipynb ../../../working/output/promote-events-transform.ipynb
     deps:
     - path: ../../../working/metrics/promote-events/
       hash: md5
-      md5: b305d8603fd3d2abb5820ea5fb69a68e.dir
-      size: 100432
+      md5: d81c3bd0c443389d6089e4936930d160.dir
+      size: 101157
       nfiles: 1
     - path: transform.ipynb
       hash: md5
@@ -28,15 +28,15 @@ stages:
     outs:
     - path: ../../../data/metrics/events/promote-events/events.csv
       hash: md5
-      md5: 87dc84afbced59b841715212bc858d82
-      size: 82884
+      md5: 59f723868fd2a88f4555cc5f4ffcb8b4
+      size: 83477
   prepare:
     cmd: papermill prepare.ipynb ../../../working/output/promote-events-prepare.ipynb
     deps:
     - path: ../../../data/metrics/events/promote-events/events.csv
       hash: md5
-      md5: 87dc84afbced59b841715212bc858d82
-      size: 82884
+      md5: 59f723868fd2a88f4555cc5f4ffcb8b4
+      size: 83477
     - path: prepare.ipynb
       hash: md5
       md5: 9768f5f5f9ba893c74ac5b28d9cc4bf3
@@ -44,13 +44,13 @@ stages:
     outs:
     - path: ../../../docs/metrics/events/promote/_data/by_month.csv
       hash: md5
-      md5: e618e0458dc2db46a393543f1a2c1a6c
+      md5: 3349475408e271e01f2fe30c4de0b1e1
       size: 239
     - path: ../../../docs/metrics/events/promote/_data/by_week.csv
       hash: md5
-      md5: 6aefc9d11dabcda5f09d85e6b44ad888
-      size: 737
+      md5: 33529d08b366a29058079321cc281015
+      size: 759
     - path: ../../../docs/metrics/events/promote/_data/headlines.json
       hash: md5
-      md5: 78d0ccfda370dbdaccc76380da45fda1
+      md5: 1827e10b87bf17e2dade7db6d887d825
       size: 144

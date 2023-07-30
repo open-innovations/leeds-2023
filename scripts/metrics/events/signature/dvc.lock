@@ -83,8 +83,8 @@ stages:
       size: 208212
     - path: ../../../../data/metrics/events/tickets/orders.csv
       hash: md5
-      md5: e6ed25392f17ed45d0a6ceef9ce0b317
-      size: 178736
+      md5: ae77e0b7006106883e99d41915ea6863
+      size: 179006
     - path: events.py
       hash: md5
       md5: 9dd0dc11d1e4dfe48c694440b19c6825

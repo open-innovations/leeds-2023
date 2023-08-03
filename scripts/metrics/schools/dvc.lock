@@ -41,8 +41,8 @@ stages:
       size: 1035
     - path: data/reference/schools.csv
       hash: md5
-      md5: fa555329f01d67fc48c96c3bde9582a9
-      size: 19131
+      md5: 6db6c574025ee9cbda7830cc3e4f09f2
+      size: 19159
     - path: scripts/metrics/schools/prepare.py
       hash: md5
       md5: 359f1c098e76fecfe474202e30e19175
@@ -58,7 +58,7 @@ stages:
       size: 1176
     - path: docs/metrics/schools/_data/headlines.json
       hash: md5
-      md5: 7de394960bda9d776c6bbc0db747dddd
+      md5: 70e51fd0c4b25390979fa7dbbf182425
       size: 373
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
       hash: md5
@@ -74,5 +74,5 @@ stages:
     outs:
     - path: data/reference/schools.csv
       hash: md5
-      md5: fa555329f01d67fc48c96c3bde9582a9
-      size: 19131
+      md5: 6db6c574025ee9cbda7830cc3e4f09f2
+      size: 19159

@@ -1,0 +1,187 @@
+---
+title: Signature Events
+summary: Data about the LEEDS 2023 Signature events programme.
+tags:
+  - main
+work_in_progress: true
+order: 12
+metas:
+  title: LEEDS 2023 Signature Events
+  description: |
+    Visualisations of key data related to LEEDS 2023 Signature Events.
+---
+
+{% from 'macros.njk' import dateFormatter %}
+
+<h2>Headlines</h2>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+  {{ comp.metric.headline({
+    title: "Number of events", headingLevel: 2,
+    value: headlines.total_events | localize,
+    description: "Total Signature event activities held by LEEDS 2023.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Related Callouts", headingLevel: 2,
+    value: headlines.total_attendances | localize,
+    description: "Total number of attendances at LEEDS 2023 Signature events.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Tickets sold", headingLevel: 2,
+    value: headlines.total_tickets_sold_for_events_to_date | localize,
+    description: "Total number of tickets sold for LEEDS 2023 Signature events.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
+{% endcomp %}
+
+<h2>Signature Events held</h2>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '30rem' } %}
+
+{% comp 'layout.figure', {max_width: '50rem'} %}
+<h3>Number of Signature events by month</h3>
+  {{ comp.oi.viz.graph.line({ config: {
+    categories: events_by_date.columns.date,
+    width: 25,
+    height: 14,
+    text: { colour: '#eee' },
+    xAxis: {
+      title: 'Date',
+      titleOffset: 4,
+      labelRotate: 35,
+      formatter: dateFormatter
+    },
+    yAxis: {
+      title: 'Total',
+      titleOffset: 3,
+      majorTick: 50
+    },
+    plotArea: {
+      yMax: 500,
+      colour: 'var(--l23-dark-blue-grey)'
+    },
+    padding: {
+      left: 4,
+      bottom: 5
+    },
+    series: [
+      {
+        id: "events", label: "Number of events",
+        yValues: events_by_date.columns.events,
+        colour: 'var(--l23-magenta)',
+        markerOptions: { s: 5 }
+      },
+      {
+        id: "attendances", label: "Number of attendances",
+        yValues: events_by_date.columns.attendances,
+        colour: 'var(--l23-cyan)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    legend: {
+      width: "20em"
+    }
+  } }) | safe }}
+{% endcomp %}
+
+{% comp 'layout.figure', {min_width: '30rem'} %}
+<h3>Total Signature events held by ward</h3>
+{{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.wards_leeds,
+		data: events_by_ward.rows,
+		matchKey: 'ward_code',
+		value: 'events',
+		bgColour: '#ddd',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '<h4>{{ n }}</h4><p><strong>{{ events | "0" }}</strong> event(s)</p>',
+		min: 0,
+		scale: 'magenta'
+	}
+  }) | safe }}
+{% endcomp %}
+
+{% endcomp %}
+
+
+
+
+
+
+<h2>Ticket sales</h2>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '30rem' } %}
+
+{% comp 'layout.figure', {min_width: '30rem'} %}
+
+<h3>Total Signature event tickets sold by ward of residence</h3>
+{{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.wards_leeds,
+		data: tickets_by_ward.rows,
+		matchKey: 'ward_code',
+		value: 'tickets',
+		bgColour: '#ddd',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '<h4>{{ n }}</h4><p><strong>{{ tickets | "0" }}</strong> ticket(s) sold</p>',
+		min: 0,
+		scale: 'magenta'
+	}
+  }) | safe }}
+
+{% endcomp %}
+
+{% comp 'layout.figure', {max_width: '50rem'} %}
+<h3>Number of tickets sold by event date</h3>
+  {{ comp.oi.viz.graph.line({ config: {
+    categories: tickets_by_event_date.columns.event_date,
+    width: 25,
+    height: 14,
+    text: { colour: '#eee' },
+    xAxis: {
+      title: 'Date',
+      titleOffset: 4,
+      labelRotate: 35,
+      formatter: dateFormatter
+    },
+    yAxis: {
+      title: 'Total',
+      titleOffset: 3,
+      majorTick: 500
+    },
+    plotArea: {
+      yMax: 5000,
+      colour: 'var(--l23-dark-blue-grey)'
+    },
+    padding: {
+      left: 4,
+      bottom: 5
+    },
+    series: [
+      {
+        id: "tickets", label: "Number of tickets sold",
+        yValues: tickets_by_event_date.columns.tickets,
+        colour: 'var(--l23-magenta)',
+        markerOptions: { s: 5 }
+      },
+      {
+        id: "orders", label: "Number of ticket orders",
+        yValues: tickets_by_event_date.columns.orders,
+        colour: 'var(--l23-cyan)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    legend: {
+      width: "20em"
+    }
+  } }) | safe }}
+{% endcomp %}
+
+{% endcomp %}
+
+

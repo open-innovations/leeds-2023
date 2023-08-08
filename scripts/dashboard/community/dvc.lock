@@ -13,8 +13,8 @@ stages:
       size: 950
     - path: docs/metrics/events/my-leeds-2023/_data/events/by_ward.csv
       hash: md5
-      md5: a14f6132f8c2e845a294aba9b80347c6
-      size: 503
+      md5: 96789aaf41fde85f750c04635206aa8a
+      size: 508
     - path: docs/metrics/events/partner/_data/by_ward.csv
       hash: md5
       md5: b8dc53b23c433a6a6bbcee01f0eccbf9

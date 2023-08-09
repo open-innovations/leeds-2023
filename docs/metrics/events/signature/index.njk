@@ -13,6 +13,32 @@ metas:
 
 {% from 'macros.njk' import dateFormatter %}
 
+<h2>Headlines</h2>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+  {{ comp.metric.headline({
+    title: "Number of events", headingLevel: 2,
+    value: headlines.total_events | localize,
+    description: "Total Signature event activities held by LEEDS 2023.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Total attendances", headingLevel: 2,
+    value: headlines.total_attendances | localize,
+    description: "Total number of attendances at LEEDS 2023 Signature events.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Tickets sold", headingLevel: 2,
+    value: headlines.total_tickets_sold_for_events_to_date | localize,
+    description: "Total number of tickets sold for LEEDS 2023 Signature events.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+{% endcomp %}
+
 <h2>Signature Events held</h2>
 
 {% comp 'grid.autogrid', { min_width: '30rem' } %}
@@ -49,34 +75,6 @@ metas:
     <p>Ticket ballot and event attendances.</p>
   {% endcomp %}
   {% endcomp %}
-
-<h2>Headlines</h2>
-
-{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
-  {{ comp.metric.headline({
-    title: "Number of events", headingLevel: 2,
-    value: headlines.total_events | localize,
-    description: "Total Signature event activities held by LEEDS 2023.",
-    background: "var(--l23-magenta)"
-  }) | safe }}
-
-  {{ comp.metric.headline({
-    title: "Total attendances", headingLevel: 2,
-    value: headlines.total_attendances | localize,
-    description: "Total number of attendances at LEEDS 2023 Signature events.",
-    background: "var(--l23-yellow)"
-  }) | safe }}
-
-  {{ comp.metric.headline({
-    title: "Tickets sold", headingLevel: 2,
-    value: headlines.total_tickets_sold_for_events_to_date | localize,
-    description: "Total number of tickets sold for LEEDS 2023 Signature events.",
-    background: "var(--l23-cyan)"
-  }) | safe }}
-
-{% endcomp %}
-
-
 
 
 

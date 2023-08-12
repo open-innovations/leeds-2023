@@ -5,7 +5,7 @@ E05011384,0,0,1,0,1,0,1,Ardsley and Robin Hood,3
 E05011385,2,0,1,0,1,0,1,Armley,5
 E05012647,0,1,3,9,1,0,1,Beeston and Holbeck,15
 E05011387,1,0,0,0,1,0,1,Bramley and Stanningley,3
-E05011388,2,0,0,1,1,0,1,Burmantofts and Richmond Hill,5
+E05011388,2,0,1,1,1,0,1,Burmantofts and Richmond Hill,6
 E05011389,1,1,0,1,1,0,1,Calverley and Farsley,5
 E05011390,3,1,0,1,1,0,1,Chapel Allerton,7
 E05011391,0,0,1,0,1,0,1,Cross Gates and Whinmoor,3
@@ -17,10 +17,10 @@ E05011396,0,1,1,2,1,0,1,Harewood,6
 E05011397,0,0,1,7,1,13,1,Headingley and Hyde Park,23
 E05011547,0,0,1,2,1,0,1,Horsforth,5
 E05011399,2,2,2,5,1,1,1,Hunslet and Riverside,14
-E05011400,1,0,0,0,1,0,1,Killingbeck and Seacroft,3
+E05011400,1,0,1,0,1,0,1,Killingbeck and Seacroft,4
 E05011401,0,0,1,0,1,0,1,Kippax and Methley,3
 E05011402,1,0,1,0,2,0,1,Kirkstall,5
-E05011403,3,1,1,56,0,0,1,Little London and Woodhouse,62
+E05011403,3,1,1,57,0,0,1,Little London and Woodhouse,63
 E05011404,0,0,1,0,1,0,1,Middleton Park,3
 E05011405,0,0,1,0,1,0,1,Moortown,3
 E05011406,0,0,0,0,1,0,1,Morley North,2
@@ -30,5 +30,5 @@ E05011409,0,0,2,0,1,0,1,Pudsey,4
 E05011410,0,0,1,0,1,0,1,Rothwell,3
 E05011411,0,0,3,0,1,0,1,Roundhay,5
 E05013831,0,0,2,0,1,0,1,Temple Newsam,4
-E05011413,1,0,2,1,2,0,1,Weetwood,7
+E05011413,1,0,3,2,2,0,1,Weetwood,9
 E05011414,0,0,3,0,1,0,1,Wetherby,5

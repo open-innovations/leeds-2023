@@ -5,8 +5,8 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: f0ebf844bc596ba6eb9fe6e41b829ab6
-      size: 218059
+      md5: 955074baf785dec3d6882418fcbd974a
+      size: 218069
     - path: ../../../../lib/util/
       hash: md5
       md5: 1716a8255a4563e6111e07666ced83f0.dir
@@ -23,27 +23,27 @@ stages:
     outs:
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/by_month.csv
       hash: md5
-      md5: cfbda669d578727a027ef3b70e904b93
-      size: 229
+      md5: 4dd918c61892468fd95b158e89c9ceb6
+      size: 230
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/by_ward.csv
       hash: md5
-      md5: 78ec8308e45bfdfc6c75210ec91e6d3b
-      size: 540
+      md5: 82a1a79b8488ac5162887c59fa673bf7
+      size: 544
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/by_week.csv
       hash: md5
-      md5: 99889be1f6ac2721af777bfe26c5be25
-      size: 665
+      md5: 38c7a1bd6bd9225695d42624259cf573
+      size: 668
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/headlines.json
       hash: md5
-      md5: a724ca92106b0c033c62565be7e0a363
+      md5: 6fb2789f03563af90208b0a9d94e9028
       size: 156
   prepare@the-barn:
     cmd: papermill the-barn.ipynb ../../../../working/output/the-barn.ipynb
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: f0ebf844bc596ba6eb9fe6e41b829ab6
-      size: 218059
+      md5: 955074baf785dec3d6882418fcbd974a
+      size: 218069
     - path: ../../../../lib/util/
       hash: md5
       md5: 1716a8255a4563e6111e07666ced83f0.dir
@@ -79,12 +79,12 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: f0ebf844bc596ba6eb9fe6e41b829ab6
-      size: 218059
+      md5: 955074baf785dec3d6882418fcbd974a
+      size: 218069
     - path: ../../../../data/metrics/events/tickets/orders.csv
       hash: md5
-      md5: 7c4d877d9ca54de10961cbb25a1ff256
-      size: 185315
+      md5: 9fc26da2798a9ebfa4b4dcbdede92e19
+      size: 186161
     - path: events.py
       hash: md5
       md5: 9dd0dc11d1e4dfe48c694440b19c6825

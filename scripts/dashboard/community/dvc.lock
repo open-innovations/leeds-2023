@@ -13,11 +13,11 @@ stages:
       size: 950
     - path: docs/metrics/events/my-leeds-2023/_data/events/by_ward.csv
       hash: md5
-      md5: 78ec8308e45bfdfc6c75210ec91e6d3b
-      size: 540
+      md5: 82a1a79b8488ac5162887c59fa673bf7
+      size: 544
     - path: docs/metrics/events/partner/_data/by_ward.csv
       hash: md5
-      md5: a7a381c814b2e62277e85b834aa18de3
+      md5: 02675b02b90aadf0105990ad7ce25a1b
       size: 161
     - path: docs/metrics/events/the-barn/_data/events/by_ward.csv
       hash: md5
@@ -34,11 +34,11 @@ stages:
     outs:
     - path: docs/dashboard/community/_data/events.csv
       hash: md5
-      md5: ae1f09a3a694c86598287925ee27b35a
+      md5: 9344b542ace9c6c4ca4fed86b06e683a
       size: 1529
     - path: docs/dashboard/community/_data/events_with_schools.csv
       hash: md5
-      md5: 5cc917794d6f7f587819f4345fe86ea2
+      md5: 1be9471636467b3bcae29ca1cb7bfc48
       size: 1627
   prepare_residents:
     cmd: PYTHONPATH=scripts/ python3 scripts/dashboard/community/residents.py

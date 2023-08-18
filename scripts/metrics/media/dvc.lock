@@ -5,22 +5,22 @@ stages:
     deps:
     - path: scripts/metrics/media/cision.py
       hash: md5
-      md5: d82460ed61c1fbd50b81093dc419c4ce
-      size: 4835
+      md5: d044c77da402eb8e1c0972bc2c7f2919
+      size: 4874
     - path: scripts/metrics/media/transform_cision.py
       hash: md5
       md5: ac73392d736465b1c695d3f8ea6f41d3
       size: 157
     - path: working/manual/media/
       hash: md5
-      md5: 5fc8344aa679950f7313c856dd08a33b.dir
-      size: 1163903
-      nfiles: 36
+      md5: 86460a153ca5bb3d66cd7c8fa4f7e7a2.dir
+      size: 1173269
+      nfiles: 37
     outs:
     - path: data/metrics/media_coverage/combined_cision.csv
       hash: md5
-      md5: 3784e9b1dbf2abdbc7abdedc5c1062e1
-      size: 362215
+      md5: a3dfee78edc1a5c5f367bbe440de15d5
+      size: 375339
   transform_historic:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/media/combine_historic.py
     deps:
@@ -29,9 +29,9 @@ stages:
       size: 2586
     - path: working/manual/media/
       hash: md5
-      md5: 5fc8344aa679950f7313c856dd08a33b.dir
-      size: 1163903
-      nfiles: 36
+      md5: 86460a153ca5bb3d66cd7c8fa4f7e7a2.dir
+      size: 1173269
+      nfiles: 37
     outs:
     - path: data/metrics/media_coverage/combined_historic.csv
       md5: 2075d0be6cc9d6325fb589b3cdab43c8
@@ -41,8 +41,8 @@ stages:
     deps:
     - path: data/metrics/media_coverage/combined_cision.csv
       hash: md5
-      md5: 3784e9b1dbf2abdbc7abdedc5c1062e1
-      size: 362215
+      md5: a3dfee78edc1a5c5f367bbe440de15d5
+      size: 375339
     - path: data/metrics/media_coverage/combined_historic.csv
       md5: 2075d0be6cc9d6325fb589b3cdab43c8
       size: 66475
@@ -52,13 +52,13 @@ stages:
     outs:
     - path: docs/metrics/media_coverage/_data/medium_count.csv
       hash: md5
-      md5: 7d4ecab677d452c2218292f69da6d9d9
+      md5: 258a3937fceb521c36f3661273b413c4
       size: 59
     - path: docs/metrics/media_coverage/_data/monthly_count.csv
       hash: md5
-      md5: 7d7e1853dc1b2002cad558ca10f1ac0d
-      size: 764
+      md5: 8b1c4590b8ef1a09368cb837888e2a71
+      size: 786
     - path: docs/metrics/media_coverage/_data/outlet_count.csv
       hash: md5
-      md5: c296bd79e349e543ee949e963cb239bc
+      md5: eec9ea18044dcdda9ff91ec2197d2ca8
       size: 170

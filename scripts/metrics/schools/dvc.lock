@@ -9,13 +9,13 @@ stages:
       size: 2970
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
-      md5: ddd3560c15e0cea62ac8f29bee40f70a
-      size: 89780
+      md5: a4f0c327649710dfc4df937725db2232
+      size: 92864
     outs:
     - path: data/metrics/schools/schools_events.csv
       hash: md5
-      md5: f3b0a987699462a009793da4aa6c3bd7
-      size: 33028
+      md5: 62a95157fbad9b4f89532d330598545c
+      size: 34506
   extract:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
     deps:
@@ -26,15 +26,15 @@ stages:
     outs:
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
-      md5: ddd3560c15e0cea62ac8f29bee40f70a
-      size: 89780
+      md5: a4f0c327649710dfc4df937725db2232
+      size: 92864
   prepare:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
       hash: md5
-      md5: f3b0a987699462a009793da4aa6c3bd7
-      size: 33028
+      md5: 62a95157fbad9b4f89532d330598545c
+      size: 34506
     - path: data/reference/leeds_wards.csv
       hash: md5
       md5: 887a42d46d34c9e966211a79f2b8a672
@@ -50,19 +50,19 @@ stages:
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
       hash: md5
-      md5: 0670748db5f6ca1df00e922d1023736b
+      md5: a99a9bfd73466cc03c43d7925b5c6437
       size: 1500
     - path: docs/metrics/schools/_data/engagements_by_week.csv
       hash: md5
-      md5: ecea650cbec9b1f9c6217c1fcb45a8f8
+      md5: 32fcb7b448e66023944cb69523a3e085
       size: 1250
     - path: docs/metrics/schools/_data/headlines.json
       hash: md5
-      md5: 66dacc8016a72f7619a7a57ab137436d
+      md5: 68ab26105de2c66a9803260474594c15
       size: 373
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
       hash: md5
-      md5: 3d2c8c9a212fb4cd382610bfd15736fd
+      md5: 1fd4888d3128d217bbd331643289d816
       size: 5765
   ref_data:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/get_reference_data.py

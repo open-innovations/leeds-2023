@@ -1,38 +1,39 @@
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage w.e. 17.03.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 13-20.01.23.csv
-ERROR:convert_numbers:invalid literal for int() with base 10: ' -   '
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e. 23.06.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 weekly media coverage w.e. 24.02.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e. 09.06.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage w.e. 6.04.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 21-27.01.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 1-6.01.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e. 21.07.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 weekly media coverage W.e 10.02.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage w.e 19.05.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 02.12.22.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage w.e 26.5.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 2023-03-24.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage w.e. 13.01.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e. 16.06.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 weekly media coverage w.e. 03.03.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Cision - Leeds 2023 23 Sept - 17 Oct for OI.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage 30.06.23.csv
-ERROR:guess_date:Some incompatible date formats found
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 23 weekly media coverage w.e 28.7.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 23.12.22.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/leeds 2023 weekly media coverage w.e. 31.03.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage 28.04.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/7-9 January 2023 - The Awakening.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e 07.07.23 .csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 weekly media coverage w.e. 03.03.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e 14.07.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage w.e. 10.03.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage 28.04.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 09.12.22.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/leeds 2023 weekly media coverage w.e. 31.03.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 weekly media coverage w.e. 05.05.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e 12.05.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 weekly media coverage w.e. 24.02.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/7-9 January 2023 - The Awakening.csv
 ERROR:convert_numbers:invalid literal for int() with base 10: ' 78,000 '
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 16.12.22.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 weekly media coverage w.e. 05.05.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e 14.07.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage w.e. 10.03.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 09.12.22.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e 07.07.23 .csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e 12.05.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage w.e 03.02.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e. 02.06.23.csv
-INFO:load_cision_file:Loading /home/runner/work/leeds-2023/leeds-2023/working/manual/media/LEEDS 2023 Weekly Media Coverage w.e. 17.02.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e. 23.06.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage w.e 19.05.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage 30.06.23.csv
+ERROR:guess_date:Some incompatible date formats found
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 2023-03-24.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e. 21.07.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage w.e. 6.04.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 29.07-18.08.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 weekly media coverage W.e 10.02.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 21-27.01.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage w.e. 13.01.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 Weekly Media Coverage w.e. 17.02.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 13-20.01.23.csv
+ERROR:convert_numbers:invalid literal for int() with base 10: ' -   '
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 16.12.22.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 23.12.22.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Cision - Leeds 2023 23 Sept - 17 Oct for OI.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 23 weekly media coverage w.e 28.7.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 02.12.22.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e. 09.06.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage w.e. 17.03.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e. 02.06.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/LEEDS 2023 Weekly media coverage w.e. 16.06.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage w.e 03.02.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage w.e 26.5.23.csv
+INFO:load_cision_file:Loading /media/data/code/oi/leeds-2023/working/manual/media/Leeds 2023 weekly media coverage 1-6.01.23.csv

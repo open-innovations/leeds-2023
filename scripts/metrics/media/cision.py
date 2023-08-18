@@ -27,6 +27,7 @@ def load_cision_files():
     files = list_cision_files()
 
     dfs = pd.concat([load_cision_file(file) for file in files])
+    print(dfs)
     return dfs.pipe(clean_up)
 
 
@@ -75,6 +76,7 @@ def normalise_column_names(data):
 
 
 def patch_column_names(data):
+    print(data.columns)
     return data.rename(columns={
         'headline': 'news_headline',
         'date': 'news_date',

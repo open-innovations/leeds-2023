@@ -1,1021 +1,171 @@
-id,name,location,card_price,time,display,stage
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-01-04 10:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-01-06 19:00:00,,
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-01-08 12:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-01-11 10:30:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-01-11 19:30:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-01-13 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-01-13 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-01-13 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-01-14 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-01-15 12:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-01-18 10:30:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-01-18 19:30:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-01-20 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-01-20 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-01-20 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-01-21 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-01-22 12:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-01-25 10:30:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-01-25 19:30:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-01-27 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-01-27 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-01-27 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-01-28 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-01-29 12:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-02-01 10:30:00,True,['Published/Will be']
-79685,Keep Crafting - free adult crafts,Leeds City Museum,Free,2023-02-01 15:00:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-02-01 19:30:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-02-03 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-02-03 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-02-03 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-02-04 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-02-05 12:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-02-08 10:30:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-02-08 19:30:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-02-10 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-02-10 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-02-10 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-02-11 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-02-12 12:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-02-13 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-02-14 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-02-15 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-02-15 10:30:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-02-15 19:30:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-02-16 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-02-17 09:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-02-17 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-02-17 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-02-17 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-02-18 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-02-19 12:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-02-20 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-02-21 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-02-22 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-02-22 10:30:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-02-22 19:30:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-02-23 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-02-24 09:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-02-24 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-02-24 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-02-24 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-02-25 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-02-26 12:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-02-27 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-02-28 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-01 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-03-01 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-03-01 11:30:00,True,['Published/Will be']
-79685,Keep Crafting - free adult crafts,Leeds City Museum,Free,2023-03-01 15:00:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-03-01 19:30:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-02 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-03 09:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-03-03 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-03-03 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-03-03 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-03-04 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-03-05 12:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-06 09:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-03-06 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-03-06 19:10:00,,
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-07 09:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-03-07 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-08 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-03-08 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-03-08 11:30:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-03-08 19:30:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-09 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-10 09:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-03-10 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-03-10 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-03-10 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-03-11 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-03-12 12:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-13 09:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-03-13 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-03-13 19:10:00,,
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-14 09:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-03-14 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-15 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-03-15 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-03-15 11:30:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-03-15 19:30:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-16 09:00:00,True,['Published/Will be']
-81140,Overlooked Spotlight Tour,Leeds City Museum,Free,2023-03-16 12:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-17 09:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-03-17 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-03-17 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-03-17 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-03-18 11:00:00,True,['Published/Will be']
-81256,Afrikan Market Leeds,Leeds West Indian Centre,Free,2023-03-18 11:00:00,True,['Published/Will be']
-80536,Lord of the Flies,Leeds Playhouse,,2023-03-18 19:00:00,,['Past']
-76801,Manchester Collective – Black Angels,Howard Assembly Room,,2023-03-18 19:45:00,,['Past']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-03-19 12:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-20 09:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-03-20 17:30:00,True,['Published/Will be']
-80536,Lord of the Flies,Leeds Playhouse,,2023-03-20 19:00:00,,['Past']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-03-20 19:10:00,,
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-21 09:00:00,True,['Published/Will be']
-80536,Lord of the Flies,Leeds Playhouse,,2023-03-21 19:00:00,,['Past']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-03-21 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-22 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-03-22 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-03-22 11:30:00,True,['Published/Will be']
-78965,A Monster Calls,Carriageworks Theatre,,2023-03-22 19:00:00,,['Past']
-80536,Lord of the Flies,Leeds Playhouse,,2023-03-22 19:00:00,,['Past']
-79905,The Hound Of The Baskervilles,Carriageworks Theatre,,2023-03-22 19:15:00,,['Past']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-03-22 19:30:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-23 09:00:00,True,['Published/Will be']
-78965,A Monster Calls,Carriageworks Theatre,,2023-03-23 19:00:00,,['Past']
-80536,Lord of the Flies,Leeds Playhouse,,2023-03-23 19:00:00,,['Past']
-79905,The Hound Of The Baskervilles,Carriageworks Theatre,,2023-03-23 19:15:00,,['Past']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-24 09:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-03-24 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-03-24 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-03-24 19:00:00,,
-78965,A Monster Calls,Carriageworks Theatre,,2023-03-24 19:00:00,,['Past']
-80536,Lord of the Flies,Leeds Playhouse,,2023-03-24 19:00:00,,['Past']
-79905,The Hound Of The Baskervilles,Carriageworks Theatre,,2023-03-24 19:15:00,,['Past']
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-03-25 11:00:00,True,['Published/Will be']
-78965,A Monster Calls,Carriageworks Theatre,,2023-03-25 14:00:00,,['Past']
-79905,The Hound Of The Baskervilles,Carriageworks Theatre,,2023-03-25 17:00:00,,['Past']
-78965,A Monster Calls,Carriageworks Theatre,,2023-03-25 18:00:00,,['Past']
-80536,Lord of the Flies,Leeds Playhouse,,2023-03-25 19:00:00,,['Past']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-03-26 12:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-27 09:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-03-27 17:30:00,True,['Published/Will be']
-80536,Lord of the Flies,Leeds Playhouse,,2023-03-27 19:00:00,,['Past']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-03-27 19:10:00,,
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-28 09:00:00,True,['Published/Will be']
-80536,Lord of the Flies,Leeds Playhouse,,2023-03-28 19:00:00,,['Past']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-03-28 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-29 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-03-29 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-03-29 11:30:00,True,['Published/Will be']
-81143,Creative Networks x LEEDS 2023 introduce Keith Khan,,,2023-03-29 18:00:00,,
-80536,Lord of the Flies,Leeds Playhouse,,2023-03-29 19:00:00,,['Past']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-03-29 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-03-30 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-30 09:00:00,True,['Published/Will be']
-80536,Lord of the Flies,Leeds Playhouse,,2023-03-30 19:00:00,,['Past']
-76580,Library Socials,Various Locations,Free,2023-03-31 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-03-31 09:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-03-31 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-03-31 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-03-31 19:00:00,,
-80536,Lord of the Flies,Leeds Playhouse,,2023-03-31 19:00:00,,['Past']
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-04-01 11:00:00,True,['Published/Will be']
-80536,Lord of the Flies,Leeds Playhouse,,2023-04-01 19:00:00,,['Past']
-76446,Brighouse and Rastrick Band | Leeds Best of Brass 2022/2023,Morley Town Hall,,2023-04-01 19:30:00,,['Past']
-80626,Reflections of an Indian Dancer,Leeds Playhouse,,2023-04-01 19:45:00,,['Past']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-04-02 12:00:00,True,['Published/Will be']
-80536,Lord of the Flies,Leeds Playhouse,,2023-04-02 19:00:00,,['Past']
-76580,Library Socials,Various Locations,Free,2023-04-03 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-03 09:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-04-03 17:30:00,True,['Published/Will be']
-80536,Lord of the Flies,Leeds Playhouse,,2023-04-03 19:00:00,,['Past']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-04-03 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-04-04 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-04 09:00:00,True,['Published/Will be']
-80536,Lord of the Flies,Leeds Playhouse,,2023-04-04 19:00:00,,['Past']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-04-04 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-05 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-04-05 10:30:00,True,['Published/Will be']
-79685,Keep Crafting - free adult crafts,Leeds City Museum,Free,2023-04-05 15:00:00,True,['Published/Will be']
-80536,Lord of the Flies,Leeds Playhouse,,2023-04-05 19:00:00,,['Past']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-04-05 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-04-06 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-06 09:00:00,True,['Published/Will be']
-81140,Overlooked Spotlight Tour,Leeds City Museum,Free,2023-04-06 12:00:00,True,['Published/Will be']
-80536,Lord of the Flies,Leeds Playhouse,,2023-04-06 19:00:00,,['Past']
-76580,Library Socials,Various Locations,Free,2023-04-07 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-07 09:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-04-07 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-04-07 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-04-07 19:00:00,,
-80536,Lord of the Flies,Leeds Playhouse,,2023-04-07 19:00:00,,['Past']
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-04-08 11:00:00,True,['Published/Will be']
-80536,Lord of the Flies,Leeds Playhouse,,2023-04-08 19:00:00,,['Past']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-04-09 12:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-04-10 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-10 09:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-04-10 17:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-04-11 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-11 09:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-04-11 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-12 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-04-12 10:30:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-04-12 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-04-13 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-13 09:00:00,True,['Published/Will be']
-81140,Overlooked Spotlight Tour,Leeds City Museum,Free,2023-04-13 12:00:00,True,['Published/Will be']
-81153,BSL Overlooked Spotlight Tour,Leeds City Museum,Free,2023-04-13 14:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-04-14 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-14 09:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-04-14 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-04-14 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-04-14 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-04-15 11:00:00,True,['Published/Will be']
-81256,Afrikan Market Leeds,Leeds West Indian Centre,Free,2023-04-15 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-04-16 12:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-04-17 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-17 09:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-04-17 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-04-17 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-04-18 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-18 09:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-04-18 19:00:00,True,['Published/Will be']
-80545,Leonkoro Quartet | Quartet in Residence,"The Venue, Leeds Conservatoire",From £10,2023-04-18 19:30:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-19 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-04-19 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-04-19 11:30:00,True,['Published/Will be']
-78914,Kathryn Roberts & Sean Lakeman,Carriageworks Theatre,From £19.50,2023-04-19 19:30:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-04-19 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-04-20 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-20 09:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-04-21 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-21 09:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-04-21 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-04-21 13:30:00,True,['Published/Will be']
-81663,Circus Skills for All Ages & Abilities,Harehills Lane Baptist Church,From £9.50,2023-04-21 16:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-04-21 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-04-22 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-04-23 12:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-04-24 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-24 09:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-04-24 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-04-24 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-04-25 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-25 09:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-04-25 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-26 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-04-26 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-04-26 11:30:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-04-26 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-04-27 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-27 09:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-04-28 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-04-28 09:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-04-28 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-04-28 13:30:00,True,['Published/Will be']
-81663,Circus Skills for All Ages & Abilities,Harehills Lane Baptist Church,From £9.50,2023-04-28 16:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-04-28 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-04-29 11:00:00,True,['Published/Will be']
-81525,Kirkstall Abbey Markets,Kirkstall Abbey,Free,2023-04-29 11:00:00,True,['Published/Will be']
-76447,Rothwell Temperance Band | Leeds Best of Brass 2022/2023,Morley Town Hall,From £10,2023-04-29 19:30:00,True,['Published/Will be']
-79989,In Motion: Dance for Wheelchair Users,Northern Ballet,Free,2023-04-30 10:00:00,True,['Published/Will be']
-81525,Kirkstall Abbey Markets,Kirkstall Abbey,Free,2023-04-30 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-04-30 12:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-05-01 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-01 09:00:00,True,['Published/Will be']
-81525,Kirkstall Abbey Markets,Kirkstall Abbey,Free,2023-05-01 11:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-05-01 17:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-05-02 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-02 09:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-05-02 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-03 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-05-03 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-05-03 11:30:00,True,['Published/Will be']
-79685,Keep Crafting - free adult crafts,Leeds City Museum,Free,2023-05-03 15:00:00,True,['Published/Will be']
-79223,Solem Quartet | LICS on Tour 2022/23,Mill Hill Chapel,,2023-05-03 19:30:00,,['Already on']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-05-03 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-05-04 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-04 09:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-05-05 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-05 09:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-05-05 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-05-05 13:30:00,True,['Published/Will be']
-81663,Circus Skills for All Ages & Abilities,Harehills Lane Baptist Church,From £9.50,2023-05-05 16:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-05-05 19:00:00,,
-81096,Northern Ballet - Sketches,The Stanley & Audrey Burton Theatre,,2023-05-05 19:30:00,,['Already on']
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-05-06 11:00:00,True,['Published/Will be']
-79989,In Motion: Dance for Wheelchair Users,Northern Ballet,Free,2023-05-07 10:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-05-07 12:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-05-08 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-08 09:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-05-08 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-05-08 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-05-09 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-09 09:00:00,True,['Published/Will be']
-80714,Leeds International Organ Festival – Benjamin Saunders,Leeds Cathedral,Free,2023-05-09 13:15:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-05-09 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-10 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-05-10 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-05-10 11:30:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-05-10 19:30:00,True,['Published/Will be']
-76802,Manchester Collective – Rosewood,Howard Assembly Room,From £16,2023-05-10 19:45:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-05-11 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-11 09:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-05-12 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-12 09:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-05-12 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-05-12 13:30:00,True,['Published/Will be']
-81663,Circus Skills for All Ages & Abilities,Harehills Lane Baptist Church,From £9.50,2023-05-12 16:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-05-12 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-05-13 11:00:00,True,['Published/Will be']
-79989,In Motion: Dance for Wheelchair Users,Northern Ballet,Free,2023-05-14 10:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-05-14 12:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-05-15 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-15 09:00:00,True,['Published/Will be']
-80715,Leeds International Organ Festival – Thomas Leech,Leeds Cathedral,Free,2023-05-15 13:15:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-05-15 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-05-15 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-05-16 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-16 09:00:00,True,['Published/Will be']
-79866,Opera North: The Pearl Fishers,Leeds Grand Theatre,From £15,2023-05-16 19:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-05-16 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-17 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-05-17 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-05-17 11:30:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-05-17 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-05-18 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-18 09:00:00,True,['Published/Will be']
-81140,Overlooked Spotlight Tour,Leeds City Museum,Free,2023-05-18 12:00:00,True,['Published/Will be']
-81153,BSL Overlooked Spotlight Tour,Leeds City Museum,Free,2023-05-18 14:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-05-19 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-19 09:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-05-19 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-05-19 13:30:00,True,['Published/Will be']
-81663,Circus Skills for All Ages & Abilities,Harehills Lane Baptist Church,From £9.50,2023-05-19 16:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-05-19 19:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-05-20 11:00:00,True,['Published/Will be']
-79989,In Motion: Dance for Wheelchair Users,Northern Ballet,Free,2023-05-21 10:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-05-21 12:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-05-22 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-22 09:00:00,True,['Published/Will be']
-80716,Leeds International Organ Festival – Carlos Paterson,Leeds Cathedral,Free,2023-05-22 13:15:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-05-22 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-05-22 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-05-23 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-23 09:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-05-23 19:00:00,True,['Published/Will be']
-80546,Leonkoro Quartet | Quartet in Residence,"The Venue, Leeds Conservatoire",,2023-05-23 19:30:00,,
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-24 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-05-24 09:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-05-24 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-05-24 11:30:00,True,['Published/Will be']
-82365,AcroYoga,Open Source Arts,Pay as you decide,2023-05-24 18:00:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-05-24 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-05-25 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-25 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-05-25 09:00:00,True,['Published/Will be']
-79866,Opera North: The Pearl Fishers,Leeds Grand Theatre,From £15,2023-05-25 19:00:00,True,['Published/Will be']
-81593,Lara Jones Ensō+ ,Leeds Train Station Concourse,Free,2023-05-26 06:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-05-26 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-26 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-05-26 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-05-26 10:00:00,,
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-05-26 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-05-26 13:30:00,True,['Published/Will be']
-81663,Circus Skills for All Ages & Abilities,Harehills Lane Baptist Church,From £9.50,2023-05-26 16:30:00,True,['Published/Will be']
-80214,World Island presents: Headlined and Curated by Gilles Peterson,Belgrave Music Hall and Canteen,,2023-05-26 17:00:00,,
-77859,Lindy Fridays,Carriageworks Theatre,,2023-05-26 19:00:00,,
-81593,Lara Jones Ensō+ ,Leeds Train Station Concourse,Free,2023-05-27 06:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-05-27 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-05-27 10:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-05-27 11:00:00,True,['Published/Will be']
-81525,Kirkstall Abbey Markets,Kirkstall Abbey,Free,2023-05-27 11:00:00,True,['Published/Will be']
-79866,Opera North: The Pearl Fishers,Leeds Grand Theatre,From £15,2023-05-27 19:00:00,True,['Published/Will be']
-81625,Tom Remon,Northern Guitars,Free,2023-05-27 21:30:00,True,['Published/Will be']
-81593,Lara Jones Ensō+ ,Leeds Train Station Concourse,Free,2023-05-28 06:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-05-28 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-05-28 10:00:00,,
-79989,In Motion: Dance for Wheelchair Users,Northern Ballet,Free,2023-05-28 10:00:00,True,['Published/Will be']
-78913,Slam Dunk Festival North 2023,Temple Newsam House and Estate,,2023-05-28 11:00:00,,
-81525,Kirkstall Abbey Markets,Kirkstall Abbey,Free,2023-05-28 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-05-28 12:00:00,True,['Published/Will be']
-80218,Sunday Joint: Grifton Forbes Amos,The HiFi Club,,2023-05-28 19:30:00,,
-76580,Library Socials,Various Locations,Free,2023-05-29 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-29 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-05-29 09:00:00,True,['Published/Will be']
-81525,Kirkstall Abbey Markets,Kirkstall Abbey,Free,2023-05-29 11:00:00,True,['Published/Will be']
-81335,JazzLeeds Takeover at the Welcome To Leeds Stage ,Welcome To Leeds Stage,Free,2023-05-29 13:00:00,True,
-81596,"TANG Talks w/ Jasmine Myra, Fergus Quill, Ben Haskins & Olivia Cuttill",Headrow House,Free,2023-05-29 14:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-05-29 17:30:00,True,['Published/Will be']
-80219,Vipertime Album Launch,Hyde Park Book Club,,2023-05-29 19:30:00,,['Already on']
-76580,Library Socials,Various Locations,Free,2023-05-30 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-30 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-05-30 09:00:00,True,['Published/Will be']
-79865,Opera North: Mozart's Requiem,Leeds Grand Theatre,,2023-05-30 19:00:00,,['Already on']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-05-30 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-05-31 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-05-31 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-05-31 10:00:00,,
-81460,Nature Reconnection with Forest School Plus,Herd Farm Residential and Activity Centre,From £18,2023-05-31 10:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-05-31 10:30:00,True,['Published/Will be']
-82365,AcroYoga,Open Source Arts,Pay as you decide,2023-05-31 18:00:00,True,['Published/Will be']
-79866,Opera North: The Pearl Fishers,Leeds Grand Theatre,From £15,2023-05-31 19:00:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-05-31 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-06-01 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-01 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-01 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-01 10:00:00,,
-81140,Overlooked Spotlight Tour,Leeds City Museum,Free,2023-06-01 12:00:00,True,['Published/Will be']
-79865,Opera North: Mozart's Requiem,Leeds Grand Theatre,,2023-06-01 19:00:00,,['Already on']
-76580,Library Socials,Various Locations,Free,2023-06-02 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-02 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-02 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-02 10:00:00,,
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-06-02 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-06-02 13:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-06-02 19:00:00,,
-79866,Opera North: The Pearl Fishers,Leeds Grand Theatre,From £15,2023-06-02 19:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-03 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-03 10:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-06-03 11:00:00,True,['Published/Will be']
-79865,Opera North: Mozart's Requiem,Leeds Grand Theatre,,2023-06-03 19:00:00,,['Already on']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-04 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-04 10:00:00,,
-79989,In Motion: Dance for Wheelchair Users,Northern Ballet,Free,2023-06-04 10:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-06-04 12:00:00,True,['Published/Will be']
-81102,DeNada Dance - The Bull & the Moon,The Stanley & Audrey Burton Theatre,Free,2023-06-04 14:00:00,True,['Published/Will be']
-81102,DeNada Dance - The Bull & the Moon,The Stanley & Audrey Burton Theatre,Free,2023-06-04 16:00:00,True,['Published/Will be']
-79865,Opera North: Mozart's Requiem,Leeds Grand Theatre,,2023-06-04 19:00:00,,['Already on']
-76580,Library Socials,Various Locations,Free,2023-06-05 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-05 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-05 09:00:00,True,['Published/Will be']
-80717,Leeds International Organ Festival – Valerie Barr and Djordje Gajic,Leeds Cathedral,Free,2023-06-05 13:15:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-06-05 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-06-05 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-06-06 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-06 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-06 09:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-06-06 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-07 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-07 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-07 10:00:00,,
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-06-07 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-06-07 11:30:00,True,['Published/Will be']
-79685,Keep Crafting - free adult crafts,Leeds City Museum,Free,2023-06-07 15:00:00,True,['Published/Will be']
-82365,AcroYoga,Open Source Arts,Pay as you decide,2023-06-07 18:00:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-06-07 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-06-08 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-08 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-08 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-08 10:00:00,,
-82356,The Buried Hoards and Ancient Archaeology around Lotherton,Lotherton Hall and Estate,From £5,2023-06-08 14:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-06-09 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-09 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-09 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-09 10:00:00,,
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-06-09 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-09 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-06-09 13:30:00,True,['Published/Will be']
-81663,Circus Skills for All Ages & Abilities,Harehills Lane Baptist Church,From £9.50,2023-06-09 16:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-06-09 19:00:00,,
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-10 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-10 10:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-06-10 11:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-11 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-11 10:00:00,,
-79989,In Motion: Dance for Wheelchair Users,Northern Ballet,Free,2023-06-11 10:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-06-11 12:00:00,True,['Published/Will be']
-82428,During Waking Hours - exhibition by Claire Oliver,Compact Contemporary,Free,2023-06-11 12:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-06-12 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-12 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-12 09:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-12 10:00:00,True,['Published/Will be']
-80718,Leeds International Organ Festival – David Bendix Nielsen,Leeds Cathedral,Free,2023-06-12 13:15:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-06-12 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-06-12 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-06-13 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-13 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-13 09:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-13 10:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-06-13 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-14 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-14 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-14 10:00:00,,
-82652,Soul Stitching,Space2,Free,2023-06-14 10:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-06-14 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-06-14 11:30:00,True,['Published/Will be']
-82428,During Waking Hours - exhibition by Claire Oliver,Compact Contemporary,Free,2023-06-14 14:00:00,True,['Published/Will be']
-82320,Behind the Curtained Door,stage@leeds,from £5,2023-06-14 18:00:00,True,['Published/Will be']
-82365,AcroYoga,Open Source Arts,Pay as you decide,2023-06-14 18:00:00,True,['Published/Will be']
-80726,Leeds International Organ Festival – Kit Downes,Leeds Cathedral,Free,2023-06-14 19:00:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-06-14 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-06-15 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-15 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-15 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-15 10:00:00,,
-82652,Soul Stitching,Space2,Free,2023-06-15 10:00:00,True,['Published/Will be']
-81140,Overlooked Spotlight Tour,Leeds City Museum,Free,2023-06-15 12:00:00,True,['Published/Will be']
-81153,BSL Overlooked Spotlight Tour,Leeds City Museum,Free,2023-06-15 14:00:00,True,['Published/Will be']
-80567,Jess Gillam Ensemble,The Old Woollen,,2023-06-15 19:00:00,,
-79029,Jess Gillam Ensemble,The Old Woollen,From £11,2023-06-15 20:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-06-16 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-16 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-16 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-16 10:00:00,,
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-06-16 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-16 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-06-16 13:30:00,True,['Published/Will be']
-81663,Circus Skills for All Ages & Abilities,Harehills Lane Baptist Church,From £9.50,2023-06-16 16:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-06-16 19:00:00,,
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-17 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-17 10:00:00,,
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-06-17 11:00:00,True,['Published/Will be']
-81256,Afrikan Market Leeds,Leeds West Indian Centre,Free,2023-06-17 11:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-18 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-18 10:00:00,,
-82652,Soul Stitching,Space2,Free,2023-06-18 10:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-06-18 12:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-06-19 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-19 09:00:00,True,['Published/Will be']
-81971,Story of Leeds Jazz through the lens of Denis Dalby,Left Bank Leeds,Free,2023-06-19 09:00:00,True,['Published/Will be']
-82261,Next Gen Undergraduate Show 2023,Leeds Arts University,Free,2023-06-19 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-19 10:00:00,True,['Published/Will be']
-80720,Leeds International Organ Festival – Frederick Hohman,Leeds Cathedral,Free,2023-06-19 13:15:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-06-19 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-06-19 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-06-20 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-20 09:00:00,True,['Published/Will be']
-82261,Next Gen Undergraduate Show 2023,Leeds Arts University,Free,2023-06-20 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-20 10:00:00,True,['Published/Will be']
-82583,Public Art Walk,The Stanley & Audrey Burton Gallery,Free,2023-06-20 17:30:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-06-20 19:00:00,True,['Published/Will be']
-80547,Leonkoro Quartet | Quartet in Residence,"The Venue, Leeds Conservatoire",,2023-06-20 19:30:00,,['Already on']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-21 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-21 10:00:00,,
-82261,Next Gen Undergraduate Show 2023,Leeds Arts University,Free,2023-06-21 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-21 10:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-06-21 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-06-21 11:30:00,True,['Published/Will be']
-82365,AcroYoga,Open Source Arts,Pay as you decide,2023-06-21 18:00:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-06-21 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-06-22 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-22 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-22 10:00:00,,
-82261,Next Gen Undergraduate Show 2023,Leeds Arts University,Free,2023-06-22 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-22 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-06-22 10:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-06-23 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-23 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-23 10:00:00,,
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-06-23 10:00:00,True,['Published/Will be']
-82261,Next Gen Undergraduate Show 2023,Leeds Arts University,Free,2023-06-23 10:00:00,True,['Published/Will be']
-82278,Beyond 2023: Exploring our collective ambition for culture to 2030,Left Bank Leeds,Free,2023-06-23 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-23 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-06-23 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-06-23 13:30:00,True,['Published/Will be']
-81663,Circus Skills for All Ages & Abilities,Harehills Lane Baptist Church,From £9.50,2023-06-23 16:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-06-23 19:00:00,,
-79389,Antibodies,The Tetley ,Free,2023-06-24 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-06-24 10:00:00,True,['Published/Will be']
-82261,Next Gen Undergraduate Show 2023,Leeds Arts University,Free,2023-06-24 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-24 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-06-24 10:00:00,True,['Published/Will be']
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-06-24 11:00:00,True,['Published/Will be']
-81525,Kirkstall Abbey Markets,Kirkstall Abbey,Free,2023-06-24 11:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-25 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-06-25 10:00:00,True,['Published/Will be']
-79989,In Motion: Dance for Wheelchair Users,Northern Ballet,Free,2023-06-25 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-25 10:00:00,True,['Published/Will be']
-81525,Kirkstall Abbey Markets,Kirkstall Abbey,Free,2023-06-25 11:00:00,True,['Published/Will be']
-82428,During Waking Hours - exhibition by Claire Oliver,Compact Contemporary,Free,2023-06-25 11:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-06-25 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-06-25 12:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-06-26 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-26 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-06-26 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-26 10:00:00,True,['Published/Will be']
-80721,Leeds International Organ Festival – Darius Battiwalla,Leeds Cathedral,Free,2023-06-26 13:15:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-06-26 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-06-26 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-06-27 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-27 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-06-27 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-27 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-06-27 10:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-06-27 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-28 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-28 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-06-28 10:00:00,True,['Published/Will be']
-81460,Nature Reconnection with Forest School Plus,Herd Farm Residential and Activity Centre,From £18,2023-06-28 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-28 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-06-28 10:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-06-28 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-06-28 11:30:00,True,['Published/Will be']
-82365,AcroYoga,Open Source Arts,Pay as you decide,2023-06-28 18:00:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-06-28 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-06-29 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-29 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-29 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-06-29 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-29 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-06-29 10:00:00,True,['Published/Will be']
-82585,Exhibition Opening: Becoming the Brontës,Treasures of the Brotherton,Free,2023-06-29 17:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-06-30 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-06-30 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-06-30 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-06-30 10:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-06-30 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-06-30 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-06-30 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-06-30 13:30:00,True,['Published/Will be']
-81663,Circus Skills for All Ages & Abilities,Harehills Lane Baptist Church,From £9.50,2023-06-30 16:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-06-30 19:00:00,,
-79389,Antibodies,The Tetley ,Free,2023-07-01 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-01 10:00:00,True,['Published/Will be']
-80117,The Alternative Market by Leeds Festival of Gothica & Advintageous,Leeds Kirkgate Market,Free,2023-07-01 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-01 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-01 10:00:00,True,['Published/Will be']
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-07-01 11:00:00,True,['Published/Will be']
-81888,"Guiseley Brass Band – Victoria Park, Calverley",Victoria Park,Free,2023-07-01 12:00:00,,['Published/Will be']
-82428,During Waking Hours - exhibition by Claire Oliver,Compact Contemporary,Free,2023-07-01 12:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-02 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-02 10:00:00,True,['Published/Will be']
-79989,In Motion: Dance for Wheelchair Users,Northern Ballet,Free,2023-07-02 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-02 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-02 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-07-02 12:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-07-03 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-03 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-03 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-03 10:00:00,True,['Published/Will be']
-80722,Leeds International Organ Festival – Angela Metzger,Leeds Cathedral,Free,2023-07-03 13:15:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-07-03 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-07-03 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-07-04 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-04 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-04 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-04 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-04 10:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-07-04 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-05 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-05 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-05 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-05 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-05 10:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-07-05 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-07-05 11:30:00,True,['Published/Will be']
-79685,Keep Crafting - free adult crafts,Leeds City Museum,Free,2023-07-05 15:00:00,True,['Published/Will be']
-82365,AcroYoga,Open Source Arts,Pay as you decide,2023-07-05 18:00:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-07-05 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-07-06 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-06 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-06 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-06 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-06 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-06 10:00:00,True,['Published/Will be']
-79329,McFly - Sounds of the City,Millennium Square,,2023-07-06 18:00:00,,
-76580,Library Socials,Various Locations,Free,2023-07-07 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-07 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-07 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-07 10:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-07-07 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-07 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-07 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-07 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-07-07 13:30:00,True,['Published/Will be']
-81663,Circus Skills for All Ages & Abilities,Harehills Lane Baptist Church,From £9.50,2023-07-07 16:30:00,True,['Published/Will be']
-79342,Kasabian - Sounds of the City,Millennium Square,,2023-07-07 18:00:00,,
-77859,Lindy Fridays,Carriageworks Theatre,,2023-07-07 19:00:00,,
-79389,Antibodies,The Tetley ,Free,2023-07-08 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-08 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-08 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-08 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-08 10:00:00,True,['Published/Will be']
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-07-08 11:00:00,True,['Published/Will be']
-79394,Blossoms,Millennium Square,£40.15,2023-07-08 18:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-09 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-09 10:00:00,True,['Published/Will be']
-79989,In Motion: Dance for Wheelchair Users,Northern Ballet,Free,2023-07-09 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-09 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-09 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-09 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-07-09 12:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-07-10 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-10 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-10 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-10 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-10 10:00:00,True,['Published/Will be']
-80723,Leeds International Organ Festival – David Grealy,Leeds Cathedral,Free,2023-07-10 13:15:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-07-10 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-07-10 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-07-11 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-11 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-11 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-11 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-11 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-11 10:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-07-11 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-12 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-12 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-12 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-12 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-12 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-12 10:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-07-12 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-07-12 11:30:00,True,['Published/Will be']
-81068,Morrissey,Millennium Square,£65.45,2023-07-12 18:00:00,True,['Published/Will be']
-82365,AcroYoga,Open Source Arts,Pay as you decide,2023-07-12 18:00:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-07-12 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-07-13 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-13 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-13 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-13 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-13 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-13 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-13 10:00:00,True,['Published/Will be']
-78856,Bastille - Sounds Of The City,Millennium Square,,2023-07-13 18:00:00,,
-76580,Library Socials,Various Locations,Free,2023-07-14 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-14 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-14 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-14 10:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-07-14 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-14 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-14 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-14 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-07-14 13:30:00,True,['Published/Will be']
-81663,Circus Skills for All Ages & Abilities,Harehills Lane Baptist Church,From £9.50,2023-07-14 16:30:00,True,['Published/Will be']
-79058,The Wombats - Sounds of the City,Millennium Square,,2023-07-14 18:00:00,,
-77859,Lindy Fridays,Carriageworks Theatre,,2023-07-14 19:00:00,,
-79389,Antibodies,The Tetley ,Free,2023-07-15 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-15 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-15 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-15 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-15 10:00:00,True,['Published/Will be']
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-07-15 11:00:00,True,['Published/Will be']
-81256,Afrikan Market Leeds,Leeds West Indian Centre,Free,2023-07-15 11:00:00,True,['Published/Will be']
-79057,Shed Seven - Sounds of the City,Millennium Square,,2023-07-15 18:00:00,,
-79389,Antibodies,The Tetley ,Free,2023-07-16 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-16 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-16 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-16 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-16 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-07-16 12:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-07-17 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-17 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-17 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-17 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-17 10:00:00,True,['Published/Will be']
-80724,Leeds International Organ Festival – David Pipe,Leeds Cathedral,Free,2023-07-17 13:15:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-07-17 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-07-17 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-07-18 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-18 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-18 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-18 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-18 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-18 10:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-07-18 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-19 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-19 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-19 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-19 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-19 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-19 10:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-07-19 10:30:00,True,['Published/Will be']
-80829,Wellbeing Wednesdays at Leeds Art Gallery ,Leeds Art Gallery,Free,2023-07-19 11:30:00,True,['Published/Will be']
-79127,Nile Rodgers feat CHIC,Millennium Square,From £62.35,2023-07-19 18:00:00,True,['Published/Will be']
-82365,AcroYoga,Open Source Arts,Pay as you decide,2023-07-19 18:00:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-07-19 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-07-20 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-20 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-20 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-20 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-20 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-20 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-20 10:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-07-21 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-21 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-21 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-21 10:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-07-21 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-21 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-21 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-21 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-07-21 13:30:00,True,['Published/Will be']
-81663,Circus Skills for All Ages & Abilities,Harehills Lane Baptist Church,From £9.50,2023-07-21 16:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-07-21 19:00:00,,
-81816,Thank You for the Music – The Ultimate Tribute to Abba,Millennium Square,£29.70,2023-07-21 19:30:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-22 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-22 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-22 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-22 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-22 10:00:00,True,['Published/Will be']
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-07-22 11:00:00,True,['Published/Will be']
-82343,A Beautiful Day Out with Levellers & more,Millennium Square,£46.75,2023-07-22 15:30:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-23 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-23 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-23 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-23 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-23 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-07-23 12:00:00,True,['Published/Will be']
-79367, Leeds Ska & Mod Festival 2023,Millennium Square,£38.50,2023-07-23 15:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-07-24 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-24 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-24 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-24 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-24 10:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-07-24 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-07-24 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-07-25 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-25 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-25 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-25 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-25 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-25 10:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-07-25 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-26 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-26 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-26 10:00:00,True,['Published/Will be']
-81460,Nature Reconnection with Forest School Plus,Herd Farm Residential and Activity Centre,From £18,2023-07-26 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-26 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-26 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-26 10:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-07-26 10:30:00,True,['Published/Will be']
-82365,AcroYoga,Open Source Arts,Pay as you decide,2023-07-26 18:00:00,True,['Published/Will be']
-83222,Transform 23 Launch Party ,Sheaf St,Free,2023-07-26 18:00:00,True,
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-07-26 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-07-27 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-27 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-27 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-27 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-27 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-27 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-27 10:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-07-28 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-28 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-28 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-28 10:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-07-28 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-28 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-28 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-28 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-07-28 13:30:00,True,['Published/Will be']
-80700,80s Classical 2023,Millennium Square,From £35,2023-07-28 18:30:00,True,['Published/Will be']
-77859,Lindy Fridays,Carriageworks Theatre,,2023-07-28 19:00:00,,
-79389,Antibodies,The Tetley ,Free,2023-07-29 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-29 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-29 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-29 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-29 10:00:00,True,['Published/Will be']
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-07-29 11:00:00,True,['Published/Will be']
-81525,Kirkstall Abbey Markets,Kirkstall Abbey,Free,2023-07-29 11:00:00,True,['Published/Will be']
-80701,Club Classical Anthems 2023,Millennium Square,From £29.50,2023-07-29 18:30:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-07-30 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-30 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-30 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-30 10:00:00,True,['Published/Will be']
-81525,Kirkstall Abbey Markets,Kirkstall Abbey,Free,2023-07-30 11:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-07-30 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-07-30 12:00:00,True,['Published/Will be']
-81374,Summer Jazz in the Seven Arts Courtyard,Seven Arts,Pay As You Feel,2023-07-30 13:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-07-31 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-07-31 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-07-31 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-07-31 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-07-31 10:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-07-31 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-07-31 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-08-01 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-08-01 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-01 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-01 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-01 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-08-01 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-01 10:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-08-01 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-08-02 09:00:00,True,['Published/Will be']
-82779,Summer Rugby Activity Camp 2023,The Hunslet Club,£15,2023-08-02 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-08-02 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-02 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-02 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-02 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-08-02 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-02 10:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-08-02 10:30:00,True,['Published/Will be']
-82927,Breeze Presents 'Child Friendly Leeds Live',Millennium Square,£0-£5.50,2023-08-02 10:30:00,True,['Published/Will be']
-82927,Breeze Presents 'Child Friendly Leeds Live',Millennium Square,£0-£5.50,2023-08-02 14:30:00,True,['Published/Will be']
-79685,Keep Crafting - free adult crafts,Leeds City Museum,Free,2023-08-02 15:00:00,True,['Published/Will be']
-82365,AcroYoga,Open Source Arts,Pay as you decide,2023-08-02 18:00:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-08-02 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-08-03 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-08-03 09:00:00,True,['Published/Will be']
-82779,Summer Rugby Activity Camp 2023,The Hunslet Club,£15,2023-08-03 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-08-03 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-03 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-03 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-03 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-08-03 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-03 10:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-08-04 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-08-04 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-08-04 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-04 10:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-08-04 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-04 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-04 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-08-04 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-04 10:00:00,True,['Published/Will be']
-80128,Meet & Make,Leeds Art Gallery,Free,2023-08-04 13:30:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-08-05 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-05 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-05 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-05 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-08-05 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-05 10:00:00,True,['Published/Will be']
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-08-05 11:00:00,True,['Published/Will be']
-83271,Leeds LGBT+ Marketplace,Leeds City Museum,Free,2023-08-05 11:00:00,True,['Published/Will be']
-82818,Climbing Wall at Kirkgate Market,Leeds Kirkgate Market,Free,2023-08-05 11:30:00,True,['Published/Will be']
-80511,The Popworld Festival ,Millennium Square,£49.50,2023-08-05 18:00:00,True,['Published/Will be']
-82141,The Secret Garden,Lotherton Hall and Estate,From £18,2023-08-05 18:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-08-06 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-06 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-06 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-06 10:00:00,True,['Published/Will be']
-83039,Leeds Pride Village Fete 2023,City Square,Free,2023-08-06 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-06 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-08-06 11:00:00,True,['Published/Will be']
-75598,"Leeds Pride - Your City, Your Pride",Millennium Square,Free,2023-08-06 12:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-08-06 12:00:00,True,['Published/Will be']
-81374,Summer Jazz in the Seven Arts Courtyard,Seven Arts,Pay As You Feel,2023-08-06 13:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-08-07 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-08-07 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-07 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-07 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-07 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-07 10:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-08-07 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-08-07 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-08-08 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-08-08 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-08 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-08 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-08 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-08-08 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-08 10:00:00,True,['Published/Will be']
-83625,Artspace family fun with artist Kedisha Coakley,Leeds Art Gallery,Free,2023-08-08 11:00:00,,
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-08-08 19:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-08-09 09:00:00,True,['Published/Will be']
-82779,Summer Rugby Activity Camp 2023,The Hunslet Club,£15,2023-08-09 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-08-09 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-09 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-09 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-09 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-08-09 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-09 10:00:00,True,['Published/Will be']
-79768,Meditative Walks with Brahma Kumaris,Kirkstall Abbey,Free,2023-08-09 10:30:00,True,['Published/Will be']
-83625,Artspace family fun with artist Kedisha Coakley,Leeds Art Gallery,Free,2023-08-09 11:00:00,,
-82918,Panto at the Abbey 2023,Kirkstall Abbey,£10,2023-08-09 14:00:00,True,['Published/Will be']
-82365,AcroYoga,Open Source Arts,Pay as you decide,2023-08-09 18:00:00,True,['Published/Will be']
-82272,Oklahoma! The Musical (Screening),City Varieties,From £18,2023-08-09 19:00:00,True,['Published/Will be']
-79243,Lindy Hop Fundamentals,The Dance Studio Leeds,£32,2023-08-09 19:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-08-10 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-08-10 09:00:00,True,['Published/Will be']
-82779,Summer Rugby Activity Camp 2023,The Hunslet Club,£15,2023-08-10 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-08-10 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-10 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-10 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-10 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-08-10 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-10 10:00:00,True,['Published/Will be']
-83625,Artspace family fun with artist Kedisha Coakley,Leeds Art Gallery,Free,2023-08-10 11:00:00,,
-82272,Oklahoma! The Musical (Screening),City Varieties,From £18,2023-08-10 19:00:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-08-11 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-08-11 09:00:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-08-11 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-11 10:00:00,True,['Published/Will be']
-79686,Tiny Tigers - museum crafts for under 5s,Leeds City Museum,Free,2023-08-11 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-11 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-11 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-08-11 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-11 10:00:00,True,['Published/Will be']
-83625,Artspace family fun with artist Kedisha Coakley,Leeds Art Gallery,Free,2023-08-11 11:00:00,,
-80128,Meet & Make,Leeds Art Gallery,Free,2023-08-11 13:30:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-08-12 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-12 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-12 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-12 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-08-12 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-12 10:00:00,True,['Published/Will be']
-79690,Rory's Saturday Club - free crafts for families,Leeds City Museum,Free,2023-08-12 11:00:00,True,['Published/Will be']
-83625,Artspace family fun with artist Kedisha Coakley,Leeds Art Gallery,Free,2023-08-12 11:00:00,,
-82818,Climbing Wall at Kirkgate Market,Leeds Kirkgate Market,Free,2023-08-12 11:30:00,True,['Published/Will be']
-79389,Antibodies,The Tetley ,Free,2023-08-13 10:00:00,,
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-13 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-13 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-13 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-13 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-08-13 11:00:00,True,['Published/Will be']
-79575,The Bad Mittens Sunday at Armley,Armley Leisure Centre,From £2.50,2023-08-13 12:00:00,True,['Published/Will be']
-81374,Summer Jazz in the Seven Arts Courtyard,Seven Arts,Pay As You Feel,2023-08-13 13:30:00,True,['Published/Will be']
-76580,Library Socials,Various Locations,Free,2023-08-14 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-08-14 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-14 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-14 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-14 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-14 10:00:00,True,['Published/Will be']
-80929,Beginners Pilates Class,We Are Wellness,Free first beginner class,2023-08-14 17:30:00,True,['Published/Will be']
-80978,Clubbercise ,New Farnley Community Centre,From £5,2023-08-14 19:10:00,,
-76580,Library Socials,Various Locations,Free,2023-08-15 09:00:00,True,['Published/Will be']
-80636,Wise Women ,"Leeds School of Arts Building, Leeds Beckett University",Free,2023-08-15 09:00:00,True,['Published/Will be']
-79558,Petal Power Print Exhibition,The Craft Centre and Design Gallery,Free,2023-08-15 10:00:00,True,['Published/Will be']
-81660,The Weight of Words,Henry Moore Institute,Free,2023-08-15 10:00:00,True,['Published/Will be']
-82652,Soul Stitching,Space2,Free,2023-08-15 10:00:00,True,['Published/Will be']
-82812,"Things Left Unsaid: Percy Wyndham Lewis, Iris Barry, Helen Saunders and the story of Praxitella",Leeds Art Gallery,Free,2023-08-15 10:00:00,True,['Published/Will be']
-83334,Paul Digby: Intensive Care,"Bexley Wing, St James University Hospital",Free,2023-08-15 10:00:00,True,['Published/Will be']
-80980,Clubbercise,Swinnow Community Centre,From £5,2023-08-15 19:00:00,True,['Published/Will be']
+id,name,location,card_price,time,stage
+77859,Lindy Fridays,Carriageworks Theatre,,2023-01-06 19:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-01-13 19:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-01-20 19:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-01-27 19:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-02-03 19:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-02-10 19:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-02-17 19:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-02-24 19:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-03-03 19:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-03-06 19:10:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-03-10 19:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-03-13 19:10:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-03-17 19:00:00,
+80536,Lord of the Flies,Leeds Playhouse,,2023-03-18 19:00:00,['Past']
+76801,Manchester Collective – Black Angels,Howard Assembly Room,,2023-03-18 19:45:00,['Past']
+80536,Lord of the Flies,Leeds Playhouse,,2023-03-20 19:00:00,['Past']
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-03-20 19:10:00,
+80536,Lord of the Flies,Leeds Playhouse,,2023-03-21 19:00:00,['Past']
+78965,A Monster Calls,Carriageworks Theatre,,2023-03-22 19:00:00,['Past']
+80536,Lord of the Flies,Leeds Playhouse,,2023-03-22 19:00:00,['Past']
+79905,The Hound Of The Baskervilles,Carriageworks Theatre,,2023-03-22 19:15:00,['Past']
+78965,A Monster Calls,Carriageworks Theatre,,2023-03-23 19:00:00,['Past']
+80536,Lord of the Flies,Leeds Playhouse,,2023-03-23 19:00:00,['Past']
+79905,The Hound Of The Baskervilles,Carriageworks Theatre,,2023-03-23 19:15:00,['Past']
+77859,Lindy Fridays,Carriageworks Theatre,,2023-03-24 19:00:00,
+78965,A Monster Calls,Carriageworks Theatre,,2023-03-24 19:00:00,['Past']
+80536,Lord of the Flies,Leeds Playhouse,,2023-03-24 19:00:00,['Past']
+79905,The Hound Of The Baskervilles,Carriageworks Theatre,,2023-03-24 19:15:00,['Past']
+78965,A Monster Calls,Carriageworks Theatre,,2023-03-25 14:00:00,['Past']
+79905,The Hound Of The Baskervilles,Carriageworks Theatre,,2023-03-25 17:00:00,['Past']
+78965,A Monster Calls,Carriageworks Theatre,,2023-03-25 18:00:00,['Past']
+80536,Lord of the Flies,Leeds Playhouse,,2023-03-25 19:00:00,['Past']
+80536,Lord of the Flies,Leeds Playhouse,,2023-03-27 19:00:00,['Past']
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-03-27 19:10:00,
+80536,Lord of the Flies,Leeds Playhouse,,2023-03-28 19:00:00,['Past']
+81143,Creative Networks x LEEDS 2023 introduce Keith Khan,,,2023-03-29 18:00:00,
+80536,Lord of the Flies,Leeds Playhouse,,2023-03-29 19:00:00,['Past']
+80536,Lord of the Flies,Leeds Playhouse,,2023-03-30 19:00:00,['Past']
+77859,Lindy Fridays,Carriageworks Theatre,,2023-03-31 19:00:00,
+80536,Lord of the Flies,Leeds Playhouse,,2023-03-31 19:00:00,['Past']
+80536,Lord of the Flies,Leeds Playhouse,,2023-04-01 19:00:00,['Past']
+76446,Brighouse and Rastrick Band | Leeds Best of Brass 2022/2023,Morley Town Hall,,2023-04-01 19:30:00,['Past']
+80626,Reflections of an Indian Dancer,Leeds Playhouse,,2023-04-01 19:45:00,['Past']
+80536,Lord of the Flies,Leeds Playhouse,,2023-04-02 19:00:00,['Past']
+80536,Lord of the Flies,Leeds Playhouse,,2023-04-03 19:00:00,['Past']
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-04-03 19:10:00,
+80536,Lord of the Flies,Leeds Playhouse,,2023-04-04 19:00:00,['Past']
+80536,Lord of the Flies,Leeds Playhouse,,2023-04-05 19:00:00,['Past']
+80536,Lord of the Flies,Leeds Playhouse,,2023-04-06 19:00:00,['Past']
+77859,Lindy Fridays,Carriageworks Theatre,,2023-04-07 19:00:00,
+80536,Lord of the Flies,Leeds Playhouse,,2023-04-07 19:00:00,['Past']
+80536,Lord of the Flies,Leeds Playhouse,,2023-04-08 19:00:00,['Past']
+77859,Lindy Fridays,Carriageworks Theatre,,2023-04-14 19:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-04-17 19:10:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-04-21 19:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-04-24 19:10:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-04-28 19:00:00,
+79223,Solem Quartet | LICS on Tour 2022/23,Mill Hill Chapel,,2023-05-03 19:30:00,['Already on']
+77859,Lindy Fridays,Carriageworks Theatre,,2023-05-05 19:00:00,
+81096,Northern Ballet - Sketches,The Stanley & Audrey Burton Theatre,,2023-05-05 19:30:00,['Already on']
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-05-08 19:10:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-05-12 19:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-05-15 19:10:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-05-19 19:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-05-22 19:10:00,
+80546,Leonkoro Quartet | Quartet in Residence,"The Venue, Leeds Conservatoire",,2023-05-23 19:30:00,
+79389,Antibodies,The Tetley ,Free,2023-05-26 10:00:00,
+80214,World Island presents: Headlined and Curated by Gilles Peterson,Belgrave Music Hall and Canteen,,2023-05-26 17:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-05-26 19:00:00,
+79389,Antibodies,The Tetley ,Free,2023-05-27 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-05-28 10:00:00,
+78913,Slam Dunk Festival North 2023,Temple Newsam House and Estate,,2023-05-28 11:00:00,
+80218,Sunday Joint: Grifton Forbes Amos,The HiFi Club,,2023-05-28 19:30:00,
+80219,Vipertime Album Launch,Hyde Park Book Club,,2023-05-29 19:30:00,['Already on']
+79865,Opera North: Mozart's Requiem,Leeds Grand Theatre,,2023-05-30 19:00:00,['Already on']
+79389,Antibodies,The Tetley ,Free,2023-05-31 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-01 10:00:00,
+79865,Opera North: Mozart's Requiem,Leeds Grand Theatre,,2023-06-01 19:00:00,['Already on']
+79389,Antibodies,The Tetley ,Free,2023-06-02 10:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-06-02 19:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-03 10:00:00,
+79865,Opera North: Mozart's Requiem,Leeds Grand Theatre,,2023-06-03 19:00:00,['Already on']
+79389,Antibodies,The Tetley ,Free,2023-06-04 10:00:00,
+79865,Opera North: Mozart's Requiem,Leeds Grand Theatre,,2023-06-04 19:00:00,['Already on']
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-06-05 19:10:00,
+79389,Antibodies,The Tetley ,Free,2023-06-07 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-08 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-09 10:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-06-09 19:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-10 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-11 10:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-06-12 19:10:00,
+79389,Antibodies,The Tetley ,Free,2023-06-14 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-15 10:00:00,
+80567,Jess Gillam Ensemble,The Old Woollen,,2023-06-15 19:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-16 10:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-06-16 19:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-17 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-18 10:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-06-19 19:10:00,
+80547,Leonkoro Quartet | Quartet in Residence,"The Venue, Leeds Conservatoire",,2023-06-20 19:30:00,['Already on']
+79389,Antibodies,The Tetley ,Free,2023-06-21 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-22 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-23 10:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-06-23 19:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-24 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-25 10:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-06-26 19:10:00,
+79389,Antibodies,The Tetley ,Free,2023-06-28 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-29 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-06-30 10:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-06-30 19:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-01 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-02 10:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-07-03 19:10:00,
+79389,Antibodies,The Tetley ,Free,2023-07-05 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-06 10:00:00,
+79329,McFly - Sounds of the City,Millennium Square,,2023-07-06 18:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-07 10:00:00,
+79342,Kasabian - Sounds of the City,Millennium Square,,2023-07-07 18:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-07-07 19:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-08 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-09 10:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-07-10 19:10:00,
+79389,Antibodies,The Tetley ,Free,2023-07-12 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-13 10:00:00,
+78856,Bastille - Sounds Of The City,Millennium Square,,2023-07-13 18:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-14 10:00:00,
+79058,The Wombats - Sounds of the City,Millennium Square,,2023-07-14 18:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-07-14 19:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-15 10:00:00,
+79057,Shed Seven - Sounds of the City,Millennium Square,,2023-07-15 18:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-16 10:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-07-17 19:10:00,
+79389,Antibodies,The Tetley ,Free,2023-07-19 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-20 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-21 10:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-07-21 19:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-22 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-23 10:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-07-24 19:10:00,
+79389,Antibodies,The Tetley ,Free,2023-07-26 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-27 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-28 10:00:00,
+77859,Lindy Fridays,Carriageworks Theatre,,2023-07-28 19:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-29 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-07-30 10:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-07-31 19:10:00,
+79389,Antibodies,The Tetley ,Free,2023-08-02 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-08-03 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-08-04 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-08-05 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-08-06 10:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-08-07 19:10:00,
+83625,Artspace family fun with artist Kedisha Coakley,Leeds Art Gallery,Free,2023-08-08 11:00:00,
+79389,Antibodies,The Tetley ,Free,2023-08-09 10:00:00,
+83625,Artspace family fun with artist Kedisha Coakley,Leeds Art Gallery,Free,2023-08-09 11:00:00,
+79389,Antibodies,The Tetley ,Free,2023-08-10 10:00:00,
+83625,Artspace family fun with artist Kedisha Coakley,Leeds Art Gallery,Free,2023-08-10 11:00:00,
+79389,Antibodies,The Tetley ,Free,2023-08-11 10:00:00,
+83625,Artspace family fun with artist Kedisha Coakley,Leeds Art Gallery,Free,2023-08-11 11:00:00,
+79389,Antibodies,The Tetley ,Free,2023-08-12 10:00:00,
+83625,Artspace family fun with artist Kedisha Coakley,Leeds Art Gallery,Free,2023-08-12 11:00:00,
+79389,Antibodies,The Tetley ,Free,2023-08-13 10:00:00,
+80978,Clubbercise ,New Farnley Community Centre,From £5,2023-08-14 19:10:00,
+79389,Antibodies,The Tetley ,Free,2023-08-16 10:00:00,
+79389,Antibodies,The Tetley ,Free,2023-08-17 10:00:00,
+83622,Blissful Ignorance by Julia Pomeroy,Assembly House,Free,2023-08-17 18:00:00,
+79389,Antibodies,The Tetley ,Free,2023-08-18 10:00:00,
+83622,Blissful Ignorance by Julia Pomeroy,Assembly House,Free,2023-08-18 18:00:00,

@@ -5,13 +5,13 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: caa9f669753518b4cb1632334b7aa603
-      size: 220794
+      md5: 3f43992366c7776d6b44dae75314304f
+      size: 221436
     - path: ../../../../lib/util/
       hash: md5
-      md5: c29f173f8ef9871a71c87e431c14f4e5.dir
-      size: 5093
-      nfiles: 4
+      md5: 1716a8255a4563e6111e07666ced83f0.dir
+      size: 2040
+      nfiles: 2
     - path: events.py
       hash: md5
       md5: 9dd0dc11d1e4dfe48c694440b19c6825
@@ -23,32 +23,32 @@ stages:
     outs:
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/by_month.csv
       hash: md5
-      md5: 4dd918c61892468fd95b158e89c9ceb6
+      md5: 7f24d7f0a50a4508ec5d46582d6037c9
       size: 230
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/by_ward.csv
       hash: md5
-      md5: 82a1a79b8488ac5162887c59fa673bf7
-      size: 544
+      md5: 481a200bf1912127ea1b2565ebe4ffd7
+      size: 576
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/by_week.csv
       hash: md5
-      md5: 38c7a1bd6bd9225695d42624259cf573
-      size: 668
+      md5: 71f9728a5c7cc6b23743bd8d6549f045
+      size: 692
     - path: ../../../../docs/metrics/events/my-leeds-2023/_data/events/headlines.json
       hash: md5
-      md5: 6fb2789f03563af90208b0a9d94e9028
+      md5: 626200cc426b82d98448dfb21eb4cf41
       size: 156
   prepare@the-barn:
     cmd: papermill the-barn.ipynb ../../../../working/output/the-barn.ipynb
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: caa9f669753518b4cb1632334b7aa603
-      size: 220794
+      md5: 3f43992366c7776d6b44dae75314304f
+      size: 221436
     - path: ../../../../lib/util/
       hash: md5
-      md5: c29f173f8ef9871a71c87e431c14f4e5.dir
-      size: 5093
-      nfiles: 4
+      md5: 1716a8255a4563e6111e07666ced83f0.dir
+      size: 2040
+      nfiles: 2
     - path: events.py
       hash: md5
       md5: 9dd0dc11d1e4dfe48c694440b19c6825
@@ -79,12 +79,12 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: caa9f669753518b4cb1632334b7aa603
-      size: 220794
+      md5: 3f43992366c7776d6b44dae75314304f
+      size: 221436
     - path: ../../../../data/metrics/events/tickets/orders.csv
       hash: md5
-      md5: 0e7ecf5abd043fc43075be66843f91a1
-      size: 190412
+      md5: 05db64b4b903b48bf4d2f1d3ccaec13d
+      size: 190853
     - path: events.py
       hash: md5
       md5: 9dd0dc11d1e4dfe48c694440b19c6825
@@ -96,15 +96,15 @@ stages:
     outs:
     - path: ../../../../docs/metrics/events/signature/_data/events_by_date.csv
       hash: md5
-      md5: a9df46222ced338c8497bc474faa26cd
+      md5: 4665204329e5fa463fa2c5f690ca02e6
       size: 153
     - path: ../../../../docs/metrics/events/signature/_data/events_by_ward.csv
       hash: md5
-      md5: d1d129cafa6b66fb97c5cc32db006347
-      size: 452
+      md5: 34674e18ee6c24008276ab46b62f43a7
+      size: 480
     - path: ../../../../docs/metrics/events/signature/_data/headlines.json
       hash: md5
-      md5: d05a8343d8a518f2d8ddbdbbf078aabd
+      md5: 51ca43b75250f712baa7a4ad55369bfc
       size: 209
     - path: ../../../../docs/metrics/events/signature/_data/tickets_by_event_date.csv
       hash: md5

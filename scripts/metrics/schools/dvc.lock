@@ -9,13 +9,13 @@ stages:
       size: 2970
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
-      md5: bf8f196a8aa180959d3e004ddfadaa9d
-      size: 101806
+      md5: 0c0fdf26c7c27ccea54c338d8d124d6b
+      size: 105100
     outs:
     - path: data/metrics/schools/schools_events.csv
       hash: md5
-      md5: 938a5842761fca8a2b0a9151cd46ee6b
-      size: 35724
+      md5: 2b588ee7694a24442d7f7513400449b5
+      size: 35777
   extract:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
     deps:
@@ -26,15 +26,15 @@ stages:
     outs:
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
-      md5: bf8f196a8aa180959d3e004ddfadaa9d
-      size: 101806
+      md5: 0c0fdf26c7c27ccea54c338d8d124d6b
+      size: 105100
   prepare:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
       hash: md5
-      md5: 938a5842761fca8a2b0a9151cd46ee6b
-      size: 35724
+      md5: 2b588ee7694a24442d7f7513400449b5
+      size: 35777
     - path: data/reference/leeds_wards.csv
       hash: md5
       md5: 887a42d46d34c9e966211a79f2b8a672
@@ -50,19 +50,19 @@ stages:
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
       hash: md5
-      md5: 1760317bdf4249a71e4ecf8daa06fad8
+      md5: b7231db0d8a46864e1afe5bf3a34fd70
       size: 1503
     - path: docs/metrics/schools/_data/engagements_by_week.csv
       hash: md5
-      md5: f88ab19dfc3841df127777a22a6471f4
+      md5: 01406b9f9669cbffd476521dda5cd179
       size: 1259
     - path: docs/metrics/schools/_data/headlines.json
       hash: md5
-      md5: 029d8de05241b27e3e8d63c3e21c9262
+      md5: 2f7984790401a62eda92f6e3bec6cc5a
       size: 373
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
       hash: md5
-      md5: 212ec433a24103760d4c736a1b4a5357
+      md5: 71404ad9b23a9ca9447b2893ea6d3d40
       size: 6062
   ref_data:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/get_reference_data.py

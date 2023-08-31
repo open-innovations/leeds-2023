@@ -18,12 +18,14 @@ def summarise_events():
     hidden_stories = load_data('docs/_data/metrics/hidden_stories/wards.csv','hidden_stories', usecols=['ward_code','count']).rename(columns={'count':'events'})
     my_leeds = load_data('docs/metrics/events/my-leeds-2023/_data/events/by_ward.csv', 'my_leeds_2023', usecols=['ward_code','events'])
     the_barn = load_data('docs/metrics/events/the-barn/_data/events/by_ward.csv', 'the_barn', usecols=['ward_code','events'])
+    signature = load_data('docs/metrics/events/signature/_data/events_by_ward.csv', 'signature', usecols=['ward_code','events'])
     partner = load_data('docs/metrics/events/partner/_data/by_ward.csv', 'partner', usecols=['ward_code','events'])
 
     #Combine
     report = pd.concat([
         my_leeds,
         the_barn,
+        signature,
         partner,
         roadshows,
         celebration_event,

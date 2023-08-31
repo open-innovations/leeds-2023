@@ -12,6 +12,12 @@ def get_event_awakening():
     data['activity'] = 'awakening_attendance'
     return data
 
+def get_event_the_barn():
+    data = pd.read_csv('data/metrics/events/the_barn/_data/events/by_ward.csv', usecols=[
+        'ward_code', 'audience'
+    ]).rename(columns={'audience': 'count'})
+    return data
+
 
 def summarise_activity():
     name_map = pd.read_csv(
@@ -40,10 +46,13 @@ def summarise_activity():
 
     awakening = get_event_awakening()
 
+    the_barn = get_event_the_barn()
+
     # Create report
     report = pd.concat([
         ballot,
-        get_event_awakening(),
+        awakening,
+        the_barn,
         volunteers,
         roadshow,
         schools,

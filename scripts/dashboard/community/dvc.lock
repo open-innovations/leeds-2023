@@ -69,14 +69,14 @@ stages:
       size: 1516
     - path: scripts/dashboard/community/residents.py
       hash: md5
-      md5: dc3bed71f6ef664f829b1727991e5377
-      size: 2849
+      md5: ba9b41aff75f272e1cb5eee99b1946a4
+      size: 3146
     outs:
     - path: docs/dashboard/community/_data/residents.csv
       hash: md5
-      md5: 7a2b9ad6a26fdf50c0556cad8641c9f8
-      size: 1484
+      md5: d804fa2a2dd873a242366b72ccc7beb3
+      size: 1574
     - path: docs/dashboard/community/_data/residents_with_schools.csv
       hash: md5
-      md5: c1fa7438adfab63d1a264616d5dc917f
-      size: 1651
+      md5: db44d0b20d85ccdc2906ab67e6dc9a81
+      size: 1740

@@ -73,7 +73,7 @@ limitations:
 
     {% call checkToggle('Community Engagement') -%}
     {% comp 'dashboard.impact.panel', { rows: 3, columns: 2, bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
-    {% comp 'dashboard.impact.embedded_figure' %}
+    {% comp 'dashboard.impact.embedded_figure', { link: 'metrics/schools'} %}
       {{ paneTitle('School Engagement') }}
       {{ comp.oi.viz.map.hex_cartogram({
 		config: {

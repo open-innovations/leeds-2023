@@ -15,7 +15,7 @@ table_columns:
       name: Awakening Attendance
       link: /metrics/events/awakening
       description: Number of attendees at The Awakening
-    - key: the_barn
+    - key: the_barn_residents
       name: The Barn
       link: /metrics/events/the-barn
       description: Number of attendees at The Barn events

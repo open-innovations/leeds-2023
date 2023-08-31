@@ -20,9 +20,9 @@ def get_event_the_barn():
     return data
 
 def get_signature_events(): 
-    data = pd.read_csv('docs/metrics/events/signature/_data/events_by_ward.csv', usecols=[
-        'ward_code', 'attendances'
-    ]).rename(columns={'attendances': 'count'})
+    data = pd.read_csv('docs/metrics/events/signature/_data/tickets_by_ward.csv', usecols=[
+        'ward_code', 'tickets'
+    ]).rename(columns={'tickets': 'count'})
     data['activity'] = 'signature_events'
     return data
 

@@ -16,6 +16,7 @@ def get_event_the_barn():
     data = pd.read_csv('data/metrics/events/the_barn/_data/events/by_ward.csv', usecols=[
         'ward_code', 'audience'
     ]).rename(columns={'audience': 'count'})
+    data['activity'] = 'the_barn'
     return data
 
 

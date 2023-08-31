@@ -13,7 +13,7 @@ def get_event_awakening():
     return data
 
 def get_event_the_barn():
-    data = pd.read_csv('metrics/events/the_barn/_data/events/by_ward.csv', usecols=[
+    data = pd.read_csv('docs/metrics/events/the_barn/_data/events/by_ward.csv', usecols=[
         'ward_code', 'audience'
     ]).rename(columns={'audience': 'count'})
     data['activity'] = 'the_barn_residents'

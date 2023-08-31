@@ -19,6 +19,10 @@ table_columns:
       name: The Barn
       link: /metrics/events/the-barn
       description: Number of attendees at The Barn events
+    - key: signature_events
+      name: Signature Events
+      link: /metrics/events/signature
+      description: Number of attendees across all Signature Events
 
     - key: volunteering
       name: Volunteers

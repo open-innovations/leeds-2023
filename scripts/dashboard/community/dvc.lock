@@ -29,17 +29,17 @@ stages:
       size: 1516
     - path: scripts/dashboard/community/events.py
       hash: md5
-      md5: ae153e98da76e3077a17d9bf993121e5
-      size: 2456
+      md5: 71b151a8b3ebd10d1fe5b93aefa53a80
+      size: 2604
     outs:
     - path: docs/dashboard/community/_data/events.csv
       hash: md5
-      md5: f7c0ac1131a46e9132a26329aac09d74
-      size: 1529
+      md5: 2c25dc50d90005fdff9717496f7cab06
+      size: 1611
     - path: docs/dashboard/community/_data/events_with_schools.csv
       hash: md5
-      md5: e81da2b4766ef6fc043f02d53a97223c
-      size: 1634
+      md5: a5dba76c034715ffa9cdef52659dca6a
+      size: 1717
   prepare_residents:
     cmd: PYTHONPATH=scripts/ python3 scripts/dashboard/community/residents.py
     deps:

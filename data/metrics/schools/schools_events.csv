@@ -60,8 +60,8 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-02-02,Authors Abroad session,CLE,Authors Abroad,['Killingbeck and Seacroft'],['LS14 6HA'],['Leeds East Academy'],['Killingbeck and Seacroft'],['LS14 6HA'],90.0,90.0,0.0,1
 2023-02-02,Brudenell Primary School Pack,CLE,Waking the Artist,,,['Brudenell Primary School'],['Headingley and Hyde Park'],,112.0,112.0,0.0,1
 2023-02-02,Carr Manor Community School Pack,CLE,Waking the Artist,['Moortown'],[' LS17 5DJ'],['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],30.0,30.0,0.0,1
-2023-02-03,Authors Abroad session,CLE,Authors Abroad,['Middleton Park'],['LS10 2JU'],['Cockburn John Charles Academy'],['Middleton Park '],['LS10 2JU'],90.0,90.0,0.0,1
 2023-02-03,Authors Abroad session,CLE,Authors Abroad,['Weetwood'],['LS16 5AG'],['Lawnswood School'],['Weetwood '],['LS16 5AG'],90.0,90.0,0.0,1
+2023-02-03,Authors Abroad session,CLE,Authors Abroad,['Middleton Park'],['LS10 2JU'],['Cockburn John Charles Academy'],['Middleton Park '],['LS10 2JU'],90.0,90.0,0.0,1
 2023-02-05,Rosebank Primary School Pack,CLE,Waking the Artist,['Little London and Woodhouse'],['LS3 1JP'],['Rosebank Primary School'],['Little London and Woodhouse'],,91.0,91.0,0.0,1
 2023-02-06,Authors Abroad session,CLE,Authors Abroad,['Moortown'],['LS6 4QE'],['Cardinal Heenan Catholic High School'],['Moortown '],['LS6 4QE'],90.0,90.0,0.0,1
 2023-02-08,Waking the Artist at Cockburn School,CLE,01 - The Awakening,['Beeston and Holbeck'],['LS11 5TT'],['Cockburn School'],['Beeston and Holbeck'],['LS11 5TT'],24.0,24.0,0.0,1
@@ -131,8 +131,8 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-04-16,Waking the Artist at Beechwood Primary School,CLE,01 - The Awakening,['Killingbeck and Seacroft'],['LS14 6QB'],['Beechwood Primary School'],['Killingbeck and Seacroft'],,56.0,56.0,0.0,1
 2023-04-17,Schools Workshop,,07 - Children's Day,,,['East SILC John Jamieson'],['Roundhay'],,6.0,6.0,0.0,1
 2023-04-17,Under Our Feet (Schools Programme),Produce (Signature),04 - This is a FOREST,,,['Manor Wood Primary School'],['Moortown'],,0.0,0.0,0.0,1
-2023-04-17,Schools Workshop,,07 - Children's Day,,,['Dixons Trinity Chapeltown'],['Chapel Allerton'],,60.0,60.0,0.0,1
 2023-04-17,Under Our Feet (Schools Programme),Produce (Signature),04 - This is a FOREST,,,['Co-op Academy Woodlands'],['Gipton and Harehills'],,0.0,0.0,0.0,1
+2023-04-17,Schools Workshop,,07 - Children's Day,,,['Dixons Trinity Chapeltown'],['Chapel Allerton'],,60.0,60.0,0.0,1
 2023-04-17,Schools Workshop,,07 - Children's Day,,,['Co-op Academy Beckfield'],['Pudsey'],,48.0,48.0,0.0,1
 2023-04-17,Schools Workshop,,07 - Children's Day,,,['Cottingley Primary Academy'],['Beeston and Holbeck'],,30.0,30.0,0.0,1
 2023-04-17,Schools Workshop,,07 - Children's Day,,,['Armley Park Primary School'],['Armley'],,60.0,60.0,0.0,1
@@ -228,9 +228,9 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-06-21,Leeds Youth Music Festival Concert,CLE,Creative Learning S2,['Little London and Woodhouse'],['LS2 8BY'],,,,0.0,0.0,0.0,0
 2023-06-28,Feel the Music,CLE,Feel the Music,['Little London and Woodhouse'],['LS2 7BS'],['Moor Allerton Hall Primary School'],['Moortown'],,85.0,83.0,2.0,1
 2023-06-30,School grant - Harewood CE Primary School,CLE,12 - My LEEDS 2023,,,['Harewood Church of England Voluntary Controlled Primary School'],['Harewood'],,200.0,200.0,0.0,1
-2023-07-03,Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['Hunslet Carr Primary School'],['Hunslet and Riverside'],,1.0,1.0,0.0,1
-2023-07-03,This is a Forest: Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['Chapel Allerton Primary School'],['Chapel Allerton'],['LS7 3PD'],2.0,2.0,0.0,1
 2023-07-03,Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],1.0,1.0,0.0,1
+2023-07-03,This is a Forest: Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['Chapel Allerton Primary School'],['Chapel Allerton'],['LS7 3PD'],2.0,2.0,0.0,1
+2023-07-03,Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['Hunslet Carr Primary School'],['Hunslet and Riverside'],,1.0,1.0,0.0,1
 2023-07-03,Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['Lawns Park Primary School'],['Farnley and Wortley'],,1.0,1.0,0.0,1
 2023-07-03,Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['East SILC Jack Clark'],['Gipton and Harehills'],['LS8 3LF'],1.0,1.0,0.0,1
 2023-07-03,Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['East SILC John Jamieson'],['Roundhay'],,1.0,1.0,0.0,1

@@ -38,6 +38,11 @@ table_columns:
       name: The Barn
       link: /metrics/events/the-barn
       description: Events at The Barn
+    - key: signature
+      name: Signature Events
+      link: /metrics/events/signature
+      description: Total events under the Signature Events programme
+
     - key: partner
       name: Partner events
       link: /metrics/events/partner

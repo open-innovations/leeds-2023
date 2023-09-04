@@ -6,9 +6,9 @@ tags:
 work_in_progress: false
 order: 12
 metas:
-  title: LEEDS 2023 Metrics - My LEEDS
+  title: LEEDS 2023 Metrics - My LEEDS 2023
   description: |
-    Visualisations of key data related to the My LEEDS events programme.
+    Visualisations of key data related to the My LEEDS 2023 events programme.
 limitations: 
   - There are two other strands of events to be added to this page: My World, My City, My Neighbourhood for which a 2022 report was produced detailing the impact of the seed projects. In 2023 a handful of these projects are being taken forward. Data from these projects will be displayed on this page.
   - The Gift, an artistic project with artist Keith Khan is also part of My LEEDS 2023, data is currently not being displayed relating to that.
@@ -19,14 +19,19 @@ sources:
 
 {% from 'macros.njk' import dateFormatter %}
 
-<p>My LEEDS 2023 is a celebration of all the people and stories that make up Leeds. As LEEDS 2023’s key co-creation project they have been collaborating with 33 Neighbourhood Hosts to organise events in every ward in Leeds between June and September,
- in a series of events called My LEEDS Summer. Learn more about the project on the LEEDS 2023 website: <a href="https://leeds2023.co.uk/my-leeds-summer">My LEEDS 2023</a>.</p>
+<p>My LEEDS 2023 is a celebration of all the people and stories that make up Leeds.</p>
 
-<p>‘Neighbourhood Hosts’ are representatives from each ward. They are local people who are passionate about the places they live or work. They meet with the My LEEDS 2023 team every week to receive training and to organise their celebration events.</p>
+<p>Throughout the Year of Culture, 33 Neighbourhood Hosts – local residents of Leeds – participated in a paid training scheme and collaborated with their local communities to create cultural events in each ward of the city. This programme of events was called My LEEDS Summer. To support participation in My LEEDS Summer, the Neighbourhood Hosts designed a community grants scheme and people from across Leeds were invited to apply for funding and take part.</p>
+  
+<p>Artist Keith Khan was commissioned to create ‘The Gift’, a new piece of artwork inspired by Leeds to be gifted to the city. For inspiration, Keith met each of the Neighbourhood Hosts and visited their ward, speaking to local residents and getting to know the neighbourhood.</p>
 
-<p>The visualisations below present the My LEEDS events which have taken place so far. The full list of events is available to view on the <a href="https://leeds2023.co.uk/my-leeds-summer">LEEDS 2023 website</a>.</p>
+<p>Alongside the Neighbourhood Hosts, seven local artists were commissioned to co-create cultural activity with their community, as part of a strand of work called ‘My World, My City, My Neighbourhood’.</p>
 
-<p>As part of the organisation for My LEEDS Summer events the Neighbourhood Hosts decided to offer small Community grants and schools grants to applicants in their area to allow others to participate in the celebrations.</p>
+<p>Finally, school pupils were invited to take part by applying for a grant to create cultural activity at an event in their school’s calendar.</p>
+
+<p>Each of these interwoven strands came together to engage communities across the city in My LEEDS 2023.</p>
+  
+<p>The visualisations below present the My LEEDS 2023 events which have taken place so far. The full list of events is available to view on the <a href="https://leeds2023.co.uk/my-leeds-summer">LEEDS 2023 website</a>.</p>
 
 
 {% comp 'grid.' + headline_grid_style, { min_width: '15em' } %}
@@ -39,7 +44,7 @@ sources:
 
 
 
-<h2>My LEEDS</h2>
+<h2>My LEEDS 2023</h2>
 
 
 {% comp 'grid.' + headline_grid_style, { min_width: '15em' } %}
@@ -47,7 +52,7 @@ sources:
   {{ comp.metric.headline({
     title: "Number of events", headingLevel: 2,
     value: events.headlines.total_events | localize,
-    description: "Total activities held as part of My LEEDS .",
+    description: "Total activities held as part of My LEEDS 2023.",
     background: "var(--l23-magenta)",
     colour: "var(--l23-magenta-contrast)"
   }) | safe }}
@@ -55,7 +60,7 @@ sources:
   {{ comp.metric.headline({
     title: "Number of wards hosting events", headingLevel: 2,
     value: events.headlines.ward_count | localize,
-    description: "Number of wards hosting events held as part of My LEEDS.",
+    description: "Number of wards hosting events held as part of My LEEDS 2023.",
     background: "var(--l23-cyan)"
   }) | safe }}
 
@@ -63,7 +68,7 @@ sources:
   {{ comp.metric.headline({
     title: "Total audience", headingLevel: 2,
     value: events.headlines.total_audience | localize ,
-    description: "Total number of attendances online and in person.",
+    description: "Online and in person attendances across all My LEEDS 2023 events.",
     background: "var(--l23-yellow)"
   }) | safe }}
 
@@ -180,11 +185,7 @@ sources:
   }) | safe }}
 {% endcomp %}
 
-
-
-<h2>My LEEDS Schools</h2>
-
-<h2>My LEEDS 2023 Summer Community Grant</h2>
+<h2>My LEEDS Summer Community Grant</h2>
 {% comp 'grid.autogrid', {min_width: '30rem'} %}
 {% comp 'layout.figure', {max_width: '40rem'} %}
 <h3>Applications by ward</h3>
@@ -214,6 +215,8 @@ sources:
     mapped to a ward.
   </p>
 </div>
+
+
 {#
 {% comp 'layout.figure', {max_width: '40rem'} %}
 <h3>Applications by local authority</h3>
@@ -251,7 +254,7 @@ sources:
 {% endcomp %}
 <div>
   <p> 
-    As part of <a href="https://leeds2023.co.uk/my-leeds-2023">My LEEDS 2023</a> project, LEEDS2023 offered 33 schools the chance to 
+    As part of <a href="https://leeds2023.co.uk/my-leeds-2023">My LEEDS 2023</a> project, LEEDS 2023 offered 33 schools the chance to 
     enhance an existing event in their summer term or plan a new event in their autumn term with a grant of £300.
   </p>
   <p>

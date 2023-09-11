@@ -9,13 +9,13 @@ stages:
       size: 2970
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
-      md5: f8a6c93842e7e0bf83ed31fa0fef1ebf
-      size: 119842
+      md5: d3bff67adc20e9d48d0627ba28e65175
+      size: 123106
     outs:
     - path: data/metrics/schools/schools_events.csv
       hash: md5
-      md5: 9824ad1f54caa7d03e1f2c65e40f635f
-      size: 45619
+      md5: 74aa5acdd421fd65a33a575e0d7997ab
+      size: 47001
   extract:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
     deps:
@@ -26,15 +26,15 @@ stages:
     outs:
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
-      md5: f8a6c93842e7e0bf83ed31fa0fef1ebf
-      size: 119842
+      md5: d3bff67adc20e9d48d0627ba28e65175
+      size: 123106
   prepare:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
       hash: md5
-      md5: 9824ad1f54caa7d03e1f2c65e40f635f
-      size: 45619
+      md5: 74aa5acdd421fd65a33a575e0d7997ab
+      size: 47001
     - path: data/reference/leeds_wards.csv
       hash: md5
       md5: 887a42d46d34c9e966211a79f2b8a672
@@ -50,20 +50,20 @@ stages:
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
       hash: md5
-      md5: 39cbfaf75a00eb2e57a03fb46f2967f2
-      size: 1519
+      md5: 7d1e36d72b7dbcb31cf28856d82ab0fe
+      size: 1520
     - path: docs/metrics/schools/_data/engagements_by_week.csv
       hash: md5
-      md5: ccc98d9738d3c6b5a0837c758742d99b
-      size: 1379
+      md5: cdca51799428fbb55d82627f150a1817
+      size: 1381
     - path: docs/metrics/schools/_data/headlines.json
       hash: md5
-      md5: 02c7f2f704c2f93895ba5c6e9eebf91e
+      md5: cf9bb78ea81429433a86c7f36798cd3d
       size: 373
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
       hash: md5
-      md5: 7b12a1ccfd16728d22c1b24c4a910370
-      size: 6660
+      md5: 0484c683ae0e4350e34df090c19df32f
+      size: 6832
   ref_data:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/get_reference_data.py
     deps:

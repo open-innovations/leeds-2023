@@ -10,8 +10,8 @@ stages:
     outs:
     - path: working/metrics/community-grants/
       hash: md5
-      md5: 39019d889f02e046295c4e67ec2ce433.dir
-      size: 43103
+      md5: fde9b4afce0b1796e7457e633b67ad39.dir
+      size: 43158
       nfiles: 3
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/transform.py
@@ -24,22 +24,22 @@ stages:
       size: 2081
     - path: working/metrics/community-grants/
       hash: md5
-      md5: 39019d889f02e046295c4e67ec2ce433.dir
-      size: 43103
+      md5: fde9b4afce0b1796e7457e633b67ad39.dir
+      size: 43158
       nfiles: 3
     outs:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: 685950d06847fccf2a0cdca3b2b0411b.dir
-      size: 34201
+      md5: 952a13292c04bb71787e2c70427208b4.dir
+      size: 34269
       nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/prepare.py
     deps:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: 685950d06847fccf2a0cdca3b2b0411b.dir
-      size: 34201
+      md5: 952a13292c04bb71787e2c70427208b4.dir
+      size: 34269
       nfiles: 1
     - path: scripts/metrics/community-grants/prepare.py
       hash: md5
@@ -48,17 +48,17 @@ stages:
     outs:
     - path: docs/metrics/events/my-leeds-2023/_data/headline.json
       hash: md5
-      md5: 7f4cc67806fab97338d8887c30ae1132
+      md5: cc824d28ae2e3d4d55812d30d218f37e
       size: 106
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_la.csv
       hash: md5
-      md5: ebe4326c655435ab3456584217bee09b
+      md5: 08ad84cbe259c89a2ded9e6d5fb5b04d
       size: 114
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_ward.csv
       hash: md5
-      md5: f3517fa50b6838ef807388b07f3b567a
+      md5: cf430b0895353d8d8c3a603956fae72b
       size: 684
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_week.csv
       hash: md5
-      md5: ba796d9a80a3841fe7d219a3eedc28c7
+      md5: f9954fc4b82ef380daa5269ff4cd6368
       size: 654

@@ -76,11 +76,11 @@ def normalise_column_names(data):
 
 
 def patch_column_names(data):
-    print(data.columns)
     return data.rename(columns={
         'headline': 'news_headline',
         'date': 'news_date',
         'uvpm': 'uv',
+        'desktop_uvpm': 'uv',
         'circulation': 'audience_reach',
         'circ.': 'audience_reach',
         'publication': 'outlet_name'
@@ -131,6 +131,9 @@ def convert_numbers(data):
     # Convert viewship to int
     try:
         data['uv'] = data['uv'].fillna(0).astype('Int64')
+    except KeyError as e:
+        logger.error('Source file -> %s', data.source_file[0])
+        logger.error('Columns %s', data.columns)
     except Exception as e:
         logger.error(e)
         data['uv'] = pd.to_numeric(

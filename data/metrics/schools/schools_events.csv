@@ -271,3 +271,5 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-07-17,School grant - Beechwood Primary School,CLE,12 - My LEEDS 2023,,,['Beechwood Primary School'],['Killingbeck and Seacroft'],,461.0,461.0,0.0,1
 2023-08-06,My SCHOOL 2023,Produce (Signature),12 - My LEEDS 2023,,,,,,0.0,0.0,0.0,0
 2023-09-03,Tetley: Afra Eisma Learning Resources,CLE,Creative Learning S3,,,,,,0.0,0.0,0.0,0
+2023-09-11,Afra Eisma workshop,CLE,Creative Learning S3,['Hunslet and Riverside'],['LS10 1JQ'],"[""Beeston Hill St Luke's Church of England Primary School""]",['Beeston and Holbeck'],,44.0,40.0,4.0,1
+2023-09-11,Afra Eisma workshops,CLE,Creative Learning S3,['Hunslet and Riverside'],['LS10 1JQ'],['Leeds City College'],['Little London and Woodhouse'],,29.0,25.0,4.0,1

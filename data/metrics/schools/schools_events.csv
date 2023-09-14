@@ -213,59 +213,59 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-05-09,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Otley and Yeadon'],['LS21 1DF'],['Otley All Saints CofE Primary School'],['Otley and Yeadon'],,0.0,0.0,0.0,1
 2023-05-09,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Moortown'],['LS6 4LD'],['Co-op Beckfield'],,,0.0,0.0,0.0,1
 2023-05-09,School Day: Moor Allerton Hall Primary,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Moor Allerton Hall Primary School'],['Moortown'],,45.0,45.0,0.0,1
-2023-05-09,School Day: Lane End Primary,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Lane End Primary School'],['Beeston and Holbeck'],,30.0,30.0,0.0,1
 2023-05-09,School Day: IQRA Academy Primary,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['IQRA Academy Primary'],,['BD8 8DA'],45.0,45.0,0.0,1
 2023-05-09,School Day: Greenmount Primary,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Greenmount Primary School'],['Beeston and Holbeck'],,60.0,60.0,0.0,1
-2023-05-10,School Day: Whinmoor St Paul's C of E,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],"[""Whinmoor St Paul's Church of England Primary School""]",['Armley'],,34.0,34.0,0.0,1
-2023-05-10,School Day: Allerton CE Primary School,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Allerton CofE Primary School'],['Alwoodley'],,90.0,90.0,0.0,1
+2023-05-09,School Day: Lane End Primary,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Lane End Primary School'],['Beeston and Holbeck'],,30.0,30.0,0.0,1
 2023-05-10,School Day: Temple Learning Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Temple Learning Academy'],['Temple Newsam '],,60.0,60.0,0.0,1
-2023-05-11,School Day: The Halifax Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['The Halifax Academy'],,,50.0,50.0,0.0,1
-2023-05-11,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Weetwood'],['LS16 6NF'],['Co-op Beckfield'],,,0.0,0.0,0.0,1
+2023-05-10,School Day: Allerton CE Primary School,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Allerton CofE Primary School'],['Alwoodley'],,90.0,90.0,0.0,1
+2023-05-10,School Day: Whinmoor St Paul's C of E,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],"[""Whinmoor St Paul's Church of England Primary School""]",['Armley'],,34.0,34.0,0.0,1
 2023-05-11,School Day: Royds Hall,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Royds Hall'],,['HD3 4HA'],30.0,30.0,0.0,1
 2023-05-11,School Day: Leeds City Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Leeds City Academy'],['Headingley and Hyde Park'],['LS6 2LG'],30.0,30.0,0.0,1
-2023-05-12,School Day: Thornhill Community Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Thornhill Community Academy'],,['WF12 0HE'],31.0,31.0,0.0,1
+2023-05-11,School Day: The Halifax Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['The Halifax Academy'],,,50.0,50.0,0.0,1
+2023-05-11,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Weetwood'],['LS16 6NF'],['Co-op Beckfield'],,,0.0,0.0,0.0,1
 2023-05-12,School Day: Tong Leadership Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Tong Leadership Academy'],,['BD4 6NR'],30.0,30.0,0.0,1
-2023-05-12,School Day: Halifax Grammar School,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['North Halifax Grammar School'],,['HX2 9SU'],14.0,14.0,0.0,1
-2023-05-12,School Day: Netherhall Learning Campus,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Netherhall Learning Campus'],,['HD5 9PG'],45.0,45.0,0.0,1
 2023-05-12,School Day: Todmorden High School,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Todmorden High School'],,['OL14 7DG'],60.0,60.0,0.0,1
+2023-05-12,School Day: Thornhill Community Academy,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Thornhill Community Academy'],,['WF12 0HE'],31.0,31.0,0.0,1
+2023-05-12,School Day: Netherhall Learning Campus,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Netherhall Learning Campus'],,['HD5 9PG'],45.0,45.0,0.0,1
+2023-05-12,School Day: Halifax Grammar School,CLE,05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['North Halifax Grammar School'],,['HX2 9SU'],14.0,14.0,0.0,1
 2023-05-16,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Farnley and Wortley'],['LS12 5LA'],['Co-op Beckfield'],,,0.0,0.0,0.0,1
-2023-05-16,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Armley'],['LS12 1SF'],['St Bartholomews'],['Armley'],,0.0,0.0,0.0,1
 2023-05-16,The Space Digital Interactive Playspace (school workshops),Produce (Signature),05 - The Barn,,,['Trinity Academy Leeds'],['Burmantofts and Richmond Hill '],['LS9 7QL'],4.0,4.0,0.0,1
 2023-05-16,The Space Digital Interactive Playspace ,Produce (Signature),05 - The Barn,,,,,,128.0,128.0,0.0,0
-2023-05-17,P.L.A.Y Day Research Workshop with LEEDS 2023,CLE,Creative Learning S2,['Headingley and Hyde Park'],['LS6 2UZ'],,,,47.0,47.0,0.0,0
+2023-05-16,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Armley'],['LS12 1SF'],['St Bartholomews'],['Armley'],,0.0,0.0,0.0,1
 2023-05-17,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Cross Gates and Whinmoor'],['LS15 8JH'],['Manston St James Primary Academy'],['Cross Gates and Whinmoor'],,0.0,0.0,0.0,1
+2023-05-17,P.L.A.Y Day Research Workshop with LEEDS 2023,CLE,Creative Learning S2,['Headingley and Hyde Park'],['LS6 2UZ'],,,,47.0,47.0,0.0,0
 2023-05-17,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,,['BD4 8ER'],['Co-op Beckfield'],,,0.0,0.0,0.0,1
 2023-05-18,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Bramley and Stanningley'],['LS13 1DQ'],['Summerfield PS'],['Bramley and Stanningley'],,0.0,0.0,0.0,1
-2023-05-22,Saturday Town School Workshops: Notre Dame Catholic Sixth Form College,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,22.0,22.0,0.0,1
-2023-05-22,Saturday Town School Workshops: Getaway Girls,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,12.0,12.0,0.0,1
-2023-05-22,Saturday Town School Workshops: Guiseley School,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,24.0,24.0,0.0,1
-2023-05-22,Saturday Town School Workshops: Roundhay School,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,24.0,24.0,0.0,1
-2023-05-22,Saturday Town School Workshops: Pudsey Grammar,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,22.0,22.0,0.0,1
-2023-05-22,Saturday Town School Workshops: Prince Henrys School,CLE,Creative Learning S2,,,"[""Otley Prince Henry's Grammar School Specialist Language College""]",['Otley and Yeadon '],,26.0,26.0,0.0,1
 2023-05-22,Saturday Town School Workshops: Cockburn School,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,26.0,26.0,0.0,1
+2023-05-22,Saturday Town School Workshops: Notre Dame Catholic Sixth Form College,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,22.0,22.0,0.0,1
 2023-05-22,Saturday Town School Workshops: Pinc College,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,8.0,8.0,0.0,1
+2023-05-22,Saturday Town School Workshops: Pudsey Grammar,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,22.0,22.0,0.0,1
+2023-05-22,Saturday Town School Workshops: Roundhay School,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,24.0,24.0,0.0,1
+2023-05-22,Saturday Town School Workshops: Getaway Girls,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,12.0,12.0,0.0,1
+2023-05-22,Saturday Town School Workshops: Prince Henrys School,CLE,Creative Learning S2,,,"[""Otley Prince Henry's Grammar School Specialist Language College""]",['Otley and Yeadon '],,26.0,26.0,0.0,1
+2023-05-22,Saturday Town School Workshops: Guiseley School,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,24.0,24.0,0.0,1
 2023-06-06,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Middleton Park'],['LS10 4QE'],['Sharp Lane Primary School'],['Middleton Park '],,0.0,0.0,0.0,1
 2023-06-06,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Morley South'],['LS27 0AW'],['Fountain Primary School'],['Morley South'],,0.0,0.0,0.0,1
 2023-06-07,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Beeston and Holbeck'],['LS11 6BA'],['Greenmount Primary School'],['Beeston and Holbeck'],,0.0,0.0,0.0,1
+2023-06-08,Launch of Smeaton learning resources and CREST Awards,Produce (Signature),09 - Smeaton300: Learning programme,,,,,,0.0,0.0,0.0,0
 2023-06-08,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Moortown'],['LS17 6QP'],['Moor Allerton Hall Primary School'],['Moortown'],,0.0,0.0,0.0,1
 2023-06-08,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Moortown'],[' LS17 5DJ'],['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],0.0,0.0,0.0,1
-2023-06-08,Launch of Smeaton learning resources and CREST Awards,Produce (Signature),09 - Smeaton300: Learning programme,,,,,,0.0,0.0,0.0,0
 2023-06-11,Leeds Young Film Programmers: Cockburn John Charles Academy,CLE,Creative Learning S1,,,['Cockburn John Charles Academy'],['Middleton Park '],['LS10 2JU'],30.0,30.0,0.0,1
 2023-06-14,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Burmantofts and Richmond Hill'],['LS9 7NP'],['Shakespeare Primary School'],['Burmantofts and Richmond Hill '],,0.0,0.0,0.0,1
 2023-06-14,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Chapel Allerton'],['LS7 4AW'],"[""Holy Rosary and St Anne's Catholic Primary School, a Voluntary Academy""]",['Chapel Allerton'],,0.0,0.0,0.0,1
-2023-06-15,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Farnley and Wortley'],['LS12 5AW'],['Ryecroft Academy'],['Farnley and Wortley'],,0.0,0.0,0.0,1
 2023-06-15,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Horsforth'],['LS18 5AF'],['Broadgate Primary School'],['Horsforth'],,0.0,0.0,0.0,1
-2023-06-19,Leeds Young Film Programmers: John Smeaton Academy,CLE,Creative Learning S1,,,['John Smeaton Academy'],['Cross Gates and Whinmoor'],,28.0,28.0,0.0,1
+2023-06-15,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Farnley and Wortley'],['LS12 5AW'],['Ryecroft Academy'],['Farnley and Wortley'],,0.0,0.0,0.0,1
 2023-06-19,School grant - Westgate Primary School,CLE,12 - My LEEDS 2023,,,['Westgate Primary School'],['Otley and Yeadon'],,240.0,240.0,0.0,1
+2023-06-19,Leeds Young Film Programmers: John Smeaton Academy,CLE,Creative Learning S1,,,['John Smeaton Academy'],['Cross Gates and Whinmoor'],,28.0,28.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Concert,CLE,Creative Learning S2,['Little London and Woodhouse'],['LS2 8BY'],,,,0.0,0.0,0.0,0
 2023-06-28,Feel the Music,CLE,Feel the Music,['Little London and Woodhouse'],['LS2 7BS'],['Moor Allerton Hall Primary School'],['Moortown'],,85.0,83.0,2.0,1
 2023-06-30,School grant - Harewood CE Primary School,CLE,12 - My LEEDS 2023,,,['Harewood Church of England Voluntary Controlled Primary School'],['Harewood'],,200.0,200.0,0.0,1
-2023-07-03,Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['East SILC Jack Clark'],['Gipton and Harehills'],['LS8 3LF'],1.0,1.0,0.0,1
 2023-07-03,Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['Hunslet Carr Primary School'],['Hunslet and Riverside'],,1.0,1.0,0.0,1
-2023-07-03,Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],1.0,1.0,0.0,1
 2023-07-03,Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['East SILC John Jamieson'],['Roundhay'],,1.0,1.0,0.0,1
-2023-07-03,Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['Lawns Park Primary School'],['Farnley and Wortley'],,1.0,1.0,0.0,1
+2023-07-03,Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['East SILC Jack Clark'],['Gipton and Harehills'],['LS8 3LF'],1.0,1.0,0.0,1
+2023-07-03,Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],1.0,1.0,0.0,1
 2023-07-03,This is a Forest: Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['Chapel Allerton Primary School'],['Chapel Allerton'],['LS7 3PD'],2.0,2.0,0.0,1
+2023-07-03,Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['Lawns Park Primary School'],['Farnley and Wortley'],,1.0,1.0,0.0,1
 2023-07-06,School grant - New Bewerley Community School,CLE,12 - My LEEDS 2023,,,['The New Bewerley Community Primary School'],['Beeston and Holbeck'],,420.0,420.0,0.0,1
 2023-07-07,Noah's Flood: School,CLE,"Slung Low, Noah's Flood",['Beeston and Holbeck'],[' LS11 9RQ'],['Ingram Road Primary School'],['Beeston and Holbeck'],,180.0,180.0,0.0,1
 2023-07-17,School grant - Beechwood Primary School,CLE,12 - My LEEDS 2023,,,['Beechwood Primary School'],['Killingbeck and Seacroft'],,461.0,461.0,0.0,1

@@ -10,8 +10,8 @@ stages:
     outs:
     - path: working/metrics/community-grants/
       hash: md5
-      md5: 22d5c4e493aa4be4e02a9d378c0aca2f.dir
-      size: 43214
+      md5: f8e23c77b842a72edcace5d0a45d12e6.dir
+      size: 43327
       nfiles: 3
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/transform.py
@@ -24,22 +24,22 @@ stages:
       size: 2081
     - path: working/metrics/community-grants/
       hash: md5
-      md5: 22d5c4e493aa4be4e02a9d378c0aca2f.dir
-      size: 43214
+      md5: f8e23c77b842a72edcace5d0a45d12e6.dir
+      size: 43327
       nfiles: 3
     outs:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: 15a460b21f9831599efe7351cb99cc62.dir
-      size: 34337
+      md5: 1cfc7241cc956a6b290b514a12020d7b.dir
+      size: 34473
       nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/prepare.py
     deps:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: 15a460b21f9831599efe7351cb99cc62.dir
-      size: 34337
+      md5: 1cfc7241cc956a6b290b514a12020d7b.dir
+      size: 34473
       nfiles: 1
     - path: scripts/metrics/community-grants/prepare.py
       hash: md5
@@ -48,17 +48,17 @@ stages:
     outs:
     - path: docs/metrics/events/my-leeds-2023/_data/headline.json
       hash: md5
-      md5: 08aac164d58894e1863813466ef5772d
+      md5: ed3e90dce9930ab7c7f5e4c6aa3c7529
       size: 106
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_la.csv
       hash: md5
-      md5: 8f4f0ba338d38968b5f7d6590a3d5b1e
+      md5: 4d6f319aea72339a41d6d86525bad998
       size: 114
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_ward.csv
       hash: md5
-      md5: c94938377025a83afae8d7437e4a9f36
+      md5: 91210b46a775ccbfa62e8bd1bd93d890
       size: 684
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_week.csv
       hash: md5
-      md5: 3da2c0b3db628dc1858da5556f57b263
+      md5: 7164356ff23ede9b3fc75442d39fc7d9
       size: 671

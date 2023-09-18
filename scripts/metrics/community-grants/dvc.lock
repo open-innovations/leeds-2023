@@ -10,8 +10,8 @@ stages:
     outs:
     - path: working/metrics/community-grants/
       hash: md5
-      md5: f8e23c77b842a72edcace5d0a45d12e6.dir
-      size: 43327
+      md5: b1313a98ba229d02298c4e63d6812b27.dir
+      size: 43496
       nfiles: 3
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/transform.py
@@ -24,22 +24,22 @@ stages:
       size: 2081
     - path: working/metrics/community-grants/
       hash: md5
-      md5: f8e23c77b842a72edcace5d0a45d12e6.dir
-      size: 43327
+      md5: b1313a98ba229d02298c4e63d6812b27.dir
+      size: 43496
       nfiles: 3
     outs:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: 1cfc7241cc956a6b290b514a12020d7b.dir
-      size: 34473
+      md5: 16fa2ae1d866b352f181a43f08315c08.dir
+      size: 34677
       nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/prepare.py
     deps:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: 1cfc7241cc956a6b290b514a12020d7b.dir
-      size: 34473
+      md5: 16fa2ae1d866b352f181a43f08315c08.dir
+      size: 34677
       nfiles: 1
     - path: scripts/metrics/community-grants/prepare.py
       hash: md5
@@ -48,17 +48,17 @@ stages:
     outs:
     - path: docs/metrics/events/my-leeds-2023/_data/headline.json
       hash: md5
-      md5: ed3e90dce9930ab7c7f5e4c6aa3c7529
+      md5: 5a083aaec4ca3e8f60315d68d2e45f1f
       size: 106
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_la.csv
       hash: md5
-      md5: 4d6f319aea72339a41d6d86525bad998
+      md5: 4b5f9652036fc7e22125a4eca1323bea
       size: 114
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_ward.csv
       hash: md5
-      md5: 91210b46a775ccbfa62e8bd1bd93d890
+      md5: 0e055bc679f41844f5b1549ef3cce764
       size: 684
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_week.csv
       hash: md5
-      md5: 7164356ff23ede9b3fc75442d39fc7d9
-      size: 671
+      md5: b9a99c3fa5f9aeb2037547b3d12d9a07
+      size: 688

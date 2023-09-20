@@ -10,8 +10,8 @@ stages:
     outs:
     - path: working/metrics/community-grants/
       hash: md5
-      md5: d4472c6844f2cab0f538d6ca8abd4573.dir
-      size: 43553
+      md5: 3faf66f7c9d36ce5e19ee51722c02716.dir
+      size: 43610
       nfiles: 3
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/transform.py
@@ -24,22 +24,22 @@ stages:
       size: 2081
     - path: working/metrics/community-grants/
       hash: md5
-      md5: d4472c6844f2cab0f538d6ca8abd4573.dir
-      size: 43553
+      md5: 3faf66f7c9d36ce5e19ee51722c02716.dir
+      size: 43610
       nfiles: 3
     outs:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: 57f807d201bd397e38b7131447e5fbca.dir
-      size: 34745
+      md5: fa7f076acf5d20d29d728b66c26c4ece.dir
+      size: 34813
       nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/prepare.py
     deps:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: 57f807d201bd397e38b7131447e5fbca.dir
-      size: 34745
+      md5: fa7f076acf5d20d29d728b66c26c4ece.dir
+      size: 34813
       nfiles: 1
     - path: scripts/metrics/community-grants/prepare.py
       hash: md5
@@ -48,17 +48,17 @@ stages:
     outs:
     - path: docs/metrics/events/my-leeds-2023/_data/headline.json
       hash: md5
-      md5: c649778bc6bf38f71459ebc9639b15d3
+      md5: 00db6d99ed949b520723d417339f489f
       size: 106
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_la.csv
       hash: md5
-      md5: 7b3274d35d9bfb89a354f6cff1298297
+      md5: b2f46a8ffe8bc3069df92557ebf896fc
       size: 114
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_ward.csv
       hash: md5
-      md5: 3589c5e370f8fd510436ea15b282d592
+      md5: 9dca41001e7610b1d53f035f707cb8f7
       size: 684
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_week.csv
       hash: md5
-      md5: 5ec54652c2a80d78ab776247ecd3997f
+      md5: adbedfac466aae8e746279af92e030b6
       size: 688

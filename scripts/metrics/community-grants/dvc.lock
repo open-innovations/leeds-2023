@@ -10,8 +10,8 @@ stages:
     outs:
     - path: working/metrics/community-grants/
       hash: md5
-      md5: ad71e8192e2e5876ee4c94fc6814af94.dir
-      size: 43723
+      md5: 63c3e1e940bf62ffd965a802e64ef0ad.dir
+      size: 43950
       nfiles: 3
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/transform.py
@@ -24,22 +24,22 @@ stages:
       size: 2081
     - path: working/metrics/community-grants/
       hash: md5
-      md5: ad71e8192e2e5876ee4c94fc6814af94.dir
-      size: 43723
+      md5: 63c3e1e940bf62ffd965a802e64ef0ad.dir
+      size: 43950
       nfiles: 3
     outs:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: 1f3a73ba32a65f2129ee24981c54dade.dir
-      size: 34949
+      md5: a8b0d98df62f75300bc9dfeca84e47de.dir
+      size: 35221
       nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/prepare.py
     deps:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: 1f3a73ba32a65f2129ee24981c54dade.dir
-      size: 34949
+      md5: a8b0d98df62f75300bc9dfeca84e47de.dir
+      size: 35221
       nfiles: 1
     - path: scripts/metrics/community-grants/prepare.py
       hash: md5
@@ -48,17 +48,17 @@ stages:
     outs:
     - path: docs/metrics/events/my-leeds-2023/_data/headline.json
       hash: md5
-      md5: 71b20b75e1295e9edff3a0c6a7dc87d8
+      md5: 906771f3c7d9a855ee453131df835940
       size: 106
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_la.csv
       hash: md5
-      md5: b3ff2ab792e34d53a483e0e393a9e882
+      md5: fc384a28bac5d073ac599bac54af7fe3
       size: 114
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_ward.csv
       hash: md5
-      md5: 018677c4382900aa58f0155940745e29
+      md5: d6b592838e84d63760f02b94f07edd96
       size: 684
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_week.csv
       hash: md5
-      md5: a1db226003ea92371778fcc3cdfc8031
-      size: 688
+      md5: 21f57208d4c106d7aef0a2f50eb96fce
+      size: 690

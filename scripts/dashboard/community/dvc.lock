@@ -17,7 +17,7 @@ stages:
       size: 619
     - path: docs/metrics/events/partner/_data/by_ward.csv
       hash: md5
-      md5: f4b23d00fb46645907070c3967a738bd
+      md5: 3d55906176662cbaca25e3a4e4604226
       size: 185
     - path: docs/metrics/events/the-barn/_data/events/by_ward.csv
       hash: md5
@@ -25,7 +25,7 @@ stages:
       size: 63
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
       hash: md5
-      md5: 0e551bec3ee41d908a3f19aaee4db330
+      md5: e64ffc0c87ee67e931a2d47b56f6f038
       size: 1520
     - path: scripts/dashboard/community/events.py
       hash: md5
@@ -34,11 +34,11 @@ stages:
     outs:
     - path: docs/dashboard/community/_data/events.csv
       hash: md5
-      md5: 0da44e6e1f1db4cb0353ada2402ca000
+      md5: 0f37dbe4079b0799bfba39bc64347975
       size: 1611
     - path: docs/dashboard/community/_data/events_with_schools.csv
       hash: md5
-      md5: 38713159f76dc4d4bdfe1984fd855e71
+      md5: c1d960b7c098f675cadc7b390ee8ae4a
       size: 1724
   prepare_residents:
     cmd: PYTHONPATH=scripts/ python3 scripts/dashboard/community/residents.py
@@ -65,7 +65,7 @@ stages:
       size: 1517
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
       hash: md5
-      md5: 0e551bec3ee41d908a3f19aaee4db330
+      md5: e64ffc0c87ee67e931a2d47b56f6f038
       size: 1520
     - path: scripts/dashboard/community/residents.py
       hash: md5

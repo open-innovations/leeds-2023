@@ -273,3 +273,8 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-09-03,Tetley: Afra Eisma Learning Resources,CLE,Creative Learning S3,,,,,,0.0,0.0,0.0,0
 2023-09-11,Afra Eisma workshop,CLE,Creative Learning S3,['Hunslet and Riverside'],['LS10 1JQ'],"[""Beeston Hill St Luke's Church of England Primary School""]",['Beeston and Holbeck'],,44.0,40.0,4.0,1
 2023-09-11,Afra Eisma workshops,CLE,Creative Learning S3,['Hunslet and Riverside'],['LS10 1JQ'],['Leeds City College'],['Little London and Woodhouse'],,29.0,25.0,4.0,1
+2023-09-20,River of Hope: Cardinal Heenan Catholic High School,CLE,Creative Learning S3,,,,,,0.0,0.0,0.0,0
+2023-09-20,River of Hope: Pudsey Grammar School,CLE,Creative Learning S3,,,['Pudsey Grammar School'],['Pudsey'],,0.0,0.0,0.0,1
+2023-09-20,River of Hope: Cockburn School,CLE,Creative Learning S3,,,['Cockburn School'],['Beeston and Holbeck'],['LS11 5TT'],0.0,0.0,0.0,1
+2023-09-20,River of Hope: Co-op Academy Leeds,CLE,Creative Learning S3,,,['Co-op Academy Leeds'],['Burmantofts and Richmond Hill '],,0.0,0.0,0.0,1
+2023-09-20,River of Hope: Carr Manor Community School,CLE,Creative Learning S3,,,['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],0.0,0.0,0.0,1

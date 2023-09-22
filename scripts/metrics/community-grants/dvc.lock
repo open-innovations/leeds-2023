@@ -10,8 +10,8 @@ stages:
     outs:
     - path: working/metrics/community-grants/
       hash: md5
-      md5: 63c3e1e940bf62ffd965a802e64ef0ad.dir
-      size: 43950
+      md5: 5867e5a63f2fbd4fbd017a69d726025c.dir
+      size: 44006
       nfiles: 3
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/transform.py
@@ -24,22 +24,22 @@ stages:
       size: 2081
     - path: working/metrics/community-grants/
       hash: md5
-      md5: 63c3e1e940bf62ffd965a802e64ef0ad.dir
-      size: 43950
+      md5: 5867e5a63f2fbd4fbd017a69d726025c.dir
+      size: 44006
       nfiles: 3
     outs:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: a8b0d98df62f75300bc9dfeca84e47de.dir
-      size: 35221
+      md5: d46b0196efb44d398313374759a2beb9.dir
+      size: 35289
       nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/prepare.py
     deps:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: a8b0d98df62f75300bc9dfeca84e47de.dir
-      size: 35221
+      md5: d46b0196efb44d398313374759a2beb9.dir
+      size: 35289
       nfiles: 1
     - path: scripts/metrics/community-grants/prepare.py
       hash: md5
@@ -48,17 +48,17 @@ stages:
     outs:
     - path: docs/metrics/events/my-leeds-2023/_data/headline.json
       hash: md5
-      md5: 906771f3c7d9a855ee453131df835940
+      md5: 02dd89af5b96e51a052be081b2edcb7e
       size: 106
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_la.csv
       hash: md5
-      md5: fc384a28bac5d073ac599bac54af7fe3
+      md5: 02a484f99ed2eb16b43ed6740466806d
       size: 114
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_ward.csv
       hash: md5
-      md5: d6b592838e84d63760f02b94f07edd96
+      md5: 57977aaeffb5838fab72f4793226539e
       size: 684
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_week.csv
       hash: md5
-      md5: 21f57208d4c106d7aef0a2f50eb96fce
+      md5: 236e9b20e0117729fac2d0c60eb882b7
       size: 690

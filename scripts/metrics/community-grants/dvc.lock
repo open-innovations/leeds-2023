@@ -10,8 +10,8 @@ stages:
     outs:
     - path: working/metrics/community-grants/
       hash: md5
-      md5: 5867e5a63f2fbd4fbd017a69d726025c.dir
-      size: 44006
+      md5: 5b8738e9ff206164f1b9419a3d4cba3f.dir
+      size: 44118
       nfiles: 3
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/transform.py
@@ -24,22 +24,22 @@ stages:
       size: 2081
     - path: working/metrics/community-grants/
       hash: md5
-      md5: 5867e5a63f2fbd4fbd017a69d726025c.dir
-      size: 44006
+      md5: 5b8738e9ff206164f1b9419a3d4cba3f.dir
+      size: 44118
       nfiles: 3
     outs:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: d46b0196efb44d398313374759a2beb9.dir
-      size: 35289
+      md5: 17e692ee59a8bfd7c688514b7cb218e5.dir
+      size: 35425
       nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/prepare.py
     deps:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: d46b0196efb44d398313374759a2beb9.dir
-      size: 35289
+      md5: 17e692ee59a8bfd7c688514b7cb218e5.dir
+      size: 35425
       nfiles: 1
     - path: scripts/metrics/community-grants/prepare.py
       hash: md5
@@ -48,17 +48,17 @@ stages:
     outs:
     - path: docs/metrics/events/my-leeds-2023/_data/headline.json
       hash: md5
-      md5: 02dd89af5b96e51a052be081b2edcb7e
+      md5: 6973bbf12b068aae9a98fa2f5082c116
       size: 106
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_la.csv
       hash: md5
-      md5: 02a484f99ed2eb16b43ed6740466806d
+      md5: f9154a4160152900851ba676e6292660
       size: 114
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_ward.csv
       hash: md5
-      md5: 57977aaeffb5838fab72f4793226539e
+      md5: a0f8e5d168ec0cc1537c242e0c16bc76
       size: 684
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_week.csv
       hash: md5
-      md5: 236e9b20e0117729fac2d0c60eb882b7
-      size: 690
+      md5: 66a2443f63e34361ea3c6e720279a973
+      size: 707

@@ -10,8 +10,8 @@ stages:
     outs:
     - path: working/metrics/community-grants/
       hash: md5
-      md5: 486e20f99252fe06c30c778cdb2955ac.dir
-      size: 44344
+      md5: 046d9fc90e83c8315b0297aee7d9478e.dir
+      size: 44400
       nfiles: 3
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/transform.py
@@ -24,22 +24,22 @@ stages:
       size: 2081
     - path: working/metrics/community-grants/
       hash: md5
-      md5: 486e20f99252fe06c30c778cdb2955ac.dir
-      size: 44344
+      md5: 046d9fc90e83c8315b0297aee7d9478e.dir
+      size: 44400
       nfiles: 3
     outs:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: 999f75c3ca42553ddb926a77dd664e09.dir
-      size: 35697
+      md5: d56cb9e0a0c9ca4cf49f915c97cc7ac4.dir
+      size: 35765
       nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/prepare.py
     deps:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: 999f75c3ca42553ddb926a77dd664e09.dir
-      size: 35697
+      md5: d56cb9e0a0c9ca4cf49f915c97cc7ac4.dir
+      size: 35765
       nfiles: 1
     - path: scripts/metrics/community-grants/prepare.py
       hash: md5
@@ -48,17 +48,17 @@ stages:
     outs:
     - path: docs/metrics/events/my-leeds-2023/_data/headline.json
       hash: md5
-      md5: 3aa66b4d7f8ce148ed13a941f9500b38
+      md5: d04d4605bd06bc43c3bf35ffb71fa7f4
       size: 106
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_la.csv
       hash: md5
-      md5: c6a6ea8304e2beaac6e6c0eff174c612
+      md5: 855935c8fb3af9ee37fc0eefd8c799f8
       size: 114
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_ward.csv
       hash: md5
-      md5: 7cfb4e2ed616eeb549d4c9f2da1cc858
+      md5: 7c7e951d55f15891f43cd447029a9a51
       size: 684
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_week.csv
       hash: md5
-      md5: c2aaeea0f76329a6e2eb0dd7c8070178
+      md5: e4c8cd1c0ee080551f11a9141916d113
       size: 707

@@ -10,8 +10,8 @@ stages:
     outs:
     - path: working/metrics/community-grants/
       hash: md5
-      md5: 046d9fc90e83c8315b0297aee7d9478e.dir
-      size: 44400
+      md5: bfc8c7759b602bb01911fb6df5bc8d19.dir
+      size: 44625
       nfiles: 3
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/transform.py
@@ -24,22 +24,22 @@ stages:
       size: 2081
     - path: working/metrics/community-grants/
       hash: md5
-      md5: 046d9fc90e83c8315b0297aee7d9478e.dir
-      size: 44400
+      md5: bfc8c7759b602bb01911fb6df5bc8d19.dir
+      size: 44625
       nfiles: 3
     outs:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: d56cb9e0a0c9ca4cf49f915c97cc7ac4.dir
-      size: 35765
+      md5: 21c67d8e9d4924ab261a5a25dfa66e69.dir
+      size: 36037
       nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/prepare.py
     deps:
     - path: data/metrics/community-grants/
       hash: md5
-      md5: d56cb9e0a0c9ca4cf49f915c97cc7ac4.dir
-      size: 35765
+      md5: 21c67d8e9d4924ab261a5a25dfa66e69.dir
+      size: 36037
       nfiles: 1
     - path: scripts/metrics/community-grants/prepare.py
       hash: md5
@@ -48,17 +48,17 @@ stages:
     outs:
     - path: docs/metrics/events/my-leeds-2023/_data/headline.json
       hash: md5
-      md5: d04d4605bd06bc43c3bf35ffb71fa7f4
+      md5: e2438143fbbdf76274ba115482b9cbe8
       size: 106
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_la.csv
       hash: md5
-      md5: 855935c8fb3af9ee37fc0eefd8c799f8
+      md5: 544377134c1fcbca8fb81ea238985284
       size: 114
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_ward.csv
       hash: md5
-      md5: 7c7e951d55f15891f43cd447029a9a51
+      md5: c931b90d8d8de2763166e7475bf5e30b
       size: 684
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_week.csv
       hash: md5
-      md5: e4c8cd1c0ee080551f11a9141916d113
-      size: 707
+      md5: 3b8bc65be7cce7fe6dcf280a16fea179
+      size: 709

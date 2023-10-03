@@ -1,48 +1,48 @@
 service:
   all:
     metrics:
-      audience_gained_total: 16987
-      audience_last: 43025
-      engagements_total: 335608
-      impressions_total: 11024265
+      audience_gained_total: 18862
+      audience_last: 37754
+      engagements_total: 405898
+      impressions_total: 13215611
   facebook:
     filter_col: date
     filter_range: 2022-01-01:2023-12-31
     metrics:
       audience_gained_total: 0
-      audience_last: 6764
+      audience_last: 0
       date_first: '2022-01-01'
-      date_last: '2023-07-16'
-      engagements_total: 140346
-      impressions_total: 2996283
+      date_last: '2023-10-01'
+      engagements_total: 190471
+      impressions_total: 4200442
   instagram:
     filter_col: date
     filter_range: 2022-01-01:2023-12-31
     metrics:
-      audience_gained_total: 7181
-      audience_last: 10527
+      audience_gained_total: 8304
+      audience_last: 11336
       date_first: '2022-01-01'
-      date_last: '2023-07-16'
-      engagements_total: 38799
-      impressions_total: 1598307
+      date_last: '2023-10-01'
+      engagements_total: 47826
+      impressions_total: 2148531
   linkedin:
     filter_col: date
     filter_range: 2022-01-01:2023-12-31
     metrics:
-      audience_gained_total: 3802
-      audience_last: 4936
+      audience_gained_total: 4171
+      audience_last: 5293
       date_first: '2022-01-01'
-      date_last: '2023-07-16'
-      engagements_total: 20634
-      impressions_total: 262118
+      date_last: '2023-10-01'
+      engagements_total: 21817
+      impressions_total: 282721
   twitter:
     filter_col: date
     filter_range: 2022-01-01:2023-12-31
     metrics:
-      audience_gained_total: 6004
-      audience_last: 20798
+      audience_gained_total: 6387
+      audience_last: 21125
       date_first: '2022-01-01'
-      date_last: '2023-07-16'
-      engagements_total: 135829
-      impressions_total: 6167557
+      date_last: '2023-10-01'
+      engagements_total: 145784
+      impressions_total: 6583917
 title: Leeds 2023 twitter Summary Statistics

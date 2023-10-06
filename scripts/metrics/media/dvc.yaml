@@ -1,13 +1,14 @@
+vars:
+  - top: ../../..
 stages:
   transform:
-    cmd: PYTHONPATH=scripts python3 scripts/metrics/media/transform_cision.py
-    wdir: ../../..
+    cmd: papermill ingest-cision.ipynb ${top}/working/output/media-ingest-cision.ipynb
     deps:
-    - scripts/metrics/media/transform_cision.py
-    - scripts/metrics/media/cision.py
-    - working/manual/media/
+    - ingest-cision.ipynb
+    - cision.py
+    - ${top}/working/manual/media/
     outs:
-    - data/metrics/media_coverage/combined_cision.csv:
+    - ${top}/data/metrics/media_coverage/combined_cision.csv:
         persist: true
         cache: false
   transform_historic:

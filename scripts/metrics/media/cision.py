@@ -1,5 +1,3 @@
-import datetime
-import glob
 import logging
 import os
 
@@ -8,48 +6,16 @@ import pandas as pd
 
 TOP_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..'))
 LOG_DIR = os.path.join(TOP_DIR, 'working/log')
-WORKING_DIR = os.path.join(TOP_DIR, 'working/manual/media')
-OUTPUT_DIR = os.path.join(TOP_DIR, 'data/metrics/media_coverage')
 
-LATEST_DATE = datetime.datetime.now()
 HASH_KEY = "2023202320232023"
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.DEBUG)
 log_fh = logging.FileHandler(filename=os.path.join(
     LOG_DIR, "media_cision.log"), mode="w")
 log_formatter = logging.Formatter('%(levelname)s:%(funcName)s:%(message)s')
 log_fh.setFormatter(log_formatter)
 logger.addHandler(log_fh)
-
-
-def load_cision_files():
-    files = list_cision_files()
-
-    dfs = pd.concat([load_cision_file(file) for file in files])
-    print(dfs)
-    return dfs.pipe(clean_up)
-
-
-def list_cision_files():
-    '''
-    List the available CSV files
-    '''
-    return glob.glob(os.path.join(WORKING_DIR, '*.csv'))
-
-
-def load_cision_file(filepath):
-    logger.info('Loading %s', filepath)
-    return (
-        pd.read_csv(filepath, encoding=guess_encoding(filepath), thousands=',')
-          .pipe(append_filename, os.path.basename(filepath))
-          .pipe(normalise_column_names)
-          .pipe(patch_column_names)
-          .pipe(drop_empty_headlines)
-          .pipe(guess_date)
-          .pipe(convert_numbers)
-          .pipe(add_hash)
-    )
 
 
 def guess_encoding(file):
@@ -94,12 +60,16 @@ def drop_empty_headlines(data):
     return data[~data['news_headline'].isna()]
 
 
-def guess_date(data):
+def guess_date(data, latest_date):
+    if not latest_date:
+        latest_date = pd.Timestamp.now()
+
     known_formats = [
         "%d/%m/%Y",
         "%m/%d/%Y",
         "%d/%m/%y",
         "%d.%m.%y",
+        "%d.%m.%Y",
         "%d-%b"
     ]
 
@@ -111,19 +81,23 @@ def guess_date(data):
     )
 
     # Get rid of any dates in the future
-    dates[dates.news_date > pd.Timestamp.now()] = pd.NaT
-
+    dates[dates.news_date > latest_date] = pd.NaT
+    
     # Backfill and take the first column
     dates = dates.bfill(axis=1).iloc[:, 0]
 
     # Handle any dates far into the past
-    dates = dates.mask(dates.dt.year < 2022, dates.apply(lambda d: d + pd.offsets.DateOffset(year=2023)))
+    dates = dates.mask(dates.dt.year < 2022, dates.apply(
+        lambda d: d + pd.offsets.DateOffset(year=2023)))
+
+
+    data['input_date'] = data.news_date
+    data['news_date'] = dates
 
     if len(dates[dates.isna()]) > 1:
-        logger.error('Some incompatible date formats found')
-        return pd.DataFrame(columns=data.columns)
+        logger.warning('Some incompatible date formats found (latest expected date %s)', latest_date)
+        logger.debug('Missing dates %r', data.loc[data.news_date.isna(), ['input_date', 'news_headline', 'source_file']])
 
-    data['news_date'] = dates
     return data
 
 
@@ -135,7 +109,7 @@ def convert_numbers(data):
         logger.error('Source file -> %s', data.source_file[0])
         logger.error('Columns %s', data.columns)
     except Exception as e:
-        logger.error(e)
+        logger.warning(e)
         data['uv'] = pd.to_numeric(
             data['uv'].str.strip().str.replace(',', ''), errors="coerce"
         ).astype('Int64')
@@ -145,7 +119,7 @@ def convert_numbers(data):
         data['audience_reach'] = data['audience_reach'].fillna(
             0).astype('Int64')
     except Exception as e:
-        logger.error(e)
+        logger.warning(e)
         data.audience_reach = pd.to_numeric(
             data.audience_reach.str.strip().str.replace(',', ''), errors="coerce"
         ).astype('Int64')
@@ -156,9 +130,8 @@ def convert_numbers(data):
 def add_hash(data):
     # Add identifier
     data['hash'] = pd.util.hash_pandas_object(
-        data[['news_date', 'news_headline', 'outlet_name']], hash_key=HASH_KEY, index=False)
+        data, hash_key=HASH_KEY, index=False)
     return data
-
 
 
 def clean_up(data):
@@ -170,17 +143,15 @@ def clean_up(data):
     return data
 
 
-def save_csv(data, output_file):
+def save_csv(data: pd.DataFrame, output_file):
     # Set columns order
     columns_order = ['news_date', 'news_headline', 'outlet_name', 'audience_reach',
                      'uv', 'tone', 'medium', 'outlet_type', 'custom_tags', 'news_company_mentions',
                      'hash',
-                     'source_file'
+                     'source_file', 'latest_date', 'input_date'
                      ]
     data = data.reindex(columns=columns_order)
 
-    data.sort_values(by=['news_date', 'news_headline', 'outlet_name', 'medium']).to_csv(
+    data.loc[:, columns_order].sort_values(by=['latest_date', 'news_date', 'news_headline', 'outlet_name', 'medium']).to_csv(
         output_file, index=False)
     return data
-
-

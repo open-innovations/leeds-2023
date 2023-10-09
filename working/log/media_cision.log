@@ -8,8 +8,12 @@ INFO:load_cision_file:Loading Leeds 2023 weekly media coverage 09.12.22.csv
 INFO:load_cision_file:Latest date 2022-12-09 00:00:00
 INFO:load_cision_file:Loading Leeds 2023 weekly media coverage 16.12.22.csv
 INFO:load_cision_file:Latest date 2022-12-16 00:00:00
-INFO:load_cision_file:Loading Leeds 2023 weekly media coverage 1.1.23.csv
-INFO:load_cision_file:Latest date 2023-01-01 00:00:00
+INFO:load_cision_file:Loading Leeds 2023 weekly media coverage 23.12.22.csv
+INFO:load_cision_file:Latest date 2022-12-23 00:00:00
+WARNING:guess_date:Some incompatible date formats found (latest expected date 2022-12-23 00:00:00)
+DEBUG:guess_date:Missing dates   input_date  news_headline                                    source_file
+0   1/1/2023  LEEDING LIGHT  Leeds 2023 weekly media coverage 23.12.22.csv
+1   1/1/2023     LOOK Ahead  Leeds 2023 weekly media coverage 23.12.22.csv
 INFO:load_cision_file:Loading Leeds 2023 weekly media coverage 1-6.01.23.csv
 INFO:load_cision_file:Latest date 2023-01-06 00:00:00
 INFO:load_cision_file:Loading LEEDS 2023 The Awakening media coverage 7-9.01.23.csv

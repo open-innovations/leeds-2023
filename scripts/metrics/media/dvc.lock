@@ -14,13 +14,13 @@ stages:
       size: 4384
     - path: ingest-cision.ipynb
       hash: md5
-      md5: a13d6739137b1272a24bb3fd8f44b5c0
-      size: 18637
+      md5: 5a246a693ab3c3f1dbbd4372bdf10d77
+      size: 110857
     outs:
     - path: ../../../data/metrics/media_coverage/combined_cision.csv
       hash: md5
-      md5: 6b9bf16e120d5e064c6e0f3da8dcbe29
-      size: 483153
+      md5: c559b3476c11cbf4fd208c8ea4eb33ec
+      size: 482651
   transform_historic:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/media/combine_historic.py
     deps:
@@ -41,8 +41,8 @@ stages:
     deps:
     - path: data/metrics/media_coverage/combined_cision.csv
       hash: md5
-      md5: 6b9bf16e120d5e064c6e0f3da8dcbe29
-      size: 483153
+      md5: c559b3476c11cbf4fd208c8ea4eb33ec
+      size: 482651
     - path: data/metrics/media_coverage/combined_historic.csv
       md5: 2075d0be6cc9d6325fb589b3cdab43c8
       size: 66475

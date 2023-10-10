@@ -13,16 +13,16 @@ import util.geo
 import util.convert
 
 
-def load_event_data():
+def load_raw_data():
     all_data_file = os.path.join(
         PROJECT_ROOT,
         'data/metrics/events/master/all.csv'
     )
-    data = (
-        pd.read_csv(all_data_file, parse_dates=['start_date'])
-          .pipe(filter_signature_events)
-    )
-    return data
+    return pd.read_csv(all_data_file, parse_dates=['start_date'])
+    
+
+def load_event_data():
+    return load_raw_data().pipe(filter_signature_events)
 
 
 def filter_signature_events(data):

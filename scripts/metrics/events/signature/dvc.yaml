@@ -5,6 +5,9 @@ stages:
     foreach:
       - my-leeds-2023
       - the-barn
+      - nest
+      - childrens-day
+      - smeaton-300
     do:
       cmd: papermill ${item}.ipynb ${top}/working/output/${item}.ipynb
       deps:

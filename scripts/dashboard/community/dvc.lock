@@ -13,8 +13,8 @@ stages:
       size: 950
     - path: docs/metrics/events/my-leeds-2023/_data/events/by_ward.csv
       hash: md5
-      md5: c45e15f1f01b56afe78f27a94f05cebb
-      size: 622
+      md5: 20c7ea89d04b22bebe7e00fab2d0c83a
+      size: 630
     - path: docs/metrics/events/partner/_data/by_ward.csv
       hash: md5
       md5: 9c5ff46950d6d90e369b3a7f1c267537
@@ -25,7 +25,7 @@ stages:
       size: 63
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
       hash: md5
-      md5: c23e807f7c0cfaff36cb3212a76bfc03
+      md5: c5dd3f368a8095bc03608a982a792723
       size: 1527
     - path: scripts/dashboard/community/events.py
       hash: md5
@@ -38,8 +38,8 @@ stages:
       size: 1612
     - path: docs/dashboard/community/_data/events_with_schools.csv
       hash: md5
-      md5: 730b2e46859075aed0157c26c2996aa6
-      size: 1730
+      md5: bea9b2f6a7937830487caf8e3e764695
+      size: 1731
   prepare_residents:
     cmd: PYTHONPATH=scripts/ python3 scripts/dashboard/community/residents.py
     deps:
@@ -65,7 +65,7 @@ stages:
       size: 1517
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
       hash: md5
-      md5: c23e807f7c0cfaff36cb3212a76bfc03
+      md5: c5dd3f368a8095bc03608a982a792723
       size: 1527
     - path: scripts/dashboard/community/residents.py
       hash: md5
@@ -74,9 +74,9 @@ stages:
     outs:
     - path: docs/dashboard/community/_data/residents.csv
       hash: md5
-      md5: d7e5f324fa18a180e407d3d65b740991
+      md5: a91c20d5dbb96603aeba592ec4a4dfd1
       size: 1732
     - path: docs/dashboard/community/_data/residents_with_schools.csv
       hash: md5
-      md5: ab37eece3ceac2c9f9740554215f5382
+      md5: 274f2279d491662b43c00ae08e8e1319
       size: 1895

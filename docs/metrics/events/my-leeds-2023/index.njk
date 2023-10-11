@@ -9,8 +9,8 @@ metas:
   title: LEEDS 2023 Metrics - My LEEDS 2023
   description: |
     Visualisations of key data related to the My LEEDS 2023 events programme.
-limitations: |
-  - There are two other strands of events to be added to this page: My World, My City, My Neighbourhood for which a 2022 report was produced detailing the impact of the seed projects. In 2023 a handful of these projects are being taken forward. Data from these projects will be displayed on this page.
+limitations:
+  - There are two other strands of events to be added to this page - My World, My City, My Neighbourhood for which a 2022 report was produced detailing the impact of the seed projects. In 2023 a handful of these projects are being taken forward. Data from these projects will be displayed on this page.
   - The Gift, an artistic project with artist Keith Khan is also part of My LEEDS 2023, data is currently not being displayed relating to that.
 sources:
   - data/metrics/events/master/
@@ -263,3 +263,43 @@ sources:
 </div>
 
 {% endcomp %}
+
+<h2>The Gift</h2>
+
+<p>
+  The Gift is an artwork that celebrates communities across Leeds. Made by Keith Khan, the artwork has been inspired by conversations in local areas with <a href="https://staging.leeds2023.co.uk/meet-the-team">LEEDS 2023 Neighbourhood Hosts</a> and historical or anecdotal facts. Based on these conversations Keith created 33 motifs, a unique motif for each ward. These designs were then printed onto fabric and designed into wearable clothing. This clothing was taken to My LEEDS Summer events where audiences could try them on and have their photograph taken in a photo booth. 
+</p>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '15em' } %}
+
+  {{ comp.metric.headline({
+    title: "Total active participants", headingLevel: 2,
+    value: 1091,
+    description: "Total active participants for The Gift Photo Booth (from June to September)",
+    background: "var(--l23-magenta)",
+    colour: "var(--l23-magenta-contrast)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Total active engagements", headingLevel: 2,
+    summary: "Words",
+    value: 1530,
+    description: "Total number of people engaged with through The Gift Photo Booth",
+    background: "var(--l23-cyan)",
+    colour: "var(--l23-cyan-contrast)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "A City Without Seams total audience", headingLevel: 2,
+    value: 3014,
+    description: "Total audience numbers for A City Without Seams exhibition (from 21st to 24th September)",
+    background: "var(--l23-yellow)",
+    colour: "var(--l23-yellow-contrast)"
+  }) | safe }}
+
+{% endcomp %}
+
+
+
+
+

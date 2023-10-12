@@ -1,0 +1,47 @@
+---
+title: Nest
+summary: Metrics related to Nest - a Signature Event held by LEEDS 2023.
+tags:
+  - main
+order: 14
+work_in_progress: false
+metas:
+  title: Nest
+  description: |
+    Visualisations of key metrics related to Nest - a Signature Event held by LEEDS 2023.
+limitations:
+  - Data for events and activities are extracted from Airtable. 
+---
+
+{% from 'macros.njk' import dateFormatter %}
+
+<h3>Nest</h3>
+
+<h2>Headlines</h2>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+  {{ comp.metric.headline({
+    title: "Number of events", headingLevel: 2,
+    value: events.headlines.total_events | localize,
+    description: "Total activities held as part of this Signature event.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Related Callouts", headingLevel: 2,
+    value: 'TBC',
+    description: "Total call out opportunities related to this event.",
+    link: "/metrics/callouts/",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Total audience", headingLevel: 2,
+    value: events.headlines.total_audience | localize ,
+    description: "Total number of attendances online and in person.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
+{% endcomp %}
+
+<h3>About this data</h3>

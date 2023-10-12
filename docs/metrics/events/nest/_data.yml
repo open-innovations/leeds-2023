@@ -1,0 +1,6 @@
+key_metrics:
+  total_engaged:
+    title: 
+    ref: events.headlines.total_audience
+    description: Total audience engaged with Nest - a LEEDS 2023 Signature event
+    colour: --l23-magenta

@@ -1,0 +1,95 @@
+---
+title: Children's Day
+summary: Metrics related to Children's Day - a Signature Event held by LEEDS 2023.
+tags:
+  - main
+order: 14
+work_in_progress: false
+metas:
+  title: Nest
+  description: |
+    Visualisations of key metrics related to Children's Day - a Signature Event held by LEEDS 2023.
+limitations:
+  - Events and activities data are extracted from Airtable.
+---
+
+{% from 'macros.njk' import dateFormatter %}
+
+<h3>Children's Day</h3>
+
+<h2>Headlines</h2>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+  {{ comp.metric.headline({
+    title: "Number of events", headingLevel: 2,
+    value: events.headlines.total_events | localize,
+    description: "Total activities held as part of this Signature event.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Related Callouts", headingLevel: 2,
+    value: 'TBC',
+    description: "Total call out opportunities related to this event.",
+    link: "/metrics/callouts/",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Total audience", headingLevel: 2,
+    value: events.headlines.total_audience | localize ,
+    description: "Total number of attendances online and in person.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
+{% endcomp %}
+
+
+
+{% comp 'layout.figure', {max_width: '50rem'} %}
+<h3>Events held by week</h3>
+  {{ comp.oi.viz.graph.line({ config: {
+    categories: events.by_week.columns.cumulative_events,
+    width: 25,
+    height: 14,
+    text: { colour: '#eee' },
+    xAxis: {
+      title: 'Date',
+      titleOffset: 4,
+      labelRotate: 35,
+      formatter: dateFormatter
+    },
+    yAxis: {
+      title: 'Total',
+      titleOffset: 3,
+      majorTick: 500
+    },
+    plotArea: {
+      yMax: 2000,
+      colour: 'var(--l23-dark-blue-grey)'
+    },
+    padding: {
+      left: 4,
+      bottom: 5
+    },
+    series: [
+      {
+        id: "events", label: "Number of events held",
+        yValues: events.by_week.columns.cumulative_events,
+        colour: 'var(--l23-magenta)',
+        markerOptions: { s: 5 }
+      },
+      {
+        id: "audience", label: "Total audience",
+        yValues: events.by_week.columns.cumulative_audience,
+        colour: 'var(--l23-cyan)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    legend: {
+      width: "20em"
+    }
+  } }) | safe }}
+{% endcomp %}
+
+<h3>About this data</h3>

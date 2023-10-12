@@ -10,8 +10,8 @@ stages:
     outs:
     - path: working/metrics/callouts/
       hash: md5
-      md5: 8a2356d8cbfd223d2c7e941db48f833b.dir
-      size: 22261
+      md5: 9357761b274d128706f42c14de753b51.dir
+      size: 22273
       nfiles: 17
   transform:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/transform.py
@@ -26,22 +26,22 @@ stages:
       size: 1215
     - path: working/metrics/callouts/
       hash: md5
-      md5: 8a2356d8cbfd223d2c7e941db48f833b.dir
-      size: 22261
+      md5: 9357761b274d128706f42c14de753b51.dir
+      size: 22273
       nfiles: 17
     outs:
     - path: data/metrics/callouts/
       hash: md5
-      md5: 6cbe4f5806535bdfc4d30f9439600c56.dir
-      size: 58654
+      md5: 5ed726a14e4499c94dc3820082c19861.dir
+      size: 58692
       nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/callouts/prepare.py
     deps:
     - path: data/metrics/callouts/
       hash: md5
-      md5: 6cbe4f5806535bdfc4d30f9439600c56.dir
-      size: 58654
+      md5: 5ed726a14e4499c94dc3820082c19861.dir
+      size: 58692
       nfiles: 1
     - path: scripts/metrics/callouts/prepare.py
       hash: md5
@@ -50,6 +50,6 @@ stages:
     outs:
     - path: docs/metrics/callouts/_data
       hash: md5
-      md5: e858c7df8ca856017675f677d305a9b7.dir
-      size: 12292
+      md5: e93a47589b1ab2f7e5f1ceda5a078b4c.dir
+      size: 12643
       nfiles: 7

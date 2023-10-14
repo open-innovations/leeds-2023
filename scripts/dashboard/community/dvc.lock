@@ -17,7 +17,7 @@ stages:
       size: 630
     - path: docs/metrics/events/partner/_data/by_ward.csv
       hash: md5
-      md5: 730bed326000c02d0f8d8da5c7908c6c
+      md5: 7a6bee60b0fee6e75fe92e4655142cd4
       size: 186
     - path: docs/metrics/events/the-barn/_data/events/by_ward.csv
       hash: md5

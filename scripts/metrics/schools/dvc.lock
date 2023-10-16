@@ -9,13 +9,13 @@ stages:
       size: 2970
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
-      md5: 2a01db65b3408ff4b30a0a0e85c19550
-      size: 149901
+      md5: 3a91673eeb29b41175d06b9d47d82f98
+      size: 150940
     outs:
     - path: data/metrics/schools/schools_events.csv
       hash: md5
-      md5: 4794165c655554be5f12b16709dc7a14
-      size: 60268
+      md5: a3bca68494376c0080868ecf6d27abde
+      size: 60560
   extract:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
     deps:
@@ -26,15 +26,15 @@ stages:
     outs:
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
-      md5: 2a01db65b3408ff4b30a0a0e85c19550
-      size: 149901
+      md5: 3a91673eeb29b41175d06b9d47d82f98
+      size: 150940
   prepare:
     cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
       hash: md5
-      md5: 4794165c655554be5f12b16709dc7a14
-      size: 60268
+      md5: a3bca68494376c0080868ecf6d27abde
+      size: 60560
     - path: data/reference/leeds_wards.csv
       hash: md5
       md5: 887a42d46d34c9e966211a79f2b8a672
@@ -58,7 +58,7 @@ stages:
       size: 1510
     - path: docs/metrics/schools/_data/headlines.json
       hash: md5
-      md5: 6029521b26b9f85599c721058e097eae
+      md5: 090981d817322d79ffdc62e473749f4a
       size: 373
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
       hash: md5

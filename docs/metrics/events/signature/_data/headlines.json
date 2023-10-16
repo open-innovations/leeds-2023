@@ -1,8 +1,8 @@
 {
-  "total_events":142,
+  "total_events":145,
   "total_attendances":8,
   "first_event":1672963200000,
-  "latest_event":1697328000000,
-  "total_ticket_orders_for_events_to_date":4651,
-  "total_tickets_sold_for_events_to_date":10277
+  "latest_event":1697414400000,
+  "total_ticket_orders_for_events_to_date":4640,
+  "total_tickets_sold_for_events_to_date":10266
 }

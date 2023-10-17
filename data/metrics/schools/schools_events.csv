@@ -347,3 +347,9 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-10-09,Storymakers: Re-imagining Home CPD session 1,CLE,Creative Learning S3,,,['Strawberry Fields Primary School'],['Garforth and Swillington'],['LS25 1LL'],2.0,0.0,2.0,1
 2023-10-10,Storymakers: Re-imagining Home CPD session 2,CLE,Creative Learning S3,,,['Temple Learning Academy'],['Temple Newsam '],,1.0,0.0,1.0,1
 2023-10-10,Storymakers: Re-imagining Home CPD session 2,CLE,Creative Learning S3,,,['Moor Allerton Hall Primary School'],['Moortown'],,1.0,0.0,1.0,1
+2023-10-16,Storymakers: Re-imagining Home,CLE,Creative Learning S3,,,,,,0.0,0.0,0.0,0
+2023-10-16,Storymakers: Re-imagining Home Hugh Gaitskill,CLE,Creative Learning S3,,,['Hugh Gaitskell Primary School'],['Beeston and Holbeck'],,88.0,88.0,0.0,1
+2023-10-16,Storymakers: Re-imagining Home Manor Wood Primary School,CLE,Creative Learning S3,,,['Manor Wood Primary School'],['Moortown'],,122.0,122.0,0.0,1
+2023-10-16,Storymakers: Re-imagining Home Moor Allerton Hall,CLE,Creative Learning S3,,,['Moor Allerton Hall Primary School'],['Moortown'],,90.0,90.0,0.0,1
+2023-10-16,Storymakers: Re-imagining Home Strawberry Fields,CLE,Creative Learning S3,,,['Strawberry Fields Primary School'],['Garforth and Swillington'],['LS25 1LL'],180.0,180.0,0.0,1
+2023-10-16,Storymakers: Re-imagining Home Temple Learning Academy,CLE,Creative Learning S3,,,['Temple Learning Academy'],['Temple Newsam '],,120.0,120.0,0.0,1

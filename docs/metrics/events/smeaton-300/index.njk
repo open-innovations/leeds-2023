@@ -35,14 +35,6 @@ limitations:
     background: "var(--l23-cyan)"
   }) | safe }}
 
-  {{ comp.metric.headline({
-    title: "Related Callouts", headingLevel: 2,
-    value: 'TBC',
-    description: "Total call out opportunities related to this event.",
-    link: "/metrics/callouts/",
-    background: "var(--l23-yellow)"
-  }) | safe }}
-
     {{ comp.metric.headline({
     title: "Total audience", headingLevel: 2,
     value: events.headlines.total_audience | localize ,
@@ -57,13 +49,14 @@ limitations:
 <h3>Events held by week</h3>
   {{ comp.oi.viz.graph.line({ config: {
     categories: events.by_week.columns.week_ending,
-    width: 25,
+    width: 35,
     height: 14,
     text: { colour: '#eee' },
     xAxis: {
       title: 'Data',
       titleOffset: 4,
       labelRotate: 35,
+      majorTick: 2,
       formatter: dateFormatter
     },
     yAxis: {

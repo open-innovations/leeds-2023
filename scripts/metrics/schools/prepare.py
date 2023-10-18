@@ -1,9 +1,9 @@
 import os
 import pandas as pd
 
-from transform import SCHOOLS_DATA, literal_converter
-from util.geography import fuzzy_match_leeds_wards
-from util.logger import logging, log_formatter
+from scripts.util.geography import fuzzy_match_leeds_wards
+from scripts.util.logger import logging, log_formatter
+from config import SCHOOLS_DATA, literal_converter
 
 logger = logging.getLogger('schools.prepare')
 log_handler = logging.FileHandler('working/log/schools_prepare.log', mode='w', encoding='utf-8')

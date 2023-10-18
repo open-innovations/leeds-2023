@@ -1,8 +1,7 @@
 stages:
   ref_data:
     wdir: ../../..
-    cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/get_reference_data.py
-    always_changed: true
+    cmd: PYTHONPATH=. python scripts/metrics/schools/get_reference_data.py
     deps:
       - scripts/metrics/schools/get_reference_data.py
     outs:
@@ -12,8 +11,7 @@ stages:
 
   extract:
     wdir: ../../..
-    cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
-    always_changed: true
+    cmd: PYTHONPATH=. python scripts/metrics/schools/extract.py
     deps:
       - scripts/metrics/schools/extract.py
     outs:
@@ -23,9 +21,7 @@ stages:
 
   transform:
     wdir: ../../..
-    cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/transform.py
-    always_changed: true
-    frozen: false
+    cmd: PYTHONPATH=. python scripts/metrics/schools/transform.py
     deps:
       - scripts/metrics/schools/transform.py
       - working/metrics/airtable/schools_events.csv
@@ -36,7 +32,7 @@ stages:
 
   prepare:
     wdir: ../../..
-    cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
+    cmd: PYTHONPATH=. python scripts/metrics/schools/prepare.py
     deps:
       - scripts/metrics/schools/prepare.py
       - data/metrics/schools/schools_events.csv

@@ -1,12 +1,12 @@
 schema: '2.0'
 stages:
   transform:
-    cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/transform.py
+    cmd: PYTHONPATH=. python scripts/metrics/schools/transform.py
     deps:
     - path: scripts/metrics/schools/transform.py
       hash: md5
-      md5: f9d56b1dfd266dbc988aa16efb51e45b
-      size: 2970
+      md5: 9f855fa85c5d5667f5cb25db54dc4e12
+      size: 2597
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
       md5: 3a91673eeb29b41175d06b9d47d82f98
@@ -17,19 +17,19 @@ stages:
       md5: 0e54e5a0dbe6a3d9e14afb5b1cfcc1c8
       size: 61461
   extract:
-    cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/extract.py
+    cmd: PYTHONPATH=. python scripts/metrics/schools/extract.py
     deps:
     - path: scripts/metrics/schools/extract.py
       hash: md5
-      md5: e29be7bcd549e8cf37dd1aa0135a9027
-      size: 2071
+      md5: ca0d85afa313500f9affd3151b5be5d5
+      size: 1802
     outs:
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
       md5: 3a91673eeb29b41175d06b9d47d82f98
       size: 150940
   prepare:
-    cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/prepare.py
+    cmd: PYTHONPATH=. python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
       hash: md5
@@ -45,8 +45,8 @@ stages:
       size: 19576
     - path: scripts/metrics/schools/prepare.py
       hash: md5
-      md5: 359f1c098e76fecfe474202e30e19175
-      size: 5014
+      md5: 87e2785d3b5f2a89e370001fd1ec26be
+      size: 5027
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
       hash: md5
@@ -58,19 +58,19 @@ stages:
       size: 1537
     - path: docs/metrics/schools/_data/headlines.json
       hash: md5
-      md5: 6f1db54e255f75df43b090312b5a881f
+      md5: e93ea7ec2f9eccde71f46f5258f423e0
       size: 373
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
       hash: md5
       md5: bcaf6677d54af4f59a6ed8a8e96c05d9
       size: 9271
   ref_data:
-    cmd: PYTHONPATH=scripts/ python scripts/metrics/schools/get_reference_data.py
+    cmd: PYTHONPATH=. python scripts/metrics/schools/get_reference_data.py
     deps:
     - path: scripts/metrics/schools/get_reference_data.py
       hash: md5
-      md5: 9f71435b8679733697fd6bb909349a7a
-      size: 686
+      md5: cb33136049d882178f56ed3e9ad8db67
+      size: 620
     outs:
     - path: data/reference/schools.csv
       hash: md5

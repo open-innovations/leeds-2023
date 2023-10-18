@@ -1,24 +1,9 @@
-import json
-import os
 import re
-import ast
 
 import pandas as pd
-from extract import SCHOOLS_DATA as RAW_SCHOOLS_DATA
-from util.geography import fuzzy_match_ward_name_to_code
 
-DATA_DIR = os.path.join("data", "metrics", "schools")
-os.makedirs(DATA_DIR, exist_ok=True)
-SCHOOLS_DATA = os.path.join(DATA_DIR, 'schools_events.csv')
-
-
-def literal_converter(series):
-    def convert(value):
-        try:
-            return ast.literal_eval(value)
-        except (SyntaxError, ValueError):
-            return value
-    return series.apply(convert)
+from config import literal_converter, RAW_SCHOOLS_DATA, SCHOOLS_DATA
+from scripts.util.geography import fuzzy_match_ward_name_to_code
 
 
 def read_raw_data():

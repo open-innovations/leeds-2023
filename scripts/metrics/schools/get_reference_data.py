@@ -1,25 +1,20 @@
-import os
 import re
-import pandas as pd
-from pyairtable import Table
-
-from util.geography import fuzzy_match_leeds_wards
-
-API_KEY = os.environ['AIRTABLE_API_KEY']
+from lib.sources.airtable import query
+from scripts.util.geography import fuzzy_match_leeds_wards
 
 
 def fetch_data():
     BASE_ID = 'appHAh7IYG6p2w5Yo'
     TABLE_NAME = 'Schools'
 
-    table = Table(API_KEY, BASE_ID, TABLE_NAME)
+    schools = query(BASE_ID, TABLE_NAME,
+                    fields=[
+                        'School Name',
+                        'Postcode',
+                        'Ward',
+                    ])
 
-    schools = table.all(
-        fields=['School Name',
-                'Postcode',
-                'Ward',
-        ])
-    return pd.json_normalize([x['fields'] for x in schools]).rename(columns = lambda x: re.sub(r'\W+', '_', x.lower()))
+    return schools.rename(columns=lambda x: re.sub(r'\W+', '_', x.lower()))
 
 
 if __name__ == '__main__':

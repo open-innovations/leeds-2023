@@ -6,6 +6,11 @@ name: Data Pipeline
     # * is a special character in YAML so you have to quote this string
     - cron: "30 23 * * *"
 
+# Cancel any in-flight jobs
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest

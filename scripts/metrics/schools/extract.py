@@ -10,7 +10,7 @@ logger.addHandler(log_handler)
 logger.info('Set up logging')
 
 import lib.sources.airtable as airtable
-from config import SCHOOLS_DATA
+from config import RAW_SCHOOLS_DATA
 
 
 def fetch_data():
@@ -44,13 +44,14 @@ def fetch_data():
                 'Ward (from School)',
                 'Number of booked participants',
                 ])
+    print(school_events)
     return school_events
 
 
 if __name__ == '__main__':
     try:
         data = fetch_data()
-        data.to_csv(SCHOOLS_DATA, index=False)
+        data.to_csv(RAW_SCHOOLS_DATA, index=False)
     except Exception as e:
         logger.error(repr(e))
         raise RuntimeError('Cannot extract schools data')

@@ -1,13 +1,14 @@
 vars:
   - top: ../../../..
-stages:
-  prepare:
-    foreach:
+  - events:
       - my-leeds-2023
       - the-barn
       - nest
       - childrens-day
       - smeaton-300
+stages:
+  prepare:
+    foreach: ${events}
     do:
       cmd: papermill ${item}.ipynb ${top}/working/output/${item}.ipynb
       deps:

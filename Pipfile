@@ -25,6 +25,7 @@ ipykernel = "*"
 chardet = "*"
 matplotlib = "*"
 ratelimit = "*"
+pep8 = "*"
 
 [dev-packages]
 

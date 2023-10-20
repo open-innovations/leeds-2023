@@ -9,8 +9,8 @@ lib_dir = os.path.abspath(os.path.join(PROJECT_ROOT, 'lib/'))
 if not lib_dir in sys.path:
     sys.path.append(lib_dir)
 
-import util.geo
 import util.convert
+import util.geo
 
 
 def load_raw_data():
@@ -19,22 +19,34 @@ def load_raw_data():
         'data/metrics/events/master/all.csv'
     )
     return pd.read_csv(all_data_file, parse_dates=['start_date'])
-    
+
 
 def load_event_data():
     return load_raw_data().pipe(filter_signature_events)
 
 
 def filter_signature_events(data):
+    """
+    Selects the rows in the data which have a project type of 'Produce'
+    """
     return data.loc[
-        (data.project_type == 'Produce (Signature)') &
-        (data.event_type.str.contains('Public Event -'))
+        data.project_type == 'Produce (Signature)'
     ]
-    # (data.project_name == '12 - My LEEDS 2023') &
-    # (data.start_date < pd.Timestamp.now())
+
+
+def filter_public_events(data):
+    """
+    Selects rows in the data with an event type that includes Public Event
+    """
+    return data.loc[
+        data.event_type.str.contains('Public Event -')
+    ]
 
 
 def filter_by_project(data, project_name):
+    """
+    Select rows in the data where the project name matches the provides name
+    """
     return data.loc[
         data.project_name == project_name
     ]
@@ -146,7 +158,6 @@ def save_headlines(data, output_dir):
     headlines['ward_count'] = len(data.pipe(by_ward).index)
     headlines['earliest_date'] = data.start_date.min()
     headlines['latest_date'] = data.start_date.max()
-    headlines.to_json(os.path.join(output_dir, 'headlines.json'), indent=2, date_format='iso')
+    headlines.to_json(os.path.join(output_dir, 'headlines.json'),
+                      indent=2, date_format='iso')
     return data
-
-

@@ -10,8 +10,8 @@ stages:
     outs:
     - path: working/metrics/partner-events/
       hash: md5
-      md5: dc1ecc8d8b804c91cfe09530e3a41960.dir
-      size: 54962
+      md5: 1f6ef8827c68d954c28ab31ec81ae71b.dir
+      size: 54971
       nfiles: 1
   transform:
     cmd: papermill transform.ipynb ../../../working/output/partner-events-transform.ipynb
@@ -22,8 +22,8 @@ stages:
       size: 1614
     - path: ../../../working/metrics/partner-events/
       hash: md5
-      md5: dc1ecc8d8b804c91cfe09530e3a41960.dir
-      size: 54962
+      md5: 1f6ef8827c68d954c28ab31ec81ae71b.dir
+      size: 54971
       nfiles: 1
     - path: transform.ipynb
       hash: md5

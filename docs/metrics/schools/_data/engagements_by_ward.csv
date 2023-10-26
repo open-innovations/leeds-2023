@@ -5,9 +5,9 @@ E05011387,Bramley and Stanningley,8,15,13,1053,61.5
 E05011388,Burmantofts and Richmond Hill,9,17,11,635,81.8
 E05011389,Calverley and Farsley,3,4,6,76,50.0
 E05011390,Chapel Allerton,8,19,11,1027,72.7
-E05011391,Cross Gates and Whinmoor,6,12,10,1176,60.0
+E05011391,Cross Gates and Whinmoor,6,13,10,1526,60.0
 E05011394,Gipton and Harehills,4,5,11,69,36.4
-E05011395,Guiseley and Rawdon,6,8,14,335,42.9
+E05011395,Guiseley and Rawdon,6,8,14,559,42.9
 E05011396,Harewood,3,4,6,308,50.0
 E05011397,Headingley and Hyde Park,4,8,5,852,80.0
 E05011399,Hunslet and Riverside,3,6,8,177,37.5
@@ -21,7 +21,7 @@ E05011406,Morley North,2,3,7,83,28.6
 E05011407,Morley South,4,6,11,551,36.4
 E05011409,Pudsey,8,9,15,415,53.3
 E05011410,Rothwell,3,8,10,454,30.0
-E05011411,Roundhay,5,12,8,703,62.5
+E05011411,Roundhay,6,13,8,943,75.0
 E05011413,Weetwood,8,19,10,1406,80.0
 E05011414,Wetherby,4,7,13,344,30.8
 E05011547,Horsforth,5,14,9,1160,55.6
@@ -30,5 +30,5 @@ E05012647,Beeston and Holbeck,8,22,13,1219,61.5
 E05012648,Farnley and Wortley,4,11,8,403,50.0
 E05012841,Adel and Wharfedale,6,14,6,1554,100.0
 E05012842,Alwoodley,5,9,7,844,71.4
-E05013830,Garforth and Swillington,3,6,7,316,42.9
-E05013831,Temple Newsam,5,12,10,1791,50.0
+E05013830,Garforth and Swillington,3,5,7,226,42.9
+E05013831,Temple Newsam,5,13,10,2031,50.0

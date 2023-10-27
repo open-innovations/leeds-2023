@@ -377,6 +377,11 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-05-20,78998,LS6 2UZ,15.0,3,4,13222,The WOW Barn: Volunteer Support,LEEDS 2023 Events
 2023-05-20,79276,LS6 2UZ,10.0,2,4,13222,The WOW Barn: Volunteer Support,LEEDS 2023 Events
 2023-05-20,81762,LS2 7UP,4.0,1,2,13287,Northern Roll Rollerskating Festival,Partner Events
+2023-05-20,81763,LS2 7UP,4.0,1,2,13287,Northern Roll Rollerskating Festival,Partner Events
+2023-05-20,81766,LS10 1LT,12.0,4,4,13287,Northern Roll Rollerskating Festival,Partner Events
+2023-05-20,81767,LS10 1LT,12.0,3,4,13287,Northern Roll Rollerskating Festival,Partner Events
+2023-05-21,81770,LS10 1NT,8.0,2,4,13287,Northern Roll Rollerskating Festival,Partner Events
+2023-05-21,81772,LS10 1NT,12.0,3,4,13287,Northern Roll Rollerskating Festival,Partner Events
 2023-05-21,87272,LS9 7LR,33.0,6,10,13727,Volunteer - Family Flourish Day!,Partner Events
 2023-05-23,84784,LS10 1NE,32.0,16,25,13550,EXPLORE - Volunteer Celebration Decoration making!,
 2023-05-23,87596,LS10 1NE,3.0,1,3,13869,All That Lives: Creative Support,LEEDS 2023 Events
@@ -429,6 +434,7 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-06-08,85447,LS10 1NE,12.5,5,6,13618,Meet the Team - Summer Support,
 2023-06-08,85717,LS18 4AH,18.0,9,10,13645,EXPLORE: Pottery Painting,
 2023-06-08,88428,LS10 1NE,9.0,3,5,13784,Children's Day: Reimagined Banner Prep!,LEEDS 2023 Events
+2023-06-08,107400,,5.1,15,100,13616,Meet the Team - Summer,
 2023-06-09,88429,LS10 1NE,3.0,1,5,13784,Children's Day: Reimagined Banner Prep!,LEEDS 2023 Events
 2023-06-10,85404,LS10 1NE,1.6,4,5,13616,Meet the Team - Summer,
 2023-06-10,85405,LS10 1NE,1.2,3,5,13616,Meet the Team - Summer,
@@ -484,47 +490,72 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-06-24,91850,LS11 7BQ,3.5,1,10,14203,My LEEDS - Summer Festival : Wards A-B,LEEDS 2023 Events
 2023-06-24,91853,LS11 7BQ,4.0,1,1,14203,My LEEDS - Summer Festival : Wards A-B,LEEDS 2023 Events
 2023-06-24,91906,LS15 8EU,6.0,2,10,14207,My LEEDS Summer Festival- Wards C-G,LEEDS 2023 Events
+2023-06-24,92117,,5.0,1,12,14209,My LEEDS Summer Festival - Wards L-O,LEEDS 2023 Events
 2023-06-24,94491,LS11 7BQ,3.5,1,10,14203,My LEEDS - Summer Festival : Wards A-B,LEEDS 2023 Events
 2023-06-28,88503,LS1 2HA,10.0,2,3,13978,Making a Stand: Wellness Days,LEEDS 2023 Events
 2023-06-28,88828,LS2 7BS,12.0,4,4,14006,Feel the Music Live!,Partner Events
+2023-06-28,92861,LS6 3HN,2.5,1,2,14256,Unsung Sports: Creative Writing Workshops,Partner Events
 2023-06-29,86749,LS10 1NE,126.0,42,55,13785,Induction/Training Summer,
 2023-06-29,87193,LS10 1NE,21.0,6,6,13842,Induction/Training: Summer Support,
 2023-06-29,91227,LS1 2AL,3.0,1,2,14184,Making a Stand - Volunteer Tours,LEEDS 2023 Events
 2023-06-29,91230,LS1 2AL,7.0,2,2,14184,Making a Stand - Volunteer Tours,LEEDS 2023 Events
 2023-07-01,86751,LS10 1NE,135.0,45,55,13785,Induction/Training Summer,
 2023-07-01,87194,LS10 1NE,21.0,6,6,13842,Induction/Training: Summer Support,
+2023-07-01,88012,LS1 5AT,11.2,4,10,13880,The Leeds International African Arts Festival 2023,Partner Events
 2023-07-01,91991,LS18 5LA,12.0,3,8,14208,My LEEDS Summer Festival - Wards H-K,LEEDS 2023 Events
 2023-07-01,91994,LS18 5LA,8.0,2,8,14208,My LEEDS Summer Festival - Wards H-K,LEEDS 2023 Events
+2023-07-01,92096,LS22 6NE,12.0,2,12,14210,My LEEDS Summer Festival- Wards P-W,LEEDS 2023 Events
+2023-07-02,91028,LS15 0AE,6.0,1,1,14175,My LEEDS - Summer Photography,
 2023-07-02,91033,LS19 7TP,6.0,1,1,14175,My LEEDS - Summer Photography,
 2023-07-02,91901,LS19 7TP,5.5,1,10,14207,My LEEDS Summer Festival- Wards C-G,LEEDS 2023 Events
 2023-07-02,92071,LS15 0AE,38.5,7,10,14210,My LEEDS Summer Festival- Wards P-W,LEEDS 2023 Events
 2023-07-03,86752,LS10 1NE,132.0,44,55,13785,Induction/Training Summer,
 2023-07-03,87196,LS10 1NE,21.0,6,6,13842,Induction/Training: Summer Support,
+2023-07-03,91940,LS9 7BG,2.0,1,3,14207,My LEEDS Summer Festival- Wards C-G,LEEDS 2023 Events
 2023-07-05,86753,LS10 1NE,90.0,30,55,13785,Induction/Training Summer,
 2023-07-05,87197,LS10 1NE,21.0,6,6,13842,Induction/Training: Summer Support,
 2023-07-06,90015,LS11 9RQ,21.0,6,8,14096,Noah's Flood,Partner Events
 2023-07-06,92024,LS21 3AN,49.5,9,12,14209,My LEEDS Summer Festival - Wards L-O,LEEDS 2023 Events
+2023-07-06,92026,LS21 3AN,6.0,1,1,14209,My LEEDS Summer Festival - Wards L-O,LEEDS 2023 Events
 2023-07-07,88777,LS10 1NE,39.0,6,6,14005,Culture Map Trails Photography,
+2023-07-07,90016,LS11 9RQ,21.0,6,8,14096,Noah's Flood,Partner Events
 2023-07-08,86754,LS10 1NE,126.0,42,55,13785,Induction/Training Summer,
 2023-07-08,87198,LS10 1NE,21.0,6,6,13842,Induction/Training: Summer Support,
+2023-07-08,88013,LS1 3HB,12.0,4,4,13880,The Leeds International African Arts Festival 2023,Partner Events
+2023-07-08,88017,LS1 3HB,13.0,4,4,13880,The Leeds International African Arts Festival 2023,Partner Events
+2023-07-08,88018,LS1 3HB,5.5,2,4,13880,The Leeds International African Arts Festival 2023,Partner Events
 2023-07-08,88022,,27.0,9,50,13785,Induction/Training Summer,
+2023-07-08,88912,LS17 9LQ,16.0,4,5,14016,The Big Harewood Garden Party,Partner Events
+2023-07-08,88913,LS17 9LQ,16.0,4,5,14016,The Big Harewood Garden Party,Partner Events
 2023-07-08,91911,LS9 7BG,3.5,1,8,14207,My LEEDS Summer Festival- Wards C-G,LEEDS 2023 Events
 2023-07-08,91917,LS9 6NL,10.5,3,8,14207,My LEEDS Summer Festival- Wards C-G,LEEDS 2023 Events
+2023-07-09,88019,LS18,7.0,2,2,13880,The Leeds International African Arts Festival 2023,Partner Events
 2023-07-09,91072,LS14 3EY,5.0,1,1,14175,My LEEDS - Summer Photography,
 2023-07-09,91858,LS17 7NZ,6.0,1,20,14203,My LEEDS - Summer Festival : Wards A-B,LEEDS 2023 Events
 2023-07-09,91862,LS17 7NZ,5.0,1,20,14203,My LEEDS - Summer Festival : Wards A-B,LEEDS 2023 Events
 2023-07-09,91867,WF3 3BG,38.5,7,10,14203,My LEEDS - Summer Festival : Wards A-B,LEEDS 2023 Events
 2023-07-09,92120,,25.0,5,8,14208,My LEEDS Summer Festival - Wards H-K,LEEDS 2023 Events
+2023-07-10,88027,LS7 3EX,4.0,2,2,13880,The Leeds International African Arts Festival 2023,Partner Events
 2023-07-13,98374,LS2 3AD,36.267,16,15,14568,EXPLORE: JULIE The Musical,
 2023-07-14,92927,LS8 1DF,192.5,35,40,14261,Children's Day: Reimagined,LEEDS 2023 Events
 2023-07-14,94201,LS8 1DF,27.0,9,10,14341,Children's Day: Reimagined - Stakeholder Refreshments VIP,LEEDS 2023 Events
+2023-07-15,88030,LS7 3EJ,10.0,2,2,13880,The Leeds International African Arts Festival 2023,Partner Events
 2023-07-15,91872,LS16 7RX,6.0,1,1,14203,My LEEDS - Summer Festival : Wards A-B,LEEDS 2023 Events
 2023-07-15,91873,LS16 7RX,60.0,10,10,14203,My LEEDS - Summer Festival : Wards A-B,LEEDS 2023 Events
 2023-07-20,88302,LS3 1JL,12.6,7,15,13963,EXPLORE: An Introduction to Circus Skills,
 2023-07-20,94438,LS10 1NE,30.4,12,15,14367,EXPLORE: An Introduction to British Sign Language (BSL),
+2023-07-21,95071,LS10 1JQ,6.0,2,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-07-22,95072,LS10 1JQ,6.0,2,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
 2023-07-22,99277,LS6 1LJ,58.5,9,10,14208,My LEEDS Summer Festival - Wards H-K,LEEDS 2023 Events
+2023-07-22,99280,LS6 1LJ,7.0,1,1,14175,My LEEDS - Summer Photography,
+2023-07-22,100278,LS28 7RR,16.0,4,8,14210,My LEEDS Summer Festival- Wards P-W,LEEDS 2023 Events
+2023-07-22,100347,LS25 7HF,18.0,4,8,14208,My LEEDS Summer Festival - Wards H-K,LEEDS 2023 Events
+2023-07-22,102393,LS1 2HA,5.333,2,3,13978,Making a Stand: Wellness Days,LEEDS 2023 Events
+2023-07-22,102396,,3.667,1,3,13978,Making a Stand: Wellness Days,LEEDS 2023 Events
+2023-07-23,95073,LS10 1JQ,6.0,2,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
 2023-07-23,100098,LS12 5EA,8.0,2,8,14207,My LEEDS Summer Festival- Wards C-G,LEEDS 2023 Events
 2023-07-23,100102,LS12 4RU,4.0,1,8,14207,My LEEDS Summer Festival- Wards C-G,LEEDS 2023 Events
+2023-07-23,100401,LS27 9DY,20.0,5,8,14209,My LEEDS Summer Festival - Wards L-O,LEEDS 2023 Events
 2023-07-23,100408,LS26 8AS,11.0,2,8,14207,My LEEDS Summer Festival- Wards C-G,LEEDS 2023 Events
 2023-07-25,95516,LS18 4AH,12.0,6,14,14449,EXPLORE: Pottery - Hand Building with Clay,
 2023-07-25,96938,LS1 2LE,21.0,12,12,14531,EXPLORE: Bake Off,
@@ -535,7 +566,319 @@ date,shift_id,postcode,volunteer_hours,attended,demand,event_id,event_name,event
 2023-07-27,91233,LS1 2AL,7.0,2,2,14184,Making a Stand - Volunteer Tours,LEEDS 2023 Events
 2023-07-27,99384,LS1 3AA,32.0,8,8,14771,Gracefool - Kick Off,Partner Events
 2023-07-28,99385,LS1 3AA,24.0,6,8,14771,Gracefool - Kick Off,Partner Events
+2023-07-29,95074,LS10 1JQ,6.0,2,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
 2023-07-29,99386,LS1 3AA,33.0,6,8,14771,Gracefool - Kick Off,Partner Events
 2023-07-29,103997,LS10 1LT,42.0,7,8,14208,My LEEDS Summer Festival - Wards H-K,LEEDS 2023 Events
+2023-07-30,95075,LS10 1JQ,6.0,2,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
 2023-08-01,102120,LS11 9UD,6.0,3,4,14778,Moon Palace,LEEDS 2023 Events
+2023-08-02,100133,LS2 3AD,24.0,6,6,14843,Child Friendly Leeds Live,Partner Events
+2023-08-02,100134,LS2 3AD,18.0,6,6,14843,Child Friendly Leeds Live,Partner Events
+2023-08-02,102124,LS1 3HE,3.5,1,2,14843,Child Friendly Leeds Live,Partner Events
+2023-08-02,102125,LS1 3HE,8.0,2,2,14843,Child Friendly Leeds Live,Partner Events
 2023-08-02,104267,LS10 1JQ,4.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-03,100455,LS8 3LF,16.0,4,4,14778,Moon Palace,LEEDS 2023 Events
+2023-08-03,100456,LS8 3LF,12.0,4,4,14778,Moon Palace,LEEDS 2023 Events
+2023-08-03,104268,LS10 1JQ,4.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-04,99428,LS8 3LF,7.0,2,2,14778,Moon Palace,LEEDS 2023 Events
+2023-08-04,99429,LS8 3LF,8.0,2,2,14778,Moon Palace,LEEDS 2023 Events
+2023-08-05,95076,LS10 1JQ,6.0,2,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-05,99433,LS10 1LT,7.0,2,2,14778,Moon Palace,LEEDS 2023 Events
+2023-08-05,99434,LS10 1LT,8.0,2,2,14778,Moon Palace,LEEDS 2023 Events
+2023-08-05,102402,LS8 2WE,36.48,24,25,15007,BBC ANTIQUES ROADSHOW,Partner Events
+2023-08-05,102531,LS12 1SF,19.5,3,12,14203,My LEEDS - Summer Festival : Wards A-B,LEEDS 2023 Events
+2023-08-05,104288,LS2 7HY,26.0,4,10,14209,My LEEDS Summer Festival - Wards L-O,LEEDS 2023 Events
+2023-08-06,95077,LS10 1JQ,3.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-06,99281,LS10 3SH,12.0,3,8,14209,My LEEDS Summer Festival - Wards L-O,LEEDS 2023 Events
+2023-08-06,102403,LS8 2WE,210.24,24,25,15007,BBC ANTIQUES ROADSHOW,Partner Events
+2023-08-06,103220,LS10 1NE,153.0,34,36,15068,LEEDS 2023 does Leeds Pride March,LEEDS 2023 Events
+2023-08-06,103221,LS10 1NE,9.0,2,2,15069,LEEDS 2023 does Leeds Pride March - Photography,
+2023-08-06,105673,LS10 1LT,9.0,2,2,14778,Moon Palace,LEEDS 2023 Events
+2023-08-08,94722,LS18 4AH,16.0,8,10,14379,EXPLORE: Pottery Painting - Round 2,
+2023-08-09,100461,LS10 1NE,32.5,13,14,14367,EXPLORE: An Introduction to British Sign Language (BSL),
+2023-08-09,104279,LS10 1JQ,4.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-10,90674,LS3 1JL,16.2,9,15,13963,EXPLORE: An Introduction to Circus Skills,
+2023-08-10,103492,LS1,3.0,1,3,15047,Making A Stand - Weaving Voices,LEEDS 2023 Events
+2023-08-10,103493,LS1,6.0,2,3,15047,Making A Stand - Weaving Voices,LEEDS 2023 Events
+2023-08-10,104281,LS10 1JQ,4.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-12,99439,LS14 6JS,7.0,2,2,14778,Moon Palace,LEEDS 2023 Events
+2023-08-12,99440,LS14 6JS,8.0,2,2,14778,Moon Palace,LEEDS 2023 Events
+2023-08-12,103184,LS9 7UQ,17.5,5,8,14203,My LEEDS - Summer Festival : Wards A-B,LEEDS 2023 Events
+2023-08-12,103190,LS9 7UQ,5.0,1,1,14175,My LEEDS - Summer Photography,
+2023-08-12,103194,LS9 7UQ,13.5,3,8,14203,My LEEDS - Summer Festival : Wards A-B,LEEDS 2023 Events
+2023-08-12,104326,LS7 2QU,4.0,1,8,14210,My LEEDS Summer Festival- Wards P-W,LEEDS 2023 Events
+2023-08-12,104327,LS7 2QU,4.0,1,8,14210,My LEEDS Summer Festival- Wards P-W,LEEDS 2023 Events
+2023-08-12,104334,LS7 2QU,4.0,1,1,14175,My LEEDS - Summer Photography,
+2023-08-12,104339,LS14 6JL,4.0,1,8,14208,My LEEDS Summer Festival - Wards H-K,LEEDS 2023 Events
+2023-08-12,106254,LS10 1LT,9.0,2,2,14778,Moon Palace,LEEDS 2023 Events
+2023-08-13,95080,LS10 1JQ,3.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-13,104285,LS10 1JQ,2.5,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-15,102113,,19.0,19,30,14971,EXPLORE: Carbon Literacy Training,
+2023-08-16,104286,LS10 1JQ,4.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-17,96939,LS1 2LE,21.0,12,12,14531,EXPLORE: Bake Off,
+2023-08-17,104290,LS10 1JQ,4.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-17,107059,LS1 3PB,8.0,2,3,15388,Northern Opera Group: Leeds Opera Festival,Partner Events
+2023-08-17,107060,LS1 3PB,8.0,2,3,15388,Northern Opera Group: Leeds Opera Festival,Partner Events
+2023-08-18,104292,LS10 1JQ,8.0,2,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-19,95081,LS10 1JQ,3.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-19,103010,LS10 1NE,18.0,6,6,15039,Meet the Team Support - Final Recruitment,
+2023-08-19,103021,LS10 1NE,1.2,3,5,15040,Meet the Team - Final Recruitment,
+2023-08-19,103023,LS10 1NE,1.6,4,5,15040,Meet the Team - Final Recruitment,
+2023-08-19,103024,LS10 1NE,1.2,3,5,15040,Meet the Team - Final Recruitment,
+2023-08-19,103025,LS10 1NE,1.2,3,5,15040,Meet the Team - Final Recruitment,
+2023-08-19,103026,LS10 1NE,1.2,3,5,15040,Meet the Team - Final Recruitment,
+2023-08-19,103027,LS10 1NE,2.0,5,5,15040,Meet the Team - Final Recruitment,
+2023-08-19,103028,LS10 1NE,2.0,5,5,15040,Meet the Team - Final Recruitment,
+2023-08-19,104293,LS10 1JQ,2.5,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-19,104346,LS11 8LU,25.0,5,5,14209,My LEEDS Summer Festival - Wards L-O,LEEDS 2023 Events
+2023-08-19,104351,LS27 7AB,8.6,2,10,14209,My LEEDS Summer Festival - Wards L-O,LEEDS 2023 Events
+2023-08-19,104356,BD11 1JZ,4.5,1,8,14209,My LEEDS Summer Festival - Wards L-O,LEEDS 2023 Events
+2023-08-19,104358,BD11 1JZ,4.0,1,1,14175,My LEEDS - Summer Photography,
+2023-08-19,107061,LS7 2QG,5.0,3,3,15388,Northern Opera Group: Leeds Opera Festival,Partner Events
+2023-08-20,95082,LS10 1JQ,3.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-21,103011,LS10 1NE,18.0,6,6,15039,Meet the Team Support - Final Recruitment,
+2023-08-21,103029,LS10 1NE,2.0,5,5,15040,Meet the Team - Final Recruitment,
+2023-08-21,103030,LS10 1NE,1.2,3,5,15040,Meet the Team - Final Recruitment,
+2023-08-21,103032,LS10 1NE,1.6,4,5,15040,Meet the Team - Final Recruitment,
+2023-08-21,103033,LS10 1NE,2.0,5,5,15040,Meet the Team - Final Recruitment,
+2023-08-21,103037,LS10 1NE,1.2,3,5,15040,Meet the Team - Final Recruitment,
+2023-08-21,103039,LS10 1NE,0.4,1,5,15040,Meet the Team - Final Recruitment,
+2023-08-21,107397,,30.6,90,100,15040,Meet the Team - Final Recruitment,
+2023-08-22,103912,,41.0,41,80,15112,EXPLORE: This is a Forest,
+2023-08-23,104295,LS10 1JQ,8.0,2,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-24,103145,LS2 3AD,162.0,108,150,15060,Season 3: Dreaming - A Volunteer Update plus LEEDS LIGHT NIGHT SPECIAL,
+2023-08-24,103146,LS2 3AD,3.0,2,2,15060,Season 3: Dreaming - A Volunteer Update plus LEEDS LIGHT NIGHT SPECIAL,
+2023-08-24,103148,LS2 3AD,12.0,6,6,15061,SUPPORT - Season 3: Dreaming - A Volunteer Update,
+2023-08-24,104297,LS10 1JQ,8.0,2,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-24,108269,LS8 3LF,10.0,2,2,14778,Moon Palace,LEEDS 2023 Events
+2023-08-26,95083,LS10 1JQ,3.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-26,104418,LS28 5UJ,9.0,3,8,14207,My LEEDS Summer Festival- Wards C-G,LEEDS 2023 Events
+2023-08-26,104421,LS28 5UJ,18.0,6,8,14207,My LEEDS Summer Festival- Wards C-G,LEEDS 2023 Events
+2023-08-26,107063,LS2,6.0,3,4,15388,Northern Opera Group: Leeds Opera Festival,Partner Events
+2023-08-27,95084,LS10 1JQ,6.0,2,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-27,104431,LS13 3PG,8.0,2,8,14203,My LEEDS - Summer Festival : Wards A-B,LEEDS 2023 Events
+2023-08-27,104435,LS13 3PG,16.0,4,8,14203,My LEEDS - Summer Festival : Wards A-B,LEEDS 2023 Events
+2023-08-27,107064,LS1 3AA,10.0,5,5,15388,Northern Opera Group: Leeds Opera Festival,Partner Events
+2023-08-28,106160,LS7 4HA,30.0,10,10,15307,Leeds West Indian Carnival,Partner Events
+2023-08-28,106161,LS7 4HA,28.0,4,4,15307,Leeds West Indian Carnival,Partner Events
+2023-08-28,106163,LS7 4HA,24.0,8,10,15307,Leeds West Indian Carnival,Partner Events
+2023-08-28,106166,LS7 4HA,24.0,8,10,15307,Leeds West Indian Carnival,Partner Events
+2023-08-28,106167,LS7 4HA,52.0,13,16,15307,Leeds West Indian Carnival,Partner Events
+2023-08-28,107065,LS12 3LE,6.0,3,5,15388,Northern Opera Group: Leeds Opera Festival,Partner Events
+2023-08-29,107067,LS1 3PB,36.0,9,10,15388,Northern Opera Group: Leeds Opera Festival,Partner Events
+2023-08-29,111130,,5.0,10,30,15768,EXPLORE: Nest Exclusive Chat with the Producer,
+2023-08-29,111294,,2.4,3,10,15781,NEST - Digital Marketing opportunity,LEEDS 2023 Events
+2023-08-30,88508,LS1 2HA,10.0,2,3,13978,Making a Stand: Wellness Days,LEEDS 2023 Events
+2023-08-30,104301,LS10 1JQ,4.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-30,107069,LS1 3PB,36.0,9,10,15388,Northern Opera Group: Leeds Opera Festival,Partner Events
+2023-08-31,91234,LS1 2AL,6.0,2,2,14184,Making a Stand - Volunteer Tours,LEEDS 2023 Events
+2023-08-31,91235,LS1 2AL,3.5,1,2,14184,Making a Stand - Volunteer Tours,LEEDS 2023 Events
+2023-08-31,104302,LS10 1JQ,4.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-08-31,107070,LS1 3PB,36.0,9,10,15388,Northern Opera Group: Leeds Opera Festival,Partner Events
+2023-09-01,107071,LS1 3PB,20.0,5,10,15388,Northern Opera Group: Leeds Opera Festival,Partner Events
+2023-09-01,111083,LS7 3PG,2.0,1,2,15753,Chapel Allerton Arts Festival,Partner Events
+2023-09-01,111084,LS7 3PG,3.0,1,2,15753,Chapel Allerton Arts Festival,Partner Events
+2023-09-01,111086,LS7,5.0,1,2,15753,Chapel Allerton Arts Festival,Partner Events
+2023-09-02,106540,LS2 3AD,21.0,6,8,15340,Ancient Futures,Partner Events
+2023-09-02,106543,LS2 3AD,3.5,1,2,15341,Ancient Futures (Photographers),
+2023-09-02,107072,LS1 3PB,32.0,8,10,15388,Northern Opera Group: Leeds Opera Festival,Partner Events
+2023-09-02,107073,LS1 3PB,28.0,7,10,15388,Northern Opera Group: Leeds Opera Festival,Partner Events
+2023-09-02,111085,LS7,9.0,3,10,15753,Chapel Allerton Arts Festival,Partner Events
+2023-09-03,106541,LS2 3AD,17.5,5,8,15340,Ancient Futures,Partner Events
+2023-09-03,108460,LS26 8AL,15.0,5,30,15452,NEST,LEEDS 2023 Events
+2023-09-03,111088,LS7,3.0,1,2,15753,Chapel Allerton Arts Festival,Partner Events
+2023-09-03,111089,LS7,6.0,2,2,15753,Chapel Allerton Arts Festival,Partner Events
+2023-09-03,111181,LS2 3AD,18.0,6,8,15340,Ancient Futures,Partner Events
+2023-09-04,102114,,20.0,20,30,14971,EXPLORE: Carbon Literacy Training,
+2023-09-04,106834,LS10 1NE,13.68,9,25,15367,This is a Forest: Training Sessions,LEEDS 2023 Events
+2023-09-04,108432,LS26 8AL,11.6,2,5,15452,NEST,LEEDS 2023 Events
+2023-09-04,108444,LS26 8AL,45.6,8,10,15452,NEST,LEEDS 2023 Events
+2023-09-04,108446,LS26 8AL,34.286,6,14,15452,NEST,LEEDS 2023 Events
+2023-09-05,108448,LS26 8AL,11.6,2,5,15452,NEST,LEEDS 2023 Events
+2023-09-05,108451,LS26 8AL,51.3,9,10,15452,NEST,LEEDS 2023 Events
+2023-09-05,108453,LS26 8AL,51.429,9,14,15452,NEST,LEEDS 2023 Events
+2023-09-06,106835,LS10 1NE,16.72,11,25,15367,This is a Forest: Training Sessions,LEEDS 2023 Events
+2023-09-06,108462,LS26 8AL,11.6,2,5,15452,NEST,LEEDS 2023 Events
+2023-09-06,108464,LS26 8AL,39.9,7,10,15452,NEST,LEEDS 2023 Events
+2023-09-06,108465,LS26 8AL,57.143,10,14,15452,NEST,LEEDS 2023 Events
+2023-09-07,108466,LS26 8AL,5.8,1,5,15452,NEST,LEEDS 2023 Events
+2023-09-07,108468,LS26 8AL,17.1,3,10,15452,NEST,LEEDS 2023 Events
+2023-09-07,108469,LS26 8AL,40.0,7,14,15452,NEST,LEEDS 2023 Events
+2023-09-08,104317,LS10 1JQ,4.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-09-08,108474,LS26 8AL,5.8,1,5,15452,NEST,LEEDS 2023 Events
+2023-09-08,108476,LS26 8AL,28.5,5,10,15452,NEST,LEEDS 2023 Events
+2023-09-08,108477,LS26 8AL,28.571,5,14,15452,NEST,LEEDS 2023 Events
+2023-09-09,104443,LS26 0DY,9.0,2,10,14210,My LEEDS Summer Festival- Wards P-W,LEEDS 2023 Events
+2023-09-09,104446,LS26 0DY,4.5,1,10,14210,My LEEDS Summer Festival- Wards P-W,LEEDS 2023 Events
+2023-09-09,104449,LS26 0DY,5.0,1,1,14175,My LEEDS - Summer Photography,
+2023-09-09,105725,LS9 7LR,8.0,4,8,15290,Family Flourish Day: Harvest,Partner Events
+2023-09-09,105726,LS9 7LR,10.5,3,8,15290,Family Flourish Day: Harvest,Partner Events
+2023-09-09,105734,LS9 7LR,3.5,1,2,15291,Family Flourish Day: Harvest (Photographer),
+2023-09-09,107074,LS6 4BP,12.0,4,4,15388,Northern Opera Group: Leeds Opera Festival,Partner Events
+2023-09-09,107131,LS1 7BR,4.0,1,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-09,107132,LS1 7BR,7.0,2,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-09,108478,LS26 8AL,11.6,2,5,15452,NEST,LEEDS 2023 Events
+2023-09-09,108480,LS26 8AL,39.9,7,10,15452,NEST,LEEDS 2023 Events
+2023-09-09,108481,LS26 8AL,22.857,4,14,15452,NEST,LEEDS 2023 Events
+2023-09-09,108764,LS1 3AA,12.0,3,3,14778,Moon Palace,LEEDS 2023 Events
+2023-09-09,108768,LS1 3AA,8.0,2,3,14778,Moon Palace,LEEDS 2023 Events
+2023-09-09,108769,LS1 3AA,10.0,2,2,14778,Moon Palace,LEEDS 2023 Events
+2023-09-10,104328,LS10 1JQ,3.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-09-10,104330,LS10 1JQ,3.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-09-10,107075,LS6 4BP,16.0,4,4,15388,Northern Opera Group: Leeds Opera Festival,Partner Events
+2023-09-10,107133,LS1 7BR,4.0,1,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-10,107134,LS1 7BR,3.5,1,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-10,108705,LS7 4BH,6.0,2,2,15495,Hidden Stories: Meet Me At Cantors,Partner Events
+2023-09-10,108706,LS7 4BH,6.0,2,2,15495,Hidden Stories: Meet Me At Cantors,Partner Events
+2023-09-11,107135,LS1 7BR,4.0,1,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-11,107136,LS1 7BR,3.5,1,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-12,106836,,30.0,20,40,15367,This is a Forest: Training Sessions,LEEDS 2023 Events
+2023-09-12,107137,LS1 7BR,4.0,1,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-12,107138,LS1 7BR,7.0,2,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-13,106837,,13.5,9,40,15367,This is a Forest: Training Sessions,LEEDS 2023 Events
+2023-09-13,107139,LS1 7BR,8.0,2,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-13,107140,LS1 7BR,3.5,1,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-13,107141,LS1 7BR,3.5,1,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-14,107142,LS1 7BR,4.0,1,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-14,107143,LS1 7BR,7.0,2,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-15,107144,LS1 7BR,4.0,1,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-15,107145,LS1 7BR,7.0,2,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-15,108700,LS1 2HA,5.0,2,2,15494,Making a Stand: A Relaxed Experience,LEEDS 2023 Events
+2023-09-15,108701,LS1 2HA,5.0,2,2,15494,Making a Stand: A Relaxed Experience,LEEDS 2023 Events
+2023-09-16,105607,LS10 1NE,17.5,5,6,15041,Induction/Training: Final Recruitment Support,
+2023-09-16,105667,LS10 1NE,93.5,34,40,15042,Induction/Training Final Recruitment,
+2023-09-16,107080,LS1 5EB,8.0,2,2,15389,Hidden Stories: Lens Lab Project's City Stories: Common Ground Exhibition,Partner Events
+2023-09-16,107081,LS1 5EB,7.0,2,2,15389,Hidden Stories: Lens Lab Project's City Stories: Common Ground Exhibition,Partner Events
+2023-09-16,107147,LS1 7BR,4.0,1,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-16,107148,LS1 7BR,7.0,2,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-16,112350,LS6 1AY,4.0,2,2,15867,Civic Skateboarding,LEEDS 2023 Events
+2023-09-16,112354,LS2 3AD,8.0,3,3,15867,Civic Skateboarding,LEEDS 2023 Events
+2023-09-17,107082,LS1 5EB,8.0,2,2,15389,Hidden Stories: Lens Lab Project's City Stories: Common Ground Exhibition,Partner Events
+2023-09-17,107085,LS1 5EB,3.5,1,2,15389,Hidden Stories: Lens Lab Project's City Stories: Common Ground Exhibition,Partner Events
+2023-09-17,107149,LS1 7BR,4.0,1,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-17,107150,LS1 7BR,7.0,2,2,15391,Hidden Stories: Heritage Open Days Hub,Partner Events
+2023-09-17,112365,LS10 1LT,8.0,3,3,15867,Civic Skateboarding,LEEDS 2023 Events
+2023-09-18,111726,,10.0,10,33,15821,A City Without Seams,LEEDS 2023 Events
+2023-09-18,113862,LS10 1NE,12.0,6,6,16066,The Gift: - A City without Seams Exhibition Preparation,LEEDS 2023 Events
+2023-09-20,105608,LS10 1NE,17.5,5,6,15041,Induction/Training: Final Recruitment Support,
+2023-09-20,105668,LS10 1NE,93.5,34,40,15042,Induction/Training Final Recruitment,
+2023-09-20,110950,LS1 5AT,3.0,1,2,15631,Wise Women Conversations,Partner Events
+2023-09-20,110951,LS1 5AT,6.0,2,2,15631,Wise Women Conversations,Partner Events
+2023-09-20,112973,LS1 5AT,4.0,2,2,15631,Wise Women Conversations,Partner Events
+2023-09-20,113868,LS1 7BR,16.0,4,4,15821,A City Without Seams,LEEDS 2023 Events
+2023-09-20,113869,LS1 7BR,8.0,2,4,15821,A City Without Seams,LEEDS 2023 Events
+2023-09-20,114516,LS10 1JQ,8.0,2,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-09-21,110850,,44.0,22,25,15042,Induction/Training Final Recruitment,
+2023-09-21,111729,LS1 7BR,12.0,3,3,15821,A City Without Seams,LEEDS 2023 Events
+2023-09-21,111730,LS1 7BR,8.0,2,3,15821,A City Without Seams,LEEDS 2023 Events
+2023-09-21,111860,LS1 7BR,3.0,1,3,15821,A City Without Seams,LEEDS 2023 Events
+2023-09-21,114518,LS10 1JQ,8.0,2,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-09-22,111731,LS1 7BR,11.0,3,3,15821,A City Without Seams,LEEDS 2023 Events
+2023-09-22,111732,LS1 7BR,3.667,1,3,15821,A City Without Seams,LEEDS 2023 Events
+2023-09-22,111862,LS1 7BR,9.0,3,3,15821,A City Without Seams,LEEDS 2023 Events
+2023-09-22,113555,LS1 6NU,6.0,2,2,16040,BBC Contains Strong Language - LEEDS 2023,Partner Events
+2023-09-22,113556,LS1 6NU,6.0,2,2,16040,BBC Contains Strong Language - LEEDS 2023,Partner Events
+2023-09-22,114492,LS2 7PD,10.5,3,2,16174,Volunteer Recruitment at Leeds Conservatoire Freshers Fair!,
+2023-09-22,114519,LS10 1JQ,8.0,2,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-09-23,111189,LS2 9JT,30.0,15,20,15777,EXPLORE: Rollerskating,
+2023-09-23,111733,LS1 7BR,12.0,3,3,15821,A City Without Seams,LEEDS 2023 Events
+2023-09-23,111734,LS1 7BR,8.0,2,3,15821,A City Without Seams,LEEDS 2023 Events
+2023-09-23,111816,LS2 7EQ,9.0,2,2,15835,Visions in the Map,Partner Events
+2023-09-23,111817,LS2 7EQ,5.0,1,2,15835,Visions in the Map,Partner Events
+2023-09-23,111818,LS2 3ED,9.0,2,2,15835,Visions in the Map,Partner Events
+2023-09-23,111820,LS2 3ED,10.0,2,2,15835,Visions in the Map,Partner Events
+2023-09-23,111822,LS2 7QA,9.0,2,2,15835,Visions in the Map,Partner Events
+2023-09-23,111827,LS1 6HB,9.0,2,2,15835,Visions in the Map,Partner Events
+2023-09-23,111828,LS1 6HB,10.0,2,2,15835,Visions in the Map,Partner Events
+2023-09-23,113557,LS1 6NU,6.0,2,2,16040,BBC Contains Strong Language - LEEDS 2023,Partner Events
+2023-09-23,113558,LS2 7PD,7.0,2,2,16040,BBC Contains Strong Language - LEEDS 2023,Partner Events
+2023-09-23,114521,LS10 1JQ,3.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-09-24,107086,LS1 5EB,4.0,1,2,15389,Hidden Stories: Lens Lab Project's City Stories: Common Ground Exhibition,Partner Events
+2023-09-24,107087,LS1 5EB,3.5,1,2,15389,Hidden Stories: Lens Lab Project's City Stories: Common Ground Exhibition,Partner Events
+2023-09-24,111735,LS1 7BR,3.0,1,3,15821,A City Without Seams,LEEDS 2023 Events
+2023-09-24,111736,LS1 7BR,8.0,2,3,15821,A City Without Seams,LEEDS 2023 Events
+2023-09-24,113560,LS1 6NU,6.0,2,2,16040,BBC Contains Strong Language - LEEDS 2023,Partner Events
+2023-09-24,113561,LS9 8AH,6.0,2,2,16040,BBC Contains Strong Language - LEEDS 2023,Partner Events
+2023-09-27,107088,LS1 5EB,4.0,1,2,15389,Hidden Stories: Lens Lab Project's City Stories: Common Ground Exhibition,Partner Events
+2023-09-27,114525,LS10 1JQ,4.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-09-28,107091,LS1 5EB,7.0,2,2,15389,Hidden Stories: Lens Lab Project's City Stories: Common Ground Exhibition,Partner Events
+2023-09-28,111190,LS2 9JT,22.0,11,20,15777,EXPLORE: Rollerskating,
+2023-09-28,115854,,12.0,8,40,15367,This is a Forest: Training Sessions,LEEDS 2023 Events
+2023-09-29,107092,LS1 5EB,8.0,2,2,15389,Hidden Stories: Lens Lab Project's City Stories: Common Ground Exhibition,Partner Events
+2023-09-29,107093,LS1 5EB,7.0,2,2,15389,Hidden Stories: Lens Lab Project's City Stories: Common Ground Exhibition,Partner Events
+2023-09-29,114527,LS10 1JQ,4.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-09-30,108771,LS11 8LU,7.667,1,3,14778,Moon Palace,LEEDS 2023 Events
+2023-09-30,113363,LS17 8GS,16.0,2,2,15981,Smeaton300 STEM and the Arts Teachers' Conference,LEEDS 2023 Events
+2023-09-30,114529,LS10 1JQ,6.0,2,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-10-02,115855,,27.0,18,40,15367,This is a Forest: Training Sessions,LEEDS 2023 Events
+2023-10-04,107097,LS1 5EB,3.5,1,2,15389,Hidden Stories: Lens Lab Project's City Stories: Common Ground Exhibition,Partner Events
+2023-10-04,114532,LS10 1JQ,4.0,1,2,14428,The Tetley: Helping with Visitor Surveys,Partner Events
+2023-10-04,116071,,25.84,34,50,16391,EXPLORE: Light Night 2023 - Exclusive Chat with the Artistic Director!,
+2023-10-05,117043,LS1 2HA,8.0,2,2,16552,Making a Stand - Kinematic Forest (Dance Activation),LEEDS 2023 Events
+2023-10-05,120443,LS2 7BT,4.0,1,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-06,112760,LS2 7BT,16.0,4,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-06,112865,LS2 7BT,13.5,3,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-06,120444,LS2 7BT,3.25,1,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-07,112866,LS2 7BT,8.0,2,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-07,112868,LS2 7BT,9.0,2,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-07,113521,LS10 1NE,25.5,17,20,13206,EXPLORE: The Incredible City of Leeds - Exclusive Guided Tours,
+2023-10-08,112870,LS2 7BT,4.5,1,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-09,115372,LS1 5ES,28.2,6,10,16289,Arts Ageing and Activism Symposium,Partner Events
+2023-10-11,112871,LS2 7BT,8.0,2,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-11,112872,LS2 7BT,13.5,3,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-12,112873,LS2 7BT,4.0,1,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-12,113377,LS2 3AD,440.0,80,150,15994,Light Night Leeds,Partner Events
+2023-10-12,113414,LS2 3AD,33.0,6,18,16008,Light Night Leeds (Photography),
+2023-10-13,112876,LS2 7BT,8.0,2,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-13,113378,LS2 3AD,522.5,95,150,15994,Light Night Leeds,Partner Events
+2023-10-13,113415,LS2 3AD,16.5,3,18,16008,Light Night Leeds (Photography),
+2023-10-14,111718,LS7 2QG,9.333,2,3,14778,Moon Palace,LEEDS 2023 Events
+2023-10-14,112879,LS2 7BT,8.0,2,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-14,112880,LS2 7BT,4.5,1,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-14,120923,LS7 2QG,40.0,8,20,16641,"My World, My City, My Neighbourhood - The Path Between",Partner Events
+2023-10-14,121232,LS9 7LN,4.5,1,10,16679,Animated Harehills (part of Leeds' Light Night),Partner Events
+2023-10-14,121715,LS7 3HY,10.0,2,8,16780,The Ginnel Night Walk,Partner Events
+2023-10-15,112881,LS2 7BT,8.0,2,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-15,112883,LS2 7BT,4.5,1,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-16,115859,,32.0,16,20,15042,Induction/Training Final Recruitment,
+2023-10-16,121617,LS2 7JL,7.5,3,4,16765,Sokunge,LEEDS 2023 Events
+2023-10-17,116802,LS2 9JS,6.0,2,2,16518,University of Leeds Culture at Leeds Event,Partner Events
+2023-10-17,116804,LS2 9JS,3.5,1,2,16518,University of Leeds Culture at Leeds Event,Partner Events
+2023-10-17,121618,LS2 7JL,7.5,3,4,16765,Sokunge,LEEDS 2023 Events
+2023-10-17,122132,LS1 3AB,8.0,2,2,16813,Smeaton300 Engineering Talks and Panels,LEEDS 2023 Events
+2023-10-18,112885,LS2 7BT,8.0,2,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-18,112886,LS2 7BT,4.5,1,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-18,115754,LS2 3DA,6.0,1,2,16327,Yorkshire Schools Dance Festival,LEEDS 2023 Events
+2023-10-19,112888,LS2 7BT,4.0,1,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-19,115755,LS2 3DA,18.0,3,4,16327,Yorkshire Schools Dance Festival,LEEDS 2023 Events
+2023-10-19,115794,LS10 1NE,36.0,18,25,16355,EXPLORE: Sketching,
+2023-10-19,115860,,38.0,19,20,15042,Induction/Training Final Recruitment,
+2023-10-19,121422,LS6 4DN,3.5,1,4,16694,And She Built a Crooked House - Exhibition,Partner Events
+2023-10-19,121423,LS6 4DN,6.0,2,4,16694,And She Built a Crooked House - Exhibition,Partner Events
+2023-10-20,112891,LS2 7BT,12.0,3,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-20,112892,LS2 7BT,13.5,3,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-20,121424,LS6 4DN,4.5,1,4,16694,And She Built a Crooked House - Exhibition,Partner Events
+2023-10-20,121425,LS6 4DN,18.0,4,4,16694,And She Built a Crooked House - Exhibition,Partner Events
+2023-10-20,121632,LS2 7JL,9.0,3,4,16765,Sokunge,LEEDS 2023 Events
+2023-10-21,112893,LS2 7BT,4.0,1,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-21,112894,LS2 7BT,9.0,2,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-22,111722,LS10 1LT,14.0,3,3,14778,Moon Palace,LEEDS 2023 Events
+2023-10-22,111723,LS10 1LT,9.0,2,2,14778,Moon Palace,LEEDS 2023 Events
+2023-10-22,112897,LS2 7BT,4.5,1,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-22,121428,LS6 4DN,3.5,1,4,16694,And She Built a Crooked House - Exhibition,Partner Events
+2023-10-22,121429,LS6 4DN,3.5,1,4,16694,And She Built a Crooked House - Exhibition,Partner Events
+2023-10-23,121634,LS2 7JL,8.0,2,4,16765,Sokunge,LEEDS 2023 Events
+2023-10-23,121927,,40.0,20,20,16810,All That Lives,LEEDS 2023 Events
+2023-10-24,111803,LS9 7DP,11.0,3,3,14778,Moon Palace,LEEDS 2023 Events
+2023-10-24,111810,LS9 7DP,4.5,1,2,14778,Moon Palace,LEEDS 2023 Events
+2023-10-24,121637,LS2 7JL,9.0,3,4,16765,Sokunge,LEEDS 2023 Events
+2023-10-24,122133,LS1 3AB,8.0,2,3,16813,Smeaton300 Engineering Talks and Panels,LEEDS 2023 Events
+2023-10-24,123229,LS10 1LT,38.0,5,5,16882,"Oral Archive Training - As part of Hidden Stories, Edible Archives",LEEDS 2023 Events
+2023-10-25,107116,LS1 5EB,8.0,2,2,15389,Hidden Stories: Lens Lab Project's City Stories: Common Ground Exhibition,Partner Events
+2023-10-25,112898,LS2 7BT,4.0,1,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-25,121430,LS6 4DN,7.0,2,4,16694,And She Built a Crooked House - Exhibition,Partner Events
+2023-10-25,121431,LS6 4DN,3.5,1,4,16694,And She Built a Crooked House - Exhibition,Partner Events
+2023-10-25,121928,,32.0,16,20,16810,All That Lives,LEEDS 2023 Events
+2023-10-25,122139,LS1 3AA,8.0,2,10,16814,Leeds Art Gallery: Youth Twilight Takeover,Partner Events
+2023-10-26,112901,LS2 7BT,4.0,1,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-26,112902,LS2 7BT,9.0,2,4,15905,This is a FOREST Exhibition,LEEDS 2023 Events
+2023-10-26,121432,LS6 4DN,3.5,1,4,16694,And She Built a Crooked House - Exhibition,Partner Events

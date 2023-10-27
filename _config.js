@@ -10,6 +10,8 @@ import postcss from "lume/plugins/postcss.ts";
 import svgo from "lume/plugins/svgo.ts";
 import colorFunction from "npm:postcss-color-function";
 
+import { walkSync } from "std/fs/mod.ts";
+
 import oiViz from 'oi-lume-viz/mod.ts';
 import csvLoader from 'oi-lume-utils/loaders/csv-loader.ts';
 import autoDependency from 'oi-lume-utils/processors/auto-dependency.ts';
@@ -127,17 +129,8 @@ site.copy('/assets/images');
 site.copy('/assets/js/vendors');
 
 // Publish raw data
-[
-  'ballot/ballot_entries.csv',
-  'roadshows/attendance_and_communication_signup_summary.csv',
-  'roadshows/attendance.csv',
-  'social/twitter.csv',
-  'social/instagram.csv',
-  'social/linkedin.csv',
-  'social/facebook.csv',
-  'volunteers/volunteers.csv',
-].forEach(file => {
-  site.remoteFile(`/data/${file}`, `./data/metrics/${file}`)
+Array.from(walkSync('./data/metrics', { includeDirs: false })).forEach(({ path }) => {
+  site.remoteFile(`/data/${path.replace(/^data\/metrics\//, "")}`, `./${path}`)
 });
 
 [
@@ -188,5 +181,6 @@ site.filter('humanise', (input, max_exponent = Infinity, spacer = '') => {
 });
 
 site.filter('pathUpdated', filters.gitPathUpdated, true);
+site.filter('sub', (x, pattern, replacement) => x.replace(pattern, replacement));
 
 export default site;

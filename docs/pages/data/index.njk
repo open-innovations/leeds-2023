@@ -1,0 +1,68 @@
+---
+title: Data
+url: /data/
+---
+
+
+<main>
+
+<table>
+  <thead>
+    <th>Source</th>
+    <th>Used by</th>
+    <th>
+      Date last updated
+    </th>
+  </thead>
+  <tbody>
+  {% for source in search.values('sources') %}
+    <tr>
+      <td>{{ source }}</td>
+      <td>
+        {% for p in search.pages('sources*=' + source) | data %}
+          <a href="{{ p.url }}">{{ p.title }}</p>
+        {% endfor %}
+      </td>
+      <td>{{ source | pathUpdated | date('HUMAN_DATE') }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <th>
+      Title
+    </th>
+    <th>
+      Sources
+    </th>
+  </thead>
+{% for dataset in search.pages('metrics main') | data %}
+  <tr>
+    <td>
+      <a href="{{ dataset.url }}">{{ dataset.title or 'shrug' }}</a>
+    </td>
+    <td>
+      {{ dataset.sources or [] | join("<br/>") }}
+    </td>
+  </tr>
+{% endfor %}
+
+</table>
+<table>
+<thead>
+  <th>File</th>
+  <th>Path</th>
+<tbody>
+{% for p in search.files("/data/*/**") %}
+{% set ref = p | sub("/data/", "data/metrics/") %}
+<tr>
+  <td>{{ p }}</td>
+  <td>{{ ref | pathUpdated }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+</main>

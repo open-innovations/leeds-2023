@@ -25,7 +25,7 @@ metas:
 
   {{ comp.metric.headline({
     title: "Total attendances", headingLevel: 2,
-    value: headlines.total_attendances | localize,
+    value: events_by_date.columns.attendances | sum | localize,
     description: "Total number of attendances at LEEDS 2023 Signature events.",
     background: "var(--l23-yellow)"
   }) | safe }}
@@ -69,6 +69,54 @@ metas:
     {{ comp.viz.bigNumber({
       number: (
         search.data('metrics/events/the-barn').events.headlines.total_audience
+       ) | localize
+    }) | safe }}
+    </section>
+    <p>Ticket ballot and event attendances.</p>
+  {% endcomp %}
+
+  {% comp "grid.block.impact", {
+    link: "/metrics/events/childrens-day/",
+    colour: "black",
+    bg: "var(--l23-cyan)"
+  } %}
+    <h2>Children's Day</h2>
+    <section style="--big-number-size: clamp(2rem, 6vw, 3.7rem);">
+    {{ comp.viz.bigNumber({
+      number: (
+        search.data('metrics/events/childrens-day').events.headlines.total_audience
+       ) | localize
+    }) | safe }}
+    </section>
+    <p>Ticket ballot and event attendances.</p>
+  {% endcomp %}
+
+  {% comp "grid.block.impact", {
+    link: "/metrics/events/nest/",
+    colour: "black",
+    bg: "var(--l23-cyan)"
+  } %}
+    <h2>Nest</h2>
+    <section style="--big-number-size: clamp(2rem, 6vw, 3.7rem);">
+    {{ comp.viz.bigNumber({
+      number: (
+        search.data('metrics/events/nest').events.headlines.total_audience
+       ) | localize
+    }) | safe }}
+    </section>
+    <p>Ticket ballot and event attendances.</p>
+  {% endcomp %}
+
+  {% comp "grid.block.impact", {
+    link: "/metrics/events/smeaton-300/",
+    colour: "black",
+    bg: "var(--l23-cyan)"
+  } %}
+    <h2>Smeaton300</h2>
+    <section style="--big-number-size: clamp(2rem, 6vw, 3.7rem);">
+    {{ comp.viz.bigNumber({
+      number: (
+        search.data('metrics/events/smeaton-300').events.headlines.total_audience
        ) | localize
     }) | safe }}
     </section>

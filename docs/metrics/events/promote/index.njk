@@ -11,6 +11,9 @@ metas:
 limitations: 
   - Events and activities data are extracted from Airtable.
   - No attendance or location data is currently available in the source data.
+sources:
+  - data/metrics/events/master
+  - data/metrics/events/promote-events/events.csv
 ---
 
 {% from 'macros.njk' import dateFormatterNoDay %}

@@ -22,6 +22,7 @@ if __name__ == "__main__":
             'ACTUAL Audience size / number of participants - IN PERSON',
             'ACTUAL Audience size / number of participants - ONLINE',
             'Number of booked participants',
+            'Ticket Tailor ID',
         ])
 
     data.to_csv(os.path.join(WORKING_DIR, 'all.csv'), index=False)

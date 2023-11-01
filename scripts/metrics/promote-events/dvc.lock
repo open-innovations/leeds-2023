@@ -10,16 +10,16 @@ stages:
     outs:
     - path: working/metrics/promote-events/
       hash: md5
-      md5: 85f4341fdcac0da9c09d1743e7afcbca.dir
-      size: 18947
+      md5: 3987a58c17fecfae88fcd1333449395f.dir
+      size: 19172
       nfiles: 1
   transform:
     cmd: papermill transform.ipynb ../../../working/output/promote-events-transform.ipynb
     deps:
     - path: ../../../working/metrics/promote-events/
       hash: md5
-      md5: 85f4341fdcac0da9c09d1743e7afcbca.dir
-      size: 18947
+      md5: 3987a58c17fecfae88fcd1333449395f.dir
+      size: 19172
       nfiles: 1
     - path: transform.ipynb
       hash: md5

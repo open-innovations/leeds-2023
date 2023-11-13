@@ -1,34 +1,34 @@
 ward_code,ward,schools_engaged,total_engagements,count_of_schools,pupil_engagements,percent_of_schools_in_ward_engaged
 E05011384,Ardsley and Robin Hood,3,3,4,285,75.0
 E05011385,Armley,7,15,10,485,70.0
-E05011387,Bramley and Stanningley,8,15,13,1053,61.5
-E05011388,Burmantofts and Richmond Hill,9,17,11,635,81.8
+E05011387,Bramley and Stanningley,9,16,13,1053,69.2
+E05011388,Burmantofts and Richmond Hill,9,19,11,695,81.8
 E05011389,Calverley and Farsley,3,4,6,76,50.0
-E05011390,Chapel Allerton,8,19,11,1027,72.7
-E05011391,Cross Gates and Whinmoor,6,13,10,1526,60.0
-E05011394,Gipton and Harehills,4,5,11,69,36.4
-E05011395,Guiseley and Rawdon,6,8,14,559,42.9
-E05011396,Harewood,3,4,6,308,50.0
+E05011390,Chapel Allerton,8,19,11,1057,72.7
+E05011391,Cross Gates and Whinmoor,6,14,10,1526,60.0
+E05011394,Gipton and Harehills,5,6,11,128,45.5
+E05011395,Guiseley and Rawdon,8,10,14,559,57.1
+E05011396,Harewood,3,4,6,408,50.0
 E05011397,Headingley and Hyde Park,4,8,5,852,80.0
-E05011399,Hunslet and Riverside,3,6,8,177,37.5
+E05011399,Hunslet and Riverside,4,7,8,177,50.0
 E05011400,Killingbeck and Seacroft,5,10,9,1083,55.6
 E05011401,Kippax and Methley,2,2,9,16,22.2
 E05011402,Kirkstall,4,4,7,613,57.1
-E05011403,Little London and Woodhouse,3,18,7,748,42.9
-E05011404,Middleton Park,6,17,13,1342,46.2
-E05011405,Moortown,10,30,16,1668,62.5
-E05011406,Morley North,2,3,7,83,28.6
-E05011407,Morley South,4,6,11,551,36.4
+E05011403,Little London and Woodhouse,3,19,7,748,42.9
+E05011404,Middleton Park,8,20,13,1342,61.5
+E05011405,Moortown,11,31,16,1680,68.8
+E05011406,Morley North,5,8,7,83,71.4
+E05011407,Morley South,5,10,11,551,45.5
 E05011409,Pudsey,8,9,15,415,53.3
-E05011410,Rothwell,3,8,10,454,30.0
-E05011411,Roundhay,6,13,8,943,75.0
-E05011413,Weetwood,8,19,10,1406,80.0
+E05011410,Rothwell,3,9,10,454,30.0
+E05011411,Roundhay,6,14,8,943,75.0
+E05011413,Weetwood,8,19,10,1435,80.0
 E05011414,Wetherby,4,7,13,344,30.8
 E05011547,Horsforth,5,14,9,1160,55.6
-E05011549,Otley and Yeadon,6,9,8,469,75.0
+E05011549,Otley and Yeadon,6,10,8,469,75.0
 E05012647,Beeston and Holbeck,8,22,13,1219,61.5
-E05012648,Farnley and Wortley,4,11,8,403,50.0
+E05012648,Farnley and Wortley,5,13,8,403,62.5
 E05012841,Adel and Wharfedale,6,14,6,1554,100.0
-E05012842,Alwoodley,5,9,7,844,71.4
-E05013830,Garforth and Swillington,3,5,7,226,42.9
-E05013831,Temple Newsam,5,13,10,2031,50.0
+E05012842,Alwoodley,5,9,7,874,71.4
+E05013830,Garforth and Swillington,3,6,7,226,42.9
+E05013831,Temple Newsam,6,14,10,2031,60.0

@@ -104,7 +104,7 @@ def guess_date(data, latest_date):
 def convert_numbers(data):
     # Convert viewship to int
     try:
-        data['uv'] = data['uv'].fillna(0).astype('Int64')
+        data['uv'] = data['uv'].fillna(0).astype('Int64', errors="ignore")
     except KeyError as e:
         logger.error('Source file -> %s', data.source_file[0])
         logger.error('Columns %s', data.columns)

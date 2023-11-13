@@ -10,14 +10,14 @@ stages:
     outs:
     - path: ../../../working/metrics/community/events.csv
       hash: md5
-      md5: e3df3d2038703a50e56ebdc31fc97809
+      md5: 7dff7917fefd0b13eaddc28fbb2a78bb
       size: 280639
   transform:
     cmd: papermill transform.ipynb ../../../working/output/community-transform.ipynb
     deps:
     - path: ../../../working/metrics/community/events.csv
       hash: md5
-      md5: e3df3d2038703a50e56ebdc31fc97809
+      md5: 7dff7917fefd0b13eaddc28fbb2a78bb
       size: 280639
     - path: transform.ipynb
       hash: md5

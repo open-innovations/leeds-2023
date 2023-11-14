@@ -1,7 +1,7 @@
 ward_code,ward,schools_engaged,total_engagements,count_of_schools,pupil_engagements,percent_of_schools_in_ward_engaged
-E05011384,Ardsley and Robin Hood,3,3,4,285,75.0
+E05011384,Ardsley and Robin Hood,3,4,4,345,75.0
 E05011385,Armley,7,15,10,485,70.0
-E05011387,Bramley and Stanningley,9,16,13,1053,69.2
+E05011387,Bramley and Stanningley,9,16,13,1078,69.2
 E05011388,Burmantofts and Richmond Hill,9,19,11,695,81.8
 E05011389,Calverley and Farsley,3,4,6,76,50.0
 E05011390,Chapel Allerton,8,19,11,1057,72.7
@@ -15,18 +15,18 @@ E05011400,Killingbeck and Seacroft,5,10,9,1083,55.6
 E05011401,Kippax and Methley,2,2,9,16,22.2
 E05011402,Kirkstall,4,4,7,613,57.1
 E05011403,Little London and Woodhouse,3,19,7,748,42.9
-E05011404,Middleton Park,8,20,13,1342,61.5
+E05011404,Middleton Park,8,22,13,1462,61.5
 E05011405,Moortown,11,31,16,1680,68.8
 E05011406,Morley North,5,8,7,83,71.4
 E05011407,Morley South,5,10,11,551,45.5
-E05011409,Pudsey,8,9,15,415,53.3
+E05011409,Pudsey,8,10,15,475,53.3
 E05011410,Rothwell,3,9,10,454,30.0
 E05011411,Roundhay,6,14,8,943,75.0
 E05011413,Weetwood,8,19,10,1435,80.0
 E05011414,Wetherby,4,7,13,344,30.8
 E05011547,Horsforth,5,14,9,1160,55.6
 E05011549,Otley and Yeadon,6,10,8,469,75.0
-E05012647,Beeston and Holbeck,8,22,13,1219,61.5
+E05012647,Beeston and Holbeck,8,23,13,1271,61.5
 E05012648,Farnley and Wortley,5,13,8,403,62.5
 E05012841,Adel and Wharfedale,6,14,6,1554,100.0
 E05012842,Alwoodley,5,9,7,874,71.4

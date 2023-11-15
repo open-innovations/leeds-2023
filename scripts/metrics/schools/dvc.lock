@@ -9,13 +9,13 @@ stages:
       size: 2597
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
-      md5: 0aaba78bb2fde51484d93bb08fd527e8
-      size: 168580
+      md5: 38b765d9f52d1275334139c726df82a9
+      size: 167643
     outs:
     - path: data/metrics/schools/schools_events.csv
       hash: md5
-      md5: 5b2f66032ab17ec5e2e09c4beacccaf8
-      size: 79563
+      md5: cc8e391ea1b58656cb0ae353c16fb796
+      size: 79246
   extract:
     cmd: PYTHONPATH=. python scripts/metrics/schools/extract.py
     deps:
@@ -26,15 +26,15 @@ stages:
     outs:
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
-      md5: 0aaba78bb2fde51484d93bb08fd527e8
-      size: 168580
+      md5: 38b765d9f52d1275334139c726df82a9
+      size: 167643
   prepare:
     cmd: PYTHONPATH=. python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
       hash: md5
-      md5: 5b2f66032ab17ec5e2e09c4beacccaf8
-      size: 79563
+      md5: cc8e391ea1b58656cb0ae353c16fb796
+      size: 79246
     - path: data/reference/leeds_wards.csv
       hash: md5
       md5: 887a42d46d34c9e966211a79f2b8a672
@@ -50,19 +50,19 @@ stages:
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
       hash: md5
-      md5: df19d5dcc4d38b69cadc8894859d418b
+      md5: 1359e749957d6d815c5937cb6e052adc
       size: 1545
     - path: docs/metrics/schools/_data/engagements_by_week.csv
       hash: md5
-      md5: 014a05e30144f174f5a7cdddec1e715a
+      md5: b6aab0e4c044d7b705b35b97ebef8624
       size: 1651
     - path: docs/metrics/schools/_data/headlines.json
       hash: md5
-      md5: 1bad6fcc0672d106af77d589936fbc0b
+      md5: 2393b68157c2c0081f9f249da1def836
       size: 374
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
       hash: md5
-      md5: 16cf873414f7648d0e43cb639332012c
+      md5: b39ac9ef2fba646c5378978e072a3b8a
       size: 11505
   ref_data:
     cmd: PYTHONPATH=. python scripts/metrics/schools/get_reference_data.py

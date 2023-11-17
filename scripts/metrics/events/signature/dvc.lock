@@ -5,8 +5,8 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: d5c2e441d8850a485cb8e150935fa497
-      size: 347997
+      md5: 31c5799b55fe831b8419e66c47627841
+      size: 349473
     - path: ../../../../lib/util/
       hash: md5
       md5: 1716a8255a4563e6111e07666ced83f0.dir
@@ -42,8 +42,8 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: d5c2e441d8850a485cb8e150935fa497
-      size: 347997
+      md5: 31c5799b55fe831b8419e66c47627841
+      size: 349473
     - path: ../../../../lib/util/
       hash: md5
       md5: 1716a8255a4563e6111e07666ced83f0.dir
@@ -79,12 +79,12 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: d5c2e441d8850a485cb8e150935fa497
-      size: 347997
+      md5: 31c5799b55fe831b8419e66c47627841
+      size: 349473
     - path: ../../../../data/metrics/events/tickets/orders.csv
       hash: md5
-      md5: c18c6ea693bcaea47408ee967cfadf9d
-      size: 311241
+      md5: 38e90bb2b59335e07755da0abe670072
+      size: 313230
     - path: events.py
       hash: md5
       md5: 25a51096f645446456576c2b95f6e38a
@@ -96,15 +96,15 @@ stages:
     outs:
     - path: ../../../../docs/metrics/events/signature/_data/events_by_date.csv
       hash: md5
-      md5: 9bca4da3bf949e80c7ca83373c2ee1c5
+      md5: 049fb9220cda796e13b6b79f1383dcf4
       size: 281
     - path: ../../../../docs/metrics/events/signature/_data/events_by_ward.csv
       hash: md5
-      md5: 078cba74d98117da23537287223d20b6
+      md5: 3abeb3c4b9ddc7d6e1257513e3679529
       size: 512
     - path: ../../../../docs/metrics/events/signature/_data/headlines.json
       hash: md5
-      md5: 95342710d0cf9174b475166b5f96b1e8
+      md5: a9ef6945040106cfac2ba18c0b0a977d
       size: 210
     - path: ../../../../docs/metrics/events/signature/_data/tickets_by_event_date.csv
       hash: md5
@@ -123,9 +123,9 @@ stages:
       size: 349473
     - path: ../../../../lib/util/
       hash: md5
-      md5: c29f173f8ef9871a71c87e431c14f4e5.dir
-      size: 5093
-      nfiles: 4
+      md5: 1716a8255a4563e6111e07666ced83f0.dir
+      size: 2040
+      nfiles: 2
     - path: events.py
       hash: md5
       md5: 25a51096f645446456576c2b95f6e38a
@@ -156,8 +156,8 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: d5c2e441d8850a485cb8e150935fa497
-      size: 347997
+      md5: 31c5799b55fe831b8419e66c47627841
+      size: 349473
     - path: ../../../../lib/util/
       hash: md5
       md5: 1716a8255a4563e6111e07666ced83f0.dir
@@ -193,8 +193,8 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: d5c2e441d8850a485cb8e150935fa497
-      size: 347997
+      md5: 31c5799b55fe831b8419e66c47627841
+      size: 349473
     - path: ../../../../lib/util/
       hash: md5
       md5: 1716a8255a4563e6111e07666ced83f0.dir
@@ -211,17 +211,17 @@ stages:
     outs:
     - path: ../../../../docs/metrics/events/smeaton-300/_data/events/by_month.csv
       hash: md5
-      md5: 5e0c51e1a973ef149b96835ead296e3e
+      md5: a39d7f6d0543acf5c76f55371406a91c
       size: 292
     - path: ../../../../docs/metrics/events/smeaton-300/_data/events/by_ward.csv
       hash: md5
-      md5: 503a967cfa2fd41724f987bd439ba67a
-      size: 234
+      md5: a49e53cc52451d97856634a7a8adda78
+      size: 285
     - path: ../../../../docs/metrics/events/smeaton-300/_data/events/by_week.csv
       hash: md5
-      md5: af2605d44c964cb460d9361bfe3215bd
-      size: 924
+      md5: dd2eccd71f74b87a7ab6738ae6275069
+      size: 949
     - path: ../../../../docs/metrics/events/smeaton-300/_data/events/headlines.json
       hash: md5
-      md5: 391620ab84fd581d7121d652718bbf67
+      md5: 98037e647c7d1418e6f4c26f4f6ca6fa
       size: 155

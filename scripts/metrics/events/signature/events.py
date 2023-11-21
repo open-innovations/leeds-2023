@@ -47,7 +47,16 @@ def filter_community_events(data):
     Selects rows in the data with an event type that includes CLE Community Engagements
     """
     return data.loc[
-        data.event_type.str.contains('CLE - Community Engagement')
+        data.event_type.str.contains(r'CLE - Community Engagement|CLE - Youth Voice session|CLE - Participant / Volunteer thank you event|CLE - Skills and Talent session',
+                                     regex=True)
+    ]
+
+def filter_school_events(data):
+    """
+    Selects rows in the data with an event type that includes CLE Community Engagements
+    """
+    return data.loc[
+        data.event_type.str.contains('CLE - Creative Learning session')
     ]
 
 

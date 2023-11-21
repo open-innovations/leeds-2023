@@ -29,6 +29,12 @@ stages:
         - ${top}/docs/metrics/events/${item}/_data/events/by_week.csv:
             persist: false
             cache: false
+        # - ${top}/docs/metrics/events/${item}/_data/events/tickets_by_date.csv:
+        #     persist: false
+        #     cache: false
+        # - ${top}/docs/metrics/events/${item}/_data/events/tickets_by_ward.csv:
+        #     persist: false
+        #     cache: false
   prepare-summary:
     cmd: papermill prepare.ipynb ${top}/working/output/signature-prepare.ipynb
     deps:

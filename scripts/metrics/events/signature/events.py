@@ -42,6 +42,14 @@ def filter_public_events(data):
         data.event_type.str.contains('Public Event -')
     ]
 
+def filter_community_events(data):
+    """
+    Selects rows in the data with an event type that includes CLE Community Engagements
+    """
+    return data.loc[
+        data.event_type.str.contains('CLE - Community Engagement')
+    ]
+
 
 def filter_by_project(data, project_name):
     """

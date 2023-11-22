@@ -19,18 +19,10 @@ limitations:
 
 {% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
   {{ comp.metric.headline({
-    title: "Number of events", headingLevel: 2,
+    title: "Total number of events", headingLevel: 2,
     value: events.headlines.total_events | localize,
     description: "Total activities held as part of this Signature event.",
     background: "var(--l23-magenta)"
-  }) | safe }}
-
-  {% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
-  {{ comp.metric.headline({
-    title: "Number of wards engaged", headingLevel: 2,
-    value: events.headlines.ward_count | localize,
-    description: "Total number of wards engaged with as part of this Signature event.",
-    background: "var(--l23-cyan)"
   }) | safe }}
 
     {{ comp.metric.headline({
@@ -40,10 +32,46 @@ limitations:
     background: "var(--l23-magenta)"
   }) | safe }}
 
+    {{ comp.metric.headline({
+    title: "Public events", headingLevel: 2,
+    value: events.public.headlines.total_events | localize ,
+    description: "Total number of public facing events.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Public audience", headingLevel: 2,
+    value: events.public.headlines.total_audience | localize ,
+    description: "Total count of attendees at public facing events.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "School engagements", headingLevel: 2,
+    value: events.schools.headlines.total_events | localize ,
+    description: "Total engagements with schools.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Pupil engagements", headingLevel: 2,
+    value: events.schools.headlines.total_audience | localize ,
+    description: "Total count of school pupils engaged.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Number of wards engaged", headingLevel: 2,
+    value: events.headlines.ward_count | localize,
+    description: "Total number of wards engaged with as part of this Signature event.",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }}
+
 {% endcomp %}
 
 
-{% comp 'layout.figure', {max_width: '50rem'} %}
+{% comp 'layout.figure', {max_width: '80rem'} %}
 <h3>Events held by week</h3>
   {{ comp.oi.viz.graph.line({ config: {
     categories: events.by_week.columns.week_ending,
@@ -89,4 +117,24 @@ limitations:
     }
   } }) | safe }}
 {% endcomp %}
-{% endcomp %}
+
+{% comp 'layout.figure', {max_width: '60rem'}  %}
+  <h3>Events held per ward</h3>
+  {{ comp.oi.viz.map.hex_cartogram({
+    config: {
+      hexjson: hex.wards_leeds,
+      data: events.by_ward.rows,
+      matchKey: 'ward_code',
+      value: 'events',
+      bgColour: '#ddd',
+      label: '{{ n | slice(0,3) }}',
+      tooltip: '<h4>{{ n }}</h4><p><strong>{{ events | "0" }}</strong> ticket(s) sold</p>',
+      min: 0,
+      scale: 'magenta'
+    }
+    }) | safe }}
+
+  {% endcomp %}
+
+
+

@@ -5,38 +5,40 @@ stages:
     deps:
     - path: lib/sources/airtable.py
       hash: md5
-      md5: 4d4c1174da6375dcf698fd5740ea9cc5
-      size: 685
+      md5: bb289692f4c6251aa42a217e7fc194e6
+      size: 709
     - path: scripts/metrics/events/scheduled/extract.py
       hash: md5
-      md5: 656d405a9b00e55a3186bc1decb45e33
-      size: 888
+      md5: e27b77b081138238355fe67c6047ab72
+      size: 916
     outs:
     - path: working/metrics/events/all.csv
       hash: md5
-      md5: f2349f4286f26418d2ab4ee341881c62
-      size: 381411
+      md5: 118b2a497a71d361c2535a9fe339afd2
+      size: 375964
+      isexec: true
   transform:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/transform.py
     deps:
     - path: lib/util/
       hash: md5
-      md5: 1716a8255a4563e6111e07666ced83f0.dir
-      size: 2040
-      nfiles: 2
+      md5: ada10ef6368489d2b3e993e3af0d5673.dir
+      size: 5194
+      nfiles: 4
     - path: scripts/metrics/events/scheduled/transform.py
       hash: md5
-      md5: 524e279ace334758487c53542086d809
-      size: 676
+      md5: ae63dbe261c1d76dd00a1497c8e0d9d4
+      size: 696
     - path: working/metrics/events/all.csv
       hash: md5
-      md5: f2349f4286f26418d2ab4ee341881c62
-      size: 381411
+      md5: 118b2a497a71d361c2535a9fe339afd2
+      size: 375964
     outs:
     - path: data/metrics/events/master/all.csv
       hash: md5
-      md5: 3cd5f36879e924ae4a02ae600177d1a4
-      size: 354610
+      md5: 51f86908d30e17e1e5ebd45f574faefe
+      size: 350945
+      isexec: true
   prepare:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/prepare.py
     deps:

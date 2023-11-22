@@ -20,7 +20,7 @@ limitations:
 
 {% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
   {{ comp.metric.headline({
-    title: "Number of events", headingLevel: 2,
+    title: "Total events", headingLevel: 2,
     value: events.headlines.total_events | localize,
     description: "Total activities held as part of this Signature event.",
     background: "var(--l23-magenta)"
@@ -30,9 +30,63 @@ limitations:
     title: "Total audience", headingLevel: 2,
     value: events.headlines.total_audience | localize ,
     description: "Total number of attendances online and in person.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Public events", headingLevel: 2,
+    value: events.public.headlines.total_events | localize ,
+    description: "Total number of public facing events.",
     background: "var(--l23-yellow)"
   }) | safe }}
-{% endcomp %}
+
+
+    {{ comp.metric.headline({
+    title: "Public audience", headingLevel: 2,
+    value: events.public.headlines.total_audience | localize ,
+    description: "Total count of attendees at public facing events.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
+  
+    {{ comp.metric.headline({
+    title: "School engagements", headingLevel: 2,
+    value: events.schools.headlines.total_events | localize ,
+    description: "Total count of engagements with schools.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+
+      {{ comp.metric.headline({
+    title: "Pupil engagements", headingLevel: 2,
+    value: events.schools.headlines.total_audience | localize ,
+    description: "Total count of school pupils engaged.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Community engagements", headingLevel: 2,
+    value: events.community.headlines.total_events | localize ,
+    description: "Total number of community engagement events.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Community audience", headingLevel: 2,
+    value: events.community.headlines.total_audience | localize ,
+    description: "Total number of community engagement events.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Number of wards engaged", headingLevel: 2,
+    value: events.headlines.ward_count | localize,
+    description: "Total number of wards engaged with as part of this Signature event.",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }}
+
+{% endcomp %} 
 
 {% comp 'layout.figure' %}
 <h3>Events held by week</h3>
@@ -63,13 +117,13 @@ limitations:
     },
     series: [
       {
-        id: "events", label: "Number of events held",
+        id: "cumulative_events", label: "Number of events held",
         yValues: events.by_week.columns.cumulative_events,
         colour: 'var(--l23-magenta)',
         markerOptions: { s: 5 }
       },
       {
-        id: "audience", label: "Total audience",
+        id: "cumulative_audience", label: "Total audience",
         yValues: events.by_week.columns.cumulative_audience,
         colour: 'var(--l23-cyan)',
         markerOptions: { s: 5 }
@@ -80,4 +134,3 @@ limitations:
     }
   } }) | safe }}
 {% endcomp %}
-

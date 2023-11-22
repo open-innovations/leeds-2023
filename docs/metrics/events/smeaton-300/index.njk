@@ -1,4 +1,4 @@
----
+ ---
 title: Smeaton 300
 summary: Metrics related to Smeaton 300 - a Signature Event held by LEEDS 2023.
 tags:
@@ -71,7 +71,7 @@ limitations:
 {% endcomp %}
 
 
-{% comp 'layout.figure', {max_width: '80rem'} %}
+{% comp 'layout.figure', { max_width: '80rem' } %}
 <h3>Events held by week</h3>
   {{ comp.oi.viz.graph.line({ config: {
     categories: events.by_week.columns.week_ending,
@@ -100,13 +100,13 @@ limitations:
     },
     series: [
       {
-        id: "events", label: "Number of events held",
+        id: "cumulative_events", label: "Number of events held",
         yValues: events.by_week.columns.cumulative_events,
         colour: 'var(--l23-magenta)',
         markerOptions: { s: 5 }
       },
       {
-        id: "audience", label: "Total audience",
+        id: "cumulative_audience", label: "Total audience",
         yValues: events.by_week.columns.cumulative_audience,
         colour: 'var(--l23-cyan)',
         markerOptions: { s: 5 }
@@ -135,6 +135,3 @@ limitations:
     }) | safe }}
 
   {% endcomp %}
-
-
-

@@ -141,7 +141,7 @@ def by_month(data):
 
 def save_stats_by_ward(data, output_dir):
     os.makedirs(output_dir, exist_ok=True)
-    data.pipe(by_ward).astype(int).to_csv(os.path.join(output_dir, 'by_ward.csv'))
+    data.pipe(by_ward).to_csv(os.path.join(output_dir, 'by_ward.csv'))
     return data
 
 

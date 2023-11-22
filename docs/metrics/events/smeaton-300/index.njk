@@ -118,7 +118,7 @@ limitations:
   } }) | safe }}
 {% endcomp %}
 
- {% comp 'layout.figure', {max_width: '60rem'}  %}
+{% comp 'layout.figure', {max_width: '60rem'}  %}
   <h3>Events held per ward</h3>
   {{ comp.oi.viz.map.hex_cartogram({
     config: {
@@ -128,10 +128,10 @@ limitations:
       value: 'events',
       bgColour: '#ddd',
       label: '{{ n | slice(0,3) }}',
-      tooltip: '<h4>{{ n }}</h4><p><strong>{{ events | "0" }}</strong> event(s) held</p>',
+      tooltip: '<h4>{{ n }}</h4><p><strong>{{ events | "0" }}</strong> ticket(s) sold</p>',
       min: 0,
       scale: 'magenta'
     }
     }) | safe }}
 
-  {% endcomp %} 
+  {% endcomp %}

@@ -104,7 +104,19 @@ site.use(svgo());
 
 site.loadPages([".html"]);
 
-site.loadData([".csv"], csvLoader);
+// Wrap up the CSV loader in some error handling
+site.loadData([".csv"], async (filePath) => {
+  try {
+    const data = await csvLoader(filePath)
+    return data;
+  } catch(e) {
+    if (e.message.match(/^File has no data/)) {
+      console.error(e.message);
+      return undefined;
+    }
+    throw e;
+  }
+});
 
 // TODO Get access to the font files
 // [

@@ -19,25 +19,67 @@ limitations:
 
 {% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
   {{ comp.metric.headline({
-    title: "Number of events", headingLevel: 2,
+    title: "Total number of events", headingLevel: 2,
     value: events.headlines.total_events | localize,
     description: "Total activities held as part of this Signature event.",
     background: "var(--l23-magenta)"
   }) | safe }}
 
   {{ comp.metric.headline({
-    title: "Related Callouts", headingLevel: 2,
-    value: 'TBC',
-    description: "Total call out opportunities related to this event.",
-    link: "/metrics/callouts/",
-    background: "var(--l23-cyan)"
-  }) | safe }}
-
-    {{ comp.metric.headline({
     title: "Total audience", headingLevel: 2,
     value: events.headlines.total_audience | localize ,
     description: "Total number of attendances online and in person.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Number of public facing events", headingLevel: 2,
+    value: events.public.headlines.total_events | localize ,
+    description: "Total number of public facing events.",
     background: "var(--l23-yellow)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Public audience", headingLevel: 2,
+    value: events.public.headlines.total_audience | localize ,
+    description: "Total count of attendees at public facing events.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Community engagements", headingLevel: 2,
+    value: events.community.headlines.total_events | localize ,
+    description: "Number of community engagement events.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Community event attendees", headingLevel: 2,
+    value: events.community.headlines.total_audience | localize ,
+    description: "Total count of attendees at community engagement events.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Tickets sold", headingLevel: 2,
+    value: events.tickets_by_date.columns.tickets | last | localize ,
+    description: "Total number of tickets sold.",
+    background: "var(--l23-dark-blue-grey)", 
+    colour: "white"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Callouts", headingLevel: 2,
+    value: 1,
+    description: "Total number of Callouts associated with this event.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Callout responses", headingLevel: 2,
+    value: (search.data('metrics/callouts').responses_by_callout.columns.responses[11]) | localize ,
+    description: "Total number of Callout responses.",
+    background: "var(--l23-magenta)"
   }) | safe }}
 
 {% endcomp %}

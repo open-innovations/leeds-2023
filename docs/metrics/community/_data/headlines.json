@@ -1,9 +1,9 @@
 {
-  "events":310,
-  "audience":5744,
+  "events":300,
+  "audience":5702,
   "errors":{
-    "missing_wards":82,
-    "missing_audience":178,
+    "missing_wards":75,
+    "missing_audience":176,
     "zero_audience":4
   }
 }

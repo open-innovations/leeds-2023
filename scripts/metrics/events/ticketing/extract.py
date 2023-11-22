@@ -28,6 +28,8 @@ if __name__ == '__main__':
             'event_id',
             'event_name',
             'event_date',
+            'event_time',
+            'event_datetime',
             'number_of_tickets',
             'referral_tag',
             'status',

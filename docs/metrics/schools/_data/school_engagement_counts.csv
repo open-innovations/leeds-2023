@@ -5,14 +5,14 @@ Adel Primary School,3,Adel and Wharfedale,E05012841
 Adel St John the Baptist Church of England Primary School,1,Adel and Wharfedale,E05012841
 Al Kauthar Girls Academy,1,Chapel Allerton,E05011390
 Alder Tree Primary Academy,1,Chapel Allerton,E05011390
-Allerton CofE Primary School,2,Alwoodley,E05012842
+Allerton CofE Primary School,3,Alwoodley,E05012842
 Allerton Grange School,1,Moortown,E05011405
 Allerton High School,3,Moortown,E05011405
 Alwoodley Primary School,2,Alwoodley,E05012842
 Armley Park Primary School,2,Armley,E05011385
 Ashfield Primary School,1,Otley and Yeadon,E05011549
 Austhorpe Primary School,1,Temple Newsam,E05013831
-Barwick-in-Elmet Church of England Voluntary Controlled Primary School,1,Harewood,E05011396
+Barwick-in-Elmet Church of England Voluntary Controlled Primary School,2,Harewood,E05011396
 Beechwood Primary School,4,Killingbeck and Seacroft,E05011400
 Beeston Hill St Luke's Church of England Primary School,1,Beeston and Holbeck,E05012647
 Benton Park School,1,Guiseley and Rawdon,E05011395
@@ -42,9 +42,9 @@ Co-op Beckfield,5,,
 Cobden Primary School,4,Farnley and Wortley,E05012648
 Cockburn John Charles Academy,5,Middleton Park,E05011404
 Cockburn School,5,Beeston and Holbeck,E05012647
-Cookridge Holy Trinity Church of England Primary School,1,Adel and Wharfedale,E05012841
+Cookridge Holy Trinity Church of England Primary School,2,Adel and Wharfedale,E05012841
 Cookridge Primary School,8,Weetwood,E05011413
-"Corpus Christi Catholic College, A Voluntary Academy",2,Temple Newsam,E05013831
+"Corpus Christi Catholic College, A Voluntary Academy",3,Temple Newsam,E05013831
 Corpus Christi Catholic Primary School,1,Temple Newsam,E05013831
 Cottingley Primary Academy,3,Beeston and Holbeck,E05012647
 Crawshaw Academy,1,Pudsey,E05011409
@@ -53,6 +53,7 @@ Dixons Trinity Chapeltown,2,Chapel Allerton,E05011390
 Dixons Unity Academy,1,Armley,E05011385
 Drighlington Primary School,1,Morley North,E05011406
 East Ardsley Primary Academy,1,Ardsley and Robin Hood,E05011384
+East Morton CE Primary,1,,
 East SILC Jack Clark,2,Gipton and Harehills,E05011394
 East SILC John Jamieson,6,Roundhay,E05011411
 Ebor Gardens Primary Academy,2,Burmantofts and Richmond Hill,E05011388
@@ -68,6 +69,7 @@ Greenhill Primary School,3,Farnley and Wortley,E05012648
 Greenmount Primary School,4,Beeston and Holbeck,E05012647
 Guiseley School,1,Guiseley and Rawdon,E05011395
 Gustav Adolf Grammas School at Talinn,1,,
+Hanson Academy,1,,
 Harewood Church of England Voluntary Controlled Primary School,1,Harewood,E05011396
 Hawksworth Church of England Primary School,1,Guiseley and Rawdon,E05011395
 Holy Family Catholic Primary School,1,Armley,E05011385
@@ -80,6 +82,7 @@ Horsforth School,1,Horsforth,E05011547
 Hugh Gaitskell Primary School,2,Beeston and Holbeck,E05012647
 Hunslet Carr Primary School,3,Hunslet and Riverside,E05011399
 Hunslet Moor Primary School,1,Hunslet and Riverside,E05011399
+Hymers Junior School,1,,
 IQRA Academy Primary,1,,
 Ilkley Grammar,1,,
 Ingram Road Primary School,4,Beeston and Holbeck,E05012647
@@ -95,8 +98,8 @@ Lady Lane Park,1,,
 Lane End Primary School,1,Beeston and Holbeck,E05012647
 Lawns Park Primary School,6,Farnley and Wortley,E05012648
 Lawnswood School,3,Weetwood,E05011413
-Leeds City Academy,3,Headingley and Hyde Park,E05011397
-Leeds City College,5,Little London and Woodhouse,E05011403
+Leeds City Academy,4,Headingley and Hyde Park,E05011397
+Leeds City College,6,Little London and Woodhouse,E05011403
 Leeds East Academy,1,Killingbeck and Seacroft,E05011400
 Leeds Jewish Free School,1,Moortown,E05011405
 Leeds Teaching Hospitals,1,,
@@ -110,7 +113,7 @@ Meanwood Church of England Primary School,1,Moortown,E05011405
 Micklefield Church of England Primary Academy,1,Kippax and Methley,E05011401
 Middleton Primary School,4,Middleton Park,E05011404
 Moor Allerton Hall Primary School,6,Moortown,E05011405
-Moortown Primary School,1,Moortown,E05011405
+Moortown Primary School,2,Moortown,E05011405
 Morley Newlands Academy,1,Morley South,E05011407
 Morley Victoria Primary School,3,Morley North,E05011406
 Mount St Mary's Catholic High School,1,Burmantofts and Richmond Hill,E05011388
@@ -118,7 +121,7 @@ Netherhall Learning Campus,1,,
 New Horizons Community School,1,Chapel Allerton,E05011390
 Ninelands Primary School,1,Garforth and Swillington,E05013830
 North Halifax Grammar School,1,,
-Notre Dame Catholic Sixth Form College,8,Little London and Woodhouse,E05011403
+Notre Dame Catholic Sixth Form College,9,Little London and Woodhouse,E05011403
 Otley All Saints CofE Primary School,1,Otley and Yeadon,E05011549
 Otley Prince Henry's Grammar School Specialist Language College,2,Otley and Yeadon,E05011549
 Oulton Academy ,1,Otley and Yeadon,E05011549
@@ -127,6 +130,7 @@ Park Spring Primary School,1,Pudsey,E05011409
 Penny Field School,1,Moortown,E05011405
 Pinc College,1,,
 Pool-in-Wharfedale Church of England Voluntary Controlled Primary School,5,Adel and Wharfedale,E05012841
+Poplars Farm Primary,1,,
 Primley Wood Primary School,2,Alwoodley,E05012842
 Primrose Lane Primary School,2,Wetherby,E05011414
 Pudsey Grammar School,1,Pudsey,E05011409
@@ -158,15 +162,16 @@ St Bartholomew's CofE Voluntary Controlled Primary School,4,Armley,E05011385
 St Bartholomews,1,Armley,E05011385
 St Chad's Church of England Primary School,1,Weetwood,E05011413
 "St Francis Catholic Primary School, Morley",7,Morley South,E05011407
+"St Joseph's Catholic Primary School, Bradford",1,,
 "St Joseph's Catholic Primary School, Hunslet",1,Hunslet and Riverside,E05011399
 "St Joseph's Catholic Primary School, Wetherby",2,Wetherby,E05011414
-St Margaret's Church of England Voluntary Controlled Primary School,9,Horsforth,E05011547
+St Margaret's Church of England Voluntary Controlled Primary School,10,Horsforth,E05011547
 St Mary's Menston Catholic Voluntary Academy,2,,
 St Matthew's Church of England Aided Primary School,1,Chapel Allerton,E05011390
 St Nicholas Catholic Primary School,1,Gipton and Harehills,E05011394
 St Patrick Catholic Primary School,4,Burmantofts and Richmond Hill,E05011388
 "St Paul's Catholic Primary School, a Voluntary Academy",2,Alwoodley,E05012842
-"St Peter's Church of England Primary School, Leeds",2,Burmantofts and Richmond Hill,E05011388
+"St Peter's Church of England Primary School, Leeds",3,Burmantofts and Richmond Hill,E05011388
 St Philip's Catholic Primary  School,6,Middleton Park,E05011404
 St. Oswald's CofE Primary School,2,Guiseley and Rawdon,E05011395
 Stanningley Primary School,1,Bramley and Stanningley,E05011387
@@ -181,13 +186,15 @@ The Grammar School At Leeds,1,Alwoodley,E05012842
 The Halifax Academy,1,,
 The Morley Academy,1,Morley South,E05011407
 The New Bewerley Community Primary School,3,Beeston and Holbeck,E05012647
-The Ruth Gorse Academy,2,Hunslet and Riverside,E05011399
+The Ruth Gorse Academy,3,Hunslet and Riverside,E05011399
 Thornhill Community Academy,1,,
 Thorpe Primary School,1,Ardsley and Robin Hood,E05011384
 Todmorden High School,1,,
 Tong Leadership Academy,1,,
 Tranmere Park Primary School,1,Guiseley and Rawdon,E05011395
-Trinity Academy Leeds,4,Burmantofts and Richmond Hill,E05011388
+Trinity Academy Cathedral,1,,
+Trinity Academy Halifax,1,,
+Trinity Academy Leeds,5,Burmantofts and Richmond Hill,E05011388
 Valley View Community Primary School,2,Bramley and Stanningley,E05011387
 Victoria Primary Academy,1,Burmantofts and Richmond Hill,E05011388
 Weetwood Primary School,1,Weetwood,E05011413
@@ -195,7 +202,7 @@ West End Primary School,1,Horsforth,E05011547
 West Oaks School,1,Little London and Woodhouse,E05011403
 Westbrook Lane Primary School,1,Pudsey,E05011409
 Westgate Primary School,4,Otley and Yeadon,E05011549
-Wetherby High School,1,Middleton Park,E05011404
+Wetherby High School,2,Middleton Park,E05011404
 Whingate Primary School,2,Wetherby,E05011414
 Whinmoor St Paul's Church of England Primary School,5,Armley,E05011385
 Whitecote Primary School,1,Cross Gates and Whinmoor,E05011391

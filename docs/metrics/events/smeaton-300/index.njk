@@ -61,12 +61,37 @@ limitations:
   }) | safe }}
 
     {{ comp.metric.headline({
-    title: "Number of wards engaged", headingLevel: 2,
-    value: events.headlines.ward_count | localize,
-    description: "Total number of wards engaged with as part of this Signature event.",
+    title: "Total Moon Palace events", headingLevel: 2,
+    value: events.moon_palace.headlines.total_events | localize,
+    description: "Total Moon Palace events held.",
     background: "var(--l23-dark-blue-grey)",
     colour: "white"
   }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Moon Palace total audience", headingLevel: 2,
+    value: events.moon_palace.headlines.total_audience | localize,
+    description: "Total Moon Palace audience.",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Moon Palace wards engaged with", headingLevel: 2,
+    value: events.moon_palace.headlines.ward_count | localize,
+    description: "Total Moon Palace audience.",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Total Leeds wards engaged", headingLevel: 2,
+    value: events.headlines.ward_count | localize,
+    description: "Total number of wards engaged with as part of this Signature event.",
+    background: "var(--l23-magenta)",
+    colour: "black"
+  }) | safe }}
+
 
 {% endcomp %}
 

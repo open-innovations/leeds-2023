@@ -9,13 +9,13 @@ stages:
       size: 2597
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
-      md5: e786edc8e8726fc2016741578698b7d6
-      size: 181180
+      md5: 7ad328d5ff98f51893f95051fccfd8e6
+      size: 185813
     outs:
     - path: data/metrics/schools/schools_events.csv
       hash: md5
-      md5: 045eee6d166266e54dcaca5d7f66ae04
-      size: 89076
+      md5: 2629aff3a53d42ce6f43c72f6f6ab2b4
+      size: 93115
   extract:
     cmd: PYTHONPATH=. python scripts/metrics/schools/extract.py
     deps:
@@ -26,15 +26,15 @@ stages:
     outs:
     - path: working/metrics/airtable/schools_events.csv
       hash: md5
-      md5: e786edc8e8726fc2016741578698b7d6
-      size: 181180
+      md5: 7ad328d5ff98f51893f95051fccfd8e6
+      size: 185813
   prepare:
     cmd: PYTHONPATH=. python scripts/metrics/schools/prepare.py
     deps:
     - path: data/metrics/schools/schools_events.csv
       hash: md5
-      md5: 045eee6d166266e54dcaca5d7f66ae04
-      size: 89076
+      md5: 2629aff3a53d42ce6f43c72f6f6ab2b4
+      size: 93115
     - path: data/reference/leeds_wards.csv
       hash: md5
       md5: 887a42d46d34c9e966211a79f2b8a672
@@ -50,20 +50,20 @@ stages:
     outs:
     - path: docs/metrics/schools/_data/engagements_by_ward.csv
       hash: md5
-      md5: 125fbae9cc4c0401ae384734b71438be
+      md5: 1e8daa1b6e4435096887a23d96b74f06
       size: 1549
     - path: docs/metrics/schools/_data/engagements_by_week.csv
       hash: md5
-      md5: d4e13ac4a9b86e6daa545fd0c226f484
-      size: 1706
+      md5: d4bc642dbbde348344947cd53354b0d4
+      size: 1734
     - path: docs/metrics/schools/_data/headlines.json
       hash: md5
-      md5: 62224b422de9223ba17dfc46b3621209
+      md5: d3266cc9b9bf32c0fc1a3020cb938285
       size: 374
     - path: docs/metrics/schools/_data/school_engagement_counts.csv
       hash: md5
-      md5: cc0b1541497f1dc7c2365e35d0d5f010
-      size: 11707
+      md5: c527fe89e269e5c2faff40db50edcc78
+      size: 11847
   ref_data:
     cmd: PYTHONPATH=. python scripts/metrics/schools/get_reference_data.py
     deps:

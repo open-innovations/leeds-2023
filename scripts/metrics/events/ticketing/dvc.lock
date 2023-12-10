@@ -18,15 +18,15 @@ stages:
     outs:
     - path: ../../../../working/metrics/ticketing/orders.csv
       hash: md5
-      md5: a8427ac4570566d6f3610fa209ab3a8e
-      size: 971570
+      md5: 2a6fdb1f4250c9cdf4d0cda020b7a6ba
+      size: 972466
   transform:
     cmd: papermill tickets.ipynb ../../../../working/output/tickets-transform.ipynb
     deps:
     - path: ../../../../working/metrics/ticketing/orders.csv
       hash: md5
-      md5: a8427ac4570566d6f3610fa209ab3a8e
-      size: 971570
+      md5: 2a6fdb1f4250c9cdf4d0cda020b7a6ba
+      size: 972466
     - path: pipes.py
       hash: md5
       md5: 900e3b562d6d942101bdad3b83514ab7
@@ -38,5 +38,5 @@ stages:
     outs:
     - path: ../../../../data/metrics/events/tickets/orders.csv
       hash: md5
-      md5: 5775d02a1a22b2696da2de4b1cb0ef6d
-      size: 342186
+      md5: cd2dc09c0938298b9327e690c488b661
+      size: 342564

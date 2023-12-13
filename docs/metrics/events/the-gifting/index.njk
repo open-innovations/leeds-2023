@@ -1,0 +1,67 @@
+---
+title: The Gifting & Northern Dreaming
+summary: Metrics related to The Gifting - the closing Signature Event held by LEEDS 2023.
+tags:
+  - main
+order: 14
+work_in_progress: false
+metas:
+  title: The Gifting & Northern Dreaming
+  description: |
+    Visualisations of key metrics related to The Gifting - the closing Signature Event held by LEEDS 2023.
+---
+
+{% from 'macros.njk' import dateFormatter %}
+
+
+<h2>Headlines</h2>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+
+  {{ comp.metric.headline({
+    title: "Total events", headingLevel: 2,
+    value: events.headlines.total_events | localize,
+    description: "Total activities held as part of this Signature event.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Public events", headingLevel: 2,
+    value: events.public.headlines.total_events | localize ,
+    description: "Total number of public facing events.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
+  
+    {{ comp.metric.headline({
+    title: "Public audience", headingLevel: 2,
+    value: events.public.headlines.total_audience | localize ,
+    description: "Total count of attendees at public facing events.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
+{{ comp.metric.headline({
+    title: "School engagements", headingLevel: 2,
+    value: events.schools.headlines.total_events | localize ,
+    description: "Total count of engagements with schools.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+{{ comp.metric.headline({
+    title: "Pupil engagements", headingLevel: 2,
+    value: events.schools.headlines.total_audience | localize ,
+    description: "Total count of school pupils engaged.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Tickets sold", headingLevel: 2,
+    value: events.tickets_by_date.columns.tickets | last | localize ,
+    description: "Total number of tickets sold.",
+    background: "var(--l23-dark-blue-grey)", 
+    colour: "white"
+  }) | safe }}
+
+{% endcomp %}
+
+<h3>About this data</h3>

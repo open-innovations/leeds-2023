@@ -1,27 +1,27 @@
 ward_code,awakening_attendance,ballot,roadshow_contact,signature_events,the_barn_residents,volunteering,ward_name,total
 E05012841,95,50,11,201,0,44,Adel and Wharfedale,401
 E05012842,107,57,9,400,0,50,Alwoodley,623
-E05011384,58,24,11,129,0,31,Ardsley and Robin Hood,253
+E05011384,58,24,11,130,0,31,Ardsley and Robin Hood,254
 E05011385,65,42,8,178,0,37,Armley,330
-E05012647,90,77,2,283,0,48,Beeston and Holbeck,500
-E05011387,88,52,12,151,0,31,Bramley and Stanningley,334
+E05012647,90,77,2,283,17,48,Beeston and Holbeck,517
+E05011387,88,52,12,152,0,31,Bramley and Stanningley,335
 E05011388,74,47,5,297,0,42,Burmantofts and Richmond Hill,465
 E05011389,108,43,18,132,0,28,Calverley and Farsley,329
 E05011390,388,130,20,839,0,86,Chapel Allerton,1463
 E05011391,102,23,6,206,0,22,Cross Gates and Whinmoor,359
 E05012648,69,38,2,109,0,25,Farnley and Wortley,243
 E05013830,33,11,2,225,0,21,Garforth and Swillington,292
-E05011394,39,20,5,271,0,13,Gipton and Harehills,348
+E05011394,39,20,5,271,12,13,Gipton and Harehills,360
 E05011395,52,22,6,94,0,17,Guiseley and Rawdon,191
 E05011396,28,17,3,96,0,22,Harewood,166
-E05011397,285,107,22,699,7394,180,Headingley and Hyde Park,8687
+E05011397,285,107,22,699,8713,180,Headingley and Hyde Park,10006
 E05011547,296,100,11,290,0,59,Horsforth,756
-E05011399,209,48,6,365,45,74,Hunslet and Riverside,747
-E05011400,41,13,5,323,0,28,Killingbeck and Seacroft,410
+E05011399,209,48,6,365,94,74,Hunslet and Riverside,796
+E05011400,41,13,5,323,55,28,Killingbeck and Seacroft,465
 E05011401,23,20,19,193,0,15,Kippax and Methley,270
 E05011402,250,79,16,403,0,92,Kirkstall,840
-E05011403,163,99,12,526,0,346,Little London and Woodhouse,1146
-E05011404,36,27,8,121,0,16,Middleton Park,208
+E05011403,163,99,12,526,390,346,Little London and Woodhouse,1536
+E05011404,36,27,8,122,0,16,Middleton Park,209
 E05011405,254,81,3,597,0,55,Moortown,990
 E05011406,38,26,16,114,0,23,Morley North,217
 E05011407,45,42,13,126,0,24,Morley South,250
@@ -31,4 +31,4 @@ E05011410,42,27,4,123,0,17,Rothwell,213
 E05011411,161,68,2,855,0,73,Roundhay,1159
 E05013831,73,29,11,283,0,30,Temple Newsam,426
 E05011413,247,68,26,465,0,72,Weetwood,878
-E05011414,36,15,3,29,0,16,Wetherby,99
+E05011414,36,15,3,30,0,16,Wetherby,100

@@ -1,0 +1,19 @@
+vars:
+  - TOP: ../../..
+stages:
+  extract:
+    cmd: PYTHONPATH=${TOP} python extract.py
+    deps:
+      - extract.py
+    outs:
+      - ${TOP}/working/metrics/partnerships:
+          persist: false
+          cache: false
+  transform:
+    cmd: papermill transform.ipynb ${TOP}/working/output/partnerships-transform.ipynb
+    deps:
+      - transform.ipynb
+    outs:
+      - ${TOP}/data/metrics/partnerships:
+          persist: false
+          cache: false

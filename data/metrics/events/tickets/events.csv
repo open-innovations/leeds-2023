@@ -1,262 +1,265 @@
-event_date,event_time,event_name,event_id
-2023-03-23,18:30,Leeds Secondary Poetry Slam,ev_1917382
-2023-03-30,18:30,Leeds Secondary Poetry Slam,ev_1917379
-2023-04-04,08:00,Celebrating LEEDS 2023 'Part Two' PLAYING & The Future of Fashion,ev_1999356
-2023-04-04,16:30,Waking The Artist: Preview,ev_2065844
-2023-04-04,16:45,Waking The Artist: Preview,ev_2065845
-2023-04-04,17:00,Waking The Artist: Preview,ev_2065846
-2023-04-04,17:15,Waking The Artist: Preview,ev_2065847
-2023-04-04,17:30,Waking The Artist: Preview,ev_2065848
-2023-04-04,17:45,Waking The Artist: Preview,ev_2065849
-2023-04-04,18:00,Waking The Artist: Preview,ev_2065850
-2023-04-04,18:15,Waking The Artist: Preview,ev_2065851
-2023-04-04,18:30,Waking The Artist: Preview,ev_2065852
-2023-04-04,18:45,Waking The Artist: Preview,ev_2065853
-2023-04-04,19:00,Waking The Artist: Preview,ev_2065854
-2023-04-04,19:15,Waking The Artist: Preview,ev_2065855
-2023-04-04,19:30,Waking The Artist: Preview,ev_2065856
-2023-04-19,14:00,LEEDS 2023: Product Design Workshop,ev_2244663
-2023-04-19,18:00,LEEDS 2023 & DOMA – Hibiscus Rising Event,ev_2093403
-2023-04-25,17:30,Immersive Maps and Digital Footprints: Exploring LEEDS 2023’s Culture Map,ev_2052297
-2023-04-30,17:40,Barn Raiser Car Parking,ev_2261419
-2023-04-30,23:40,Barn Raiser Car Parking,ev_2261420
-2023-05-01,05:40,Barn Raiser Car Parking,ev_2261422
-2023-05-01,11:30,Barn Raiser Car Parking,ev_2261423
-2023-05-01,14:00,LEEDS 2023: Product Design Workshop,ev_2244664
-2023-05-01,18:15,The WOW Barn Topping Out Ceremony,ev_2103472
-2023-05-01,18:15,Barnraiser Topping Out Ceremony,ev_2276667
-2023-05-02,14:00,LEEDS 2023: Product Design Workshop,ev_2244665
-2023-05-03,14:00,LEEDS 2023: Product Design Workshop,ev_2244666
-2023-05-08,18:30,Suhaiymah Manzoor-Khan - Car Parking,ev_2375083
-2023-05-08,19:00,LEEDS 2023 presents Suhaiymah Manzoor-Khan at The WOW Barn,ev_2063323
-2023-05-09,18:00,Bridget Christie - Car Parking,ev_2375168
-2023-05-09,19:00,LEEDS 2023 presents Bridget Christie at The WOW Barn,ev_2063298
-2023-05-09,21:00,LEEDS 2023 presents Bridget Christie at The WOW Barn,ev_2063299
-2023-05-11,19:00,LEEDS 2023 presents Shazia Mirza at The WOW Barn,ev_2063305
-2023-05-12,18:00,Andi Oliver - Car Parking,ev_2380832
-2023-05-12,19:30,LEEDS 2023 presents Andi Oliver at The WOW Barn,ev_2076173
-2023-05-13,09:30,The WOW Barn Opening and Barn Raiser Portraits Private View,ev_2107622
-2023-05-13,10:30,The WOW Barn Festival,ev_2058305
-2023-05-13,11:00,The WOW Barn Festival - Build A Barn Birdbox,ev_2380853
-2023-05-13,11:00,WOW Speed Mentoring,ev_2385797
-2023-05-13,12:30,The WOW Barn Festival - Build A Barn Birdbox,ev_2380854
-2023-05-13,14:00,The WOW Barn Festival - All Cisterns Go,ev_2380865
-2023-05-13,14:00,The WOW Barn Festival - Build A Barn Birdbox,ev_2380855
-2023-05-13,15:30,WOW Speed Mentoring,ev_2385798
-2023-05-13,15:30,The WOW Barn Festival - Period & Empowerment Cross Stitch,ev_2380933
-2023-05-13,15:30,The WOW Barn Festival - Build A Barn Birdbox,ev_2380856
-2023-05-13,19:30,A Barn Dance at The WOW Barn,ev_2078074
-2023-05-16,18:30,Natalie Haynes - Car Parking,ev_2389087
-2023-05-16,19:30,LEEDS 2023 presents Natalie Haynes at The WOW Barn,ev_2064393
-2023-05-20,15:00,Braindance with Hyde Park Book Club at The WOW Barn,ev_2263745
-2023-05-23,17:30,LEEDS 2023 Awakening Documentary Screening,ev_2381816
-2023-05-23,18:30,LEEDS 2023 Awakening Documentary Screening,ev_2381817
-2023-05-27,19:30,It's A Wrap Reggae Party,ev_2306057
-2023-06-15,12:00,Making a Stand Launch Event,ev_2377802
-2023-06-15,18:30,Intimate Drinks Reception and Dinner with LEEDS 2023 CEO and Artists of Making a Stand,ev_2377556
-2023-06-28,16:00,Creative Learning S2: Youth Voice for Teachers,ev_2407051
-2023-06-28,19:00,Feel the Music Live!,ev_2553157
-2023-06-29,12:30,Making a Stand: Audio Described (AD) Tour,ev_2667173
-2023-07-09,10:15,My LEEDS Summer: Our Alwoodley: Walking Poetry,ev_2605929
-2023-07-14,19:30,Children's Day: Reimagined,ev_2240951
-2023-07-14,19:30,Children's Day: Reimagined Guest Event,ev_2690524
-2023-07-29,12:30,Float on Aire: Reflective Boat Journey,ev_2825443
-2023-07-29,12:40,Hunslet History and Sketching Walks,ev_2825465
-2023-07-29,12:45,Yoga Hero: Introduction and destressing yoga,ev_2825709
-2023-07-29,13:15,Introduction to Paddleboarding,ev_2825714
-2023-07-29,13:30,Float on Aire: Reflective Boat Journey,ev_2825468
-2023-07-29,14:30,Float on Aire: Reflective Boat Journey,ev_2825529
-2023-07-29,14:45,Introduction to Paddleboarding,ev_2825718
-2023-07-29,15:00,Yoga Hero: Introduction and destressing yoga,ev_2825710
-2023-07-29,15:00,Hunslet History and Sketching Walks,ev_2825702
-2023-07-29,15:30,Float on Aire: Reflective Boat Journey,ev_2825530
-2023-07-29,16:15,Introduction to Paddleboarding,ev_2825719
-2023-08-03,12:00,Moon Palace: Stakeholder Launch,ev_2825913
-2023-08-03,13:00,Moon Palace: Stakeholder Launch,ev_2825914
-2023-08-06,22:00,Moon Palace: After Dark Observation Session at The Royal Armouries,ev_2054071
-2023-08-06,23:59,Moon Palace: After Dark Observation Session at The Royal Armouries,ev_2071392
-2023-08-12,22:00,Moon Palace: After Dark Observation Session at We ART Seacroft Festival,ev_2848288
-2023-08-13,00:00,Moon Palace: After Dark Observation Session at We ART Seacroft Festival,ev_2848291
-2023-08-19,01:00,Mingle and Mix: Rhythm Time,ev_2861675
-2023-08-19,14:00,Mingle and Mix: Yoga,ev_2842150
-2023-08-19,15:00,Mingle and Mix: Sound Baths,ev_2841908
-2023-08-19,16:00,Mingle and Mix: Drighlington Memory Cafe & Bingo,ev_2861667
-2023-08-19,18:00,Mingle and Mix: 1950s Dance Session Workshop,ev_2861668
-2023-08-19,18:00,Mingle and Mix: Crank Studios Workshop,ev_2842409
-2023-08-19,19:15,Mingle and Mix: Morley Song Performance and Family Celebration Disco,ev_2842413
-2023-08-24,22:00,Moon Palace: After Dark Observation Session at Fearnville Fields,ev_2071732
-2023-08-24,23:59,Moon Palace: After Dark Observation Session at Fearnville Fields,ev_2071733
-2023-08-27,19:00,Cultural Collective: Open Mic Night,ev_2876855
-2023-08-31,12:30,Making a Stand: British Sign Language (BSL) Tour,ev_2667220
-2023-08-31,16:00,Making a Stand: British Sign Language (BSL) Tour,ev_2667221
-2023-09-04,19:45,Nest: Dress Rehearsal,ev_2903867
-2023-09-05,17:00,Pre-show Celebration of Nest,ev_2854383
-2023-09-05,18:05,Nest Shuttle Buses and Car Parking,ev_2818500
-2023-09-05,19:45,Nest,ev_2809632
-2023-09-06,18:05,Nest Shuttle Buses and Car Parking,ev_2818501
-2023-09-06,19:45,Nest,ev_2809633
-2023-09-07,18:05,Nest Shuttle Buses and Car Parking,ev_2818502
-2023-09-07,19:45,Nest,ev_2809634
-2023-09-08,18:05,Nest Shuttle Buses and Car Parking,ev_2818503
-2023-09-08,19:45,Nest,ev_2809635
-2023-09-09,18:05,Nest Shuttle Buses and Car Parking,ev_2818504
-2023-09-09,19:45,Nest,ev_2809636
-2023-09-09,22:00,Moon Palace: After Dark Observation Session at Victoria Square (outside Leeds Art Gallery),ev_2848028
-2023-09-09,23:59,Moon Palace: After Dark Observation Session at Victoria Square (outside Leeds Art Gallery),ev_2848029
-2023-09-14,07:30,School Leaders' Breakfast,ev_2943440
-2023-09-14,10:00,Leeds Print Workshop: Bookbinding Workshop,ev_2967905
-2023-09-15,10:30,Making a Stand: A Relaxed and Interactive Experience,ev_2941750
-2023-09-15,13:30,Making a Stand: A Relaxed and Interactive Experience,ev_2941751
-2023-09-22,19:00,A City Without Seams Ceremony,ev_2967747
-2023-09-23,22:30,FANTASMA,ev_2905328
-2023-09-26,16:00,Leeds Language Week - Programme Launch,ev_2876920
-2023-09-27,15:00,Designing against the clock; good digital stuff CAN happen within your budget and against tight timescales,ev_2866870
-2023-09-27,17:00,The Good Book & The Magician Double Bill Screening,ev_2875477
-2023-09-30,09:30,Teachers' Conference: STEM and the Arts,ev_2064795
-2023-10-05,17:00,This is a FOREST Preview,ev_2999785
-2023-10-06,17:00,This is a FOREST: Artist Talk,ev_3024910
-2023-10-09,16:00,Re-imagining Home: Teacher CPD Session,ev_3024027
-2023-10-10,16:00,Re-imagining Home: Teacher CPD Session,ev_3024028
-2023-10-14,18:00,The Path Between,ev_2877136
-2023-10-18,13:30,Yorkshire Schools Dance Festival,ev_3013871
-2023-10-19,13:30,Yorkshire Schools Dance Festival,ev_3013872
-2023-10-21,19:00,Moon Palace: Observe the Moon Night at Potternewton Park,ev_2916785
-2023-10-21,19:00,Moon Palace exploration timeslot at Observe the Moon Night,ev_3147901
-2023-10-21,19:30,Moon Palace exploration timeslot at Observe the Moon Night,ev_3147904
-2023-10-21,20:00,Moon Palace exploration timeslot at Observe the Moon Night,ev_3147905
-2023-10-21,20:30,Moon Palace exploration timeslot at Observe the Moon Night,ev_3147906
-2023-10-21,21:00,Moon Palace exploration timeslot at Observe the Moon Night,ev_3147907
-2023-10-21,21:30,Moon Palace exploration timeslot at Observe the Moon Night,ev_3147908
-2023-10-22,19:30,Moon Palace: Relaxed After Dark Observation Session at Royal Armouries,ev_2918207
-2023-10-22,21:30,Moon Palace: After Dark Observation Session at The Royal Armouries,ev_3004009
-2023-10-24,21:30,Moon Palace: After Dark Observation Session with Audio Description,ev_2918127
-2023-10-25,18:00,Leeds Art Gallery: Youth Twilight Takeover,ev_3075818
-2023-10-30,11:00,Northern Dreaming Storytime,ev_3134526
-2023-10-30,13:00,Northern Dreaming Storytime,ev_3134527
-2023-10-30,15:00,Northern Dreaming Storytime,ev_3134528
-2023-10-31,19:00,Queercore: Night of The Living,ev_2905326
-2023-11-02,15:00,All That Lives: Meet the Artists,ev_3045586
-2023-11-04,16:15,"All That Lives: Big Finish, Film Screening and Pity Party",ev_2912459
-2023-11-06,10:00,Northern Dreaming Storytime Tour - Schools,ev_3051995
-2023-11-06,13:30,Northern Dreaming Storytime Tour - Schools,ev_3051996
-2023-11-08,10:00,Facilitated School Trips to This is a Forest Exhibition,ev_3029738
-2023-11-08,10:30,Moon Palace: School Days,ev_3011518
-2023-11-09,10:00,Facilitated School Trips to This is a Forest Exhibition,ev_3029739
-2023-11-09,10:30,Moon Palace: School Days,ev_3011519
-2023-11-10,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052022
-2023-11-10,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052023
-2023-11-13,00:00,And She Built a Crooked House – Schools Programme (In-School Facilitated Workshops),ev_3034657
-2023-11-13,10:00,Northern Dreaming Storytime Tour - Schools,ev_3051997
-2023-11-13,13:30,Northern Dreaming Storytime Tour - Schools,ev_3051998
-2023-11-14,00:00,And She Built a Crooked House – Schools Programme (In-School Facilitated Workshops),ev_3034658
-2023-11-14,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052012
-2023-11-14,10:30,Moon Palace: School Days,ev_3011520
-2023-11-14,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052013
-2023-11-15,10:00,Facilitated School Trips to This is a Forest Exhibition,ev_3029740
-2023-11-15,10:30,Moon Palace: School Days,ev_3011521
-2023-11-15,16:00,Discover Creative Careers - Training for Career Advisors,ev_3206491
-2023-11-16,10:00,Facilitated School Trips to This is a Forest Exhibition,ev_3029741
-2023-11-16,10:30,Moon Palace: School Days,ev_3011522
-2023-11-17,10:00,Northern Dreaming Storytime Tour - Communities,ev_3052121
-2023-11-17,14:00,Northern Dreaming Storytime Tour - Communities,ev_3052122
-2023-11-19,18:00,Moon Palace: After Dark Observation Session at North Parade Car Park,ev_2848366
-2023-11-19,20:00,Moon Palace: After Dark Observation Session at North Parade Car Park,ev_2848367
-2023-11-20,00:00,And She Built a Crooked House – Schools Programme (In-School Facilitated Workshops),ev_3034659
-2023-11-20,10:00,Northern Dreaming Storytime Tour - Schools,ev_3051999
-2023-11-20,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052000
-2023-11-21,00:00,And She Built a Crooked House – Schools Programme (In-School Facilitated Workshops),ev_3034660
-2023-11-21,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052014
-2023-11-21,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052015
-2023-11-22,10:00,Facilitated School Trips to This is a Forest Exhibition,ev_3029742
-2023-11-23,10:00,Facilitated School Trips to This is a Forest Exhibition,ev_3029743
-2023-11-23,12:00,Youth Voice for Freelancers,ev_2669616
-2023-11-24,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052030
-2023-11-24,12:00,Hibiscus Rising Launch,ev_3074636
-2023-11-24,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052031
-2023-11-25,10:00,Northern Dreaming Storytime Tour - Communities,ev_3052123
-2023-11-25,12:00,Hibiscus Rising: In Conversation with Yinka Shonibare,ev_3248633
-2023-11-25,13:00,Hibiscus Rising: Walking David Oluwale’s Leeds with Joe Williams,ev_3248634
-2023-11-25,13:45,Hibiscus Rising: Poetry workshop with Khadijah Ibrahiim,ev_3248643
-2023-11-25,14:00,Northern Dreaming Storytime Tour - Communities,ev_3052124
-2023-11-27,00:00,And She Built a Crooked House – Schools Programme (In-School Facilitated Workshops),ev_3034661
-2023-11-27,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052001
-2023-11-27,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052002
-2023-11-28,00:00,And She Built a Crooked House – Schools Programme (In-School Facilitated Workshops),ev_3034662
-2023-11-28,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052016
-2023-11-28,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052017
-2023-11-29,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034631
-2023-11-30,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034632
-2023-12-01,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034633
-2023-12-01,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052032
-2023-12-01,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052033
-2023-12-02,10:00,Northern Dreaming Storytime Tour - Communities,ev_3052125
-2023-12-02,14:00,Northern Dreaming Storytime Tour - Communities,ev_3052126
-2023-12-04,08:45,Cultural Education Conference,ev_3073624
-2023-12-04,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052003
-2023-12-04,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052004
-2023-12-05,09:30,Children's Day: Re-imagined Schools Tour,ev_2963290
-2023-12-05,10:30,Moon Palace: School Days,ev_3011523
-2023-12-05,18:30,LEEDS 2023: Festive Celebration,ev_3197549
-2023-12-06,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034634
-2023-12-06,09:30,Children's Day: Re-imagined Schools Tour,ev_2963295
-2023-12-06,10:30,Moon Palace: School Days,ev_3011524
-2023-12-07,09:30,Children's Day: Re-imagined Schools Tour,ev_2963296
-2023-12-07,10:30,Moon Palace: School Days,ev_3011525
-2023-12-08,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034636
-2023-12-08,09:30,Children's Day: Re-imagined Schools Tour,ev_2963297
-2023-12-11,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052005
-2023-12-11,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052006
-2023-12-12,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052020
-2023-12-12,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052021
-2023-12-13,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034637
-2023-12-13,10:30,Moon Palace: School Days,ev_3011526
-2023-12-14,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034638
-2023-12-14,10:30,Moon Palace: School Days,ev_3011527
-2023-12-14,18:00,Future Perfect - Preview Screening,ev_3291909
-2023-12-15,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034639
-2023-12-15,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052035
-2023-12-15,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052036
-2023-12-18,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052007
-2023-12-18,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052008
-2023-12-18,17:30,Moon Palace: After Dark Observation Session at Wetherby Sports Association,ev_2999873
-2023-12-18,19:30,Moon Palace: After Dark Observation Session at Wetherby Sports Association,ev_2999874
-2023-12-19,10:00,Northern Dreaming Storytime Tour - Communities,ev_3052129
-2023-12-19,14:00,Northern Dreaming Storytime Tour - Communities,ev_3052130
-2023-12-19,17:30,Moon Palace: After Dark Observation Session at Farnley Hall Park,ev_2917361
-2023-12-19,19:30,Moon Palace: After Dark Observation Session at Farnley Hall Park,ev_2917362
-2023-12-20,17:30,"Moon Palace: After Dark Observation Session at Springhead Park, Rothwell",ev_3009221
-2023-12-20,19:30,"Moon Palace: After Dark Observation Session at Springhead Park, Rothwell",ev_3009222
-2023-12-22,16:30,The Gifting Preview,ev_3048970
-2023-12-22,16:30,Accessible Viewing Platform: The Gifting Preview,ev_3308650
-2023-12-22,19:30,The Gifting,ev_3027783
-2023-12-22,19:30,Accessible Viewing Platform: The Gifting,ev_3302576
-2023-12-26,14:00,The Gifting,ev_2994143
-2023-12-26,14:00,Shuttle Buses: The Gifting,ev_3304436
-2023-12-26,16:30,The Gifting,ev_2994144
-2023-12-26,16:30,Accessible Viewing Platform: The Gifting,ev_3302578
-2023-12-27,14:00,The Gifting,ev_2994147
-2023-12-27,14:00,Shuttle Buses: The Gifting,ev_3304437
-2023-12-27,14:00,Accessible Viewing Platform: The Gifting,ev_3302569
-2023-12-27,16:30,The Gifting,ev_2994145
-2023-12-27,16:30,Shuttle Buses: The Gifting,ev_3304444
-2023-12-27,19:30,The Gifting,ev_2994146
-2023-12-27,19:30,Accessible Viewing Platform: The Gifting,ev_3302832
-2023-12-28,14:00,The Gifting,ev_2994132
-2023-12-28,14:00,Shuttle Buses: The Gifting,ev_3304438
-2023-12-28,16:30,The Gifting,ev_2994133
-2023-12-28,16:30,Shuttle Buses: The Gifting,ev_3304445
-2023-12-28,19:30,The Gifting,ev_2994134
-2023-12-28,19:30,Shuttle Buses: The Gifting,ev_3304450
-2023-12-29,11:00,The Gifting,ev_2994135
-2023-12-29,14:00,The Gifting,ev_2994136
-2023-12-29,16:30,The Gifting,ev_2994137
-2023-12-30,11:00,The Gifting,ev_2994139
-2023-12-30,14:00,The Gifting,ev_2994140
-2023-12-30,16:30,The Gifting,ev_2994141
-2023-12-30,16:30,Shuttle Buses: The Gifting,ev_3304447
-2023-12-31,11:00,The Gifting,ev_2994149
-2023-12-31,11:00,Shuttle Buses: The Gifting,ev_3304448
-2023-12-31,14:00,The Gifting,ev_2994150
-2023-12-31,14:00,Shuttle Buses: The Gifting,ev_3304441
-2023-12-31,14:00,Accessible Viewing Platform: The Gifting,ev_3302573
-2023-12-31,18:00,LEEDS 2023 Wrap Party,ev_3284190
+event_date,event_time,event_name,event_id,project_name,public_event
+2023-03-23,18:30,Leeds Secondary Poetry Slam,ev_1917382,,
+2023-03-30,18:30,Leeds Secondary Poetry Slam,ev_1917379,,
+2023-04-04,08:00,Celebrating LEEDS 2023 'Part Two' PLAYING & The Future of Fashion,ev_1999356,,
+2023-04-04,16:30,Waking The Artist: Preview,ev_2065844,,
+2023-04-04,16:45,Waking The Artist: Preview,ev_2065845,,
+2023-04-04,17:00,Waking The Artist: Preview,ev_2065846,,
+2023-04-04,17:15,Waking The Artist: Preview,ev_2065847,,
+2023-04-04,17:30,Waking The Artist: Preview,ev_2065848,,
+2023-04-04,17:45,Waking The Artist: Preview,ev_2065849,,
+2023-04-04,18:00,Waking The Artist: Preview,ev_2065850,,
+2023-04-04,18:15,Waking The Artist: Preview,ev_2065851,,
+2023-04-04,18:30,Waking The Artist: Preview,ev_2065852,,
+2023-04-04,18:45,Waking The Artist: Preview,ev_2065853,,
+2023-04-04,19:00,Waking The Artist: Preview,ev_2065854,,
+2023-04-04,19:15,Waking The Artist: Preview,ev_2065855,,
+2023-04-04,19:30,Waking The Artist: Preview,ev_2065856,,
+2023-04-19,14:00,LEEDS 2023: Product Design Workshop,ev_2244663,,
+2023-04-19,18:00,LEEDS 2023 & DOMA – Hibiscus Rising Event,ev_2093403,,
+2023-04-25,17:30,Immersive Maps and Digital Footprints: Exploring LEEDS 2023’s Culture Map,ev_2052297,,
+2023-04-30,17:40,Barn Raiser Car Parking,ev_2261419,,
+2023-04-30,23:40,Barn Raiser Car Parking,ev_2261420,,
+2023-05-01,05:40,Barn Raiser Car Parking,ev_2261422,,
+2023-05-01,11:30,Barn Raiser Car Parking,ev_2261423,,
+2023-05-01,14:00,LEEDS 2023: Product Design Workshop,ev_2244664,,
+2023-05-01,18:15,The WOW Barn Topping Out Ceremony,ev_2103472,05 - The Barn,True
+2023-05-01,18:15,Barnraiser Topping Out Ceremony,ev_2276667,05 - The Barn,True
+2023-05-02,14:00,LEEDS 2023: Product Design Workshop,ev_2244665,,
+2023-05-03,14:00,LEEDS 2023: Product Design Workshop,ev_2244666,,
+2023-05-08,18:30,Suhaiymah Manzoor-Khan - Car Parking,ev_2375083,,
+2023-05-08,19:00,LEEDS 2023 presents Suhaiymah Manzoor-Khan at The WOW Barn,ev_2063323,05 - The Barn,True
+2023-05-09,18:00,Bridget Christie - Car Parking,ev_2375168,,
+2023-05-09,19:00,LEEDS 2023 presents Bridget Christie at The WOW Barn,ev_2063298,05 - The Barn,True
+2023-05-09,21:00,LEEDS 2023 presents Bridget Christie at The WOW Barn,ev_2063299,05 - The Barn,True
+2023-05-11,19:00,LEEDS 2023 presents Shazia Mirza at The WOW Barn,ev_2063305,05 - The Barn,True
+2023-05-12,18:00,Andi Oliver - Car Parking,ev_2380832,,
+2023-05-12,19:30,LEEDS 2023 presents Andi Oliver at The WOW Barn,ev_2076173,05 - The Barn,True
+2023-05-13,09:30,The WOW Barn Opening and Barn Raiser Portraits Private View,ev_2107622,,
+2023-05-13,10:30,The WOW Barn Festival,ev_2058305,05 - The Barn,True
+2023-05-13,11:00,The WOW Barn Festival - Build A Barn Birdbox,ev_2380853,,
+2023-05-13,11:00,WOW Speed Mentoring,ev_2385797,,
+2023-05-13,12:30,The WOW Barn Festival - Build A Barn Birdbox,ev_2380854,,
+2023-05-13,14:00,The WOW Barn Festival - All Cisterns Go,ev_2380865,,
+2023-05-13,14:00,The WOW Barn Festival - Build A Barn Birdbox,ev_2380855,,
+2023-05-13,15:30,WOW Speed Mentoring,ev_2385798,,
+2023-05-13,15:30,The WOW Barn Festival - Period & Empowerment Cross Stitch,ev_2380933,,
+2023-05-13,15:30,The WOW Barn Festival - Build A Barn Birdbox,ev_2380856,,
+2023-05-13,19:30,A Barn Dance at The WOW Barn,ev_2078074,,
+2023-05-16,18:30,Natalie Haynes - Car Parking,ev_2389087,,
+2023-05-16,19:30,LEEDS 2023 presents Natalie Haynes at The WOW Barn,ev_2064393,05 - The Barn,True
+2023-05-20,15:00,Braindance with Hyde Park Book Club at The WOW Barn,ev_2263745,05 - The Barn,True
+2023-05-23,17:30,LEEDS 2023 Awakening Documentary Screening,ev_2381816,,
+2023-05-23,18:30,LEEDS 2023 Awakening Documentary Screening,ev_2381817,,
+2023-05-27,19:30,It's A Wrap Reggae Party,ev_2306057,,
+2023-06-15,12:00,Making a Stand Launch Event,ev_2377802,,
+2023-06-15,18:30,Intimate Drinks Reception and Dinner with LEEDS 2023 CEO and Artists of Making a Stand,ev_2377556,,
+2023-06-28,16:00,Creative Learning S2: Youth Voice for Teachers,ev_2407051,,
+2023-06-28,19:00,Feel the Music Live!,ev_2553157,,
+2023-06-29,12:30,Making a Stand: Audio Described (AD) Tour,ev_2667173,02 - Making A Stand,True
+2023-07-09,10:15,My LEEDS Summer: Our Alwoodley: Walking Poetry,ev_2605929,12 - My LEEDS 2023,True
+2023-07-14,19:30,Children's Day: Reimagined,ev_2240951,07 - Children's Day,True
+2023-07-14,19:30,Children's Day: Reimagined Guest Event,ev_2690524,07 - Children's Day,True
+2023-07-29,12:30,Float on Aire: Reflective Boat Journey,ev_2825443,12 - My LEEDS 2023,True
+2023-07-29,12:40,Hunslet History and Sketching Walks,ev_2825465,12 - My LEEDS 2023,True
+2023-07-29,12:45,Yoga Hero: Introduction and destressing yoga,ev_2825709,12 - My LEEDS 2023,True
+2023-07-29,13:15,Introduction to Paddleboarding,ev_2825714,12 - My LEEDS 2023,True
+2023-07-29,13:30,Float on Aire: Reflective Boat Journey,ev_2825468,12 - My LEEDS 2023,True
+2023-07-29,14:30,Float on Aire: Reflective Boat Journey,ev_2825529,12 - My LEEDS 2023,True
+2023-07-29,14:45,Introduction to Paddleboarding,ev_2825718,12 - My LEEDS 2023,True
+2023-07-29,15:00,Yoga Hero: Introduction and destressing yoga,ev_2825710,12 - My LEEDS 2023,True
+2023-07-29,15:00,Hunslet History and Sketching Walks,ev_2825702,12 - My LEEDS 2023,True
+2023-07-29,15:30,Float on Aire: Reflective Boat Journey,ev_2825530,12 - My LEEDS 2023,True
+2023-07-29,16:15,Introduction to Paddleboarding,ev_2825719,12 - My LEEDS 2023,True
+2023-08-03,12:00,Moon Palace: Stakeholder Launch,ev_2825913,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-08-03,13:00,Moon Palace: Stakeholder Launch,ev_2825914,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-08-06,22:00,Moon Palace: After Dark Observation Session at The Royal Armouries,ev_2054071,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-08-06,23:59,Moon Palace: After Dark Observation Session at The Royal Armouries,ev_2071392,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-08-12,22:00,Moon Palace: After Dark Observation Session at We ART Seacroft Festival,ev_2848288,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-08-13,00:00,Moon Palace: After Dark Observation Session at We ART Seacroft Festival,ev_2848291,,
+2023-08-19,01:00,Mingle and Mix: Rhythm Time,ev_2861675,,
+2023-08-19,14:00,Mingle and Mix: Yoga,ev_2842150,,
+2023-08-19,15:00,Mingle and Mix: Sound Baths,ev_2841908,,
+2023-08-19,16:00,Mingle and Mix: Drighlington Memory Cafe & Bingo,ev_2861667,,
+2023-08-19,18:00,Mingle and Mix: 1950s Dance Session Workshop,ev_2861668,,
+2023-08-19,18:00,Mingle and Mix: Crank Studios Workshop,ev_2842409,,
+2023-08-19,19:15,Mingle and Mix: Morley Song Performance and Family Celebration Disco,ev_2842413,,
+2023-08-24,22:00,Moon Palace: After Dark Observation Session at Fearnville Fields,ev_2071732,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-08-24,23:59,Moon Palace: After Dark Observation Session at Fearnville Fields,ev_2071733,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-08-27,19:00,Cultural Collective: Open Mic Night,ev_2876855,,
+2023-08-31,12:30,Making a Stand: British Sign Language (BSL) Tour,ev_2667220,02 - Making A Stand,True
+2023-08-31,16:00,Making a Stand: British Sign Language (BSL) Tour,ev_2667221,02 - Making A Stand,True
+2023-09-04,19:45,Nest: Dress Rehearsal,ev_2903867,10 - Nest,False
+2023-09-05,17:00,Pre-show Celebration of Nest,ev_2854383,,
+2023-09-05,18:05,Nest Shuttle Buses and Car Parking,ev_2818500,,
+2023-09-05,19:45,Nest,ev_2809632,10 - Nest,True
+2023-09-06,18:05,Nest Shuttle Buses and Car Parking,ev_2818501,,
+2023-09-06,19:45,Nest,ev_2809633,10 - Nest,True
+2023-09-07,18:05,Nest Shuttle Buses and Car Parking,ev_2818502,,
+2023-09-07,19:45,Nest,ev_2809634,10 - Nest,True
+2023-09-08,18:05,Nest Shuttle Buses and Car Parking,ev_2818503,,
+2023-09-08,19:45,Nest,ev_2809635,10 - Nest,True
+2023-09-09,18:05,Nest Shuttle Buses and Car Parking,ev_2818504,,
+2023-09-09,19:45,Nest,ev_2809636,10 - Nest,True
+2023-09-09,22:00,Moon Palace: After Dark Observation Session at Victoria Square (outside Leeds Art Gallery),ev_2848028,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-09-09,23:59,Moon Palace: After Dark Observation Session at Victoria Square (outside Leeds Art Gallery),ev_2848029,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-09-14,07:30,School Leaders' Breakfast,ev_2943440,,
+2023-09-14,10:00,Leeds Print Workshop: Bookbinding Workshop,ev_2967905,,
+2023-09-15,10:30,Making a Stand: A Relaxed and Interactive Experience,ev_2941750,02 - Making A Stand,True
+2023-09-15,13:30,Making a Stand: A Relaxed and Interactive Experience,ev_2941751,02 - Making A Stand,True
+2023-09-22,19:00,A City Without Seams Ceremony,ev_2967747,12 - My LEEDS 2023,True
+2023-09-23,22:30,FANTASMA,ev_2905328,Skills Development,False
+2023-09-26,16:00,Leeds Language Week - Programme Launch,ev_2876920,,
+2023-09-27,15:00,Designing against the clock; good digital stuff CAN happen within your budget and against tight timescales,ev_2866870,,
+2023-09-27,17:00,The Good Book & The Magician Double Bill Screening,ev_2875477,,
+2023-09-30,09:30,Teachers' Conference: STEM and the Arts,ev_2064795,09 - Smeaton300: Learning programme,False
+2023-10-05,17:00,This is a FOREST Preview,ev_2999785,04 - This is a FOREST,True
+2023-10-06,17:00,This is a FOREST: Artist Talk,ev_3024910,04 - This is a FOREST,True
+2023-10-09,16:00,Re-imagining Home: Teacher CPD Session,ev_3024027,,
+2023-10-10,16:00,Re-imagining Home: Teacher CPD Session,ev_3024028,,
+2023-10-14,18:00,The Path Between,ev_2877136,,
+2023-10-18,13:30,Yorkshire Schools Dance Festival,ev_3013871,,
+2023-10-19,13:30,Yorkshire Schools Dance Festival,ev_3013872,,
+2023-10-21,19:00,Moon Palace: Observe the Moon Night at Potternewton Park,ev_2916785,,
+2023-10-21,19:00,Moon Palace exploration timeslot at Observe the Moon Night,ev_3147901,,
+2023-10-21,19:30,Moon Palace exploration timeslot at Observe the Moon Night,ev_3147904,,
+2023-10-21,20:00,Moon Palace exploration timeslot at Observe the Moon Night,ev_3147905,,
+2023-10-21,20:30,Moon Palace exploration timeslot at Observe the Moon Night,ev_3147906,,
+2023-10-21,21:00,Moon Palace exploration timeslot at Observe the Moon Night,ev_3147907,,
+2023-10-21,21:30,Moon Palace exploration timeslot at Observe the Moon Night,ev_3147908,,
+2023-10-22,19:30,Moon Palace: Relaxed After Dark Observation Session at Royal Armouries,ev_2918207,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-10-22,21:30,Moon Palace: After Dark Observation Session at The Royal Armouries,ev_3004009,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-10-24,21:30,Moon Palace: After Dark Observation Session with Audio Description,ev_2918127,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-10-25,18:00,Leeds Art Gallery: Youth Twilight Takeover,ev_3075818,,
+2023-10-30,11:00,Northern Dreaming Storytime,ev_3134526,13 - Closing,True
+2023-10-30,13:00,Northern Dreaming Storytime,ev_3134527,13 - Closing,True
+2023-10-30,15:00,Northern Dreaming Storytime,ev_3134528,13 - Closing,True
+2023-10-31,19:00,Queercore: Night of The Living,ev_2905326,Skills Development,True
+2023-11-02,15:00,All That Lives: Meet the Artists,ev_3045586,,
+2023-11-04,16:15,"All That Lives: Big Finish, Film Screening and Pity Party",ev_2912459,,
+2023-11-06,10:00,Northern Dreaming Storytime Tour - Schools,ev_3051995,,
+2023-11-06,13:30,Northern Dreaming Storytime Tour - Schools,ev_3051996,,
+2023-11-08,10:00,Facilitated School Trips to This is a Forest Exhibition,ev_3029738,04 - This is a FOREST,False
+2023-11-08,10:30,Moon Palace: School Days,ev_3011518,09 - Smeaton300: Moon Palace East Leeds Observatory,False
+2023-11-09,10:00,Facilitated School Trips to This is a Forest Exhibition,ev_3029739,04 - This is a FOREST,False
+2023-11-09,10:30,Moon Palace: School Days,ev_3011519,09 - Smeaton300: Moon Palace East Leeds Observatory,False
+2023-11-10,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052022,,
+2023-11-10,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052023,,
+2023-11-13,00:00,And She Built a Crooked House – Schools Programme (In-School Facilitated Workshops),ev_3034657,Creative Learning S3,False
+2023-11-13,10:00,Northern Dreaming Storytime Tour - Schools,ev_3051997,,
+2023-11-13,13:30,Northern Dreaming Storytime Tour - Schools,ev_3051998,,
+2023-11-14,00:00,And She Built a Crooked House – Schools Programme (In-School Facilitated Workshops),ev_3034658,Creative Learning S3,False
+2023-11-14,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052012,,
+2023-11-14,10:30,Moon Palace: School Days,ev_3011520,09 - Smeaton300: Moon Palace East Leeds Observatory,False
+2023-11-14,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052013,,
+2023-11-15,10:00,Facilitated School Trips to This is a Forest Exhibition,ev_3029740,04 - This is a FOREST,False
+2023-11-15,10:30,Moon Palace: School Days,ev_3011521,09 - Smeaton300: Moon Palace East Leeds Observatory,False
+2023-11-15,16:00,Discover Creative Careers - Training for Career Advisors,ev_3206491,Skills Development,False
+2023-11-16,10:00,Facilitated School Trips to This is a Forest Exhibition,ev_3029741,04 - This is a FOREST,False
+2023-11-16,10:30,Moon Palace: School Days,ev_3011522,09 - Smeaton300: Moon Palace East Leeds Observatory,False
+2023-11-17,10:00,Northern Dreaming Storytime Tour - Communities,ev_3052121,,
+2023-11-17,14:00,Northern Dreaming Storytime Tour - Communities,ev_3052122,,
+2023-11-19,18:00,Moon Palace: After Dark Observation Session at North Parade Car Park,ev_2848366,,
+2023-11-19,20:00,Moon Palace: After Dark Observation Session at North Parade Car Park,ev_2848367,,
+2023-11-20,00:00,And She Built a Crooked House – Schools Programme (In-School Facilitated Workshops),ev_3034659,Creative Learning S3,False
+2023-11-20,10:00,Northern Dreaming Storytime Tour - Schools,ev_3051999,,
+2023-11-20,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052000,,
+2023-11-21,00:00,And She Built a Crooked House – Schools Programme (In-School Facilitated Workshops),ev_3034660,Creative Learning S3,False
+2023-11-21,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052014,,
+2023-11-21,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052015,,
+2023-11-22,10:00,Facilitated School Trips to This is a Forest Exhibition,ev_3029742,04 - This is a FOREST,False
+2023-11-23,10:00,Facilitated School Trips to This is a Forest Exhibition,ev_3029743,04 - This is a FOREST,False
+2023-11-23,12:00,Youth Voice for Freelancers,ev_2669616,,
+2023-11-24,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052030,,
+2023-11-24,12:00,Hibiscus Rising Launch,ev_3074636,06 - National Retrospetive,True
+2023-11-24,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052031,,
+2023-11-25,10:00,Northern Dreaming Storytime Tour - Communities,ev_3052123,,
+2023-11-25,12:00,Hibiscus Rising: In Conversation with Yinka Shonibare,ev_3248633,06 - National Retrospetive,True
+2023-11-25,13:00,Hibiscus Rising: Walking David Oluwale’s Leeds with Joe Williams,ev_3248634,,
+2023-11-25,13:45,Hibiscus Rising: Poetry workshop with Khadijah Ibrahiim,ev_3248643,,
+2023-11-25,14:00,Northern Dreaming Storytime Tour - Communities,ev_3052124,,
+2023-11-27,00:00,And She Built a Crooked House – Schools Programme (In-School Facilitated Workshops),ev_3034661,Creative Learning S3,False
+2023-11-27,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052001,,
+2023-11-27,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052002,,
+2023-11-28,00:00,And She Built a Crooked House – Schools Programme (In-School Facilitated Workshops),ev_3034662,Creative Learning S3,False
+2023-11-28,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052016,,
+2023-11-28,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052017,,
+2023-11-29,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034631,,
+2023-11-30,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034632,,
+2023-12-01,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034633,,
+2023-12-01,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052032,,
+2023-12-01,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052033,,
+2023-12-02,10:00,Northern Dreaming Storytime Tour - Communities,ev_3052125,,
+2023-12-02,14:00,Northern Dreaming Storytime Tour - Communities,ev_3052126,,
+2023-12-04,08:45,Cultural Education Conference,ev_3073624,Creative Learning S3,False
+2023-12-04,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052003,,
+2023-12-04,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052004,,
+2023-12-05,09:30,Children's Day: Re-imagined Schools Tour,ev_2963290,07 - Children's Day,
+2023-12-05,09:30,Children's Day: Re-imagined Schools Tour,ev_2963290,07 - Children's Day,True
+2023-12-05,10:30,Moon Palace: School Days,ev_3011523,09 - Smeaton300: Moon Palace East Leeds Observatory,False
+2023-12-05,18:30,LEEDS 2023: Festive Celebration,ev_3197549,,
+2023-12-06,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034634,,
+2023-12-06,09:30,Children's Day: Re-imagined Schools Tour,ev_2963295,07 - Children's Day,
+2023-12-06,09:30,Children's Day: Re-imagined Schools Tour,ev_2963295,07 - Children's Day,True
+2023-12-06,10:30,Moon Palace: School Days,ev_3011524,09 - Smeaton300: Moon Palace East Leeds Observatory,False
+2023-12-07,09:30,Children's Day: Re-imagined Schools Tour,ev_2963296,07 - Children's Day,
+2023-12-07,09:30,Children's Day: Re-imagined Schools Tour,ev_2963296,07 - Children's Day,True
+2023-12-07,10:30,Moon Palace: School Days,ev_3011525,09 - Smeaton300: Moon Palace East Leeds Observatory,False
+2023-12-08,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034636,,
+2023-12-08,09:30,Children's Day: Re-imagined Schools Tour,ev_2963297,07 - Children's Day,
+2023-12-08,09:30,Children's Day: Re-imagined Schools Tour,ev_2963297,07 - Children's Day,True
+2023-12-11,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052005,,
+2023-12-11,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052006,,
+2023-12-12,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052020,,
+2023-12-12,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052021,,
+2023-12-13,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034637,,
+2023-12-13,10:30,Moon Palace: School Days,ev_3011526,09 - Smeaton300: Moon Palace East Leeds Observatory,False
+2023-12-14,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034638,,
+2023-12-14,10:30,Moon Palace: School Days,ev_3011527,09 - Smeaton300: Moon Palace East Leeds Observatory,False
+2023-12-14,18:00,Future Perfect - Preview Screening,ev_3291909,,
+2023-12-15,09:30,And She Built a Crooked House – Schools Programme (Exhibition Visit and Workshop),ev_3034639,,
+2023-12-15,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052035,,
+2023-12-15,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052036,,
+2023-12-18,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052007,,
+2023-12-18,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052008,,
+2023-12-18,17:30,Moon Palace: After Dark Observation Session at Wetherby Sports Association,ev_2999873,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-12-18,19:30,Moon Palace: After Dark Observation Session at Wetherby Sports Association,ev_2999874,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-12-19,10:00,Northern Dreaming Storytime Tour - Communities,ev_3052129,,
+2023-12-19,14:00,Northern Dreaming Storytime Tour - Communities,ev_3052130,,
+2023-12-19,17:30,Moon Palace: After Dark Observation Session at Farnley Hall Park,ev_2917361,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-12-19,19:30,Moon Palace: After Dark Observation Session at Farnley Hall Park,ev_2917362,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-12-20,17:30,"Moon Palace: After Dark Observation Session at Springhead Park, Rothwell",ev_3009221,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-12-20,19:30,"Moon Palace: After Dark Observation Session at Springhead Park, Rothwell",ev_3009222,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-12-22,16:30,The Gifting Preview,ev_3048970,13 - Closing,True
+2023-12-22,16:30,Accessible Viewing Platform: The Gifting Preview,ev_3308650,,
+2023-12-22,19:30,The Gifting,ev_3027783,13 - Closing,True
+2023-12-22,19:30,Accessible Viewing Platform: The Gifting,ev_3302576,,
+2023-12-26,14:00,The Gifting,ev_2994143,13 - Closing,True
+2023-12-26,14:00,Shuttle Buses: The Gifting,ev_3304436,,
+2023-12-26,16:30,The Gifting,ev_2994144,13 - Closing,True
+2023-12-26,16:30,Accessible Viewing Platform: The Gifting,ev_3302578,,
+2023-12-27,14:00,The Gifting,ev_2994147,13 - Closing,True
+2023-12-27,14:00,Shuttle Buses: The Gifting,ev_3304437,,
+2023-12-27,14:00,Accessible Viewing Platform: The Gifting,ev_3302569,,
+2023-12-27,16:30,The Gifting,ev_2994145,13 - Closing,True
+2023-12-27,16:30,Shuttle Buses: The Gifting,ev_3304444,,
+2023-12-27,19:30,The Gifting,ev_2994146,13 - Closing,True
+2023-12-28,14:00,The Gifting,ev_2994132,13 - Closing,True
+2023-12-28,14:00,Shuttle Buses: The Gifting,ev_3304438,,
+2023-12-28,16:30,The Gifting,ev_2994133,13 - Closing,True
+2023-12-28,16:30,Shuttle Buses: The Gifting,ev_3304445,,
+2023-12-28,19:30,The Gifting,ev_2994134,13 - Closing,True
+2023-12-28,19:30,Shuttle Buses: The Gifting,ev_3304450,,
+2023-12-29,11:00,The Gifting,ev_2994135,13 - Closing,True
+2023-12-29,14:00,The Gifting,ev_2994136,13 - Closing,True
+2023-12-29,16:30,The Gifting,ev_2994137,13 - Closing,True
+2023-12-30,11:00,The Gifting,ev_2994139,13 - Closing,True
+2023-12-30,14:00,The Gifting,ev_2994140,13 - Closing,True
+2023-12-30,16:30,The Gifting,ev_2994141,13 - Closing,True
+2023-12-30,16:30,Shuttle Buses: The Gifting,ev_3304447,,
+2023-12-31,11:00,The Gifting,ev_2994149,13 - Closing,True
+2023-12-31,11:00,Shuttle Buses: The Gifting,ev_3304448,,
+2023-12-31,14:00,The Gifting,ev_2994150,13 - Closing,True
+2023-12-31,14:00,Shuttle Buses: The Gifting,ev_3304441,,
+2023-12-31,14:00,Accessible Viewing Platform: The Gifting,ev_3302573,,
+2023-12-31,18:00,LEEDS 2023 Wrap Party,ev_3284190,,

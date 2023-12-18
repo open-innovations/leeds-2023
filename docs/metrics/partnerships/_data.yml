@@ -1,0 +1,6 @@
+key_metrics:
+  events: 
+    title: Number of Partnerships
+    ref: headlines.total_partnerships
+    description: The number of Partner organisations.
+    colour: var(--l23-pink)

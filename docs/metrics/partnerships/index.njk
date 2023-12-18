@@ -1,0 +1,163 @@
+---
+title: Partnership Programme
+summary: Visualisations of key metrics related to LEEDS 2023 Partnership Programme.
+tags:
+  - main
+order: 30
+url: false
+work_in_progress: true
+metas:
+  title: Partnership Programme
+  description: |
+    Visualisation of key metrics related to LEEDS 2023 Partnership Programme.
+limitations:
+  - In many cases, the support LEEDS 2023 has provided has enabled partners to go on to collaborate and work with several additional partners both locally, nationally, and internationally. Each of the projects within the Partnership Programme is unique, and therefore the scale and structure of each varies.
+  - Events and activities data are extracted from Airtable. Some activities do not have a corresponding ward, therefore the 'Partner events by ward' visualisation does not display data for all events. 
+  - LEEDS 2023 will be supporting contracted partners throughout the year to evaluate their projects in collaboration with The Audience Agency. This evaluation will offer an opportunity for the contracted partners to feedback exactly how many additional partners they engaged with thanks to the LEEDS 2023 support, and this will determine the true breadth of partners for the Year of Culture. 
+sources:
+  - data/metrics/partnerships/
+---
+
+{% from 'macros.njk' import dateFormatter %}
+
+<p>LEEDS 2023’s Partnerships Programme is currently engaged with approximately 60 cultural partners. Work from these partnerships is coming to life in a variety of ways, with events being one of these. This page shows the number of events LEEDS 2023 has supported its partners with over the year. The hexmap shows where in Leeds these events have taken place.</p>
+
+<h2>Partners</h2>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '20rem' } %}
+  {{ comp.metric.headline({
+    title: "Total partnerships", headingLevel: 3,
+    value: headlines.total_partnerships | localize,
+    description: "",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Total international partnerships", headingLevel: 3,
+    value: headlines.total_international | localize,
+    description: "",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Total countries involved", headingLevel: 3,
+    value: headlines.total_unique_countries | localize,
+    description: "",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+{% endcomp %}
+
+
+<h2>Events</h2>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+
+{{ comp.metric.headline({
+    title: "Total events held", headingLevel: 3,
+    value: headlines.total_events | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Total audience", headingLevel: 3,
+    value: headlines.total_audience | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+      {{ comp.metric.headline({
+    title: "Total participants", headingLevel: 3,
+    value: headlines.total_participants | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "In Person Events", headingLevel: 3,
+    value: headlines.total_in_person_events | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+      {{ comp.metric.headline({
+    title: "Online & In Person Events", headingLevel: 3,
+    value: headlines.both_online_in_person_events | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+      {{ comp.metric.headline({
+    title: "Online Only Events", headingLevel: 3,
+    value: headlines.online_only_events | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+
+{% endcomp %}
+
+
+{% comp 'grid.' + headline_grid_style, { min_width: '30rem' } %}
+
+{% comp 'layout.figure', {max_width: '70rem'} %}
+<h3>Partners by month</h3>
+  {{ comp.oi.viz.graph.line({ config: {
+    categories: partnerships_by_month.columns.start_date,
+    width: 25,
+    height: 14,
+    text: { colour: '#eee' },
+    xAxis: {
+      title: 'Date',
+      titleOffset: 4,
+      labelRotate: 35,
+      majorTick: 1,
+      formatter: dateFormatter
+    },
+    yAxis: {
+      title: 'Partners',
+      titleOffset: 3,
+      majorTick: 10
+    },
+    plotArea: {
+      yMax: headlines.total_partnerships | round(-1, 'ceil'),
+      colour: 'var(--l23-dark-blue-grey)'
+    },
+    padding: {
+      left: 4,
+      bottom: 5
+    },
+    series: [
+      {
+        id: "partnerships", label: "Number of partner organisations",
+        yValues: partnerships_by_month.columns.partner_organisation,
+        colour: 'var(--l23-magenta)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    legend: {
+      width: "20em"
+    }
+  } }) | safe }}
+{% endcomp %}
+
+
+{% comp 'layout.figure', {max_width: '30rem'} %}
+<h3>Partnerships by ward</h3>
+{{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.wards_leeds,
+		data: partnerships_by_ward.rows,
+		matchKey: 'partner_venue_ward_code',
+		value: 'partner_organisation',
+		bgColour: '#ddd',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '<h4>{{ n }}</h4><p><strong>{{ partner_organisation | "0" }}</strong> partner_organisation(s)</p>',
+		min: 0,
+		scale: 'magenta'
+	}
+  }) | safe }}
+{% endcomp %}
+{% endcomp %}
+

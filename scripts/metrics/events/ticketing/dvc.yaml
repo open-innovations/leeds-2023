@@ -19,3 +19,12 @@ stages:
     outs:
       - ${top}/data/metrics/events/tickets/orders.csv:
           cache: false
+
+  prepare:
+    cmd: papermill prepare.ipynb ${top}/working/output/tickets-prepare.ipynb
+    deps:
+      - prepare.ipynb
+      - ${top}/data/metrics/events/tickets/orders.csv
+    outs:
+      - ${top}/docs/metrics/tickets/_data/:
+          cache: false

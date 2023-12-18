@@ -118,8 +118,8 @@ event_date,event_time,event_name,event_id,project_name,public_event
 2023-10-09,16:00,Re-imagining Home: Teacher CPD Session,ev_3024027,,
 2023-10-10,16:00,Re-imagining Home: Teacher CPD Session,ev_3024028,,
 2023-10-14,18:00,The Path Between,ev_2877136,,
-2023-10-18,13:30,Yorkshire Schools Dance Festival,ev_3013871,Creative Learning S3,True
-2023-10-19,13:30,Yorkshire Schools Dance Festival,ev_3013872,Creative Learning S3,True
+2023-10-18,13:30,Yorkshire Schools Dance Festival,ev_3013871,,
+2023-10-19,13:30,Yorkshire Schools Dance Festival,ev_3013872,,
 2023-10-21,19:00,Moon Palace: Observe the Moon Night at Potternewton Park,ev_2916785,,
 2023-10-21,19:00,Moon Palace exploration timeslot at Observe the Moon Night,ev_3147901,,
 2023-10-21,19:30,Moon Palace exploration timeslot at Observe the Moon Night,ev_3147904,,
@@ -130,7 +130,7 @@ event_date,event_time,event_name,event_id,project_name,public_event
 2023-10-22,19:30,Moon Palace: Relaxed After Dark Observation Session at Royal Armouries,ev_2918207,09 - Smeaton300: Moon Palace East Leeds Observatory,True
 2023-10-22,21:30,Moon Palace: After Dark Observation Session at The Royal Armouries,ev_3004009,09 - Smeaton300: Moon Palace East Leeds Observatory,True
 2023-10-24,21:30,Moon Palace: After Dark Observation Session with Audio Description,ev_2918127,09 - Smeaton300: Moon Palace East Leeds Observatory,True
-2023-10-25,18:00,Leeds Art Gallery: Youth Twilight Takeover,ev_3075818,General CLE,False
+2023-10-25,18:00,Leeds Art Gallery: Youth Twilight Takeover,ev_3075818,,
 2023-10-30,11:00,Northern Dreaming Storytime,ev_3134526,13 - Closing,True
 2023-10-30,13:00,Northern Dreaming Storytime,ev_3134527,13 - Closing,True
 2023-10-30,15:00,Northern Dreaming Storytime,ev_3134528,13 - Closing,True
@@ -160,7 +160,7 @@ event_date,event_time,event_name,event_id,project_name,public_event
 2023-11-17,10:00,Northern Dreaming Storytime Tour - Communities,ev_3052121,,
 2023-11-17,14:00,Northern Dreaming Storytime Tour - Communities,ev_3052122,,
 2023-11-19,18:00,Moon Palace: After Dark Observation Session at North Parade Car Park,ev_2848366,,
-2023-11-19,20:00,Moon Palace: After Dark Observation Session at North Parade Car Park,ev_2848367,09 - Smeaton300: Moon Palace East Leeds Observatory,True
+2023-11-19,20:00,Moon Palace: After Dark Observation Session at North Parade Car Park,ev_2848367,,
 2023-11-20,00:00,And She Built a Crooked House – Schools Programme (In-School Facilitated Workshops),ev_3034659,Creative Learning S3,False
 2023-11-20,10:00,Northern Dreaming Storytime Tour - Schools,ev_3051999,,
 2023-11-20,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052000,,
@@ -175,8 +175,8 @@ event_date,event_time,event_name,event_id,project_name,public_event
 2023-11-24,13:30,Northern Dreaming Storytime Tour - Schools,ev_3052031,,
 2023-11-25,10:00,Northern Dreaming Storytime Tour - Communities,ev_3052123,,
 2023-11-25,12:00,Hibiscus Rising: In Conversation with Yinka Shonibare,ev_3248633,06 - National Retrospetive,True
-2023-11-25,13:00,Hibiscus Rising: Walking David Oluwale’s Leeds with Joe Williams,ev_3248634,06 - National Retrospetive,True
-2023-11-25,13:45,Hibiscus Rising: Poetry workshop with Khadijah Ibrahiim,ev_3248643,06 - National Retrospetive,True
+2023-11-25,13:00,Hibiscus Rising: Walking David Oluwale’s Leeds with Joe Williams,ev_3248634,,
+2023-11-25,13:45,Hibiscus Rising: Poetry workshop with Khadijah Ibrahiim,ev_3248643,,
 2023-11-25,14:00,Northern Dreaming Storytime Tour - Communities,ev_3052124,,
 2023-11-27,00:00,And She Built a Crooked House – Schools Programme (In-School Facilitated Workshops),ev_3034661,Creative Learning S3,False
 2023-11-27,10:00,Northern Dreaming Storytime Tour - Schools,ev_3052001,,

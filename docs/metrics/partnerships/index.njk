@@ -4,7 +4,6 @@ summary: Visualisations of key metrics related to LEEDS 2023 Partnership Program
 tags:
   - main
 order: 30
-url: false
 work_in_progress: true
 metas:
   title: Partnership Programme
@@ -22,7 +21,7 @@ sources:
 
 <p>LEEDS 2023’s Partnerships Programme is currently engaged with approximately 60 cultural partners. Work from these partnerships is coming to life in a variety of ways, with events being one of these. This page shows the number of events LEEDS 2023 has supported its partners with over the year. The hexmap shows where in Leeds these events have taken place.</p>
 
-<h2>Partners</h2>
+<h2>Partner Organisations</h2>
 
 {% comp 'grid.' + headline_grid_style, { min_width: '20rem' } %}
   {{ comp.metric.headline({
@@ -47,57 +46,6 @@ sources:
   }) | safe }}
 
 {% endcomp %}
-
-
-<h2>Events</h2>
-
-{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
-
-{{ comp.metric.headline({
-    title: "Total events held", headingLevel: 3,
-    value: headlines.total_events | localize,
-    description: "",
-    background: "var(--l23-cyan)"
-  }) | safe }}
-
-  {{ comp.metric.headline({
-    title: "Total audience", headingLevel: 3,
-    value: headlines.total_audience | localize,
-    description: "",
-    background: "var(--l23-cyan)"
-  }) | safe }}
-
-      {{ comp.metric.headline({
-    title: "Total participants", headingLevel: 3,
-    value: headlines.total_participants | localize,
-    description: "",
-    background: "var(--l23-cyan)"
-  }) | safe }}
-
-    {{ comp.metric.headline({
-    title: "In Person Events", headingLevel: 3,
-    value: headlines.total_in_person_events | localize,
-    description: "",
-    background: "var(--l23-cyan)"
-  }) | safe }}
-
-      {{ comp.metric.headline({
-    title: "Online & In Person Events", headingLevel: 3,
-    value: headlines.both_online_in_person_events | localize,
-    description: "",
-    background: "var(--l23-cyan)"
-  }) | safe }}
-
-      {{ comp.metric.headline({
-    title: "Online Only Events", headingLevel: 3,
-    value: headlines.online_only_events | localize,
-    description: "",
-    background: "var(--l23-cyan)"
-  }) | safe }}
-
-
-{% endcomp %}
-
 
 {% comp 'grid.' + headline_grid_style, { min_width: '30rem' } %}
 
@@ -158,6 +106,133 @@ sources:
 		scale: 'magenta'
 	}
   }) | safe }}
+{% endcomp %}   
 {% endcomp %}
+
+
+<h2>Events</h2>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+
+{{ comp.metric.headline({
+    title: "Total events held", headingLevel: 3,
+    value: headlines.total_events | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Total audience", headingLevel: 3,
+    value: headlines.total_audience | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+      {{ comp.metric.headline({
+    title: "Total participants", headingLevel: 3,
+    value: headlines.total_participants | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
 {% endcomp %}
+
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+
+
+    {# {{ comp.metric.headline({
+    title: "In Person Events", headingLevel: 3,
+    value: headlines.total_in_person_events | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+      {{ comp.metric.headline({
+    title: "Online & In Person Events", headingLevel: 3,
+    value: headlines.both_online_in_person_events | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+      {{ comp.metric.headline({
+    title: "Online Only Events", headingLevel: 3,
+    value: headlines.online_only_events | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }} #}
+
+{% endcomp %}
+
+<h3>Activities</p>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+
+      {{ comp.metric.headline({
+    title: "Performances", headingLevel: 3,
+    value: 'TBC',
+    description: "",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }} 
+  
+      {{ comp.metric.headline({
+    title: "Exhibitions", headingLevel: 3,
+    value: 'TBC',
+    description: "",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }} 
+
+
+{{ comp.metric.headline({
+    title: "Workshops", headingLevel: 3,
+    value: 'TBC',
+    description: "",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }} 
+
+    {{ comp.metric.headline({
+    title: "Public Artwork", headingLevel: 3,
+    value: 'TBC',
+    description: "",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }}
+
+{% endcomp %}
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+
+
+
+    {{ comp.metric.headline({
+    title: "Pop-ups", headingLevel: 3,
+    value: 'TBC',
+    description: "",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }}  
+  
+    {{ comp.metric.headline({
+    title: "Residencies", headingLevel: 3,
+    value: 'TBC',
+    description: "",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }}  
+
+    {{ comp.metric.headline({
+    title: "Other projects", headingLevel: 3,
+    value: 'TBC',
+    description: "",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }}  
+
+
+
+{% endcomp %}
+
 

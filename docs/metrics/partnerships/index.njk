@@ -162,7 +162,41 @@ sources:
     background: "var(--l23-cyan)"
   }) | safe }} #}
 
+
+{% comp 'layout.figure' %}
+<h3>Partner Events by Type</h3>
+{{ comp.oi.viz.chart.bar({ config: {
+    data: event_type.rows,
+    category: 'online_in_person_both',
+    width: 1000,
+    height: 400,
+    series: [
+      { title: 'Number of events', value: 'event_type', colour: "var(--l23-yellow)" }
+    ],
+    legend: {
+      show: false,
+      position: "top"
+    },
+    axis: {
+      x: {  
+        title: {
+          label: "Number of events"
+        },
+        tickSpacing: 10,
+        "font-weight": oi_viz.bar.axis.x['font-weight'],
+        grid: oi_viz.bar.axis.x.grid
+      },
+      y: {
+        "font-weight": oi_viz.bar.axis.y['font-weight'],
+        grid: oi_viz.bar.axis.y.grid
+      }
+    }
+  } }) | safe }}
 {% endcomp %}
+
+
+{% endcomp %}
+
 
 <h3>Activities</p>
 
@@ -172,16 +206,14 @@ sources:
     title: "Performances", headingLevel: 3,
     value: 'TBC',
     description: "",
-    background: "var(--l23-dark-blue-grey)",
-    colour: "white"
+    background: "var(--l23-yellow)"
   }) | safe }} 
   
       {{ comp.metric.headline({
     title: "Exhibitions", headingLevel: 3,
     value: 'TBC',
     description: "",
-    background: "var(--l23-dark-blue-grey)",
-    colour: "white"
+    background: "var(--l23-magenta)"
   }) | safe }} 
 
 
@@ -189,46 +221,39 @@ sources:
     title: "Workshops", headingLevel: 3,
     value: 'TBC',
     description: "",
-    background: "var(--l23-dark-blue-grey)",
-    colour: "white"
+    background: "var(--l23-yellow)"
   }) | safe }} 
 
     {{ comp.metric.headline({
     title: "Public Artwork", headingLevel: 3,
     value: 'TBC',
     description: "",
-    background: "var(--l23-dark-blue-grey)",
-    colour: "white"
+    background: "var(--l23-magenta)"
   }) | safe }}
 
 {% endcomp %}
 
 {% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
 
-
-
     {{ comp.metric.headline({
     title: "Pop-ups", headingLevel: 3,
     value: 'TBC',
     description: "",
-    background: "var(--l23-dark-blue-grey)",
-    colour: "white"
+    background: "var(--l23-yellow)"
   }) | safe }}  
   
     {{ comp.metric.headline({
     title: "Residencies", headingLevel: 3,
     value: 'TBC',
     description: "",
-    background: "var(--l23-dark-blue-grey)",
-    colour: "white"
+    background: "var(--l23-magenta)"
   }) | safe }}  
 
     {{ comp.metric.headline({
     title: "Other projects", headingLevel: 3,
     value: 'TBC',
     description: "",
-    background: "var(--l23-dark-blue-grey)",
-    colour: "white"
+    background: "var(--l23-yellow)"
   }) | safe }}  
 
 

@@ -71,7 +71,7 @@ limitations:
 
   {{ comp.metric.headline({
     title: "Tickets sold", headingLevel: 2,
-    value: events.tickets_by_date.columns.tickets | last | localize ,
+    value: search.data('metrics/tickets').headlines['05 - The Barn'].tickets | localize ,
     description: "Total number of tickets sold.",
     background: "var(--l23-cyan)", 
     colour: "black"

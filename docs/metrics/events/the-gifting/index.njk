@@ -56,7 +56,7 @@ metas:
 
   {{ comp.metric.headline({
     title: "Tickets sold", headingLevel: 2,
-    value: events.tickets_by_date.columns.tickets | last | localize ,
+    value: search.data('metrics/tickets').headlines['13 - Closing'].tickets | localize ,
     description: "Total number of tickets sold.",
     background: "var(--l23-dark-blue-grey)", 
     colour: "white"

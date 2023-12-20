@@ -129,6 +129,13 @@ sources:
     background: "var(--l23-cyan)"
   }) | safe }}
 
+    {{ comp.metric.headline({
+    title: "Total digital audience", headingLevel: 3,
+    value: headlines.total_digital_audience | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
       {{ comp.metric.headline({
     title: "Total participants", headingLevel: 3,
     value: headlines.total_participants | localize,

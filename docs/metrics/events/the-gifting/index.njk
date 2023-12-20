@@ -64,4 +64,46 @@ metas:
 
 {% endcomp %}
 
+  {% comp 'layout.figure' %}
+<h3>Number of tickets sold by event date</h3>
+  {{ comp.oi.viz.graph.line({ config: {
+    categories: search.data('metrics/tickets').by_project_cumulative_weekly.columns.week,
+    width: 35,
+    height: 14,
+    text: { colour: '#eee' },
+    xAxis: {
+      title: 'Date',
+      titleOffset: 4,
+      labelRotate: 35,
+      formatter: dateFormatter
+    },
+    yAxis: {
+      title: 'Total',
+      titleOffset: 3,
+      majorTick: 100
+    },
+    plotArea: {
+      yMax: 2500,
+      colour: 'var(--l23-dark-blue-grey)'
+    },
+    padding: {
+      left: 4,
+      bottom: 5
+    },
+    series: [
+      {
+        id: "tickets", label: "Number of tickets sold",
+        yValues: search.data('metrics/tickets').by_project_cumulative_weekly.columns["13 - Closing"],
+        colour: 'var(--l23-magenta)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    legend: {
+      width: "20em"
+    }
+  } }) | safe }}
+{% endcomp %}
+
 <h3>About this data</h3>
+
+

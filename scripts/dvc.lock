@@ -1,0 +1,4 @@
+schema: '2.0'
+stages:
+  capture_date:
+    cmd: python capture_date.py

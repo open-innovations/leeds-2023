@@ -106,4 +106,26 @@ metas:
 
 <h3>About this data</h3>
 
+<p>
+  This page presents data related to
+  <a href="https://leeds2023.co.uk/the-gifting">The Gifting</a> closing show and
+  <a href="https://leeds2023.co.uk/northern-dreaming">Northern Dreaming</a> book.
+</p>
 
+<p>
+  This data is derived from event tracking data captured by the LEEDS 2023 team, and by data from the ticketing platform.
+</p>
+
+<ul>
+  <li>
+    Event counts (public, schools and total) is directly derived from the projects teams database, and includes events up to {{ timestamp.data | date('HUMAN_DATE') }}.
+  </li>
+
+  <li>
+    The audience data is based on the counts logged by the projects teams in the same database, and includes events up to {{ timestamp.data | date('HUMAN_DATE') }}.
+  </li>
+
+  <li>
+    Ticketing data is derived from the ticketing platform, and includes tickets sold up to {{ timestamp.data | date('HUMAN_DATE') }}, including for events not yet held.
+  </li>
+<ul>

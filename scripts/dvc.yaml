@@ -1,0 +1,4 @@
+stages:
+  capture_date:
+    always_changed: true
+    cmd: python capture_date.py

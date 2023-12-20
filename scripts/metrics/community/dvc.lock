@@ -10,15 +10,15 @@ stages:
     outs:
     - path: ../../../working/metrics/community/events.csv
       hash: md5
-      md5: 094695bd78c054df4d5861096afc2c53
-      size: 307541
+      md5: a7d11854a1e6639b5867e299ce537c59
+      size: 307551
   transform:
     cmd: papermill transform.ipynb ../../../working/output/community-transform.ipynb
     deps:
     - path: ../../../working/metrics/community/events.csv
       hash: md5
-      md5: 094695bd78c054df4d5861096afc2c53
-      size: 307541
+      md5: a7d11854a1e6639b5867e299ce537c59
+      size: 307551
     - path: transform.ipynb
       hash: md5
       md5: 4dc6524ef5c1124a043051d92e9f19ba
@@ -26,15 +26,15 @@ stages:
     outs:
     - path: ../../../data/metrics/community/events.csv
       hash: md5
-      md5: 386166e731d40e4d0f08e444b4096694
-      size: 30728
+      md5: b7a958fd562042f7fe524296ca069e5c
+      size: 30738
   prepare:
     cmd: papermill prepare.ipynb ../../../working/output/community-prepare.ipynb
     deps:
     - path: ../../../data/metrics/community/events.csv
       hash: md5
-      md5: 386166e731d40e4d0f08e444b4096694
-      size: 30728
+      md5: b7a958fd562042f7fe524296ca069e5c
+      size: 30738
     - path: prepare.ipynb
       hash: md5
       md5: 19eb2fb7334d3e5cdb0212056c8e5729
@@ -42,13 +42,13 @@ stages:
     outs:
     - path: ../../../docs/metrics/community/_data/by_date.csv
       hash: md5
-      md5: 1c0aee8f0ded3d8342d2cc8515a7dcc4
+      md5: 70cdb9dfd9e9413cb333bff8c71f8d49
       size: 476
     - path: ../../../docs/metrics/community/_data/by_ward.csv
       hash: md5
-      md5: 2f94c6b1d3e366a54d7b80c6f62392f8
-      size: 501
+      md5: 687cf6a028dadb3a8664586bfa8941a7
+      size: 502
     - path: ../../../docs/metrics/community/_data/headlines.json
       hash: md5
-      md5: 272305b03c96a202de2c1a7cedb07270
+      md5: be88fa00ab4c0942729872f4c62abaa1
       size: 130

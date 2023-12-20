@@ -15,6 +15,14 @@ limitations:
   - LEEDS 2023 will be supporting contracted partners throughout the year to evaluate their projects in collaboration with The Audience Agency. This evaluation will offer an opportunity for the contracted partners to feedback exactly how many additional partners they engaged with thanks to the LEEDS 2023 support, and this will determine the true breadth of partners for the Year of Culture. 
 sources:
   - data/metrics/partnerships/
+
+
+css: | 
+
+    h2 {
+        text-align:center!important;
+        padding-rop:3rem!important;
+    }
 ---
 
 {% from 'macros.njk' import dateFormatter %}
@@ -198,7 +206,7 @@ sources:
 {% endcomp %}
 
 
-<h3>Activities</p>
+<h2>Activities</h2>
 
 {% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
 
@@ -256,8 +264,68 @@ sources:
     background: "var(--l23-yellow)"
   }) | safe }}  
 
+{% endcomp %}
+
+<h2>Artforms</h2>
+
+
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+
+    {{ comp.metric.headline({
+    title: "Combined Arts", headingLevel: 3,
+    value: artforms.columns.combined_arts | localize,
+    description: "",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }}
 
 
 {% endcomp %}
+
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+
+    {{ comp.metric.headline({
+    title: "Music", headingLevel: 3,
+    value: artforms.columns.music | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}   
+
+    {{ comp.metric.headline({
+    title: "Visual Art", headingLevel: 3,
+    value: artforms.columns.visual_art | localize,
+    description: "",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+    }) | safe }}  
+
+    {{ comp.metric.headline({
+    title: "Theatre", headingLevel: 3,
+    value: artforms.columns.theatre | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}  
+
+    {{ comp.metric.headline({
+    title: "Dance", headingLevel: 3,
+    value: artforms.columns.dance | localize,
+    description: "",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }}  
+
+    {{ comp.metric.headline({
+    title: "Literature", headingLevel: 3,
+    value: artforms.columns.literature | localize,
+    description: "",
+    background: "var(--l23-cyan)"
+  }) | safe }}  
+
+
+
+{% endcomp %}
+
 
 

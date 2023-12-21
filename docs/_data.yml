@@ -1,15 +1,18 @@
 layout: layouts/page.njk
 
 header_title: Data
+
+description: |
+    LEEDS 2023 Year of Culture data microsite. Metrics and visualisations
+    describing the impact of LEEDS 2023.
+
 metas:
   title: =title
   site: LEEDS 2023 Data
-  description: |
-    LEEDS 2023 Year of Culture data microsite. Metrics and visualisations
-    describing the impact of LEEDS 2023.
+  description: =description
   lang: en
   # keywords: []
-  # image: The main image of the page, article, post, etc.
+  image: /assets/images/social-share/leeds-2023-data.jpeg
   icon: /favicon.ico
   twitter: "@leeds_2023"
   # color: The color theme of the website.

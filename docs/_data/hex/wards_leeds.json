@@ -3,7 +3,7 @@
 	"hexes": {
 		"E05011395":{"n":"Guiseley and Rawdon","q":0,"r":3,"colour":"#00B6FF"},
 		"E05011549":{"n":"Otley and Yeadon","q":1,"r":3,"colour":"#00B6FF"},
-		"E05012841":{"n":"Adel and Wharfdale","label":"Adel","q":2,"r":3,"colour":"#00B6FF"},
+		"E05012841":{"n":"Adel and Wharfedale","label":"Adel","q":2,"r":3,"colour":"#00B6FF"},
 		"E05012842":{"n":"Alwoodley","q":3,"r":3,"colour":"#00B6FF"},
 		"E05011396":{"n":"Harewood","q":4,"r":3,"colour":"#00B6FF"},
 		"E05011414":{"n":"Wetherby","label":"Wby","q":5,"r":3,"colour":"#00B6FF"},

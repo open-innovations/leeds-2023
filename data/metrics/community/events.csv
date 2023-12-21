@@ -1,6 +1,4 @@
 event_name,project_name,start_date,ward_name,ward_code,audience
-1st Wetherby Beavers/Clubs ,01 - The Awakening,2023-03-29,Wetherby,E05011414,35.0
-5th Horsforth Rainbows and 5th Horsforth Brownies ,01 - The Awakening,2023-03-07,Horsforth,E05011547,21.0
 Ballot Facilitated Session - Carr Manor Community School ,01 - The Awakening,2022-11-01,Moortown,E05011405,
 Ballot Facilitated Session - Chapel Allerton Primary School ,01 - The Awakening,2022-11-07,Chapel Allerton,E05011390,
 Ballot Facilitated Session - Cobden Primary School,01 - The Awakening,2022-11-09,Farnley and Wortley,E05012648,
@@ -24,8 +22,6 @@ Ballot Facilitated Session - St Margarets Primary School,01 - The Awakening,2022
 Ballot Facilitated Session - St Margarets Primary School,01 - The Awakening,2022-11-24,Horsforth,E05011547,
 Ballot Facilitated Session - St Margarets Primary School,01 - The Awakening,2022-11-25,Horsforth,E05011547,
 Ballot Facilitated Session - St Oswald's C of E Primary School,01 - The Awakening,2022-11-17,Guiseley and Rawdon,E05011395,
-Be More and Swarthmore Pack,01 - The Awakening,2023-02-07,,,15.0
-Calverley 2nd Brownies ,01 - The Awakening,2023-04-03,Calverley and Farsley,E05011389,24.0
 Community Pilot Session 1: Afghan Families in Hotels at Garforth,01 - The Awakening,2023-01-13,Headingley and Hyde Park,E05011397,14.0
 Connecting Crossgates ,01 - The Awakening,2023-03-03,Cross Gates and Whinmoor,E05011391,10.0
 Creation Station	LCC Printworks Campus,01 - The Awakening,2022-10-05,Middleton Park,E05011404,
@@ -72,69 +68,72 @@ Creation Station - University of Leeds ,01 - The Awakening,2022-11-23,Little Lon
 Creation Station - Yorkshire Schools Dance Festivals ,01 - The Awakening,2022-11-19,,,
 Creation Station- Leeds Train Station,01 - The Awakening,2022-09-24,Hunslet and Riverside,E05011399,
 Creation Station: Ballot Engagement ,01 - The Awakening,,,,
-Dolphin Manor ,01 - The Awakening,2023-03-22,Rothwell,E05011410,10.0
-Dolphin Manor Pack,01 - The Awakening,2023-02-23,,,20.0
-Feel Good Factor Eco Club ,01 - The Awakening,2023-03-08,Chapel Allerton,E05011390,12.0
-Friends of Cottingley Community Centre Pack Pack,01 - The Awakening,2023-02-19,,,20.0
-Friends of Sandringham Park Pack,01 - The Awakening,2023-02-02,,,60.0
-Gypsy Roma Traveller Outreach and Inclusion Team,01 - The Awakening,2023-03-08,Burmantofts and Richmond Hill,E05011388,30.0
-Heart to Art Pack,01 - The Awakening,2023-02-15,,,12.0
-Heartlines Writing Group Pack,01 - The Awakening,2023-02-02,,,16.0
 Holt park active day centre ,01 - The Awakening,2023-03-16,Adel and Wharfedale,E05012841,10.0
-Holy Name Scout Group ,01 - The Awakening,2023-03-08,Weetwood,E05011413,40.0
-Holy Rosary and St Anne's Catholic Primary School pack,01 - The Awakening,2023-03-08,Chapel Allerton,E05011390,30.0
-HOPS ,01 - The Awakening,2023-03-08,Kirkstall,E05011402,10.0
-Horsforth Town of Sanctuary ,01 - The Awakening,2023-02-27,Gipton and Harehills,E05011394,25.0
-Hyde Park Girls' Brigade,01 - The Awakening,2023-02-28,Little London and Woodhouse,E05011403,17.0
-Jack Clark School pack,01 - The Awakening,2023-03-08,Gipton and Harehills,E05011394,10.0
-Knowle Manor ,01 - The Awakening,2023-03-08,Morley South,E05011407,10.0
-Knowle Manor Pack,01 - The Awakening,2023-02-23,,,20.0
-KVDT Pack,01 - The Awakening,2023-01-27,,,30.0
 Leeds Art Gallery - Creation Station,01 - The Awakening,,Little London and Woodhouse,E05011403,13.0
 Leeds Arts University - Creation Station,01 - The Awakening,,,,70.0
 Leeds Central Library - Creation Station,01 - The Awakening,,Little London and Woodhouse,E05011403,7.0
-Leeds Central Library Craft Group,01 - The Awakening,2023-04-18,Little London and Woodhouse,E05011403,18.0
-Leeds City Council - Community Hub & Library Healthy Holiday Programme (Chapel Allerton),01 - The Awakening,2023-04-05,,,15.0
-Leeds City Council - Community Hub & Library Healthy Holiday Programme (Gipton),01 - The Awakening,2023-04-04,,,15.0
-Leeds City Council - Community Hub & Library Healthy Holiday Programme (Hunslet) ,01 - The Awakening,2023-04-06,,,15.0
 Leeds City Museum,01 - The Awakening,,Little London and Woodhouse,E05011403,75.0
 Leeds Train Station - Creation Station,01 - The Awakening,,Hunslet and Riverside,E05011399,20.0
 Light Night - Creation Station,01 - The Awakening,,,,
 Lotherton Hall ,01 - The Awakening,,,,10.0
-LoveWorld Leeds Pack,01 - The Awakening,2023-02-16,,,20.0
 LS-TEN Skate Park ,01 - The Awakening,2023-03-29,Hunslet and Riverside,E05011399,15.0
-Mantric Roots Pack,01 - The Awakening,2023-02-18,,,2.0
 Mass Movement Rehearsals,01 - The Awakening,2023-01-05,,,
-NCT antenatal group for women seeking asylum and refugees ,01 - The Awakening,2023-02-21,Gipton and Harehills,E05011394,6.0
-New Dawn Pack,01 - The Awakening,2023-02-18,,,30.0
-RecoveryHubEast,01 - The Awakening,2023-02-16,Killingbeck and Seacroft,E05011400,6.0
-Resettlement team bridging hotels ,01 - The Awakening,2023-02-24,Wetherby,E05011414,10.0
-Specialist Autism Services Pack,01 - The Awakening,2023-03-23,,,12.0
-Spring Gardens Pack,01 - The Awakening,2023-03-23,,,16.0
-Temple Learning Academy Pack,01 - The Awakening,2023-02-13,,,30.0
 Temple Newsam - Creation Station ,01 - The Awakening,,Temple Newsam,E05013831,10.0
 Tetley - Creation Station ,01 - The Awakening,,Hunslet and Riverside,E05011399,
-The Den Headingley Pack,01 - The Awakening,2023-02-13,,,25.0
-The Heritage Cooking Company CIC Pack,01 - The Awakening,2023-02-13,,,16.0
 Trinity Bridge - Creation Station ,01 - The Awakening,,Little London and Woodhouse,E05011403,60.0
 Trinity Bridge ES4  - Ballot workshop,01 - The Awakening,2022-11-19,Little London and Woodhouse,E05011403,
 Trinity Bridge ES4 - Ballot workshop,01 - The Awakening,2022-10-08,Little London and Woodhouse,E05011403,
 Trinity Bridge ES4 - Ballot workshop,01 - The Awakening,2022-10-22,Little London and Woodhouse,E05011403,
 Trinity Bridge ES4 - Ballot workshop,01 - The Awakening,2022-11-05,Little London and Woodhouse,E05011403,
 Trinity Landing - Creation Station,01 - The Awakening,,Little London and Woodhouse,E05011403,60.0
-Turning Lives Around Pack,01 - The Awakening,2023-02-22,,,25.0
 University of Leeds - Creation Station,01 - The Awakening,,Little London and Woodhouse,E05011403,60.0
-Waking the Artist in Communities ,01 - The Awakening,2023-02-06,,,
-Welcome In Community Centre and OPAL,01 - The Awakening,2023-02-22,Weetwood,E05011413,29.0
-Wetherby Town Hall Pack,01 - The Awakening,2023-02-25,,,250.0
+Waking the Artist 1st Wetherby Beavers/Clubs ,01 - The Awakening,2023-03-29,Wetherby,E05011414,35.0
+Waking the Artist 5th Horsforth Rainbows and 5th Horsforth Brownies ,01 - The Awakening,2023-03-07,Horsforth,E05011547,21.0
+Waking the Artist Be More and Swarthmore Pack,01 - The Awakening,2023-02-07,,,15.0
+Waking the Artist Calverley 2nd Brownies ,01 - The Awakening,2023-04-03,Calverley and Farsley,E05011389,24.0
+Waking the Artist Dolphin Manor ,01 - The Awakening,2023-03-22,Rothwell,E05011410,10.0
+Waking the Artist Dolphin Manor Pack,01 - The Awakening,2023-02-23,,,20.0
+Waking the Artist Feel Good Factor Eco Club ,01 - The Awakening,2023-03-08,Chapel Allerton,E05011390,12.0
+Waking the Artist Friends of Cottingley Community Centre Pack Pack,01 - The Awakening,2023-02-19,,,20.0
+Waking the Artist Friends of Sandringham Park Pack,01 - The Awakening,2023-02-02,,,60.0
+Waking the Artist Gypsy Roma Traveller Outreach and Inclusion Team,01 - The Awakening,2023-03-08,Burmantofts and Richmond Hill,E05011388,30.0
+Waking the Artist Heart to Art Pack,01 - The Awakening,2023-02-15,,,12.0
+Waking the Artist Heartlines Writing Group Pack,01 - The Awakening,2023-02-02,,,16.0
+Waking the Artist Holy Name Scout Group ,01 - The Awakening,2023-03-08,Weetwood,E05011413,40.0
+Waking the Artist Holy Rosary and St Anne's Catholic Primary School pack,01 - The Awakening,2023-03-08,Chapel Allerton,E05011390,30.0
+Waking the Artist HOPS ,01 - The Awakening,2023-03-08,Kirkstall,E05011402,10.0
+Waking the Artist Horsforth Town of Sanctuary ,01 - The Awakening,2023-02-27,Gipton and Harehills,E05011394,25.0
+Waking the Artist Hyde Park Girls' Brigade,01 - The Awakening,2023-02-28,Little London and Woodhouse,E05011403,17.0
+Waking the Artist Jack Clark School pack,01 - The Awakening,2023-03-08,Gipton and Harehills,E05011394,10.0
+Waking the Artist Knowle Manor ,01 - The Awakening,2023-03-08,Morley South,E05011407,10.0
+Waking the Artist Knowle Manor Pack,01 - The Awakening,2023-02-23,,,20.0
+Waking the Artist KVDT Pack,01 - The Awakening,2023-01-27,,,30.0
+Waking the Artist Leeds Central Library Craft Group,01 - The Awakening,2023-04-18,Little London and Woodhouse,E05011403,18.0
+Waking the Artist Leeds City Council - Community Hub & Library Healthy Holiday Programme (Chapel Allerton),01 - The Awakening,2023-04-05,,,15.0
+Waking the Artist Leeds City Council - Community Hub & Library Healthy Holiday Programme (Gipton),01 - The Awakening,2023-04-04,,,15.0
+Waking the Artist Leeds City Council - Community Hub & Library Healthy Holiday Programme (Hunslet) ,01 - The Awakening,2023-04-06,,,15.0
+Waking the Artist LoveWorld Leeds Pack,01 - The Awakening,2023-02-16,,,20.0
+Waking the Artist Mantric Roots Pack,01 - The Awakening,2023-02-18,,,2.0
+Waking the Artist NCT antenatal group for women seeking asylum and refugees ,01 - The Awakening,2023-02-21,Gipton and Harehills,E05011394,6.0
+Waking the Artist New Dawn Pack,01 - The Awakening,2023-02-18,,,30.0
+Waking the Artist RecoveryHubEast,01 - The Awakening,2023-02-16,Killingbeck and Seacroft,E05011400,6.0
+Waking the Artist Resettlement Team Bridging Hotels ,01 - The Awakening,2023-02-24,Wetherby,E05011414,10.0
+Waking the Artist Specialist Autism Services Pack,01 - The Awakening,2023-03-23,,,12.0
+Waking the Artist Spring Gardens Pack,01 - The Awakening,2023-03-23,,,16.0
+Waking the Artist Temple Learning Academy Pack,01 - The Awakening,2023-02-13,,,30.0
+Waking the Artist The Den Headingley Pack,01 - The Awakening,2023-02-13,,,25.0
+Waking the Artist The Heritage Cooking Company CIC Pack,01 - The Awakening,2023-02-13,,,16.0
+Waking the Artist Turning Lives Around Pack,01 - The Awakening,2023-02-22,,,25.0
+Waking the Artist Welcome In Community Centre and OPAL,01 - The Awakening,2023-02-22,Weetwood,E05011413,29.0
+Waking the Artist Wetherby Town Hall Pack,01 - The Awakening,2023-02-25,,,250.0
+Waking the Artist Who Let The Dads Out Fulneck Moravian Church Pack,01 - The Awakening,2023-02-22,,,12.0
+Waking the Artist Windmill Youth Club,01 - The Awakening,2023-03-09,Rothwell,E05011410,15.0
+Waking the Artist Woodhouse Community Centre ,01 - The Awakening,2023-03-09,Headingley and Hyde Park,E05011397,10.0
 White Rose - Ballot workshop,01 - The Awakening,2022-10-01,Morley North,E05011406,
 White Rose - Ballot workshop,01 - The Awakening,2022-10-15,Morley North,E05011406,
 White Rose - Ballot workshop,01 - The Awakening,2022-10-29,Morley North,E05011406,
 White Rose - Ballot workshop,01 - The Awakening,2022-11-12,Morley North,E05011406,
 White Rose - Creation Station ,01 - The Awakening,2022-10-01,Morley North,E05011406,65.0
-Who Let The Dads Out Fulneck Moravian Church Pack,01 - The Awakening,2023-02-22,,,12.0
-Windmill Youth Club,01 - The Awakening,2023-03-09,Rothwell,E05011410,15.0
-Woodhouse Community Centre ,01 - The Awakening,2023-03-09,Headingley and Hyde Park,E05011397,10.0
 Choral Performance Rehearsal,02 - Making A Stand,2023-04-27,Little London and Woodhouse,E05011403,
 Delivery of Think Ins,05 - The Barn,2022-10-20,,,
 Dream Builder's Workshop,05 - The Barn,,,,

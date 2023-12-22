@@ -15,12 +15,49 @@ limitations:
   - LEEDS 2023 will be supporting contracted partners throughout the year to evaluate their projects in collaboration with The Audience Agency. This evaluation will offer an opportunity for the contracted partners to feedback exactly how many additional partners they engaged with thanks to the LEEDS 2023 support, and this will determine the true breadth of partners for the Year of Culture. 
 sources:
   - data/metrics/partnerships/
-
 ---
 
 {% from 'macros.njk' import dateFormatter %}
 
+
+
 <p>LEEDS 2023’s Partnerships Programme is currently engaged with approximately 60 cultural partners. Work from these partnerships is coming to life in a variety of ways, with events being one of these. This page shows the number of events LEEDS 2023 has supported its partners with over the year. The hexmap shows where in Leeds these events have taken place.</p>
+
+
+{# {% comp 'grid.' + headline_grid_style, { min_width: '20rem' } %}
+
+    {{ comp.oi.viz.map.svg({ visualisation:  "Projection: Gall-Peters"  }) | safe }}
+
+{% endcomp %} #}
+
+  {% comp 'grid.' + headline_grid_style, { min_width: '20rem' } %}
+
+    {{ comp.oi.viz.map.svg({ 
+        config: {
+            geojson: {
+                data: geojson.world,
+                key: 'ADM0_A3'
+            }, 
+            projection: {
+                name: 'equirectangular'
+            },
+            data: metrics.partnerships.countries.rows,
+            key:'ADM0_A3',
+            scale: 'magenta',
+            value: 'number_of_partners',
+            min: 0,
+            width: 600,
+            tooltip: 'tooltip',
+            columns: [{
+                name: 'tooltip',
+                template: '{{ geojson.properties.NAME_LONG }}: {{ number_of_partners }} Partner organisation(s)'
+            }]
+            
+        }
+      }) | safe }}
+
+{% endcomp %} 
+
 
 <h2>Partner Organisations</h2>
 
@@ -47,6 +84,8 @@ sources:
   }) | safe }}
 
 {% endcomp %}
+
+
 
 {% comp 'grid.' + headline_grid_style, { min_width: '30rem' } %}
 

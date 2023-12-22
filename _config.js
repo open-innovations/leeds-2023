@@ -14,6 +14,7 @@ import { walkSync } from "std/fs/mod.ts";
 
 import oiViz from 'oi-lume-viz/mod.ts';
 import csvLoader from 'oi-lume-utils/loaders/csv-loader.ts';
+import jsonLoader from 'lume/core/loaders/json.ts';
 import autoDependency from 'oi-lume-utils/processors/auto-dependency.ts';
 import * as colours from './docs/_data/colours.js';
 
@@ -117,6 +118,9 @@ site.loadData([".csv"], async (filePath) => {
     throw e;
   }
 });
+
+site.loadData([".geojson"], jsonLoader);
+
 
 // TODO Get access to the font files
 // [

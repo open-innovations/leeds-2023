@@ -5,8 +5,8 @@ stages:
     deps:
     - path: extract.py
       hash: md5
-      md5: c99b1bda82faea8c844386d9dbade84e
-      size: 1328
+      md5: 0ad309a050306d354cac2969ded0d1be
+      size: 1375
     outs:
     - path: ../../../working/metrics/partnerships
       hash: md5
@@ -18,8 +18,8 @@ stages:
     deps:
     - path: transform.ipynb
       hash: md5
-      md5: 2691bb60971ecb0c96cc4695f0320cc1
-      size: 6056
+      md5: ad6bb9c0eb43bd65e1e724cabdd71e08
+      size: 6279
     outs:
     - path: ../../../data/metrics/partnerships
       hash: md5

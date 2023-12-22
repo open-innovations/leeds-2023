@@ -5,13 +5,17 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: 4e2f1ed8e80f4e52076ce71467946986
-      size: 404979
+      md5: 3507439904ea4317acae471015332ca9
+      size: 405379
+    - path: ../../../../data/metrics/events/tickets/orders.csv
+      hash: md5
+      md5: b0dce791dd28a53fd0039c73f3dc1daf
+      size: 463773
     - path: ../../../../lib/util/
       hash: md5
-      md5: 1716a8255a4563e6111e07666ced83f0.dir
-      size: 2040
-      nfiles: 2
+      md5: c29f173f8ef9871a71c87e431c14f4e5.dir
+      size: 5093
+      nfiles: 4
     - path: events.py
       hash: md5
       md5: 2104c6441609605673aefe91e1bcb812
@@ -42,13 +46,17 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: 4e2f1ed8e80f4e52076ce71467946986
-      size: 404979
+      md5: 3507439904ea4317acae471015332ca9
+      size: 405379
+    - path: ../../../../data/metrics/events/tickets/orders.csv
+      hash: md5
+      md5: b0dce791dd28a53fd0039c73f3dc1daf
+      size: 463773
     - path: ../../../../lib/util/
       hash: md5
-      md5: 1716a8255a4563e6111e07666ced83f0.dir
-      size: 2040
-      nfiles: 2
+      md5: c29f173f8ef9871a71c87e431c14f4e5.dir
+      size: 5093
+      nfiles: 4
     - path: events.py
       hash: md5
       md5: 2104c6441609605673aefe91e1bcb812
@@ -79,8 +87,8 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: 4e2f1ed8e80f4e52076ce71467946986
-      size: 404979
+      md5: 3507439904ea4317acae471015332ca9
+      size: 405379
     - path: ../../../../data/metrics/events/tickets/orders.csv
       hash: md5
       md5: b0dce791dd28a53fd0039c73f3dc1daf
@@ -96,15 +104,15 @@ stages:
     outs:
     - path: ../../../../docs/metrics/events/signature/_data/events_by_date.csv
       hash: md5
-      md5: 741e4e5a815d14b17621e5678da9639e
+      md5: 252c91dadb9f932698ee5639a231a759
       size: 306
     - path: ../../../../docs/metrics/events/signature/_data/events_by_ward.csv
       hash: md5
-      md5: 7dc7f6d5836374b7aa8078a8bfe4e2b0
+      md5: 052e0120048f3a7d01abf8856c1c1a75
       size: 528
     - path: ../../../../docs/metrics/events/signature/_data/headlines.json
       hash: md5
-      md5: c535d1f38f6eb002ab20132a206bd018
+      md5: 94c6e7f5dd66ebd8677163fc3756ebe0
       size: 211
     - path: ../../../../docs/metrics/events/signature/_data/tickets_by_event_date.csv
       hash: md5
@@ -119,13 +127,17 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: 4e2f1ed8e80f4e52076ce71467946986
-      size: 404979
+      md5: 3507439904ea4317acae471015332ca9
+      size: 405379
+    - path: ../../../../data/metrics/events/tickets/orders.csv
+      hash: md5
+      md5: b0dce791dd28a53fd0039c73f3dc1daf
+      size: 463773
     - path: ../../../../lib/util/
       hash: md5
-      md5: 1716a8255a4563e6111e07666ced83f0.dir
-      size: 2040
-      nfiles: 2
+      md5: c29f173f8ef9871a71c87e431c14f4e5.dir
+      size: 5093
+      nfiles: 4
     - path: events.py
       hash: md5
       md5: 2104c6441609605673aefe91e1bcb812
@@ -156,13 +168,17 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: 4e2f1ed8e80f4e52076ce71467946986
-      size: 404979
+      md5: 3507439904ea4317acae471015332ca9
+      size: 405379
+    - path: ../../../../data/metrics/events/tickets/orders.csv
+      hash: md5
+      md5: b0dce791dd28a53fd0039c73f3dc1daf
+      size: 463773
     - path: ../../../../lib/util/
       hash: md5
-      md5: 1716a8255a4563e6111e07666ced83f0.dir
-      size: 2040
-      nfiles: 2
+      md5: c29f173f8ef9871a71c87e431c14f4e5.dir
+      size: 5093
+      nfiles: 4
     - path: childrens-day.ipynb
       hash: md5
       md5: 4897055a2a429200ae2f32a16753e2bb
@@ -193,13 +209,17 @@ stages:
     deps:
     - path: ../../../../data/metrics/events/master/all.csv
       hash: md5
-      md5: 4e2f1ed8e80f4e52076ce71467946986
-      size: 404979
+      md5: 3507439904ea4317acae471015332ca9
+      size: 405379
+    - path: ../../../../data/metrics/events/tickets/orders.csv
+      hash: md5
+      md5: b0dce791dd28a53fd0039c73f3dc1daf
+      size: 463773
     - path: ../../../../lib/util/
       hash: md5
-      md5: 1716a8255a4563e6111e07666ced83f0.dir
-      size: 2040
-      nfiles: 2
+      md5: c29f173f8ef9871a71c87e431c14f4e5.dir
+      size: 5093
+      nfiles: 4
     - path: events.py
       hash: md5
       md5: 2104c6441609605673aefe91e1bcb812
@@ -225,3 +245,44 @@ stages:
       hash: md5
       md5: d707a35b2c9bd0bc4e6358786e27b15f
       size: 156
+  prepare@the-gifting:
+    cmd: papermill the-gifting.ipynb ../../../../working/output/the-gifting.ipynb
+    deps:
+    - path: ../../../../data/metrics/events/master/all.csv
+      hash: md5
+      md5: 3507439904ea4317acae471015332ca9
+      size: 405379
+    - path: ../../../../data/metrics/events/tickets/orders.csv
+      hash: md5
+      md5: b0dce791dd28a53fd0039c73f3dc1daf
+      size: 463773
+    - path: ../../../../lib/util/
+      hash: md5
+      md5: c29f173f8ef9871a71c87e431c14f4e5.dir
+      size: 5093
+      nfiles: 4
+    - path: events.py
+      hash: md5
+      md5: 2104c6441609605673aefe91e1bcb812
+      size: 5120
+    - path: the-gifting.ipynb
+      hash: md5
+      md5: e29c88bf07b10ba6a9fb0d14618d47bc
+      size: 142241
+    outs:
+    - path: ../../../../docs/metrics/events/the-gifting/_data/events/by_month.csv
+      hash: md5
+      md5: 8c8115ecc1f817b60ad063e7569ab838
+      size: 141
+    - path: ../../../../docs/metrics/events/the-gifting/_data/events/by_ward.csv
+      hash: md5
+      md5: d14a616a45e3bb6896b4830a3a9f2c33
+      size: 161
+    - path: ../../../../docs/metrics/events/the-gifting/_data/events/by_week.csv
+      hash: md5
+      md5: 0eed10f5c0989207cbddf5d02a6018a3
+      size: 256
+    - path: ../../../../docs/metrics/events/the-gifting/_data/events/headlines.json
+      hash: md5
+      md5: 233236ffb93072a2d4d238ba53a6e5ee
+      size: 154

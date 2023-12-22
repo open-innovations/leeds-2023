@@ -1,11 +1,13 @@
 vars:
   - top: ../../../..
   - events:
-      - my-leeds-2023
-      - the-barn
-      - nest
       - childrens-day
+      - my-leeds-2023
+      - nest
       - smeaton-300
+      - the-barn
+      - the-gifting
+      # - this-is-a-forest
 stages:
   prepare:
     foreach: ${events}
@@ -16,6 +18,7 @@ stages:
         - events.py
         - ${top}/lib/util/
         - ${top}/data/metrics/events/master/all.csv
+        - ${top}/data/metrics/events/tickets/orders.csv
       outs:
         - ${top}/docs/metrics/events/${item}/_data/events/headlines.json:
             persist: false

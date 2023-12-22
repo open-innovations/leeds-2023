@@ -1,13 +1,26 @@
 import os
 import pandas as pd
 
-TICKET_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../../data/metrics/events/tickets/orders.csv'))
-orders = pd.read_csv(TICKET_FILE, index_col='event_id', parse_dates=['created_at', 'event_date'])
+TICKET_FILE = os.path.abspath(os.path.join(os.path.dirname(
+    __file__), '../../../../data/metrics/events/tickets/orders.csv'))
+orders = pd.read_csv(TICKET_FILE, index_col='event_id',
+                     parse_dates=['created_at', 'event_date'])
+
+
+def get_tickets_for_project(project):
+    if type(project) == str:
+        return orders.loc[orders.project_name == project, :]
+    return orders.loc[orders.project_name.isin(project), :]
+
+
+def filter_public_events(data):
+    return data.loc[data.public_event == True, :]
+
 
 def get_tickets_for_event(data: pd.DataFrame) -> pd.DataFrame:
     '''Extracts a table of ticket purchases linked cross-referened by airtable ID'''
     return (
-      data
+        data
         .reset_index()
         .set_index('airtable_id')
         .ticket_tailor_id
@@ -38,8 +51,7 @@ def summarise_by_ward(data: pd.DataFrame) -> pd.DataFrame:
 def summarise_by_date(data):
     '''Summarise ticketing data by date'''
     return data.rename(columns={
-      'created_at': 'date'
+        'created_at': 'date'
     }).pipe(
-      _summarise_by, 'date'
+        _summarise_by, 'date'
     ).resample('D').sum()
-

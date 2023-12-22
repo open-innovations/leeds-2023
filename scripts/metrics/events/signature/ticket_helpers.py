@@ -4,7 +4,7 @@ import pandas as pd
 TICKET_FILE = os.path.abspath(os.path.join(os.path.dirname(
     __file__), '../../../../data/metrics/events/tickets/orders.csv'))
 orders = pd.read_csv(TICKET_FILE, index_col='event_id',
-                     parse_dates=['created_at', 'event_date'])
+                     parse_dates=['created_at', 'event_date', 'event_datetime'])
 
 
 def get_tickets_for_project(project):

@@ -11,22 +11,30 @@
   & svg {
     fill: #002328;
   }
-  & .logo {
-    height: 2.5rem;
+  & :is(.logo, .icon) {
+    height: 2rem;
     width: auto;
-  }
-  & .icon {
-    max-width: 2.5rem;
   }
   & .footer-row {
     display: flex;
     gap: 2rem;
     align-items: start;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   & .footer-block {
+    /* flex-basis: 30vw; */
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 30vw;
     display: flex;
     align-items: start;
     gap: 1rem;
+    height: 100%;
+    & :is(img, svg) {
+      margin-top: 0.2em;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
   }
 }

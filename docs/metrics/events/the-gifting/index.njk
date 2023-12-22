@@ -13,27 +13,25 @@ metas:
 
 {% from 'macros.njk' import dateFormatter %}
 
-
 <h2>Headlines</h2>
 
-{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+{% comp 'grid.' + headline_grid_style, {min_width: '40rem'} %}
 
-  {{ comp.metric.headline({
+{{ comp.metric.headline({
     title: "Total events", headingLevel: 2,
     value: events.headlines.total_events | localize,
     description: "Total activities held as part of this Signature event.",
     background: "var(--l23-magenta)"
   }) | safe }}
 
-    {{ comp.metric.headline({
+{{ comp.metric.headline({
     title: "Public events", headingLevel: 2,
     value: events.public.headlines.total_events | localize ,
     description: "Total number of public facing events.",
     background: "var(--l23-yellow)"
   }) | safe }}
 
-  
-    {{ comp.metric.headline({
+{{ comp.metric.headline({
     title: "Public audience", headingLevel: 2,
     value: events.public.headlines.total_audience | localize ,
     description: "Total count of attendees at public facing events.",
@@ -54,7 +52,7 @@ metas:
     background: "var(--l23-cyan)"
   }) | safe }}
 
-  {{ comp.metric.headline({
+{{ comp.metric.headline({
     title: "Tickets sold", headingLevel: 2,
     value: search.data('metrics/tickets').headlines['13 - Closing'].tickets | localize ,
     description: "Total number of tickets sold.",
@@ -64,9 +62,9 @@ metas:
 
 {% endcomp %}
 
-  {% comp 'layout.figure' %}
+{% comp 'layout.figure' %}
 <h3>Number of tickets sold by event date</h3>
-  {{ comp.oi.viz.graph.line({ config: {
+{{ comp.oi.viz.graph.line({ config: {
     categories: search.data('metrics/tickets').by_project_cumulative_weekly.columns.week,
     width: 35,
     height: 14,
@@ -128,4 +126,4 @@ metas:
   <li>
     Ticketing data is derived from the ticketing platform, and includes tickets sold up to {{ timestamp.data | date('HUMAN_DATE') }}, including for events not yet held.
   </li>
-<ul>
+  <ul>

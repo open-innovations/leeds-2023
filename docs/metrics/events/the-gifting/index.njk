@@ -65,7 +65,7 @@ metas:
 {% comp 'layout.figure' %}
 <h3>Number of tickets sold by event date</h3>
 {{ comp.oi.viz.graph.line({ config: {
-    categories: search.data('metrics/tickets').by_project_cumulative_weekly.columns.week,
+    categories: events.tickets_by_date.columns.date,
     width: 35,
     height: 14,
     text: { colour: '#eee' },
@@ -78,10 +78,10 @@ metas:
     yAxis: {
       title: 'Total',
       titleOffset: 3,
-      majorTick: 100
+      majorTick: 500
     },
     plotArea: {
-      yMax: 2500,
+      yMax: events.tickets_by_date.range.tickets.max | round(-2, 'ceil'),
       colour: 'var(--l23-dark-blue-grey)'
     },
     padding: {
@@ -91,7 +91,7 @@ metas:
     series: [
       {
         id: "tickets", label: "Number of tickets sold",
-        yValues: search.data('metrics/tickets').by_project_cumulative_weekly.columns["13 - Closing"],
+        yValues: events.tickets_by_date.columns.tickets,
         colour: 'var(--l23-magenta)',
         markerOptions: { s: 5 }
       }
@@ -100,6 +100,27 @@ metas:
       width: "20em"
     }
   } }) | safe }}
+{% endcomp %}
+
+{% comp 'layout.figure' %}
+<h3>Distribution of ticket orders by ward</h3>
+<p>
+  This map shows the number of orders placed associated with a given ward.
+  Darker colours mean more orders were placed in the ward.
+  Hover over the hexagon to see the count of orders and associated tickets.
+</p>
+{{ comp.oi.viz.map.hex_cartogram({
+		config: {
+			hexjson: hex.wards_leeds,
+			data: events.tickets_by_ward.rows,
+			matchKey: 'ward_code',
+			value: 'orders',
+			bgColour: '#ddd',
+			label: '{{ n | slice(0,3) }}',
+			tooltip: '<h4>{{ n }}</h4><p><strong>{{ orders | "0" }}</strong> orders (<strong>{{ tickets | "0" }}</strong> tickets).</p>',
+			scale: 'cyan'
+		}
+  }) | safe }}
 {% endcomp %}
 
 <h3>About this data</h3>

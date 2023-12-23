@@ -188,7 +188,7 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-04-17,School grant - St Francis Catholic Primary School,Produce (Signature),12 - My LEEDS 2023,,,"['St Francis Catholic Primary School, Morley']",['Morley South'],,405.0,405.0,0.0,1
 2023-04-17,School grant - Shire Oak CE Primary School,Produce (Signature),12 - My LEEDS 2023,,,['Shire Oak VC Primary School'],['Headingley and Hyde Park'],,500.0,500.0,0.0,1
 2023-04-17,School grant - Sharp Lane Primary School,Produce (Signature),12 - My LEEDS 2023,,,['Sharp Lane Primary School'],['Middleton Park '],,626.0,626.0,0.0,1
-2023-04-17,School grant - Rosebank Primary School,Produce (Signature),12 - My LEEDS 2023,,,['Rosebank Primary School'],['Little London and Woodhouse'],,240.0,240.0,0.0,1
+2023-04-17,School grant - Rothwell Victoria Junior School,Produce (Signature),12 - My LEEDS 2023,,,['Rothwell Victoria Junior School'],['Rothwell'],,160.0,160.0,0.0,1
 2023-04-17,School grant - Ralph Thoresby School,Produce (Signature),12 - My LEEDS 2023,,,['Ralph Thoresby School'],['Adel and Wharfedale'],['LS16 7RX'],900.0,900.0,0.0,1
 2023-04-17,School grant - Pudsey Bolton Royd Primary School,Produce (Signature),12 - My LEEDS 2023,,,['Meadowfield Primary School'],['Temple Newsam '],,468.0,468.0,0.0,1
 2023-04-17,School grant - Mount St Mary's Catholic High School,Produce (Signature),12 - My LEEDS 2023,,,['Meadowfield Primary School'],['Temple Newsam '],,480.0,480.0,0.0,1
@@ -201,8 +201,9 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-04-17,School grant - Kerr Mackie Primary School,Produce (Signature),12 - My LEEDS 2023,,,['Kerr Mackie Primary School'],['Roundhay'],,464.0,464.0,0.0,1
 2023-04-17,Meanwood Valley Urban Farm workshop: Meadowfield Primary School,CLE,Creative Learning S2,,,['Meadowfield Primary School'],['Temple Newsam '],,29.0,29.0,0.0,1
 2023-04-17,Adel Primary mural,Produce (Signature),12 - My LEEDS 2023,,,['Adel Primary School'],['Adel and Wharfedale'],,31.0,31.0,0.0,1
-2023-04-17,School grant - Rothwell Victoria Junior School,Produce (Signature),12 - My LEEDS 2023,,,['Rothwell Victoria Junior School'],['Rothwell'],,160.0,160.0,0.0,1
+2023-04-17,School grant - Rosebank Primary School,Produce (Signature),12 - My LEEDS 2023,,,['Rosebank Primary School'],['Little London and Woodhouse'],,240.0,240.0,0.0,1
 2023-04-17,Under Our Feet (Schools Programme),Produce (Signature),04 - This is a FOREST,,,['Lawns Park Primary School'],['Farnley and Wortley'],,0.0,0.0,0.0,1
+2023-04-17,Under Our Feet (Schools Programme),Produce (Signature),04 - This is a FOREST,,,['Chapel Allerton Primary School'],['Chapel Allerton'],['LS7 3PD'],30.0,30.0,0.0,1
 2023-04-17,Under Our Feet (Schools Programme),Produce (Signature),04 - This is a FOREST,,,['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],12.0,12.0,0.0,1
 2023-04-17,Under Our Feet (Schools Programme),Produce (Signature),04 - This is a FOREST,,,['East SILC John Jamieson'],['Roundhay'],,0.0,0.0,0.0,1
 2023-04-17,Schools Workshop,Produce (Signature),07 - Children's Day,,,['Home learners'],,,8.0,8.0,0.0,1
@@ -231,10 +232,9 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-04-17,Under Our Feet (Schools Programme),Produce (Signature),04 - This is a FOREST,,,['Holy Name Catholic Voluntary Academy'],['Weetwood '],,29.0,29.0,0.0,1
 2023-04-17,Under Our Feet (Schools Programme),Produce (Signature),04 - This is a FOREST,,,['Hunslet Carr Primary School'],['Hunslet and Riverside'],,0.0,0.0,0.0,1
 2023-04-17,Under Our Feet (Schools Programme),Produce (Signature),04 - This is a FOREST,,,['Pudsey Primrose Hill Primary School'],['Bramley and Stanningley'],,0.0,0.0,0.0,1
-2023-04-17,Under Our Feet (Schools Programme),Produce (Signature),04 - This is a FOREST,,,['Jack Clark School'],['Gipton and Harehills'],,0.0,0.0,0.0,1
-2023-04-17,Under Our Feet (Schools Programme),Produce (Signature),04 - This is a FOREST,,,['Chapel Allerton Primary School'],['Chapel Allerton'],['LS7 3PD'],30.0,30.0,0.0,1
 2023-04-17,Under Our Feet (Schools Programme),Produce (Signature),04 - This is a FOREST,,,['Boston Spa Academy'],['Wetherby'],,0.0,0.0,0.0,1
 2023-04-17,Under Our Feet (Schools Programme),Produce (Signature),04 - This is a FOREST,,,['Primley Wood Primary School'],['Alwoodley '],,30.0,30.0,0.0,1
+2023-04-17,Under Our Feet (Schools Programme),Produce (Signature),04 - This is a FOREST,,,['Jack Clark School'],['Gipton and Harehills'],,0.0,0.0,0.0,1
 2023-04-20,Waking the Artist at Home School,Produce (Signature),01 - The Awakening,,,['East SILC John Jamieson'],['Roundhay'],,15.0,15.0,0.0,1
 2023-04-25,Waking the Artist at Victoria Primary Academy,Produce (Signature),01 - The Awakening,['Cross Gates and Whinmoor'],['LS14 1EG'],"[""Whinmoor St Paul's Church of England Primary School""]",['Armley'],,60.0,60.0,0.0,1
 2023-04-26,Essentials of Youth Voice (Hosted by LeedsCEP) - Youth Voice CPD for Cultural Organisations,CLE,Creative Learning S2,['Little London and Woodhouse'],['LS1 3HE'],,,,19.0,19.0,0.0,0
@@ -243,8 +243,8 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-05-09,School Day: IQRA Academy Primary,Produce (Signature),05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['IQRA Academy Primary'],,['BD8 8DA'],45.0,45.0,0.0,1
 2023-05-09,School Day: Lane End Primary,Produce (Signature),05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Lane End Primary School'],['Beeston and Holbeck'],,30.0,30.0,0.0,1
 2023-05-09,School Day: Moor Allerton Hall Primary,Produce (Signature),05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Moor Allerton Hall Primary School'],['Moortown'],,45.0,45.0,0.0,1
-2023-05-10,School Day: Allerton CE Primary School,Produce (Signature),05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Allerton CofE Primary School'],['Alwoodley'],,90.0,90.0,0.0,1
 2023-05-10,School Day: Temple Learning Academy,Produce (Signature),05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Temple Learning Academy'],['Temple Newsam '],,60.0,60.0,0.0,1
+2023-05-10,School Day: Allerton CE Primary School,Produce (Signature),05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Allerton CofE Primary School'],['Alwoodley'],,90.0,90.0,0.0,1
 2023-05-10,School Day: Whinmoor St Paul's C of E,Produce (Signature),05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],"[""Whinmoor St Paul's Church of England Primary School""]",['Armley'],,34.0,34.0,0.0,1
 2023-05-11,School Day: Leeds City Academy,Produce (Signature),05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Leeds City Academy'],['Headingley and Hyde Park'],['LS6 2LG'],30.0,30.0,0.0,1
 2023-05-11,School Day: Royds Hall,Produce (Signature),05 - The Barn,['Headingley and Hyde Park'],['LS6 2UZ'],['Royds Hall'],,['HD3 4HA'],30.0,30.0,0.0,1
@@ -257,25 +257,26 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-05-16,The Space Digital Interactive Playspace ,Produce (Signature),05 - The Barn,,,,,,128.0,128.0,0.0,0
 2023-05-16,The Space Digital Interactive Playspace (school workshops),Produce (Signature),05 - The Barn,,,['Trinity Academy Leeds'],['Burmantofts and Richmond Hill '],['LS9 7QL'],4.0,4.0,0.0,1
 2023-05-17,P.L.A.Y Day Research Workshop with LEEDS 2023,CLE,Creative Learning S2,['Headingley and Hyde Park'],['LS6 2UZ'],,,,47.0,47.0,0.0,0
-2023-05-22,Saturday Town School Workshops: Getaway Girls,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,12.0,12.0,0.0,1
-2023-05-22,Saturday Town School Workshops: Cockburn School,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,26.0,26.0,0.0,1
-2023-05-22,Saturday Town School Workshops: Guiseley School,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,24.0,24.0,0.0,1
-2023-05-22,Saturday Town School Workshops: John Charles Academy,CLE,Creative Learning S2,,,['Cockburn John Charles Academy'],['Middleton Park '],['LS10 2JU'],26.0,26.0,0.0,1
-2023-05-22,Saturday Town School Workshops: Notre Dame Catholic Sixth Form College,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,44.0,44.0,0.0,1
-2023-05-22,Saturday Town School Workshops: Pinc College,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,8.0,8.0,0.0,1
 2023-05-22,Saturday Town School Workshops: Prince Henrys School,CLE,Creative Learning S2,,,"[""Otley Prince Henry's Grammar School Specialist Language College""]",['Otley and Yeadon '],,26.0,26.0,0.0,1
+2023-05-22,Saturday Town School Workshops: Pinc College,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,8.0,8.0,0.0,1
+2023-05-22,Saturday Town School Workshops: Getaway Girls,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,12.0,12.0,0.0,1
+2023-05-22,Saturday Town School Workshops: John Charles Academy,CLE,Creative Learning S2,,,['Cockburn John Charles Academy'],['Middleton Park '],['LS10 2JU'],26.0,26.0,0.0,1
+2023-05-22,Saturday Town School Workshops: Guiseley School,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,24.0,24.0,0.0,1
+2023-05-22,Saturday Town School Workshops: Cockburn School,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,26.0,26.0,0.0,1
 2023-05-22,Saturday Town School Workshops: Pudsey Grammar,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,22.0,22.0,0.0,1
+2023-05-22,Saturday Town School Workshops: Notre Dame Catholic Sixth Form College,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,44.0,44.0,0.0,1
 2023-05-22,Saturday Town School Workshops: Roundhay School,CLE,Creative Learning S2,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,24.0,24.0,0.0,1
 2023-06-06,Smeaton CREST Awards - SuperStar Level,Produce (Signature),09 - Smeaton300: Learning programme,,,"['St Francis Catholic Primary School, Morley']",['Morley South'],,40.0,40.0,0.0,1
-2023-06-06,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Middleton Park'],['LS10 4QE'],['Sharp Lane Primary School'],['Middleton Park '],,0.0,0.0,0.0,1
+2023-06-06,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Morley South'],['LS27 0AW'],['Fountain Primary School'],['Morley South'],,0.0,0.0,0.0,1
 2023-06-06,Schools Workshop,Produce (Signature),07 - Children's Day,,,"[""Rothwell St Mary's RC Primary School""]",['Rothwell'],,11.0,11.0,0.0,1
 2023-06-06,Smeaton CREST Awards - SuperStar Level,Produce (Signature),09 - Smeaton300: Learning programme,,,['Fieldhead Carr Primary School'],['Cross Gates and Whinmoor'],,60.0,60.0,0.0,1
 2023-06-06,Smeaton CREST Awards - SuperStar Level,Produce (Signature),09 - Smeaton300: Learning programme,,,['Whingate Primary School'],['Wetherby'],,60.0,60.0,0.0,1
 2023-06-06,Smeaton CREST Awards - SuperStar Level,Produce (Signature),09 - Smeaton300: Learning programme,,,"[""Roundhay St John's Church of England Primary School""]",['Roundhay '],,20.0,20.0,0.0,1
 2023-06-06,Smeaton CREST Awards - SuperStar Level,Produce (Signature),09 - Smeaton300: Learning programme,,,['Morley Victoria Primary School'],['Morley North '],,15.0,15.0,0.0,1
-2023-06-06,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Morley South'],['LS27 0AW'],['Fountain Primary School'],['Morley South'],,0.0,0.0,0.0,1
-2023-06-06,Schools Workshop,Produce (Signature),07 - Children's Day,,,['Our Lady of Good Counsel Catholic Primary School'],['Killingbeck and Seacroft'],,30.0,30.0,0.0,1
+2023-06-06,Meanwood Valley Urban Farm workshop: Swarcliffe Primary School,CLE,Creative Learning S2,,,['Swarcliffe Primary School'],['Cross Gates and Whinmoor'],,15.0,15.0,0.0,1
 2023-06-06,Valley View School sari-making,Produce (Signature),12 - My LEEDS 2023,,,['Valley View Community Primary School'],['Bramley and Stanningley'],,30.0,30.0,0.0,1
+2023-06-06,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Middleton Park'],['LS10 4QE'],['Sharp Lane Primary School'],['Middleton Park '],,0.0,0.0,0.0,1
+2023-06-06,Schools Workshop,Produce (Signature),07 - Children's Day,,,['Our Lady of Good Counsel Catholic Primary School'],['Killingbeck and Seacroft'],,30.0,30.0,0.0,1
 2023-06-06,Rosebank Primary School Bhangra Dance Performance,Produce (Signature),12 - My LEEDS 2023,,,['Rosebank Primary School'],['Little London and Woodhouse'],,15.0,15.0,0.0,1
 2023-06-06,Pool Primary mural,Produce (Signature),12 - My LEEDS 2023,,,['Pool-in-Wharfedale Church of England Voluntary Controlled Primary School'],['Adel and Wharfedale'],['LS21 1LG'],30.0,30.0,0.0,1
 2023-06-07,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Beeston and Holbeck'],['LS11 6BA'],['Greenmount Primary School'],['Beeston and Holbeck'],,0.0,0.0,0.0,1
@@ -284,26 +285,25 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-06-13,Leeds 2023 and Leeds Art Gallery: Community Offer for 'Feeling Her Way' by Sonia Boyce,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS1 3AA'],,,,36.0,36.0,0.0,0
 2023-06-14,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Burmantofts and Richmond Hill'],['LS9 7NP'],['Shakespeare Primary School'],['Burmantofts and Richmond Hill '],,0.0,0.0,0.0,1
 2023-06-14,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Chapel Allerton'],['LS7 4AW'],"[""Holy Rosary and St Anne's Catholic Primary School, a Voluntary Academy""]",['Chapel Allerton'],,0.0,0.0,0.0,1
-2023-06-15,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Farnley and Wortley'],['LS12 5AW'],['Ryecroft Academy'],['Farnley and Wortley'],,0.0,0.0,0.0,1
 2023-06-15,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Horsforth'],['LS18 5AF'],['Broadgate Primary School'],['Horsforth'],,0.0,0.0,0.0,1
+2023-06-15,Leeds Piano Week: One Small Step Tour,CLE,Creative Learning S2,['Farnley and Wortley'],['LS12 5AW'],['Ryecroft Academy'],['Farnley and Wortley'],,0.0,0.0,0.0,1
 2023-06-19,School grant - Whitecote Primary School,Produce (Signature),12 - My LEEDS 2023,,,['Whitecote Primary School'],['Cross Gates and Whinmoor'],,420.0,420.0,0.0,1
 2023-06-19,Leeds Young Film Programmers: John Smeaton Academy Day 1,CLE,Creative Learning S1,['Cross Gates and Whinmoor'],['LS15 8TA'],['John Smeaton Academy'],['Cross Gates and Whinmoor'],,28.0,28.0,0.0,1
 2023-06-19,School grant - Westgate Primary School,Produce (Signature),12 - My LEEDS 2023,,,['Westgate Primary School'],['Otley and Yeadon'],,240.0,240.0,0.0,1
-2023-06-20,Leeds Young Film Programmers: John Smeaton Academy Day 1,CLE,Creative Learning S2,['Cross Gates and Whinmoor'],['LS15 8TA'],['John Smeaton Academy'],['Cross Gates and Whinmoor'],,20.0,20.0,0.0,1
 2023-06-20,Leeds Young Film Programmers: John Smeaton Academy Day 2,CLE,Creative Learning S1,['Cross Gates and Whinmoor'],['LS15 8TA'],['John Smeaton Academy'],['Cross Gates and Whinmoor'],,20.0,20.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Co-op Academy Brownhill'],['Burmantofts and Richmond Hill '],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['East Ardsley Primary Academy'],['Ardsley and Robin Hood'],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Corpus Christi Catholic Primary School'],['Temple Newsam '],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Castleton Primary School'],['Armley '],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Strawberry Fields Primary School'],['Garforth and Swillington'],['LS25 1LL'],8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Cockburn John Charles Academy'],['Middleton Park '],['LS10 2JU'],30.0,30.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],"['Corpus Christi Catholic College, A Voluntary Academy']",['Temple Newsam '],,30.0,30.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Farsley Farfield Primary School'],['Calverley and Farsley'],,8.0,8.0,0.0,1
+2023-06-20,Leeds Young Film Programmers: John Smeaton Academy Day 1,CLE,Creative Learning S2,['Cross Gates and Whinmoor'],['LS15 8TA'],['John Smeaton Academy'],['Cross Gates and Whinmoor'],,20.0,20.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Temple Moor High School'],['Temple Newsam '],['LS15 0PT'],30.0,30.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Cross Gates Primary School'],['Cross Gates and Whinmoor'],,30.0,30.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],"['Corpus Christi Catholic College, A Voluntary Academy']",['Temple Newsam '],,30.0,30.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Cockburn John Charles Academy'],['Middleton Park '],['LS10 2JU'],30.0,30.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Ashfield Primary School'],['Otley and Yeadon'],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Farsley Springbank Primary School'],['Calverley and Farsley'],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Castleton Primary School'],['Armley '],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Co-op Academy Brownhill'],['Burmantofts and Richmond Hill '],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Corpus Christi Catholic Primary School'],['Temple Newsam '],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['East Ardsley Primary Academy'],['Ardsley and Robin Hood'],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Farsley Farfield Primary School'],['Calverley and Farsley'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Hugh Gaitskell Primary School'],['Beeston and Holbeck'],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Five Lanes Primary School'],['Farnley and Wortley'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Greenmount Primary School'],['Beeston and Holbeck'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Hawksworth Church of England Primary School'],['Guiseley and Rawdon'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Holy Family Catholic Primary School'],['Armley'],,8.0,8.0,0.0,1
@@ -315,34 +315,35 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Morley Newlands Academy'],['Morley South'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Morley Victoria Primary School'],['Morley North '],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['The New Bewerley Community Primary School'],['Beeston and Holbeck'],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Five Lanes Primary School'],['Farnley and Wortley'],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Farsley Springbank Primary School'],['Calverley and Farsley'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Cockburn School'],['Beeston and Holbeck'],['LS11 5TT'],30.0,30.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],"[""St Chad's Church of England Primary School""]",['Weetwood '],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Tranmere Park Primary School'],['Guiseley and Rawdon'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['West End Primary School'],['Horsforth'],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Primley Wood Primary School'],['Alwoodley '],,8.0,8.0,0.0,1
 2023-06-21,Schools Workshop,Produce (Signature),07 - Children's Day,,,['Hunslet Carr Primary School'],['Hunslet and Riverside'],,59.0,59.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Concert,CLE,Creative Learning S2,['Little London and Woodhouse'],['LS2 8BY'],,,,0.0,0.0,0.0,0
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Brigshaw High School'],['Kippax and Methley'],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Lawnswood School'],['Weetwood '],['LS16 5AG'],8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Park Spring Primary School'],['Pudsey'],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Primley Wood Primary School'],['Alwoodley '],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Lawnswood School'],['Weetwood '],['LS16 5AG'],8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Primrose Lane Primary School'],['Wetherby'],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Pudsey Primrose Hill Primary School'],['Bramley and Stanningley'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Valley View Community Primary School'],['Bramley and Stanningley'],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Alwoodley Primary School'],['Alwoodley'],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],"[""St Bartholomew's CofE Voluntary Controlled Primary School""]",['Armley '],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['St Nicholas Catholic Primary School'],['Gipton and Harehills'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Rufford Park Primary School'],['Otley and Yeadon '],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Whingate Primary School'],['Wetherby'],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],"[""St Bartholomew's CofE Voluntary Controlled Primary School""]",['Armley '],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Alwoodley Primary School'],['Alwoodley'],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['St Nicholas Catholic Primary School'],['Gipton and Harehills'],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Pudsey Primrose Hill Primary School'],['Bramley and Stanningley'],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],"[""St Chad's Church of England Primary School""]",['Weetwood '],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],"['St Francis Catholic Primary School, Morley']",['Morley South'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],"['Sacred Heart Catholic Primary School, a Voluntary Academy']",['Kirkstall'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],"[""St Mary's Menston Catholic Voluntary Academy""]",['Guiseley and Rawdon'],['LS29 6AE'],8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Shadwell Primary School'],['Moortown'],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Summerfield Primary School'],['Bramley and Stanningley'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Westbrook Lane Primary School'],['Pudsey'],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Tranmere Park Primary School'],['Guiseley and Rawdon'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Westgate Primary School'],['Otley and Yeadon'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],"[""Whinmoor St Paul's Church of England Primary School""]",['Armley'],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Whingate Primary School'],['Wetherby'],,8.0,8.0,0.0,1
 2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],"[""St Matthew's Church of England Aided Primary School""]",['Chapel Allerton'],,8.0,8.0,0.0,1
-2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Summerfield Primary School'],['Bramley and Stanningley'],,8.0,8.0,0.0,1
+2023-06-21,Leeds Youth Music Festival Celebration Concert,CLE,General CLE,['Little London and Woodhouse'],['LS2 8BY'],['Strawberry Fields Primary School'],['Garforth and Swillington'],['LS25 1LL'],8.0,8.0,0.0,1
 2023-06-28,Feel the Music,CLE,Feel the Music,['Little London and Woodhouse'],['LS2 7BS'],['Moor Allerton Hall Primary School'],['Moortown'],,85.0,83.0,2.0,1
 2023-06-30,School grant - Harewood CE Primary School,Produce (Signature),12 - My LEEDS 2023,,,['Harewood Church of England Voluntary Controlled Primary School'],['Harewood'],,200.0,200.0,0.0,1
 2023-07-03,This is a Forest: Under Our Feet (Schools Programme) CPD Level 1 Forest Schools training ,Produce (Signature),04 - This is a FOREST,['Burmantofts and Richmond Hill'],['LS10 1RS'],['Chapel Allerton Primary School'],['Chapel Allerton'],['LS7 3PD'],2.0,2.0,0.0,1
@@ -368,22 +369,22 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-09-27,Leeds Young Film Programmers: Cockburn Laurence Calvert Academy Day 1,CLE,Creative Learning S1,['Middleton Park'],['LS10 4UZ'],['Cockburn Laurence Calvert Academy'],['Middleton Park '],['LS10 4UZ'],30.0,30.0,0.0,1
 2023-09-28,Leeds Young Film Programmers: Cockburn Laurence Calvert Academy Day 2,CLE,Creative Learning S1,['Middleton Park'],['LS10 4UZ'],['Cockburn Laurence Calvert Academy'],['Middleton Park '],['LS10 4UZ'],30.0,30.0,0.0,1
 2023-09-30,Smeaton 300: STEAM Conference ,Produce (Signature),09 - Smeaton300: Learning programme,['Alwoodley'],['LS17 8GS'],,,,12.0,2.0,10.0,0
+2023-09-30,Smeaton 300: STEAM Conference ,Produce (Signature),09 - Smeaton300: Learning programme,['Alwoodley'],['LS17 8GS'],['Bishop Young Church of England Academy'],['Killingbeck and Seacroft'],,1.0,-9.0,10.0,1
 2023-09-30,Smeaton 300: STEAM Conference ,Produce (Signature),09 - Smeaton300: Learning programme,['Alwoodley'],['LS17 8GS'],['John Smeaton Academy'],['Cross Gates and Whinmoor'],,1.0,-9.0,10.0,1
 2023-09-30,Smeaton 300: STEAM Conference ,Produce (Signature),09 - Smeaton300: Learning programme,['Alwoodley'],['LS17 8GS'],['The Grammar School At Leeds'],['Alwoodley'],,1.0,-9.0,10.0,1
 2023-09-30,Smeaton 300: STEAM Conference ,Produce (Signature),09 - Smeaton300: Learning programme,['Alwoodley'],['LS17 8GS'],['Ilkley Grammar'],,['LS29 8TR'],1.0,-9.0,10.0,1
 2023-09-30,Smeaton 300: STEAM Conference ,Produce (Signature),09 - Smeaton300: Learning programme,['Alwoodley'],['LS17 8GS'],['Gustav Adolf Grammas School at Talinn'],,,1.0,-9.0,10.0,1
-2023-09-30,Smeaton 300: STEAM Conference ,Produce (Signature),09 - Smeaton300: Learning programme,['Alwoodley'],['LS17 8GS'],['Bishop Young Church of England Academy'],['Killingbeck and Seacroft'],,1.0,-9.0,10.0,1
-2023-10-02,Smeaton CREST Awards - Discovery Level,Produce (Signature),09 - Smeaton300: Learning programme,,,"[""St Oswald's C of E Primary School""]",['Guiseley and Rawdon'],['LS20 9BB'],224.0,224.0,0.0,1
 2023-10-02,Smeaton CREST Awards - Discovery Level,Produce (Signature),09 - Smeaton300: Learning programme,,,['Allerton High School'],['Moortown '],['LS17 7AG'],280.0,280.0,0.0,1
 2023-10-02,Smeaton CREST Awards - Discovery Level,Produce (Signature),09 - Smeaton300: Learning programme,,,['Bishop Young Church of England Academy'],['Killingbeck and Seacroft'],,80.0,80.0,0.0,1
 2023-10-02,Smeaton CREST Awards - Discovery Level,Produce (Signature),09 - Smeaton300: Learning programme,,,['Home learners'],,,25.0,25.0,0.0,1
 2023-10-02,Smeaton CREST Awards - Discovery Level,Produce (Signature),09 - Smeaton300: Learning programme,,,['John Smeaton Academy'],['Cross Gates and Whinmoor'],,350.0,350.0,0.0,1
 2023-10-02,Smeaton CREST Awards - Discovery Level,Produce (Signature),09 - Smeaton300: Learning programme,,,['Talbot Primary School'],['Roundhay'],,240.0,240.0,0.0,1
 2023-10-02,Smeaton CREST Awards - Discovery Level,Produce (Signature),09 - Smeaton300: Learning programme,,,['Temple Learning Academy'],['Temple Newsam '],,240.0,240.0,0.0,1
+2023-10-02,Smeaton CREST Awards - Discovery Level,Produce (Signature),09 - Smeaton300: Learning programme,,,"[""St Oswald's C of E Primary School""]",['Guiseley and Rawdon'],['LS20 9BB'],224.0,224.0,0.0,1
 2023-10-02,Smeaton CREST Awards - Discovery Level,Produce (Signature),09 - Smeaton300: Learning programme,,,"[""St Mary's Menston Catholic Voluntary Academy""]",['Guiseley and Rawdon'],['LS29 6AE'],40.0,40.0,0.0,1
 2023-10-09,Storymakers: Re-imagining Home CPD session 1,CLE,Creative Learning S3,,,['Manor Wood Primary School'],['Moortown'],,3.0,0.0,3.0,1
-2023-10-09,Storymakers: Re-imagining Home CPD session 1,CLE,Creative Learning S3,,,['Hugh Gaitskell Primary School'],['Beeston and Holbeck'],,2.0,0.0,2.0,1
 2023-10-09,Storymakers: Re-imagining Home CPD session 1,CLE,Creative Learning S3,,,['Strawberry Fields Primary School'],['Garforth and Swillington'],['LS25 1LL'],2.0,0.0,2.0,1
+2023-10-09,Storymakers: Re-imagining Home CPD session 1,CLE,Creative Learning S3,,,['Hugh Gaitskell Primary School'],['Beeston and Holbeck'],,2.0,0.0,2.0,1
 2023-10-10,Storymakers: Re-imagining Home CPD session 2,CLE,Creative Learning S3,,,['Moor Allerton Hall Primary School'],['Moortown'],,1.0,0.0,1.0,1
 2023-10-10,Storymakers: Re-imagining Home CPD session 2,CLE,Creative Learning S3,,,['Temple Learning Academy'],['Temple Newsam '],,1.0,0.0,1.0,1
 2023-10-16,Storymakers: Re-imagining Home,CLE,Creative Learning S3,,,,,,0.0,0.0,0.0,0
@@ -397,18 +398,18 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-10-18,Yorkshire Schools Dance Festival,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS2 3AD'],['Barwick-in-Elmet Church of England Voluntary Controlled Primary School'],['Harewood'],,0.0,0.0,0.0,1
 2023-10-18,Yorkshire Schools Dance Festival,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS2 3AD'],['Wetherby High School'],['Wetherby'],,0.0,0.0,0.0,1
 2023-10-18,Yorkshire Schools Dance Festival,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS2 3AD'],['The Ruth Gorse Academy'],['Hunslet and Riverside'],['LS10 1HW'],0.0,0.0,0.0,1
-2023-10-18,Yorkshire Schools Dance Festival,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS2 3AD'],"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],0.0,0.0,0.0,1
+2023-10-18,Yorkshire Schools Dance Festival,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS2 3AD'],"[""St Peter's Church of England Primary School, Leeds""]",['Burmantofts and Richmond Hill'],,0.0,0.0,0.0,1
 2023-10-18,Yorkshire Schools Dance Festival,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS2 3AD'],['Leeds City Academy'],['Headingley and Hyde Park'],['LS6 2LG'],0.0,0.0,0.0,1
 2023-10-18,Yorkshire Schools Dance Festival: Barwick-in-Elmet Church Of England Primary School,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS2 3AD'],['Barwick-in-Elmet Church of England Voluntary Controlled Primary School'],['Harewood'],,24.0,24.0,0.0,1
 2023-10-18,Yorkshire Schools Dance Festival,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS2 3AD'],['Trinity Academy Leeds'],['Burmantofts and Richmond Hill '],['LS9 7QL'],0.0,0.0,0.0,1
 2023-10-18,Yorkshire Schools Dance Festival,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS2 3AD'],['Moortown Primary School'],['Moortown'],,0.0,0.0,0.0,1
 2023-10-18,Yorkshire Schools Dance Festival,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS2 3AD'],"['Corpus Christi Catholic College, A Voluntary Academy']",['Temple Newsam '],,67.0,67.0,0.0,1
-2023-10-18,Yorkshire Schools Dance Festival,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS2 3AD'],"[""St Peter's Church of England Primary School, Leeds""]",['Burmantofts and Richmond Hill'],,0.0,0.0,0.0,1
+2023-10-18,Yorkshire Schools Dance Festival,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS2 3AD'],"[""St Margaret's Church of England Voluntary Controlled Primary School""]",['Horsforth'],['LS18 5BL'],0.0,0.0,0.0,1
 2023-10-18,Yorkshire Schools Dance Festival,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS2 3AD'],['Cookridge Holy Trinity Church of England Primary School'],['Adel and Wharfedale'],,0.0,0.0,0.0,1
 2023-10-18,Yorkshire Schools Dance Festival: Poplars Farm Primary,CLE,Creative Learning S3,['Little London and Woodhouse'],['LS2 3AD'],['Poplars Farm Primary'],,['BD2 1LQ'],30.0,30.0,0.0,1
 2023-10-18,Yorkshire Schools Dance Festival: Leeds City College,CLE,General CLE,,,['Leeds City College'],['Little London and Woodhouse'],,20.0,20.0,0.0,1
-2023-10-18,Yorkshire Schools Dance Festival: Wetherby High School,CLE,General CLE,,,['Wetherby High School'],['Wetherby'],,30.0,30.0,0.0,1
 2023-10-18,Yorkshire Schools Dance Festival: St Joseph's Bradford,CLE,General CLE,,,"[""St Joseph's Catholic Primary School, Bradford""]",,['BD5 0JL'],30.0,30.0,0.0,1
+2023-10-18,Yorkshire Schools Dance Festival: Wetherby High School,CLE,General CLE,,,['Wetherby High School'],['Wetherby'],,30.0,30.0,0.0,1
 2023-10-18,Yorkshire Schools Dance Festival: Trinity Academy Leeds,CLE,General CLE,,,['Trinity Academy Leeds'],['Burmantofts and Richmond Hill '],['LS9 7QL'],30.0,30.0,0.0,1
 2023-10-18,Yorkshire Schools Dance Festival: Trinity Academy Halifax,CLE,General CLE,,,['Trinity Academy Halifax'],,['HX2 9TZ'],20.0,20.0,0.0,1
 2023-10-18,Yorkshire Schools Dance Festival: Notre Dame Sixth Form,CLE,General CLE,,,['Notre Dame Catholic Sixth Form College'],['Little London and Woodhouse'],,20.0,20.0,0.0,1
@@ -439,16 +440,16 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-11-06,Northern Dreaming Storytime Tour: Morley Victoria Primary School,Produce (Signature),13 - Closing,,,['Morley Victoria Primary School'],['Morley North '],,180.0,180.0,0.0,1
 2023-11-06,Northern Dreaming Storytime Tour: Lawns Park Primary School,Produce (Signature),13 - Closing,,,['Lawns Park Primary School'],['Farnley and Wortley'],,90.0,90.0,0.0,1
 2023-11-06,Northern Dreaming Storytime Tour: Blackgates Primary Academy,Produce (Signature),13 - Closing,,,['Blackgates Primary Academy'],['Morley South'],,140.0,140.0,0.0,1
-2023-11-06,Northern Dreaming Storytime Tour: Austhorpe Primary School,Produce (Signature),13 - Closing,,,['Austhorpe Primary School'],['Temple Newsam '],,90.0,90.0,0.0,1
-2023-11-06,Northern Dreaming Storytime Tour: Gledhow Primary School,Produce (Signature),13 - Closing,,,['Gledhow Primary School'],['Roundhay'],,90.0,90.0,0.0,1
-2023-11-06,Northern Dreaming Storytime Tour: Birchfield Primary School,Produce (Signature),13 - Closing,,,['Birchfield Primary School'],['Morley North '],,90.0,90.0,0.0,1
 2023-11-06,Northern Dreaming Storytime Tour: Clapgate Primary School,Produce (Signature),13 - Closing,,,['Clapgate Primary School'],['Middleton Park '],,180.0,180.0,0.0,1
-2023-11-06,Northern Dreaming Storytime Tour: Gildersome Primary School,Produce (Signature),13 - Closing,,,['Gildersome Primary School'],['Morley North '],,90.0,90.0,0.0,1
-2023-11-06,Northern Dreaming Storytime Tour: Beechwood Primary School,Produce (Signature),13 - Closing,,,['Beechwood Primary School'],['Killingbeck and Seacroft'],,50.0,50.0,0.0,1
-2023-11-06,Northern Dreaming Storytime Tour: Fountain Primary School,Produce (Signature),13 - Closing,,,['Fountain Primary School'],['Morley South'],,100.0,100.0,0.0,1
-2023-11-06,Northern Dreaming Storytime Tour: Elements Primary School,Produce (Signature),13 - Closing,,,['Elements Primary School'],['Middleton Park '],,90.0,90.0,0.0,1
-2023-11-06,Northern Dreaming Storytime Tour: Drighlington Primary,Produce (Signature),13 - Closing,,,['Drighlington Primary School'],['Morley North'],,135.0,135.0,0.0,1
+2023-11-06,Northern Dreaming Storytime Tour: Gledhow Primary School,Produce (Signature),13 - Closing,,,['Gledhow Primary School'],['Roundhay'],,90.0,90.0,0.0,1
 2023-11-06,Northern Dreaming Storytime Tour: Churwell Primary School,Produce (Signature),13 - Closing,,,['Churwell Primary School'],['Morley North '],,180.0,180.0,0.0,1
+2023-11-06,Northern Dreaming Storytime Tour: Drighlington Primary,Produce (Signature),13 - Closing,,,['Drighlington Primary School'],['Morley North'],,135.0,135.0,0.0,1
+2023-11-06,Northern Dreaming Storytime Tour: Elements Primary School,Produce (Signature),13 - Closing,,,['Elements Primary School'],['Middleton Park '],,90.0,90.0,0.0,1
+2023-11-06,Northern Dreaming Storytime Tour: Austhorpe Primary School,Produce (Signature),13 - Closing,,,['Austhorpe Primary School'],['Temple Newsam '],,90.0,90.0,0.0,1
+2023-11-06,Northern Dreaming Storytime Tour: Fountain Primary School,Produce (Signature),13 - Closing,,,['Fountain Primary School'],['Morley South'],,100.0,100.0,0.0,1
+2023-11-06,Northern Dreaming Storytime Tour: Gildersome Primary School,Produce (Signature),13 - Closing,,,['Gildersome Primary School'],['Morley North '],,90.0,90.0,0.0,1
+2023-11-06,Northern Dreaming Storytime Tour: Birchfield Primary School,Produce (Signature),13 - Closing,,,['Birchfield Primary School'],['Morley North '],,90.0,90.0,0.0,1
+2023-11-06,Northern Dreaming Storytime Tour: Beechwood Primary School,Produce (Signature),13 - Closing,,,['Beechwood Primary School'],['Killingbeck and Seacroft'],,50.0,50.0,0.0,1
 2023-11-07,Leeds Language Week: 0 - 19 Learning Improvement - Playground Games (Spanish) Workshop with Stanningley Primary,CLE,Creative Learning S3,,,['Stanningley Primary School'],['Bramley and Stanningley'],,180.0,180.0,0.0,1
 2023-11-08,STEAM Projects Industry Sharing Day St Peter's CE Primary,Produce (Signature),09 - Smeaton300: Learning programme,['Burmantofts and Richmond Hill'],['LS9 7SG'],"[""St Peter's Church of England Primary School, Leeds""]",['Burmantofts and Richmond Hill'],,60.0,60.0,0.0,1
 2023-11-08,Leeds Language Week: 0 - 19 Learning Improvement - Playground Games (French) Workshop with Quarry Mount Primary ,CLE,Creative Learning S3,,,['Quarry Mount Primary School'],['Headingley and Hyde Park'],,180.0,180.0,0.0,1
@@ -456,24 +457,22 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-11-09,MOON PALACE: Schools Pupil Sessions Clapgate Primary,Produce (Signature),09 - Smeaton300: Moon Palace East Leeds Observatory,['Ardsley and Robin Hood'],[' LS10 4AW'],['Clapgate Primary School'],['Middleton Park '],,60.0,60.0,0.0,1
 2023-11-09,MOON PALACE: Schools Family Session Clapgate Primary,Produce (Signature),09 - Smeaton300: Moon Palace East Leeds Observatory,['Ardsley and Robin Hood'],[' LS10 4AW'],,,,49.0,49.0,0.0,0
 2023-11-09,Leeds Language Week: 0 - 19 Learning Improvement - Playground Games and Storytelling Workshop (Spanish) with Alwoodley Primary ,CLE,Creative Learning S3,,,['Alwoodley Primary School'],['Alwoodley'],,240.0,240.0,0.0,1
-2023-11-13,And She Built a Crooked House – Workshops: West SILC,CLE,Creative Learning S3,,,['West SILC'],['Bramley and Stanningley'],['LS28 6HL'],25.0,25.0,0.0,1
-2023-11-13,And She Built a Crooked House – Workshops: Clapgate Primary School,CLE,Creative Learning S3,,,['Clapgate Primary School'],['Middleton Park '],,60.0,60.0,0.0,1
 2023-11-13,And She Built a Crooked House – Cockburn School,CLE,Creative Learning S3,,,['Cockburn School'],['Beeston and Holbeck'],['LS11 5TT'],52.0,52.0,0.0,1
+2023-11-13,And She Built a Crooked House – Workshops: Clapgate Primary School,CLE,Creative Learning S3,,,['Clapgate Primary School'],['Middleton Park '],,60.0,60.0,0.0,1
+2023-11-13,And She Built a Crooked House – Workshops: West SILC,CLE,Creative Learning S3,,,['West SILC'],['Bramley and Stanningley'],['LS28 6HL'],25.0,25.0,0.0,1
 2023-11-13,And She Built a Crooked House – Workshops: Robin Hood Primary School,CLE,Creative Learning S3,,,['Robin Hood Primary School'],['Ardsley and Robin Hood'],,60.0,60.0,0.0,1
 2023-11-13,And She Built a Crooked House – Workshops: Pudsey Waterloo Primary School,CLE,Creative Learning S3,,,['Pudsey Waterloo Primary'],['Pudsey'],,60.0,60.0,0.0,1
 2023-11-13,Leeds Language Week: 0 - 19 Learning Improvement - Playground Games (French) Workshop with Rosebank Primary,CLE,Creative Learning S3,,,['Rosebank Primary School'],['Little London and Woodhouse'],,120.0,120.0,0.0,1
 2023-11-13,Leeds Language Week: 0 - 19 Learning Improvement - Storytelling Workshop (Spanish) with Ireland Wood Primary,CLE,Creative Learning S3,,,['Ireland Wood Primary School'],['Weetwood '],,120.0,120.0,0.0,1
 2023-11-13,And She Built a Crooked House – Cockburn John Charles,CLE,Creative Learning S3,,,['Cockburn John Charles Academy'],['Middleton Park '],['LS10 2JU'],60.0,60.0,0.0,1
-2023-11-14,MOON PALACE Schools Pupil sessions West Oaks School,Produce (Signature),09 - Smeaton300: Moon Palace East Leeds Observatory,['Wetherby'],['LS23 6DX'],['West Oaks School'],['Little London and Woodhouse'],,105.0,105.0,0.0,1
-2023-11-14,Leeds Language Week: British Council x LEEDS 2023 x Insitute français du Royaume-Uni - International School Partnerships with Lille,CLE,Creative Learning S3,,,,,,42.0,42.0,0.0,0
-2023-11-14,Leeds Language Week: 0 - 19 Learning Improvement - Storytelling Workshop (Spanish) with Southroyd Primary,CLE,Creative Learning S3,,,['Southroyd Primary and Nursery School'],['Pudsey'],,60.0,60.0,0.0,1
 2023-11-14,Leeds Language Week: University of Leeds - German Taster with Carr Manor Community School,CLE,Creative Learning S3,,,['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],25.0,25.0,0.0,1
-2023-11-15,Royal Opera House Create and Dance,CLE,Creative Learning S3,['Burmantofts and Richmond Hill'],['LS9 7DR'],"['Manston Primary', ""St Philip's Catholic Primary  School"", 'Queensway Primary School', ""Rothwell St Mary's RC Primary School"", 'Greenhill Primary School', 'St Francis Catholic Primary School, Morley']","['Cross Gates and Whinmoor', 'Middleton Park ', 'Guiseley and Rawdon', 'Rothwell', 'Farnley and Wortley', 'Morley South']",['LS15 8SD'],1.0,0.0,1.0,6
+2023-11-14,MOON PALACE Schools Pupil sessions West Oaks School,Produce (Signature),09 - Smeaton300: Moon Palace East Leeds Observatory,['Wetherby'],['LS23 6DX'],['West Oaks School'],['Little London and Woodhouse'],,105.0,105.0,0.0,1
+2023-11-14,Leeds Language Week: 0 - 19 Learning Improvement - Storytelling Workshop (Spanish) with Southroyd Primary,CLE,Creative Learning S3,,,['Southroyd Primary and Nursery School'],['Pudsey'],,60.0,60.0,0.0,1
+2023-11-14,Leeds Language Week: British Council x LEEDS 2023 x Insitute français du Royaume-Uni - International School Partnerships with Lille,CLE,Creative Learning S3,,,,,,42.0,42.0,0.0,0
+2023-11-15,Royal Opera House Create and Dance,CLE,Creative Learning S3,['Burmantofts and Richmond Hill'],['LS9 7DR'],"['Manston Primary', ""St Philip's Catholic Primary  School"", 'Queensway Primary School', ""Rothwell St Mary's RC Primary School"", 'Greenhill Primary School', 'St Francis Catholic Primary School, Morley']","['Cross Gates and Whinmoor', 'Middleton Park ', 'Guiseley and Rawdon', 'Rothwell', 'Farnley and Wortley', 'Morley South']",['LS15 8SD'],14.0,13.0,1.0,6
+2023-11-15,Leeds Language Week: University of Leeds - German Taster with Kettlethorple High School,CLE,Creative Learning S3,,,['Kettlethorple High School'],,['WF2 7EL'],32.0,32.0,0.0,1
 2023-11-15,MOON PALACE Schools Family Session St Patrick's Primary,Produce (Signature),09 - Smeaton300: Moon Palace East Leeds Observatory,['Burmantofts and Richmond Hill'],['LS9 7QL'],,,,49.0,49.0,0.0,0
 2023-11-15,MOON PALACE Schools Pupil Session at St Patrick's Primary,Produce (Signature),09 - Smeaton300: Moon Palace East Leeds Observatory,['Burmantofts and Richmond Hill'],['LS9 7QL'],['St Patrick Catholic Primary School'],['Burmantofts and Richmond Hill '],,60.0,60.0,0.0,1
-2023-11-15,Royal Opera House Create and Dance,CLE,Creative Learning S3,['Burmantofts and Richmond Hill'],['LS9 7DR'],"['Manston Primary', ""St Philip's Catholic Primary  School"", 'Queensway Primary School', ""Rothwell St Mary's RC Primary School"", 'Greenhill Primary School', 'St Francis Catholic Primary School, Morley']","['Cross Gates and Whinmoor', 'Middleton Park ', 'Guiseley and Rawdon', 'Rothwell', 'Farnley and Wortley', 'Morley South']",['LS15 8SD'],1.0,0.0,1.0,6
-2023-11-15,Royal Opera House Create and Dance,CLE,Creative Learning S3,['Burmantofts and Richmond Hill'],['LS9 7DR'],"['Manston Primary', ""St Philip's Catholic Primary  School"", 'Queensway Primary School', ""Rothwell St Mary's RC Primary School"", 'Greenhill Primary School', 'St Francis Catholic Primary School, Morley']","['Cross Gates and Whinmoor', 'Middleton Park ', 'Guiseley and Rawdon', 'Rothwell', 'Farnley and Wortley', 'Morley South']",['LS15 8SD'],1.0,0.0,1.0,6
-2023-11-15,Leeds Language Week: University of Leeds - German Taster with Kettlethorple High School,CLE,Creative Learning S3,,,['Kettlethorple High School'],,['WF2 7EL'],32.0,32.0,0.0,1
 2023-11-16,Storymakers: online session at end of process,CLE,Creative Learning S3,,,,,,0.0,0.0,0.0,0
 2023-11-16,MOON PALACE: Schools Family Sessions at Elements Primary,Produce (Signature),09 - Smeaton300: Moon Palace East Leeds Observatory,['Middleton Park'],['LS10 4WR'],,,,178.0,178.0,0.0,0
 2023-11-16,MOON PALACE: Schools Pupil Sessions at Elements Primary,Produce (Signature),09 - Smeaton300: Moon Palace East Leeds Observatory,['Middleton Park'],['LS10 4WR'],['Elements Primary School'],['Middleton Park '],,47.0,47.0,0.0,1
@@ -482,10 +481,10 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-11-29,And She Built a Crooked House – Exhibition: Churwell Primary,CLE,Creative Learning S3,['Chapel Allerton'],['LS7 2QG'],['Churwell Primary School'],['Morley North '],,30.0,30.0,0.0,1
 2023-11-29,And She Built a Crooked House – Exhibition: Drighlighton Primary,CLE,Creative Learning S3,['Chapel Allerton'],['LS7 2QG'],['Drighlington Primary School'],['Morley North'],,30.0,30.0,0.0,1
 2023-11-29,And She Built a Crooked House – Exhibition: Gildersome Primary,CLE,Creative Learning S3,['Chapel Allerton'],['LS7 2QG'],['Gildersome Primary School'],['Morley North '],,30.0,30.0,0.0,1
-2023-11-29,And She Built a Crooked House – Exhibition: Morley Victoria,CLE,Creative Learning S3,['Chapel Allerton'],['LS7 2QG'],['Morley Victoria Primary School'],['Morley North '],,30.0,30.0,0.0,1
-2023-11-29,And She Built a Crooked House – Exhibition: Birchfield Primary,CLE,Creative Learning S3,['Chapel Allerton'],['LS7 2QG'],['Birchfield Primary School'],['Morley North '],,30.0,30.0,0.0,1
 2023-11-29,And She Built a Crooked House – Exhibition: Blackgates Primary Academy,CLE,Creative Learning S3,['Chapel Allerton'],['LS7 2QG'],['Blackgates Primary Academy'],['Morley South'],,30.0,30.0,0.0,1
 2023-11-29,And She Built a Crooked House – Exhibition: St Francis Catholic Primary,CLE,Creative Learning S3,['Chapel Allerton'],['LS7 2QG'],"['St Francis Catholic Primary School, Morley']",['Morley South'],,30.0,30.0,0.0,1
+2023-11-29,And She Built a Crooked House – Exhibition: Birchfield Primary,CLE,Creative Learning S3,['Chapel Allerton'],['LS7 2QG'],['Birchfield Primary School'],['Morley North '],,30.0,30.0,0.0,1
+2023-11-29,And She Built a Crooked House – Exhibition: Morley Victoria,CLE,Creative Learning S3,['Chapel Allerton'],['LS7 2QG'],['Morley Victoria Primary School'],['Morley North '],,30.0,30.0,0.0,1
 2023-11-29,"Leeds 2023, Leeds Art Gallery and Henry Moore Institute - School Assembly with Ashleigh Beattie at Clapgate Primary",CLE,Creative Learning S3,,,['Clapgate Primary School'],['Middleton Park '],,120.0,120.0,0.0,1
 2023-11-29,"Leeds 2023, Leeds Art Gallery and Henry Moore Institute - School Assembly with Ashleigh Beattie at Stanningley Primary ",CLE,Creative Learning S3,,,['Stanningley Primary School'],['Bramley and Stanningley'],,150.0,150.0,0.0,1
 2023-11-30,Coding Day: Whingate Primary School,Produce (Signature),09 - Smeaton300: Learning programme,,,['Whingate Primary School'],['Wetherby'],,60.0,60.0,0.0,1

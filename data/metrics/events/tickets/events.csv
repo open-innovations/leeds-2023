@@ -259,6 +259,7 @@ event_date,event_time,event_name,event_id,project_name,public_event
 2023-12-29,16:30,Accessible Viewing Platform: The Gifting,ev_3302581,,
 2023-12-30,11:00,The Gifting,ev_2994139,13 - Closing,True
 2023-12-30,14:00,The Gifting,ev_2994140,13 - Closing,True
+2023-12-30,14:00,Shuttle Buses: The Gifting,ev_3304440,,
 2023-12-30,16:30,The Gifting,ev_2994141,13 - Closing,True
 2023-12-30,16:30,Shuttle Buses: The Gifting,ev_3304447,,
 2023-12-31,11:00,The Gifting,ev_2994149,13 - Closing,True

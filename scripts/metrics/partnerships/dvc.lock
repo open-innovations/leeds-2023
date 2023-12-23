@@ -5,8 +5,8 @@ stages:
     deps:
     - path: extract.py
       hash: md5
-      md5: 0ad309a050306d354cac2969ded0d1be
-      size: 1375
+      md5: c99b1bda82faea8c844386d9dbade84e
+      size: 1328
     outs:
     - path: ../../../working/metrics/partnerships
       hash: md5
@@ -16,13 +16,36 @@ stages:
   transform:
     cmd: papermill transform.ipynb ../../../working/output/partnerships-transform.ipynb
     deps:
+    - path: ../../../working/metrics/partnerships
+      hash: md5
+      md5: 880cb39de00fb17d62f335772340ec5d.dir
+      size: 81895
+      nfiles: 1
     - path: transform.ipynb
       hash: md5
-      md5: ad6bb9c0eb43bd65e1e724cabdd71e08
-      size: 6279
+      md5: 067dbf2055a3765e84a655a771c3ea82
+      size: 4943
     outs:
     - path: ../../../data/metrics/partnerships
       hash: md5
-      md5: 6b06276477e35f7a0770db0c7ce04475.dir
-      size: 16593
-      nfiles: 2
+      md5: ccbd37e2113f40e3e65a9d0b86eb8e03.dir
+      size: 16234
+      nfiles: 1
+  prepare:
+    cmd: papermill prepare.ipynb ../../../working/output/partnerships-prepare.ipynb
+    deps:
+    - path: ../../../data/metrics/partnerships
+      hash: md5
+      md5: ccbd37e2113f40e3e65a9d0b86eb8e03.dir
+      size: 16234
+      nfiles: 1
+    - path: prepare.ipynb
+      hash: md5
+      md5: af81058ace0b243e82da04fa436842ff
+      size: 6910
+    outs:
+    - path: ../../../docs/metrics/partnerships/_data/
+      hash: md5
+      md5: 5d0966343926903a4f41fcaf7e491764.dir
+      size: 1481
+      nfiles: 6

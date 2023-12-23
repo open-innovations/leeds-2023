@@ -13,7 +13,17 @@ stages:
     cmd: papermill transform.ipynb ${TOP}/working/output/partnerships-transform.ipynb
     deps:
       - transform.ipynb
+      - ${TOP}/working/metrics/partnerships
     outs:
       - ${TOP}/data/metrics/partnerships:
+          persist: false
+          cache: false
+  prepare:
+    cmd: papermill prepare.ipynb ${TOP}/working/output/partnerships-prepare.ipynb
+    deps:
+      - prepare.ipynb
+      - ${TOP}/data/metrics/partnerships
+    outs:
+      - ${TOP}/docs/metrics/partnerships/_data/:
           persist: false
           cache: false

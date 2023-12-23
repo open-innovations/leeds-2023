@@ -1,0 +1,1418 @@
+[
+  {
+    "ADM0_A3": "FJI",
+    "GEOU_DIF": 0,
+    "NAME": "Fiji",
+    "NAME_LONG": "Fiji",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "TZA",
+    "GEOU_DIF": 0,
+    "NAME": "Tanzania",
+    "NAME_LONG": "Tanzania",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "SAH",
+    "GEOU_DIF": 0,
+    "NAME": "W. Sahara",
+    "NAME_LONG": "Western Sahara",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "CAN",
+    "GEOU_DIF": 0,
+    "NAME": "Canada",
+    "NAME_LONG": "Canada",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "USA",
+    "GEOU_DIF": 0,
+    "NAME": "United States of America",
+    "NAME_LONG": "United States",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 1
+  },
+  {
+    "ADM0_A3": "KAZ",
+    "GEOU_DIF": 0,
+    "NAME": "Kazakhstan",
+    "NAME_LONG": "Kazakhstan",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 1
+  },
+  {
+    "ADM0_A3": "UZB",
+    "GEOU_DIF": 0,
+    "NAME": "Uzbekistan",
+    "NAME_LONG": "Uzbekistan",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "PNG",
+    "GEOU_DIF": 0,
+    "NAME": "Papua New Guinea",
+    "NAME_LONG": "Papua New Guinea",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 1
+  },
+  {
+    "ADM0_A3": "IDN",
+    "GEOU_DIF": 0,
+    "NAME": "Indonesia",
+    "NAME_LONG": "Indonesia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 11
+  },
+  {
+    "ADM0_A3": "ARG",
+    "GEOU_DIF": 0,
+    "NAME": "Argentina",
+    "NAME_LONG": "Argentina",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 13
+  },
+  {
+    "ADM0_A3": "CHL",
+    "GEOU_DIF": 0,
+    "NAME": "Chile",
+    "NAME_LONG": "Chile",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "COD",
+    "GEOU_DIF": 0,
+    "NAME": "Dem. Rep. Congo",
+    "NAME_LONG": "Democratic Republic of the Congo",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "SOM",
+    "GEOU_DIF": 0,
+    "NAME": "Somalia",
+    "NAME_LONG": "Somalia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "KEN",
+    "GEOU_DIF": 0,
+    "NAME": "Kenya",
+    "NAME_LONG": "Kenya",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "SDN",
+    "GEOU_DIF": 0,
+    "NAME": "Sudan",
+    "NAME_LONG": "Sudan",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 1
+  },
+  {
+    "ADM0_A3": "TCD",
+    "GEOU_DIF": 0,
+    "NAME": "Chad",
+    "NAME_LONG": "Chad",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 6
+  },
+  {
+    "ADM0_A3": "HTI",
+    "GEOU_DIF": 0,
+    "NAME": "Haiti",
+    "NAME_LONG": "Haiti",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "DOM",
+    "GEOU_DIF": 0,
+    "NAME": "Dominican Rep.",
+    "NAME_LONG": "Dominican Republic",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "RUS",
+    "GEOU_DIF": 0,
+    "NAME": "Russia",
+    "NAME_LONG": "Russian Federation",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "BHS",
+    "GEOU_DIF": 0,
+    "NAME": "Bahamas",
+    "NAME_LONG": "Bahamas",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  },
+  {
+    "ADM0_A3": "FLK",
+    "GEOU_DIF": 0,
+    "NAME": "Falkland Is.",
+    "NAME_LONG": "Falkland Islands / Malvinas",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "NOR",
+    "GEOU_DIF": 0,
+    "NAME": "Norway",
+    "NAME_LONG": "Norway",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 12
+  },
+  {
+    "ADM0_A3": "GRL",
+    "GEOU_DIF": 0,
+    "NAME": "Greenland",
+    "NAME_LONG": "Greenland",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 12
+  },
+  {
+    "ADM0_A3": "ATF",
+    "GEOU_DIF": 0,
+    "NAME": "Fr. S. Antarctic Lands",
+    "NAME_LONG": "French Southern and Antarctic Lands",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 11
+  },
+  {
+    "ADM0_A3": "TLS",
+    "GEOU_DIF": 0,
+    "NAME": "Timor-Leste",
+    "NAME_LONG": "Timor-Leste",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "ZAF",
+    "GEOU_DIF": 0,
+    "NAME": "South Africa",
+    "NAME_LONG": "South Africa",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "LSO",
+    "GEOU_DIF": 0,
+    "NAME": "Lesotho",
+    "NAME_LONG": "Lesotho",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 8
+  },
+  {
+    "ADM0_A3": "MEX",
+    "GEOU_DIF": 0,
+    "NAME": "Mexico",
+    "NAME_LONG": "Mexico",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "URY",
+    "GEOU_DIF": 0,
+    "NAME": "Uruguay",
+    "NAME_LONG": "Uruguay",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 10
+  },
+  {
+    "ADM0_A3": "BRA",
+    "GEOU_DIF": 0,
+    "NAME": "Brazil",
+    "NAME_LONG": "Brazil",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "BOL",
+    "GEOU_DIF": 0,
+    "NAME": "Bolivia",
+    "NAME_LONG": "Bolivia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "PER",
+    "GEOU_DIF": 0,
+    "NAME": "Peru",
+    "NAME_LONG": "Peru",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 11
+  },
+  {
+    "ADM0_A3": "COL",
+    "GEOU_DIF": 0,
+    "NAME": "Colombia",
+    "NAME_LONG": "Colombia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 1
+  },
+  {
+    "ADM0_A3": "PAN",
+    "GEOU_DIF": 0,
+    "NAME": "Panama",
+    "NAME_LONG": "Panama",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "CRI",
+    "GEOU_DIF": 0,
+    "NAME": "Costa Rica",
+    "NAME_LONG": "Costa Rica",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "NIC",
+    "GEOU_DIF": 0,
+    "NAME": "Nicaragua",
+    "NAME_LONG": "Nicaragua",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "HND",
+    "GEOU_DIF": 0,
+    "NAME": "Honduras",
+    "NAME_LONG": "Honduras",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  },
+  {
+    "ADM0_A3": "SLV",
+    "GEOU_DIF": 0,
+    "NAME": "El Salvador",
+    "NAME_LONG": "El Salvador",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 8
+  },
+  {
+    "ADM0_A3": "GTM",
+    "GEOU_DIF": 0,
+    "NAME": "Guatemala",
+    "NAME_LONG": "Guatemala",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 6
+  },
+  {
+    "ADM0_A3": "BLZ",
+    "GEOU_DIF": 0,
+    "NAME": "Belize",
+    "NAME_LONG": "Belize",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "VEN",
+    "GEOU_DIF": 0,
+    "NAME": "Venezuela",
+    "NAME_LONG": "Venezuela",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "GUY",
+    "GEOU_DIF": 0,
+    "NAME": "Guyana",
+    "NAME_LONG": "Guyana",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 8
+  },
+  {
+    "ADM0_A3": "SUR",
+    "GEOU_DIF": 0,
+    "NAME": "Suriname",
+    "NAME_LONG": "Suriname",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 6
+  },
+  {
+    "ADM0_A3": "FRA",
+    "GEOU_DIF": 0,
+    "NAME": "France",
+    "NAME_LONG": "France",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 11
+  },
+  {
+    "ADM0_A3": "ECU",
+    "GEOU_DIF": 0,
+    "NAME": "Ecuador",
+    "NAME_LONG": "Ecuador",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 12
+  },
+  {
+    "ADM0_A3": "PRI",
+    "GEOU_DIF": 0,
+    "NAME": "Puerto Rico",
+    "NAME_LONG": "Puerto Rico",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 1
+  },
+  {
+    "ADM0_A3": "JAM",
+    "GEOU_DIF": 0,
+    "NAME": "Jamaica",
+    "NAME_LONG": "Jamaica",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 10
+  },
+  {
+    "ADM0_A3": "CUB",
+    "GEOU_DIF": 0,
+    "NAME": "Cuba",
+    "NAME_LONG": "Cuba",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "ZWE",
+    "GEOU_DIF": 0,
+    "NAME": "Zimbabwe",
+    "NAME_LONG": "Zimbabwe",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "BWA",
+    "GEOU_DIF": 0,
+    "NAME": "Botswana",
+    "NAME_LONG": "Botswana",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "NAM",
+    "GEOU_DIF": 0,
+    "NAME": "Namibia",
+    "NAME_LONG": "Namibia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "SEN",
+    "GEOU_DIF": 0,
+    "NAME": "Senegal",
+    "NAME_LONG": "Senegal",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  },
+  {
+    "ADM0_A3": "MLI",
+    "GEOU_DIF": 0,
+    "NAME": "Mali",
+    "NAME_LONG": "Mali",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "MRT",
+    "GEOU_DIF": 0,
+    "NAME": "Mauritania",
+    "NAME_LONG": "Mauritania",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 1
+  },
+  {
+    "ADM0_A3": "BEN",
+    "GEOU_DIF": 0,
+    "NAME": "Benin",
+    "NAME_LONG": "Benin",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 12
+  },
+  {
+    "ADM0_A3": "NER",
+    "GEOU_DIF": 0,
+    "NAME": "Niger",
+    "NAME_LONG": "Niger",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 13
+  },
+  {
+    "ADM0_A3": "NGA",
+    "GEOU_DIF": 0,
+    "NAME": "Nigeria",
+    "NAME_LONG": "Nigeria",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "CMR",
+    "GEOU_DIF": 0,
+    "NAME": "Cameroon",
+    "NAME_LONG": "Cameroon",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "TGO",
+    "GEOU_DIF": 0,
+    "NAME": "Togo",
+    "NAME_LONG": "Togo",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  },
+  {
+    "ADM0_A3": "GHA",
+    "GEOU_DIF": 0,
+    "NAME": "Ghana",
+    "NAME_LONG": "Ghana",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "CIV",
+    "GEOU_DIF": 0,
+    "NAME": "Côte d'Ivoire",
+    "NAME_LONG": "Côte d'Ivoire",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "GIN",
+    "GEOU_DIF": 0,
+    "NAME": "Guinea",
+    "NAME_LONG": "Guinea",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "GNB",
+    "GEOU_DIF": 0,
+    "NAME": "Guinea-Bissau",
+    "NAME_LONG": "Guinea-Bissau",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "LBR",
+    "GEOU_DIF": 0,
+    "NAME": "Liberia",
+    "NAME_LONG": "Liberia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "SLE",
+    "GEOU_DIF": 0,
+    "NAME": "Sierra Leone",
+    "NAME_LONG": "Sierra Leone",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "BFA",
+    "GEOU_DIF": 0,
+    "NAME": "Burkina Faso",
+    "NAME_LONG": "Burkina Faso",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 11
+  },
+  {
+    "ADM0_A3": "CAF",
+    "GEOU_DIF": 0,
+    "NAME": "Central African Rep.",
+    "NAME_LONG": "Central African Republic",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "COG",
+    "GEOU_DIF": 0,
+    "NAME": "Congo",
+    "NAME_LONG": "Republic of the Congo",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 10
+  },
+  {
+    "ADM0_A3": "GAB",
+    "GEOU_DIF": 0,
+    "NAME": "Gabon",
+    "NAME_LONG": "Gabon",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  },
+  {
+    "ADM0_A3": "GNQ",
+    "GEOU_DIF": 0,
+    "NAME": "Eq. Guinea",
+    "NAME_LONG": "Equatorial Guinea",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 8
+  },
+  {
+    "ADM0_A3": "ZMB",
+    "GEOU_DIF": 0,
+    "NAME": "Zambia",
+    "NAME_LONG": "Zambia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 13
+  },
+  {
+    "ADM0_A3": "MWI",
+    "GEOU_DIF": 0,
+    "NAME": "Malawi",
+    "NAME_LONG": "Malawi",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  },
+  {
+    "ADM0_A3": "MOZ",
+    "GEOU_DIF": 0,
+    "NAME": "Mozambique",
+    "NAME_LONG": "Mozambique",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "SWZ",
+    "GEOU_DIF": 0,
+    "NAME": "eSwatini",
+    "NAME_LONG": "Kingdom of eSwatini",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  },
+  {
+    "ADM0_A3": "AGO",
+    "GEOU_DIF": 0,
+    "NAME": "Angola",
+    "NAME_LONG": "Angola",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 1
+  },
+  {
+    "ADM0_A3": "BDI",
+    "GEOU_DIF": 0,
+    "NAME": "Burundi",
+    "NAME_LONG": "Burundi",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 8
+  },
+  {
+    "ADM0_A3": "ISR",
+    "GEOU_DIF": 0,
+    "NAME": "Israel",
+    "NAME_LONG": "Israel",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "LBN",
+    "GEOU_DIF": 0,
+    "NAME": "Lebanon",
+    "NAME_LONG": "Lebanon",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 12
+  },
+  {
+    "ADM0_A3": "MDG",
+    "GEOU_DIF": 0,
+    "NAME": "Madagascar",
+    "NAME_LONG": "Madagascar",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "PSX",
+    "GEOU_DIF": 0,
+    "NAME": "Palestine",
+    "NAME_LONG": "Palestine",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 8
+  },
+  {
+    "ADM0_A3": "GMB",
+    "GEOU_DIF": 0,
+    "NAME": "Gambia",
+    "NAME_LONG": "The Gambia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 8
+  },
+  {
+    "ADM0_A3": "TUN",
+    "GEOU_DIF": 0,
+    "NAME": "Tunisia",
+    "NAME_LONG": "Tunisia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "DZA",
+    "GEOU_DIF": 0,
+    "NAME": "Algeria",
+    "NAME_LONG": "Algeria",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "JOR",
+    "GEOU_DIF": 0,
+    "NAME": "Jordan",
+    "NAME_LONG": "Jordan",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "ARE",
+    "GEOU_DIF": 0,
+    "NAME": "United Arab Emirates",
+    "NAME_LONG": "United Arab Emirates",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "QAT",
+    "GEOU_DIF": 0,
+    "NAME": "Qatar",
+    "NAME_LONG": "Qatar",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "KWT",
+    "GEOU_DIF": 0,
+    "NAME": "Kuwait",
+    "NAME_LONG": "Kuwait",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "IRQ",
+    "GEOU_DIF": 0,
+    "NAME": "Iraq",
+    "NAME_LONG": "Iraq",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 1
+  },
+  {
+    "ADM0_A3": "OMN",
+    "GEOU_DIF": 0,
+    "NAME": "Oman",
+    "NAME_LONG": "Oman",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 6
+  },
+  {
+    "ADM0_A3": "VUT",
+    "GEOU_DIF": 0,
+    "NAME": "Vanuatu",
+    "NAME_LONG": "Vanuatu",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "KHM",
+    "GEOU_DIF": 0,
+    "NAME": "Cambodia",
+    "NAME_LONG": "Cambodia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  },
+  {
+    "ADM0_A3": "THA",
+    "GEOU_DIF": 0,
+    "NAME": "Thailand",
+    "NAME_LONG": "Thailand",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 1
+  },
+  {
+    "ADM0_A3": "LAO",
+    "GEOU_DIF": 0,
+    "NAME": "Laos",
+    "NAME_LONG": "Lao PDR",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "MMR",
+    "GEOU_DIF": 0,
+    "NAME": "Myanmar",
+    "NAME_LONG": "Myanmar",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 13
+  },
+  {
+    "ADM0_A3": "VNM",
+    "GEOU_DIF": 0,
+    "NAME": "Vietnam",
+    "NAME_LONG": "Vietnam",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "PRK",
+    "GEOU_DIF": 0,
+    "NAME": "North Korea",
+    "NAME_LONG": "Dem. Rep. Korea",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "KOR",
+    "GEOU_DIF": 0,
+    "NAME": "South Korea",
+    "NAME_LONG": "Republic of Korea",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  },
+  {
+    "ADM0_A3": "MNG",
+    "GEOU_DIF": 0,
+    "NAME": "Mongolia",
+    "NAME_LONG": "Mongolia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 6
+  },
+  {
+    "ADM0_A3": "IND",
+    "GEOU_DIF": 0,
+    "NAME": "India",
+    "NAME_LONG": "India",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "BGD",
+    "GEOU_DIF": 0,
+    "NAME": "Bangladesh",
+    "NAME_LONG": "Bangladesh",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "BTN",
+    "GEOU_DIF": 0,
+    "NAME": "Bhutan",
+    "NAME_LONG": "Bhutan",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 8
+  },
+  {
+    "ADM0_A3": "NPL",
+    "GEOU_DIF": 0,
+    "NAME": "Nepal",
+    "NAME_LONG": "Nepal",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 12
+  },
+  {
+    "ADM0_A3": "PAK",
+    "GEOU_DIF": 0,
+    "NAME": "Pakistan",
+    "NAME_LONG": "Pakistan",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 11
+  },
+  {
+    "ADM0_A3": "AFG",
+    "GEOU_DIF": 0,
+    "NAME": "Afghanistan",
+    "NAME_LONG": "Afghanistan",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "TJK",
+    "GEOU_DIF": 0,
+    "NAME": "Tajikistan",
+    "NAME_LONG": "Tajikistan",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  },
+  {
+    "ADM0_A3": "KGZ",
+    "GEOU_DIF": 0,
+    "NAME": "Kyrgyzstan",
+    "NAME_LONG": "Kyrgyzstan",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 6
+  },
+  {
+    "ADM0_A3": "TKM",
+    "GEOU_DIF": 0,
+    "NAME": "Turkmenistan",
+    "NAME_LONG": "Turkmenistan",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "IRN",
+    "GEOU_DIF": 0,
+    "NAME": "Iran",
+    "NAME_LONG": "Iran",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 13
+  },
+  {
+    "ADM0_A3": "SYR",
+    "GEOU_DIF": 0,
+    "NAME": "Syria",
+    "NAME_LONG": "Syria",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 6
+  },
+  {
+    "ADM0_A3": "ARM",
+    "GEOU_DIF": 0,
+    "NAME": "Armenia",
+    "NAME_LONG": "Armenia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 10
+  },
+  {
+    "ADM0_A3": "SWE",
+    "GEOU_DIF": 0,
+    "NAME": "Sweden",
+    "NAME_LONG": "Sweden",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "BLR",
+    "GEOU_DIF": 0,
+    "NAME": "Belarus",
+    "NAME_LONG": "Belarus",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 11
+  },
+  {
+    "ADM0_A3": "UKR",
+    "GEOU_DIF": 0,
+    "NAME": "Ukraine",
+    "NAME_LONG": "Ukraine",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "POL",
+    "GEOU_DIF": 0,
+    "NAME": "Poland",
+    "NAME_LONG": "Poland",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "AUT",
+    "GEOU_DIF": 0,
+    "NAME": "Austria",
+    "NAME_LONG": "Austria",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "HUN",
+    "GEOU_DIF": 0,
+    "NAME": "Hungary",
+    "NAME_LONG": "Hungary",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  },
+  {
+    "ADM0_A3": "MDA",
+    "GEOU_DIF": 0,
+    "NAME": "Moldova",
+    "NAME_LONG": "Moldova",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 12
+  },
+  {
+    "ADM0_A3": "ROU",
+    "GEOU_DIF": 0,
+    "NAME": "Romania",
+    "NAME_LONG": "Romania",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 13
+  },
+  {
+    "ADM0_A3": "LTU",
+    "GEOU_DIF": 0,
+    "NAME": "Lithuania",
+    "NAME_LONG": "Lithuania",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "LVA",
+    "GEOU_DIF": 0,
+    "NAME": "Latvia",
+    "NAME_LONG": "Latvia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 13
+  },
+  {
+    "ADM0_A3": "EST",
+    "GEOU_DIF": 0,
+    "NAME": "Estonia",
+    "NAME_LONG": "Estonia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 10
+  },
+  {
+    "ADM0_A3": "DEU",
+    "GEOU_DIF": 0,
+    "NAME": "Germany",
+    "NAME_LONG": "Germany",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 1
+  },
+  {
+    "ADM0_A3": "BGR",
+    "GEOU_DIF": 0,
+    "NAME": "Bulgaria",
+    "NAME_LONG": "Bulgaria",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 8
+  },
+  {
+    "ADM0_A3": "GRC",
+    "GEOU_DIF": 0,
+    "NAME": "Greece",
+    "NAME_LONG": "Greece",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "TUR",
+    "GEOU_DIF": 0,
+    "NAME": "Turkey",
+    "NAME_LONG": "Turkey",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "ALB",
+    "GEOU_DIF": 0,
+    "NAME": "Albania",
+    "NAME_LONG": "Albania",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 6
+  },
+  {
+    "ADM0_A3": "HRV",
+    "GEOU_DIF": 0,
+    "NAME": "Croatia",
+    "NAME_LONG": "Croatia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 1
+  },
+  {
+    "ADM0_A3": "CHE",
+    "GEOU_DIF": 0,
+    "NAME": "Switzerland",
+    "NAME_LONG": "Switzerland",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "LUX",
+    "GEOU_DIF": 0,
+    "NAME": "Luxembourg",
+    "NAME_LONG": "Luxembourg",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "BEL",
+    "GEOU_DIF": 0,
+    "NAME": "Belgium",
+    "NAME_LONG": "Belgium",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 8
+  },
+  {
+    "ADM0_A3": "NLD",
+    "GEOU_DIF": 0,
+    "NAME": "Netherlands",
+    "NAME_LONG": "Netherlands",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "PRT",
+    "GEOU_DIF": 0,
+    "NAME": "Portugal",
+    "NAME_LONG": "Portugal",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "ESP",
+    "GEOU_DIF": 0,
+    "NAME": "Spain",
+    "NAME_LONG": "Spain",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  },
+  {
+    "ADM0_A3": "IRL",
+    "GEOU_DIF": 0,
+    "NAME": "Ireland",
+    "NAME_LONG": "Ireland",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "NCL",
+    "GEOU_DIF": 0,
+    "NAME": "New Caledonia",
+    "NAME_LONG": "New Caledonia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 11
+  },
+  {
+    "ADM0_A3": "SLB",
+    "GEOU_DIF": 0,
+    "NAME": "Solomon Is.",
+    "NAME_LONG": "Solomon Islands",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 6
+  },
+  {
+    "ADM0_A3": "NZL",
+    "GEOU_DIF": 0,
+    "NAME": "New Zealand",
+    "NAME_LONG": "New Zealand",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "AUS",
+    "GEOU_DIF": 0,
+    "NAME": "Australia",
+    "NAME_LONG": "Australia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "LKA",
+    "GEOU_DIF": 0,
+    "NAME": "Sri Lanka",
+    "NAME_LONG": "Sri Lanka",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "CHN",
+    "GEOU_DIF": 0,
+    "NAME": "China",
+    "NAME_LONG": "China",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "TWN",
+    "GEOU_DIF": 0,
+    "NAME": "Taiwan",
+    "NAME_LONG": "Taiwan",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "ITA",
+    "GEOU_DIF": 0,
+    "NAME": "Italy",
+    "NAME_LONG": "Italy",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "DNK",
+    "GEOU_DIF": 0,
+    "NAME": "Denmark",
+    "NAME_LONG": "Denmark",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 12
+  },
+  {
+    "ADM0_A3": "GBR",
+    "GEOU_DIF": 0,
+    "NAME": "United Kingdom",
+    "NAME_LONG": "United Kingdom",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "ISL",
+    "GEOU_DIF": 0,
+    "NAME": "Iceland",
+    "NAME_LONG": "Iceland",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "AZE",
+    "GEOU_DIF": 0,
+    "NAME": "Azerbaijan",
+    "NAME_LONG": "Azerbaijan",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 8
+  },
+  {
+    "ADM0_A3": "GEO",
+    "GEOU_DIF": 0,
+    "NAME": "Georgia",
+    "NAME_LONG": "Georgia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "PHL",
+    "GEOU_DIF": 0,
+    "NAME": "Philippines",
+    "NAME_LONG": "Philippines",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 8
+  },
+  {
+    "ADM0_A3": "MYS",
+    "GEOU_DIF": 0,
+    "NAME": "Malaysia",
+    "NAME_LONG": "Malaysia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 6
+  },
+  {
+    "ADM0_A3": "BRN",
+    "GEOU_DIF": 0,
+    "NAME": "Brunei",
+    "NAME_LONG": "Brunei Darussalam",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 12
+  },
+  {
+    "ADM0_A3": "SVN",
+    "GEOU_DIF": 0,
+    "NAME": "Slovenia",
+    "NAME_LONG": "Slovenia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 12
+  },
+  {
+    "ADM0_A3": "FIN",
+    "GEOU_DIF": 0,
+    "NAME": "Finland",
+    "NAME_LONG": "Finland",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 6
+  },
+  {
+    "ADM0_A3": "SVK",
+    "GEOU_DIF": 0,
+    "NAME": "Slovakia",
+    "NAME_LONG": "Slovakia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "CZE",
+    "GEOU_DIF": 0,
+    "NAME": "Czechia",
+    "NAME_LONG": "Czech Republic",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 6
+  },
+  {
+    "ADM0_A3": "ERI",
+    "GEOU_DIF": 0,
+    "NAME": "Eritrea",
+    "NAME_LONG": "Eritrea",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 12
+  },
+  {
+    "ADM0_A3": "JPN",
+    "GEOU_DIF": 0,
+    "NAME": "Japan",
+    "NAME_LONG": "Japan",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "PRY",
+    "GEOU_DIF": 0,
+    "NAME": "Paraguay",
+    "NAME_LONG": "Paraguay",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "YEM",
+    "GEOU_DIF": 0,
+    "NAME": "Yemen",
+    "NAME_LONG": "Yemen",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 11
+  },
+  {
+    "ADM0_A3": "SAU",
+    "GEOU_DIF": 0,
+    "NAME": "Saudi Arabia",
+    "NAME_LONG": "Saudi Arabia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "ATA",
+    "GEOU_DIF": 0,
+    "NAME": "Antarctica",
+    "NAME_LONG": "Antarctica",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": -99
+  },
+  {
+    "ADM0_A3": "CYN",
+    "GEOU_DIF": 0,
+    "NAME": "N. Cyprus",
+    "NAME_LONG": "Northern Cyprus",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 8
+  },
+  {
+    "ADM0_A3": "CYP",
+    "GEOU_DIF": 0,
+    "NAME": "Cyprus",
+    "NAME_LONG": "Cyprus",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 7
+  },
+  {
+    "ADM0_A3": "MAR",
+    "GEOU_DIF": 0,
+    "NAME": "Morocco",
+    "NAME_LONG": "Morocco",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 9
+  },
+  {
+    "ADM0_A3": "EGY",
+    "GEOU_DIF": 0,
+    "NAME": "Egypt",
+    "NAME_LONG": "Egypt",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "LBY",
+    "GEOU_DIF": 0,
+    "NAME": "Libya",
+    "NAME_LONG": "Libya",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 11
+  },
+  {
+    "ADM0_A3": "ETH",
+    "GEOU_DIF": 0,
+    "NAME": "Ethiopia",
+    "NAME_LONG": "Ethiopia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 13
+  },
+  {
+    "ADM0_A3": "DJI",
+    "GEOU_DIF": 0,
+    "NAME": "Djibouti",
+    "NAME_LONG": "Djibouti",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 8
+  },
+  {
+    "ADM0_A3": "SOL",
+    "GEOU_DIF": 0,
+    "NAME": "Somaliland",
+    "NAME_LONG": "Somaliland",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "UGA",
+    "GEOU_DIF": 0,
+    "NAME": "Uganda",
+    "NAME_LONG": "Uganda",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 4
+  },
+  {
+    "ADM0_A3": "RWA",
+    "GEOU_DIF": 0,
+    "NAME": "Rwanda",
+    "NAME_LONG": "Rwanda",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 10
+  },
+  {
+    "ADM0_A3": "BIH",
+    "GEOU_DIF": 0,
+    "NAME": "Bosnia and Herz.",
+    "NAME_LONG": "Bosnia and Herzegovina",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 2
+  },
+  {
+    "ADM0_A3": "MKD",
+    "GEOU_DIF": 0,
+    "NAME": "North Macedonia",
+    "NAME_LONG": "North Macedonia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 3
+  },
+  {
+    "ADM0_A3": "SRB",
+    "GEOU_DIF": 0,
+    "NAME": "Serbia",
+    "NAME_LONG": "Serbia",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 10
+  },
+  {
+    "ADM0_A3": "MNE",
+    "GEOU_DIF": 0,
+    "NAME": "Montenegro",
+    "NAME_LONG": "Montenegro",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  },
+  {
+    "ADM0_A3": "KOS",
+    "GEOU_DIF": 0,
+    "NAME": "Kosovo",
+    "NAME_LONG": "Kosovo",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 11
+  },
+  {
+    "ADM0_A3": "TTO",
+    "GEOU_DIF": 0,
+    "NAME": "Trinidad and Tobago",
+    "NAME_LONG": "Trinidad and Tobago",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  },
+  {
+    "ADM0_A3": "SDS",
+    "GEOU_DIF": 0,
+    "NAME": "S. Sudan",
+    "NAME_LONG": "South Sudan",
+    "BRK_GROUP": null,
+    "MAPCOLOR13": 5
+  }
+]

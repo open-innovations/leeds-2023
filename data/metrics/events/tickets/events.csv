@@ -256,6 +256,7 @@ event_date,event_time,event_name,event_id,project_name,public_event
 2023-12-29,11:00,The Gifting,ev_2994135,13 - Closing,True
 2023-12-29,11:00,Accessible Viewing Platform: The Gifting,ev_3303626,,
 2023-12-29,14:00,The Gifting,ev_2994136,13 - Closing,True
+2023-12-29,14:00,Accessible Viewing Platform: The Gifting,ev_3302571,,
 2023-12-29,16:30,The Gifting,ev_2994137,13 - Closing,True
 2023-12-29,16:30,Accessible Viewing Platform: The Gifting,ev_3302581,,
 2023-12-30,11:00,The Gifting,ev_2994139,13 - Closing,True

@@ -1,0 +1,97 @@
+---
+title: Making a Stand
+summary: Metrics related to Making a Stand - a Signature Event held by LEEDS 2023.
+tags:
+  - main
+order: 14
+work_in_progress: true
+metas:
+  title: Making a Stand
+  description: |
+    Visualisations of key metrics related to Making a Stand - a Signature Event held by LEEDS 2023.
+---
+
+{% from 'macros.njk' import dateFormatter %}
+
+
+<h2>Headlines</h2>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
+
+  {{ comp.metric.headline({
+    title: "Total events", headingLevel: 2,
+    value: events.headlines.total_events | localize,
+    description: "Total activities held as part of this Signature event.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
+    title: "Total audience", headingLevel: 2,
+    value: events.headlines.total_audience | localize,
+    description: "Total count of attendees of this Signature event.",
+    background: "var(--l23-magenta)"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Public events", headingLevel: 2,
+    value: events.public.headlines.total_events | localize ,
+    description: "Total number of public facing events.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
+  
+    {{ comp.metric.headline({
+    title: "Public audience", headingLevel: 2,
+    value: events.public.headlines.total_audience | localize ,
+    description: "Total count of attendees at public facing events.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
+{% endcomp %}
+
+{% comp 'layout.figure' %}
+<h3>Events held by week</h3>
+  {{ comp.oi.viz.graph.line({ config: {
+    categories: events.by_week.columns.week_ending,
+    width: 35,
+    height: 14,
+    text: { colour: '#eee' },
+    xAxis: {
+      title: 'Date',
+      titleOffset: 4,
+      labelRotate: 35,
+      majorTick: 2,
+      formatter: dateFormatter
+    },
+    yAxis: {
+      title: 'Total',
+      titleOffset: 3,
+      majorTick: 500
+    },
+    plotArea: {
+      yMax: 3000,
+      colour: 'var(--l23-dark-blue-grey)'
+    },
+    padding: {
+      left: 4,
+      bottom: 5
+    },
+    series: [
+      {
+        id: "cumulative_events", label: "Number of events held",
+        yValues: events.by_week.columns.cumulative_events,
+        colour: 'var(--l23-magenta)',
+        markerOptions: { s: 5 }
+      },
+      {
+        id: "cumulative_audience", label: "Total audience",
+        yValues: events.by_week.columns.cumulative_audience,
+        colour: 'var(--l23-cyan)',
+        markerOptions: { s: 5 }
+      }
+    ],
+    legend: {
+      width: "20em"
+    }
+  } }) | safe }}
+{% endcomp %}

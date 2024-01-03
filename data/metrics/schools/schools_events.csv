@@ -360,12 +360,12 @@ date,event_name,project_type,project_name,venue_wards,venue_postcodes,schools,wa
 2023-09-03,Tetley: Afra Eisma Learning Resources,CLE,Creative Learning S3,,,,,,0.0,0.0,0.0,0
 2023-09-11,Afra Eisma workshop,CLE,Creative Learning S3,['Hunslet and Riverside'],['LS10 1JQ'],"[""Beeston Hill St Luke's Church of England Primary School""]",['Beeston and Holbeck'],,44.0,40.0,4.0,1
 2023-09-11,Afra Eisma workshops,CLE,Creative Learning S3,['Hunslet and Riverside'],['LS10 1JQ'],['Leeds City College'],['Little London and Woodhouse'],,29.0,25.0,4.0,1
-2023-09-20,River of Hope: Cardinal Heenan Catholic High School,CLE,Creative Learning S3,,,,,,0.0,0.0,0.0,0
-2023-09-20,River of Hope: Carr Manor Community School,CLE,Creative Learning S3,,,['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],30.0,30.0,0.0,1
-2023-09-20,River of Hope: Co-op Academy Leeds,CLE,Creative Learning S3,,,['Co-op Academy Leeds'],['Burmantofts and Richmond Hill '],,30.0,30.0,0.0,1
-2023-09-20,River of Hope: Cockburn John Charles School,CLE,Creative Learning S3,,,['Cockburn John Charles Academy'],['Middleton Park '],['LS10 2JU'],30.0,30.0,0.0,1
-2023-09-20,River of Hope: Cockburn School,CLE,Creative Learning S3,,,['Cockburn School'],['Beeston and Holbeck'],['LS11 5TT'],30.0,30.0,0.0,1
-2023-09-20,River of Hope: Pudsey Grammar School,CLE,Creative Learning S3,,,['Pudsey Grammar School'],['Pudsey'],,30.0,30.0,0.0,1
+2023-09-20,River of Hope: Cardinal Heenan Catholic High School,CLE,Creative Learning S3,,,,,,30.0,30.0,0.0,0
+2023-09-20,River of Hope: Carr Manor Community School,CLE,Creative Learning S3,,,['Carr Manor Community School'],['Moortown '],['LS17 5DJ'],60.0,60.0,0.0,1
+2023-09-20,River of Hope: Co-op Academy Leeds,CLE,Creative Learning S3,,,['Co-op Academy Leeds'],['Burmantofts and Richmond Hill '],,60.0,60.0,0.0,1
+2023-09-20,River of Hope: Cockburn John Charles School,CLE,Creative Learning S3,,,['Cockburn John Charles Academy'],['Middleton Park '],['LS10 2JU'],60.0,60.0,0.0,1
+2023-09-20,River of Hope: Cockburn School,CLE,Creative Learning S3,,,['Cockburn School'],['Beeston and Holbeck'],['LS11 5TT'],60.0,60.0,0.0,1
+2023-09-20,River of Hope: Pudsey Grammar School,CLE,Creative Learning S3,,,['Pudsey Grammar School'],['Pudsey'],,60.0,60.0,0.0,1
 2023-09-27,Leeds Young Film Programmers: Cockburn Laurence Calvert Academy Day 1,CLE,Creative Learning S1,['Middleton Park'],['LS10 4UZ'],['Cockburn Laurence Calvert Academy'],['Middleton Park '],['LS10 4UZ'],30.0,30.0,0.0,1
 2023-09-28,Leeds Young Film Programmers: Cockburn Laurence Calvert Academy Day 2,CLE,Creative Learning S1,['Middleton Park'],['LS10 4UZ'],['Cockburn Laurence Calvert Academy'],['Middleton Park '],['LS10 4UZ'],30.0,30.0,0.0,1
 2023-09-30,Smeaton 300: STEAM Conference ,Produce (Signature),09 - Smeaton300: Learning programme,['Alwoodley'],['LS17 8GS'],,,,12.0,2.0,10.0,0

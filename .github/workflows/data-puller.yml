@@ -2,9 +2,9 @@ name: Data Pipeline
 
 "on":
   workflow_dispatch:
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron: "30 23 * * *"
+  # schedule:
+  #  # * is a special character in YAML so you have to quote this string
+  #  - cron: "30 23 * * *"
 
 # Cancel any in-flight jobs
 concurrency:

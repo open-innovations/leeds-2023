@@ -1,0 +1,9 @@
+{% comp 'grid.block.impact' %}
+  <h4>{{ entry.title }}</h4>
+  <p>
+    {{ comp.catalogue.download({
+      url: entry.path,
+      title: entry.title
+    }) | safe }}
+  </p>
+{% endcomp %}

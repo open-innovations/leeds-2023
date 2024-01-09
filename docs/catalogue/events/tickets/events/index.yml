@@ -1,0 +1,4 @@
+id: events.tickets.events
+path: events/tickets/events.csv
+title: Events
+group: Events::Tickets

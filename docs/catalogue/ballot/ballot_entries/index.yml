@@ -1,0 +1,4 @@
+id: ballot.ballot_entries
+path: ballot/ballot_entries.csv
+title: Ballot entries
+group: Ballot

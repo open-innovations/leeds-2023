@@ -1,0 +1,27 @@
+---
+title: Data Catalogue
+url: /catalogue/
+---
+<p>
+  This page catalogues the data used to build this data microsite.
+  All the data is extracted from operational systems, and stored in the <a href="https://github.com/open-innovations/leeds-2023">LEEDS 2023 data GitHub repository</a>.
+  To obtain a copy of the data, please use the link direct to GitHub.
+</p>
+
+<h2>Datasets</h2>
+
+<p>
+  Each dataset is listed below grouped with associated datasets.
+</p>
+
+{%- for group in search.values('group', 'catalogue') | sort -%}
+  {%- set search_string -%}catalogue group="{{ group }}"{%- endset -%}
+  <h3>{{ group }}</h3>
+
+  {%- comp 'grid.masonry' -%}
+  {%- for entry in search.pages(search_string) | data -%}
+    {{ comp.catalogue.card({ entry: entry }) | safe }}
+  {%- endfor -%}
+  {%- endcomp -%}
+
+{%- endfor -%}

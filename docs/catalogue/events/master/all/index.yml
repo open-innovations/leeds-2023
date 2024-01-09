@@ -1,0 +1,4 @@
+id: events.master.all
+path: events/master/all.csv
+title: All
+group: Events::Master

@@ -1,0 +1,4 @@
+id: web_analytics.daily_page_views
+path: web_analytics/daily_page_views.csv
+title: Daily page views
+group: Web analytics

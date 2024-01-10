@@ -245,14 +245,14 @@ sources:
 
       {{ comp.metric.headline({
     title: "Performances", headingLevel: 3,
-    value: 'TBC',
+    value: project_outputs.columns['Performance'],
     description: "",
     background: "var(--l23-yellow)"
   }) | safe }} 
   
       {{ comp.metric.headline({
     title: "Exhibitions", headingLevel: 3,
-    value: 'TBC',
+    value: project_outputs.columns['Exhibition'],
     description: "",
     background: "var(--l23-magenta)"
   }) | safe }} 
@@ -260,42 +260,51 @@ sources:
 
 {{ comp.metric.headline({
     title: "Workshops", headingLevel: 3,
-    value: 'TBC',
+    value: project_outputs.columns['Workshop'],
     description: "",
     background: "var(--l23-yellow)"
   }) | safe }} 
 
     {{ comp.metric.headline({
     title: "Public Artwork", headingLevel: 3,
-    value: 'TBC',
+    value: project_outputs.columns['Public Artwork'],
     description: "",
     background: "var(--l23-magenta)"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Pop-ups", headingLevel: 3,
+    value: project_outputs.columns['Pop-up'],
+    description: "",
+    background: "var(--l23-yellow)"
   }) | safe }}
 
 {% endcomp %}
 
 {% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
 
-    {{ comp.metric.headline({
-    title: "Pop-ups", headingLevel: 3,
-    value: 'TBC',
-    description: "",
-    background: "var(--l23-yellow)"
-  }) | safe }}  
   
     {{ comp.metric.headline({
     title: "Residencies", headingLevel: 3,
-    value: 'TBC',
+    value: project_outputs.columns['Residency'],
     description: "",
     background: "var(--l23-magenta)"
   }) | safe }}  
 
     {{ comp.metric.headline({
     title: "Other projects", headingLevel: 3,
-    value: 'TBC',
+    value: project_outputs.columns['Other'],
     description: "",
     background: "var(--l23-yellow)"
   }) | safe }}  
+
+    {{ comp.metric.headline({
+    title: "School Events", headingLevel: 3,
+    value: project_outputs.columns['School Event'],
+    description: "",
+    background: "var(--l23-magenta)"
+  }) | safe }}  
+
 
 {% endcomp %}
 

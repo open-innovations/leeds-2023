@@ -1,0 +1,10 @@
+.icon-link {
+  display: flex;
+  align-items: center;
+  &:focus, &:hover {
+    outline: 4px solid var(--l23-magenta);
+  }
+  & :is(svg, img) {
+    height: 2em;
+  }
+}

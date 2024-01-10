@@ -1,9 +1,49 @@
-{% comp 'grid.block.impact' %}
+---
+css: |
+  .catalogue-card {
+    & .impact-block {
+      & > * + * {
+        margin-block-start: 1em;
+      }
+      &:hover {
+        color: black;
+        background: var(--l23-yellow);
+      }
+    }
+  }
+  .catalogue-links {
+    display: flex;
+    list-style: none;
+    padding-inline: 0;
+    margin-block-end: 0;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+---
+<div class="catalogue-card">
+{% comp 'grid.block.impact', {
+  bg: 'var(--l23-cyan)'
+} %}
   <h4>{{ entry.title }}</h4>
-  <p>
-    {{ comp.catalogue.download({
-      url: entry.path,
-      title: entry.title
-    }) | safe }}
-  </p>
+
+  <ul class="catalogue-links">
+
+    <li>
+      {{ comp.catalogue.download({
+        url: entry.path,
+        title: entry.title
+      }) | safe }}
+    </li>
+
+    <li>
+      {{ comp.catalogue.github_link({
+        url: entry.path,
+        title: entry.title
+      }) | safe }}
+    </li>
+
+  </ul>
+
 {% endcomp %}
+</div>

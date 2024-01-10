@@ -17,6 +17,7 @@
 @import "css/tooltip.css";
 /* @import "css/grid.css"; */
 @import "css/meta-block.css";
+@import "css/icons.css";
 
 :root {
   --body-fontstack: 'DM Sans', sans-serif;

@@ -14,14 +14,13 @@ url: /catalogue/
   Each dataset is listed below grouped with associated datasets.
 </p>
 
+{%- comp 'grid.masonry' -%}
 {%- for group in search.values('group', 'catalogue') | sort -%}
   {%- set search_string -%}catalogue group="{{ group }}"{%- endset -%}
-  <h3>{{ group }}</h3>
 
-  {%- comp 'grid.masonry' -%}
-  {%- for entry in search.pages(search_string) | data -%}
+  {%- for entry in search.pages(search_string, 'title') | data -%}
     {{ comp.catalogue.card({ entry: entry }) | safe }}
   {%- endfor -%}
-  {%- endcomp -%}
 
 {%- endfor -%}
+{%- endcomp -%}

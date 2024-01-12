@@ -15,6 +15,10 @@ limitations:
 sources:
   - data/metrics/events/master/
   - data/metrics/community-grants/
+uses_dataset:
+  - events.master.all
+  - events.tickets.orders
+  - community-grants.responses
 ---
 
 {% from 'macros.njk' import dateFormatter %}

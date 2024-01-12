@@ -2,6 +2,14 @@
 layout: layouts/page.njk
 ---
 
-<h2>{{ page.title }}</h2>
+<p>Group: {{ group }}</p>
 
-<p>STUFF WILL GO HERE</p>
+<h2>Used by</h2>
+
+<ul>
+  {% for user in search.pages("metrics uses_dataset*=" + id) | data %}
+  <li>
+    <a href="{{ user.url }}">{{ user.title }} metrics page</a>
+  </li>
+  {% endfor %}
+</ul>

@@ -38,6 +38,10 @@ sources:
   - data/metrics/volunteers/
 published_link: https://datamillnorth.org/dataset/leeds-2023-volunteers
 major_tick: 4
+
+uses_dataset:
+  - volunteers.shifts
+  - volunteers.volunteers
 ---
 {% from 'macros.njk' import dateFormatter %}
 {%- macro popupPreApplication(params) -%}

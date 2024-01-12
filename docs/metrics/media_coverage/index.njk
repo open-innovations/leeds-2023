@@ -12,6 +12,9 @@ limitations:
   - There are a small number of articles counted twice in January. There is some work needed to de-duplicate the original dataset.
 sources:
   - data/metrics/media_coverage/
+uses_dataset:
+  - media_coverage.combined_cision
+  - media_coverage.combined_historic
 ---
 {%- macro popupContent({ value: value, category: category }) -%}
   {{ value }} articles and appearances in the {{ category }} category

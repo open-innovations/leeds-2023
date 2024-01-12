@@ -15,14 +15,14 @@ stages:
       - transform.ipynb
       - ${TOP}/working/metrics/partnerships
     outs:
-      - ${TOP}/data/metrics/partnerships:
+      - ${TOP}/data/metrics/partnerships/partnerships.csv:
           persist: false
           cache: false
   prepare:
     cmd: papermill prepare.ipynb ${TOP}/working/output/partnerships-prepare.ipynb
     deps:
       - prepare.ipynb
-      - ${TOP}/data/metrics/partnerships
+      - ${TOP}/data/metrics/partnerships/partnerships.csv
     outs:
       - ${TOP}/docs/metrics/partnerships/_data/:
           persist: false

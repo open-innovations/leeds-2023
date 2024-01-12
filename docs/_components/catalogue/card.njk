@@ -10,6 +10,10 @@ css: |
         background: var(--l23-yellow);
       }
     }
+    &.unused {
+      border-inline: 10px solid grey;
+      text-decoration: line-through;
+    }
   }
   .catalogue-links {
     display: flex;
@@ -21,18 +25,26 @@ css: |
     justify-content: center;
   }
 ---
-<div class="catalogue-card">
+{% set usage_search %}metrics uses_dataset*="{{ entry.id }}"{% endset -%}
+{% set usage_count = search.pages(usage_search) | length -%}
+
+<div class="catalogue-card{% if usage_count < 1 %} unused{% endif %}">
 {% comp 'grid.block.impact', {
   bg: 'var(--l23-cyan)'
 } %}
   <h4>{{ entry.group }}::{{ entry.title }}</h4>
 
-  {% if entry.status -%}<p>Status: {{ entry.status }}</p>
-  {% endif -%}
-
-  <p>{{ entry.description }}</p>
+  {{ entry.description | md | safe }}
 
   <ul class="catalogue-links">
+
+    <li>
+      {{ comp.icon_link({
+        url: entry.url,
+        title: "View " + entry.title + " dataset on GitHub",
+        icon: "/assets/images/icons/info.svg"
+      }) | safe }}
+    </li>
 
     <li>
       {{ comp.catalogue.download({

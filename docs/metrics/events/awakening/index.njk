@@ -21,7 +21,10 @@ limitations:
     were carried out in schools, and it is known that pupils often cross ward boundaries in order to attend schools.
 sources:
   - data/metrics/events/awakening/
-
+uses_dataset:
+  - ballot.ballot_entries
+  - ballot.ballot_group_entries
+  - events.awakening.attendees
 ---
 {% from 'macros.njk' import dateFormatterNoYear %}
 

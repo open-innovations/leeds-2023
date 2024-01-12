@@ -18,7 +18,7 @@ stages:
       - working/metrics/community-grants/
       - data/reference/postcodes.csv
     outs:
-      - data/metrics/community-grants/:
+      - data/metrics/community-grants/responses.csv:
           persist: false
           cache: false
   prepare:
@@ -26,7 +26,7 @@ stages:
     wdir: ../../..
     deps:
       - scripts/metrics/community-grants/prepare.py
-      - data/metrics/community-grants/
+      - data/metrics/community-grants/responses.csv
     outs:
       - docs/metrics/events/my-leeds-2023/_data/headline.json:
           persist: false

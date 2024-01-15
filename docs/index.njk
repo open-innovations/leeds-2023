@@ -41,8 +41,8 @@ layout: layouts/default.njk
     programme, nor does it represent everyone who will be engaged by the end of the year.
   
   <p>
-    A more robustly tested and analysed evaluation of LEEDS 2023's impact will be delivered by <a href="https://www.theaudienceagency.org/">The Audience Agency</a> 
-    in late 2024.
+    A more robustly tested and analysed evaluation of LEEDS 2023's impact will be delivered by
+    <a href="https://www.theaudienceagency.org/">The Audience Agency</a> in 2024.
   </p>
 {% endcomp %}
 
@@ -64,7 +64,6 @@ layout: layouts/default.njk
   {% endcomp %}
 
   <!-- Some metrics -->
-  {{ get_key_metrics_for_page("metrics/events/my-leeds-2023/") }}
   {{ get_key_metrics_for_page("metrics/volunteers/") }}
   
   {{ comp.metric.headline({
@@ -86,9 +85,12 @@ layout: layouts/default.njk
     background: bg.next()
   }) | safe }}
 
-  {{ get_key_metrics_for_page("metrics/events/awakening/") }}
-
+  {{ get_key_metrics_for_page("metrics/media_coverage/") }}
   {{ get_key_metrics_for_page("metrics/callouts/") }}
+
+
+  {{ get_key_metrics_for_page("metrics/events/awakening/") }}
+  {{ get_key_metrics_for_page("metrics/events/my-leeds-2023/") }}
 
   {# temporary hiding of this figure
   {{ comp.metric.headline({
@@ -102,9 +104,7 @@ layout: layouts/default.njk
   
   #}
 
-  {{ get_key_metrics_for_page("metrics/media_coverage/") }}
-
-   {% comp "grid.block.impact", {
+  {% comp "grid.block.impact", {
     link: "/metrics/social-media/",
     colour: fg.next(),
     bg: bg.next()
@@ -140,8 +140,6 @@ layout: layouts/default.njk
     <h2>Impact Dashboard</h3>
     <p>View the LEEDS 2023 Impact Dashboard</p>
   {% endcomp %}
-
-
 
 {% endcomp %}
 {% endcomp %}

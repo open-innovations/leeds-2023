@@ -1,0 +1,23 @@
+<aside data-type="meta-block">
+  <div class='row'>
+    <p>Datasets:</p>
+    {% if datasets %}
+      <ul>
+      {% for id in datasets %}
+        {% set dataset = search.page('catalogue id=' + id).data %}
+        {% set dataset_path = 'data/metrics/' + dataset.path %}
+        <li>
+          <a href="{{ dataset.url }}">{{ dataset.group }}::<strong>{{ dataset.title }}</strong></a>
+          (updated {{ dataset.updated | date('HUMAN_DATE') }})
+        </li>
+      {% endfor %} 
+      </ul>
+    {% else %}
+      No datasets linked to this metrics page.
+    {% endif %}
+  </div>
+  <div class='row'>
+    <p>Page layout and text updated on {{ template_date | date('HUMAN_DATE') }}</p>
+    {# {% if published_link %}<p>Get the published data from <a href="{{ published_link }}">Data Mill North</a>.</p>{% endif %} #}
+  </div>
+</aside>

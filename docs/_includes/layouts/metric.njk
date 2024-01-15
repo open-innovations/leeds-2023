@@ -8,7 +8,12 @@ up:
 
 {% if introduction %}{{ introduction | md | safe }}{% endif %}
 
-{% include 'partials/metadata.njk' %}
+{{ sources }}
+{{
+  comp.metric.metadata({
+  datasets: uses_dataset,
+  template_date: date
+}) | safe }}
 
 {{ content | safe }}
 

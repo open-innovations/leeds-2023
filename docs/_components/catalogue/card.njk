@@ -36,6 +36,8 @@ css: |
 
   {{ entry.description | md | safe }}
 
+  <p>Updated: {{ entry.updated | date('HUMAN_DATE') }}</p>
+
   <ul class="catalogue-links">
 
     <li>

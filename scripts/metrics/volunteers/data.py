@@ -60,7 +60,7 @@ def load_source_data_file(path):
     data = add_states(data)
 
     # Remove potentially personal data
-    data = data.drop(columns=['id', 'postcode', 'checkpoint'])
+    data = data.drop(columns=['id', 'postcode'])
 
     # Set the hash to the index
     data = data.set_index('hash')
@@ -89,6 +89,6 @@ def save_raw_data(data):
     logging.info('Writing `%s`', file_path)
     data.sort_values(by=['created', 'hash'], ascending=[True, True])[
         [
-          'ward_code', 'local_authority_code', 'status', 'current', 'created', 'applied', 'offered', 'confirmed', 'rejected'
+          'ward_code', 'local_authority_code', 'checkpoint', 'status', 'current', 'created', 'applied', 'offered', 'confirmed', 'rejected'
         ]
     ].to_csv(file_path)

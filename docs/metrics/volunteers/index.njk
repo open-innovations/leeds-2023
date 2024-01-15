@@ -25,9 +25,14 @@ introduction: |
   The data shown below was extracted from the Rosterfy volunteer management system which tracks all activity related to volunteering.
 limitations:
   - |
-      Application dates prior to the 5th October are estimated based on the last modification
+      Application dates prior to the 5th October 2022 are estimated based on the last modification
       date of the user record. This is very likely to incorrectly estimate the date that the application
       was received. Overall numbers should still work.
+  - |
+      The time-based summaries of volunteer signups are intended as a guide only.
+      Dates that volunteers moved between states is estimated based on the change since the last data extract.
+      Occational large leaps in counts of confirmed volunteers are more likely related to delays in the batch runs
+      than large numbers of signups at a particular time.
   - The hexmaps do not show volunteers from outside the Leeds wards.
 sources:
   - data/metrics/volunteers/
@@ -54,7 +59,14 @@ major_tick: 4
 
 <h2>Headlines</h2>
 
-{% comp 'grid.' + headline_grid_style, { min_width: '20rem' } %}
+{% comp 'grid.' + headline_grid_style, { min_width: '10rem' } %}
+  {{ comp.metric.headline({
+    title: "Volunteers confirmed", headingLevel: 3,
+    value: by_week.columns.confirmed | last or '--' | localize,
+    description: "The number of volunteers confirmed.",
+    background: "var(--l23-yellow)"
+  }) | safe }}
+
   {{ comp.metric.headline({
     title: "Total Volunteer Hours", headingLevel: 3,
     value: shifts.summary.volunteer_hours.total | localize,
@@ -81,16 +93,10 @@ major_tick: 4
   {{ comp.metric.headline({
     title: "Volunteer applications", headingLevel: 3,
     value: by_week.columns.applied | last | localize,
-    description: "The number of volunteering applications that have been received.",
+    description: "The number of volunteering applications received.",
     background: "var(--l23-mint)"
   }) | safe }}
 
-  {{ comp.metric.headline({
-    title: "Volunteers confirmed", headingLevel: 3,
-    value: by_week.columns.confirmed | last or '--' | localize,
-    description: "The number of volunteers who have been confirmed.",
-    background: "var(--l23-yellow)"
-  }) | safe }}
 {% endcomp %}
 
 <h2>Volunteering Shifts</h2>

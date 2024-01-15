@@ -10,7 +10,7 @@ from metrics.volunteers.transform_shifts import SHIFT_DATA
 
 def summarise():
     data = load_raw_data()
-    data = data[data.current == True]
+    data = data[(data.current == True) & ~(data.checkpoint == 'Volunteer Hosts')]
     print(data)
     summarise_by_ward(data, os.path.join(VIEW_DIR, 'by_ward.csv'))
     summarise_by_week(data, os.path.join(VIEW_DIR, 'by_week.csv'))

@@ -26,9 +26,11 @@ def map_checkpoints_to_states(series):
         '3c NO Attendance at Meeting Session': STATUS_DROP,
         '4 Attended Meeting Session (HOLDING)': STATUS_APPLY,
         '5 Invite to Induction': STATUS_OFFER,
+        '5b ATTENDED INDUCTION': STATUS_CONFIRMED,
         '5b NO Invite to Induction': STATUS_DROP,
         '5c NO Attendance at Induction': STATUS_DROP,
         '6 Confirmed Volunteer': STATUS_CONFIRMED,
+        'Deactivated after training': STATUS_CONFIRMED,
     })
 
 

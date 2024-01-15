@@ -54,8 +54,11 @@ layout: layouts/default.njk
     fg: "white",
     bg: "var(--l23-dark-blue-grey)"
   } %}
-    <div style="fill: var(--foreground);">
-      <img src="/assets/images/logo.svg" height="50" inline/>
+    <div class="front-page-logo"style="fill: var(--foreground);">
+      <style>
+        .front-page-logo svg { max-width: 18rem; }
+      </style>
+      <img src="/assets/images/logo.svg" inline/>
     </div>
     <p>Visit the main LEEDS 2023 Year Of Culture website</p>
   {% endcomp %}

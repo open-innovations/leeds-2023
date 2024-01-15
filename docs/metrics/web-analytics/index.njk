@@ -13,11 +13,25 @@ limitations:
   - N/A
 ---
 
-{% from 'macros.njk' import dateFormatter %}
+{% from 'macros.njk' import dateFormatter, numberFormatter %}
 
-<p>Website analytics for the LEEDS2023.co.uk website, collected through Google Analytics.</p>
+<p>
+  Website analytics for the LEEDS2023 website, collected through Google Analytics.
+  This page displays two metrics:
+</p>
 
-<p>Two metrics are being displayed on this page: Page Views and Total Users. You can also see how engagement has grown over time by viewing culminative page views.</p>
+<ul>
+  <li>
+    <strong>Page Views</strong> are the number of mobile app screens or web pages your users saw.
+    Repeated views of a single screen or page are counted.
+  </li>
+  <li>
+    <strong>Total Users</strong> are the number of unique users that triggered anypage view events.
+  </li>
+</ul>
+
+<p>You can also see how engagement has grown over time by viewing culminative page views.</p>
+
 
 <h2>Headlines</h2>
 
@@ -51,20 +65,21 @@ limitations:
       title: 'Date',
       titleOffset: 4,
       labelRotate: 35,
-      majorTick: 2,
+      majorTick: 4,
       formatter: dateFormatter
     },
     yAxis: {
       title: 'Page Views',
-      titleOffset: 3.5,
-      majorTick: 50000
+      titleOffset: 4.5,
+      majorTick: 200000,
+      formatter: numberFormatter
     },
     plotArea: {
-      yMax: 1000000,
+      yMax: 1300000,
       colour: 'var(--l23-dark-blue-grey)'
     },
     padding: {
-      left: 4,
+      left: 6,
       bottom: 5
     },
     series: [

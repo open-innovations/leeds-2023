@@ -5,38 +5,38 @@ stages:
     deps:
     - path: ../../../working/manual/web_analytics/data-export.csv
       hash: md5
-      md5: 71e5763b1122bb6c4ea04d432c599f7e
-      size: 374405
+      md5: b99dda84f8241821d95c28e5abccb2e7
+      size: 455686
     - path: transform.ipynb
       hash: md5
-      md5: 9b49a21feb8cb55f8cd2a23533789701
-      size: 5321
+      md5: 3e1f37779d26c75a7bd5aebe57e2148e
+      size: 5322
     outs:
     - path: ../../../data/metrics/web_analytics/daily_page_views.csv
       hash: md5
-      md5: 572a2d616f067c51776bdd7ecd5b24d6
-      size: 12515
+      md5: 6764f09ad7e1b9959135492be8a860ea
+      size: 16296
     - path: ../../../data/metrics/web_analytics/weekly_page_views.csv
       hash: md5
-      md5: 2af0c8edfacf8e1520acd9949a88f69d
-      size: 2181
+      md5: 434b5758ba4fd6f78f882b9feacf5aaa
+      size: 2843
   prepare:
     cmd: papermill prepare.ipynb ../../../working/papermill/web_analytics_prepare_output.ipynb
     deps:
     - path: ../../../data/metrics/web_analytics/daily_page_views.csv
       hash: md5
-      md5: 572a2d616f067c51776bdd7ecd5b24d6
-      size: 12515
+      md5: 6764f09ad7e1b9959135492be8a860ea
+      size: 16296
     - path: prepare.ipynb
       hash: md5
-      md5: 2127df1b0491d7a299137f3706ecbcf0
-      size: 1925
+      md5: a5c6f016813ac1735a4676173bd32869
+      size: 1926
     outs:
     - path: ../../../docs/metrics/web-analytics/_data/headlines.json
       hash: md5
-      md5: 07402f1c1ca7721521dccec9179c5821
-      size: 34
+      md5: f3372d9c15dbe50693aa8a8554ecc06c
+      size: 35
     - path: ../../../docs/metrics/web-analytics/_data/page_views_by_week.csv
       hash: md5
-      md5: 96df5abe2ff59a06b30872df8d131853
-      size: 1631
+      md5: e9e96dcaf4c4b4f94ff1b736db83f36b
+      size: 2177

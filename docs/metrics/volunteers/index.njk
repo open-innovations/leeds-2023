@@ -62,7 +62,7 @@ major_tick: 4
 {% comp 'grid.' + headline_grid_style, { min_width: '10rem' } %}
   {{ comp.metric.headline({
     title: "Volunteers confirmed", headingLevel: 3,
-    value: by_week.columns.confirmed | last or '--' | localize,
+    value: headlines.confirmed | localize,
     description: "The number of volunteers confirmed.",
     background: "var(--l23-yellow)"
   }) | safe }}

@@ -63,15 +63,6 @@ layout: layouts/default.njk
   <!-- Some metrics -->
   {{ get_key_metrics_for_page("metrics/events/my-leeds-2023/") }}
   {{ get_key_metrics_for_page("metrics/volunteers/") }}
-
-  {{ comp.metric.headline({
-    title: "Volunteers confirmed",
-    value: search.data("metrics/volunteers").by_week.columns.confirmed | last or '--' | localize,
-    description: "The number of volunteers who have been confirmed.",
-    link: "~/metrics/volunteers/index.njk",
-    colour: fg.next(),
-    background: bg.next()
-  }) | safe }}
   
   {{ comp.metric.headline({
     title: "Engagements with pupils",

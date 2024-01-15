@@ -1,4 +1,9 @@
 key_metrics:
+  confirmed_volunteers:
+    title: Confirmed volunteers
+    ref: headlines.confirmed
+    description: The number of volunteers who have been confirmed.
+    colour: var(--l23-yellow)
   hours:
     title: Volunteering hours
     ref: shifts.summary.volunteer_hours.total

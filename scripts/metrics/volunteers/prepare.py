@@ -16,6 +16,7 @@ def summarise():
     summarise_by_week(data, os.path.join(VIEW_DIR, 'by_week.csv'))
     summarise_by_local_authority(data, os.path.join(VIEW_DIR, 'by_local_authority.csv'), os.path.join(
         VIEW_DIR, 'la_stats.json'), os.path.join(VIEW_DIR, 'west_yorkshire.csv'))
+    data.reset_index().groupby('status').hash.count().loc[['confirmed']].to_json(os.path.join(VIEW_DIR, 'headlines.json'))
 
 
 def prepare_shift_data():

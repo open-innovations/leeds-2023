@@ -45,8 +45,8 @@ stages:
       size: 291651
     - path: scripts/metrics/volunteers/prepare.py
       hash: md5
-      md5: 2f2a0aa25c9e136e14af05352755ce16
-      size: 2646
+      md5: b37ebcab987ccb7e04b5fb2558d548ec
+      size: 2769
     outs:
     - path: docs/metrics/volunteers/_data/by_local_authority.csv
       hash: md5

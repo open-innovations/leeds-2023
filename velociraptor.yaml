@@ -6,3 +6,7 @@ scripts:
     cmd:
       - dvc remote modify --local oicloud user $OI_SFTP_USERNAME
       - dvc remote modify --local oicloud password $OI_SFTP_PASSWORD
+  pipeline-diagrams:
+    cmd:
+      - dvc dag --mermaid | sed 's/flowchart TD/flowchart LR/' | mmdc --theme neutral --backgroundColor transparent --input - --output docs/assets/images/docs/pipelines-stages.svg
+      - dvc dag --mermaid --outs | sed 's/flowchart TD/flowchart LR/' | mmdc --theme forest --backgroundColor transparent --input - --output docs/assets/images/docs/pipelines-files.svg

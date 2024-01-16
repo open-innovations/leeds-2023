@@ -16,7 +16,7 @@ The diagram below shows the main flows in the data preparation and site build pi
 
 ![A diagram showing the flows of data from the LEEDS 2023 source systems via a three stage pipeline where data is extracted, then transformed and finally prepared to feed the site build. The site build takes this data and combines with a series of templates, components and other web assets and builds these into a static web site. The site is then deployed to GitHub Pages.](/assets/images/docs/architecture-overview.png)
 
-To the right of the diagram are source systems, comprising a mix of operational and record-keeping systems. Data is either extracted from these automatically (green, solid arrows) or manually (red, dashed arrows). Some intermediary systems are also indicated (Open Innovations SFTP and Open Innovations File Share).
+To the left of the diagram are source systems, comprising a mix of operational and record-keeping systems. Data is either extracted from these automatically (green, solid arrows) or manually (red, dashed arrows). Some intermediary systems are also indicated (Open Innovations SFTP and Open Innovations File Share).
 
 The data pipeline comprises
 
@@ -24,7 +24,7 @@ The data pipeline comprises
   [the `/working` folder](https://github.com/open-innovations/leeds-2023/tree/main/working).
 * a transform stage which targets the 
   [the `/data` folder](https://github.com/open-innovations/leeds-2023/tree/main/data/).
-* a prepare stage which converts data fo the form requires
+* a prepare stage which converts data to the form required
   for site generation (e.g. to drive visualisations).
 
 Each of thse stages is described in more detail below.
@@ -121,4 +121,4 @@ This is managed by the owner of the leeds2023.co.uk domain, following instructio
 [L23_DATA_GITHUB]: https://github.com/open-innovations/leeds-2023
 [DVC_ORG]: https://dvc.org/
 [OI_LUME_VIZ]: https://github.com/open-innovations/oi-lume-viz
-[GH_PAGES_CUSTOM_SUBDOMAIN]: https://github.com/open-innovations/oi-lume-viz
+[GH_PAGES_CUSTOM_SUBDOMAIN]: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain

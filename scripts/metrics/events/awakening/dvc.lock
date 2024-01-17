@@ -3,14 +3,10 @@ stages:
   extract:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/events/awakening/extract.py
     deps:
-    - path: data/reference/postcodes.csv
+    - path: scripts/metrics/events/awakening/extract.py
       hash: md5
-      md5: 3c332ace66b28524c0a710fca1a4b1c0
-      size: 76072682
-    - path: scripts/metrics/events/awakening/process.py
-      hash: md5
-      md5: d6122c13f010b6f8f251edce90ac6ec5
-      size: 2922
+      md5: 6e4c581b2cd2fa80ac5c849926f51b56
+      size: 1319
     outs:
     - path: working/ballot/
       hash: md5
@@ -26,10 +22,14 @@ stages:
     - path: scripts/metrics/events/awakening/process.py
       md5: d6122c13f010b6f8f251edce90ac6ec5
       size: 2922
-    - path: working/ballot/
-      md5: dc5932bdcbaf8360398e988b8a9f8869.dir
-      size: 184272
-      nfiles: 2
+    - path: working/ballot/group_ballots.csv
+      hash: md5
+      md5: 9643725dcb18026c33729286c9536a6a
+      size: 2395
+    - path: working/ballot/individual_ballots.csv
+      hash: md5
+      md5: 8979b662cf014aa30bcedcc03c716832
+      size: 181877
     outs:
     - path: data/metrics/ballot/ballot_entries.csv
       md5: 147095349ae8c64739c89bcd81730d87

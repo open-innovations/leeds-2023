@@ -6,8 +6,7 @@ stages:
     wdir: ../../../..
     always_changed: true
     deps:
-    - scripts/metrics/events/awakening/process.py
-    - data/reference/postcodes.csv
+    - scripts/metrics/events/awakening/extract.py
     outs:
     - working/ballot/:
         persist: true
@@ -18,7 +17,8 @@ stages:
     deps:
     - scripts/metrics/events/awakening/process.py
     - data/reference/postcodes.csv
-    - working/ballot/
+    - working/ballot/individual_ballots.csv
+    - working/ballot/group_ballots.csv
     outs:
     - data/metrics/ballot/ballot_entries.csv:
         persist: true

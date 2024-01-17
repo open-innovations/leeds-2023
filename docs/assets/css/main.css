@@ -18,6 +18,7 @@
 /* @import "css/grid.css"; */
 @import "css/meta-block.css";
 @import "css/icons.css";
+@import "css/validation.css";
 
 :root {
   --body-fontstack: 'DM Sans', sans-serif;

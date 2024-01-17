@@ -1,0 +1,29 @@
+.validation-notice {
+  background: var(--l23-yellow);
+  border: 0.5em solid black;
+  padding: 1em;
+  display: flex;
+  gap: 1em;
+  align-items: start;
+  & > * {
+    margin-top: 0;
+  }
+  & .icon {
+    width: 2em;
+    flex-shrink: 0;
+  }
+  &.validated {
+    background-color: var(--l23-cyan);
+  }
+}
+
+.validation-message {
+  background-color: var(--l23-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  & :is(svg, img) {
+    height: 1em;
+  }
+}

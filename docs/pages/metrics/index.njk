@@ -8,7 +8,6 @@ up:
   url: /
 ---
 
-
 {% set key_metrics = {
   roadshows: {
     value: search.data('metrics/roadshow-attendees').by_date.columns.cumulative_attendance | last
@@ -29,6 +28,12 @@ up:
       link: metric.url,
       bg: 'var(--l23-cyan)'
     } %}
+      {% if not metric.validated %}
+      <div class="validation-message">
+        <img src="/assets/images/icons/warning.svg" inline>
+        <p>Pending validation</p>
+      </div>
+      {% endif %}
       <h2>{{ metric.title }}</h2>
       <p>
         {{ metric.summary }}
@@ -49,7 +54,7 @@ up:
           <p>{{ key_metrics[metric.key].measure }}</p>
         {%- endif -%}
       {%- endif -%}
-      {% if metric.work_in_progress %}{{ comp.work_in_progress() | safe }}{% endif %}
+      {# {% if metric.work_in_progress %}{{ comp.work_in_progress() | safe }}{% endif %} #}
     {% endcomp %}
   {% endfor %}
 {% endcomp %}

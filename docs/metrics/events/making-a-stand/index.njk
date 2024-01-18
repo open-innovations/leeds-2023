@@ -9,9 +9,20 @@ metas:
   title: Making a Stand
   description: |
     Visualisations of key metrics related to Making a Stand - a Signature Event held by LEEDS 2023.
+limitations:
+- It is difficult to provide total engagement figures for public artworks. Footfall counters and CCTV monitoring were not available in City 
+  Square over the duration that Making A Stand was installed so an exact figure is impossible to calculate. Figures on this page represent 
+  engagements at scheduled events and activations with the sculpture.
+- As Making A Stand was situated in a public space, not all activations included audience counts. Some of these figures have been retroactively 
+  estimated by the producers.
 ---
 
 {% from 'macros.njk' import dateFormatter %}
+
+<p>
+    Making A Stand was a public artwork that stood in City Square between June 2023 - January 2024. The project was inspired by Leeds’ 
+    roots as an ancient woodland, the Forest of Leodis. It was designed by artist Michael Pinsky and environmental architects Studio Bark.
+</p>
 
 
 <h2>Headlines</h2>
@@ -19,23 +30,23 @@ metas:
 {% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
 
   {{ comp.metric.headline({
-    title: "Total events", headingLevel: 2,
+    title: "Total activations", headingLevel: 2,
     value: events.headlines.total_events | localize,
-    description: "Total activities held as part of this Signature event.",
+    description: "Total activations held within City Square whilst the sculpture stood.",
     background: "var(--l23-magenta)"
   }) | safe }}
 
   {{ comp.metric.headline({
-    title: "Total audience", headingLevel: 2,
+    title: "Estimated engagements", headingLevel: 2,
     value: events.headlines.total_audience | localize,
-    description: "Total count of attendees of this Signature event.",
+    description: "An estimation on the number of people who passed through City Square when Making A Stand stood",
     background: "var(--l23-magenta)"
   }) | safe }}
 
     {{ comp.metric.headline({
-    title: "Public events", headingLevel: 2,
+    title: "Engagement at activations", headingLevel: 2,
     value: events.public.headlines.total_events | localize ,
-    description: "Total number of public facing events.",
+    description: "Total engagements with activations",
     background: "var(--l23-yellow)"
   }) | safe }}
 
@@ -47,51 +58,25 @@ metas:
     background: "var(--l23-yellow)"
   }) | safe }}
 
+    {{ comp.metric.headline({
+    title: "Making a Stand Online", headingLevel: 2,
+    value: 5411,
+    description: "Total page views of Making a Stand Online.",
+    background: "var(--l23-yellow)"
+  }) | safe }}  
+
 {% endcomp %}
 
-{% comp 'layout.figure' %}
-<h3>Events held by week</h3>
-  {{ comp.oi.viz.graph.line({ config: {
-    categories: events.by_week.columns.week_ending,
-    width: 35,
-    height: 14,
-    text: { colour: '#eee' },
-    xAxis: {
-      title: 'Date',
-      titleOffset: 4,
-      labelRotate: 35,
-      majorTick: 2,
-      formatter: dateFormatter
-    },
-    yAxis: {
-      title: 'Total',
-      titleOffset: 3,
-      majorTick: 500
-    },
-    plotArea: {
-      yMax: 3000,
-      colour: 'var(--l23-dark-blue-grey)'
-    },
-    padding: {
-      left: 4,
-      bottom: 5
-    },
-    series: [
-      {
-        id: "cumulative_events", label: "Number of events held",
-        yValues: events.by_week.columns.cumulative_events,
-        colour: 'var(--l23-magenta)',
-        markerOptions: { s: 5 }
-      },
-      {
-        id: "cumulative_audience", label: "Total audience",
-        yValues: events.by_week.columns.cumulative_audience,
-        colour: 'var(--l23-cyan)',
-        markerOptions: { s: 5 }
-      }
-    ],
-    legend: {
-      width: "20em"
-    }
-  } }) | safe }}
-{% endcomp %}
+<p>
+    Activations are activities that take place within the sculpture to ‘activate’ it. This ranged from a soundscape recorded by the artist 
+    Michael Pinsky and installed for 1 month in November to yoga classes and a reading of A Christmas Carol in December.
+</p>
+
+<p>
+    Making A Stand Online was a digital experience which could be accessed via a QR code found within the artwork. Uses would learn about 
+    the life cycle of the douglas firs that made up the sculpture and how they would return to the supply chain after the event concluded.
+</p>
+
+<p>
+    Now the artwork has been de-installed the wood has returned to the supply chain. 
+</p>

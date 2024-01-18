@@ -10,10 +10,27 @@ metas:
   description: |
     Visualisations of key metrics related to Nest - a Signature Event held by LEEDS 2023.
 limitations:
-  - Data for events and activities are extracted from Airtable. 
+- The final show in the run was halted due to electric storms around the site, this may have 
+  resulted in some discrepancies between tickets sold and public audience. 
 ---
 
 {% from 'macros.njk' import dateFormatter %}
+
+<p>
+  Nest was a large-scale site specific theatre production that explored how we can combat the climate crisis and create a better 
+  world for future generations.
+</p>
+
+<p>
+  Set against the stunning backdrop of RSPB St Aidan's Nature Park, Nest followed the story of Skylar - a teenager in 2050 where 
+  climate change is shaking the natural world.
+</p>
+
+<p>
+  Performed by over 100 young performers from across Leeds and the surrounding area, trained by National Youth Theatre, audiences 
+  gained exclusive access to St Aidan’s after hours to experience a theatre show that told an incredible story about migration and 
+  the future of our planet.
+</p>
 
 <h2>Headlines</h2>
 
@@ -21,21 +38,20 @@ limitations:
   {{ comp.metric.headline({
     title: "Total number of events", headingLevel: 2,
     value: events.headlines.total_events | localize,
-    description: "Total activities held as part of this Signature event.",
+    description: "Total activities held as part of this project.",
     background: "var(--l23-magenta)"
   }) | safe }}
 
   {{ comp.metric.headline({
-    title: "Total audience", headingLevel: 2,
+    title: "Total engagements", headingLevel: 2,
     value: events.headlines.total_audience | localize ,
-    description: "Total number of attendances online and in person.",
+    description: "Total number of engagements at public and community activities.",
     background: "var(--l23-magenta)"
   }) | safe }}
 
   {{ comp.metric.headline({
     title: "Number of public facing events", headingLevel: 2,
     value: events.public.headlines.total_events | localize ,
-    description: "Total number of public facing events.",
     background: "var(--l23-yellow)"
   }) | safe }}
 
@@ -57,6 +73,13 @@ limitations:
     title: "Community event attendees", headingLevel: 2,
     value: events.community.headlines.total_audience | localize ,
     description: "Total count of attendees at community engagement events.",
+    background: "var(--l23-cyan)"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Youth voice participants", headingLevel: 2,
+    value: 76,
+    description: "Total number of young people who participated in the acting course.",
     background: "var(--l23-cyan)"
   }) | safe }}
 
@@ -84,6 +107,10 @@ limitations:
 
 {% endcomp %}
 
+<p>
+  The Nest show run took place between 5-9 September. In the lead up to the production a youth voice programme trained 76 young people on an acting course that enabled them to become actors in the ensemble cast. After completion they were offered membership to the National Youth Theatre.
+</p>
+
 {% comp 'layout.figure' %}
 <h3>Number of tickets sold by event date</h3>
   {{ comp.oi.viz.graph.line({ config: {
@@ -100,7 +127,7 @@ limitations:
     yAxis: {
       title: 'Total',
       titleOffset: 3,
-      majorTick: 100
+      majorTick: 200
     },
     plotArea: {
       yMax: 2000,
@@ -124,3 +151,20 @@ limitations:
   } }) | safe }}
 {% endcomp %}
 
+{% comp 'layout.figure', {max_width: '50rem'} %}
+<h3>Number of tickets sold by ward</h3>
+{{ comp.oi.viz.map.hex_cartogram({
+	config: {
+		hexjson: hex.wards_leeds,
+		data: events.tickets_by_ward.rows,
+		matchKey: 'ward_code',
+		value: 'tickets',
+		bgColour: '#ddd',
+		label: '{{ n | slice(0,3) }}',
+		tooltip: '<h4>{{ n }}</h4><p><strong>{{ tickets | "0" }}</strong> ticket(s) sold</p>',
+		bgColour: '#ddd',
+		min: 0,
+		scale: 'magenta'
+	}
+  }) | safe }}
+{% endcomp %}

@@ -23,11 +23,11 @@ uses_dataset:
 
 {% from 'macros.njk' import dateFormatter %}
 
-<p>My LEEDS 2023 is a celebration of all the people and stories that make up Leeds.</p>
+<p>My LEEDS 2023 is a celebration of all the people and stories that make up Leeds. My LEEDS 2023 was a celebration of all the people and stories that make up Leeds. Several projects made up My LEEDS 2023.</p>
 
-<p>Throughout the Year of Culture, 33 Neighbourhood Hosts – local residents of Leeds – participated in a paid training scheme and collaborated with their local communities to create cultural events in each ward of the city. This programme of events was called My LEEDS Summer. To support participation in My LEEDS Summer, the Neighbourhood Hosts designed a community grants scheme and people from across Leeds were invited to apply for funding and take part.</p>
+<p>Throughout the Year of Culture, 33 Neighbourhood Hosts – local residents of Leeds – participated in a paid training scheme and collaborated with their local communities to create cultural events in each ward of the city. This programme of events was called My LEEDS Summer. To support participation in My LEEDS Summer, the Neighbourhood Hosts designed a community grants scheme and people from across Leeds were invited to apply for funding and take part and create events in their neighbourhood.</p>
   
-<p>Artist Keith Khan was commissioned to create ‘The Gift’, a new piece of artwork inspired by Leeds to be gifted to the city. For inspiration, Keith met each of the Neighbourhood Hosts and visited their ward, speaking to local residents and getting to know the neighbourhood.</p>
+<p>Artist Keith Khan was commissioned to create ‘The Gift’, a new piece of artwork inspired by Leeds heritage and culture to be gifted to the city. For inspiration, Keith met each of the Neighbourhood Hosts and visited their ward, speaking to local residents and getting to know the neighbourhood.</p>
 
 <p>Alongside the Neighbourhood Hosts, seven local artists were commissioned to co-create cultural activity with their community, as part of a strand of work called ‘My World, My City, My Neighbourhood’.</p>
 
@@ -35,7 +35,7 @@ uses_dataset:
 
 <p>Each of these interwoven strands came together to engage communities across the city in My LEEDS 2023.</p>
   
-<p>The visualisations below present the My LEEDS 2023 events which have taken place so far. The full list of events is available to view on the <a href="https://leeds2023.co.uk/my-leeds-summer">LEEDS 2023 website</a>.</p>
+<p>The visualisations below present the My LEEDS 2023 events which have taken place so far.</p>
 
 
 {% comp 'grid.' + headline_grid_style, { min_width: '15em' } %}
@@ -215,8 +215,8 @@ uses_dataset:
   </p>
   
   <p>
-    This hexmap presents how many applications were recieved from each ward. There are {{ headline.unknown_ward }} applications which are not 
-    mapped to a ward.
+    This hexmap presents how many applications were received from each ward. There are {{ headline.unknown_ward }} applications which are not 
+    mapped to a ward. Darker colours represent more applications made per ward.
   </p>
 </div>
 
@@ -262,7 +262,7 @@ uses_dataset:
     enhance an existing event in their summer term or plan a new event in their autumn term with a grant of £300.
   </p>
   <p>
-    This hexmap presents the number of grant applications we have received from schools in each ward.
+    This hexmap presents the number of grant applications we have received from schools in each ward. Darker coloured hexagons represent more applications from each ward.
   </p>
 </div>
 
@@ -294,11 +294,19 @@ uses_dataset:
   }) | safe }}
 
   {{ comp.metric.headline({
+    title: "Digital artwork engagement", headingLevel: 2,
+    value: 4374,
+    description: "Number of page views from 16 July 2023 to 9 January 2024.",
+    background: "var(--l23-yellow)",
+    colour: "var(--l23-yellow-contrast)"
+  }) | safe }}
+
+  {{ comp.metric.headline({
     title: "A City Without Seams total audience", headingLevel: 2,
     value: 3014,
     description: "Total audience numbers for A City Without Seams exhibition (from 21st to 24th September)",
-    background: "var(--l23-yellow)",
-    colour: "var(--l23-yellow-contrast)"
+    background: "var(--l23-magenta)",
+    colour: "var(--l23-magenta-contrast)"
   }) | safe }}
 
 {% endcomp %}

@@ -15,20 +15,28 @@ limitations:
 
 {% from 'macros.njk' import dateFormatter %}
 
+<p>
+  John Smeaton was born in Leeds and his trailblazing Civil Engineering projects continue to shape the world around us today. Smeaton300 celebrates his life, legacy and influences all the way up to his 300th birthday in 2024. Data displayed on this page relates to projects produced by LEEDS 2023. The project will continue through 2024 produced by partners Foxglove. <a href="https://smeaton300.co.uk/">Learn more about ongoing activity</a>.
+</p>
+
+<p>
+  Smeaton300 was broadly focused on STEAM education. It includes an Engineering exhibition at Leeds Industrial Museum, a series of talks and debates featuring scientists such as Maggie Aderin-Pocock, a schools education programme which included activities like coding days and Moon Palace, a bus converted into a mobile observatory by artists Peak and Morrison.
+</p>
+
 <h2>Headlines</h2>
 
 {% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
   {{ comp.metric.headline({
     title: "Total number of events", headingLevel: 2,
     value: events.headlines.total_events | localize,
-    description: "Total activities held as part of this Signature event.",
+    description: "Total activities held as part of this project",
     background: "var(--l23-magenta)"
   }) | safe }}
 
     {{ comp.metric.headline({
-    title: "Total audience", headingLevel: 2,
+    title: "Total engagements", headingLevel: 2,
     value: events.headlines.total_audience | localize ,
-    description: "Total number of attendances online and in person.",
+    description: "Total number of engagements in person.",
     background: "var(--l23-magenta)"
   }) | safe }}
 
@@ -49,7 +57,7 @@ limitations:
   {{ comp.metric.headline({
     title: "School engagements", headingLevel: 2,
     value: events.schools.headlines.total_events | localize ,
-    description: "Total engagements with schools.",
+    description: "Total count of engagements with schools.",
     background: "var(--l23-yellow)"
   }) | safe }}
 
@@ -59,6 +67,18 @@ limitations:
     description: "Total count of school pupils engaged.",
     background: "var(--l23-yellow)"
   }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "Total Leeds wards engaged", headingLevel: 2,
+    value: events.headlines.ward_count | localize,
+    description: "Total number of wards engaged with as part of this Signature event.",
+    background: "var(--l23-magenta)",
+    colour: "black"
+  }) | safe }}
+
+{% endcomp %}
+
+{% comp 'grid.' + headline_grid_style, { min_width: '50rem' } %}
 
     {{ comp.metric.headline({
     title: "Total Moon Palace events", headingLevel: 2,
@@ -85,21 +105,12 @@ limitations:
   }) | safe }}
 
     {{ comp.metric.headline({
-    title: "Total Leeds wards engaged", headingLevel: 2,
-    value: events.headlines.ward_count | localize,
-    description: "Total number of wards engaged with as part of this Signature event.",
-    background: "var(--l23-magenta)",
-    colour: "black"
-  }) | safe }}
-
-    {{ comp.metric.headline({
-    title: "Tickets sold", headingLevel: 2,
+    title: "Tickets for Moon Palace activations", headingLevel: 2,
     value: search.data('metrics/tickets').headlines['09 - Smeaton300: Moon Palace East Leeds Observatory'].tickets | localize ,
-    description: "Total number of tickets sold.",
+    description: "Total number of tickets sold for Moon Palace.",
     background: "var(--l23-cyan)", 
     colour: "black"
   }) | safe }}
-
 
 {% endcomp %}
 
@@ -121,10 +132,10 @@ limitations:
     yAxis: {
       title: 'Total',
       titleOffset: 3,
-      majorTick: 500
+      majorTick: 50
     },
     plotArea: {
-      yMax: 5000,
+      yMax: 250,
       colour: 'var(--l23-dark-blue-grey)'
     },
     padding: {
@@ -137,12 +148,6 @@ limitations:
         yValues: events.by_week.columns.cumulative_events,
         colour: 'var(--l23-magenta)',
         markerOptions: { s: 5 }
-      },
-      {
-        id: "cumulative-audience", label: "Total audience",
-        yValues: events.by_week.columns.cumulative_audience,
-        colour: 'var(--l23-cyan)',
-        markerOptions: { s: 5 }
       }
     ],
     legend: {
@@ -150,6 +155,8 @@ limitations:
     }
   } }) | safe }}
 {% endcomp %}
+
+
 
 {% comp 'layout.figure', {max_width: '60rem'}  %}
   <h3>Events held per ward</h3>

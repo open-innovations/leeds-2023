@@ -15,10 +15,10 @@ limitations:
   - Some ballot entries did not have a postcode associated, as postcode was not a mandatory field for ballot entries. This was a design choice as 
     it removes a barrier to entry for those with no fixed address. As such, those entries are impossible to map to a ward or local authority. 
   - Each individual ballot entry is allocated up to four seats. Group ballot entries are submitted with a
-    requested number of seats. The tickets total uses the upper figure for individual ballot entries,
-    combined with the explicitly requested number of group ballot seats.
-  - Group ballot entries are not displayed in the hexmaps related to where ballot applications come from. Many of the group ballot activities 
-    were carried out in schools, and it is known that pupils often cross ward boundaries in order to attend schools.
+    requested number of seats. The total number of tickets was calculated using the upper figure for individual ballot entries, combined with the 
+    explicitly requested number of group ballot seats.
+  - Group ballot entries are not displayed in the hexmaps related to where ballot applications come from. Many of the group ballot activities were 
+    carried out in schools, and it is known that pupils often cross ward boundaries in order to attend schools.
 sources:
   - data/metrics/events/awakening/
 uses_dataset:
@@ -29,20 +29,14 @@ uses_dataset:
 {% from 'macros.njk' import dateFormatterNoYear %}
 
 <p>
-  <a href="https://leeds2023.co.uk/the-awakening">The Awakening</a> was the official opening event for the LEEDS 2023 Year of Culture, taking place 
-  at Headingley Stadium on 7 January 2023. Tickets were allocated using a ballot process which required those who wished to attend to share an 
-  artwork.  
+  The Awakening was the official opening event for the LEEDS 2023 Year of Culture, taking place at Headingley Stadium on 7 January 2023. Tickets were allocated using a ballot process which required those who wished to attend to share an artwork. These artworks ranged from photography to paintings and more, engaging people across the city of all ages.
 </p>
 
 <p>
-  As part of The Awakening, there were two call outs inviting people to take part in the show: ‘Leeds on Wheels’ and ‘Dancers of Leeds’. 
-  In total 141 people took part in these two opportunities. Details about applications can be found on 
-  the <a href="https://data.leeds2023.co.uk/metrics/callouts/">call outs</a> metrics page.
+As part of The Awakening, there were also two call outs inviting people to take part in the show: ‘Leeds on Wheels’ and ‘Dancers of Leeds’. In total 141 people took part in these two opportunities. Details about applications can be found on 
+the <a href="https://data.leeds2023.co.uk/metrics/callouts/">call outs</a> metrics page.
 </p>
   
-
-
-
 <h2>Headlines</h2>
 
 {% comp 'grid.' + headline_grid_style, { min_width: '24rem' } %}
@@ -81,14 +75,15 @@ uses_dataset:
 <h2>Attendees at the The Awakening</h2>
 
 <p>
-  In the first visualisation, each hexagon represents a council ward in Leeds. In the second, each hexagon represents a local authority within 
-  the Leeds City Region. The chart shows the distribution of attendees at the Awakening with home addresses within these wards and local 
-  authorities. Not all attendees came from within the Leeds City Region, and these individuals are not represented in the hexmaps below. 
+In the first visualisation, each hexagon represents a council ward in Leeds. In the second, each hexagon represents a local authority 
+within the Leeds City Region. The chart shows the distribution of attendees across the city at the Awakening based on home addresses 
+within these wards and local authorities. Not all attendees came from within the Leeds City Region, and these individuals are not 
+represented in the hexmaps below.
 </p> 
 
 
 <p>
-  KEY: The hexagons that are darker in colour show areas with a higher number of entries.
+  KEY: The hexagons that are darker in colour show areas with a higher number of entries per ward or local authority.
 </p>
 
 
@@ -134,14 +129,14 @@ uses_dataset:
 
 <h2>Where ballot entries came from</h2>
 <p>
-  Rather than selling tickets, LEEDS 2023 invited the people of Leeds to share an artwork to enter a ballot to gain four tickets to The Awakening. 
-  Initially the ballot was only open to individuals submitting entries.
+  Rather than selling tickets, LEEDS 2023 invited the people of Leeds to share an artwork to enter a ballot to gain four tickets to The Awakening.
+   Initially the ballot was only open to individuals submitting entries.
 </p>
 
 <p>
-  Following feedback from schools and community groups a Group Ballot was opened on 2 November so that a teacher or community leader could share an 
-  artwork completed by a group and this would count as one ballot entry. If successful in the ballot the entire group was awarded a requested 
-  number of tickets to The Awakening.
+Following feedback from schools and community groups a Group Ballot was opened on 2 November so that a teacher or community leader could 
+share an artwork completed by a group and this would count as one ballot entry. If successful in the ballot the entire group was awarded a 
+requested number of tickets to The Awakening.
 </p>
 
 <p>
@@ -149,8 +144,12 @@ uses_dataset:
 </p>
 
 <p>
-  This chart shows where individual ballot entries came from. This chart shows where individual ballot entries came from. Each hexagon represents 
-  a council ward in Leeds, and the chart shows the distribution of ballot entrants home addresses across these wards.
+  The ballot initiative was designed to increase engagement and creativity in city and beyond for the initial event of the year.
+</p>
+
+<p>
+  This chart shows where individual ballot entries came from. Each hexagon represents a council ward in Leeds, and the chart 
+  shows the distribution of ballot entrants home addresses across these wards.
 </p>
 
 <p>

@@ -2,7 +2,7 @@ export default function({ comp, metrics, title, value, suffix, description, link
   const content = [
     `<h${headingLevel}>${title}</h${headingLevel}>`,
     comp.viz.bigNumber({ number: value, suffix: suffix }),
-    `<p>${description}</p>`,
+    `<p class="tagline">${description}</p>`,
   ];
 
   return comp.grid.block.impact({

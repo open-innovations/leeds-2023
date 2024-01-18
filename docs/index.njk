@@ -53,18 +53,38 @@ layout: layouts/default.njk
 {% comp "layout.block", { vertical_padding: '2rem'} %}
 {% comp "grid.masonry" %}
 
+  <style>
+    .front-page-logo {
+      max-width: 18rem;
+      fill: var(--foreground);
+    }
+    .ward-graphic {
+      --ward-size: 3vw;
+      text-align: center;
+    }
+    .tagline {
+      max-width: 15em;
+    }
+  </style>
+  {% comp "grid.block.impact", {
+    link: "~/pages/the-gift/index.njk",
+    fg: "black",
+    bg: "var(--l23-magenta)"
+  } %}
+    <h2>The Gift ward hexmap</h2>
+    {{ comp.ward_graphic() | safe }}
+    <p class="tagline">
+      Presenting the stunning motifs created for the wards of Leeds in our hexmap layout.
+    </p>
+  {% endcomp %}
+
   {% comp "grid.block.impact", {
     link: "https://leeds2023.co.uk/",
     fg: "white",
     bg: "var(--l23-dark-blue-grey)"
   } %}
-    <div class="front-page-logo"style="fill: var(--foreground);">
-      <style>
-        .front-page-logo svg { max-width: 18rem; }
-      </style>
-      <img src="/assets/images/logo.svg" inline/>
-    </div>
-    <p>Visit the main LEEDS 2023 Year Of Culture website</p>
+    <img class="front-page-logo" src="/assets/images/logo.svg" inline/>
+    <p class="tagline">Visit the main LEEDS 2023 Year Of Culture website</p>
   {% endcomp %}
 
   <!-- Some metrics -->

@@ -15,7 +15,13 @@
     {% else %}
       No datasets linked to this metrics page.
     {% endif %}
-  </div>
+    </div>
+    {% if prepare_script %}
+    <div class='row'>
+      <p>Data preparation:</p>
+      <p><a href='https://github.com/open-innovations/leeds-2023/blob/main/{{ prepare_script }}'>Prepare script</a></p>
+    </div>
+    {% endif %}
   <div class='row'>
     <p>Page layout and text updated on {{ template_date | date('HUMAN_DATE') }}</p>
     {# {% if published_link %}<p>Get the published data from <a href="{{ published_link }}">Data Mill North</a>.</p>{% endif %} #}

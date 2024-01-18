@@ -29,7 +29,8 @@ up:
 {{
   comp.metric.metadata({
   datasets: uses_dataset,
-  template_date: date
+  template_date: date,
+  prepare_script: prepare_script
 }) | safe }}
 
 {{ content | safe }}

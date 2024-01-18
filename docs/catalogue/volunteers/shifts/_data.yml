@@ -1,2 +1,12 @@
 description: |
   Volunteer shifts details.
+
+
+source: Rosterfy
+extract: |
+  Something happens.
+
+transform:
+  script: scripts/metrics/volunteers/transform_shifts.py
+  process: |
+    Something else happens.

@@ -26,9 +26,13 @@ layout: layouts/default.njk
   <p>
     This microsite displays data about the <a href="https://leeds2023.co.uk">Leeds 2023 Year of Culture</a>. 
   </p>
+
+  {{ comp.notice.pending_validation() | safe }}
+
 {% endcomp %}
 
 {% comp "layout.block" %}
+
   <p>
     LEEDS 2023 is working across all 33 wards of the city and engaging with a wide range of participants representative of Leeds. The programme strives to be as 
     representative and inclusive as possible.

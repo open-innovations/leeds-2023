@@ -6,24 +6,11 @@ up:
 ---
 
 {% if validated %}
-<aside class='validation-notice validated'>
-  <img class="icon" src="/assets/images/icons/info.svg" inline/>
-  <p>
-  The LEEDS 2023 team has validated these figures in preparation for the evaluation
-  and believe these are a true reflection of the metrics presented.
-  We reserve the right to amend any values presented here without notice.
-  </p>
-</aside>
+  {{ comp.notice.validated() | safe }}
 {% else %}
-<aside class='validation-notice unvalidated'>
-  <img class="icon" src="/assets/images/icons/warning.svg" inline/>
-  <p>
-  The LEEDS 2023 team is in the process of validating the figures presented on this page for evaluation purposes.
-  While every attempt has been made to ensure the live figures are accurate and up-to-date, we reserve the right
-  to amend any values presented here.
-  </p>
-</aside>
+  {{ comp.notice.pending_validation() | safe }}
 {% endif %}
+
 {% if introduction %}{{ introduction | md | safe }}{% endif %}
 
 {{

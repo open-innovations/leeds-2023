@@ -7,7 +7,7 @@ VIEW_DIR = os.path.join('docs', 'metrics', 'media_coverage', '_data')
 os.makedirs(VIEW_DIR, exist_ok=True)
 
 MEDIA_START_DATE = '2021-01-01'
-MEDIA_END_DATE = '2023-12-31'
+MEDIA_END_DATE = '2024-01-31'
 
 if __name__ == '__main__':
     cision_data = pd.read_csv(os.path.join(

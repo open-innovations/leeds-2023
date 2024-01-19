@@ -1,8 +1,11 @@
+vars:
+  - top: ../../../..
+
 stages:
   extract:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/extract.py
     always_changed: true
-    wdir: ../../../..
+    wdir: ${top}
     deps:
       - scripts/metrics/events/scheduled/extract.py
       - lib/sources/airtable.py
@@ -11,8 +14,7 @@ stages:
           cache: false
   transform:
     cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/transform.py
-    wdir: ../../../..
-    always_changed: true
+    wdir: ${top}
     deps:
       - scripts/metrics/events/scheduled/transform.py
       - working/metrics/events/all.csv
@@ -20,21 +22,3 @@ stages:
     outs:
       - data/metrics/events/master/all.csv:
           cache: false
-
-  # prepare:
-  #   cmd: PYTHONPATH=. python3 scripts/metrics/events/scheduled/prepare.py
-  #   wdir: ../../../..
-  #   deps:
-  #     - scripts/metrics/events/scheduled/prepare.py
-  #     - scripts/util/
-  #     - data/metrics/events/master/all.csv
-  #   outs:
-  #     - docs/metrics/events/the-barn/_data/headlines.json:
-  #         persist: false
-  #         cache: false
-  #     - docs/metrics/events/the-barn/_data/by_date.csv:
-  #         persist: false
-  #         cache: false
-  #     - docs/metrics/events/the-barn/_data/by_ward.csv:
-  #         persist: false
-  #         cache: false

@@ -16,6 +16,7 @@ if __name__ == "__main__":
             'Event type',
             'Season',
             'Start date',
+            'Status',
             'End date',
             'Postcode (from Venue)',
             'Ward (from Venue)',

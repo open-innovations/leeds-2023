@@ -15,6 +15,7 @@ if __name__ == '__main__':
     data = pd.read_csv(ALL_EVENTS_RAW).apply(literal_converter)
     data = data.rename(columns=lambda x: re.sub(r'[\s\-/]+', '_', x.lower().strip()))
     data.start_date = pd.to_datetime(data.start_date)
-    data = data[data.start_date < pd.Timestamp.now()]
+    data = data[(data.start_date < pd.Timestamp.now()) &
+                (data.status == '01 - Greenlit')]
 
     data.sort_index(axis=1).sort_values(['start_date', 'event_name']).to_csv(ALL_EVENTS, index=False)

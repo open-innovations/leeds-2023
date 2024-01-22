@@ -122,6 +122,33 @@ uses_dataset:
 
 {% endcomp %}
 
+<h2>The Gift</h2>
+
+<p>
+  The Gift is an artwork that celebrates communities across Leeds. Made by Keith Khan, the artwork has been inspired by conversations in local areas with <a href="https://staging.leeds2023.co.uk/meet-the-team">LEEDS 2023 Neighbourhood Hosts</a> and historical or anecdotal facts. Based on these conversations Keith created 33 motifs, a unique motif for each ward. These designs were then printed onto fabric and designed into wearable clothing. This clothing was taken to My LEEDS Summer events where audiences could try them on and have their photograph taken in a photo booth. 
+</p>
+
+{% comp 'grid.' + headline_grid_style, { min_width: '15em' } %}
+
+
+  {{ comp.metric.headline({
+    title: "The Gift: A City Without Seams",
+    description: "Take a look at the brilliant ward motifs created by Keith Khan.",
+    link: "/the-gift/",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }}
+
+    {{ comp.metric.headline({
+    title: "My World, My City, My Neighbourhood",
+    description: "Learn more about the My World, My City, My Neighbourhood project.",
+    link: "/report/mwmcmn/",
+    background: "var(--l23-dark-blue-grey)",
+    colour: "white"
+  }) | safe }}
+
+{% endcomp %}
+
 
 <h2>Events in the My LEEDS 2023 series</h2>
 
@@ -268,12 +295,6 @@ uses_dataset:
 
 {% endcomp %}
 
-<h2>The Gift</h2>
-
-<p>
-  The Gift is an artwork that celebrates communities across Leeds. Made by Keith Khan, the artwork has been inspired by conversations in local areas with <a href="https://staging.leeds2023.co.uk/meet-the-team">LEEDS 2023 Neighbourhood Hosts</a> and historical or anecdotal facts. Based on these conversations Keith created 33 motifs, a unique motif for each ward. These designs were then printed onto fabric and designed into wearable clothing. This clothing was taken to My LEEDS Summer events where audiences could try them on and have their photograph taken in a photo booth. 
-</p>
-
 {% comp 'grid.' + headline_grid_style, { min_width: '15em' } %}
 
   {{ comp.metric.headline({
@@ -302,16 +323,21 @@ uses_dataset:
   }) | safe }}
 
   {{ comp.metric.headline({
-    title: "A City Without Seams total audience", headingLevel: 2,
+    title: "The Gift: A City Without Seams total audience", headingLevel: 2,
     value: 3014,
-    description: "Total audience numbers for A City Without Seams exhibition (from 21st to 24th September)",
+    description: "Total audience numbers for The Gift: A City Without Seams exhibition (from 21st to 24th September)",
     background: "var(--l23-magenta)",
     colour: "var(--l23-magenta-contrast)"
   }) | safe }}
 
 {% endcomp %}
 
-{% comp 'layout.figure' %}
+
+
+
+
+
+{# {% comp 'layout.figure' %}
 <h3>Number of tickets sold by event date</h3>
   {{ comp.oi.viz.graph.line({ config: {
     categories: search.data('metrics/tickets').by_project_cumulative_weekly.columns.week,
@@ -349,7 +375,7 @@ uses_dataset:
       width: "20em"
     }
   } }) | safe }}
-{% endcomp %}
+{% endcomp %} #}
 
 
 

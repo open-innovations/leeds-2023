@@ -28,14 +28,14 @@ prepare_script: scripts/metrics/events/signature/prepare.ipynb
   {{ comp.metric.headline({
     title: "Number of events", headingLevel: 2,
     value: headlines.total_events | localize,
-    description: "Total Signature event activities held by LEEDS 2023.",
+    description: "Total count of public and community events hosted by LEEDS 2023.",
     background: "var(--l23-cyan)"
   }) | safe }}
 
   {{ comp.metric.headline({
     title: "Total attendances", headingLevel: 2,
     value: headlines.total_attendances | localize,
-    description: "Total number of attendances at LEEDS 2023 Signature events.",
+    description: "Total number of attendances at events hosted by LEEDS 2023.",
     background: "var(--l23-yellow)"
   }) | safe }}
 
@@ -155,10 +155,10 @@ prepare_script: scripts/metrics/events/signature/prepare.ipynb
     yAxis: {
       title: 'Total',
       titleOffset: 3,
-      majorTick: 200
+      majorTick: 500
     },
     plotArea: {
-      yMax: 4000,
+      yMax: 3500,
       colour: 'var(--l23-dark-blue-grey)'
     },
     padding: {
@@ -243,10 +243,10 @@ prepare_script: scripts/metrics/events/signature/prepare.ipynb
     yAxis: {
       title: 'Total',
       titleOffset: 3,
-      majorTick: 3000
+      majorTick: 5000
     },
     plotArea: {
-      yMax: 16000,
+      yMax: 20000,
       colour: 'var(--l23-dark-blue-grey)'
     },
     padding: {

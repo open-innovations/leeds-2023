@@ -52,6 +52,7 @@ limitations:
   {{ comp.metric.headline({
     title: "Number of public facing events", headingLevel: 2,
     value: events.public.headlines.total_events | localize ,
+    description: "The number of events events that took place as part of the show run.",
     background: "var(--l23-yellow)"
   }) | safe }}
 

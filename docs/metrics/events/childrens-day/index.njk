@@ -92,14 +92,6 @@ limitations:
   }) | safe }}
 
   {{ comp.metric.headline({
-    title: "Number of wards engaged", headingLevel: 2,
-    value: events.headlines.ward_count | localize,
-    description: "Total number of wards engaged with as part of this Signature event.",
-    background: "var(--l23-dark-blue-grey)",
-    colour: "white"
-  }) | safe }}
-
-  {{ comp.metric.headline({
     title: "Tickets sold", headingLevel: 2,
     value: search.data('metrics/tickets').headlines["07 - Children's Day"].tickets | localize ,
     description: "Total number of tickets sold.",
@@ -126,10 +118,10 @@ limitations:
     yAxis: {
       title: 'Total',
       titleOffset: 3,
-      majorTick: 500
+      majorTick: 5
     },
     plotArea: {
-      yMax: 3000,
+      yMax: 60,
       colour: 'var(--l23-dark-blue-grey)'
     },
     padding: {
@@ -141,12 +133,6 @@ limitations:
         id: "cumulative_events", label: "Number of events held",
         yValues: events.by_week.columns.cumulative_events,
         colour: 'var(--l23-magenta)',
-        markerOptions: { s: 5 }
-      },
-      {
-        id: "cumulative_audience", label: "Total audience",
-        yValues: events.by_week.columns.cumulative_audience,
-        colour: 'var(--l23-cyan)',
         markerOptions: { s: 5 }
       }
     ],

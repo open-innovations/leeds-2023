@@ -21,9 +21,8 @@ uses_dataset:
 
 {% from 'macros.njk' import dateFormatter %}
 
+<p>Alongside the activity produced in-house, LEEDS 2023 also worked closely with existing organisations in Leeds, nationally and international to create a partnership programme. The programme was made up of 66 projects and partnerships came to life in a variety of ways including public events, residencies and public art. This page explores the partnerships, LEEDS 2023’s international links through the partnership programme and the ways audiences engaged. 
 
-
-<p>LEEDS 2023’s Partnerships Programme is currently engaged with approximately 60 cultural partners. Work from these partnerships is coming to life in a variety of ways, with events being one of these. This page shows the number of events LEEDS 2023 has supported its partners with over the year. The hexmap shows where in Leeds these events have taken place.</p>
 
 
   {% comp 'grid.' + headline_grid_style, { min_width: '20rem' } %}
@@ -54,12 +53,11 @@ uses_dataset:
 
 {% endcomp %} 
 
-
-<h2>Partner Organisations</h2>
+<h2>About the Partners</h2>
 
 {% comp 'grid.' + headline_grid_style, { min_width: '20rem' } %}
   {{ comp.metric.headline({
-    title: "Total partnerships", headingLevel: 3,
+    title: "Total partner organisations", headingLevel: 3,
     value: headlines.total_partnerships | localize,
     description: "",
     background: "var(--l23-magenta)"

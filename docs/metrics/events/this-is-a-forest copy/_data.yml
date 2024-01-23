@@ -1,0 +1,6 @@
+key_metrics:
+  total_audience:
+    title: Total audience engaged with this Signature event
+    ref: TBC
+    description: Total audience engaged as part of All That Lives
+    colour: --l23-magenta

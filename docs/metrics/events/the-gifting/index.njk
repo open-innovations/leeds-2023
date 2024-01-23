@@ -17,7 +17,8 @@ metas:
 
 {% comp 'grid.' + headline_grid_style, {min_width: '40rem'} %}
 
-{{ comp.metric.headline({
+{#
+  {{ comp.metric.headline({
     title: "Total events", headingLevel: 2,
     value: events.headlines.total_events | localize,
     description: "Total activities held as part of this Signature event.",
@@ -30,6 +31,7 @@ metas:
     description: "Total number of public facing events.",
     background: "var(--l23-yellow)"
   }) | safe }}
+#}
 
 {{ comp.metric.headline({
     title: "Public audience", headingLevel: 2,

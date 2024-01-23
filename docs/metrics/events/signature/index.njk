@@ -52,11 +52,11 @@ data_overrides:
 
 <h2>Signature Events held</h2>
 
-{% comp 'grid.autogrid', { min_width: '30rem' } %}
+{% comp 'grid.autogrid', { min_width: '20rem' } %}
 
   {% comp "grid.block.impact", {
     link: "/metrics/events/awakening/",
-    colour: "black",
+    colour: "white",
     bg: "var(--l23-cyan)"
   } %}
     <h2>The Awakening</h2>
@@ -72,7 +72,7 @@ data_overrides:
 
   {% comp "grid.block.impact", {
     link: "/metrics/events/the-barn/",
-    colour: "black",
+    colour: "white",
     bg: "var(--l23-cyan)"
   } %}
     <h2>The Barn</h2>
@@ -83,12 +83,12 @@ data_overrides:
        ) | localize
     }) | safe }}
     </section>
-    <p>Event attendances.</p>
+    <p>Number of engagements with project</p>
   {% endcomp %}
 
   {% comp "grid.block.impact", {
     link: "/metrics/events/childrens-day/",
-    colour: "black",
+    colour: "white",
     bg: "var(--l23-cyan)"
   } %}
     <h2>Children's Day</h2>
@@ -99,12 +99,12 @@ data_overrides:
        ) | localize
     }) | safe }}
     </section>
-    <p>Event attendances.</p>
+    <p>Number of engagements with project</p>
   {% endcomp %}
 
   {% comp "grid.block.impact", {
     link: "/metrics/events/nest/",
-    colour: "black",
+    colour: "white",
     bg: "var(--l23-cyan)"
   } %}
     <h2>Nest</h2>
@@ -115,12 +115,12 @@ data_overrides:
        ) | localize
     }) | safe }}
     </section>
-    <p>Event attendances.</p>
+    <p>Number of engagements with project</p>
   {% endcomp %}
 
   {% comp "grid.block.impact", {
     link: "/metrics/events/smeaton-300/",
-    colour: "black",
+    colour: "white",
     bg: "var(--l23-cyan)"
   } %}
     <h2>Smeaton300</h2>
@@ -131,13 +131,123 @@ data_overrides:
        ) | localize
     }) | safe }}
     </section>
-    <p>Event attendances.</p>
+    <p>Number of engagements with project</p>
   {% endcomp %}
+
+  {% comp "grid.block.impact", {
+    link: "/metrics/events/this-is-a-forest/",
+    colour: "white",
+    bg: "var(--l23-cyan)"
+  } %}
+    <h2>This is a FOREST</h2>
+    <section style="--big-number-size: clamp(2rem, 6vw, 3.7rem);">
+    {{ comp.viz.bigNumber({
+      number: (
+        search.data('metrics/events/this-is-a-forest').events.headlines.total_audience
+       ) | localize
+    }) | safe }}
+    </section>
+    <p>Number of engagements with project</p>
+  {% endcomp %}
+{# 
+  {% comp "grid.block.impact", {
+    link: "/metrics/events/all-that-lives/",
+    colour: "white",
+    bg: "var(--l23-cyan)"
+  } %}
+    <h2>All That Lives</h2>
+    <section style="--big-number-size: clamp(2rem, 6vw, 3.7rem);">
+    {{ comp.viz.bigNumber({
+      number: (
+        search.data('metrics/events/all-that-lives').events.headlines.total_audience
+       ) | localize
+    }) | safe }}
+    </section>
+    <p>Number of engagements with project</p>
+  {% endcomp %} #}
+
+ 
+    {% comp "grid.block.impact", {
+    link: "/metrics/events/the-gifting/",
+    colour: "white",
+    bg: "var(--l23-cyan)"
+  } %}
+    <h2>The Gifting</h2>
+    <section style="--big-number-size: clamp(2rem, 6vw, 3.7rem);">
+    {{ comp.viz.bigNumber({
+      number: (
+        search.data('metrics/events/the-gifting').events.headlines.total_audience
+       ) | localize
+    }) | safe }}
+    </section>
+    <p>Number of engagements with project</p>
+  {% endcomp %}
+
+    {% comp "grid.block.impact", {
+    link: "/metrics/events/northern-dreaming/",
+    colour: "white",
+    bg: "var(--l23-cyan)"
+  } %}
+    <h2>Northern Dreaming</h2>
+    <section style="--big-number-size: clamp(2rem, 6vw, 3.7rem);">
+    {{ comp.viz.bigNumber({
+      number: (
+        search.data('metrics/events/northern-dreaming').events.headlines.total_audience
+       ) | localize
+    }) | safe }}
+    </section>
+    <p>Number of engagements with project</p>
   {% endcomp %}
 
 
+  {% comp "grid.block.impact", {
+    link: "/metrics/events/my-leeds-2023/",
+    colour: "white",
+    bg: "var(--l23-cyan)"
+  } %}
+    <h2>My LEEDS 2023</h2>
+    <section style="--big-number-size: clamp(2rem, 6vw, 3.7rem);">
+    {{ comp.viz.bigNumber({
+      number: (
+        search.data('metrics/events/my-leeds-2023').events.headlines.total_audience
+       ) | localize
+    }) | safe }}
+    </section>
+    <p>Number of engagements with project</p>
+  {% endcomp %}
 
+    {% comp "grid.block.impact", {
+    link: "/metrics/events/making-a-stand/",
+    colour: "white",
+    bg: "var(--l23-cyan)"
+  } %}
+    <h2>Making A Stand</h2>
+    <section style="--big-number-size: clamp(2rem, 6vw, 3.7rem);">
+    {{ comp.viz.bigNumber({
+      number: (
+        search.data('metrics/events/making-a-stand').events.headlines.total_audience
+       ) | localize
+    }) | safe }}
+    </section>
+    <p>Number of engagements with project</p>
+  {% endcomp %}
 
+  {# {% comp "grid.block.impact", {
+    link: "/metrics/events/hibiscus-rising/",
+    colour: "white",
+    bg: "var(--l23-cyan)"
+  } %}
+    <h2>Hibiscus Rising</h2>
+    <section style="--big-number-size: clamp(2rem, 6vw, 3.7rem);">
+    {{ comp.viz.bigNumber({
+      number: (
+        search.data('metrics/events/hibiscus-rising').events.headlines.total_audience
+       ) | localize
+    }) | safe }}
+    </section>
+    <p>Number of engagements with project</p>
+  {% endcomp %} #}
+{% endcomp %}
 
 {% comp 'grid.' + headline_grid_style, { min_width: '30rem' } %}
 

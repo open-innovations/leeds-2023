@@ -15,6 +15,9 @@ sources:
 uses_dataset:
   - media_coverage.combined_cision
   - media_coverage.combined_historic
+
+data_overrides:
+  total_editorial_articles: 2172
 ---
 {%- macro popupContent({ value: value, category: category }) -%}
   {{ value }} articles and appearances in the {{ category }} category
@@ -50,7 +53,7 @@ uses_dataset:
       Total Editorial Articles
     </h2>
 {{ comp.viz.bigNumber({
-      number: '2,172'
+      number: data_overrides.total_editorial_articles | localize
     }) | safe }}
 {% endcomp %}
 

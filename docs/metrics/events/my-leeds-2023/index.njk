@@ -19,6 +19,10 @@ uses_dataset:
   - events.master.all
   - events.tickets.orders
   - community-grants.responses
+
+data_overrides:
+  total_events: 177
+  total_audience: 51570
 ---
 
 {% from 'macros.njk' import dateFormatter %}
@@ -55,7 +59,7 @@ uses_dataset:
 
   {{ comp.metric.headline({
     title: "Number of events", headingLevel: 2,
-    value: 177,
+    value: data_overrides.total_events | localize,
     description: "Total activities held as part of My LEEDS 2023.",
     background: "var(--l23-magenta)",
     colour: "var(--l23-magenta-contrast)"
@@ -71,7 +75,7 @@ uses_dataset:
 
   {{ comp.metric.headline({
     title: "Total audience", headingLevel: 2,
-    value: '51,570',
+    value: data_overrides.total_audience | localize,
     description: "Online and in person attendances across all My LEEDS 2023 events.",
     background: "var(--l23-yellow)"
   }) | safe }}

@@ -1,6 +1,6 @@
 key_metrics:
   signature_events:
     title: Signature events
-    ref: headlines.total_events
+    ref: data_overrides.total_events
     description: Total Signature programme events
     colour: --l23-yellow

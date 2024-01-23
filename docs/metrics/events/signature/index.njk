@@ -12,6 +12,8 @@ metas:
 known_limitations:
   - Not all events have attendances recorded
 prepare_script: scripts/metrics/events/signature/prepare.ipynb
+data_overrides:
+  total_events: 1069
 ---
 
 {% from 'macros.njk' import dateFormatter, dateFormatterNoDay %}
@@ -27,7 +29,7 @@ prepare_script: scripts/metrics/events/signature/prepare.ipynb
 {% comp 'grid.' + headline_grid_style, { min_width: '40rem' } %}
   {{ comp.metric.headline({
     title: "Number of events", headingLevel: 2,
-    value: headlines.total_events | localize,
+    value: data_overrides.total_events | localize,
     description: "Total count of public and community events hosted by LEEDS 2023.",
     background: "var(--l23-cyan)"
   }) | safe }}

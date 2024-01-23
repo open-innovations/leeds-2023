@@ -34,7 +34,7 @@ prepare_script: scripts/metrics/events/signature/prepare.ipynb
 
   {{ comp.metric.headline({
     title: "Total attendances", headingLevel: 2,
-    value: headlines.total_attendances | localize,
+    value: (headlines.total_in_person_attendances + headlines.total_online_attendances) | localize,
     description: "Total number of attendances at events hosted by LEEDS 2023.",
     background: "var(--l23-yellow)"
   }) | safe }}

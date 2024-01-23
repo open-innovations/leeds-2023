@@ -26,26 +26,24 @@ stages:
       md5: 067dbf2055a3765e84a655a771c3ea82
       size: 4943
     outs:
-    - path: ../../../data/metrics/partnerships
+    - path: ../../../data/metrics/partnerships/partnerships.csv
       hash: md5
-      md5: ccbd37e2113f40e3e65a9d0b86eb8e03.dir
+      md5: 7f77c3a5aed6bbd0cf48012ae3991f11
       size: 16234
-      nfiles: 1
   prepare:
     cmd: papermill prepare.ipynb ../../../working/output/partnerships-prepare.ipynb
     deps:
-    - path: ../../../data/metrics/partnerships
+    - path: ../../../data/metrics/partnerships/partnerships.csv
       hash: md5
-      md5: ccbd37e2113f40e3e65a9d0b86eb8e03.dir
+      md5: 7f77c3a5aed6bbd0cf48012ae3991f11
       size: 16234
-      nfiles: 1
     - path: prepare.ipynb
       hash: md5
-      md5: af81058ace0b243e82da04fa436842ff
-      size: 6910
+      md5: cb025010d330a85bc55a2e2b710d0735
+      size: 7037
     outs:
     - path: ../../../docs/metrics/partnerships/_data/
       hash: md5
-      md5: 5d0966343926903a4f41fcaf7e491764.dir
-      size: 1481
-      nfiles: 6
+      md5: f676766eda44d3cdc022955c3c6215cb.dir
+      size: 1586
+      nfiles: 7

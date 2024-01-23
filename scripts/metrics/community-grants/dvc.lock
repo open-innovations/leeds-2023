@@ -28,19 +28,17 @@ stages:
       size: 44625
       nfiles: 3
     outs:
-    - path: data/metrics/community-grants/
+    - path: data/metrics/community-grants/responses.csv
       hash: md5
-      md5: 21c67d8e9d4924ab261a5a25dfa66e69.dir
+      md5: 8b7b510dc6c96058a314d8074c582e1b
       size: 36037
-      nfiles: 1
   prepare:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/community-grants/prepare.py
     deps:
-    - path: data/metrics/community-grants/
+    - path: data/metrics/community-grants/responses.csv
       hash: md5
-      md5: 21c67d8e9d4924ab261a5a25dfa66e69.dir
+      md5: 8b7b510dc6c96058a314d8074c582e1b
       size: 36037
-      nfiles: 1
     - path: scripts/metrics/community-grants/prepare.py
       hash: md5
       md5: 30da97e9f5ac2ef290c26a9462e652a6
@@ -56,8 +54,8 @@ stages:
       size: 114
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_ward.csv
       hash: md5
-      md5: c931b90d8d8de2763166e7475bf5e30b
-      size: 684
+      md5: a9ee602f5f69da3c321ed34f05547a53
+      size: 682
     - path: docs/metrics/events/my-leeds-2023/_data/responses_by_week.csv
       hash: md5
       md5: 3b8bc65be7cce7fe6dcf280a16fea179

@@ -1,48 +1,48 @@
 service:
   all:
     metrics:
-      audience_gained_total: 19862
-      audience_last: 38622
-      engagements_total: 443273
-      impressions_total: 14822363
+      audience_gained_total: 21356
+      audience_last: 47188
+      engagements_total: 502421
+      impressions_total: 17533170
   facebook:
     filter_col: date
     filter_range: 2022-01-01:2023-12-31
     metrics:
       audience_gained_total: 0
-      audience_last: 0
+      audience_last: 7529
       date_first: '2022-01-01'
-      date_last: '2023-10-29'
-      engagements_total: 221369
-      impressions_total: 5273891
+      date_last: '2023-12-31'
+      engagements_total: 268019
+      impressions_total: 7022425
   instagram:
     filter_col: date
     filter_range: 2022-01-01:2023-12-31
     metrics:
-      audience_gained_total: 8980
-      audience_last: 11903
+      audience_gained_total: 10033
+      audience_last: 12619
       date_first: '2022-01-01'
-      date_last: '2023-10-29'
-      engagements_total: 51814
-      impressions_total: 2558041
+      date_last: '2023-12-31'
+      engagements_total: 56909
+      impressions_total: 3237959
   linkedin:
     filter_col: date
     filter_range: 2022-01-01:2023-12-31
     metrics:
-      audience_gained_total: 4302
-      audience_last: 5418
+      audience_gained_total: 4508
+      audience_last: 5533
       date_first: '2022-01-01'
-      date_last: '2023-10-29'
-      engagements_total: 22309
-      impressions_total: 292228
+      date_last: '2023-12-31'
+      engagements_total: 24379
+      impressions_total: 310037
   twitter:
     filter_col: date
     filter_range: 2022-01-01:2023-12-31
     metrics:
-      audience_gained_total: 6580
-      audience_last: 21301
+      audience_gained_total: 6815
+      audience_last: 21507
       date_first: '2022-01-01'
-      date_last: '2023-10-29'
-      engagements_total: 147781
-      impressions_total: 6698203
+      date_last: '2023-12-31'
+      engagements_total: 153114
+      impressions_total: 6962749
 title: Leeds 2023 twitter Summary Statistics

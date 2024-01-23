@@ -39,20 +39,6 @@ metas:
   }) | safe }}
 
 {{ comp.metric.headline({
-    title: "School engagements", headingLevel: 2,
-    value: events.schools.headlines.total_events | localize ,
-    description: "Total count of engagements with schools.",
-    background: "var(--l23-cyan)"
-  }) | safe }}
-
-{{ comp.metric.headline({
-    title: "Pupil engagements", headingLevel: 2,
-    value: events.schools.headlines.total_audience | localize ,
-    description: "Total count of school pupils engaged.",
-    background: "var(--l23-cyan)"
-  }) | safe }}
-
-{{ comp.metric.headline({
     title: "Tickets sold", headingLevel: 2,
     value: search.data('metrics/tickets').headlines['13 - Closing'].tickets | localize ,
     description: "Total number of tickets sold.",

@@ -22,7 +22,6 @@ stages:
 
   transform-signups:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform_signups.py
-    frozen: true
     wdir: ../../..
     deps:
     - scripts/metrics/volunteers/transform_signups.py
@@ -39,7 +38,6 @@ stages:
         cache: false
   transform-shifts:
     cmd: PYTHONPATH=scripts python3 scripts/metrics/volunteers/transform_shifts.py
-    frozen: true
     wdir: ../../..
     deps:
     - scripts/metrics/volunteers/transform_shifts.py

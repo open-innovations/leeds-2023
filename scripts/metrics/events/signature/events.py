@@ -39,7 +39,7 @@ def filter_public_events(data):
     Selects rows in the data with an event type that includes Public Event
     """
     return data.loc[
-        data.event_type.str.contains('Public Event -')
+        data.event_type.fillna('').str.contains('Public Event -')
     ]
 
 def filter_community_events(data):
@@ -47,7 +47,7 @@ def filter_community_events(data):
     Selects rows in the data with an event type that includes CLE Community Engagements
     """
     return data.loc[
-        data.event_type.str.contains(r'CLE - Community Engagement|CLE - Youth Voice session|CLE - Participant / Volunteer thank you event|CLE - Skills and Talent session',
+        data.event_type.fillna('').str.contains(r'CLE - Community Engagement|CLE - Youth Voice session|CLE - Participant / Volunteer thank you event|CLE - Skills and Talent session',
                                      regex=True)
     ]
 
@@ -74,15 +74,11 @@ def prepare(data):
 
 
 def save_files(data, OUT_DIR):
-    return data.pipe(
-        save_stats_by_ward, OUT_DIR
-    ).pipe(
-        save_stats_by_week, OUT_DIR
-    ).pipe(
-        save_stats_by_month, OUT_DIR
-    ).pipe(
-        save_headlines, OUT_DIR
-    )
+    data.pipe(save_stats_by_ward, OUT_DIR)
+    data.pipe(save_stats_by_week, OUT_DIR)
+    data.pipe(save_stats_by_month, OUT_DIR)
+    data.pipe(save_headlines, OUT_DIR)
+    return data
 
 
 def get_wards(data):
@@ -167,11 +163,15 @@ def save_stats_by_month(data, output_dir):
 
 def save_headlines(data, output_dir):
     os.makedirs(output_dir, exist_ok=True)
-    headlines = data.pipe(by_month).drop(
-        columns=['events', 'audience']
-    ).rename(
-        columns=lambda n: n.replace('cumulative', 'total')
-    ).iloc[-1]
+    try:
+        headlines = data.pipe(by_month).drop(
+            columns=['events', 'audience']
+        ).rename(
+            columns=lambda n: n.replace('cumulative', 'total')
+        ).iloc[-1]
+    except:
+        '''If this fails, just return the data'''
+        return data
     headlines['ward_count'] = len(data.pipe(by_ward).index)
     headlines['earliest_date'] = data.start_date.min()
     headlines['latest_date'] = data.start_date.max()

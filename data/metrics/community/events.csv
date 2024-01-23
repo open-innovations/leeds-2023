@@ -1,90 +1,65 @@
 event_name,project_name,start_date,ward_name,ward_code,audience
-Ballot Facilitated Session - Carr Manor Community School ,01 - The Awakening,2022-11-01,Moortown,E05011405,
-Ballot Facilitated Session - Chapel Allerton Primary School ,01 - The Awakening,2022-11-07,Chapel Allerton,E05011390,
-Ballot Facilitated Session - Cobden Primary School,01 - The Awakening,2022-11-09,Farnley and Wortley,E05012648,
-Ballot Facilitated Session - Cobden Primary School,01 - The Awakening,2022-11-10,Farnley and Wortley,E05012648,
-Ballot Facilitated Session - Cobden Primary School,01 - The Awakening,2022-11-18,Farnley and Wortley,E05012648,
-Ballot Facilitated Session - Cookridge Primary School,01 - The Awakening,2022-11-16,Weetwood,E05011413,
-Ballot Facilitated Session - Holy Trinity CE Academy Rothwell,01 - The Awakening,2022-11-10,Rothwell,E05011410,
-Ballot Facilitated Session - Holy Trinity CE Academy Rothwell,01 - The Awakening,2022-11-14,Rothwell,E05011410,
-Ballot Facilitated Session - Holy Trinity CE Academy Rothwell,01 - The Awakening,2022-11-21,Rothwell,E05011410,
-Ballot Facilitated Session - Holy Trinity CE Academy Rothwell,01 - The Awakening,2022-11-24,Rothwell,E05011410,
-Ballot Facilitated Session - Manston Primary School,01 - The Awakening,2022-11-25,Cross Gates and Whinmoor,E05011391,
-Ballot Facilitated Session - Middleton Primary School,01 - The Awakening,2022-11-03,Middleton Park,E05011404,
-Ballot Facilitated Session - Middleton Primary School,01 - The Awakening,2022-11-04,Middleton Park,E05011404,
-Ballot Facilitated Session - Middleton Primary School,01 - The Awakening,2022-11-14,Middleton Park,E05011404,
-Ballot Facilitated Session - Pool in Wharfedale CE (VC) Primary School,01 - The Awakening,2022-11-18,Adel and Wharfedale,E05012841,
-Ballot Facilitated Session - Pool in Wharfedale CE (VC) Primary School,01 - The Awakening,2022-11-21,Adel and Wharfedale,E05012841,
-Ballot Facilitated Session - Springwell Academy ,01 - The Awakening,2022-11-21,Killingbeck and Seacroft,E05011400,
-Ballot Facilitated Session - Springwell Academy ,01 - The Awakening,2022-11-22,Killingbeck and Seacroft,E05011400,
-Ballot Facilitated Session - St Margarets Primary School,01 - The Awakening,2022-11-22,Horsforth,E05011547,
-Ballot Facilitated Session - St Margarets Primary School,01 - The Awakening,2022-11-22,Horsforth,E05011547,
-Ballot Facilitated Session - St Margarets Primary School,01 - The Awakening,2022-11-24,Horsforth,E05011547,
-Ballot Facilitated Session - St Margarets Primary School,01 - The Awakening,2022-11-25,Horsforth,E05011547,
-Ballot Facilitated Session - St Oswald's C of E Primary School,01 - The Awakening,2022-11-17,Guiseley and Rawdon,E05011395,
+Ballot Facilitated Session - Cobden Primary School,01 - The Awakening,2022-11-09,Farnley and Wortley,E05012648,27.0
+Ballot Facilitated Session - Pool in Wharfedale CE (VC) Primary School,01 - The Awakening,2022-11-18,Adel and Wharfedale,E05012841,30.0
+Ballot Facilitated Session - Springwell Academy ,01 - The Awakening,2022-11-22,Killingbeck and Seacroft,E05011400,30.0
+Ballot Facilitated Session - St Margarets Primary School,01 - The Awakening,2022-11-22,Horsforth,E05011547,30.0
 Community Pilot Session 1: Afghan Families in Hotels at Garforth,01 - The Awakening,2023-01-13,Headingley and Hyde Park,E05011397,14.0
 Connecting Crossgates ,01 - The Awakening,2023-03-03,Cross Gates and Whinmoor,E05011391,10.0
-Creation Station	LCC Printworks Campus,01 - The Awakening,2022-10-05,Middleton Park,E05011404,
-Creation Station	Leeds Art Gallery,01 - The Awakening,2022-10-25,Little London and Woodhouse,E05011403,
-Creation Station	Leeds Art Gallery,01 - The Awakening,2022-10-26,Little London and Woodhouse,E05011403,
-Creation Station	Lotherton Hall,01 - The Awakening,2022-10-23,Harewood,E05011396,
-Creation Station	Middleton Primary School,01 - The Awakening,2022-11-03,Middleton Park,E05011404,
-Creation Station	Trinity Bridge ES4,01 - The Awakening,2022-10-08,Little London and Woodhouse,E05011403,
-Creation Station	Trinity Bridge ES4,01 - The Awakening,2022-11-06,Little London and Woodhouse,E05011403,
-Creation Station	Trinity Bridge ES4,01 - The Awakening,2022-11-12,Little London and Woodhouse,E05011403,
-Creation Station	Trinity Bridge ES4,01 - The Awakening,2022-11-13,Little London and Woodhouse,E05011403,
-Creation Station	Trinity Bridge ES4,01 - The Awakening,2022-11-19,Little London and Woodhouse,E05011403,
-Creation Station	Trinity Bridge ES4,01 - The Awakening,2022-11-20,Little London and Woodhouse,E05011403,
-"Creation Station	UoL, Riley Smith Theatre",01 - The Awakening,2022-10-18,Little London and Woodhouse,E05011403,
-Creation Station	White Rose,01 - The Awakening,2022-10-15,Morley North,E05011406,
-Creation Station	White Rose,01 - The Awakening,2022-10-28,Morley North,E05011406,
-Creation Station	White Rose,01 - The Awakening,2022-10-30,Morley North,E05011406,
-Creation Station	White Rose,01 - The Awakening,2022-11-05,Morley North,E05011406,
+Creation Station	LCC Printworks Campus,01 - The Awakening,2022-10-05,Middleton Park,E05011404,34.0
+Creation Station	Leeds Art Gallery,01 - The Awakening,2022-10-25,Little London and Woodhouse,E05011403,48.0
+Creation Station	Leeds Art Gallery,01 - The Awakening,2022-10-26,Little London and Woodhouse,E05011403,34.0
+Creation Station	Lotherton Hall,01 - The Awakening,2022-10-23,Harewood,E05011396,24.0
+Creation Station	Trinity Bridge ES4,01 - The Awakening,2022-10-08,Little London and Woodhouse,E05011403,246.0
+Creation Station	Trinity Bridge ES4,01 - The Awakening,2022-11-06,Little London and Woodhouse,E05011403,57.0
+Creation Station	Trinity Bridge ES4,01 - The Awakening,2022-11-12,Little London and Woodhouse,E05011403,107.0
+Creation Station	Trinity Bridge ES4,01 - The Awakening,2022-11-13,Little London and Woodhouse,E05011403,59.0
+Creation Station	Trinity Bridge ES4,01 - The Awakening,2022-11-19,Little London and Woodhouse,E05011403,85.0
+Creation Station	Trinity Bridge ES4,01 - The Awakening,2022-11-20,Little London and Woodhouse,E05011403,66.0
+"Creation Station	UoL, Riley Smith Theatre",01 - The Awakening,2022-10-18,Little London and Woodhouse,E05011403,22.0
+Creation Station	White Rose,01 - The Awakening,2022-10-15,Morley North,E05011406,126.0
+Creation Station	White Rose,01 - The Awakening,2022-10-28,Morley North,E05011406,78.0
+Creation Station	White Rose,01 - The Awakening,2022-10-30,Morley North,E05011406,67.0
+Creation Station	White Rose,01 - The Awakening,2022-11-05,Morley North,E05011406,71.0
 Creation Station	White Rose,01 - The Awakening,2022-11-06,Morley North,E05011406,68.0
-Creation Station	White Rose,01 - The Awakening,2022-11-12,Morley North,E05011406,
-Creation Station	White Rose,01 - The Awakening,2022-11-13,Morley North,E05011406,
-Creation Station	White Rose,01 - The Awakening,2022-11-19,Morley North,E05011406,
-Creation Station - Inner North East Youth Summit ,01 - The Awakening,2022-11-08,Little London and Woodhouse,E05011403,
-Creation Station - Inner South Youth Summit ,01 - The Awakening,2022-11-08,Little London and Woodhouse,E05011403,
-Creation Station - Kirkgate Market ,01 - The Awakening,2022-11-25,Little London and Woodhouse,E05011403,
-Creation Station - LBU School of Cultural Studies ,01 - The Awakening,2022-10-31,Little London and Woodhouse,E05011403,
-Creation Station - Leeds Art Gallery (Meet and Make),01 - The Awakening,2022-11-18,Little London and Woodhouse,E05011403,
-Creation Station - Leeds City College ,01 - The Awakening,2022-10-31,Little London and Woodhouse,E05011403,
-Creation Station - Leeds City Council ,01 - The Awakening,2022-11-23,,,
-Creation Station - Leeds City Council ,01 - The Awakening,2022-11-24,,,
-Creation Station - Leeds City Council Creative Fair ,01 - The Awakening,2022-11-17,Little London and Woodhouse,E05011403,
-Creation Station - Leeds City Museum,01 - The Awakening,2022-10-27,Little London and Woodhouse,E05011403,
-Creation Station - Leeds Trinity University ,01 - The Awakening,2022-11-21,Horsforth,E05011547,
-Creation Station - Leeds Trinity University ,01 - The Awakening,2022-11-22,Horsforth,E05011547,
-Creation Station - Leeds Trinity University ,01 - The Awakening,2022-11-23,Horsforth,E05011547,
-Creation Station - Left Bank ,01 - The Awakening,2022-11-16,Headingley and Hyde Park,E05011397,
-Creation Station - Left Bank ,01 - The Awakening,2022-11-23,Headingley and Hyde Park,E05011397,
-Creation Station - Temple Newsam ,01 - The Awakening,2022-10-29,Temple Newsam,E05013831,
-Creation Station - Temple Newsam ,01 - The Awakening,2022-10-30,Temple Newsam,E05013831,
-Creation Station - The Tetley ,01 - The Awakening,2022-10-27,Hunslet and Riverside,E05011399,
-Creation Station - The Tetley ,01 - The Awakening,2022-11-03,Hunslet and Riverside,E05011399,
-Creation Station - Trinity Landing & Bridge,01 - The Awakening,2022-09-24,Little London and Woodhouse,E05011403,
-Creation Station - University of Leeds ,01 - The Awakening,2022-11-23,Little London and Woodhouse,E05011403,
-Creation Station - Yorkshire Schools Dance Festivals ,01 - The Awakening,2022-11-19,,,
-Creation Station- Leeds Train Station,01 - The Awakening,2022-09-24,Hunslet and Riverside,E05011399,
-Creation Station: Ballot Engagement ,01 - The Awakening,,,,
+Creation Station	White Rose,01 - The Awakening,2022-11-12,Morley North,E05011406,68.0
+Creation Station	White Rose,01 - The Awakening,2022-11-13,Morley North,E05011406,19.0
+Creation Station	White Rose,01 - The Awakening,2022-11-19,Morley North,E05011406,24.0
+Creation Station - Inner South Youth Summit ,01 - The Awakening,2022-11-08,Little London and Woodhouse,E05011403,36.0
+Creation Station - Kirkgate Market ,01 - The Awakening,2022-11-25,Little London and Woodhouse,E05011403,35.0
+Creation Station - LBU School of Cultural Studies ,01 - The Awakening,2022-10-31,Little London and Woodhouse,E05011403,37.0
+Creation Station - Leeds Art Gallery (Meet and Make),01 - The Awakening,2022-11-18,Little London and Woodhouse,E05011403,11.0
+Creation Station - Leeds City College ,01 - The Awakening,2022-10-31,Little London and Woodhouse,E05011403,22.0
+Creation Station - Leeds City Council ,01 - The Awakening,2022-11-23,,,24.0
+Creation Station - Leeds City Council ,01 - The Awakening,2022-11-24,,,28.0
+Creation Station - Leeds City Council Creative Fair ,01 - The Awakening,2022-11-17,Little London and Woodhouse,E05011403,77.0
+Creation Station - Leeds City Museum,01 - The Awakening,2022-10-27,Little London and Woodhouse,E05011403,71.0
+Creation Station - Leeds Trinity University ,01 - The Awakening,2022-11-21,Horsforth,E05011547,22.0
+Creation Station - Leeds Trinity University ,01 - The Awakening,2022-11-22,Horsforth,E05011547,42.0
+Creation Station - Leeds Trinity University ,01 - The Awakening,2022-11-23,Horsforth,E05011547,44.0
+Creation Station - Left Bank ,01 - The Awakening,2022-11-16,Headingley and Hyde Park,E05011397,35.0
+Creation Station - Left Bank ,01 - The Awakening,2022-11-23,Headingley and Hyde Park,E05011397,50.0
+Creation Station - Temple Newsam ,01 - The Awakening,2022-10-29,Temple Newsam,E05013831,35.0
+Creation Station - Temple Newsam ,01 - The Awakening,2022-10-30,Temple Newsam,E05013831,41.0
+Creation Station - The Tetley ,01 - The Awakening,2022-10-27,Hunslet and Riverside,E05011399,44.0
+Creation Station - The Tetley ,01 - The Awakening,2022-11-03,Hunslet and Riverside,E05011399,23.0
+Creation Station - Trinity Landing & Bridge,01 - The Awakening,2022-09-24,Little London and Woodhouse,E05011403,108.0
+Creation Station - University of Leeds ,01 - The Awakening,2022-11-23,Little London and Woodhouse,E05011403,50.0
+Creation Station- Leeds Train Station,01 - The Awakening,2022-09-24,Hunslet and Riverside,E05011399,104.0
+Creation Station- Leeds Train Station,01 - The Awakening,2022-09-28,Little London and Woodhouse,E05011403,103.0
 Holt park active day centre ,01 - The Awakening,2023-03-16,Adel and Wharfedale,E05012841,10.0
 Leeds Art Gallery - Creation Station,01 - The Awakening,,Little London and Woodhouse,E05011403,13.0
 Leeds Arts University - Creation Station,01 - The Awakening,,,,70.0
-Leeds Central Library - Creation Station,01 - The Awakening,,Little London and Woodhouse,E05011403,7.0
+Leeds Central Library - Creation Station,01 - The Awakening,2022-11-10,Little London and Woodhouse,E05011403,7.0
 Leeds City Museum,01 - The Awakening,,Little London and Woodhouse,E05011403,75.0
-Leeds Train Station - Creation Station,01 - The Awakening,,Hunslet and Riverside,E05011399,20.0
-Light Night - Creation Station,01 - The Awakening,,,,
-Lotherton Hall ,01 - The Awakening,,,,10.0
+Leeds Train Station - Creation Station,01 - The Awakening,2022-09-24,Hunslet and Riverside,E05011399,20.0
+Light Night - Creation Station,01 - The Awakening,2023-10-13,,,35.0
+Lotherton Hall ,01 - The Awakening,2023-10-23,,,10.0
 LS-TEN Skate Park ,01 - The Awakening,2023-03-29,Hunslet and Riverside,E05011399,15.0
-Mass Movement Rehearsals,01 - The Awakening,2023-01-05,,,
-Temple Newsam - Creation Station ,01 - The Awakening,,Temple Newsam,E05013831,10.0
+Temple Newsam - Creation Station ,01 - The Awakening,2023-10-29,Temple Newsam,E05013831,10.0
 Tetley - Creation Station ,01 - The Awakening,,Hunslet and Riverside,E05011399,
 Trinity Bridge - Creation Station ,01 - The Awakening,,Little London and Woodhouse,E05011403,60.0
-Trinity Bridge ES4  - Ballot workshop,01 - The Awakening,2022-11-19,Little London and Woodhouse,E05011403,
-Trinity Bridge ES4 - Ballot workshop,01 - The Awakening,2022-10-08,Little London and Woodhouse,E05011403,
-Trinity Bridge ES4 - Ballot workshop,01 - The Awakening,2022-10-22,Little London and Woodhouse,E05011403,
-Trinity Bridge ES4 - Ballot workshop,01 - The Awakening,2022-11-05,Little London and Woodhouse,E05011403,
+Trinity Bridge ES4  - Ballot workshop,01 - The Awakening,2022-11-19,Little London and Woodhouse,E05011403,67.0
+Trinity Bridge ES4 - Ballot workshop,01 - The Awakening,2022-11-05,Little London and Woodhouse,E05011403,87.0
 Trinity Landing - Creation Station,01 - The Awakening,,Little London and Woodhouse,E05011403,60.0
 University of Leeds - Creation Station,01 - The Awakening,,Little London and Woodhouse,E05011403,60.0
 Waking the Artist 1st Wetherby Beavers/Clubs ,01 - The Awakening,2023-03-29,Wetherby,E05011414,35.0
@@ -129,15 +104,8 @@ Waking the Artist Wetherby Town Hall Pack,01 - The Awakening,2023-02-25,,,250.0
 Waking the Artist Who Let The Dads Out Fulneck Moravian Church Pack,01 - The Awakening,2023-02-22,,,12.0
 Waking the Artist Windmill Youth Club,01 - The Awakening,2023-03-09,Rothwell,E05011410,15.0
 Waking the Artist Woodhouse Community Centre ,01 - The Awakening,2023-03-09,Headingley and Hyde Park,E05011397,10.0
-White Rose - Ballot workshop,01 - The Awakening,2022-10-01,Morley North,E05011406,
-White Rose - Ballot workshop,01 - The Awakening,2022-10-15,Morley North,E05011406,
-White Rose - Ballot workshop,01 - The Awakening,2022-10-29,Morley North,E05011406,
-White Rose - Ballot workshop,01 - The Awakening,2022-11-12,Morley North,E05011406,
+White Rose - Ballot workshop,01 - The Awakening,2022-10-29,Morley North,E05011406,35.0
 White Rose - Creation Station ,01 - The Awakening,2022-10-01,Morley North,E05011406,65.0
-Choral Performance Rehearsal,02 - Making A Stand,2023-04-27,Little London and Woodhouse,E05011403,
-Delivery of Think Ins,05 - The Barn,2022-10-20,,,
-Dream Builder's Workshop,05 - The Barn,,,,
-Dream Builder's Workshop ,05 - The Barn,2023-03-20,Killingbeck and Seacroft,E05011400,
 Dream Builder's Workshop - Maternal Journal ,05 - The Barn,2023-04-24,,,13.0
 Dream Builders Workshop -  Mums on a Mission ,05 - The Barn,2023-04-27,,,8.0
 Dream Builders Workshop - DASH ,05 - The Barn,2023-04-27,,,7.0
@@ -151,19 +119,16 @@ Dream Builders Workshop - Women Speak,05 - The Barn,2023-03-13,Beeston and Holbe
 Dream Builders Workshop - Women Speak ,05 - The Barn,2023-03-13,,,17.0
 Dream Builders Workshop - Women's Activity Centre ,05 - The Barn,2023-04-26,,,8.0
 Dream Builders Workshop - Womenzonecc ,05 - The Barn,2023-04-27,,,16.0
-Dream Builders Workshops,05 - The Barn,2023-02-05,,,
-Dream Builders Workshops ,05 - The Barn,2023-03-20,,,
 Schools Day 1,05 - The Barn,2023-05-09,Headingley and Hyde Park,E05011397,180.0
 Schools Day 2,05 - The Barn,2023-05-10,Headingley and Hyde Park,E05011397,184.0
 Schools Day 3,05 - The Barn,2023-05-11,Headingley and Hyde Park,E05011397,110.0
 Schools Day 4,05 - The Barn,2023-05-12,Headingley and Hyde Park,E05011397,183.0
-David Oluwale's Leeds Walk & Talk,06 - National Retrospetive,2023-09-10,Hunslet and Riverside,E05011399,58.0
-Finding Voice,06 - National Retrospetive,2023-06-11,Hunslet and Riverside,E05011399,19.0
-Poets Rising ,06 - National Retrospetive,2023-07-09,Hunslet and Riverside,E05011399,50.0
-The Nice Up ,06 - National Retrospetive,2023-08-20,Hunslet and Riverside,E05011399,250.0
-The Nice Up Youth Workshops Programme ,06 - National Retrospetive,2023-07-01,Hunslet and Riverside,E05011399,14.0
+David Oluwale's Leeds Walk & Talk,06 - Hibiscus Rising,2023-09-10,Hunslet and Riverside,E05011399,58.0
+Finding Voice,06 - Hibiscus Rising,2023-06-11,Hunslet and Riverside,E05011399,19.0
+Poets Rising ,06 - Hibiscus Rising,2023-07-09,Hunslet and Riverside,E05011399,50.0
+The Nice Up ,06 - Hibiscus Rising,2023-08-20,Hunslet and Riverside,E05011399,250.0
+The Nice Up Youth Workshops Programme ,06 - Hibiscus Rising,2023-07-01,Hunslet and Riverside,E05011399,14.0
 All that Lives - Engagement Workshops,11 - All That Lives,2023-10-30,,,488.0
-Delivery of Community Engagement programme - Ofrendas,11 - All That Lives,2022-10-01,,,
 Adel & Wharfdale Grant Info Session 1 ,12 - My LEEDS 2023,2023-02-22,Weetwood,E05011413,1.0
 Adel & Wharfdale Grant Info Session 2,12 - My LEEDS 2023,2023-02-14,Adel and Wharfedale,E05012841,5.0
 Adel and Wharfdale Grant Info Session 1,12 - My LEEDS 2023,2023-02-20,Weetwood,E05011413,
@@ -171,12 +136,14 @@ Adel and Wharfdale Grant Info Session 2,12 - My LEEDS 2023,2023-02-22,Adel and W
 African and Caribbean Enterprise ,12 - My LEEDS 2023,2023-07-08,Little London and Woodhouse,E05011403,78.0
 Alwoodley Grant Info Session 1,12 - My LEEDS 2023,2023-02-21,Alwoodley,E05012842,
 Alwoodley Grant Info Session 2,12 - My LEEDS 2023,2023-02-21,Alwoodley,E05012842,
-Animated Harehills,12 - My LEEDS 2023,2023-06-29,,,
-Animated Harehills,12 - My LEEDS 2023,2023-07-27,,,
-Animated Harehills,12 - My LEEDS 2023,2023-08-10,,,
-Animated Harehills,12 - My LEEDS 2023,2023-08-24,,,
-Animated Harehills,12 - My LEEDS 2023,2023-09-07,,,
-Animated Harehills,12 - My LEEDS 2023,2023-09-21,,,
+Animated Harehills,12 - My LEEDS 2023,2023-03-28,,,40.0
+Animated Harehills,12 - My LEEDS 2023,2023-06-29,,,9.0
+Animated Harehills,12 - My LEEDS 2023,2023-07-13,,,6.0
+Animated Harehills,12 - My LEEDS 2023,2023-07-27,,,9.0
+Animated Harehills,12 - My LEEDS 2023,2023-08-10,,,8.0
+Animated Harehills,12 - My LEEDS 2023,2023-08-24,,,10.0
+Animated Harehills,12 - My LEEDS 2023,2023-09-07,,,12.0
+Animated Harehills,12 - My LEEDS 2023,2023-09-21,,,11.0
 Ardsley & Robinhood Grant Info Session 2,12 - My LEEDS 2023,2023-02-20,,,1.0
 Ardsley and Robin Hood Grant Info Session 1,12 - My LEEDS 2023,2023-02-13,Alwoodley,E05012842,
 Armley Grant Info Session 2,12 - My LEEDS 2023,2023-02-15,Armley,E05011385,
@@ -237,93 +204,87 @@ Rothwell Grant Info Session,12 - My LEEDS 2023,2023-02-13,Rothwell,E05011410,
 Roundhay Grant Info Session 1,12 - My LEEDS 2023,2023-02-13,Roundhay,E05011411,
 Step into Africa,12 - My LEEDS 2023,2023-07-09,Horsforth,E05011547,100.0
 Temple Newsam Grant Info Session,12 - My LEEDS 2023,2023-02-16,Temple Newsam,E05013831,
-The Gift: Pattern design workshops across wards,12 - My LEEDS 2023,2023-04-01,,,
 The Path Between,12 - My LEEDS 2023,2023-10-14,,,700.0
-Volunteer Info Session ,12 - My LEEDS 2023,2023-05-31,,,
 Weetwood Grant Info Session 1,12 - My LEEDS 2023,2023-02-15,Weetwood,E05011413,
 Weetwood Grant Info Session 2,12 - My LEEDS 2023,2023-02-19,Weetwood,E05011413,
 Wetherby Grant Info Session 1,12 - My LEEDS 2023,2023-02-14,Wetherby,E05011414,
 Wetherby Grant Info Session 2,12 - My LEEDS 2023,2023-02-21,Wetherby,E05011414,
 Leeds Book Awards Oracy Project: Ashfield Primary,Creative Learning S2,2023-07-05,,,7.0
-Leeds Book Awards Oracy Project: Blenheim Primary,Creative Learning S2,2023-07-11,,,7.0
 Leeds Book Awards Oracy Project: Cockburn John Charles Academy,Creative Learning S2,2023-07-14,,,7.0
 Leeds Book Awards Oracy Project: Greenmount Primary,Creative Learning S2,2023-07-06,,,7.0
 Leeds Book Awards Oracy Project: Moor Allerton Hall Primary,Creative Learning S2,2023-07-14,,,7.0
 Leeds Book Awards Oracy Project: Pudsey Grammar School,Creative Learning S2,2023-07-03,,,7.0
-Leeds Book Awards Shortlisting Party,Creative Learning S2,2023-05-18,Little London and Woodhouse,E05011403,
-Leeds Children's Book Awards: Shortlisting Party,Creative Learning S2,2023-05-18,Little London and Woodhouse,E05011403,
 Baby Week @ The Tetley,Creative Learning S3,2023-11-14,Hunslet and Riverside,E05011399,2267.0
 "Baby Week @ The Tetley ""Don't Play With Your Food"" Installation",Creative Learning S3,2023-11-14,Hunslet and Riverside,E05011399,595.0
 "Leeds 2023, Leeds Art Gallery and Henry Moore Institute: Family Collage-making Workshop with Jioni Warner and Kalisha Piper Cheddie",Creative Learning S3,2023-08-22,Little London and Woodhouse,E05011403,176.0
 "Leeds 2023, Leeds Art Gallery and Henry Moore Institute: Family Poetry Workshop with Abdullah Adekola",Creative Learning S3,2023-08-25,Little London and Woodhouse,E05011403,17.0
 "Leeds 2023, Leeds Art Gallery and Henry Moore Institute: Family Shelter Sculptures-making Workshop with Ashleigh Beattie",Creative Learning S3,2023-08-30,Little London and Woodhouse,E05011403,21.0
 "Leeds 2023, Leeds Art Gallery and Henry Moore Institute: Family Wallpaper-printing Workshop with Kedisha Coakley",Creative Learning S3,2023-08-08,Little London and Woodhouse,E05011403,182.0
+Leeds Children's Book Awards: Presentation Evening,Creative Learning S3,2023-10-26,Beeston and Holbeck,E05012647,150.0
 Leeds Language Week: Camões Centre for Portuguese Language at the University of Leeds - Cherishing and Maintaining the Heritage Language at Home ,Creative Learning S3,2023-11-14,,,22.0
 Leeds Language Week: Instituto Cervantes - El cuento de Babel (The Tale of Babel) ,Creative Learning S3,2023-11-13,,,40.0
 Leeds Language Week: Instituto Cervantes - El Placer de Aprender (The Pleasure of Learning),Creative Learning S3,2023-11-13,,,15.0
 Leeds Language Week: Instituto Cervantes - Test de Nivel (Level Test),Creative Learning S3,2023-11-13,,,8.0
 Leeds Language Week: Leeds Chinese Community School - Chinese Dance and Language Workshop,Creative Learning S3,2023-11-19,,,15.0
 Leeds Language Week: Leeds Chinese Community School - Taste of China (Singing Workshop),Creative Learning S3,2023-11-19,,,12.0
- Community CPD Session - North West Workshop 1,General CLE,2023-09-06,Headingley and Hyde Park,E05011397,
- Community CPD Session - North West Workshop 2,General CLE,2023-09-26,Headingley and Hyde Park,E05011397,
- Community CPD Session - North West Workshop 3,General CLE,2023-10-10,Headingley and Hyde Park,E05011397,
- Community CPD Session - North West Workshop 4,General CLE,2023-11-14,Headingley and Hyde Park,E05011397,
- Community CPD Session - North Workshop 1,General CLE,2023-08-01,Headingley and Hyde Park,E05011397,8.0
- Community CPD Session - North Workshop 2,General CLE,2023-08-08,Headingley and Hyde Park,E05011397,5.0
- Community CPD Session - North Workshop 3,General CLE,2023-09-11,Headingley and Hyde Park,E05011397,
- Community CPD Session - North Workshop 4,General CLE,2023-10-17,Headingley and Hyde Park,E05011397,
- Community CPD Session - South West Workshop 1,General CLE,2023-07-20,Armley,E05011385,0.0
- Community CPD Session - South West Workshop 2,General CLE,2023-08-01,Armley,E05011385,0.0
- Community CPD Session - South West Workshop 3,General CLE,2023-08-22,Armley,E05011385,12.0
- Community CPD Session - South West Workshop 4,General CLE,2023-11-02,Armley,E05011385,
-Community CPD Session - East Workshop 1 ,General CLE,2023-07-25,Burmantofts and Richmond Hill,E05011388,1.0
-Community CPD Session - East Workshop 2,General CLE,2023-08-29,Burmantofts and Richmond Hill,E05011388,5.0
-Community CPD Session - East Workshop 3,General CLE,2023-10-03,Burmantofts and Richmond Hill,E05011388,
-Community CPD Session - East Workshop 4,General CLE,2023-10-09,Burmantofts and Richmond Hill,E05011388,
+ Community CPD Session - North West Workshop 1,General CLE,2023-09-06,Headingley and Hyde Park,E05011397,4.0
+ Community CPD Session - North West Workshop 2,General CLE,2023-09-26,Headingley and Hyde Park,E05011397,3.0
+ Community CPD Session - North West Workshop 3,General CLE,2023-10-10,Headingley and Hyde Park,E05011397,6.0
+ Community CPD Session - North West Workshop 4,General CLE,2023-11-14,Headingley and Hyde Park,E05011397,6.0
+ Community CPD Session - North Workshop 1,General CLE,2023-08-01,Headingley and Hyde Park,E05011397,3.0
+ Community CPD Session - North Workshop 2,General CLE,2023-08-08,Headingley and Hyde Park,E05011397,4.0
+ Community CPD Session - North Workshop 3,General CLE,2023-09-11,Headingley and Hyde Park,E05011397,5.0
+ Community CPD Session - North Workshop 4,General CLE,2023-10-17,Headingley and Hyde Park,E05011397,5.0
+ Community CPD Session - South West Workshop 1,General CLE,2023-07-20,Armley,E05011385,3.0
+ Community CPD Session - South West Workshop 2,General CLE,2023-08-01,Armley,E05011385,4.0
+ Community CPD Session - South West Workshop 3,General CLE,2023-08-22,Armley,E05011385,5.0
+ Community CPD Session - South West Workshop 4,General CLE,2023-11-02,Armley,E05011385,6.0
+Community CPD Session - East Workshop 1 ,General CLE,2023-07-25,Burmantofts and Richmond Hill,E05011388,3.0
+Community CPD Session - East Workshop 2,General CLE,2023-08-29,Burmantofts and Richmond Hill,E05011388,4.0
+Community CPD Session - East Workshop 3,General CLE,2023-10-03,Burmantofts and Richmond Hill,E05011388,6.0
+Community CPD Session - East Workshop 4,General CLE,2023-10-09,Burmantofts and Richmond Hill,E05011388,5.0
 Community CPD Session - South Workshop 1,General CLE,2023-07-26,Hunslet and Riverside,E05011399,3.0
-Community CPD Session - South Workshop 2,General CLE,2023-08-16,Hunslet and Riverside,E05011399,6.0
-Community CPD Session - South Workshop 3,General CLE,2023-09-21,Hunslet and Riverside,E05011399,
-Community CPD Session - South Workshop 4,General CLE,2023-10-25,Hunslet and Riverside,E05011399,
-Lift the Lid: Community Hero Talks ,General CLE,,,,
-VAL - Fundri,General CLE,,Armley,E05011385,
+Community CPD Session - South Workshop 2,General CLE,2023-08-16,Hunslet and Riverside,E05011399,4.0
+Community CPD Session - South Workshop 3,General CLE,2023-09-21,Hunslet and Riverside,E05011399,6.0
+Community CPD Session - South Workshop 4,General CLE,2023-10-25,Hunslet and Riverside,E05011399,6.0
 """70 x 7: The Meal"": Harewood Big Picnic",Hidden Stories,2023-07-08,Harewood,E05011396,200.0
 """70 x 7: The Meal"": Seeds Exhibition ",Hidden Stories,2023-07-08,Harewood,E05011396,29359.0
-Any Work That Wanted Doing: Drop-In Printing and Stitching,Hidden Stories,2023-09-09,Little London and Woodhouse,E05011403,
+Any Work That Wanted Doing: Drop-In Printing and Stitching,Hidden Stories,2023-09-09,Little London and Woodhouse,E05011403,0.0
 Any Work That Wanted Doing: Gill Crawshaw,Hidden Stories,2023-09-08,Armley,E05011385,5625.0
 Any Work That Wanted Doing: Gill Crawshaw - Open Afternoon,Hidden Stories,2023-10-28,Armley,E05011385,51.0
 City Stories: Bookmaking with photography ,Hidden Stories,2023-10-21,,,16.0
 City Stories: Common Ground Exhibition,Hidden Stories,2023-09-24,,,758.0
-City Stories: Common Ground Exhibition at Trinity ,Hidden Stories,2023-09-16,Little London and Woodhouse,E05011403,
+City Stories: Common Ground Exhibition at Trinity ,Hidden Stories,2023-09-16,Little London and Woodhouse,E05011403,217.0
 City Stories: Common Ground Exhibition Community Launch ,Hidden Stories,2023-09-24,,,35.0
 City Stories: Common Ground Exhibition Preview,Hidden Stories,2023-09-16,,,95.0
 Common Stories: Common Ground sound work,Hidden Stories,2023-09-24,,,45.0
 Culture Club,Hidden Stories,2023-09-08,,,
-Eating the Corn Exchange Band Recordings,Hidden Stories,2023-10-15,,,
+Eating the Corn Exchange Band Recordings,Hidden Stories,2023-10-15,,,2.0
 Edible Archives : Eating the Corn Exchange - Audio Experience ,Hidden Stories,,,,6.0
 Edible Archives: Eating The Corn Exchange Invite Only,Hidden Stories,2023-10-29,,,12.0
 Edible Archives: Eating The Corn Exchange Slot 1 ,Hidden Stories,2023-10-29,,,34.0
 Edible Archives: Eating The Corn Exchange Slot 2,Hidden Stories,2023-10-29,,,29.0
 Harewood House - Aberford Community Cafe,Hidden Stories,2023-04-28,,,6.0
 Heritage Open Day Hub ,Hidden Stories,2023-09-09,Little London and Woodhouse,E05011403,540.0
-Inkwell - Create A Wellbeing Zine ,Hidden Stories,2023-09-11,Little London and Woodhouse,E05011403,
-Inkwell: Coffee & Crafts,Hidden Stories,2023-09-11,Little London and Woodhouse,E05011403,
-Inkwell: Create A Wellbeing Zine,Hidden Stories,2023-09-11,Little London and Woodhouse,E05011403,
-Ken Morris: Wigs and Costume Workshop,Hidden Stories,2023-09-16,Little London and Woodhouse,E05011403,
-Leeds Print Workshop: Bookbinding Workshop,Hidden Stories,2023-09-14,Little London and Woodhouse,E05011403,
-Leeds Print Workshop: Drop-In Lino Printing ,Hidden Stories,2023-09-13,Little London and Woodhouse,E05011403,
-Letters Have Feelings with Jazyra Christou,Hidden Stories,2023-09-13,Little London and Woodhouse,E05011403,
+Inkwell - Create A Wellbeing Zine ,Hidden Stories,2023-09-11,Little London and Woodhouse,E05011403,0.0
+Inkwell: Coffee & Crafts,Hidden Stories,2023-09-11,Little London and Woodhouse,E05011403,0.0
+Inkwell: Create A Wellbeing Zine,Hidden Stories,2023-09-11,Little London and Woodhouse,E05011403,0.0
+Ken Morris: Wigs and Costume Workshop,Hidden Stories,2023-09-16,Little London and Woodhouse,E05011403,0.0
+Leeds Print Workshop: Bookbinding Workshop,Hidden Stories,2023-09-14,Little London and Woodhouse,E05011403,0.0
+Leeds Print Workshop: Drop-In Lino Printing ,Hidden Stories,2023-09-13,Little London and Woodhouse,E05011403,0.0
+Letters Have Feelings with Jazyra Christou,Hidden Stories,2023-09-13,Little London and Woodhouse,E05011403,0.0
 Meet Me At Cantors Evening Performance,Hidden Stories,2023-09-10,Chapel Allerton,E05011390,222.0
 Meet Me At Cantors Matinee Performance,Hidden Stories,2023-09-10,Chapel Allerton,E05011390,180.0
-Pablo Fanque’s Circus Games,Hidden Stories,2023-09-17,Little London and Woodhouse,E05011403,
-Pablo Fanque’s Circus Games,Hidden Stories,2023-09-17,Little London and Woodhouse,E05011403,
-Royal Armouries Exhibition,Hidden Stories,2023-09-07,,,
-Royal Armouries Takeover,Hidden Stories,2023-09-15,Little London and Woodhouse,E05011403,
-Subculture Crafting with Edible Archives,Hidden Stories,2023-09-12,Little London and Woodhouse,E05011403,
-Subculture Story Gathering with Edible Archives,Hidden Stories,2023-09-12,Little London and Woodhouse,E05011403,
-The Art of Tea Blending with Matilya Njau,Hidden Stories,2023-09-13,Little London and Woodhouse,E05011403,
-Try Your Hand at Ceramic Sculpture,Hidden Stories,2023-09-09,Little London and Woodhouse,E05011403,
-Try Your Hand at Ceramic Sculpture,Hidden Stories,2023-09-10,Little London and Woodhouse,E05011403,
-Try Your Hand at Ceramic Sculpture,Hidden Stories,2023-09-16,Little London and Woodhouse,E05011403,
-Try Your Hand at Stone Carving,Hidden Stories,2023-09-09,Little London and Woodhouse,E05011403,
-Try Your Hand at Stone Carving,Hidden Stories,2023-09-10,Little London and Woodhouse,E05011403,
-Try Your Hand at Stone Carving,Hidden Stories,2023-09-16,Little London and Woodhouse,E05011403,
+Pablo Fanque’s Circus Games,Hidden Stories,2023-09-17,Little London and Woodhouse,E05011403,0.0
+Pablo Fanque’s Circus Games,Hidden Stories,2023-09-17,Little London and Woodhouse,E05011403,0.0
+Royal Armouries Takeover,Hidden Stories,2023-09-15,Little London and Woodhouse,E05011403,0.0
+Royal Armouries: Forgotten Battles ,Hidden Stories,2023-09-07,,,7600.0
+Subculture Crafting with Edible Archives,Hidden Stories,2023-09-12,Little London and Woodhouse,E05011403,0.0
+Subculture Story Gathering with Edible Archives,Hidden Stories,2023-09-12,Little London and Woodhouse,E05011403,0.0
+The Art of Tea Blending with Matilya Njau,Hidden Stories,2023-09-13,Little London and Woodhouse,E05011403,0.0
+Try Your Hand at Ceramic Sculpture,Hidden Stories,2023-09-09,Little London and Woodhouse,E05011403,0.0
+Try Your Hand at Ceramic Sculpture,Hidden Stories,2023-09-10,Little London and Woodhouse,E05011403,0.0
+Try Your Hand at Ceramic Sculpture,Hidden Stories,2023-09-16,Little London and Woodhouse,E05011403,0.0
+Try Your Hand at Stone Carving,Hidden Stories,2023-09-09,Little London and Woodhouse,E05011403,0.0
+Try Your Hand at Stone Carving,Hidden Stories,2023-09-10,Little London and Woodhouse,E05011403,0.0
+Try Your Hand at Stone Carving,Hidden Stories,2023-09-16,Little London and Woodhouse,E05011403,0.0

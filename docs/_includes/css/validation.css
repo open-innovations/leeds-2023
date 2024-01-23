@@ -1,6 +1,5 @@
-.validation-notice {
-  background: var(--l23-yellow);
-  border: 0.5em solid black;
+.notice {
+  border: 0.2em solid black;
   padding: 1em;
   display: flex;
   gap: 1em;
@@ -12,9 +11,18 @@
     width: 2em;
     flex-shrink: 0;
   }
+}
+
+.validation-notice {
+  background: var(--l23-yellow);
+  /* border-width: 0.5em; */
   &.validated {
     background-color: var(--l23-cyan);
   }
+}
+
+.manual-override {
+  background: var(--l23-magenta);
 }
 
 .validation-message {

@@ -47,6 +47,15 @@ uses_dataset:
 
 {% comp 'grid.block.impact', {bg: bg.next()} %}
 <h2>
+      Total Editorial Articles
+    </h2>
+{{ comp.viz.bigNumber({
+      number: '2,172'
+    }) | safe }}
+{% endcomp %}
+
+{% comp 'grid.block.impact', {bg: bg.next()} %}
+<h2>
       Total International Articles and Appearances
     </h2>
 {{ comp.viz.bigNumber({

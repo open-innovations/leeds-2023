@@ -1,6 +1,6 @@
-key_metrics:
-  total_audience:
-    title: Total audience engaged with this Signature event
-    ref: events.headlines.total_audience
-    description: Total audience engaged as part of My LEEDS 2023
-    colour: --l23-magenta
+# key_metrics:
+#   total_audience:
+#     title: Total audience engaged with this Signature event
+#     ref: events.headlines.total_audience
+#     description: Total audience engaged as part of My LEEDS 2023
+#     colour: --l23-magenta

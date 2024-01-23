@@ -6,7 +6,7 @@
       <p class='header-title'>{{ header_title or metas.site }}</p>
     </a>
     {{ comp.nav({ url: url }) | safe }}
-    {% if work_in_progress %}{{ comp.work_in_progress() | safe }}{% endif %}
+    {# {% if work_in_progress %}{{ comp.work_in_progress() | safe }}{% endif %} #}
   </header>
   {% endcomp %}
 </div>

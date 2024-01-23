@@ -22,6 +22,8 @@ up:
 
 {{ content | safe }}
 
+{% if data_overrides %}{{ comp.notice.manual_overrides() | safe }}{% endif %}
+
 {% if limitations %}
 <h2>Known Limitations and Issues</h2>
 <ul>

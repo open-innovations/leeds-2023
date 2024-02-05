@@ -1,5 +1,5 @@
 events:
-  title: Number of public events
-  ref: events.headlines.total_events
-  description: Number of public events run at The Barn
+  title: Total audience engaged with The Barn
+  ref: events.headlines.total_audience
+  description: Total audience engaged as part of The Barn
   colour: var(--l23-pink) 

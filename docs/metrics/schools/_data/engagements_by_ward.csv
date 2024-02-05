@@ -1,29 +1,29 @@
 ward_code,ward,schools_engaged,total_engagements,count_of_schools,pupil_engagements,percent_of_schools_in_ward_engaged
 E05011384,Ardsley and Robin Hood,3,5,4,375,75.0
 E05011385,Armley,7,16,10,575,70.0
-E05011387,Bramley and Stanningley,8,16,13,1523,61.5
+E05011387,Bramley and Stanningley,9,18,13,1523,69.2
 E05011388,Burmantofts and Richmond Hill,10,17,11,812,90.9
 E05011389,Calverley and Farsley,3,5,6,105,50.0
 E05011390,Chapel Allerton,8,16,11,961,72.7
 E05011391,Cross Gates and Whinmoor,7,19,10,1633,70.0
 E05011394,Gipton and Harehills,4,6,11,257,36.4
-E05011395,Guiseley and Rawdon,8,9,14,634,57.1
+E05011395,Guiseley and Rawdon,10,12,15,634,66.7
 E05011396,Harewood,3,6,6,611,50.0
 E05011397,Headingley and Hyde Park,5,9,5,1047,100.0
 E05011399,Hunslet and Riverside,4,7,8,296,50.0
 E05011400,Killingbeck and Seacroft,5,16,9,1417,55.6
 E05011401,Kippax and Methley,3,3,9,54,33.3
-E05011402,Kirkstall,3,4,7,658,42.9
+E05011402,Kirkstall,4,5,8,658,50.0
 E05011403,Little London and Woodhouse,5,22,7,1110,71.4
-E05011404,Middleton Park,9,26,13,2139,69.2
+E05011404,Middleton Park,8,25,12,2139,66.7
 E05011405,Moortown,10,31,16,2095,62.5
 E05011406,Morley North,5,18,7,1118,71.4
 E05011407,Morley South,6,13,11,1094,54.5
 E05011409,Pudsey,9,12,15,1063,60.0
 E05011410,Rothwell,3,5,10,358,30.0
-E05011411,Roundhay,6,12,8,1025,75.0
+E05011411,Roundhay,7,13,9,1025,77.8
 E05011413,Weetwood,8,22,10,1567,80.0
-E05011414,Wetherby,6,11,13,665,46.2
+E05011414,Wetherby,7,12,14,665,50.0
 E05011547,Horsforth,6,12,9,1255,66.7
 E05011549,Otley and Yeadon,5,9,8,487,62.5
 E05012647,Beeston and Holbeck,8,23,13,1760,61.5
@@ -31,4 +31,4 @@ E05012648,Farnley and Wortley,4,12,8,731,50.0
 E05012841,Adel and Wharfedale,6,15,6,1664,100.0
 E05012842,Alwoodley,5,10,7,1174,71.4
 E05013830,Garforth and Swillington,4,8,7,352,57.1
-E05013831,Temple Newsam,6,15,10,1767,60.0
+E05013831,Temple Newsam,6,15,9,1767,66.7

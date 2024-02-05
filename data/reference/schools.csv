@@ -7,7 +7,6 @@ Summerfield PS,,Bramley and Stanningley,E05011387
 Westgate Primary School,,Otley and Yeadon,E05011549
 Ashfield Primary School,,Otley and Yeadon,E05011549
 Bishop Young Church of England Academy,,Killingbeck and Seacroft,E05011400
-"St. Mary's Menston, a Catholic Voluntary Academy",,Guiseley and Rawdon,E05011395
 St Nicholas Catholic Primary School,,Gipton and Harehills,E05011394
 Co-op Academy Woodlands,,Gipton and Harehills,E05011394
 Allerton Bywater Primary School,,Kippax and Methley,E05011401
@@ -28,7 +27,6 @@ Penny Field School,,Moortown,E05011405
 Rawdon Littlemoor Primary School,,Guiseley and Rawdon,E05011395
 St Bartholomew's CofE Voluntary Controlled Primary School,,Armley,E05011385
 "Christ The King Catholic Primary School, A Voluntary Academy",,Bramley and Stanningley,E05011387
-Templenewsam Halton Primary School,,Temple Newsam,E05013831
 Otley Prince Henry's Grammar School Specialist Language College,,Otley and Yeadon,E05011549
 Tranmere Park Primary School,,Guiseley and Rawdon,E05011395
 Sharp Lane Primary School,,Middleton Park,E05011404
@@ -51,6 +49,7 @@ Lane End Primary School,,Beeston and Holbeck,E05012647
 Abbey Grange Church of England Academy,LS16 5EA,Kirkstall,E05011402
 Fulneck School,,Pudsey,E05011409
 Allerton Grange School,LS17 6SF,Moortown,E05011405
+Queen Ethelburga's Collegiate,YO26 9SS,,
 Temple Moor High School,LS15 0PT,Temple Newsam,E05013831
 Summerfield Primary School,,Bramley and Stanningley,E05011387
 Roundhay St John's Church of England Primary School,,Roundhay,E05011411
@@ -70,6 +69,8 @@ Elements Primary School,,Middleton Park,E05011404
 Pudsey Waterloo Primary,,Pudsey,E05011409
 Victoria Junior School,,Rothwell,E05011410
 Queenswood School,,Morley South,E05011407
+Stepping Stones Nursery,LS8 1RT,Roundhay,E05011411
+Kettlethorpe High School,WF2 7EL,,
 Beeston Primary School,,Beeston and Holbeck,E05012647
 Co-op Academy Beckfield,,Pudsey,E05011409
 Primley Wood Primary School,,Alwoodley,E05012842
@@ -106,7 +107,6 @@ Middleton Primary School,LS10 4HU,Middleton Park,E05011404
 Gildersome Primary School,,Morley North,E05011406
 Oulton Primary School,,Rothwell,E05011410
 Kippax Greenfield Primary School,,Kippax and Methley,E05011401
-West Specialist Inclusive Learning Centre,,Bramley and Stanningley,E05011387
 Stanningley Primary School,,Bramley and Stanningley,E05011387
 Thornhill Community Academy,WF12 0HE,,
 Alder Tree Primary Academy,,Chapel Allerton,E05011390
@@ -154,10 +154,12 @@ Cockburn Haigh Road Academy,,Rothwell,E05011410
 "St Urban's Catholic Primary School, a Voluntary Academy",,Moortown,E05011405
 "St Joseph's Catholic Primary School, Pudsey",,Pudsey,E05011409
 "Holy Rosary and St Anne's Catholic Primary School, a Voluntary Academy",,Chapel Allerton,E05011390
+Queenswood Education Centre,LS6 3NT,Kirkstall,E05011402
 Beechtree Steiner Initiative,,Chapel Allerton,E05011390
 Moorlands School,,Weetwood,E05011413
 Greenside Primary School,,Pudsey,E05011409
 Al Kauthar Girls Academy,LS7 4JE,Chapel Allerton,E05011390
+George Pindar School,YO11 3LW,,
 East SILC John Jamieson,,Roundhay,E05011411
 St Patrick Catholic Primary School,,Burmantofts and Richmond Hill,E05011388
 Brigshaw High School,,Kippax and Methley,E05011401
@@ -185,12 +187,14 @@ North Halifax Grammar School,HX2 9SU,,
 Hunslet Moor Primary School,,Hunslet and Riverside,E05011399
 Horsforth School,LS18 5RF,Horsforth,E05011547
 Broadgate Primary School,,Horsforth,E05011547
+St Oswald's C of E Primary School,LS20 9BB,Guiseley and Rawdon,E05011395
 Armley Park Primary School,,Armley,E05011385
 Wigton Moor Primary School,,Temple Newsam,E05013831
-St Mary's Menston Catholic Voluntary Academy,LS29 6AE,,
+St Mary's Menston Catholic Voluntary Academy,LS29 6AE,Guiseley and Rawdon,E05011395
 Woodkirk Academy,,Morley South,E05011407
 Ryecroft Academy,,Farnley and Wortley,E05012648
 The Halifax Academy,,,
+New College Pontefract,WF8 4QR,,
 Rothwell Haigh Road Infant School,,Rothwell,E05011410
 "St Mary's Catholic Primary School, Horsforth",,Horsforth,E05011547
 Quarry Mount Primary School,,Headingley and Hyde Park,E05011397
@@ -200,12 +204,13 @@ Hugh Gaitskell Primary School,,Beeston and Holbeck,E05012647
 The Ruth Gorse Academy,LS10 1HW,Hunslet and Riverside,E05011399
 St Philip's Catholic Primary  School,,Middleton Park,E05011404
 Leeds Christian School of Excellence,,Gipton and Harehills,E05011394
+West SILC,LS28 6HL,Bramley and Stanningley,E05011387
 Austhorpe Primary School,,Temple Newsam,E05013831
 Hovingham Primary School,,Gipton and Harehills,E05011394
 Westroyd Primary School and Nursery,,Calverley and Farsley,E05011389
 Hymers Junior School,HU3 1LW,,
 Methley Primary School,,Kippax and Methley,E05011401
-Wetherby High School,,Middleton Park,E05011404
+Wetherby High School,,Wetherby,E05011414
 Middleton St Mary's Church of England Voluntary Controlled Primary School,,Middleton Park,E05011404
 All Saint's Richmond Hill Church of England Primary School,,Burmantofts and Richmond Hill,E05011388
 Richmond House School,,Weetwood,E05011413
@@ -234,6 +239,7 @@ Mill Field Primary School,,Chapel Allerton,E05011390
 Cockburn School,LS11 5TT,Beeston and Holbeck,E05012647
 Clapgate Primary School,,Middleton Park,E05011404
 Adel Primary School,,Adel and Wharfedale,E05012841
+Ossett Academy,WF5 0DG,,
 "St John's Catholic Specialist School, Boston Spa",,Wetherby,E05011414
 Beeston Hill St Luke's Church of England Primary School,,Beeston and Holbeck,E05012647
 Armley Grange School,,Armley,E05011385
@@ -255,6 +261,7 @@ Pudsey Lowtown Primary School,,Pudsey,E05011409
 New Horizons Community School,,Chapel Allerton,E05011390
 East Ardsley Primary Academy,,Ardsley and Robin Hood,E05011384
 Leeds City Academy,LS6 2LG,Headingley and Hyde Park,E05011397
+Dixons Sixth Form Academy,BD5 7JR,,
 The Morley Academy,LS27 0PD,Morley South,E05011407
 Whingate Primary School,,Wetherby,E05011414
 Cockburn Laurence Calvert Academy,LS10 4UZ,Middleton Park,E05011404
@@ -283,7 +290,6 @@ Collingham Lady Elizabeth Hastings Church of England Voluntary Aided Primary Sch
 Parkside School,BD13 5AD,,
 Boston Spa Academy,,Wetherby,E05011414
 Manor Wood Primary School,,Moortown,E05011405
-st mary,,,
 Mount St Mary's Catholic High School,LS9 8LA,Burmantofts and Richmond Hill,E05011388
 Lady Elizabeth Hastings CofE Primary School,,Kippax and Methley,E05011401
 Highfield Primary School,,Moortown,E05011405
@@ -318,6 +324,7 @@ Adel St John the Baptist Church of England Primary School,,Adel and Wharfedale,E
 Fieldhead Carr Primary School,,Cross Gates and Whinmoor,E05011391
 Morley Victoria Primary School,,Morley North,E05011406
 Hanson Academy,BD2 1JP,,
+Outwood Academy City Fields,WF1 4SF,,
 Rawdon St Peter's Church of England Voluntary Controlled Primary School,,Guiseley and Rawdon,E05011395
 Green Meadows Academy,,Guiseley and Rawdon,E05011395
 Brodetsky Primary School,,Alwoodley,E05012842

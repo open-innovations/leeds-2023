@@ -10,13 +10,16 @@ metas:
     Visualisations of key metrics related to engagement with young people.
 limitations:
   - As identified above, there are a small number of schools which were not coded to a ward in the Airtable reference data. This means there are a very small number of engagements not displayed in the hex map above.  - The percentage figures for number of schools engaged are slightly incaccurate. In part this is because of a small number of schools not yet coded to a ward, and in part as we explore how to best capture and display data related to through schools.
-  - The percentage figures for number of schools engaged are slightly inaccurate. In part this is because of a small number of schools were not coded to a ward, and in part due to the nature of the way data was captured related to through schools.
   - The true number of 'Number of Engagements' with young people are slightly lower than displayed. There are a few activities related to engagements with teachers that are currently being captured in the data we are using. 
   - The headline figure showing the number of young people involved in youth development projects, and the breakdown of these, are not live figures. These are updated manually on a monthly basis.
 sources:
   - data/metrics/schools/
 uses_dataset:
   - schools.schools_events
+
+data_overrides:
+  total_schools: 228
+  total_school_engagements: 501
 ---
 
 {# Set up some cyclers for block colouring #}
@@ -55,7 +58,7 @@ uses_dataset:
       Total engagements with schools
     </h2>
 {{ comp.viz.bigNumber({
-      number: headlines.total_school_engagements | localize
+      number: data_overrides.total_school_engagements | localize
     }) | safe }}
     <p>
        Number of schools engagements
@@ -67,7 +70,7 @@ uses_dataset:
       Unique schools
     </h2>
 {{ comp.viz.bigNumber({
-      number: headlines.unique_schools | localize
+      number: data_overrides.total_schools | localize
     }) | safe }}
     <p>
        Number of unique schools engaged with.
@@ -79,7 +82,7 @@ uses_dataset:
       Percentage of Schools Engaged with 
     </h2>
 {{ comp.viz.bigNumber({
-      number: headlines.percentage_of_leeds_schools_engaged | localize,
+      number: headlines.percentage_of_leeds_schools_engaged | round(1) | localize,
       suffix: '%'
     }) | safe }}
     <p>

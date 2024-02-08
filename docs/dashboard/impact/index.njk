@@ -9,6 +9,9 @@ limitations:
 
 archived: | 
   This page was archived on 6th February 2024 and is no longer updated. NOTE: The Impact Dashboard is not the final evaluation and should be treated as an overview of some key topics. A separate evaluation report will be completed by LEEDS 2023.
+
+data_overrides:
+  secured_funders: 57
 ---
 
 {{ comp.notice.archived() | safe }}
@@ -111,7 +114,7 @@ archived: |
       {% call checkToggle('Secured funders') -%}
     {% comp 'dashboard.impact.panel', { bg: "var(--l23-dark-blue-grey)", fg: "white" } %}
         {{ paneTitle('Secured funders') }}
-        {{ comp.dashboard.impact.big_number({ number: '49' }) | safe }}
+        {{ comp.dashboard.impact.big_number({ number: data_overrides.secured_funders  }) | safe }}
     {% endcomp %}
     {% endcall %}
 

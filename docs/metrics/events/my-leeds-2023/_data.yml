@@ -1,8 +1,8 @@
 key_metrics:
   events_in_series:
     title: Events in My LEEDS 2023 series
-    ref: data_overrides.total_events
-    description: Total activities held as part of My LEEDS 2023
+    ref: data_overrides.total_audience
+    description: Total audience engaged with as part of My LEEDS 2023
     colour: --l23-magenta
   grant_apps:
     title: Summer community grants applications

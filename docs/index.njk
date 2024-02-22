@@ -46,6 +46,63 @@ layout: layouts/default.njk
   
 {% endcomp %}
 
+{% comp "layout.block" %}
+{% set key_metrics = {
+  roadshows: {
+    value: search.data('metrics/roadshow-attendees').by_date.columns.cumulative_attendance | last
+  },
+  social_media: {
+    value: search.data('metrics/social-media').all_weekly.columns.audience_last | last,
+    measure: 'Audience across all platforms'
+  },
+  fundraising: {
+    value: search.data('metrics/fundraising').count_by_stage.rows | lookup('stage', 'Won', 'count'),
+    measure: 'Number of organisational funders'
+  }
+} -%}
+
+{% comp 'grid.autogrid', { min_width: '20rem' } %}
+  {% for metric in search.pages('metrics main', 'order=asc title=asc') | data %}
+    {% comp "grid.block.impact", {
+      link: metric.url,
+      bg: 'var(--l23-cyan)'
+    } %}
+      {% if not metric.validated %}
+      <div class="validation-message">
+        <img src="/assets/images/icons/warning.svg" inline>
+        <p>Pending validation</p>
+      </div>
+      {% endif %}
+      <h2>{{ metric.title }}</h2>
+      <p>
+        {{ metric.summary }}
+      </p>
+      {%- if metric.key_metrics -%}
+        {% set key_metric = metric.key_metrics | values | first %}
+        {{ comp.viz.bigNumber({
+          number: metric | getDataByPath(key_metric.ref) | localize
+        }) | safe }}
+        {%- if key_metric.description -%}
+          <p>{{ key_metric.description }}</p>
+        {%- endif -%}
+      {%- elif metric.key and metric.key in key_metrics -%}
+        {{ comp.viz.bigNumber({
+          number: key_metrics[metric.key].value | localize
+        }) | safe }}
+        {%- if key_metrics[metric.key].measure -%}
+          <p>{{ key_metrics[metric.key].measure }}</p>
+        {%- endif -%}
+      {%- endif -%}
+      {# {% if metric.work_in_progress %}{{ comp.work_in_progress() | safe }}{% endif %} #}
+    {% endcomp %}
+  {% endfor %}
+{% endcomp %}
+{% endcomp %}
+
+
+
+
+{# 
 {% comp "layout.block", { vertical_padding: '2rem'} %}
 {% comp "grid.masonry" %}
 
@@ -121,8 +178,6 @@ layout: layouts/default.njk
     colour: fg.next(),
     background: bg.next()
   }) | safe }}
-  
-  #}
 
   {% comp "grid.block.impact", {
     link: "/metrics/social-media/",
@@ -162,4 +217,4 @@ layout: layouts/default.njk
   {% endcomp %}
 
 {% endcomp %}
-{% endcomp %}
+{% endcomp %} #}

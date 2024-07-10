@@ -19,6 +19,8 @@
   &.validated {
     background-color: var(--l23-cyan);
   }
+  /* TURN OFF VALIDATION MESSAGES */
+  display: none;
 }
 
 .manual-override {
@@ -34,4 +36,6 @@
   & :is(svg, img) {
     height: 1em;
   }
+  /* TURN OFF VALIDATION MESSAGES */
+  display:none;
 }
